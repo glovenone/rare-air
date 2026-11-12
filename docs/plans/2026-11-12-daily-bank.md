@@ -1,0 +1,3 @@
+# 300-question bank and daily growth
+
+Expand the original 30 to 300 English finite-set prompts, with answer aliases, source references and editorial rarity. Add an append-only dated content pack format and structural validator. Freeze session questions in D1, retain the exact legacy scheduler for existing sessions, and select new daily packs only from their future release date. Expose bank size and batch ID without answer leaks. Create the requested daily 07:00 Asia/Shanghai Codex task to author 100 distinct, source-checked prompts, validate and deploy. Check original daily equivalence, snapshots, full local D1 lifecycle and deployed metadata. Compare domain registration and renewal costs and live availability; purchase is outside this request.

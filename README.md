@@ -38,7 +38,7 @@ The tracked Wrangler file refers to the dedicated `rare-daily-db` database. For 
 
 - Five prompts per daily game, 30 seconds for each; daily reset at midnight UTC (08:00 China time).
 - One attempt per browser per date. Practice gets a new random seed. Daily dates use a deterministic versioned shuffle.
-- Curated answer bank: 30 question sets, accepted aliases, four rarity tiers worth 100, 250, 500 and 1,000 points. Invalid/skipped/expired answers get zero.
+- Curated answer bank: 300 question sets, accepted aliases, four rarity tiers worth 100, 250, 500 and 1,000 points. Invalid/skipped/expired answers get zero.
 - Rarity is editorial, clearly explained in the game. It is not a population survey. Answers are stored in D1 so aggregate answer distributions can be analyzed later.
 - Refreshing restores the current daily game. Elapsed time comes from the server. Leaving freezes no clock; an expired pending round is recorded when resumed and submitted, then the next round starts.
 - Atomic D1 batches and unique round keys prevent duplicate scoring. Scores are derived server-side. Active sessions never expose their answer lists.
@@ -55,10 +55,16 @@ The tracked Wrangler file refers to the dedicated `rare-daily-db` database. For 
 
 ## Content and operations
 
-This is a starter launch edition. The 30-set bank repeats; expand it for sustained daily publishing. Changing the bank changes deterministic schedules; preserve a dated/versioned bank before running an established live daily calendar. Rarity improvements should use frozen historical snapshots so every player has the same scoring on a given date.
+The bank contains 30 immutable legacy prompts plus 270 new prompts in 17 expansion categories. Practice uses all 300 immediately; the new daily pool starts November 13, 2026 UTC. Dated packs are append-only and filtered by release date, so later packs cannot change old daily puzzles. Every new session stores exact question and scoring snapshots; pre-migration sessions retain the legacy bank. See `content/EDITORIAL.md` for content quality and publishing rules. Rarity is editorial, not a measured answer frequency.
 
 Anonymous identity is per cookie, not a verified person. Clearing cookies creates another identity. No strong anti-bot control or global request quota is included; add Cloudflare rate limiting/Turnstile for larger public launches. The basic cap is 30 new sessions per browser per hour. No traffic-scale/load test or revenue claim is made.
 
 D1 stores opaque player IDs, game state and chosen answers. No account emails or advertising IDs. Local storage holds stats. Production resources are separate from Wrangler's ignored local development database. Wrangler may use paid quotas according to the account plan.
 
 To attach a domain: configure a Workers custom domain in Cloudflare Dashboard for `rare-daily`; no source changes needed.
+
+## Daily 100-question task
+
+Codex automation `rare-100` runs daily at 07:00 Asia/Shanghai, beginning November 13, 2026. It creates `content/packs/YYYY-MM-DD-daily.json`, verifies 100 distinct prompts, builds, tests, and deploys with the existing Wrangler authorization. The local computer and Codex app need to be running. Runs consume Codex usage; no separate AI API is configured. A failed run does not silently count as a published batch.
+
+Use `npm run bank:build` to validate packs and regenerate server-only `src/bank.js`. Each daily pack must have exactly 100 prompts. Public `/api/puzzle` reports `bankSize` and `latestBatch` for deployment verification, without exposing answers.

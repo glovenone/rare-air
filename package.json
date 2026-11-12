@@ -7,9 +7,10 @@
     "dev": "wrangler dev --port 8787",
     "test": "node --test test/*.test.js",
     "check": "tsc --noEmit",
-    "deploy": "wrangler deploy",
+    "deploy": "npm run bank:build && npm run check && npm test && wrangler deploy",
     "db:local": "wrangler d1 migrations apply DB --local",
-    "db:remote": "wrangler d1 migrations apply DB --remote"
+    "db:remote": "wrangler d1 migrations apply DB --remote",
+    "bank:build": "node scripts/build-bank.mjs"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "latest",

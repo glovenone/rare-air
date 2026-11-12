@@ -18,10 +18,19 @@ const practice=await request('start',{mode:'practice'});assert.notEqual(practice
 assert.equal((await request('start',{day:'2026-02-30'})).status,400);
 if(base==='http://127.0.0.1:8787'){
  const id=practice.data.id;
+ const frozen=schedule(id);frozen[0]=JSON.parse(JSON.stringify(frozen[0]));frozen[0].answers[0].tier=4;
+ const frozenJson=JSON.stringify(frozen).replaceAll("'","''");
+ execFileSync('npx',['wrangler','d1','execute','DB','--local','--command',`UPDATE sessions SET questions_json='${frozenJson}' WHERE id='${id}'`],{stdio:'pipe'});
+ const frozenResult=(await request('answer',{id,round:0,answer:frozen[0].answers[0].label})).data;
+ assert.equal(frozenResult.answers[0].points,1000,'stored scoring snapshot must override current bank');
  execFileSync('npx',['wrangler','d1','execute','DB','--local','--command',`UPDATE sessions SET started=0 WHERE id='${id}'`],{stdio:'pipe'});
- const expired=(await request('answer',{id,round:0,answer:'Earth'})).data;
- assert.equal(expired.answers[0].timed_out,1);
- assert.equal(expired.answers[0].points,0);
- assert.equal(expired.round,1);
+ const expired=(await request('answer',{id,round:1,answer:'Earth'})).data;
+ assert.equal(expired.answers[1].timed_out,1);
+ assert.equal(expired.answers[1].points,0);
+ assert.equal(expired.round,2);
+ const oldGame=(await request('start',{mode:'practice'})).data;
+ execFileSync('npx',['wrangler','d1','execute','DB','--local','--command',`UPDATE sessions SET questions_json=NULL WHERE id='${oldGame.id}'`],{stdio:'pipe'});
+ const oldResumed=(await request('resume',{id:oldGame.id})).data;
+ assert.equal(oldResumed.question.id,schedule(oldGame.id,true)[0].id,'legacy sessions retain original bank');
 }
-console.log('PASS: server-enforced timeout, game lifecycle, real D1, concurrent submissions, idempotency, ownership, same-origin, aliases, leaderboard, daily replay protection, practice, date validation.');
+console.log('PASS: frozen scoring snapshots, legacy session compatibility, server-enforced timeout, game lifecycle, real D1, concurrent submissions, idempotency, ownership, same-origin, aliases, leaderboard, daily replay protection, practice, date validation.');
