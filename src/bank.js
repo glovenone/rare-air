@@ -4,6 +4,11 @@ export const batches = [
     "batch": "2026-11-12-expansion",
     "releasedOn": "2026-11-13",
     "count": 270
+  },
+  {
+    "batch": "2026-11-13-daily",
+    "releasedOn": "2026-11-13",
+    "count": 100
   }
 ];
 export const bank = [
@@ -11948,5 +11953,4350 @@ export const bank = [
     ],
     "releasedOn": "2026-11-13",
     "batch": "2026-11-12-expansion"
+  },
+  {
+    "id": "daily-20261113-c9846318fece",
+    "category": "GEOGRAPHY",
+    "prompt": "Name a country with a land border with Austria.",
+    "explanation": "Only sovereign neighbors sharing a land border with Austria; common English country names accepted. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Geography_of_Austria"
+    ],
+    "answers": [
+      {
+        "label": "Germany",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Italy",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Switzerland",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Hungary",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Czechia",
+        "aliases": [
+          "Czech Republic"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Slovakia",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Slovenia",
+        "aliases": [],
+        "tier": 4
+      },
+      {
+        "label": "Liechtenstein",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-dafbd99989e3",
+    "category": "GEOGRAPHY",
+    "prompt": "Name a country with a land border with Switzerland.",
+    "explanation": "The five sovereign countries bordering Switzerland by land. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Geography_of_Switzerland"
+    ],
+    "answers": [
+      {
+        "label": "France",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Germany",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Italy",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Austria",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Liechtenstein",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-f92374077615",
+    "category": "GEOGRAPHY",
+    "prompt": "Name a country with a land border with Argentina.",
+    "explanation": "The five land neighbors of Argentina; maritime boundaries are excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Geography_of_Argentina"
+    ],
+    "answers": [
+      {
+        "label": "Brazil",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Chile",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Uruguay",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Paraguay",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Bolivia",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-af950b91dbb2",
+    "category": "GEOGRAPHY",
+    "prompt": "Name a country with a land border with Thailand.",
+    "explanation": "The four sovereign countries that share a land border with Thailand. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Geography_of_Thailand"
+    ],
+    "answers": [
+      {
+        "label": "Malaysia",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Cambodia",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Myanmar",
+        "aliases": [
+          "Burma"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Laos",
+        "aliases": [
+          "Lao PDR"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-5c726fedcb5a",
+    "category": "GEOGRAPHY",
+    "prompt": "Name a country with a land border with South Africa.",
+    "explanation": "Includes the enclaved country Lesotho; maritime neighbors are excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Geography_of_South_Africa"
+    ],
+    "answers": [
+      {
+        "label": "Namibia",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Botswana",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Zimbabwe",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Mozambique",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Eswatini",
+        "aliases": [
+          "Swaziland"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Lesotho",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-4dc3cd442e64",
+    "category": "GEOGRAPHY",
+    "prompt": "Name a country with a land border with Kenya.",
+    "explanation": "The five sovereign land neighbors of Kenya. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Geography_of_Kenya"
+    ],
+    "answers": [
+      {
+        "label": "Tanzania",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Uganda",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Ethiopia",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Somalia",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "South Sudan",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-eb91c6f28096",
+    "category": "GEOGRAPHY",
+    "prompt": "Name a country with a land border with Poland.",
+    "explanation": "Includes Russia through Kaliningrad; sea borders are excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Geography_of_Poland"
+    ],
+    "answers": [
+      {
+        "label": "Germany",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Czechia",
+        "aliases": [
+          "Czech Republic"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Slovakia",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Ukraine",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Belarus",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Lithuania",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Russia",
+        "aliases": [
+          "Russian Federation"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-2cda1280544c",
+    "category": "GEOGRAPHY",
+    "prompt": "Name a country with a land border with Greece.",
+    "explanation": "Only the four sovereign land neighbors; island and sea proximity do not count. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Geography_of_Greece"
+    ],
+    "answers": [
+      {
+        "label": "Albania",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "North Macedonia",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Bulgaria",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Turkey",
+        "aliases": [
+          "Turkiye"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-93d8c6675007",
+    "category": "GEOGRAPHY",
+    "prompt": "Name one of the three sovereign countries on the island of Borneo.",
+    "explanation": "The three sovereign states with territory on Borneo, not provinces or former colonial powers. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Borneo"
+    ],
+    "answers": [
+      {
+        "label": "Indonesia",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Malaysia",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Brunei",
+        "aliases": [
+          "Brunei Darussalam"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-206c8e0e5aa1",
+    "category": "GEOGRAPHY",
+    "prompt": "Name an island in New Zealand's three-main-islands grouping.",
+    "explanation": "The North, South and Stewart islands are the three-main-island grouping; smaller offshore islands excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Geography_of_New_Zealand"
+    ],
+    "answers": [
+      {
+        "label": "North Island",
+        "aliases": [
+          "Te Ika-a-Maui"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "South Island",
+        "aliases": [
+          "Te Waipounamu"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Stewart Island",
+        "aliases": [
+          "Rakiura",
+          "Stewart Island Rakiura"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-8329a10e1f0c",
+    "category": "SPACE",
+    "prompt": "Name one of Uranus's five major moons.",
+    "explanation": "The five large rounded moons; the many smaller irregular and inner moons are not in scope. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Moons_of_Uranus"
+    ],
+    "answers": [
+      {
+        "label": "Titania",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Oberon",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Ariel",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Umbriel",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Miranda",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-d478b56252a2",
+    "category": "SPACE",
+    "prompt": "Name one of the seven original Mercury astronauts.",
+    "explanation": "NASA's original seven astronauts selected in 1959, not everyone who flew a Mercury spacecraft. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mercury_Seven"
+    ],
+    "answers": [
+      {
+        "label": "John Glenn",
+        "aliases": [
+          "Glenn"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Alan Shepard",
+        "aliases": [
+          "Shepard"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Gus Grissom",
+        "aliases": [
+          "Virgil Grissom",
+          "Grissom"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Scott Carpenter",
+        "aliases": [
+          "Carpenter"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Wally Schirra",
+        "aliases": [
+          "Walter Schirra",
+          "Schirra"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Gordon Cooper",
+        "aliases": [
+          "Cooper"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Deke Slayton",
+        "aliases": [
+          "Donald Slayton",
+          "Slayton"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-ab1db28ee116",
+    "category": "SPACE",
+    "prompt": "Name an astronaut on the Apollo 17 crew.",
+    "explanation": "The three-person flight crew of the December 1972 mission. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://www.nasa.gov/mission/apollo-17/",
+      "https://en.wikipedia.org/wiki/Apollo_17"
+    ],
+    "answers": [
+      {
+        "label": "Eugene Cernan",
+        "aliases": [
+          "Gene Cernan",
+          "Cernan"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Harrison Schmitt",
+        "aliases": [
+          "Jack Schmitt",
+          "Schmitt"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Ronald Evans",
+        "aliases": [
+          "Ron Evans",
+          "Evans"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-985307bd6b11",
+    "category": "SPACE",
+    "prompt": "Name a telescope in NASA's original Great Observatories program.",
+    "explanation": "The original four space observatories; James Webb is not part of this historical program. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Great_Observatories_program"
+    ],
+    "answers": [
+      {
+        "label": "Hubble Space Telescope",
+        "aliases": [
+          "Hubble",
+          "HST"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Chandra X-ray Observatory",
+        "aliases": [
+          "Chandra"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Spitzer Space Telescope",
+        "aliases": [
+          "Spitzer",
+          "SIRTF"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Compton Gamma Ray Observatory",
+        "aliases": [
+          "Compton",
+          "CGRO"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-d70d6b660c97",
+    "category": "SPACE",
+    "prompt": "Name one of the four asteroids discovered before the end of 1807.",
+    "explanation": "Historical discovery set: Ceres, Pallas, Juno and Vesta. Ceres's later dwarf-planet classification does not remove it from this set. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Asteroid"
+    ],
+    "answers": [
+      {
+        "label": "Ceres",
+        "aliases": [
+          "1 Ceres"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Pallas",
+        "aliases": [
+          "2 Pallas"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Juno",
+        "aliases": [
+          "3 Juno"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Vesta",
+        "aliases": [
+          "4 Vesta"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-361c3af62285",
+    "category": "SPACE",
+    "prompt": "Name a letter in the standard seven-class stellar temperature sequence.",
+    "explanation": "The traditional OBAFGKM spectral sequence only; brown-dwarf extensions and white-dwarf types excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Stellar_classification"
+    ],
+    "answers": [
+      {
+        "label": "O",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "B",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "A",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "F",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "G",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "K",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "M",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-8963e2cc1f3f",
+    "category": "SPACE",
+    "prompt": "Name a phase in the conventional eight-phase lunar cycle.",
+    "explanation": "The eight named phases, including both quarter phases and the four crescent/gibbous phases. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lunar_phase"
+    ],
+    "answers": [
+      {
+        "label": "New Moon",
+        "aliases": [
+          "New"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Full Moon",
+        "aliases": [
+          "Full"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "First Quarter",
+        "aliases": [
+          "First Quarter Moon"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Third Quarter",
+        "aliases": [
+          "Last Quarter",
+          "Third Quarter Moon",
+          "Last Quarter Moon"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Waxing Crescent",
+        "aliases": [
+          "Waxing Crescent Moon"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Waxing Gibbous",
+        "aliases": [
+          "Waxing Gibbous Moon"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Waning Gibbous",
+        "aliases": [
+          "Waning Gibbous Moon"
+        ],
+        "tier": 4
+      },
+      {
+        "label": "Waning Crescent",
+        "aliases": [
+          "Waning Crescent Moon"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-86f4ea178bc6",
+    "category": "SPACE",
+    "prompt": "Name a classical Keplerian orbital element, using true anomaly for the position element.",
+    "explanation": "Use the six-element set with true anomaly specifying position at epoch; alternative coordinate parameterizations are out of scope. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Orbital_elements"
+    ],
+    "answers": [
+      {
+        "label": "Eccentricity",
+        "aliases": [
+          "Orbital eccentricity"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Inclination",
+        "aliases": [
+          "Orbital inclination"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Semi-major axis",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Longitude of the ascending node",
+        "aliases": [
+          "Right ascension of the ascending node",
+          "RAAN"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Argument of periapsis",
+        "aliases": [
+          "Argument of pericenter",
+          "Argument of perigee"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "True anomaly at epoch",
+        "aliases": [
+          "True anomaly"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-78b635521441",
+    "category": "SPACE",
+    "prompt": "Name a constellation containing one of the three stars of the Winter Triangle.",
+    "explanation": "Betelgeuse, Sirius and Procyon identify the three constellations; star names themselves are not constellation answers. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Winter_Triangle"
+    ],
+    "answers": [
+      {
+        "label": "Orion",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Canis Major",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Canis Minor",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-5a39b260c154",
+    "category": "SPACE",
+    "prompt": "Name one of the three stars of the Winter Triangle.",
+    "explanation": "The three named stars of the northern-winter asterism, not the larger Winter Hexagon. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Winter_Triangle"
+    ],
+    "answers": [
+      {
+        "label": "Sirius",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Betelgeuse",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Procyon",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-d32fb4480958",
+    "category": "SCIENCE",
+    "prompt": "Name one of the 20 standard proteinogenic amino acids.",
+    "explanation": "The standard twenty; the additional genetically encoded selenocysteine and pyrrolysine are explicitly excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Proteinogenic_amino_acid"
+    ],
+    "answers": [
+      {
+        "label": "Glycine",
+        "aliases": [
+          "Gly",
+          "G"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Alanine",
+        "aliases": [
+          "Ala",
+          "A"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Valine",
+        "aliases": [
+          "Val",
+          "V"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Leucine",
+        "aliases": [
+          "Leu",
+          "L"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Isoleucine",
+        "aliases": [
+          "Ile",
+          "I"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Serine",
+        "aliases": [
+          "Ser",
+          "S"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Threonine",
+        "aliases": [
+          "Thr",
+          "T"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Cysteine",
+        "aliases": [
+          "Cys",
+          "C"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Methionine",
+        "aliases": [
+          "Met",
+          "M"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Aspartic acid",
+        "aliases": [
+          "Aspartate",
+          "Asp",
+          "D"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Glutamic acid",
+        "aliases": [
+          "Glutamate",
+          "Glu",
+          "E"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Asparagine",
+        "aliases": [
+          "Asn",
+          "N"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Glutamine",
+        "aliases": [
+          "Gln",
+          "Q"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Lysine",
+        "aliases": [
+          "Lys",
+          "K"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Arginine",
+        "aliases": [
+          "Arg",
+          "R"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Histidine",
+        "aliases": [
+          "His",
+          "H"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Phenylalanine",
+        "aliases": [
+          "Phe",
+          "F"
+        ],
+        "tier": 4
+      },
+      {
+        "label": "Tyrosine",
+        "aliases": [
+          "Tyr",
+          "Y"
+        ],
+        "tier": 4
+      },
+      {
+        "label": "Tryptophan",
+        "aliases": [
+          "Trp",
+          "W"
+        ],
+        "tier": 4
+      },
+      {
+        "label": "Proline",
+        "aliases": [
+          "Pro",
+          "P"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-801b62c77a78",
+    "category": "SCIENCE",
+    "prompt": "Name a stop codon in the standard RNA genetic code.",
+    "explanation": "RNA triplets in the standard code; DNA equivalents are not requested. Historical stop-codon nicknames are accepted. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Stop_codon"
+    ],
+    "answers": [
+      {
+        "label": "UAA",
+        "aliases": [
+          "Ochre"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "UAG",
+        "aliases": [
+          "Amber"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "UGA",
+        "aliases": [
+          "Opal",
+          "Umber"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-19ea0d7e696b",
+    "category": "SCIENCE",
+    "prompt": "Name a main phase of the cell cycle in the G1-S-G2-M classification.",
+    "explanation": "Four principal cycling phases; G0 is a quiescent state outside this four-phase classification. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Cell_cycle"
+    ],
+    "answers": [
+      {
+        "label": "G1",
+        "aliases": [
+          "Gap 1",
+          "G1 phase",
+          "First gap"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "S",
+        "aliases": [
+          "Synthesis",
+          "S phase"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "G2",
+        "aliases": [
+          "Gap 2",
+          "G2 phase",
+          "Second gap"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "M",
+        "aliases": [
+          "M phase",
+          "Mitotic phase"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-97ed13300d85",
+    "category": "SCIENCE",
+    "prompt": "Name a bone of the human upper arm or forearm.",
+    "explanation": "The upper arm has the humerus and the forearm has radius and ulna. Shoulder and hand bones are excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Human_arm"
+    ],
+    "answers": [
+      {
+        "label": "Humerus",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Radius",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Ulna",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-401b1f41fc84",
+    "category": "SCIENCE",
+    "prompt": "Name a long bone of the human thigh or lower leg, excluding the kneecap.",
+    "explanation": "Femur, tibia and fibula only; patella, pelvic bones and bones of the foot are outside the stated scope. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Human_leg"
+    ],
+    "answers": [
+      {
+        "label": "Femur",
+        "aliases": [
+          "Thigh bone"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Tibia",
+        "aliases": [
+          "Shin bone"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Fibula",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-372c9ebfc48a",
+    "category": "SCIENCE",
+    "prompt": "Name a region in the standard outer-middle-inner division of the human ear.",
+    "explanation": "The three anatomical regions of the ear, not individual bones or membranes. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ear"
+    ],
+    "answers": [
+      {
+        "label": "Outer ear",
+        "aliases": [
+          "External ear"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Middle ear",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Inner ear",
+        "aliases": [
+          "Internal ear"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-7c7ec70da800",
+    "category": "SCIENCE",
+    "prompt": "Name a region of the stomach in the cardia-fundus-body-pylorus model.",
+    "explanation": "The four principal stomach regions; this does not refer to the multiple compartments of a ruminant stomach. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Stomach"
+    ],
+    "answers": [
+      {
+        "label": "Cardia",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Fundus",
+        "aliases": [
+          "Gastric fundus"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Body",
+        "aliases": [
+          "Corpus",
+          "Gastric body"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Pylorus",
+        "aliases": [
+          "Pyloric part"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-9d5a3957fed9",
+    "category": "SCIENCE",
+    "prompt": "Name one of the three main coats, or tunics, of the human eyeball.",
+    "explanation": "The fibrous, vascular and neural coats, not smaller subdivisions of those coats. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Human_eye"
+    ],
+    "answers": [
+      {
+        "label": "Fibrous tunic",
+        "aliases": [
+          "Fibrous coat",
+          "Fibrous layer"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Vascular tunic",
+        "aliases": [
+          "Vascular coat",
+          "Vascular layer",
+          "Uvea"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Neural tunic",
+        "aliases": [
+          "Nervous tunic",
+          "Neural layer",
+          "Retina"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-7cb2e62ddedd",
+    "category": "SCIENCE",
+    "prompt": "Name a human vertebral-column region in the standard five-region model.",
+    "explanation": "The five named anatomical regions; individual vertebra numbers are not region names. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Vertebral_column"
+    ],
+    "answers": [
+      {
+        "label": "Cervical",
+        "aliases": [
+          "Cervical region",
+          "Cervical vertebrae"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Thoracic",
+        "aliases": [
+          "Thoracic region",
+          "Thoracic vertebrae"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Lumbar",
+        "aliases": [
+          "Lumbar region",
+          "Lumbar vertebrae"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Sacral",
+        "aliases": [
+          "Sacral region",
+          "Sacral vertebrae"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Coccygeal",
+        "aliases": [
+          "Coccygeal region",
+          "Coccygeal vertebrae"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-c3fab0cc6fd6",
+    "category": "SCIENCE",
+    "prompt": "Name a category of RNA in the standard protein-synthesis trio.",
+    "explanation": "The conventional three RNA categories directly associated with translation; other regulatory RNA classes excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/RNA"
+    ],
+    "answers": [
+      {
+        "label": "Messenger RNA",
+        "aliases": [
+          "mRNA",
+          "Messenger"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Transfer RNA",
+        "aliases": [
+          "tRNA",
+          "Transfer"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Ribosomal RNA",
+        "aliases": [
+          "rRNA",
+          "Ribosomal"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-42c720e97eb4",
+    "category": "NATURE",
+    "prompt": "Name a living species of wombat.",
+    "explanation": "The three extant species; extinct giant wombats and other fossil species excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Wombat"
+    ],
+    "answers": [
+      {
+        "label": "Common wombat",
+        "aliases": [
+          "Bare-nosed wombat",
+          "Vombatus ursinus"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Southern hairy-nosed wombat",
+        "aliases": [
+          "Lasiorhinus latifrons"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Northern hairy-nosed wombat",
+        "aliases": [
+          "Lasiorhinus krefftii"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-0d41a5d30871",
+    "category": "NATURE",
+    "prompt": "Name a primary germ layer in a triploblastic animal embryo.",
+    "explanation": "The three primary embryonic germ layers in triploblastic animals; extraembryonic membranes and later tissues are not germ layers. Rarity is editorial, not a measured answer frequency.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Germ_layer"
+    ],
+    "answers": [
+      {
+        "label": "Ectoderm",
+        "aliases": [
+          "Ectodermal layer"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Mesoderm",
+        "aliases": [
+          "Mesodermal layer"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Endoderm",
+        "aliases": [
+          "Endodermal layer"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-57eeedaa407b",
+    "category": "NATURE",
+    "prompt": "Name a living penguin species in the genus Spheniscus.",
+    "explanation": "The four living banded-penguin species; fossil species excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Spheniscus"
+    ],
+    "answers": [
+      {
+        "label": "African penguin",
+        "aliases": [
+          "African",
+          "Jackass penguin"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Galapagos penguin",
+        "aliases": [
+          "Galapagos"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Humboldt penguin",
+        "aliases": [
+          "Humboldt"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Magellanic penguin",
+        "aliases": [
+          "Magellanic"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-34e9abc3fa27",
+    "category": "NATURE",
+    "prompt": "Name a living species of orangutan.",
+    "explanation": "The three extant species recognized following the 2017 description of the Tapanuli orangutan. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Orangutan"
+    ],
+    "answers": [
+      {
+        "label": "Bornean orangutan",
+        "aliases": [
+          "Pongo pygmaeus",
+          "Bornean"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Sumatran orangutan",
+        "aliases": [
+          "Pongo abelii",
+          "Sumatran"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Tapanuli orangutan",
+        "aliases": [
+          "Pongo tapanuliensis",
+          "Tapanuli"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-caab4eac2229",
+    "category": "NATURE",
+    "prompt": "Name an extant crocodilian family.",
+    "explanation": "The three living families in the modern family-level grouping; extinct families excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Crocodilia"
+    ],
+    "answers": [
+      {
+        "label": "Crocodylidae",
+        "aliases": [
+          "True crocodiles",
+          "Crocodiles"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Alligatoridae",
+        "aliases": [
+          "Alligators and caimans"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Gavialidae",
+        "aliases": [
+          "Gharials"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-57798a5c570d",
+    "category": "NATURE",
+    "prompt": "Name a class among the five living echinoderm classes.",
+    "explanation": "The five extant classes; common group names accepted, extinct classes excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Echinoderm"
+    ],
+    "answers": [
+      {
+        "label": "Asteroidea",
+        "aliases": [
+          "Sea stars",
+          "Starfish"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Ophiuroidea",
+        "aliases": [
+          "Brittle stars",
+          "Basket stars"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Echinoidea",
+        "aliases": [
+          "Sea urchins",
+          "Sand dollars"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Holothuroidea",
+        "aliases": [
+          "Sea cucumbers"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Crinoidea",
+        "aliases": [
+          "Sea lilies",
+          "Feather stars"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-1116c266f1d3",
+    "category": "NATURE",
+    "prompt": "Name a group in the traditional three-way division of bryophytes.",
+    "explanation": "The three familiar nonvascular land-plant groups; taxonomic rank conventions may differ but the named groups are fixed here. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bryophyte"
+    ],
+    "answers": [
+      {
+        "label": "Mosses",
+        "aliases": [
+          "Moss",
+          "Bryophyta"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Liverworts",
+        "aliases": [
+          "Liverwort",
+          "Marchantiophyta"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Hornworts",
+        "aliases": [
+          "Hornwort",
+          "Anthocerotophyta"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-911905b0af8f",
+    "category": "NATURE",
+    "prompt": "Name a dog-breed group in the American Kennel Club's seven-group system.",
+    "explanation": "The seven conformation groups, excluding Miscellaneous Class and Foundation Stock Service. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://www.akc.org/dog-breeds/",
+      "https://en.wikipedia.org/wiki/American_Kennel_Club"
+    ],
+    "answers": [
+      {
+        "label": "Sporting",
+        "aliases": [
+          "Sporting Group"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Hound",
+        "aliases": [
+          "Hound Group"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Working",
+        "aliases": [
+          "Working Group"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Terrier",
+        "aliases": [
+          "Terrier Group"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Toy",
+        "aliases": [
+          "Toy Group"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Non-Sporting",
+        "aliases": [
+          "Non-Sporting Group"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Herding",
+        "aliases": [
+          "Herding Group"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-d4933272ea0a",
+    "category": "NATURE",
+    "prompt": "Name a stomach compartment in the standard four-compartment ruminant model.",
+    "explanation": "The four compartments of a typical ruminant stomach, not all animal digestive organs. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ruminant"
+    ],
+    "answers": [
+      {
+        "label": "Rumen",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Reticulum",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Omasum",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Abomasum",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-d2555752e401",
+    "category": "NATURE",
+    "prompt": "Name one of the three main parts of a botanical pistil.",
+    "explanation": "The stigma, style and ovary of a typical pistil. Ovules are contents of the ovary rather than a fourth principal part. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Gynoecium"
+    ],
+    "answers": [
+      {
+        "label": "Stigma",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Style",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Ovary",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-6a02a016bbeb",
+    "category": "BOOKS",
+    "prompt": "Name a completed Jane Austen novel published during her life or posthumously in 1817.",
+    "explanation": "Her six completed full-length novels; unfinished work, juvenilia and later adaptations are excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jane_Austen"
+    ],
+    "answers": [
+      {
+        "label": "Pride and Prejudice",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Sense and Sensibility",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Emma",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Mansfield Park",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Persuasion",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Northanger Abbey",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-2fc750207d10",
+    "category": "BOOKS",
+    "prompt": "Name one of Charles Dickens's five Christmas Books.",
+    "explanation": "The five separately published Christmas novellas, not all Christmas stories or magazine collaborations. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Charles_Dickens_bibliography"
+    ],
+    "answers": [
+      {
+        "label": "A Christmas Carol",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "The Chimes",
+        "aliases": [
+          "Chimes"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "The Cricket on the Hearth",
+        "aliases": [
+          "Cricket on the Hearth"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "The Battle of Life",
+        "aliases": [
+          "Battle of Life"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "The Haunted Man and the Ghost's Bargain",
+        "aliases": [
+          "The Haunted Man",
+          "Haunted Man and the Ghost's Bargain"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-a75672327415",
+    "category": "BOOKS",
+    "prompt": "Name one of the thirteen dwarves in Thorin's company in The Hobbit.",
+    "explanation": "The thirteen dwarf members only; Bilbo and Gandalf are not dwarves. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/List_of_The_Hobbit_characters"
+    ],
+    "answers": [
+      {
+        "label": "Thorin",
+        "aliases": [
+          "Thorin Oakenshield"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Balin",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Dwalin",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Fili",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Kili",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Dori",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Nori",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Ori",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Oin",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Gloin",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Bifur",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Bofur",
+        "aliases": [],
+        "tier": 4
+      },
+      {
+        "label": "Bombur",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-11cc608f1e1f",
+    "category": "BOOKS",
+    "prompt": "Name one of Arthur and Molly Weasley's seven children.",
+    "explanation": "The seven children of Arthur and Molly; parents, spouses and grandchildren excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Weasley_family"
+    ],
+    "answers": [
+      {
+        "label": "Ron",
+        "aliases": [
+          "Ron Weasley",
+          "Ronald Weasley"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Ginny",
+        "aliases": [
+          "Ginny Weasley",
+          "Ginevra Weasley"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Fred",
+        "aliases": [
+          "Fred Weasley"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "George",
+        "aliases": [
+          "George Weasley"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Percy",
+        "aliases": [
+          "Percy Weasley"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Bill",
+        "aliases": [
+          "Bill Weasley",
+          "William Weasley"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Charlie",
+        "aliases": [
+          "Charlie Weasley",
+          "Charles Weasley"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-9a7ae31212e2",
+    "category": "BOOKS",
+    "prompt": "Name a playing position on a standard Quidditch team.",
+    "explanation": "Four distinct position names; the seven-player team includes multiple chasers and beaters. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Quidditch"
+    ],
+    "answers": [
+      {
+        "label": "Seeker",
+        "aliases": [
+          "Seekers"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Keeper",
+        "aliases": [
+          "Keepers"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Chaser",
+        "aliases": [
+          "Chasers"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Beater",
+        "aliases": [
+          "Beaters"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-522503efb765",
+    "category": "BOOKS",
+    "prompt": "Name a champion competing in the Triwizard Tournament in Harry Potter and the Goblet of Fire.",
+    "explanation": "The four participants in that specific tournament, including the unexpectedly selected fourth champion. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Goblet_of_Fire"
+    ],
+    "answers": [
+      {
+        "label": "Harry Potter",
+        "aliases": [
+          "Harry"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Cedric Diggory",
+        "aliases": [
+          "Cedric"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Viktor Krum",
+        "aliases": [
+          "Krum",
+          "Viktor"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Fleur Delacour",
+        "aliases": [
+          "Fleur"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-9dd21bf296b8",
+    "category": "BOOKS",
+    "prompt": "Name a book in C. S. Lewis's seven-book Chronicles of Narnia.",
+    "explanation": "The seven original novels; film adaptations and companion books excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Chronicles_of_Narnia"
+    ],
+    "answers": [
+      {
+        "label": "The Lion the Witch and the Wardrobe",
+        "aliases": [
+          "Lion Witch and Wardrobe",
+          "Lion the Witch and the Wardrobe"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Prince Caspian",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "The Voyage of the Dawn Treader",
+        "aliases": [
+          "Voyage of the Dawn Treader"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "The Silver Chair",
+        "aliases": [
+          "Silver Chair"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "The Horse and His Boy",
+        "aliases": [
+          "Horse and His Boy"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "The Magician's Nephew",
+        "aliases": [
+          "Magicians Nephew"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "The Last Battle",
+        "aliases": [
+          "Last Battle"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-785c78cfb310",
+    "category": "BOOKS",
+    "prompt": "Name a Sherlock Holmes novel written by Arthur Conan Doyle.",
+    "explanation": "The four novels, not the short-story collections or non-Doyle continuations. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Canon_of_Sherlock_Holmes"
+    ],
+    "answers": [
+      {
+        "label": "A Study in Scarlet",
+        "aliases": [
+          "Study in Scarlet"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "The Hound of the Baskervilles",
+        "aliases": [
+          "Hound of the Baskervilles"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "The Sign of the Four",
+        "aliases": [
+          "The Sign of Four",
+          "Sign of Four",
+          "Sign of the Four"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "The Valley of Fear",
+        "aliases": [
+          "Valley of Fear"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-41f12819b3aa",
+    "category": "BOOKS",
+    "prompt": "Name a Dune novel written by Frank Herbert.",
+    "explanation": "Frank Herbert's six original novels; later novels by other authors excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dune_(franchise)"
+    ],
+    "answers": [
+      {
+        "label": "Dune",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Dune Messiah",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Children of Dune",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "God Emperor of Dune",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Heretics of Dune",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Chapterhouse Dune",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-07a17dca792a",
+    "category": "BOOKS",
+    "prompt": "Name one of Daenerys Targaryen's three dragons in the A Song of Ice and Fire novels.",
+    "explanation": "The three dragons hatched by Daenerys in the original novel series, not all dragons in Westerosi history. Rarity is editorial, not a population measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Daenerys_Targaryen"
+    ],
+    "answers": [
+      {
+        "label": "Drogon",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Rhaegal",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Viserion",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-f9684a4ed0e7",
+    "category": "MOVIES",
+    "prompt": "Name a main-series Toy Story feature film released by the end of 2019.",
+    "explanation": "The four numbered feature films available through 2019; shorts, television specials and spin-offs excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Toy_Story_(franchise)"
+    ],
+    "answers": [
+      {
+        "label": "Toy Story",
+        "aliases": [
+          "Toy Story 1"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Toy Story 2",
+        "aliases": [
+          "Toy Story II"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Toy Story 3",
+        "aliases": [
+          "Toy Story III"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Toy Story 4",
+        "aliases": [
+          "Toy Story IV"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-feeb4c76ec72",
+    "category": "MOVIES",
+    "prompt": "Name a film in Pixar's Cars trilogy.",
+    "explanation": "The three numbered Cars features, not Planes or short films. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Cars_(franchise)"
+    ],
+    "answers": [
+      {
+        "label": "Cars",
+        "aliases": [
+          "Cars 1"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Cars 2",
+        "aliases": [
+          "Cars II"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Cars 3",
+        "aliases": [
+          "Cars III"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-eea084810c0d",
+    "category": "MOVIES",
+    "prompt": "Name a Kung Fu Panda feature film released by the end of 2016.",
+    "explanation": "The first three feature films; later installments and television series are outside the dated scope. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kung_Fu_Panda"
+    ],
+    "answers": [
+      {
+        "label": "Kung Fu Panda",
+        "aliases": [
+          "Kung Fu Panda 1"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Kung Fu Panda 2",
+        "aliases": [
+          "Kung Fu Panda II"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Kung Fu Panda 3",
+        "aliases": [
+          "Kung Fu Panda III"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-8fcec4122d42",
+    "category": "MOVIES",
+    "prompt": "Name an Indiana Jones feature film starring Harrison Ford as Indiana Jones.",
+    "explanation": "The five Harrison Ford-led theatrical features; television productions excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Indiana_Jones"
+    ],
+    "answers": [
+      {
+        "label": "Raiders of the Lost Ark",
+        "aliases": [
+          "Indiana Jones and the Raiders of the Lost Ark"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Indiana Jones and the Temple of Doom",
+        "aliases": [
+          "Temple of Doom"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Indiana Jones and the Last Crusade",
+        "aliases": [
+          "The Last Crusade"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Indiana Jones and the Kingdom of the Crystal Skull",
+        "aliases": [
+          "Kingdom of the Crystal Skull"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Indiana Jones and the Dial of Destiny",
+        "aliases": [
+          "Dial of Destiny"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-cf4685070b18",
+    "category": "MOVIES",
+    "prompt": "Name a film in the original Jurassic Park trilogy, before Jurassic World.",
+    "explanation": "The original three feature films released from 1993 through 2001. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jurassic_Park"
+    ],
+    "answers": [
+      {
+        "label": "Jurassic Park",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "The Lost World Jurassic Park",
+        "aliases": [
+          "Jurassic Park 2",
+          "Lost World Jurassic Park"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Jurassic Park III",
+        "aliases": [
+          "Jurassic Park 3"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-281b9fff6461",
+    "category": "MOVIES",
+    "prompt": "Name a film in the main Madagascar animated trilogy.",
+    "explanation": "The three main-series Madagascar feature films; Penguins of Madagascar is a spin-off. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Madagascar_(franchise)"
+    ],
+    "answers": [
+      {
+        "label": "Madagascar",
+        "aliases": [
+          "Madagascar 1"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Madagascar Escape 2 Africa",
+        "aliases": [
+          "Madagascar 2"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Madagascar 3 Europe's Most Wanted",
+        "aliases": [
+          "Madagascar 3"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-9d7c91082325",
+    "category": "MOVIES",
+    "prompt": "Name a Shrek main-series feature film released by the end of 2010.",
+    "explanation": "The four original Shrek features released through 2010; Puss in Boots spin-offs excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Shrek_(franchise)"
+    ],
+    "answers": [
+      {
+        "label": "Shrek",
+        "aliases": [
+          "Shrek 1"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Shrek 2",
+        "aliases": [
+          "Shrek II"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Shrek the Third",
+        "aliases": [
+          "Shrek 3"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Shrek Forever After",
+        "aliases": [
+          "Shrek 4",
+          "The Final Chapter"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-9f5445239f47",
+    "category": "MOVIES",
+    "prompt": "Name a film in DreamWorks' original animated How to Train Your Dragon trilogy.",
+    "explanation": "The three animated main-series features, not television series or live-action remakes. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/How_to_Train_Your_Dragon_(franchise)"
+    ],
+    "answers": [
+      {
+        "label": "How to Train Your Dragon",
+        "aliases": [
+          "How to Train Your Dragon 1"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "How to Train Your Dragon 2",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "How to Train Your Dragon The Hidden World",
+        "aliases": [
+          "The Hidden World",
+          "How to Train Your Dragon 3"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-9a5a0ca0b545",
+    "category": "MOVIES",
+    "prompt": "Name a film in Edgar Wright's Three Flavours Cornetto trilogy.",
+    "explanation": "The three feature films linked by the Cornetto theme; this is not a continuing narrative trilogy. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Three_Flavours_Cornetto"
+    ],
+    "answers": [
+      {
+        "label": "Shaun of the Dead",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Hot Fuzz",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "The World's End",
+        "aliases": [
+          "Worlds End"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-b641eab59e7d",
+    "category": "MOVIES",
+    "prompt": "Name a film in the original Matrix trilogy released by the end of 2003.",
+    "explanation": "The three live-action films released through 2003; The Animatrix and later sequels excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Matrix_(franchise)"
+    ],
+    "answers": [
+      {
+        "label": "The Matrix",
+        "aliases": [
+          "Matrix"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "The Matrix Reloaded",
+        "aliases": [
+          "Matrix Reloaded"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "The Matrix Revolutions",
+        "aliases": [
+          "Matrix Revolutions"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-dd9a235ea4b2",
+    "category": "MUSIC",
+    "prompt": "Name a member of Pink Floyd's classic four-person 1970s lineup.",
+    "explanation": "The four members who recorded The Dark Side of the Moon; Syd Barrett and later touring musicians excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pink_Floyd"
+    ],
+    "answers": [
+      {
+        "label": "David Gilmour",
+        "aliases": [
+          "Gilmour"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Roger Waters",
+        "aliases": [
+          "Waters"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Nick Mason",
+        "aliases": [
+          "Mason"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Richard Wright",
+        "aliases": [
+          "Rick Wright",
+          "Wright"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-fced20795127",
+    "category": "MUSIC",
+    "prompt": "Name a member of Led Zeppelin's original four-person lineup.",
+    "explanation": "The four original band members; guest performers and reunion substitutes excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Led_Zeppelin"
+    ],
+    "answers": [
+      {
+        "label": "Robert Plant",
+        "aliases": [
+          "Plant"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Jimmy Page",
+        "aliases": [
+          "Page"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "John Bonham",
+        "aliases": [
+          "Bonham"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "John Paul Jones",
+        "aliases": [
+          "John Baldwin"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-402e343b98c5",
+    "category": "MUSIC",
+    "prompt": "Name a member of the Who's classic four-person lineup.",
+    "explanation": "The classic 1960s-1970s lineup; subsequent drummers and touring musicians excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Who"
+    ],
+    "answers": [
+      {
+        "label": "Roger Daltrey",
+        "aliases": [
+          "Daltrey"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Pete Townshend",
+        "aliases": [
+          "Townshend"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Keith Moon",
+        "aliases": [
+          "Moon"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "John Entwistle",
+        "aliases": [
+          "Entwistle"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-a2fb90d738f4",
+    "category": "MUSIC",
+    "prompt": "Name a Metallica member who performed on the 1991 self-titled Black Album.",
+    "explanation": "The four credited band members on the 1991 album, not the band's present-day lineup. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Metallica_(album)"
+    ],
+    "answers": [
+      {
+        "label": "James Hetfield",
+        "aliases": [
+          "Hetfield"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Lars Ulrich",
+        "aliases": [
+          "Ulrich"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Kirk Hammett",
+        "aliases": [
+          "Hammett"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Jason Newsted",
+        "aliases": [
+          "Newsted"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-52da427ccf2b",
+    "category": "MUSIC",
+    "prompt": "Name a mode of the major scale in the conventional seven-mode system.",
+    "explanation": "The seven diatonic modes of the major scale; modes of melodic and harmonic minor excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mode_(music)"
+    ],
+    "answers": [
+      {
+        "label": "Ionian",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Dorian",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Phrygian",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Lydian",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Mixolydian",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Aeolian",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Locrian",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-a0286957a835",
+    "category": "MUSIC",
+    "prompt": "Name a primary major triad in the key of C major by its root or chord name.",
+    "explanation": "The I, IV and V major triads in C major; secondary triads are not requested. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Primary_triad"
+    ],
+    "answers": [
+      {
+        "label": "C",
+        "aliases": [
+          "C major",
+          "C major chord",
+          "Tonic"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "F",
+        "aliases": [
+          "F major",
+          "F major chord",
+          "Subdominant"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "G",
+        "aliases": [
+          "G major",
+          "G major chord",
+          "Dominant"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-661a89350970",
+    "category": "MUSIC",
+    "prompt": "Name an instrument type in a standard classical string quartet.",
+    "explanation": "Two violins, one viola and one cello give three distinct instrument types; double bass is not in the standard lineup. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/String_quartet"
+    ],
+    "answers": [
+      {
+        "label": "Violin",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Viola",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Cello",
+        "aliases": [
+          "Violoncello"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-c9efb98b323a",
+    "category": "MUSIC",
+    "prompt": "Name an instrument in the standard reed-trio ensemble.",
+    "explanation": "The conventional trio d'anches instrumentation, not every instrument that uses a reed. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Reed_trio"
+    ],
+    "answers": [
+      {
+        "label": "Oboe",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Clarinet",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Bassoon",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-0a8ac98f7f55",
+    "category": "MUSIC",
+    "prompt": "Name an instrument type in a standard classical piano trio.",
+    "explanation": "The standard piano-violin-cello ensemble; alternative scoring is outside the stated standard. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Piano_trio"
+    ],
+    "answers": [
+      {
+        "label": "Piano",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Violin",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Cello",
+        "aliases": [
+          "Violoncello"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-ae83038bf6b2",
+    "category": "MUSIC",
+    "prompt": "Name a saxophone type in a standard SATB saxophone quartet.",
+    "explanation": "SATB quartet instrumentation; bass and sopranino saxophones excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Saxophone_quartet"
+    ],
+    "answers": [
+      {
+        "label": "Soprano",
+        "aliases": [
+          "Soprano saxophone"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Alto",
+        "aliases": [
+          "Alto saxophone"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Tenor",
+        "aliases": [
+          "Tenor saxophone"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Baritone",
+        "aliases": [
+          "Baritone saxophone"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-2a710f138591",
+    "category": "GAMES",
+    "prompt": "Name a resource produced by terrain hexes in the original Catan base game.",
+    "explanation": "The five basic resources, not expansion resources or gold as a wildcard. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Catan"
+    ],
+    "answers": [
+      {
+        "label": "Wood",
+        "aliases": [
+          "Lumber",
+          "Timber"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Brick",
+        "aliases": [
+          "Clay"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Wool",
+        "aliases": [
+          "Sheep"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Grain",
+        "aliases": [
+          "Wheat"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Ore",
+        "aliases": [
+          "Stone"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-8bf0c85d5bf4",
+    "category": "GAMES",
+    "prompt": "Name a development-card type in the original Catan base game.",
+    "explanation": "Five functional development-card types; different artwork titles on victory-point cards remain one type. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Catan"
+    ],
+    "answers": [
+      {
+        "label": "Knight",
+        "aliases": [
+          "Soldier",
+          "Knight card"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Victory Point",
+        "aliases": [
+          "Victory points",
+          "Victory Point card"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Road Building",
+        "aliases": [
+          "Road Building card"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Year of Plenty",
+        "aliases": [
+          "Discovery",
+          "Year of Plenty card"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Monopoly",
+        "aliases": [
+          "Monopoly card"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-020ac9b7a76c",
+    "category": "GAMES",
+    "prompt": "Name one of the three numbered tile suits in traditional mahjong.",
+    "explanation": "Only the three numbered suits, not honor tiles, flowers or seasons. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mahjong_tiles"
+    ],
+    "answers": [
+      {
+        "label": "Bamboo",
+        "aliases": [
+          "Bamboos",
+          "Sticks",
+          "Bams"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Circles",
+        "aliases": [
+          "Dots",
+          "Coins"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Characters",
+        "aliases": [
+          "Numbers",
+          "Myriads",
+          "Craks"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-aadf3463383f",
+    "category": "GAMES",
+    "prompt": "Name a broad category in the traditional suited-honor-bonus grouping of mahjong tiles.",
+    "explanation": "The three broad tile categories; suits include numbered tiles, honors include winds and dragons, and bonus tiles include flowers and seasons. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mahjong_tiles"
+    ],
+    "answers": [
+      {
+        "label": "Suited tiles",
+        "aliases": [
+          "Suits",
+          "Suit tiles"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Honor tiles",
+        "aliases": [
+          "Honours",
+          "Honors",
+          "Honour tiles"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Bonus tiles",
+        "aliases": [
+          "Bonus",
+          "Flower and season tiles"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-b3539723b79a",
+    "category": "GAMES",
+    "prompt": "Name a dragon honor tile in traditional mahjong.",
+    "explanation": "The three dragon honors, distinct from wind tiles and decorative animal tiles. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mahjong_tiles"
+    ],
+    "answers": [
+      {
+        "label": "Red dragon",
+        "aliases": [
+          "Red"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Green dragon",
+        "aliases": [
+          "Green"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "White dragon",
+        "aliases": [
+          "White",
+          "Blank dragon"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-b0cb8cc8e162",
+    "category": "GAMES",
+    "prompt": "Name an ability score in the standard six-ability Dungeons & Dragons system.",
+    "explanation": "The six core ability scores, not skills, saving throws or derived statistics. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ability_score"
+    ],
+    "answers": [
+      {
+        "label": "Strength",
+        "aliases": [
+          "STR"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Dexterity",
+        "aliases": [
+          "DEX"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Constitution",
+        "aliases": [
+          "CON"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Intelligence",
+        "aliases": [
+          "INT"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Wisdom",
+        "aliases": [
+          "WIS"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Charisma",
+        "aliases": [
+          "CHA"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-8b118b115555",
+    "category": "GAMES",
+    "prompt": "Name an alignment in Dungeons & Dragons' classic nine-alignment grid.",
+    "explanation": "The classic three-by-three alignment grid; unaligned is outside that nine-alignment set. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)"
+    ],
+    "answers": [
+      {
+        "label": "Lawful good",
+        "aliases": [
+          "LG"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Neutral good",
+        "aliases": [
+          "NG"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Chaotic good",
+        "aliases": [
+          "CG"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Lawful neutral",
+        "aliases": [
+          "LN"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "True neutral",
+        "aliases": [
+          "Neutral",
+          "TN",
+          "NN"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Chaotic neutral",
+        "aliases": [
+          "CN"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Lawful evil",
+        "aliases": [
+          "LE"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Neutral evil",
+        "aliases": [
+          "NE"
+        ],
+        "tier": 4
+      },
+      {
+        "label": "Chaotic evil",
+        "aliases": [
+          "CE"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-177a58c636fe",
+    "category": "GAMES",
+    "prompt": "Name a regular multi-act zone in the original 1991 Sonic the Hedgehog for Mega Drive/Genesis.",
+    "explanation": "Six regular zones; the single-boss Final Zone and Special Stages are explicitly excluded. Not the Master System version. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://info.sonicretro.org/Sonic_the_Hedgehog_(16-bit)"
+    ],
+    "answers": [
+      {
+        "label": "Green Hill",
+        "aliases": [
+          "Green Hill Zone"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Marble",
+        "aliases": [
+          "Marble Zone"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Spring Yard",
+        "aliases": [
+          "Spring Yard Zone"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Labyrinth",
+        "aliases": [
+          "Labyrinth Zone"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Star Light",
+        "aliases": [
+          "Star Light Zone"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Scrap Brain",
+        "aliases": [
+          "Scrap Brain Zone"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-3e59e0751d4b",
+    "category": "GAMES",
+    "prompt": "Name a component of the Triforce in The Legend of Zelda.",
+    "explanation": "The three canonical pieces of the Triforce, not character names or fan-created fourth pieces. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Triforce"
+    ],
+    "answers": [
+      {
+        "label": "Power",
+        "aliases": [
+          "Triforce of Power"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Wisdom",
+        "aliases": [
+          "Triforce of Wisdom"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Courage",
+        "aliases": [
+          "Triforce of Courage"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-7ade5d48a023",
+    "category": "GAMES",
+    "prompt": "Name a Pokemon type present in the original Generation I games.",
+    "explanation": "The original fifteen types; Dark and Steel debuted in Generation II and Fairy in Generation VI. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://bulbapedia.bulbagarden.net/wiki/Type"
+    ],
+    "answers": [
+      {
+        "label": "Normal",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Fire",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Water",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Grass",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Electric",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Ice",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Fighting",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Poison",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Ground",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Flying",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Psychic",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Bug",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Rock",
+        "aliases": [],
+        "tier": 4
+      },
+      {
+        "label": "Ghost",
+        "aliases": [],
+        "tier": 4
+      },
+      {
+        "label": "Dragon",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-08b6137644bc",
+    "category": "HISTORY",
+    "prompt": "Name one of the Seven Wonders of the Ancient World.",
+    "explanation": "The traditional ancient list; the existence of the Hanging Gardens is debated, but its place on this historical list is not. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Seven_Wonders_of_the_Ancient_World"
+    ],
+    "answers": [
+      {
+        "label": "Great Pyramid of Giza",
+        "aliases": [
+          "Great Pyramid",
+          "Pyramid of Khufu"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Hanging Gardens of Babylon",
+        "aliases": [
+          "Hanging Gardens"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Statue of Zeus at Olympia",
+        "aliases": [
+          "Statue of Zeus"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Temple of Artemis at Ephesus",
+        "aliases": [
+          "Temple of Artemis"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Mausoleum at Halicarnassus",
+        "aliases": [
+          "Mausoleum of Halicarnassus"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Colossus of Rhodes",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Lighthouse of Alexandria",
+        "aliases": [
+          "Pharos of Alexandria",
+          "Pharos"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-ba56359edf0c",
+    "category": "HISTORY",
+    "prompt": "Name a Roman emperor of the Flavian dynasty.",
+    "explanation": "The three Flavian emperors who ruled from 69 to 96 CE. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Flavian_dynasty"
+    ],
+    "answers": [
+      {
+        "label": "Vespasian",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Titus",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Domitian",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-79a278ac9aae",
+    "category": "HISTORY",
+    "prompt": "Name a Roman emperor in the traditional Five Good Emperors grouping.",
+    "explanation": "The conventional five from Nerva to Marcus Aurelius, excluding Lucius Verus and Commodus. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nerva%E2%80%93Antonine_dynasty"
+    ],
+    "answers": [
+      {
+        "label": "Marcus Aurelius",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Trajan",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Hadrian",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Nerva",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Antoninus Pius",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-4e5f630eca47",
+    "category": "HISTORY",
+    "prompt": "Name a Roman emperor of the Julio-Claudian dynasty.",
+    "explanation": "The five emperors from Augustus through Nero, not other members of their extended families. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Julio-Claudian_dynasty"
+    ],
+    "answers": [
+      {
+        "label": "Augustus",
+        "aliases": [
+          "Octavian"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Tiberius",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Caligula",
+        "aliases": [
+          "Gaius"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Claudius",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Nero",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-bcfee7eb9e4e",
+    "category": "HISTORY",
+    "prompt": "Name an emperor who ruled Rome during the Year of the Four Emperors, 69 CE.",
+    "explanation": "The four reigning emperors of 69 CE; Nero's reign ended in 68 CE. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Year_of_the_Four_Emperors"
+    ],
+    "answers": [
+      {
+        "label": "Vespasian",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Galba",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Otho",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Vitellius",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-35aa8eb156c8",
+    "category": "HISTORY",
+    "prompt": "Name a crowned English monarch of the Tudor dynasty.",
+    "explanation": "The five crowned Tudor monarchs. The disputed and uncrowned Lady Jane Grey is outside this stated scope. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/House_of_Tudor"
+    ],
+    "answers": [
+      {
+        "label": "Henry VII",
+        "aliases": [
+          "Henry 7"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Henry VIII",
+        "aliases": [
+          "Henry 8"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Edward VI",
+        "aliases": [
+          "Edward 6"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Mary I",
+        "aliases": [
+          "Mary 1"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Elizabeth I",
+        "aliases": [
+          "Elizabeth 1"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-4ca18937fe84",
+    "category": "HISTORY",
+    "prompt": "Name a member of the Central Powers in World War I.",
+    "explanation": "The four principal Central Powers, not occupied client states or loosely associated forces. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Central_Powers"
+    ],
+    "answers": [
+      {
+        "label": "German Empire",
+        "aliases": [
+          "Germany"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Austria-Hungary",
+        "aliases": [
+          "Austro-Hungarian Empire"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Ottoman Empire",
+        "aliases": [
+          "Ottoman Turkey"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Bulgaria",
+        "aliases": [
+          "Kingdom of Bulgaria"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-777ac8b7a80e",
+    "category": "HISTORY",
+    "prompt": "Name a country that originally signed the Tripartite Pact in September 1940.",
+    "explanation": "The original three signatories on 27 September 1940, not countries that joined later. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tripartite_Pact"
+    ],
+    "answers": [
+      {
+        "label": "Germany",
+        "aliases": [
+          "Nazi Germany"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Italy",
+        "aliases": [
+          "Kingdom of Italy"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Japan",
+        "aliases": [
+          "Empire of Japan"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-5539906b7349",
+    "category": "HISTORY",
+    "prompt": "Name a US president assassinated while in office, through the end of 2024.",
+    "explanation": "Four US presidents died from assassination while serving; attempts survived and deaths after leaving office excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/List_of_assassinated_and_executed_heads_of_state_and_government"
+    ],
+    "answers": [
+      {
+        "label": "Abraham Lincoln",
+        "aliases": [
+          "Lincoln"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "John F Kennedy",
+        "aliases": [
+          "John Kennedy",
+          "JFK",
+          "Kennedy"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "James A Garfield",
+        "aliases": [
+          "James Garfield",
+          "Garfield"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "William McKinley",
+        "aliases": [
+          "McKinley"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-e764371f71ec",
+    "category": "HISTORY",
+    "prompt": "Name a pharaoh whose principal pyramid is one of the three at Giza.",
+    "explanation": "The three main royal pyramids, not smaller satellite or queens' pyramids. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Giza_pyramid_complex"
+    ],
+    "answers": [
+      {
+        "label": "Khufu",
+        "aliases": [
+          "Cheops"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Khafre",
+        "aliases": [
+          "Chephren"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Menkaure",
+        "aliases": [
+          "Mykerinos"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-a40dc205df65",
+    "category": "FOOD",
+    "prompt": "Name a liquid ingredient in the IBA's classic Margarita recipe.",
+    "explanation": "The IBA recipe's three liquid ingredients. Salt on the rim is not a liquid ingredient. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://iba-world.com/iba-cocktail/margarita/",
+      "https://en.wikipedia.org/wiki/Margarita"
+    ],
+    "answers": [
+      {
+        "label": "Tequila",
+        "aliases": [
+          "Blanco tequila",
+          "Tequila blanco",
+          "Silver tequila"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Triple sec",
+        "aliases": [
+          "Orange liqueur",
+          "Cointreau"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Lime juice",
+        "aliases": [
+          "Lime"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-aa90bae7c2b0",
+    "category": "FOOD",
+    "prompt": "Name a base ingredient in the IBA's classic Daiquiri, excluding ice.",
+    "explanation": "The three ingredients of the plain classic Daiquiri, not frozen fruit variations. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://iba-world.com/iba-cocktail/daiquiri/",
+      "https://en.wikipedia.org/wiki/Daiquiri"
+    ],
+    "answers": [
+      {
+        "label": "White rum",
+        "aliases": [
+          "Light rum",
+          "Rum",
+          "White Cuban rum",
+          "White Cuban ron"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Lime juice",
+        "aliases": [
+          "Lime"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Sugar",
+        "aliases": [
+          "Superfine sugar",
+          "White sugar",
+          "Caster sugar"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-e413d3476d59",
+    "category": "FOOD",
+    "prompt": "Name one of the three base ingredients of a classic White Russian cocktail.",
+    "explanation": "The classic vodka-coffee-liqueur-cream drink; milk variants and optional garnishes are excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/White_Russian_(cocktail)"
+    ],
+    "answers": [
+      {
+        "label": "Vodka",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Coffee liqueur",
+        "aliases": [
+          "Kahlua"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Cream",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-dadcba76077b",
+    "category": "FOOD",
+    "prompt": "Name a liquid ingredient in the IBA's Alexander cocktail, excluding garnish.",
+    "explanation": "The IBA cognac version, sometimes called Brandy Alexander. Nutmeg garnish is excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://iba-world.com/iba-cocktail/alexander/",
+      "https://en.wikipedia.org/wiki/Alexander_(cocktail)"
+    ],
+    "answers": [
+      {
+        "label": "Cognac",
+        "aliases": [
+          "Brandy"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Creme de cacao",
+        "aliases": [
+          "Brown creme de cacao",
+          "Dark creme de cacao"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Cream",
+        "aliases": [
+          "Fresh cream"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-ed4790c8eb0d",
+    "category": "FOOD",
+    "prompt": "Name a flavor in traditional Neapolitan ice cream.",
+    "explanation": "The classic three-flavor chocolate-vanilla-strawberry combination, not regional substitutions. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Neapolitan_ice_cream"
+    ],
+    "answers": [
+      {
+        "label": "Chocolate",
+        "aliases": [
+          "Chocolate ice cream"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Vanilla",
+        "aliases": [
+          "Vanilla ice cream"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Strawberry",
+        "aliases": [
+          "Strawberry ice cream"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-a092b55cba00",
+    "category": "FOOD",
+    "prompt": "Name a category in the Scotch Whisky Regulations' five-category classification.",
+    "explanation": "The five legal Scotch whisky categories, not marketing descriptions such as single cask or cask strength. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Scotch_whisky"
+    ],
+    "answers": [
+      {
+        "label": "Single Malt Scotch Whisky",
+        "aliases": [
+          "Single malt",
+          "Single Malt Scotch"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Single Grain Scotch Whisky",
+        "aliases": [
+          "Single grain",
+          "Single Grain Scotch"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Blended Scotch Whisky",
+        "aliases": [
+          "Blended Scotch"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Blended Malt Scotch Whisky",
+        "aliases": [
+          "Blended malt",
+          "Vatted malt",
+          "Blended Malt Scotch"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Blended Grain Scotch Whisky",
+        "aliases": [
+          "Blended grain",
+          "Blended Grain Scotch"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-bec94028b003",
+    "category": "FOOD",
+    "prompt": "Name a pasta dish in Rome's traditional four-pasta quartet.",
+    "explanation": "The customary Roman quartet, not an unrestricted list of all pasta dishes served in Rome. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Roman_cuisine"
+    ],
+    "answers": [
+      {
+        "label": "Carbonara",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Cacio e pepe",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Amatriciana",
+        "aliases": [
+          "All'amatriciana"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Gricia",
+        "aliases": [
+          "Alla gricia"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-467bcae95a4b",
+    "category": "FOOD",
+    "prompt": "Name a cacao variety in the traditional three-variety classification used in chocolate making.",
+    "explanation": "Traditional horticultural classification; Trinitario is a hybrid. Modern genetic population groupings are outside this three-variety model. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Cocoa_bean"
+    ],
+    "answers": [
+      {
+        "label": "Criollo",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Forastero",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Trinitario",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-c95821be811e",
+    "category": "FOOD",
+    "prompt": "Name an ingredient in the IBA's Irish Coffee recipe.",
+    "explanation": "The four classic ingredients; non-Irish spirits and flavored liqueurs are outside the IBA recipe. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://iba-world.com/iba-cocktail/irish-coffee/",
+      "https://en.wikipedia.org/wiki/Irish_coffee"
+    ],
+    "answers": [
+      {
+        "label": "Irish whiskey",
+        "aliases": [
+          "Whiskey"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Hot coffee",
+        "aliases": [
+          "Coffee"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Sugar",
+        "aliases": [
+          "Brown sugar",
+          "Sugar syrup",
+          "Simple syrup"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Cream",
+        "aliases": [
+          "Fresh cream",
+          "Heavy cream",
+          "Whipping cream",
+          "Double cream"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261113-facae5552bd4",
+    "category": "FOOD",
+    "prompt": "Name an ingredient in traditional seven-ingredient pesto genovese.",
+    "explanation": "Traditional basil pesto with both hard cheeses; vegan substitutions and unrelated pesto styles are excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pesto"
+    ],
+    "answers": [
+      {
+        "label": "Basil",
+        "aliases": [
+          "Genovese basil"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Extra virgin olive oil",
+        "aliases": [
+          "Olive oil",
+          "EVOO"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Pine nuts",
+        "aliases": [
+          "Pine kernels"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Garlic",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Parmigiano Reggiano",
+        "aliases": [
+          "Parmesan",
+          "Grana Padano",
+          "Grana"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Pecorino",
+        "aliases": [
+          "Pecorino Sardo"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Salt",
+        "aliases": [
+          "Coarse salt",
+          "Sea salt"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-13",
+    "batch": "2026-11-13-daily"
   }
 ];

@@ -1,0 +1,2990 @@
+{
+  "batch": "2026-11-13-daily",
+  "reviewDateLocal": "2026-11-13",
+  "releaseDateUTC": "2026-11-13",
+  "questionCount": 100,
+  "answerCount": 460,
+  "categoryCounts": {
+    "GEOGRAPHY": 10,
+    "SPACE": 10,
+    "SCIENCE": 10,
+    "NATURE": 10,
+    "BOOKS": 10,
+    "MOVIES": 10,
+    "MUSIC": 10,
+    "GAMES": 10,
+    "HISTORY": 10,
+    "FOOD": 10
+  },
+  "method": "Fetched and inspected source text for each finite set, checked canonical names or accepted aliases against it, reviewed stated boundaries and historical cutoffs. Name presence is a supporting structural signal, not an independent proof of every claim. No copyrighted page bodies are committed.",
+  "correctionsBeforePublishing": [
+    "Rejected the Pygoscelis three-species question after the source listed a fourth living species; replaced it with the stable three-germ-layer set.",
+    "Replaced nonexistent Dickens and Hobbit URLs with actual bibliography/character sources.",
+    "Checked the Sonic zone list against Sonic Retro and Generation-I Pokemon types against the dedicated type reference.",
+    "Corrected IBA Daiquiri ingredient from syrup to superfine sugar; attached IBA source recipes.",
+    "Added Grana Padano as an accepted traditional pesto cheese alternative.",
+    "Replaced a repetitive compass-direction answer set with mahjong tile categories."
+  ],
+  "questions": [
+    {
+      "id": "daily-20261113-c9846318fece",
+      "category": "GEOGRAPHY",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Geography_of_Austria"
+      ],
+      "sourceTextSha256": "5c3e96c1d9af42b5034d6d154bde51698ae31d75f1829e21754a1aea958bc17b",
+      "answerNamePresence": [
+        {
+          "label": "Germany",
+          "foundInSource": true
+        },
+        {
+          "label": "Italy",
+          "foundInSource": true
+        },
+        {
+          "label": "Switzerland",
+          "foundInSource": true
+        },
+        {
+          "label": "Hungary",
+          "foundInSource": true
+        },
+        {
+          "label": "Czechia",
+          "foundInSource": true
+        },
+        {
+          "label": "Slovakia",
+          "foundInSource": true
+        },
+        {
+          "label": "Slovenia",
+          "foundInSource": true
+        },
+        {
+          "label": "Liechtenstein",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "Only sovereign neighbors sharing a land border with Austria; common English country names accepted. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-dafbd99989e3",
+      "category": "GEOGRAPHY",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Geography_of_Switzerland"
+      ],
+      "sourceTextSha256": "e1e6b9bc3e086a28552f22dc0afaf4b366529b0fa0b7c631d0f1540bbd7d239f",
+      "answerNamePresence": [
+        {
+          "label": "France",
+          "foundInSource": true
+        },
+        {
+          "label": "Germany",
+          "foundInSource": true
+        },
+        {
+          "label": "Italy",
+          "foundInSource": true
+        },
+        {
+          "label": "Austria",
+          "foundInSource": true
+        },
+        {
+          "label": "Liechtenstein",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The five sovereign countries bordering Switzerland by land. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-f92374077615",
+      "category": "GEOGRAPHY",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Geography_of_Argentina"
+      ],
+      "sourceTextSha256": "44603150621462d44f41fb64eb1ccd868781e1bf26e5630e932ee650febe64d2",
+      "answerNamePresence": [
+        {
+          "label": "Brazil",
+          "foundInSource": true
+        },
+        {
+          "label": "Chile",
+          "foundInSource": true
+        },
+        {
+          "label": "Uruguay",
+          "foundInSource": true
+        },
+        {
+          "label": "Paraguay",
+          "foundInSource": true
+        },
+        {
+          "label": "Bolivia",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The five land neighbors of Argentina; maritime boundaries are excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-af950b91dbb2",
+      "category": "GEOGRAPHY",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Geography_of_Thailand"
+      ],
+      "sourceTextSha256": "33dc0ba8d7f55da4c294c942cc0ccd6c11ec19748433248ff261a387f5e59f8a",
+      "answerNamePresence": [
+        {
+          "label": "Malaysia",
+          "foundInSource": true
+        },
+        {
+          "label": "Cambodia",
+          "foundInSource": true
+        },
+        {
+          "label": "Myanmar",
+          "foundInSource": true
+        },
+        {
+          "label": "Laos",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The four sovereign countries that share a land border with Thailand. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-5c726fedcb5a",
+      "category": "GEOGRAPHY",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Geography_of_South_Africa"
+      ],
+      "sourceTextSha256": "20d4d90f799d1903a5afd21640de7990646cabea5e0636cbe8a56016f93e4a78",
+      "answerNamePresence": [
+        {
+          "label": "Namibia",
+          "foundInSource": true
+        },
+        {
+          "label": "Botswana",
+          "foundInSource": true
+        },
+        {
+          "label": "Zimbabwe",
+          "foundInSource": true
+        },
+        {
+          "label": "Mozambique",
+          "foundInSource": true
+        },
+        {
+          "label": "Eswatini",
+          "foundInSource": true
+        },
+        {
+          "label": "Lesotho",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "Includes the enclaved country Lesotho; maritime neighbors are excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-4dc3cd442e64",
+      "category": "GEOGRAPHY",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Geography_of_Kenya"
+      ],
+      "sourceTextSha256": "ea923c5e6baff6dcfcd07506605ec487ddeebe3cdc561a879f2b852fb004fb11",
+      "answerNamePresence": [
+        {
+          "label": "Tanzania",
+          "foundInSource": true
+        },
+        {
+          "label": "Uganda",
+          "foundInSource": true
+        },
+        {
+          "label": "Ethiopia",
+          "foundInSource": true
+        },
+        {
+          "label": "Somalia",
+          "foundInSource": true
+        },
+        {
+          "label": "South Sudan",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The five sovereign land neighbors of Kenya. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-eb91c6f28096",
+      "category": "GEOGRAPHY",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Geography_of_Poland"
+      ],
+      "sourceTextSha256": "c0fdde1eea10fc4351f8291c471667217cdc396899d061e1438e2a3f6bbfd509",
+      "answerNamePresence": [
+        {
+          "label": "Germany",
+          "foundInSource": true
+        },
+        {
+          "label": "Czechia",
+          "foundInSource": true
+        },
+        {
+          "label": "Slovakia",
+          "foundInSource": true
+        },
+        {
+          "label": "Ukraine",
+          "foundInSource": true
+        },
+        {
+          "label": "Belarus",
+          "foundInSource": true
+        },
+        {
+          "label": "Lithuania",
+          "foundInSource": true
+        },
+        {
+          "label": "Russia",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "Includes Russia through Kaliningrad; sea borders are excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-2cda1280544c",
+      "category": "GEOGRAPHY",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Geography_of_Greece"
+      ],
+      "sourceTextSha256": "52e022027e2f4dcfa07709f63a115605662fa501503d87e5e295ed3b853ca254",
+      "answerNamePresence": [
+        {
+          "label": "Albania",
+          "foundInSource": true
+        },
+        {
+          "label": "North Macedonia",
+          "foundInSource": true
+        },
+        {
+          "label": "Bulgaria",
+          "foundInSource": true
+        },
+        {
+          "label": "Turkey",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "Only the four sovereign land neighbors; island and sea proximity do not count. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-93d8c6675007",
+      "category": "GEOGRAPHY",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Borneo"
+      ],
+      "sourceTextSha256": "0a2c90742465f8e3a1be10772fbb3a61fa6f75f23082a56205f0a3963801df27",
+      "answerNamePresence": [
+        {
+          "label": "Indonesia",
+          "foundInSource": true
+        },
+        {
+          "label": "Malaysia",
+          "foundInSource": true
+        },
+        {
+          "label": "Brunei",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The three sovereign states with territory on Borneo, not provinces or former colonial powers. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-206c8e0e5aa1",
+      "category": "GEOGRAPHY",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Geography_of_New_Zealand"
+      ],
+      "sourceTextSha256": "9a9708755dd9530c8599e724013607748bd25f0334b1b6da70b05d1a63a98509",
+      "answerNamePresence": [
+        {
+          "label": "North Island",
+          "foundInSource": true
+        },
+        {
+          "label": "South Island",
+          "foundInSource": true
+        },
+        {
+          "label": "Stewart Island",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The North, South and Stewart islands are the three-main-island grouping; smaller offshore islands excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-8329a10e1f0c",
+      "category": "SPACE",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Moons_of_Uranus"
+      ],
+      "sourceTextSha256": "1dbed6eec926a94041071e77d21bb985b9eea396e454dc507f9f4e7dcb17c5d3",
+      "answerNamePresence": [
+        {
+          "label": "Titania",
+          "foundInSource": true
+        },
+        {
+          "label": "Oberon",
+          "foundInSource": true
+        },
+        {
+          "label": "Ariel",
+          "foundInSource": true
+        },
+        {
+          "label": "Umbriel",
+          "foundInSource": true
+        },
+        {
+          "label": "Miranda",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The five large rounded moons; the many smaller irregular and inner moons are not in scope. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-d478b56252a2",
+      "category": "SPACE",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mercury_Seven"
+      ],
+      "sourceTextSha256": "b55c0f5bf9405cc9e465e6eed044cc1c2b2b4465968aa5de69a49add9f433830",
+      "answerNamePresence": [
+        {
+          "label": "John Glenn",
+          "foundInSource": true
+        },
+        {
+          "label": "Alan Shepard",
+          "foundInSource": true
+        },
+        {
+          "label": "Gus Grissom",
+          "foundInSource": true
+        },
+        {
+          "label": "Scott Carpenter",
+          "foundInSource": true
+        },
+        {
+          "label": "Wally Schirra",
+          "foundInSource": true
+        },
+        {
+          "label": "Gordon Cooper",
+          "foundInSource": true
+        },
+        {
+          "label": "Deke Slayton",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "NASA's original seven astronauts selected in 1959, not everyone who flew a Mercury spacecraft. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-ab1db28ee116",
+      "category": "SPACE",
+      "sources": [
+        "https://www.nasa.gov/mission/apollo-17/",
+        "https://en.wikipedia.org/wiki/Apollo_17"
+      ],
+      "sourceTextSha256": "31b7e22c42269bbad74c302897ec2151e92fc589ec5b7702bb2aa408749f886d",
+      "answerNamePresence": [
+        {
+          "label": "Eugene Cernan",
+          "foundInSource": true
+        },
+        {
+          "label": "Harrison Schmitt",
+          "foundInSource": true
+        },
+        {
+          "label": "Ronald Evans",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The three-person flight crew of the December 1972 mission. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-985307bd6b11",
+      "category": "SPACE",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Great_Observatories_program"
+      ],
+      "sourceTextSha256": "fcde74e4d841d62e2263a5f11e3286bc83a0d4914a64487d17244f8d7b7f44a1",
+      "answerNamePresence": [
+        {
+          "label": "Hubble Space Telescope",
+          "foundInSource": true
+        },
+        {
+          "label": "Chandra X-ray Observatory",
+          "foundInSource": true
+        },
+        {
+          "label": "Spitzer Space Telescope",
+          "foundInSource": true
+        },
+        {
+          "label": "Compton Gamma Ray Observatory",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The original four space observatories; James Webb is not part of this historical program. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-d70d6b660c97",
+      "category": "SPACE",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Asteroid"
+      ],
+      "sourceTextSha256": "15b7bc89afeb8c3d470ff78a749f61cc2b49625f238b159f26c10b39e7746615",
+      "answerNamePresence": [
+        {
+          "label": "Ceres",
+          "foundInSource": true
+        },
+        {
+          "label": "Pallas",
+          "foundInSource": true
+        },
+        {
+          "label": "Juno",
+          "foundInSource": true
+        },
+        {
+          "label": "Vesta",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "Historical discovery set: Ceres, Pallas, Juno and Vesta. Ceres's later dwarf-planet classification does not remove it from this set. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-361c3af62285",
+      "category": "SPACE",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Stellar_classification"
+      ],
+      "sourceTextSha256": "883595f12e64263f1cc111d7dee256eb0437f5171cad5386777d04f1440986a9",
+      "answerNamePresence": [
+        {
+          "label": "O",
+          "foundInSource": true
+        },
+        {
+          "label": "B",
+          "foundInSource": true
+        },
+        {
+          "label": "A",
+          "foundInSource": true
+        },
+        {
+          "label": "F",
+          "foundInSource": true
+        },
+        {
+          "label": "G",
+          "foundInSource": true
+        },
+        {
+          "label": "K",
+          "foundInSource": true
+        },
+        {
+          "label": "M",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The traditional OBAFGKM spectral sequence only; brown-dwarf extensions and white-dwarf types excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-8963e2cc1f3f",
+      "category": "SPACE",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lunar_phase"
+      ],
+      "sourceTextSha256": "5910e2d1a3845c23b3d811bc2e8166f276df52888fc780567426e5f0737dcec7",
+      "answerNamePresence": [
+        {
+          "label": "New Moon",
+          "foundInSource": true
+        },
+        {
+          "label": "Full Moon",
+          "foundInSource": true
+        },
+        {
+          "label": "First Quarter",
+          "foundInSource": true
+        },
+        {
+          "label": "Third Quarter",
+          "foundInSource": true
+        },
+        {
+          "label": "Waxing Crescent",
+          "foundInSource": true
+        },
+        {
+          "label": "Waxing Gibbous",
+          "foundInSource": true
+        },
+        {
+          "label": "Waning Gibbous",
+          "foundInSource": true
+        },
+        {
+          "label": "Waning Crescent",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The eight named phases, including both quarter phases and the four crescent/gibbous phases. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-86f4ea178bc6",
+      "category": "SPACE",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Orbital_elements"
+      ],
+      "sourceTextSha256": "6d484297f7bd378dbb90f172cdc133bf2a2ddeb69119b3e331da70a57841c397",
+      "answerNamePresence": [
+        {
+          "label": "Eccentricity",
+          "foundInSource": true
+        },
+        {
+          "label": "Inclination",
+          "foundInSource": true
+        },
+        {
+          "label": "Semi-major axis",
+          "foundInSource": true
+        },
+        {
+          "label": "Longitude of the ascending node",
+          "foundInSource": true
+        },
+        {
+          "label": "Argument of periapsis",
+          "foundInSource": true
+        },
+        {
+          "label": "True anomaly at epoch",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "Use the six-element set with true anomaly specifying position at epoch; alternative coordinate parameterizations are out of scope. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-78b635521441",
+      "category": "SPACE",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Winter_Triangle"
+      ],
+      "sourceTextSha256": "27051b1774fee0b4c182db089272b71501280a9e593e8cc9861cab395783cb84",
+      "answerNamePresence": [
+        {
+          "label": "Orion",
+          "foundInSource": true
+        },
+        {
+          "label": "Canis Major",
+          "foundInSource": true
+        },
+        {
+          "label": "Canis Minor",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "Betelgeuse, Sirius and Procyon identify the three constellations; star names themselves are not constellation answers. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-5a39b260c154",
+      "category": "SPACE",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Winter_Triangle"
+      ],
+      "sourceTextSha256": "27051b1774fee0b4c182db089272b71501280a9e593e8cc9861cab395783cb84",
+      "answerNamePresence": [
+        {
+          "label": "Sirius",
+          "foundInSource": true
+        },
+        {
+          "label": "Betelgeuse",
+          "foundInSource": true
+        },
+        {
+          "label": "Procyon",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The three named stars of the northern-winter asterism, not the larger Winter Hexagon. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-d32fb4480958",
+      "category": "SCIENCE",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Proteinogenic_amino_acid"
+      ],
+      "sourceTextSha256": "fab47fb5e080a7271d7b2e864fe3cb920e2d0d793c2485fa41f4ce81e5de223b",
+      "answerNamePresence": [
+        {
+          "label": "Glycine",
+          "foundInSource": true
+        },
+        {
+          "label": "Alanine",
+          "foundInSource": true
+        },
+        {
+          "label": "Valine",
+          "foundInSource": true
+        },
+        {
+          "label": "Leucine",
+          "foundInSource": true
+        },
+        {
+          "label": "Isoleucine",
+          "foundInSource": true
+        },
+        {
+          "label": "Serine",
+          "foundInSource": true
+        },
+        {
+          "label": "Threonine",
+          "foundInSource": true
+        },
+        {
+          "label": "Cysteine",
+          "foundInSource": true
+        },
+        {
+          "label": "Methionine",
+          "foundInSource": true
+        },
+        {
+          "label": "Aspartic acid",
+          "foundInSource": true
+        },
+        {
+          "label": "Glutamic acid",
+          "foundInSource": true
+        },
+        {
+          "label": "Asparagine",
+          "foundInSource": true
+        },
+        {
+          "label": "Glutamine",
+          "foundInSource": true
+        },
+        {
+          "label": "Lysine",
+          "foundInSource": true
+        },
+        {
+          "label": "Arginine",
+          "foundInSource": true
+        },
+        {
+          "label": "Histidine",
+          "foundInSource": true
+        },
+        {
+          "label": "Phenylalanine",
+          "foundInSource": true
+        },
+        {
+          "label": "Tyrosine",
+          "foundInSource": true
+        },
+        {
+          "label": "Tryptophan",
+          "foundInSource": true
+        },
+        {
+          "label": "Proline",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The standard twenty; the additional genetically encoded selenocysteine and pyrrolysine are explicitly excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-801b62c77a78",
+      "category": "SCIENCE",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Stop_codon"
+      ],
+      "sourceTextSha256": "7d5038c0d04bf72347456d4698bbf3cb084f37b5d15e85bec8e4598f65b08d0f",
+      "answerNamePresence": [
+        {
+          "label": "UAA",
+          "foundInSource": true
+        },
+        {
+          "label": "UAG",
+          "foundInSource": true
+        },
+        {
+          "label": "UGA",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "RNA triplets in the standard code; DNA equivalents are not requested. Historical stop-codon nicknames are accepted. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-19ea0d7e696b",
+      "category": "SCIENCE",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cell_cycle"
+      ],
+      "sourceTextSha256": "89e60514b005bcf6e357c17db64ee287d67c3d1213800b90830c1280d6572073",
+      "answerNamePresence": [
+        {
+          "label": "G1",
+          "foundInSource": true
+        },
+        {
+          "label": "S",
+          "foundInSource": true
+        },
+        {
+          "label": "G2",
+          "foundInSource": true
+        },
+        {
+          "label": "M",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "Four principal cycling phases; G0 is a quiescent state outside this four-phase classification. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-97ed13300d85",
+      "category": "SCIENCE",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Human_arm"
+      ],
+      "sourceTextSha256": "8e0e68362791d81b3e7f97ddf488cfbc407b18e0fbc5b50b4823648511dbc0bb",
+      "answerNamePresence": [
+        {
+          "label": "Humerus",
+          "foundInSource": true
+        },
+        {
+          "label": "Radius",
+          "foundInSource": true
+        },
+        {
+          "label": "Ulna",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The upper arm has the humerus and the forearm has radius and ulna. Shoulder and hand bones are excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-401b1f41fc84",
+      "category": "SCIENCE",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Human_leg"
+      ],
+      "sourceTextSha256": "481b1548137e17ea7504639d8985355fffb9e16dc8977f6ab8dd808f8c2a4bf6",
+      "answerNamePresence": [
+        {
+          "label": "Femur",
+          "foundInSource": true
+        },
+        {
+          "label": "Tibia",
+          "foundInSource": true
+        },
+        {
+          "label": "Fibula",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "Femur, tibia and fibula only; patella, pelvic bones and bones of the foot are outside the stated scope. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-372c9ebfc48a",
+      "category": "SCIENCE",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ear"
+      ],
+      "sourceTextSha256": "d24e009aac7d705715b74ddebb5b208a90526699185c6362a1bba6dcde9b582b",
+      "answerNamePresence": [
+        {
+          "label": "Outer ear",
+          "foundInSource": true
+        },
+        {
+          "label": "Middle ear",
+          "foundInSource": true
+        },
+        {
+          "label": "Inner ear",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The three anatomical regions of the ear, not individual bones or membranes. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-7c7ec70da800",
+      "category": "SCIENCE",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Stomach"
+      ],
+      "sourceTextSha256": "1d9f6949cc518245e27b8874fb97137e8608ebefca83e68970b5aab6e59812a9",
+      "answerNamePresence": [
+        {
+          "label": "Cardia",
+          "foundInSource": true
+        },
+        {
+          "label": "Fundus",
+          "foundInSource": true
+        },
+        {
+          "label": "Body",
+          "foundInSource": true
+        },
+        {
+          "label": "Pylorus",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The four principal stomach regions; this does not refer to the multiple compartments of a ruminant stomach. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-9d5a3957fed9",
+      "category": "SCIENCE",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Human_eye"
+      ],
+      "sourceTextSha256": "1d44c1f19fad821ad87a09d9c55e7f6dc46aa181325fa668c03bd6455a7fd0cb",
+      "answerNamePresence": [
+        {
+          "label": "Fibrous tunic",
+          "foundInSource": true
+        },
+        {
+          "label": "Vascular tunic",
+          "foundInSource": true
+        },
+        {
+          "label": "Neural tunic",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The fibrous, vascular and neural coats, not smaller subdivisions of those coats. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-7cb2e62ddedd",
+      "category": "SCIENCE",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vertebral_column"
+      ],
+      "sourceTextSha256": "79d814e3a9f0c1ce0374924db86aff3bdf1798241076c7f3cb3fac1abf161e34",
+      "answerNamePresence": [
+        {
+          "label": "Cervical",
+          "foundInSource": true
+        },
+        {
+          "label": "Thoracic",
+          "foundInSource": true
+        },
+        {
+          "label": "Lumbar",
+          "foundInSource": true
+        },
+        {
+          "label": "Sacral",
+          "foundInSource": true
+        },
+        {
+          "label": "Coccygeal",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The five named anatomical regions; individual vertebra numbers are not region names. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-c3fab0cc6fd6",
+      "category": "SCIENCE",
+      "sources": [
+        "https://en.wikipedia.org/wiki/RNA"
+      ],
+      "sourceTextSha256": "e7bc283f9882e622e2a7106a44c17626be0a46a97ddaa58d60fab958485db164",
+      "answerNamePresence": [
+        {
+          "label": "Messenger RNA",
+          "foundInSource": true
+        },
+        {
+          "label": "Transfer RNA",
+          "foundInSource": true
+        },
+        {
+          "label": "Ribosomal RNA",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The conventional three RNA categories directly associated with translation; other regulatory RNA classes excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-42c720e97eb4",
+      "category": "NATURE",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Wombat"
+      ],
+      "sourceTextSha256": "17defaf1e4a1a9dfa2e108278210a5e78ef96ee61f6d28093d9be417035ccc82",
+      "answerNamePresence": [
+        {
+          "label": "Common wombat",
+          "foundInSource": true
+        },
+        {
+          "label": "Southern hairy-nosed wombat",
+          "foundInSource": true
+        },
+        {
+          "label": "Northern hairy-nosed wombat",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The three extant species; extinct giant wombats and other fossil species excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-0d41a5d30871",
+      "category": "NATURE",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Germ_layer"
+      ],
+      "sourceTextSha256": "2dd2f6ba3fa269fea301ab42fa723692d97cbe795f8776ef9eff14064314b504",
+      "answerNamePresence": [
+        {
+          "label": "Ectoderm",
+          "foundInSource": true
+        },
+        {
+          "label": "Mesoderm",
+          "foundInSource": true
+        },
+        {
+          "label": "Endoderm",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The three primary embryonic germ layers in triploblastic animals; extraembryonic membranes and later tissues are not germ layers. Rarity is editorial, not a measured answer frequency."
+    },
+    {
+      "id": "daily-20261113-57eeedaa407b",
+      "category": "NATURE",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Spheniscus"
+      ],
+      "sourceTextSha256": "22ff52c05fc20afcb8dbd9485681337aadb8f1e4563a2c037ece903a90d57f28",
+      "answerNamePresence": [
+        {
+          "label": "African penguin",
+          "foundInSource": true
+        },
+        {
+          "label": "Galapagos penguin",
+          "foundInSource": true
+        },
+        {
+          "label": "Humboldt penguin",
+          "foundInSource": true
+        },
+        {
+          "label": "Magellanic penguin",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The four living banded-penguin species; fossil species excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-34e9abc3fa27",
+      "category": "NATURE",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Orangutan"
+      ],
+      "sourceTextSha256": "7aa02813e2f99ca7ca1f73973407af8175f2abdfaf091de0c24715e717f99186",
+      "answerNamePresence": [
+        {
+          "label": "Bornean orangutan",
+          "foundInSource": true
+        },
+        {
+          "label": "Sumatran orangutan",
+          "foundInSource": true
+        },
+        {
+          "label": "Tapanuli orangutan",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The three extant species recognized following the 2017 description of the Tapanuli orangutan. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-caab4eac2229",
+      "category": "NATURE",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Crocodilia"
+      ],
+      "sourceTextSha256": "5d406018eac393c878b66daceaf7396cf36e6cc5d7263cc8948015fc95290527",
+      "answerNamePresence": [
+        {
+          "label": "Crocodylidae",
+          "foundInSource": true
+        },
+        {
+          "label": "Alligatoridae",
+          "foundInSource": true
+        },
+        {
+          "label": "Gavialidae",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The three living families in the modern family-level grouping; extinct families excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-57798a5c570d",
+      "category": "NATURE",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Echinoderm"
+      ],
+      "sourceTextSha256": "2db40c1027fcd80ff1bc632ad851f7d1d7e248642401a98315dd4e4d6210e49d",
+      "answerNamePresence": [
+        {
+          "label": "Asteroidea",
+          "foundInSource": true
+        },
+        {
+          "label": "Ophiuroidea",
+          "foundInSource": true
+        },
+        {
+          "label": "Echinoidea",
+          "foundInSource": true
+        },
+        {
+          "label": "Holothuroidea",
+          "foundInSource": true
+        },
+        {
+          "label": "Crinoidea",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The five extant classes; common group names accepted, extinct classes excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-1116c266f1d3",
+      "category": "NATURE",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bryophyte"
+      ],
+      "sourceTextSha256": "6e94d3b2b9cb755d96ff21597966e98945343dd624dd17fd1802674437529dd7",
+      "answerNamePresence": [
+        {
+          "label": "Mosses",
+          "foundInSource": true
+        },
+        {
+          "label": "Liverworts",
+          "foundInSource": true
+        },
+        {
+          "label": "Hornworts",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The three familiar nonvascular land-plant groups; taxonomic rank conventions may differ but the named groups are fixed here. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-911905b0af8f",
+      "category": "NATURE",
+      "sources": [
+        "https://www.akc.org/dog-breeds/",
+        "https://en.wikipedia.org/wiki/American_Kennel_Club"
+      ],
+      "sourceTextSha256": "ad09065096d69cdac0d229b67731bee2a11514f6b0a02cbcadcc54e79ccd4674",
+      "answerNamePresence": [
+        {
+          "label": "Sporting",
+          "foundInSource": true
+        },
+        {
+          "label": "Hound",
+          "foundInSource": true
+        },
+        {
+          "label": "Working",
+          "foundInSource": true
+        },
+        {
+          "label": "Terrier",
+          "foundInSource": true
+        },
+        {
+          "label": "Toy",
+          "foundInSource": true
+        },
+        {
+          "label": "Non-Sporting",
+          "foundInSource": true
+        },
+        {
+          "label": "Herding",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The seven conformation groups, excluding Miscellaneous Class and Foundation Stock Service. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-d4933272ea0a",
+      "category": "NATURE",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ruminant"
+      ],
+      "sourceTextSha256": "3ba54e6786c85e1a723a521fa8f73c8117b990c4951b8d6a7785d39f05c74da3",
+      "answerNamePresence": [
+        {
+          "label": "Rumen",
+          "foundInSource": true
+        },
+        {
+          "label": "Reticulum",
+          "foundInSource": true
+        },
+        {
+          "label": "Omasum",
+          "foundInSource": true
+        },
+        {
+          "label": "Abomasum",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The four compartments of a typical ruminant stomach, not all animal digestive organs. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-d2555752e401",
+      "category": "NATURE",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Gynoecium"
+      ],
+      "sourceTextSha256": "a157f45021dc2f89983148df2df79c4f9a5d03330b10cab764901505c212cae8",
+      "answerNamePresence": [
+        {
+          "label": "Stigma",
+          "foundInSource": true
+        },
+        {
+          "label": "Style",
+          "foundInSource": true
+        },
+        {
+          "label": "Ovary",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The stigma, style and ovary of a typical pistil. Ovules are contents of the ovary rather than a fourth principal part. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-6a02a016bbeb",
+      "category": "BOOKS",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jane_Austen"
+      ],
+      "sourceTextSha256": "8f5449978562e78dd1da38883867577d9a8936442c39eb5369bae8139359d735",
+      "answerNamePresence": [
+        {
+          "label": "Pride and Prejudice",
+          "foundInSource": true
+        },
+        {
+          "label": "Sense and Sensibility",
+          "foundInSource": true
+        },
+        {
+          "label": "Emma",
+          "foundInSource": true
+        },
+        {
+          "label": "Mansfield Park",
+          "foundInSource": true
+        },
+        {
+          "label": "Persuasion",
+          "foundInSource": true
+        },
+        {
+          "label": "Northanger Abbey",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "Her six completed full-length novels; unfinished work, juvenilia and later adaptations are excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-2fc750207d10",
+      "category": "BOOKS",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Charles_Dickens_bibliography"
+      ],
+      "sourceTextSha256": "271c287debe3543c89363fc4a85233c17af0c0b12b5fdfbd1feb05b980eff2b3",
+      "answerNamePresence": [
+        {
+          "label": "A Christmas Carol",
+          "foundInSource": true
+        },
+        {
+          "label": "The Chimes",
+          "foundInSource": true
+        },
+        {
+          "label": "The Cricket on the Hearth",
+          "foundInSource": true
+        },
+        {
+          "label": "The Battle of Life",
+          "foundInSource": true
+        },
+        {
+          "label": "The Haunted Man and the Ghost's Bargain",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The five separately published Christmas novellas, not all Christmas stories or magazine collaborations. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-a75672327415",
+      "category": "BOOKS",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_The_Hobbit_characters"
+      ],
+      "sourceTextSha256": "75ecb07157aad6e6fc3c559d7819d3de5a661776093bdc945efae979da263fc0",
+      "answerNamePresence": [
+        {
+          "label": "Thorin",
+          "foundInSource": true
+        },
+        {
+          "label": "Balin",
+          "foundInSource": true
+        },
+        {
+          "label": "Dwalin",
+          "foundInSource": true
+        },
+        {
+          "label": "Fili",
+          "foundInSource": true
+        },
+        {
+          "label": "Kili",
+          "foundInSource": true
+        },
+        {
+          "label": "Dori",
+          "foundInSource": true
+        },
+        {
+          "label": "Nori",
+          "foundInSource": true
+        },
+        {
+          "label": "Ori",
+          "foundInSource": true
+        },
+        {
+          "label": "Oin",
+          "foundInSource": true
+        },
+        {
+          "label": "Gloin",
+          "foundInSource": true
+        },
+        {
+          "label": "Bifur",
+          "foundInSource": true
+        },
+        {
+          "label": "Bofur",
+          "foundInSource": true
+        },
+        {
+          "label": "Bombur",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The thirteen dwarf members only; Bilbo and Gandalf are not dwarves. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-11cc608f1e1f",
+      "category": "BOOKS",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Weasley_family"
+      ],
+      "sourceTextSha256": "e61c7f6e3b5a2163f7ac36bd3040cd38fcf616dc6ed1bcbac71e95deeb22ca1c",
+      "answerNamePresence": [
+        {
+          "label": "Ron",
+          "foundInSource": true
+        },
+        {
+          "label": "Ginny",
+          "foundInSource": true
+        },
+        {
+          "label": "Fred",
+          "foundInSource": true
+        },
+        {
+          "label": "George",
+          "foundInSource": true
+        },
+        {
+          "label": "Percy",
+          "foundInSource": true
+        },
+        {
+          "label": "Bill",
+          "foundInSource": true
+        },
+        {
+          "label": "Charlie",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The seven children of Arthur and Molly; parents, spouses and grandchildren excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-9a7ae31212e2",
+      "category": "BOOKS",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Quidditch"
+      ],
+      "sourceTextSha256": "b0cdd7a9d2694303031abae6f4c8f233ee99475986d2ae66be517d6f27e21286",
+      "answerNamePresence": [
+        {
+          "label": "Seeker",
+          "foundInSource": true
+        },
+        {
+          "label": "Keeper",
+          "foundInSource": true
+        },
+        {
+          "label": "Chaser",
+          "foundInSource": true
+        },
+        {
+          "label": "Beater",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "Four distinct position names; the seven-player team includes multiple chasers and beaters. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-522503efb765",
+      "category": "BOOKS",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Goblet_of_Fire"
+      ],
+      "sourceTextSha256": "e8f77e5d848fb3b33ab4d698d039d816f36591cc89dca69a328ddadf56c18b95",
+      "answerNamePresence": [
+        {
+          "label": "Harry Potter",
+          "foundInSource": true
+        },
+        {
+          "label": "Cedric Diggory",
+          "foundInSource": true
+        },
+        {
+          "label": "Viktor Krum",
+          "foundInSource": true
+        },
+        {
+          "label": "Fleur Delacour",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The four participants in that specific tournament, including the unexpectedly selected fourth champion. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-9dd21bf296b8",
+      "category": "BOOKS",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_Chronicles_of_Narnia"
+      ],
+      "sourceTextSha256": "be9dbc56f0121cfdf03a13777acc9fd9888fe876ddb5c8b555e40f7b8cdd1a59",
+      "answerNamePresence": [
+        {
+          "label": "The Lion the Witch and the Wardrobe",
+          "foundInSource": true
+        },
+        {
+          "label": "Prince Caspian",
+          "foundInSource": true
+        },
+        {
+          "label": "The Voyage of the Dawn Treader",
+          "foundInSource": true
+        },
+        {
+          "label": "The Silver Chair",
+          "foundInSource": true
+        },
+        {
+          "label": "The Horse and His Boy",
+          "foundInSource": true
+        },
+        {
+          "label": "The Magician's Nephew",
+          "foundInSource": true
+        },
+        {
+          "label": "The Last Battle",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The seven original novels; film adaptations and companion books excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-785c78cfb310",
+      "category": "BOOKS",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Canon_of_Sherlock_Holmes"
+      ],
+      "sourceTextSha256": "26a5189f3e823977699b168df90b72d1594e73c8793339018dd7ef3e8339a544",
+      "answerNamePresence": [
+        {
+          "label": "A Study in Scarlet",
+          "foundInSource": true
+        },
+        {
+          "label": "The Hound of the Baskervilles",
+          "foundInSource": true
+        },
+        {
+          "label": "The Sign of the Four",
+          "foundInSource": true
+        },
+        {
+          "label": "The Valley of Fear",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The four novels, not the short-story collections or non-Doyle continuations. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-41f12819b3aa",
+      "category": "BOOKS",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dune_(franchise)"
+      ],
+      "sourceTextSha256": "0428ccd9e43b54dfe919743e316c53cb8be8ef6945db6721e6f53eeb668e62d2",
+      "answerNamePresence": [
+        {
+          "label": "Dune",
+          "foundInSource": true
+        },
+        {
+          "label": "Dune Messiah",
+          "foundInSource": true
+        },
+        {
+          "label": "Children of Dune",
+          "foundInSource": true
+        },
+        {
+          "label": "God Emperor of Dune",
+          "foundInSource": true
+        },
+        {
+          "label": "Heretics of Dune",
+          "foundInSource": true
+        },
+        {
+          "label": "Chapterhouse Dune",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "Frank Herbert's six original novels; later novels by other authors excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-07a17dca792a",
+      "category": "BOOKS",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Daenerys_Targaryen"
+      ],
+      "sourceTextSha256": "993a4e80df5d501bdf697d115740ecefd56aa451d8cef4a4d0e008d23c311c46",
+      "answerNamePresence": [
+        {
+          "label": "Drogon",
+          "foundInSource": true
+        },
+        {
+          "label": "Rhaegal",
+          "foundInSource": true
+        },
+        {
+          "label": "Viserion",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The three dragons hatched by Daenerys in the original novel series, not all dragons in Westerosi history. Rarity is editorial, not a population measurement."
+    },
+    {
+      "id": "daily-20261113-f9684a4ed0e7",
+      "category": "MOVIES",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Toy_Story_(franchise)"
+      ],
+      "sourceTextSha256": "7cbe203bc185066f3285a56b4ae0fccb2ccba3a83bf486d066bd109ab6358c65",
+      "answerNamePresence": [
+        {
+          "label": "Toy Story",
+          "foundInSource": true
+        },
+        {
+          "label": "Toy Story 2",
+          "foundInSource": true
+        },
+        {
+          "label": "Toy Story 3",
+          "foundInSource": true
+        },
+        {
+          "label": "Toy Story 4",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The four numbered feature films available through 2019; shorts, television specials and spin-offs excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-feeb4c76ec72",
+      "category": "MOVIES",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cars_(franchise)"
+      ],
+      "sourceTextSha256": "3bd9797685003604ee4ac9776035f21f97624f4121bf1120d1db2ecda4118096",
+      "answerNamePresence": [
+        {
+          "label": "Cars",
+          "foundInSource": true
+        },
+        {
+          "label": "Cars 2",
+          "foundInSource": true
+        },
+        {
+          "label": "Cars 3",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The three numbered Cars features, not Planes or short films. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-eea084810c0d",
+      "category": "MOVIES",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kung_Fu_Panda"
+      ],
+      "sourceTextSha256": "6c05292c587c7b87f3501aab650b2dc58a2e1f5e43f5896dc88395d00dc381bb",
+      "answerNamePresence": [
+        {
+          "label": "Kung Fu Panda",
+          "foundInSource": true
+        },
+        {
+          "label": "Kung Fu Panda 2",
+          "foundInSource": true
+        },
+        {
+          "label": "Kung Fu Panda 3",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The first three feature films; later installments and television series are outside the dated scope. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-8fcec4122d42",
+      "category": "MOVIES",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Indiana_Jones"
+      ],
+      "sourceTextSha256": "8b2e35dd00367dae1ce01ac388418b79e3eacccfac01edc0f71b98ef1415e5fc",
+      "answerNamePresence": [
+        {
+          "label": "Raiders of the Lost Ark",
+          "foundInSource": true
+        },
+        {
+          "label": "Indiana Jones and the Temple of Doom",
+          "foundInSource": true
+        },
+        {
+          "label": "Indiana Jones and the Last Crusade",
+          "foundInSource": true
+        },
+        {
+          "label": "Indiana Jones and the Kingdom of the Crystal Skull",
+          "foundInSource": true
+        },
+        {
+          "label": "Indiana Jones and the Dial of Destiny",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The five Harrison Ford-led theatrical features; television productions excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-cf4685070b18",
+      "category": "MOVIES",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jurassic_Park"
+      ],
+      "sourceTextSha256": "d11566e325d2e5715620e13a7aa5c744c58ecbbb4832b3a91fb216f060e29379",
+      "answerNamePresence": [
+        {
+          "label": "Jurassic Park",
+          "foundInSource": true
+        },
+        {
+          "label": "The Lost World Jurassic Park",
+          "foundInSource": true
+        },
+        {
+          "label": "Jurassic Park III",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The original three feature films released from 1993 through 2001. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-281b9fff6461",
+      "category": "MOVIES",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Madagascar_(franchise)"
+      ],
+      "sourceTextSha256": "bfc1b8c8b657a2e25544a0134d508019bb49c7e584e8a8749e3cf0a3646cec40",
+      "answerNamePresence": [
+        {
+          "label": "Madagascar",
+          "foundInSource": true
+        },
+        {
+          "label": "Madagascar Escape 2 Africa",
+          "foundInSource": true
+        },
+        {
+          "label": "Madagascar 3 Europe's Most Wanted",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The three main-series Madagascar feature films; Penguins of Madagascar is a spin-off. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-9d7c91082325",
+      "category": "MOVIES",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Shrek_(franchise)"
+      ],
+      "sourceTextSha256": "3237d22496a013e56b81c620b340b968467e8baa46228b185f20b00c8b021906",
+      "answerNamePresence": [
+        {
+          "label": "Shrek",
+          "foundInSource": true
+        },
+        {
+          "label": "Shrek 2",
+          "foundInSource": true
+        },
+        {
+          "label": "Shrek the Third",
+          "foundInSource": true
+        },
+        {
+          "label": "Shrek Forever After",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The four original Shrek features released through 2010; Puss in Boots spin-offs excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-9f5445239f47",
+      "category": "MOVIES",
+      "sources": [
+        "https://en.wikipedia.org/wiki/How_to_Train_Your_Dragon_(franchise)"
+      ],
+      "sourceTextSha256": "0854cfbeb1f8463c5068ff8c94b1b1ac45a026ed68569e55d1c41159e66b4f32",
+      "answerNamePresence": [
+        {
+          "label": "How to Train Your Dragon",
+          "foundInSource": true
+        },
+        {
+          "label": "How to Train Your Dragon 2",
+          "foundInSource": true
+        },
+        {
+          "label": "How to Train Your Dragon The Hidden World",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The three animated main-series features, not television series or live-action remakes. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-9a5a0ca0b545",
+      "category": "MOVIES",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Three_Flavours_Cornetto"
+      ],
+      "sourceTextSha256": "532ed0cb2a76fd186dabd86ab40eed51415d56bb9758b55e6c5baac681ed52da",
+      "answerNamePresence": [
+        {
+          "label": "Shaun of the Dead",
+          "foundInSource": true
+        },
+        {
+          "label": "Hot Fuzz",
+          "foundInSource": true
+        },
+        {
+          "label": "The World's End",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The three feature films linked by the Cornetto theme; this is not a continuing narrative trilogy. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-b641eab59e7d",
+      "category": "MOVIES",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_Matrix_(franchise)"
+      ],
+      "sourceTextSha256": "9f35cf8ba9d6c1d34c3f8d3c4e6a88fc9e6479af5dcb84ec6d11bb2a6aca3254",
+      "answerNamePresence": [
+        {
+          "label": "The Matrix",
+          "foundInSource": true
+        },
+        {
+          "label": "The Matrix Reloaded",
+          "foundInSource": true
+        },
+        {
+          "label": "The Matrix Revolutions",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The three live-action films released through 2003; The Animatrix and later sequels excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-dd9a235ea4b2",
+      "category": "MUSIC",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Pink_Floyd"
+      ],
+      "sourceTextSha256": "1c2ad3380ab615d05c0de53e383ac1a50f20322c3a34a75f3cd551d4ffa2de23",
+      "answerNamePresence": [
+        {
+          "label": "David Gilmour",
+          "foundInSource": true
+        },
+        {
+          "label": "Roger Waters",
+          "foundInSource": true
+        },
+        {
+          "label": "Nick Mason",
+          "foundInSource": true
+        },
+        {
+          "label": "Richard Wright",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The four members who recorded The Dark Side of the Moon; Syd Barrett and later touring musicians excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-fced20795127",
+      "category": "MUSIC",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Led_Zeppelin"
+      ],
+      "sourceTextSha256": "be96d238a8a4ff433ec58202ac9d86acbcd81a0cf3240e25cbbc1aeba8523b38",
+      "answerNamePresence": [
+        {
+          "label": "Robert Plant",
+          "foundInSource": true
+        },
+        {
+          "label": "Jimmy Page",
+          "foundInSource": true
+        },
+        {
+          "label": "John Bonham",
+          "foundInSource": true
+        },
+        {
+          "label": "John Paul Jones",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The four original band members; guest performers and reunion substitutes excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-402e343b98c5",
+      "category": "MUSIC",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_Who"
+      ],
+      "sourceTextSha256": "0865e762fd61920ea17ea8c7383b722ef4b1f14aa833dc04411ebd4b5a4e35cd",
+      "answerNamePresence": [
+        {
+          "label": "Roger Daltrey",
+          "foundInSource": true
+        },
+        {
+          "label": "Pete Townshend",
+          "foundInSource": true
+        },
+        {
+          "label": "Keith Moon",
+          "foundInSource": true
+        },
+        {
+          "label": "John Entwistle",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The classic 1960s-1970s lineup; subsequent drummers and touring musicians excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-a2fb90d738f4",
+      "category": "MUSIC",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Metallica_(album)"
+      ],
+      "sourceTextSha256": "b4703aaa58e304eb7d19f71e6475ffbe1def561606afc5f5e8bf4807a0614fb4",
+      "answerNamePresence": [
+        {
+          "label": "James Hetfield",
+          "foundInSource": true
+        },
+        {
+          "label": "Lars Ulrich",
+          "foundInSource": true
+        },
+        {
+          "label": "Kirk Hammett",
+          "foundInSource": true
+        },
+        {
+          "label": "Jason Newsted",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The four credited band members on the 1991 album, not the band's present-day lineup. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-52da427ccf2b",
+      "category": "MUSIC",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mode_(music)"
+      ],
+      "sourceTextSha256": "b67a53d95d631bd4809c2ce19946aa4c1520f23a4e00b41f6be895f58bde5763",
+      "answerNamePresence": [
+        {
+          "label": "Ionian",
+          "foundInSource": true
+        },
+        {
+          "label": "Dorian",
+          "foundInSource": true
+        },
+        {
+          "label": "Phrygian",
+          "foundInSource": true
+        },
+        {
+          "label": "Lydian",
+          "foundInSource": true
+        },
+        {
+          "label": "Mixolydian",
+          "foundInSource": true
+        },
+        {
+          "label": "Aeolian",
+          "foundInSource": true
+        },
+        {
+          "label": "Locrian",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The seven diatonic modes of the major scale; modes of melodic and harmonic minor excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-a0286957a835",
+      "category": "MUSIC",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Primary_triad"
+      ],
+      "sourceTextSha256": "0d768cdb625cff2a5948ce0ea4ed3d60eb661b70aaf2100d554e993225f7b416",
+      "answerNamePresence": [
+        {
+          "label": "C",
+          "foundInSource": true
+        },
+        {
+          "label": "F",
+          "foundInSource": true
+        },
+        {
+          "label": "G",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The I, IV and V major triads in C major; secondary triads are not requested. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-661a89350970",
+      "category": "MUSIC",
+      "sources": [
+        "https://en.wikipedia.org/wiki/String_quartet"
+      ],
+      "sourceTextSha256": "9dd02dbca3d986e086813269476532b45156f0d303d0fb53ddb3a8ad23816624",
+      "answerNamePresence": [
+        {
+          "label": "Violin",
+          "foundInSource": true
+        },
+        {
+          "label": "Viola",
+          "foundInSource": true
+        },
+        {
+          "label": "Cello",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "Two violins, one viola and one cello give three distinct instrument types; double bass is not in the standard lineup. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-c9efb98b323a",
+      "category": "MUSIC",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Reed_trio"
+      ],
+      "sourceTextSha256": "0f6bc96990eb2b499e53975b49314aa244d2c1914c1b77bd1161efa39f1c01db",
+      "answerNamePresence": [
+        {
+          "label": "Oboe",
+          "foundInSource": true
+        },
+        {
+          "label": "Clarinet",
+          "foundInSource": true
+        },
+        {
+          "label": "Bassoon",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The conventional trio d'anches instrumentation, not every instrument that uses a reed. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-0a8ac98f7f55",
+      "category": "MUSIC",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Piano_trio"
+      ],
+      "sourceTextSha256": "6848c5c87f198027c02aa5cc0b91e9dc8147ebf311e3fb25e406a8c29b57ca8e",
+      "answerNamePresence": [
+        {
+          "label": "Piano",
+          "foundInSource": true
+        },
+        {
+          "label": "Violin",
+          "foundInSource": true
+        },
+        {
+          "label": "Cello",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The standard piano-violin-cello ensemble; alternative scoring is outside the stated standard. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-ae83038bf6b2",
+      "category": "MUSIC",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Saxophone_quartet"
+      ],
+      "sourceTextSha256": "92b962557a75e78f9d4f861c6d31e98117fda8d7945324171a83a0ab24f68c58",
+      "answerNamePresence": [
+        {
+          "label": "Soprano",
+          "foundInSource": true
+        },
+        {
+          "label": "Alto",
+          "foundInSource": true
+        },
+        {
+          "label": "Tenor",
+          "foundInSource": true
+        },
+        {
+          "label": "Baritone",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "SATB quartet instrumentation; bass and sopranino saxophones excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-2a710f138591",
+      "category": "GAMES",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Catan"
+      ],
+      "sourceTextSha256": "cb45c7129e9495d337037cbdf4f244de537fd1286ade2dbe25ed3ac5ff61a44c",
+      "answerNamePresence": [
+        {
+          "label": "Wood",
+          "foundInSource": true
+        },
+        {
+          "label": "Brick",
+          "foundInSource": true
+        },
+        {
+          "label": "Wool",
+          "foundInSource": true
+        },
+        {
+          "label": "Grain",
+          "foundInSource": true
+        },
+        {
+          "label": "Ore",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The five basic resources, not expansion resources or gold as a wildcard. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-8bf0c85d5bf4",
+      "category": "GAMES",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Catan"
+      ],
+      "sourceTextSha256": "cb45c7129e9495d337037cbdf4f244de537fd1286ade2dbe25ed3ac5ff61a44c",
+      "answerNamePresence": [
+        {
+          "label": "Knight",
+          "foundInSource": true
+        },
+        {
+          "label": "Victory Point",
+          "foundInSource": true
+        },
+        {
+          "label": "Road Building",
+          "foundInSource": true
+        },
+        {
+          "label": "Year of Plenty",
+          "foundInSource": true
+        },
+        {
+          "label": "Monopoly",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "Five functional development-card types; different artwork titles on victory-point cards remain one type. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-020ac9b7a76c",
+      "category": "GAMES",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mahjong_tiles"
+      ],
+      "sourceTextSha256": "e82c3c0d2538b357d7ccdd519efcff3bd3a20f506d0f3544797e9d90b49b59a5",
+      "answerNamePresence": [
+        {
+          "label": "Bamboo",
+          "foundInSource": true
+        },
+        {
+          "label": "Circles",
+          "foundInSource": true
+        },
+        {
+          "label": "Characters",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "Only the three numbered suits, not honor tiles, flowers or seasons. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-aadf3463383f",
+      "category": "GAMES",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mahjong_tiles"
+      ],
+      "sourceTextSha256": "e82c3c0d2538b357d7ccdd519efcff3bd3a20f506d0f3544797e9d90b49b59a5",
+      "answerNamePresence": [
+        {
+          "label": "Suited tiles",
+          "foundInSource": true
+        },
+        {
+          "label": "Honor tiles",
+          "foundInSource": true
+        },
+        {
+          "label": "Bonus tiles",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The three broad tile categories; suits include numbered tiles, honors include winds and dragons, and bonus tiles include flowers and seasons. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-b3539723b79a",
+      "category": "GAMES",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mahjong_tiles"
+      ],
+      "sourceTextSha256": "e82c3c0d2538b357d7ccdd519efcff3bd3a20f506d0f3544797e9d90b49b59a5",
+      "answerNamePresence": [
+        {
+          "label": "Red dragon",
+          "foundInSource": true
+        },
+        {
+          "label": "Green dragon",
+          "foundInSource": true
+        },
+        {
+          "label": "White dragon",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The three dragon honors, distinct from wind tiles and decorative animal tiles. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-b0cb8cc8e162",
+      "category": "GAMES",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ability_score"
+      ],
+      "sourceTextSha256": "33b643f12241efc01db280eeaf795032e966da4f9afd53b007f046d3c09c9e0d",
+      "answerNamePresence": [
+        {
+          "label": "Strength",
+          "foundInSource": true
+        },
+        {
+          "label": "Dexterity",
+          "foundInSource": true
+        },
+        {
+          "label": "Constitution",
+          "foundInSource": true
+        },
+        {
+          "label": "Intelligence",
+          "foundInSource": true
+        },
+        {
+          "label": "Wisdom",
+          "foundInSource": true
+        },
+        {
+          "label": "Charisma",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The six core ability scores, not skills, saving throws or derived statistics. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-8b118b115555",
+      "category": "GAMES",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)"
+      ],
+      "sourceTextSha256": "99533d46cd551dc3b685c83e9e91c64da67282078e466da43a7d87a5a497a96f",
+      "answerNamePresence": [
+        {
+          "label": "Lawful good",
+          "foundInSource": true
+        },
+        {
+          "label": "Neutral good",
+          "foundInSource": true
+        },
+        {
+          "label": "Chaotic good",
+          "foundInSource": true
+        },
+        {
+          "label": "Lawful neutral",
+          "foundInSource": true
+        },
+        {
+          "label": "True neutral",
+          "foundInSource": true
+        },
+        {
+          "label": "Chaotic neutral",
+          "foundInSource": true
+        },
+        {
+          "label": "Lawful evil",
+          "foundInSource": true
+        },
+        {
+          "label": "Neutral evil",
+          "foundInSource": true
+        },
+        {
+          "label": "Chaotic evil",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The classic three-by-three alignment grid; unaligned is outside that nine-alignment set. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-177a58c636fe",
+      "category": "GAMES",
+      "sources": [
+        "https://info.sonicretro.org/Sonic_the_Hedgehog_(16-bit)"
+      ],
+      "sourceTextSha256": "99e96edd6fb01747ed53b64c6b92566c305ed5c3aef295352a3cb2c29594264d",
+      "answerNamePresence": [
+        {
+          "label": "Green Hill",
+          "foundInSource": true
+        },
+        {
+          "label": "Marble",
+          "foundInSource": true
+        },
+        {
+          "label": "Spring Yard",
+          "foundInSource": true
+        },
+        {
+          "label": "Labyrinth",
+          "foundInSource": true
+        },
+        {
+          "label": "Star Light",
+          "foundInSource": true
+        },
+        {
+          "label": "Scrap Brain",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "Six regular zones; the single-boss Final Zone and Special Stages are explicitly excluded. Not the Master System version. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-3e59e0751d4b",
+      "category": "GAMES",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Triforce"
+      ],
+      "sourceTextSha256": "914651c33b970f826ffa454467d5a1fe9821c5f4bcb3083e6bf908646e216edf",
+      "answerNamePresence": [
+        {
+          "label": "Power",
+          "foundInSource": true
+        },
+        {
+          "label": "Wisdom",
+          "foundInSource": true
+        },
+        {
+          "label": "Courage",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The three canonical pieces of the Triforce, not character names or fan-created fourth pieces. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-7ade5d48a023",
+      "category": "GAMES",
+      "sources": [
+        "https://bulbapedia.bulbagarden.net/wiki/Type"
+      ],
+      "sourceTextSha256": "33af8bd749477d39378daa53ad2b2ee350acd36ea5ce8bb6b68f27cb61e7d6e1",
+      "answerNamePresence": [
+        {
+          "label": "Normal",
+          "foundInSource": true
+        },
+        {
+          "label": "Fire",
+          "foundInSource": true
+        },
+        {
+          "label": "Water",
+          "foundInSource": true
+        },
+        {
+          "label": "Grass",
+          "foundInSource": true
+        },
+        {
+          "label": "Electric",
+          "foundInSource": true
+        },
+        {
+          "label": "Ice",
+          "foundInSource": true
+        },
+        {
+          "label": "Fighting",
+          "foundInSource": true
+        },
+        {
+          "label": "Poison",
+          "foundInSource": true
+        },
+        {
+          "label": "Ground",
+          "foundInSource": true
+        },
+        {
+          "label": "Flying",
+          "foundInSource": true
+        },
+        {
+          "label": "Psychic",
+          "foundInSource": true
+        },
+        {
+          "label": "Bug",
+          "foundInSource": true
+        },
+        {
+          "label": "Rock",
+          "foundInSource": true
+        },
+        {
+          "label": "Ghost",
+          "foundInSource": true
+        },
+        {
+          "label": "Dragon",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The original fifteen types; Dark and Steel debuted in Generation II and Fairy in Generation VI. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-08b6137644bc",
+      "category": "HISTORY",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Seven_Wonders_of_the_Ancient_World"
+      ],
+      "sourceTextSha256": "cf214dd1360df07094a6debdb3084c13347e59f8e420e3394ee3c0955b9580eb",
+      "answerNamePresence": [
+        {
+          "label": "Great Pyramid of Giza",
+          "foundInSource": true
+        },
+        {
+          "label": "Hanging Gardens of Babylon",
+          "foundInSource": true
+        },
+        {
+          "label": "Statue of Zeus at Olympia",
+          "foundInSource": true
+        },
+        {
+          "label": "Temple of Artemis at Ephesus",
+          "foundInSource": true
+        },
+        {
+          "label": "Mausoleum at Halicarnassus",
+          "foundInSource": true
+        },
+        {
+          "label": "Colossus of Rhodes",
+          "foundInSource": true
+        },
+        {
+          "label": "Lighthouse of Alexandria",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The traditional ancient list; the existence of the Hanging Gardens is debated, but its place on this historical list is not. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-ba56359edf0c",
+      "category": "HISTORY",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Flavian_dynasty"
+      ],
+      "sourceTextSha256": "930b10e5df30c19b5c635ed77aa53d113431a7e5c357455cc64b615ca972682a",
+      "answerNamePresence": [
+        {
+          "label": "Vespasian",
+          "foundInSource": true
+        },
+        {
+          "label": "Titus",
+          "foundInSource": true
+        },
+        {
+          "label": "Domitian",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The three Flavian emperors who ruled from 69 to 96 CE. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-79a278ac9aae",
+      "category": "HISTORY",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Nerva%E2%80%93Antonine_dynasty"
+      ],
+      "sourceTextSha256": "bef9c8995ce90804632c286a67bdf868b80f63b41a9fc529a4dbc9b3d1baa514",
+      "answerNamePresence": [
+        {
+          "label": "Marcus Aurelius",
+          "foundInSource": true
+        },
+        {
+          "label": "Trajan",
+          "foundInSource": true
+        },
+        {
+          "label": "Hadrian",
+          "foundInSource": true
+        },
+        {
+          "label": "Nerva",
+          "foundInSource": true
+        },
+        {
+          "label": "Antoninus Pius",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The conventional five from Nerva to Marcus Aurelius, excluding Lucius Verus and Commodus. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-4e5f630eca47",
+      "category": "HISTORY",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Julio-Claudian_dynasty"
+      ],
+      "sourceTextSha256": "da9b6f4dfbe5c3618d4aaa5e27438c08982865fec71724d5a41b3900be817f9d",
+      "answerNamePresence": [
+        {
+          "label": "Augustus",
+          "foundInSource": true
+        },
+        {
+          "label": "Tiberius",
+          "foundInSource": true
+        },
+        {
+          "label": "Caligula",
+          "foundInSource": true
+        },
+        {
+          "label": "Claudius",
+          "foundInSource": true
+        },
+        {
+          "label": "Nero",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The five emperors from Augustus through Nero, not other members of their extended families. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-bcfee7eb9e4e",
+      "category": "HISTORY",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Year_of_the_Four_Emperors"
+      ],
+      "sourceTextSha256": "35f84180808d0b5bf3941fc8cf37ee5076b4d0e58271c440f727266bc6781d99",
+      "answerNamePresence": [
+        {
+          "label": "Vespasian",
+          "foundInSource": true
+        },
+        {
+          "label": "Galba",
+          "foundInSource": true
+        },
+        {
+          "label": "Otho",
+          "foundInSource": true
+        },
+        {
+          "label": "Vitellius",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The four reigning emperors of 69 CE; Nero's reign ended in 68 CE. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-35aa8eb156c8",
+      "category": "HISTORY",
+      "sources": [
+        "https://en.wikipedia.org/wiki/House_of_Tudor"
+      ],
+      "sourceTextSha256": "7496f5a49176f12d2f94eb246c958059728729dc6c2030bb82e7e718ee29b480",
+      "answerNamePresence": [
+        {
+          "label": "Henry VII",
+          "foundInSource": true
+        },
+        {
+          "label": "Henry VIII",
+          "foundInSource": true
+        },
+        {
+          "label": "Edward VI",
+          "foundInSource": true
+        },
+        {
+          "label": "Mary I",
+          "foundInSource": true
+        },
+        {
+          "label": "Elizabeth I",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The five crowned Tudor monarchs. The disputed and uncrowned Lady Jane Grey is outside this stated scope. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-4ca18937fe84",
+      "category": "HISTORY",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Central_Powers"
+      ],
+      "sourceTextSha256": "f15642663fba3e9a3966baa7dbca83c1eff9ce286bac148950513f114d17320d",
+      "answerNamePresence": [
+        {
+          "label": "German Empire",
+          "foundInSource": true
+        },
+        {
+          "label": "Austria-Hungary",
+          "foundInSource": true
+        },
+        {
+          "label": "Ottoman Empire",
+          "foundInSource": true
+        },
+        {
+          "label": "Bulgaria",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The four principal Central Powers, not occupied client states or loosely associated forces. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-777ac8b7a80e",
+      "category": "HISTORY",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tripartite_Pact"
+      ],
+      "sourceTextSha256": "332ab8ff11ebbd62ded2907636b3666e06026a23cd9d6fc4a9dd4445d080ba5e",
+      "answerNamePresence": [
+        {
+          "label": "Germany",
+          "foundInSource": true
+        },
+        {
+          "label": "Italy",
+          "foundInSource": true
+        },
+        {
+          "label": "Japan",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The original three signatories on 27 September 1940, not countries that joined later. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-5539906b7349",
+      "category": "HISTORY",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_assassinated_and_executed_heads_of_state_and_government"
+      ],
+      "sourceTextSha256": "15083a7f8d4e7cb92f5629439f16d0125fe2f976e689fc557c399916e400105b",
+      "answerNamePresence": [
+        {
+          "label": "Abraham Lincoln",
+          "foundInSource": true
+        },
+        {
+          "label": "John F Kennedy",
+          "foundInSource": true
+        },
+        {
+          "label": "James A Garfield",
+          "foundInSource": true
+        },
+        {
+          "label": "William McKinley",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "Four US presidents died from assassination while serving; attempts survived and deaths after leaving office excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-e764371f71ec",
+      "category": "HISTORY",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Giza_pyramid_complex"
+      ],
+      "sourceTextSha256": "d398ac66780dbd6dff1e7522597a282d678d398d9f4af28f562c01b22ce26d70",
+      "answerNamePresence": [
+        {
+          "label": "Khufu",
+          "foundInSource": true
+        },
+        {
+          "label": "Khafre",
+          "foundInSource": true
+        },
+        {
+          "label": "Menkaure",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The three main royal pyramids, not smaller satellite or queens' pyramids. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-a40dc205df65",
+      "category": "FOOD",
+      "sources": [
+        "https://iba-world.com/iba-cocktail/margarita/",
+        "https://en.wikipedia.org/wiki/Margarita"
+      ],
+      "sourceTextSha256": "c5e18cb0944370817e788936484ac72471c342a52e6160cd16c5e187efa95040",
+      "answerNamePresence": [
+        {
+          "label": "Tequila",
+          "foundInSource": true
+        },
+        {
+          "label": "Triple sec",
+          "foundInSource": true
+        },
+        {
+          "label": "Lime juice",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The IBA recipe's three liquid ingredients. Salt on the rim is not a liquid ingredient. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-aa90bae7c2b0",
+      "category": "FOOD",
+      "sources": [
+        "https://iba-world.com/iba-cocktail/daiquiri/",
+        "https://en.wikipedia.org/wiki/Daiquiri"
+      ],
+      "sourceTextSha256": "915e8772a30467298784b3d57411190075070fa6c7581a6c69b572d912e0b0ca",
+      "answerNamePresence": [
+        {
+          "label": "White rum",
+          "foundInSource": true
+        },
+        {
+          "label": "Lime juice",
+          "foundInSource": true
+        },
+        {
+          "label": "Sugar",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The three ingredients of the plain classic Daiquiri, not frozen fruit variations. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-e413d3476d59",
+      "category": "FOOD",
+      "sources": [
+        "https://en.wikipedia.org/wiki/White_Russian_(cocktail)"
+      ],
+      "sourceTextSha256": "a07301363411a540852311c4c47ebeb1f57e49f2f2fef6589395586c0b84d327",
+      "answerNamePresence": [
+        {
+          "label": "Vodka",
+          "foundInSource": true
+        },
+        {
+          "label": "Coffee liqueur",
+          "foundInSource": true
+        },
+        {
+          "label": "Cream",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The classic vodka-coffee-liqueur-cream drink; milk variants and optional garnishes are excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-dadcba76077b",
+      "category": "FOOD",
+      "sources": [
+        "https://iba-world.com/iba-cocktail/alexander/",
+        "https://en.wikipedia.org/wiki/Alexander_(cocktail)"
+      ],
+      "sourceTextSha256": "3893f54e0c2a102dd88d1bc9394c8269ffa09da33dd456abedc20f406a84bffa",
+      "answerNamePresence": [
+        {
+          "label": "Cognac",
+          "foundInSource": true
+        },
+        {
+          "label": "Creme de cacao",
+          "foundInSource": true
+        },
+        {
+          "label": "Cream",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The IBA cognac version, sometimes called Brandy Alexander. Nutmeg garnish is excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-ed4790c8eb0d",
+      "category": "FOOD",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Neapolitan_ice_cream"
+      ],
+      "sourceTextSha256": "31857885ecc5c41f8a0c694ea20c5bcb1fc9d5fcc5ec7953a5b3fb63d578a2c2",
+      "answerNamePresence": [
+        {
+          "label": "Chocolate",
+          "foundInSource": true
+        },
+        {
+          "label": "Vanilla",
+          "foundInSource": true
+        },
+        {
+          "label": "Strawberry",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The classic three-flavor chocolate-vanilla-strawberry combination, not regional substitutions. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-a092b55cba00",
+      "category": "FOOD",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Scotch_whisky"
+      ],
+      "sourceTextSha256": "8d1667bd3f11c56714e75f627d000af238313d8115768aa3868573c0680ea27a",
+      "answerNamePresence": [
+        {
+          "label": "Single Malt Scotch Whisky",
+          "foundInSource": true
+        },
+        {
+          "label": "Single Grain Scotch Whisky",
+          "foundInSource": true
+        },
+        {
+          "label": "Blended Scotch Whisky",
+          "foundInSource": true
+        },
+        {
+          "label": "Blended Malt Scotch Whisky",
+          "foundInSource": true
+        },
+        {
+          "label": "Blended Grain Scotch Whisky",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The five legal Scotch whisky categories, not marketing descriptions such as single cask or cask strength. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-bec94028b003",
+      "category": "FOOD",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Roman_cuisine"
+      ],
+      "sourceTextSha256": "4d749f0d88058da88c8ef0a993cb8d445dd64ad59576f64336227b19c2ed258c",
+      "answerNamePresence": [
+        {
+          "label": "Carbonara",
+          "foundInSource": true
+        },
+        {
+          "label": "Cacio e pepe",
+          "foundInSource": true
+        },
+        {
+          "label": "Amatriciana",
+          "foundInSource": true
+        },
+        {
+          "label": "Gricia",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The customary Roman quartet, not an unrestricted list of all pasta dishes served in Rome. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-467bcae95a4b",
+      "category": "FOOD",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cocoa_bean"
+      ],
+      "sourceTextSha256": "046ca657b80b096f33327c9a4b8bf0b4e0e9c9513f7bdd61fcb50f054815559a",
+      "answerNamePresence": [
+        {
+          "label": "Criollo",
+          "foundInSource": true
+        },
+        {
+          "label": "Forastero",
+          "foundInSource": true
+        },
+        {
+          "label": "Trinitario",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "Traditional horticultural classification; Trinitario is a hybrid. Modern genetic population groupings are outside this three-variety model. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-c95821be811e",
+      "category": "FOOD",
+      "sources": [
+        "https://iba-world.com/iba-cocktail/irish-coffee/",
+        "https://en.wikipedia.org/wiki/Irish_coffee"
+      ],
+      "sourceTextSha256": "4a873412465f011dcfa836897d29bf87eeff92bda2145de93ffb47c3f6433dcd",
+      "answerNamePresence": [
+        {
+          "label": "Irish whiskey",
+          "foundInSource": true
+        },
+        {
+          "label": "Hot coffee",
+          "foundInSource": true
+        },
+        {
+          "label": "Sugar",
+          "foundInSource": true
+        },
+        {
+          "label": "Cream",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "The four classic ingredients; non-Irish spirits and flavored liqueurs are outside the IBA recipe. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    },
+    {
+      "id": "daily-20261113-facae5552bd4",
+      "category": "FOOD",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Pesto"
+      ],
+      "sourceTextSha256": "167a11d3739be47d5c281af0677f9914229d179853c2f64ded49df5327d04c99",
+      "answerNamePresence": [
+        {
+          "label": "Basil",
+          "foundInSource": true
+        },
+        {
+          "label": "Extra virgin olive oil",
+          "foundInSource": true
+        },
+        {
+          "label": "Pine nuts",
+          "foundInSource": true
+        },
+        {
+          "label": "Garlic",
+          "foundInSource": true
+        },
+        {
+          "label": "Parmigiano Reggiano",
+          "foundInSource": true
+        },
+        {
+          "label": "Pecorino",
+          "foundInSource": true
+        },
+        {
+          "label": "Salt",
+          "foundInSource": true
+        }
+      ],
+      "scopeReview": "Traditional basil pesto with both hard cheeses; vegan substitutions and unrelated pesto styles are excluded. Rarity is an editorial difficulty rating, not a live answer-frequency measurement."
+    }
+  ],
+  "publication": {
+    "verifiedAt": "2026-11-12T23:11:42.793Z",
+    "url": "https://rare-daily.happycoin8899.workers.dev",
+    "workerVersion": "b8f83e58-5a89-43e8-b955-bc4282802ec4",
+    "liveBankSize": 400,
+    "liveBatch": "2026-11-13-daily",
+    "validation": [
+      "bank schema and duplicates",
+      "TypeScript",
+      "8 rule tests",
+      "full local D1 lifecycle including snapshot and clock compatibility",
+      "exact 100-question delta and historical schedule equivalence"
+    ]
+  }
+}

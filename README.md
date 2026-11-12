@@ -38,7 +38,7 @@ The tracked Wrangler file refers to the dedicated `rare-daily-db` database. For 
 
 - Five prompts per daily game, 30 seconds for each; daily reset at midnight UTC (08:00 China time).
 - One attempt per browser per date. Practice gets a new random seed. Daily dates use a deterministic versioned shuffle.
-- Curated answer bank: 300 question sets, accepted aliases, four rarity tiers worth 100, 250, 500 and 1,000 points. Invalid/skipped/expired answers get zero.
+- Curated answer bank: 400 question sets, accepted aliases, four rarity tiers worth 100, 250, 500 and 1,000 points. Invalid/skipped/expired answers get zero.
 - Rarity is editorial, clearly explained in the game. It is not a population survey. Answers are stored in D1 so aggregate answer distributions can be analyzed later.
 - Refreshing restores the current daily game. Elapsed time comes from the server. Leaving freezes no clock; an expired pending round is recorded when resumed and submitted, then the next round starts.
 - Atomic D1 batches and unique round keys prevent duplicate scoring. Scores are derived server-side. Active sessions never expose their answer lists.
@@ -55,7 +55,7 @@ The tracked Wrangler file refers to the dedicated `rare-daily-db` database. For 
 
 ## Content and operations
 
-The bank contains 30 immutable legacy prompts plus 270 new prompts in 17 expansion categories. Practice uses all 300 immediately; the new daily pool starts November 13, 2026 UTC. Dated packs are append-only and filtered by release date, so later packs cannot change old daily puzzles. Every new session stores exact question and scoring snapshots; pre-migration sessions retain the legacy bank. See `content/EDITORIAL.md` for content quality and publishing rules. Rarity is editorial, not a measured answer frequency.
+The bank contains 30 immutable legacy prompts, 270 expansion prompts, and the November 13 daily batch of 100 new prompts. Practice uses all 400 immediately; the new daily pool starts November 13, 2026 UTC. Dated packs are append-only and filtered by release date, so later packs cannot change old daily puzzles. Every new session stores exact question and scoring snapshots; pre-migration sessions retain the legacy bank. See `content/EDITORIAL.md` for content quality and publishing rules. Rarity is editorial, not a measured answer frequency.
 
 Anonymous identity is per cookie, not a verified person. Clearing cookies creates another identity. No strong anti-bot control or global request quota is included; add Cloudflare rate limiting/Turnstile for larger public launches. The basic cap is 30 new sessions per browser per hour. No traffic-scale/load test or revenue claim is made.
 
