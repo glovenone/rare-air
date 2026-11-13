@@ -17,6 +17,14 @@ Import `dist/wechat` in WeChat DevTools as a **小游戏** project. The default 
 WECHAT_APP_ID=wx_your_game_appid npm run wechat:build
 ```
 
+The publisher selected the existing test account for the current local build. Reproduce that build with the purchased domain using the following command.
+
+```sh
+WECHAT_APP_ID=wx282c5fe8f705f030 SITE_URL=https://krillionunlimited.top npm run wechat:build
+```
+
+Choose **Offline practice** on the home screen to play the bundled five-round game in the simulator. The local handoff archive is `release/artifacts/RARE-Air-WeChat-Test.zip`. Extract it and import its `wechat` directory as a game project.
+
 To connect a custom Cloudflare origin, set `SITE_URL` to its HTTPS origin in the same build command. The development-tools project uses URL validation. Configure that exact host as a legal `request` domain in the production game account before testing online daily flights on a phone. Offline practice works independently of the domain configuration.
 
 Rebuilding refreshes the generated game and assets while preserving the existing project AppID and tool settings. `WECHAT_APP_ID` overrides that AppID when supplied. Use the source files in `wechat/` for changes. AppSecret and publishing keys are unnecessary for building or importing this project.
@@ -31,7 +39,7 @@ The packaged payload is approximately 1.3 MB. The game uses the project's existi
 
 ## Publishing status
 
-The supplied `wx282c5fe8f705f030` matches the tool's test AppID. The current project has been opened with that test account. A formal game account, its AppID and upload rights are required for store submission. Confirm the game category, publisher qualifications, filing requirements, privacy declaration and review materials shown in that account before submission.
+The supplied `wx282c5fe8f705f030` matches the tool's test AppID. The publisher chose to continue local development with this account on November 13, 2026. The current project has been opened with that test account. Formal submission remains deferred until a formal game account, its AppID and upload rights are available. Confirm the game category, publisher qualifications, filing requirements, privacy declaration and review materials shown in that account before submission.
 
 The website, Apple/Google app records and WeChat game are separate publication targets. The WeChat build remains local until uploaded and reviewed through its own account.
 
