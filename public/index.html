@@ -1,11 +1,247 @@
 <!doctype html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#061324"><meta name="description" content="Dive into free daily trivia. Five questions, thirty seconds each. The rarer your correct answer, the deeper you dive. Play daily challenges and unlimited practice."><title>RARE DIVE — Free Daily Rare-Answer Trivia Game</title><link rel="canonical" href="https://rare-daily.happycoin8899.workers.dev/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="preload" href="/fonts/vt323.ttf" as="font" type="font/ttf" crossorigin><link rel="stylesheet" href="/style.css"><script src="/app.js" type="module"></script></head>
-<body data-view="home"><canvas id="ocean" aria-hidden="true"></canvas><div class="vignette" aria-hidden="true"></div><div class="scanlines" aria-hidden="true"></div>
-<header class="hud"><button class="icon-button" id="menu" aria-label="Open menu">☰</button><div class="depth-hud"><span>DEPTH</span><strong id="depth">0<span>m</span></strong><small id="zone">AT THE SURFACE</small></div><div class="journey-hud"><a href="/" class="small-logo">RARE<span>DIVE</span></a><div id="progress" class="progress" aria-label="Round progress"></div><span id="hud-round">YOUR DAILY DEEP DIVE</span></div><div class="score-hud"><span>SCORE</span><strong id="hud-score">0</strong><small>RARE ANSWERS GO DEEPER</small></div><button class="icon-button" id="sound" aria-label="Enable sound" aria-pressed="false">♫<span class="sound-cross">×</span></button></header>
-<main id="main">
-<section id="home" class="home-screen"><div class="home-title"><span class="kicker">A LITTLE KNOWLEDGE. A DEEPER ADVENTURE.</span><h1><span>RARE</span> DIVE<span class="title-shadow" aria-hidden="true">RARE DIVE</span></h1><p class="subtitle">THE DAILY DEEP DIVE</p><p class="tagline">Think of an answer.<br class="mobile-break"> Make it one nobody else would.</p></div><div class="home-console"><div class="daily-status"><span class="status-dot"></span><span id="puzzle-label">TODAY’S EXPEDITION</span><span class="status-free">FREE TO PLAY</span></div><button class="primary" id="start"><span>▼</span> BEGIN YOUR DIVE <span>▼</span></button><div class="game-details"><span>5 QUESTIONS</span><span>30 SECONDS EACH</span><span>RARER = DEEPER</span></div><div class="mode-links"><button id="practice">∞ UNLIMITED</button><button id="archive">◷ ARCHIVE</button><button id="help">? HOW TO PLAY</button></div><div class="launch-note"><span id="bank-label">300 prompts · no account needed</span><span id="reset-label">New dive at 00:00 UTC</span></div></div><div class="surface-note" aria-hidden="true">↓ THERE’S MORE TO YOU THAN THE OBVIOUS ANSWER.</div></section>
-<section id="play" class="play-screen" hidden><div class="question-card pixel-panel"><div class="question-top"><span id="question-number">QUESTION 1 OF 5</span><span id="category">GEOGRAPHY</span></div><h1 id="question"></h1><div class="question-footer"><span id="mode-label">DAILY DIVE</span><span>↓ THINK RARE. GO DEEPER.</span></div></div><div class="dive-label" aria-hidden="true">YOU <span>→</span></div><form id="answer-form" class="answer-dock"><div class="timer-wrap"><span id="timer" role="timer">30</span><small>SEC</small></div><div class="answer-control"><label class="sr-only" for="answer">Your answer</label><input id="answer" placeholder="Type your rare answer…" maxlength="100" autocomplete="off" autocapitalize="none" spellcheck="false"><div class="timer-track"><span id="time-fill"></span></div></div><button id="submit" class="dive-button" type="submit">DIVE<br><span>↵</span></button></form><div class="play-options"><button id="back-home">← SURFACE</button><span>One answer. Make it count.</span><button id="skip">SKIP →</button></div></section>
-<section id="reveal" class="reveal-screen" hidden><div id="reveal-symbol" aria-hidden="true">✦</div><div class="kicker" id="reveal-kicker">ANSWER LOCKED</div><h1 id="reveal-tier">RARE FIND</h1><p id="reveal-answer"></p><div class="reward"><strong id="reveal-points">+500</strong><span>POINTS</span><i>·</i><strong id="reveal-depth">1,000m</strong><span>DEEPER</span></div><p id="reveal-note">The deep rewards a curious mind.</p><p class="reveal-progress" id="reveal-progress"></p><button class="primary" id="next">KEEP DIVING ▼</button><small class="clock-paused">Take a breath. The next clock starts when you’re ready.</small></section>
-<section id="result" class="result-screen" hidden><div class="kicker">EXPEDITION COMPLETE</div><h1 id="result-heading">A RARE KIND OF MIND.</h1><p id="result-subtitle"></p><div class="final-meters"><strong id="final-depth">0</strong><span>METERS BELOW THE ORDINARY</span></div><div class="result-score"><span>TOTAL SCORE</span><strong id="final-score">0</strong><span>/ 5,000</span></div><div id="result-rows" class="result-rows"></div><div class="result-actions"><button class="primary" id="share">SHARE YOUR DIVE ↗</button><button class="secondary" id="play-again">∞ DIVE AGAIN</button></div><p id="share-note" class="share-note" role="status"></p><details class="answer-review pixel-panel"><summary>EXPLORE ALL ACCEPTED ANSWERS +</summary><div id="review-content"></div></details><div class="leaderboard pixel-panel"><h2>TODAY’S DEEPEST DIVERS</h2><p>Completed daily dives · top 20 · earlier start breaks score ties</p><div id="board"></div></div><button class="back" id="result-home">↑ BACK TO THE SURFACE</button></section><div id="error" role="alert" hidden></div>
-</main><footer><button id="about">ABOUT & PRIVACY</button><a href="/games-like-krillion/">GAMES LIKE KRILLION</a><button id="stats">YOUR LOGBOOK</button><span>INDEPENDENT GAME · NO ACCOUNT NEEDED</span></footer>
-<dialog id="modal" class="pixel-panel"><button id="close-modal" aria-label="Close dialog">×</button><div id="modal-content"></div></dialog><noscript><p class="noscript">Enable JavaScript to play RARE DIVE, a free daily rare-answer trivia game.</p></noscript></body></html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#121311" />
+    <meta
+      name="description"
+      content="Turn unexpected answers into extraordinary crystals. Play RARE, a free daily trivia game with five questions, 30 seconds each, and a collection all your own."
+    />
+    <title>RARE — The Daily Discovery</title>
+    <link
+      rel="canonical"
+      href="https://rare-daily.happycoin8899.workers.dev/"
+    />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="/fonts/dm-sans-400.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/instrument-serif-normal.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/app.js" type="module"></script>
+  </head>
+  <body data-view="home" data-tier="4">
+    <div class="ambient" aria-hidden="true"></div>
+    <div
+      id="specimen-stage"
+      class="specimen-stage"
+      role="img"
+      aria-label="An interactive floating amber crystal"
+    >
+      <div class="stage-halo" aria-hidden="true"></div>
+      <div class="fallback-crystal" aria-hidden="true">
+        <i></i><i></i><i></i><i></i>
+      </div>
+      <canvas id="crystal-canvas" aria-hidden="true"></canvas>
+      <div class="stage-floor" aria-hidden="true"></div>
+      <span class="stage-caption">DRAG TO EXPLORE <span>↔</span></span>
+    </div>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Rare home"
+        >rare<span class="brand-dot">.</span></a
+      >
+      <span class="brand-descriptor">THE DAILY DISCOVERY</span>
+      <nav aria-label="Main navigation">
+        <button id="help">How to play <span>↗</span></button>
+        <button id="stats" class="nav-collection">
+          <span class="collection-icon">◇</span> Your collection
+        </button>
+        <button
+          id="sound"
+          class="sound-button"
+          aria-label="Enable sound"
+          aria-pressed="false"
+        >
+          ♪<span id="sound-state">off</span>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="home-screen">
+        <div class="home-copy">
+          <div class="eyebrow daily-eyebrow">
+            <span class="live-dot"></span
+            ><span id="puzzle-label">YOUR DAILY MOMENT OF DISCOVERY</span>
+          </div>
+          <h1>Ordinary question.<br /><em>Extraordinary</em><br />answer.</h1>
+          <p class="intro">
+            Everyone knows an answer.<br />Find the one they wouldn’t think of.
+          </p>
+          <div class="home-actions">
+            <button class="primary" id="start">
+              <span>Make a discovery</span><span>↗</span>
+            </button>
+            <p class="session-details">
+              5 questions <i></i> 30 seconds each <i></i> Free to play
+            </p>
+          </div>
+          <button class="practice-link" id="practice">
+            <span>∞</span> A little more curious? Try unlimited <span>→</span>
+          </button>
+        </div>
+        <aside class="specimen-info" aria-label="Specimen preview">
+          <div class="specimen-index">THE EXCEPTIONAL COLLECTION</div>
+          <div class="specimen-title">
+            <span class="specimen-dot"></span> Amber / <em>Exceptional</em>
+          </div>
+          <p>Your rarest answers. Crystallized.</p>
+          <div class="specimen-scale">
+            <span>COMMON</span><i></i><i></i><i></i><i></i
+            ><span>EXCEPTIONAL</span>
+          </div>
+        </aside>
+        <div class="home-bottom">
+          <span id="bank-label">400 prompts to spark your curiosity.</span
+          ><button id="archive">Explore the archive <span>↗</span></button
+          ><span id="reset-label">A fresh discovery every day.</span>
+        </div>
+      </section>
+      <section id="play" class="play-screen" hidden>
+        <div class="game-top">
+          <button class="back" id="back-home">← Back</button
+          ><span id="mode-label">DAILY DISCOVERY</span
+          ><span class="score-small"><span id="live-score">0</span> pts</span>
+        </div>
+        <div
+          class="round-progress"
+          id="progress"
+          aria-label="Round progress"
+        ></div>
+        <div class="question-meta">
+          <span id="category" class="eyebrow"></span
+          ><span id="question-number"></span>
+        </div>
+        <h1 id="question"></h1>
+        <p class="question-hint">
+          The less obvious the answer, the rarer the crystal.
+        </p>
+        <form id="answer-form">
+          <label for="answer" class="sr-only">Your answer</label>
+          <div class="answer-field">
+            <input
+              id="answer"
+              maxlength="100"
+              placeholder="Something a little less obvious…"
+              autocomplete="off"
+              autocapitalize="none"
+              spellcheck="false"
+            /><button
+              class="answer-submit"
+              id="submit"
+              type="submit"
+              aria-label="Submit answer"
+            >
+              ↵
+            </button>
+          </div>
+          <div class="timer-track"><div id="time-fill"></div></div>
+          <div class="answer-bottom">
+            <span class="timer"
+              ><span id="timer" role="timer">30</span
+              ><small>seconds left</small></span
+            ><button class="back" id="skip" type="button">
+              Let this one go →
+            </button>
+          </div>
+        </form>
+        <div
+          class="collection-tray"
+          id="play-collection"
+          aria-label="Crystals collected"
+        ></div>
+      </section>
+      <section id="reveal" class="reveal-screen" hidden aria-live="polite">
+        <div class="eyebrow" id="reveal-kicker">A NEW DISCOVERY</div>
+        <h1 id="reveal-tier">Exceptional.</h1>
+        <p class="reveal-answer" id="reveal-answer"></p>
+        <p class="reveal-note" id="reveal-note"></p>
+        <div class="reward">
+          <strong id="reveal-points">+1,000</strong
+          ><span>points added to<br />your collection</span>
+        </div>
+        <button id="next" class="primary">
+          <span>Keep discovering</span><span>→</span>
+        </button>
+        <div class="reveal-footer">
+          <span id="reveal-progress"></span
+          ><span>Your next question waits for you.</span>
+        </div>
+        <div
+          class="collection-tray"
+          id="reveal-collection"
+          aria-label="Crystals collected"
+        ></div>
+      </section>
+      <section id="result" class="result-screen" hidden>
+        <div class="eyebrow">YOUR COLLECTION IS COMPLETE</div>
+        <h1 id="result-heading">A mind of <em>your own.</em></h1>
+        <p id="result-subtitle"></p>
+        <div
+          id="final-collection"
+          class="final-collection"
+          aria-label="Your five collected crystals"
+        ></div>
+        <div class="final-summary">
+          <div>
+            <span>COLLECTION SCORE</span><strong id="final-score">0</strong
+            ><small>/ 5,000 points</small>
+          </div>
+          <div class="collection-quality">
+            <span>RAREST FIND</span><strong id="rarest-find">Exceptional</strong
+            ><small>Editorial rarity</small>
+          </div>
+        </div>
+        <div class="result-actions">
+          <button class="primary" id="share">
+            <span>Share your collection</span><span>↗</span></button
+          ><button class="secondary" id="play-again">∞ Keep exploring</button>
+        </div>
+        <p class="share-note" id="share-note" role="status"></p>
+        <div id="result-rows" class="result-rows"></div>
+        <details class="answer-review">
+          <summary>Explore the accepted answers <span>+</span></summary>
+          <div id="review-content"></div>
+        </details>
+        <section class="leaderboard">
+          <div class="section-top">
+            <h2>Curious company.</h2>
+            <span>DAILY TOP 20</span>
+          </div>
+          <p>Completed daily games. Equal scores are ordered by start time.</p>
+          <div id="board"></div>
+        </section>
+        <button class="back" id="result-home">← Back to the beginning</button>
+      </section>
+      <div id="error" role="alert" hidden></div>
+    </main>
+    <footer>
+      <span>RARE / A GAME FOR CURIOUS MINDS</span
+      ><button id="about">About & privacy</button
+      ><a href="/games-like-krillion/">Games like Krillion</a
+      ><span class="footer-note">A little different. Every day.</span>
+    </footer>
+    <dialog id="modal">
+      <button id="close-modal" aria-label="Close dialog">×</button>
+      <div id="modal-content"></div>
+    </dialog>
+    <noscript
+      ><p class="noscript">
+        Enable JavaScript to play the daily discovery.
+      </p></noscript
+    >
+  </body>
+</html>

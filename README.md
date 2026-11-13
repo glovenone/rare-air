@@ -1,6 +1,6 @@
-# RARE DIVE — Below the ordinary.
+# RARE — The Daily Discovery.
 
-A full-screen pixel-ocean English daily trivia game, deployed on Cloudflare Workers + D1.
+An interactive crystal-collection English daily trivia game, deployed on Cloudflare Workers + D1.
 
 Live: https://rare-daily.happycoin8899.workers.dev
 
@@ -49,7 +49,7 @@ The tracked Wrangler file refers to the dedicated `rare-daily-db` database. For 
 
 - `src/worker.ts`: static assets, JSON API, origin checks, anonymous ownership, session clock, D1 records.
 - `src/questions.js`: server-only question bank, answer normalization, scoring, puzzle schedule. Add prompts here; do not move this file into `public/`.
-- `public/`: responsive buildless frontend, no external assets or trackers.
+- `public/`: responsive frontend and bundled 3D scene, with locally hosted fonts and lighting assets.
 - `migrations/`: immutable ordered D1 schema migrations.
 - `test/`: rule tests and real local Worker/D1 lifecycle tests.
 
@@ -69,12 +69,14 @@ Codex automation `rare-100` runs daily at 07:00 Asia/Shanghai, beginning Novembe
 
 Use `npm run bank:build` to validate packs and regenerate server-only `src/bank.js`. Each daily pack must have exactly 100 prompts. Public `/api/puzzle` reports `bankSize` and `latestBatch` for deployment verification, without exposing answers.
 
-## Pixel-ocean interface
+## Crystal laboratory interface
 
-The surface is the playable start screen. The original canvas scene (`public/ocean.js`) draws a boat, clouds, waves, fish, bubbles, plants, jellyfish and an original diving robot. The camera follows score-derived depth (2 meters per point, maximum 10,000m); animated HUD numbers match earned server scores. Sound is off by default and only enabled by user input. Reduced-motion settings freeze ambient drift and remove interpolation.
+The visual theme is an interactive 3D crystal laboratory. `client/crystal.js` defines the original mineral geometry, lighting, pointer rotation and reward animation. `npm run client:build` bundles Three.js and the scene into `public/crystal.js`. The dev and deploy scripts run this build automatically. The game loads the visual module separately and displays a CSS specimen when graphics are unavailable. Reduced-motion preferences disable ambient rotation and burst motion. Rendering pauses in background tabs and on the final collection screen.
 
-An answer now leads to a rarity/reward screen. The server stores `started=0` between rounds. `/api/next` starts the clock exactly once and reveals the next prompt; repeated calls do not reset it. While waiting, `/api/resume` and `/api/answer` responses never reveal the next prompt or a running deadline. The last answer also has a result moment before the full dive report. Legacy sessions and scores are preserved. The daily task continues to maintain the same bank.
+Every correct answer earns a game crystal based on its editorial rarity tier. Quartz scores 100, jade 250, amethyst 500 and amber 1,000 points. The five-round collection report includes the server score, accepted answers, daily leaderboard and a spoiler-free share card. Crystal labels are visual game rewards. Completed daily collections store rarity tiers in browser-local history.
 
-Fonts: locally hosted VT323 and Press Start 2P, with their SIL Open Font Licenses alongside the font files. No reference-game artwork, sprites, source code or data is bundled.
+The result screen waits for explicit continuation. `/api/next` starts each question clock once. Completed games remain resumable with their stored scores. No schema migration is required for this visual redesign.
 
-Search content: `/games-like-krillion/` explains the independent alternative and links the original honestly. robots.txt and sitemap.xml include the public pages and exclude APIs. Titles/descriptions/canonical URLs target the currently deployed workers.dev origin; update all three after binding a custom domain. Search Console submission and measured ranking/traffic are not configured or promised.
+Locally hosted DM Sans and Instrument Serif use the included SIL Open Font Licenses. Three.js uses its bundled MIT license. Studio illumination uses the CC0 Studio Small 09 HDR from Poly Haven, with source and license in `public/textures/LICENSE.txt`.
+
+Search content at `/games-like-krillion/` describes the independent collection game. Canonical URLs, robots.txt and sitemap.xml use the deployed workers.dev address.

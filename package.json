@@ -4,17 +4,22 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "wrangler dev --port 8787",
+    "dev": "npm run client:build && wrangler dev --port 8787",
     "test": "node --test test/*.test.js",
     "check": "tsc --noEmit",
-    "deploy": "npm run bank:build && npm run check && npm test && wrangler deploy",
+    "deploy": "npm run bank:build && npm run client:build && npm run check && npm test && wrangler deploy",
     "db:local": "wrangler d1 migrations apply DB --local",
     "db:remote": "wrangler d1 migrations apply DB --remote",
-    "bank:build": "node scripts/build-bank.mjs"
+    "bank:build": "node scripts/build-bank.mjs",
+    "client:build": "node scripts/build-client.mjs"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "latest",
+    "esbuild": "^0.28.2",
     "typescript": "^5.9.3",
     "wrangler": "^4.0.0"
+  },
+  "dependencies": {
+    "three": "^0.187.0"
   }
 }
