@@ -11,11 +11,45 @@
       name="description"
       content="A little knowledge. A lot of altitude. Take flight in RARE, a free daily trivia game where unexpected answers lift you higher."
     />
-    <title>RARE — How high can you go?</title>
+    <title>RARE Air — Free Daily Trivia Game &amp; Practice Flights</title>
     <link
       rel="canonical"
       href="https://rare-daily.happycoin8899.workers.dev/"
     />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="RARE Air" />
+    <meta property="og:title" content="RARE Air — How high can you go?" />
+    <meta
+      property="og:description"
+      content="Five questions. One curious balloon. Play free daily trivia where rare answers take you higher."
+    />
+    <meta
+      property="og:url"
+      content="https://rare-daily.happycoin8899.workers.dev/"
+    />
+    <meta
+      property="og:image"
+      content="https://rare-daily.happycoin8899.workers.dev/art/app-icon.png"
+    />
+    <meta name="twitter:card" content="summary" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "RARE Air",
+        "url": "https://rare-daily.happycoin8899.workers.dev/",
+        "description": "A free daily trivia game with five open-answer questions. Rare correct answers lift a hot-air balloon higher.",
+        "applicationCategory": "GameApplication",
+        "genre": ["Trivia", "Educational"],
+        "gamePlatform": ["Web browser"],
+        "playMode": "SinglePlayer",
+        "inLanguage": "en",
+        "isAccessibleForFree": true,
+        "image": "https://rare-daily.happycoin8899.workers.dev/art/app-icon.png",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      }
+    </script>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link
       rel="preload"
@@ -31,7 +65,7 @@
       type="font/ttf"
       crossorigin
     />
-    <link rel="preload" href="/art/dawn-sky.png" as="image" />
+    <link rel="preload" href="/art/dawn-sky.webp" as="image" />
     <link rel="stylesheet" href="/style.css" />
     <script src="/app.js" type="module"></script>
   </head>
@@ -52,7 +86,7 @@
       aria-describedby="pilot-instructions"
     >
       <span class="balloon-float"
-        ><img src="/art/balloon.png" alt="" draggable="false" /><span
+        ><img src="/art/balloon.webp" alt="" draggable="false" /><span
           class="burner-glow"
         ></span
       ></span>
@@ -109,7 +143,10 @@
       <section id="home" class="home-screen">
         <div class="home-heading">
           <div class="daily-label" id="puzzle-label">THE DAILY CLIMB</div>
-          <h1>Rare air<span>.</span></h1>
+          <h1>
+            Rare air<span>.</span
+            ><span class="sr-only"> — Daily trivia game</span>
+          </h1>
         </div>
         <div class="home-dock">
           <p class="home-rule">
@@ -122,8 +159,12 @@
           ><button id="practice" class="practice-link">
             Practice flight <span>↗</span>
           </button>
+          <button id="offline-practice" class="practice-link" hidden>
+            Offline practice ↗
+          </button>
           <div class="home-links">
-            <button id="archive">Previous flights</button
+            <a href="/daily-trivia/">About the game</a
+            ><button id="archive">Previous flights</button
             ><span id="reset-label">A fresh flight every day.</span>
           </div>
           <span id="bank-label" class="sr-only">400 questions.</span>
@@ -267,7 +308,10 @@
       <div id="modal-content"></div>
     </dialog>
     <noscript
-      ><p class="noscript">Enable JavaScript to take flight.</p></noscript
+      ><p class="noscript">
+        Play RARE Air, a free daily trivia game with five open-answer questions.
+        Enable JavaScript to take flight, or read the rules at /how-to-play/.
+      </p></noscript
     >
   </body>
 </html>

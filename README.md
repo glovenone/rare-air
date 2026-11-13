@@ -69,7 +69,23 @@ Anonymous identity is per cookie, not a verified person. Clearing cookies create
 
 D1 stores opaque player IDs, game state and chosen answers. No account emails or advertising IDs. Local storage holds stats. Production resources are separate from Wrangler's ignored local development database. Wrangler may use paid quotas according to the account plan.
 
-To attach a domain: configure a Workers custom domain in Cloudflare Dashboard for `rare-daily`; no source changes needed.
+To attach a domain, configure a Workers custom domain in Cloudflare Dashboard for `rare-daily`. Set `SITE_URL` to the owned HTTPS origin when running `npm run site:build` and `npm run mobile:sync`, then deploy the rebuilt website. This aligns canonical URLs, the sitemap, mobile API requests and native score sharing with that domain.
+
+## Packaged mobile apps
+
+The `ios/` and `android/` projects use Capacitor 8.6.2. They bundle the illustrated game, 400 bundled offline practice prompts, local offline flight history, native score sharing, haptics, Android back navigation and network/lifecycle handling. Online daily flights and practice use the configured Cloudflare API. Offline scoring shares the server's normalization and answer evaluation functions.
+
+```sh
+npm ci
+npm run mobile:sync
+npx cap open ios
+# Or open the Android project
+npx cap open android
+```
+
+Android builds require JDK 21 and Android SDK 36. Release signing reads an external properties file through `RARE_ANDROID_SIGNING_PROPERTIES`. iOS distribution uses the Apple team configured in Xcode and a distribution provisioning profile. Build output and signing material stay outside Git. The public source includes app icons, store text, a Google Play feature graphic and a captured iPhone screenshot.
+
+See [mobile release preparation](release/README.md) for commands, verification, privacy details and remaining store steps.
 
 ## Daily 100-question task
 
@@ -91,6 +107,10 @@ DM Sans and Bricolage Grotesque are hosted locally with their included SIL Open 
 
 Search content at `/games-like-krillion/` describes the independent flight game. Canonical URLs, robots.txt and sitemap.xml use the deployed workers.dev address.
 
+Additional crawlable pages cover daily trivia, playing rules, privacy and support. `npm run site:build` generates these pages, robots.txt and sitemap.xml. The homepage includes VideoGame structured data and social metadata. Runtime sky illustrations use compressed WebP files. The original PNGs remain in the source repository.
+
+The mobile icon was generated with the built-in ImageGen tool using the existing balloon as a visual reference. `public/art/app-icon-source.png` preserves the generated source, and `public/art/app-icon.png` is the 1024-pixel export. Its prompt requested a polished square icon for RARE Air with a coral-and-ivory miniature hot-air balloon, a woven basket, sculptural ivory clouds, a pale turquoise dawn sky and warm sunrise lighting. It requested a readable silhouette at small sizes, refined tactile 3D materials, full-bleed artwork and a composition without lettering. Platform icon sizes are derived from that export.
+
 ### Illustration prompts
 
 The sky prompt was used with an opaque background.
@@ -108,3 +128,13 @@ The cloud prompt was used with a transparent background.
 ## License
 
 The code and original project material are available under the [MIT License](LICENSE). The locally hosted fonts retain their included SIL Open Font Licenses. The illustration prompts and generation provenance are documented above.
+
+## WeChat game
+
+The `wechat/` edition renders the illustrated game with native Canvas and WeChat keyboard, touch, sharing and storage APIs. It shares the answer evaluator and bundled offline question bank with the mobile apps. Online daily flights connect to the same Cloudflare API.
+
+```sh
+npm run wechat:build
+```
+
+Import `dist/wechat` as a game project in WeChat DevTools. See [WeChat setup and validation](wechat/README.md) for AppID, network-domain configuration and publication status.

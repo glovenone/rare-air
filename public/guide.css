@@ -139,3 +139,28 @@ footer {
     font-size: 25px;
   }
 }
+main nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 22px;
+  border-top: 1px solid #183c4a22;
+  padding-top: 25px;
+  margin-top: 30px;
+  font-size: 12px;
+}
+section p + p {
+  margin-top: 16px;
+}
+
+header {
+  padding-top: calc(25px + env(safe-area-inset-top, 0px));
+}
+footer {
+  padding-bottom: calc(25px + env(safe-area-inset-bottom, 0px));
+}
+pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 13px;
+  line-height: 1.6;
+}

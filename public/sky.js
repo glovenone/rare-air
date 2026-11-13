@@ -9,9 +9,9 @@ const zoneLabel = document.getElementById("sky-zone");
 const checkpoint = document.getElementById("checkpoint");
 const balloon = document.getElementById("balloon");
 const cloudImage = new Image();
-cloudImage.src = "/art/cloud-bank.png";
+cloudImage.src = "/art/cloud-bank.webp";
 const balloonImage = new Image();
-balloonImage.src = "/art/balloon.png";
+balloonImage.src = "/art/balloon.webp";
 
 const landmarks = [
   { altitude: 250, label: "Kites on the breeze", side: 1 },

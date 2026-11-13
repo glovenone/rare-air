@@ -1,0 +1,19 @@
+{
+  "name": "RARE Air: Daily Trivia",
+  "subtitle": "Rare answers. Higher flights.",
+  "shortDescription": "Find rare trivia answers and fly higher. Daily challenges and offline practice.",
+  "promotionalText": "Five questions. Thirty seconds each. Find an unexpected correct answer and watch your balloon rise through a living sky.",
+  "description": "Take your knowledge above the clouds.\n\nRARE Air is an open-answer trivia game about finding the less obvious answer. Each flight gives you five questions and 30 seconds per question. Type one correct answer and your hot-air balloon climbs. Rarer answers give you a bigger lift.\n\nA FRESH DAILY FLIGHT\nEveryone gets the same five prompts each day. Explore geography, science, books, films, history and everyday knowledge. A new challenge opens at midnight UTC.\n\nFIND YOUR UPDRAFT\nCorrect answers earn 100, 250, 500 or 1,000 meters, based on fixed editorial rarity tiers. Aim for a 5,000-meter flight and review accepted answers after the final stage.\n\nA SKY THAT RESPONDS\nDrag your balloon to steer. Tap it to catch a gust. Rare answers bring cloud breakthroughs, wind rings and paper-plane companions. Turn on sound for extra atmosphere. Native haptics add feedback on supported devices, and reduced-motion settings simplify the flight.\n\nKEEP EXPLORING\nPractice online with fresh five-question sets, revisit past daily flights, or play from 400 bundled practice prompts offline. Completed daily and offline flight history stays on your device.\n\nSHARE YOUR FLIGHT\nSend a spoiler-free scorecard through your phone\u2019s share sheet. Compare daily altitudes on the anonymous leaderboard.\n\nDaily challenges, online practice, the archive and leaderboards require an internet connection. Offline practice works without a connection. Rarity tiers are curated editorial ratings. The game is free and has no in-app purchases.",
+  "keywords": "trivia,daily,quiz,rare,answers,general knowledge,brain,offline,puzzle,balloon,word",
+  "supportUrl": "https://rare-daily.happycoin8899.workers.dev/support/",
+  "marketingUrl": "https://rare-daily.happycoin8899.workers.dev/",
+  "privacyUrl": "https://rare-daily.happycoin8899.workers.dev/privacy/",
+  "copyright": "2026 glovenone",
+  "reviewNotes": "No player sign-in or payment is required. Daily and online practice use the production Cloudflare API. For a network-independent review, choose Offline practice on the home screen. It packages 400 prompts and scores locally.\n\nEach flight has five rounds. Choose Climb higher after the reward screen, then a three-second preparation countdown reveals the next prompt. The 30-second clock starts when that prompt appears. Online active timers continue while backgrounded. After five stages, the flight report shows accepted answers and native score sharing. Drag or tap the balloon for flight effects. Sound starts off and follows the in-game control. Haptics require supported device hardware.\n\nScoring uses fixed editorial rarity tiers that estimate answer obscurity. Native offline practice and history, native sharing, haptics and network/lifecycle handling are included in the packaged app. The web source is MIT-licensed at https://github.com/glovenone/rare-air.",
+  "androidReleaseNotes": "First flight. Daily trivia, online practice, 400 bundled offline practice prompts, responsive balloon controls, native score sharing and haptics.",
+  "category": "Games / Trivia",
+  "price": "Free",
+  "releaseMode": "Manual",
+  "bundleId": "com.letuzhixing.rareair",
+  "language": "en-US"
+}

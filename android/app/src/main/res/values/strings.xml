@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">RARE Air</string>
+    <string name="title_activity_main">RARE Air</string>
+    <string name="package_name">com.letuzhixing.rareair</string>
+    <string name="custom_url_scheme">com.letuzhixing.rareair</string>
+</resources>

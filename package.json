@@ -7,16 +7,31 @@
     "dev": "wrangler dev --port 8787",
     "test": "node --test test/*.test.js",
     "check": "tsc --noEmit",
-    "deploy": "npm run bank:build && npm run check && npm test && wrangler deploy",
+    "deploy": "npm run bank:build && npm run site:build && npm run check && npm test && wrangler deploy",
     "db:local": "wrangler d1 migrations apply DB --local",
     "db:remote": "wrangler d1 migrations apply DB --remote",
-    "bank:build": "node scripts/build-bank.mjs"
+    "bank:build": "node scripts/build-bank.mjs",
+    "mobile:build": "node scripts/build-mobile.mjs",
+    "mobile:sync": "npm run mobile:build && cap sync",
+    "site:build": "node scripts/build-site.mjs",
+    "wechat:build": "node scripts/build-wechat.mjs"
   },
   "devDependencies": {
+    "@capacitor/cli": "8.6.2",
     "@cloudflare/workers-types": "latest",
+    "esbuild": "0.28.2",
     "typescript": "^5.9.3",
     "wrangler": "^4.0.0"
   },
   "license": "MIT",
-  "description": "A daily rare-answer trivia game that flies through an illustrated sky, built on Cloudflare Workers and D1."
+  "description": "A daily rare-answer trivia game that flies through an illustrated sky, built on Cloudflare Workers and D1.",
+  "dependencies": {
+    "@capacitor/android": "8.6.2",
+    "@capacitor/app": "8.1.2",
+    "@capacitor/core": "8.6.2",
+    "@capacitor/haptics": "8.0.2",
+    "@capacitor/ios": "8.6.2",
+    "@capacitor/network": "8.0.1",
+    "@capacitor/share": "8.0.3"
+  }
 }

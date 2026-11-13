@@ -96,7 +96,7 @@ p {
 .sky-landscape {
   position: absolute;
   inset: -10% -3% -6%;
-  background: url("/art/dawn-sky.png") center 54% / cover no-repeat;
+  background: url("/art/dawn-sky.webp") center 54% / cover no-repeat;
   transform: translateY(var(--sky-shift));
   opacity: var(--landscape-opacity);
   will-change: transform, opacity;
@@ -2017,4 +2017,41 @@ body[data-view="result"] .balloon {
 }
 body:not([data-view="home"]) .pilot-hint {
   display: none;
+}
+.native-app .site-header {
+  top: env(safe-area-inset-top);
+}
+.native-app .flight-hud {
+  top: calc(78px + env(safe-area-inset-top));
+}
+.native-app .home-dock,
+.native-app .control-dock {
+  bottom: calc(24px + env(safe-area-inset-bottom));
+}
+.native-app .home-heading {
+  top: calc(21% + env(safe-area-inset-top) * 0.4);
+}
+.native-app .question-content {
+  top: calc(23% + env(safe-area-inset-top) * 0.5);
+}
+.native-app .reveal-content {
+  top: calc(21% + env(safe-area-inset-top) * 0.4);
+}
+.native-app body[data-view="result"] .site-header {
+  margin-top: env(safe-area-inset-top);
+  top: 0;
+}
+.native-app #offline-practice {
+  margin-top: 3px;
+}
+.native-app .home-rule {
+  margin-bottom: 15px;
+}
+@media (max-height: 650px) {
+  .native-app .home-links {
+    margin-top: 10px;
+  }
+  .native-app .question-content {
+    top: calc(25% + env(safe-area-inset-top) * 0.4);
+  }
 }

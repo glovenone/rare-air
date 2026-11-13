@@ -3,3 +3,14 @@ node_modules/
 .dev.vars
 .env*
 dist/
+
+release/artifacts/
+release/private/
+*.keystore
+*.jks
+*.p12
+*.mobileprovision
+*.xcarchive/
+*.ipa
+*.aab
+*.apk
