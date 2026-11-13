@@ -1,6 +1,6 @@
-# RARE — The Daily Discovery.
+# RARE — The Daily Climb
 
-An interactive crystal-collection English daily trivia game, deployed on Cloudflare Workers + D1.
+An illustrated hot-air-balloon English daily trivia game, deployed on Cloudflare Workers + D1.
 
 Live: https://rare-daily.happycoin8899.workers.dev
 
@@ -49,7 +49,7 @@ The tracked Wrangler file refers to the dedicated `rare-daily-db` database. For 
 
 - `src/worker.ts`: static assets, JSON API, origin checks, anonymous ownership, session clock, D1 records.
 - `src/questions.js`: server-only question bank, answer normalization, scoring, puzzle schedule. Add prompts here; do not move this file into `public/`.
-- `public/`: responsive frontend and bundled 3D scene, with locally hosted fonts and lighting assets.
+- `public/`: responsive frontend, animated flight world, locally hosted illustrations and fonts.
 - `migrations/`: immutable ordered D1 schema migrations.
 - `test/`: rule tests and real local Worker/D1 lifecycle tests.
 
@@ -69,14 +69,28 @@ Codex automation `rare-100` runs daily at 07:00 Asia/Shanghai, beginning Novembe
 
 Use `npm run bank:build` to validate packs and regenerate server-only `src/bank.js`. Each daily pack must have exactly 100 prompts. Public `/api/puzzle` reports `bankSize` and `latestBatch` for deployment verification, without exposing answers.
 
-## Crystal laboratory interface
+## Flight interface
 
-The visual theme is an interactive 3D crystal laboratory. `client/crystal.js` defines the original mineral geometry, lighting, pointer rotation and reward animation. `npm run client:build` bundles Three.js and the scene into `public/crystal.js`. The dev and deploy scripts run this build automatically. The game loads the visual module separately and displays a CSS specimen when graphics are unavailable. Reduced-motion preferences disable ambient rotation and burst motion. Rendering pauses in background tabs and on the final collection screen.
+`public/sky.js` renders a continuous vertical flight world using Canvas 2D. A small hot-air balloon travels past cloud banks, birds, kites, other balloons and altitude landmarks. One server-scored point represents one game meter, up to 5,000 meters. The world moves downward with the camera during each ascent. Rarity tiers control distance, burner glow, particle count and reward sound.
 
-Every correct answer earns a game crystal based on its editorial rarity tier. Quartz scores 100, jade 250, amethyst 500 and amber 1,000 points. The five-round collection report includes the server score, accepted answers, daily leaderboard and a spoiler-free share card. Crystal labels are visual game rewards. Completed daily collections store rarity tiers in browser-local history.
+The timed question and input controls sit directly in the scene. Every new prompt has a three-second preparation countdown. `/api/next` starts the server clock after that countdown. Reward screens wait for explicit continuation. The final flight report includes five stages, accepted answers, daily leaderboard and spoiler-free sharing. Anonymous session IDs and local history keys support previous games.
 
-The result screen waits for explicit continuation. `/api/next` starts each question clock once. Completed games remain resumable with their stored scores. No schema migration is required for this visual redesign.
+The visual module loads independently of the timed game. A still sky and direct altitude values remain available if the animation module fails. Reduced-motion preferences disable balloon, cloud, bird and particle movement. Rendering pauses in background tabs. The layout responds to the visual viewport when a mobile keyboard opens.
 
-Locally hosted DM Sans and Instrument Serif use the included SIL Open Font Licenses. Three.js uses its bundled MIT license. Studio illumination uses the CC0 Studio Small 09 HDR from Poly Haven, with source and license in `public/textures/LICENSE.txt`.
+DM Sans and Bricolage Grotesque are hosted locally with their included SIL Open Font Licenses. The three game illustrations were generated with the built-in ImageGen tool and are stored at `public/art/dawn-sky.png`, `public/art/balloon.png` and `public/art/cloud-bank.png`. Image-generation prompts are recorded below. Runtime gameplay uses the local assets.
 
-Search content at `/games-like-krillion/` describes the independent collection game. Canonical URLs, robots.txt and sitemap.xml use the deployed workers.dev address.
+Search content at `/games-like-krillion/` describes the independent flight game. Canonical URLs, robots.txt and sitemap.xml use the deployed workers.dev address.
+
+### Illustration prompts
+
+The sky prompt was used with an opaque background.
+
+> Use case: stylized-concept. Asset type: full-bleed background for a premium daily flying trivia browser game. Create a beautiful cinematic stylized 3D painted sky landscape, a serene dawn above a sea of billowing sculptural ivory clouds, luminous pale blue turquoise sky at top two thirds, warm soft peach sunrise light from upper right. Low distant rolling blue-green mountain silhouettes peeking through cloud sea along bottom 15 percent. Several rich dimensional cumulus cloud banks frame lower left and lower right and tiny distant wisps at edges. Center and upper left kept spacious and quiet to place web game typography. Refined whimsical adventure videogame art with very subtle paper grain, miniature diorama quality, beautiful physically lit soft volumes, understated atmospheric perspective, high-end art direction. Landscape 1536x1024. No balloon, no aircraft, no people, no text, no lettering, no logos, no interface, no watermarks. Background should fill entire image to edges.
+
+The balloon prompt was used with a transparent background.
+
+> Use case: stylized-concept. Asset type: transparent hero sprite for a premium flying browser game. A single exquisitely crafted whimsical hot air balloon, classic teardrop silhouette with vertical alternating warm coral red and creamy ivory fabric gores, realistic subtle seams and fine cloth texture, elegant cream scalloped skirt at lower opening, four fine ropes connecting to a tiny richly detailed warm woven wicker basket with dark interior and brass rim. A small softly glowing burner flame inside throat. Rendered as premium miniature diorama art / refined 3D animation feature-film prop, beautiful diffused morning sunlight from upper right with soft shaded left side, tactile materials, crisp clean cutout edges, slightly elevated three-quarter camera view, balloon whole entirely in frame with generous transparent margin, upright vertical composition. No people, no face, no characters, no text, no lettering, no background, no clouds, no ground, no drop shadow on floor, genuine transparent alpha.
+
+The cloud prompt was used with a transparent background.
+
+> Use case: stylized-concept. Asset type: a transparent parallax cloud sprite for an illustrated hot-air-balloon browser game. A single long low cloud bank composed of beautiful sculptural billowing cumulus volumes, creamy ivory sunlit tops with pale blue teal shaded undersides, gentle warm peach sunlight from upper right, premium miniature diorama / 3D animation feature-film style, tactile fine cloud details and soft wispy outer edges. Wide horizontal composition, entire cloud fully contained with clear transparent margin, cloud centered, genuinely transparent alpha everywhere outside the cloud. No sky background, no landscape, no mountains, no objects, no text, no outlines, no floor shadow. The cloud should retain opaque rich volumes in its center and clean naturally feathered transparent edges.

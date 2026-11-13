@@ -6,12 +6,12 @@
       name="viewport"
       content="width=device-width,initial-scale=1,viewport-fit=cover"
     />
-    <meta name="theme-color" content="#121311" />
+    <meta name="theme-color" content="#d8eaf0" />
     <meta
       name="description"
-      content="Turn unexpected answers into extraordinary crystals. Play RARE, a free daily trivia game with five questions, 30 seconds each, and a collection all your own."
+      content="A little knowledge. A lot of altitude. Take flight in RARE, a free daily trivia game where unexpected answers lift you higher."
     />
-    <title>RARE — The Daily Discovery</title>
+    <title>RARE — How high can you go?</title>
     <link
       rel="canonical"
       href="https://rare-daily.happycoin8899.workers.dev/"
@@ -19,47 +19,42 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link
       rel="preload"
-      href="/fonts/dm-sans-400.ttf"
+      href="/fonts/bricolage-800.ttf"
       as="font"
       type="font/ttf"
       crossorigin
     />
     <link
       rel="preload"
-      href="/fonts/instrument-serif-normal.ttf"
+      href="/fonts/dm-sans-400.ttf"
       as="font"
       type="font/ttf"
       crossorigin
     />
+    <link rel="preload" href="/art/dawn-sky.png" as="image" />
     <link rel="stylesheet" href="/style.css" />
     <script src="/app.js" type="module"></script>
   </head>
   <body data-view="home" data-tier="4">
-    <div class="ambient" aria-hidden="true"></div>
-    <div
-      id="specimen-stage"
-      class="specimen-stage"
-      role="img"
-      aria-label="An interactive floating amber crystal"
-    >
-      <div class="stage-halo" aria-hidden="true"></div>
-      <div class="fallback-crystal" aria-hidden="true">
-        <i></i><i></i><i></i><i></i>
+    <div id="sky-stage" class="sky-stage" aria-hidden="true">
+      <div class="sky-color"></div>
+      <div class="sky-landscape"></div>
+      <div class="high-sky"></div>
+      <canvas id="cloud-canvas"></canvas>
+      <div class="sun-haze"></div>
+      <div id="balloon" class="balloon">
+        <div class="balloon-float">
+          <img src="/art/balloon.png" alt="" /><span class="burner-glow"></span>
+        </div>
       </div>
-      <canvas id="crystal-canvas" aria-hidden="true"></canvas>
-      <div class="stage-floor" aria-hidden="true"></div>
-      <span class="stage-caption">DRAG TO EXPLORE <span>↔</span></span>
+      <canvas id="foreground-canvas"></canvas>
+      <div class="wind-streaks"><i></i><i></i><i></i><i></i></div>
     </div>
     <header class="site-header">
-      <a class="brand" href="/" aria-label="Rare home"
-        >rare<span class="brand-dot">.</span></a
-      >
-      <span class="brand-descriptor">THE DAILY DISCOVERY</span>
+      <a class="brand" href="/" aria-label="Rare home">rare<span>↗</span></a>
       <nav aria-label="Main navigation">
-        <button id="help">How to play <span>↗</span></button>
-        <button id="stats" class="nav-collection">
-          <span class="collection-icon">◇</span> Your collection
-        </button>
+        <button id="help">How to fly <span>↗</span></button>
+        <button id="stats" aria-label="Your flight log">▤</button>
         <button
           id="sound"
           class="sound-button"
@@ -70,178 +65,196 @@
         </button>
       </nav>
     </header>
+    <div class="flight-hud">
+      <div class="altitude-readout" aria-label="Flight altitude">
+        <span>ALTITUDE</span
+        ><strong><span id="altitude">0</span><small> m</small></strong>
+      </div>
+      <div class="flight-status">
+        <div class="round-progress" id="progress" aria-label="Round progress">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <span id="question-number">5 DAILY PROMPTS</span>
+      </div>
+      <div class="best-readout">
+        <span>PERSONAL BEST</span
+        ><strong><span id="best-altitude">0</span><small> m</small></strong>
+      </div>
+    </div>
+    <aside class="altimeter" aria-label="Altitude scale">
+      <span class="altimeter-title">THE CLIMB</span>
+      <div class="altimeter-track">
+        <div id="altitude-fill"></div>
+        <i id="altitude-pointer"></i><span class="tick tick-top">5,000 m</span
+        ><span class="tick tick-mid">2,500 m</span
+        ><span class="tick tick-bottom">0 m</span>
+      </div>
+      <span id="sky-zone">THE LAUNCHPAD</span>
+    </aside>
+    <div id="checkpoint" class="checkpoint" role="status"></div>
     <main>
       <section id="home" class="home-screen">
-        <div class="home-copy">
-          <div class="eyebrow daily-eyebrow">
-            <span class="live-dot"></span
-            ><span id="puzzle-label">YOUR DAILY MOMENT OF DISCOVERY</span>
-          </div>
-          <h1>Ordinary question.<br /><em>Extraordinary</em><br />answer.</h1>
-          <p class="intro">
-            Everyone knows an answer.<br />Find the one they wouldn’t think of.
+        <div class="home-heading">
+          <div class="daily-label" id="puzzle-label">THE DAILY CLIMB</div>
+          <h1>Rare air<span>.</span></h1>
+        </div>
+        <div class="home-dock">
+          <p class="home-rule">
+            Rarer answers take you higher.<br /><span
+              >Five questions. One very curious balloon.</span
+            >
           </p>
-          <div class="home-actions">
-            <button class="primary" id="start">
-              <span>Make a discovery</span><span>↗</span>
-            </button>
-            <p class="session-details">
-              5 questions <i></i> 30 seconds each <i></i> Free to play
-            </p>
-          </div>
-          <button class="practice-link" id="practice">
-            <span>∞</span> A little more curious? Try unlimited <span>→</span>
+          <button class="primary" id="start">
+            <span>Take flight</span><span class="button-arrow">↑</span></button
+          ><button id="practice" class="practice-link">
+            Practice flight <span>↗</span>
           </button>
-        </div>
-        <aside class="specimen-info" aria-label="Specimen preview">
-          <div class="specimen-index">THE EXCEPTIONAL COLLECTION</div>
-          <div class="specimen-title">
-            <span class="specimen-dot"></span> Amber / <em>Exceptional</em>
+          <div class="home-links">
+            <button id="archive">Previous flights</button
+            ><span id="reset-label">A fresh flight every day.</span>
           </div>
-          <p>Your rarest answers. Crystallized.</p>
-          <div class="specimen-scale">
-            <span>COMMON</span><i></i><i></i><i></i><i></i
-            ><span>EXCEPTIONAL</span>
-          </div>
-        </aside>
-        <div class="home-bottom">
-          <span id="bank-label">400 prompts to spark your curiosity.</span
-          ><button id="archive">Explore the archive <span>↗</span></button
-          ><span id="reset-label">A fresh discovery every day.</span>
+          <span id="bank-label" class="sr-only">400 questions.</span>
         </div>
+      </section>
+      <section id="launch" class="launch-screen" hidden aria-live="polite">
+        <span class="eyebrow">CATCH THE BREEZE</span
+        ><strong id="launch-count">3</strong>
+        <p>Your next question is just above the clouds.</p>
       </section>
       <section id="play" class="play-screen" hidden>
-        <div class="game-top">
-          <button class="back" id="back-home">← Back</button
-          ><span id="mode-label">DAILY DISCOVERY</span
-          ><span class="score-small"><span id="live-score">0</span> pts</span>
-        </div>
-        <div
-          class="round-progress"
-          id="progress"
-          aria-label="Round progress"
-        ></div>
-        <div class="question-meta">
-          <span id="category" class="eyebrow"></span
-          ><span id="question-number"></span>
-        </div>
-        <h1 id="question"></h1>
-        <p class="question-hint">
-          The less obvious the answer, the rarer the crystal.
-        </p>
-        <form id="answer-form">
-          <label for="answer" class="sr-only">Your answer</label>
-          <div class="answer-field">
-            <input
-              id="answer"
-              maxlength="100"
-              placeholder="Something a little less obvious…"
-              autocomplete="off"
-              autocapitalize="none"
-              spellcheck="false"
-            /><button
-              class="answer-submit"
-              id="submit"
-              type="submit"
-              aria-label="Submit answer"
-            >
-              ↵
-            </button>
+        <div class="question-content">
+          <div class="question-meta">
+            <span id="mode-label">DAILY FLIGHT</span><span id="category"></span>
           </div>
-          <div class="timer-track"><div id="time-fill"></div></div>
-          <div class="answer-bottom">
-            <span class="timer"
-              ><span id="timer" role="timer">30</span
-              ><small>seconds left</small></span
-            ><button class="back" id="skip" type="button">
-              Let this one go →
-            </button>
+          <h1 id="question"></h1>
+          <p class="question-hint">
+            One correct answer. The less obvious, the better.
+          </p>
+        </div>
+        <div class="control-dock">
+          <form id="answer-form">
+            <div class="timer-row">
+              <span class="timer"
+                ><span id="timer" role="timer">30</span
+                ><small>seconds</small></span
+              >
+              <div class="timer-track"><div id="time-fill"></div></div>
+              <button class="back" id="skip" type="button">Skip →</button>
+            </div>
+            <div class="answer-field">
+              <label for="answer" class="sr-only">Your answer</label
+              ><input
+                id="answer"
+                maxlength="100"
+                placeholder="Think of something unexpected…"
+                autocomplete="off"
+                autocapitalize="none"
+                spellcheck="false"
+              /><button id="submit" type="submit">
+                <span>Fly</span><span>↑</span>
+              </button>
+            </div>
+          </form>
+          <div class="dock-bottom">
+            <button class="back" id="back-home">← Back to ground</button
+            ><span><span id="live-score">0</span> m gained</span>
           </div>
-        </form>
-        <div
-          class="collection-tray"
-          id="play-collection"
-          aria-label="Crystals collected"
-        ></div>
+          <div
+            id="play-route"
+            class="sr-only"
+            aria-label="Your five flight stages"
+          ></div>
+        </div>
       </section>
       <section id="reveal" class="reveal-screen" hidden aria-live="polite">
-        <div class="eyebrow" id="reveal-kicker">A NEW DISCOVERY</div>
-        <h1 id="reveal-tier">Exceptional.</h1>
-        <p class="reveal-answer" id="reveal-answer"></p>
-        <p class="reveal-note" id="reveal-note"></p>
-        <div class="reward">
-          <strong id="reveal-points">+1,000</strong
-          ><span>points added to<br />your collection</span>
+        <div class="reveal-content">
+          <div id="rarity-medal" class="rarity-medal" aria-hidden="true">↑</div>
+          <div class="eyebrow" id="reveal-kicker">YOU CAUGHT AN UPDRAFT</div>
+          <h1 id="reveal-tier">Exceptional</h1>
+          <p class="reveal-answer" id="reveal-answer"></p>
+          <div class="reward">
+            <strong id="reveal-points">+1,000</strong><span>METERS</span>
+          </div>
+          <p class="reveal-note" id="reveal-note"></p>
         </div>
-        <button id="next" class="primary">
-          <span>Keep discovering</span><span>→</span>
-        </button>
-        <div class="reveal-footer">
-          <span id="reveal-progress"></span
-          ><span>Your next question waits for you.</span>
+        <div class="control-dock reveal-dock">
+          <button id="next" class="primary">
+            <span>Climb higher</span><span class="button-arrow">↑</span>
+          </button>
+          <div class="reveal-footer">
+            <span id="reveal-progress"></span
+            ><span id="reveal-next-note">The next question waits for you.</span>
+          </div>
+          <div
+            id="reveal-route"
+            class="sr-only"
+            aria-label="Your five flight stages"
+          ></div>
         </div>
-        <div
-          class="collection-tray"
-          id="reveal-collection"
-          aria-label="Crystals collected"
-        ></div>
       </section>
       <section id="result" class="result-screen" hidden>
-        <div class="eyebrow">YOUR COLLECTION IS COMPLETE</div>
-        <h1 id="result-heading">A mind of <em>your own.</em></h1>
-        <p id="result-subtitle"></p>
-        <div
-          id="final-collection"
-          class="final-collection"
-          aria-label="Your five collected crystals"
-        ></div>
-        <div class="final-summary">
-          <div>
-            <span>COLLECTION SCORE</span><strong id="final-score">0</strong
-            ><small>/ 5,000 points</small>
+        <div class="flight-report">
+          <div class="report-top">
+            <span class="eyebrow">FLIGHT COMPLETE</span>
           </div>
-          <div class="collection-quality">
-            <span>RAREST FIND</span><strong id="rarest-find">Exceptional</strong
-            ><small>Editorial rarity</small>
+          <h1 id="result-heading">Oh, the places<br />your mind can go.</h1>
+          <p id="result-subtitle"></p>
+          <div class="final-summary">
+            <div>
+              <span>YOUR FINAL ALTITUDE</span><strong id="final-score">0</strong
+              ><small>meters above the everyday</small>
+            </div>
+            <div class="best-lift">
+              <span>BEST UPDRAFT</span
+              ><strong id="rarest-find">Exceptional</strong
+              ><small>Editorial answer rarity</small>
+            </div>
           </div>
+          <div
+            id="final-route"
+            class="final-route"
+            aria-label="Your five flight stages"
+          ></div>
+          <div class="result-actions">
+            <button class="primary" id="share">
+              <span>Share your flight</span><span>↗</span></button
+            ><button class="secondary" id="play-again">
+              Take another flight ↗
+            </button>
+          </div>
+          <p class="share-note" id="share-note" role="status"></p>
+          <div id="result-rows" class="result-rows"></div>
+          <details class="answer-review">
+            <summary>Explore the accepted answers <span>+</span></summary>
+            <div id="review-content"></div>
+          </details>
+          <section class="leaderboard">
+            <div class="section-top">
+              <h2>In good air.</h2>
+              <span>DAILY TOP 20</span>
+            </div>
+            <p>
+              Completed daily flights. Equal altitudes are ordered by start
+              time.
+            </p>
+            <div id="board"></div>
+          </section>
+          <button class="back" id="result-home">← Back to the launchpad</button>
         </div>
-        <div class="result-actions">
-          <button class="primary" id="share">
-            <span>Share your collection</span><span>↗</span></button
-          ><button class="secondary" id="play-again">∞ Keep exploring</button>
-        </div>
-        <p class="share-note" id="share-note" role="status"></p>
-        <div id="result-rows" class="result-rows"></div>
-        <details class="answer-review">
-          <summary>Explore the accepted answers <span>+</span></summary>
-          <div id="review-content"></div>
-        </details>
-        <section class="leaderboard">
-          <div class="section-top">
-            <h2>Curious company.</h2>
-            <span>DAILY TOP 20</span>
-          </div>
-          <p>Completed daily games. Equal scores are ordered by start time.</p>
-          <div id="board"></div>
-        </section>
-        <button class="back" id="result-home">← Back to the beginning</button>
       </section>
       <div id="error" role="alert" hidden></div>
     </main>
     <footer>
-      <span>RARE / A GAME FOR CURIOUS MINDS</span
+      <span>TAKE YOUR CURIOSITY SOMEWHERE NEW.</span
       ><button id="about">About & privacy</button
-      ><a href="/games-like-krillion/">Games like Krillion</a
-      ><span class="footer-note">A little different. Every day.</span>
+      ><a href="/games-like-krillion/">Games like Krillion</a>
     </footer>
     <dialog id="modal">
       <button id="close-modal" aria-label="Close dialog">×</button>
       <div id="modal-content"></div>
     </dialog>
     <noscript
-      ><p class="noscript">
-        Enable JavaScript to play the daily discovery.
-      </p></noscript
+      ><p class="noscript">Enable JavaScript to take flight.</p></noscript
     >
   </body>
 </html>

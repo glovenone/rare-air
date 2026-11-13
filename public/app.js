@@ -1,13 +1,12 @@
 const $ = (id) => document.getElementById(id);
-const rarityNames = ["Unformed", "Common", "Uncommon", "Rare", "Exceptional"];
-const specimenNames = ["Unformed", "Quartz", "Jade", "Amethyst", "Amber"];
+const rarityNames = ["No lift", "Common", "Uncommon", "Rare", "Exceptional"];
 let game = null;
 let puzzle = null;
 let busy = false;
 let serverOffset = 0;
 let timer = null;
 let scene = null;
-let sceneState = { mode: "home", tier: 4 };
+let sceneState = { mode: "home", altitude: 0, gain: 0 };
 let soundEnabled = false;
 let audioContext = null;
 let displayView = "home";
@@ -76,80 +75,73 @@ function score() {
   return game?.answers.reduce((sum, answer) => sum + answer.points, 0) || 0;
 }
 
-function updateScene(tier = 4, celebrate = false) {
-  sceneState = { mode: displayView, tier, celebrate };
-  document.body.dataset.tier = tier;
-  $("specimen-stage").setAttribute(
-    "aria-label",
-    `${specimenNames[tier]} crystal, ${rarityNames[tier].toLowerCase()} rarity. Drag to rotate.`,
+function updateFlight(celebrate = false) {
+  sceneState = {
+    mode: displayView,
+    altitude: displayView === "home" ? 0 : score(),
+    gain: celebrate ? game?.answers.at(-1)?.points || 0 : 0,
+  };
+  document.body.dataset.tier = game?.answers.at(-1)?.tier || 0;
+  $("best-altitude").textContent = Math.max(
+    0,
+    ...Object.values(storage.get("history", {})).map((item) => item.score),
+  ).toLocaleString();
+  $("progress").replaceChildren(
+    ...Array.from({ length: 5 }, (_, index) => {
+      const answer = displayView === "home" ? null : game?.answers[index];
+      const segment = element("span");
+      if (answer) {
+        segment.className = "complete";
+        segment.dataset.tier = answer.tier;
+      } else if (
+        ["play", "launch"].includes(displayView) &&
+        index === game?.round
+      )
+        segment.className = "active";
+      return segment;
+    }),
   );
-  scene?.setSpecimen(sceneState);
-  requestAnimationFrame(positionScene);
+  $("question-number").textContent =
+    displayView === "home"
+      ? "5 DAILY PROMPTS"
+      : `STAGE ${Math.min(5, game.round + (displayView === "play" || displayView === "launch" ? 1 : 0))} OF 5`;
+  if (scene) scene.setFlight(sceneState);
+  else $("altitude").textContent = sceneState.altitude.toLocaleString();
 }
-
-function positionScene() {
-  const stage = $("specimen-stage");
-  stage.style.removeProperty("top");
-  stage.style.removeProperty("height");
-  if (innerWidth > 750 || displayView === "result") return;
-  let before;
-  let after;
-  if (displayView === "home") {
-    before = document.querySelector(".intro");
-    after = document.querySelector(".home-actions");
-  } else if (displayView === "play") {
-    before = document.querySelector(".question-hint");
-    after = $("answer-form");
-  } else if (displayView === "reveal") {
-    before = $("reveal-note");
-    after = document.querySelector(".reward");
-  }
-  if (!before || !after) return;
-  const top = before.getBoundingClientRect().bottom + scrollY;
-  const height = Math.max(
-    100,
-    after.getBoundingClientRect().top + scrollY - top,
-  );
-  stage.style.top = `${top}px`;
-  stage.style.height = `${height}px`;
-}
-addEventListener("resize", positionScene);
-document.fonts.ready.then(positionScene);
 
 function show(view) {
   displayView = view;
-  for (const id of ["home", "play", "reveal", "result"])
+  for (const id of ["home", "launch", "play", "reveal", "result"])
     $(id).hidden = id !== view;
   document.body.dataset.view = view;
-  $("specimen-stage").setAttribute("aria-hidden", String(view === "result"));
   if (view !== "play") clearInterval(timer);
   setError();
 }
 
-function miniCrystal(tier) {
-  const crystal = element("i", undefined, "mini-crystal");
-  crystal.dataset.tier = tier;
-  crystal.setAttribute("aria-hidden", "true");
-  return crystal;
+function flightMarker(tier) {
+  const marker = element("i", tier ? "↑" : "–", "flight-marker");
+  marker.dataset.tier = tier;
+  marker.setAttribute("aria-hidden", "true");
+  return marker;
 }
 
 function renderTray(id) {
   const slots = Array.from({ length: 5 }, (_, index) => {
     const answer = game.answers[index];
-    const slot = element("div", undefined, "collection-slot");
+    const slot = element("div", undefined, "flight-stop");
     if (answer) {
       slot.append(
-        miniCrystal(answer.tier),
-        element("small", "+" + answer.points),
+        flightMarker(answer.tier),
+        element("small", "+" + answer.points + " m"),
       );
       slot.setAttribute(
         "aria-label",
-        `${rarityNames[answer.tier]}, ${answer.points} points`,
+        `${rarityNames[answer.tier]}, ${answer.points} meters`,
       );
     } else {
       slot.classList.add("empty");
       if (index === game.round) slot.classList.add("pending");
-      slot.setAttribute("aria-label", "Not yet discovered");
+      slot.setAttribute("aria-label", "Upcoming flight stage");
     }
     return slot;
   });
@@ -179,31 +171,34 @@ $("modal").addEventListener("click", (event) => {
 });
 
 $("help").onclick = () => {
-  const content = openDialog("A little less obvious.", [
-    "Each discovery has five questions. You have 30 seconds per question to type one correct answer. The less obvious your answer, the more points you earn.",
-    "Your answer becomes a crystal. Common answers create quartz, uncommon answers jade, rare answers amethyst, and exceptional answers amber. An incorrect answer, skip or timeout leaves an unformed specimen worth zero points.",
-    "Inspect each discovery at your own pace. The next question stays hidden and its clock starts when you press Continue. Once a question is active, closing the page or opening a dialog does not pause it.",
-    "Daily games reset at midnight UTC, with one attempt per browser. Unlimited practice creates fresh sets. Capitalization, spaces, punctuation and accepted aliases are handled automatically. Rarity tiers are fixed editorial ratings.",
+  const content = openDialog("A little knowledge. A lot of lift.", [
+    "Take a five-question flight. You have 30 seconds to type one correct answer per question. Less obvious answers carry your balloon higher.",
+    "Common answers lift you 100 meters, uncommon answers 250, rare answers 500 and exceptional answers 1,000. A skipped, incorrect or expired answer adds zero. Your final altitude is the sum of all five stages, up to 5,000 meters.",
+    "Enjoy the view after each answer. The next question stays hidden and its clock starts when you press Climb higher. Once a question is active, leaving the page or opening a dialog does not pause the clock.",
+    "Daily flights reset at midnight UTC with one attempt per browser. Practice creates fresh sets. Capitalization, spacing, punctuation and accepted aliases are handled automatically. Answer rarity uses fixed editorial tiers.",
   ]);
   const tiers = element("div", undefined, "tier-list");
-  ["Quartz · 100", "Jade · 250", "Amethyst · 500", "Amber · 1,000"].forEach(
-    (text) => tiers.append(element("span", text)),
-  );
+  [
+    "Common · +100 m",
+    "Uncommon · +250 m",
+    "Rare · +500 m",
+    "Exceptional · +1,000 m",
+  ].forEach((text) => tiers.append(element("span", text)));
   content.append(tiers);
 };
 
 $("about").onclick = () =>
-  openDialog("Made for curious minds.", [
-    "RARE is an independent daily trivia game. The crystal laboratory turns the less obvious things you know into a collection. It is inspired by rare-answer games, including Krillion.",
-    `The current bank has ${puzzle?.bankSize || 400} curated English prompts. Every answer is checked on the server. Rarity is an editorial difficulty rating. Crystal names and grades are game rewards.`,
-    "An anonymous browser cookie keeps your daily attempt. Game results and chosen answers are stored for scoring and the leaderboard. Local storage holds your device collection history. Clearing browser data removes your local identity.",
-    "Sound starts off. Reduced-motion preferences are respected. A simplified crystal illustration appears when 3D graphics are unavailable. Drag the 3D specimen to rotate it.",
+  openDialog("Take your curiosity somewhere new.", [
+    "RARE is an independent daily trivia game. Unexpected answers power a hot-air-balloon journey through an illustrated sky. It is inspired by rare-answer games, including Krillion.",
+    `The current bank has ${puzzle?.bankSize || 400} curated English prompts. Answers and scores are checked on the server. One point represents one game meter. Altitude is a visual game reward and answer rarity is an editorial rating.`,
+    "An anonymous cookie keeps your daily flight. Game results and answers are stored for scoring and the leaderboard. Browser local storage keeps your flight history. Clearing browser data removes your local identity.",
+    "The sky and balloon were created with AI image generation. Sound starts off. Reduced-motion preferences disable balloon and cloud animation. No graphics API or external asset service is needed during play.",
   ]);
 
 $("stats").onclick = () => {
   const history = Object.values(storage.get("history", {}));
-  const content = openDialog("Your discoveries.", [
-    "Completed daily collections saved on this browser.",
+  const content = openDialog("Your flight log.", [
+    "Your completed daily flights, saved on this browser.",
   ]);
   const grid = element("div", undefined, "stats-grid");
   const best = Math.max(0, ...history.map((item) => item.score));
@@ -213,9 +208,9 @@ $("stats").onclick = () => {
       )
     : 0;
   for (const [label, value] of [
-    ["COLLECTIONS", history.length],
-    ["AVERAGE", average],
-    ["BEST SCORE", best],
+    ["FLIGHTS", history.length],
+    ["AVERAGE m", average],
+    ["BEST m", best],
   ]) {
     const cell = element("div");
     cell.append(element("strong", String(value)), element("small", label));
@@ -226,25 +221,23 @@ $("stats").onclick = () => {
     .slice()
     .sort((a, b) => b.day.localeCompare(a.day))
     .slice(0, 7);
-  for (const collection of recent) {
-    const row = element("div", undefined, "history-collection");
-    const label = element("div", collection.day);
-    label.append(
-      element("small", collection.score.toLocaleString() + " points"),
-    );
+  for (const flight of recent) {
+    const row = element("div", undefined, "history-flight");
+    const label = element("div", flight.day);
+    label.append(element("small", flight.score.toLocaleString() + " m"));
     row.append(label);
-    if (collection.tiers) {
-      const specimens = element("div", undefined, "history-specimens");
-      collection.tiers.forEach((tier) => specimens.append(miniCrystal(tier)));
-      row.append(specimens);
+    if (flight.tiers) {
+      const stages = element("div", undefined, "history-stages");
+      flight.tiers.forEach((tier) => stages.append(flightMarker(tier)));
+      row.append(stages);
     }
     content.append(row);
   }
 };
 
 $("archive").onclick = () => {
-  const content = openDialog("Something you missed.", [
-    "Choose a daily discovery from November 12, 2026 onwards. Each date has one attempt per browser.",
+  const content = openDialog("A flight worth taking.", [
+    "Choose a daily flight from November 12, 2026 onwards. Each date has one attempt per browser.",
   ]);
   const form = element("form", undefined, "archive-form");
   const input = element("input");
@@ -254,7 +247,7 @@ $("archive").onclick = () => {
   input.value = input.max;
   input.required = true;
   input.setAttribute("aria-label", "Puzzle date");
-  const button = element("button", "Explore this day ↗", "primary");
+  const button = element("button", "Take this flight ↗", "primary");
   button.type = "submit";
   form.append(input, button);
   form.onsubmit = (event) => {
@@ -319,10 +312,13 @@ function updateDailyButton() {
   const complete = storage.get("history", {})[puzzle?.day];
   const label = session
     ? complete
-      ? "View your collection"
-      : "Continue discovering"
-    : "Make a discovery";
-  $("start").replaceChildren(element("span", label), element("span", "↗"));
+      ? "View your flight"
+      : "Resume your flight"
+    : "Take flight";
+  $("start").replaceChildren(
+    element("span", label),
+    element("span", "↑", "button-arrow"),
+  );
 }
 
 function acceptState(data) {
@@ -347,11 +343,11 @@ async function start(mode = "daily", day = puzzle?.day) {
       }
     } else data = await api("start", { mode, day });
     acceptState(data);
-    if (game.awaitingStart && game.answers.length === 0)
-      acceptState(await api("next", { id: game.id, round: game.round }));
+    if (game.awaitingStart && game.answers.length === 0) await launchRound();
     render();
     window.scrollTo({ top: 0, behavior: "instant" });
   } catch (error) {
+    if (displayView === "launch") home();
     setError(error.message);
   } finally {
     setBusy(false);
@@ -362,7 +358,7 @@ $("practice").onclick = $("play-again").onclick = () => start("practice");
 
 function home() {
   show("home");
-  updateScene(4);
+  updateFlight();
   updateDailyButton();
   window.scrollTo({ top: 0, behavior: "instant" });
 }
@@ -373,26 +369,15 @@ function render() {
   if (game.done) return renderResults();
   if (game.awaitingStart) return renderReveal();
   show("play");
-  const lastTier = game.answers.at(-1)?.tier || 1;
-  updateScene(lastTier);
+  updateFlight();
   $("mode-label").textContent =
-    game.mode === "daily" ? "DAILY DISCOVERY" : "UNLIMITED EXPLORATION";
+    game.mode === "daily" ? "DAILY FLIGHT" : "PRACTICE FLIGHT";
   $("category").textContent = game.question.category;
-  $("question-number").textContent = `${game.round + 1} OF 5`;
   $("question").textContent = game.question.prompt;
   $("live-score").textContent = score().toLocaleString();
   $("answer").value = "";
-  $("submit").textContent = "↵";
-  $("progress").replaceChildren(
-    ...Array.from({ length: 5 }, (_, index) =>
-      element(
-        "span",
-        undefined,
-        index < game.round ? "complete" : index === game.round ? "active" : "",
-      ),
-    ),
-  );
-  renderTray("play-collection");
+  $("submit").replaceChildren(element("span", "Fly"), element("span", "↑"));
+  renderTray("play-route");
   tick();
   timer = setInterval(tick, 150);
   if (!matchMedia("(pointer: coarse)").matches)
@@ -423,7 +408,7 @@ async function submit(answer) {
     else render();
   } catch (error) {
     clearInterval(timer);
-    setError(error.message + " Submit again to sync your discovery.");
+    setError(error.message + " Submit again to sync your flight.");
     $("submit").textContent = "↻";
   } finally {
     setBusy(false);
@@ -442,37 +427,52 @@ function renderReveal() {
   const answer = game.answers.at(-1);
   const tier = answer?.tier || 0;
   $("reveal").dataset.tier = tier;
-  updateScene(tier, true);
+  $("rarity-medal").textContent = ["–", "↑", "↑", "✧", "✦"][tier];
+  updateFlight(true);
   playSound(tier);
   $("reveal-kicker").textContent = answer?.correct
-    ? `${specimenNames[tier].toUpperCase()} ADDED TO YOUR COLLECTION`
-    : "EVERY DISCOVERY STARTS WITH CURIOSITY";
+    ? "YOU CAUGHT AN UPDRAFT"
+    : "STILL A GOOD DAY TO FLY";
   $("reveal-tier").textContent = tier
-    ? rarityNames[tier] + "."
+    ? rarityNames[tier]
     : answer?.timed_out
-      ? "Time slipped by."
-      : "Not this time.";
+      ? "A passing breeze."
+      : "Steady as you go.";
   $("reveal-answer").textContent = answer?.label
     ? `“${answer.label}”`
     : answer?.timed_out
-      ? "There’s always another question."
-      : "An answer is waiting to be found.";
+      ? "The clock caught up with you."
+      : "Another horizon is waiting.";
   const notes = [
-    "Keep that curiosity. Your next discovery is waiting.",
-    "A familiar thought, beautifully formed.",
-    "You found something a little less expected.",
-    "An unexpected answer. A remarkable find.",
-    "A thought few would reach for. Worth collecting.",
+    "No height gained this time. Your journey carries on.",
+    "A familiar answer. A little closer to the clouds.",
+    "A fresh thought. A lovely bit of lift.",
+    "Now that’s thinking above the clouds.",
+    "An extraordinary answer. Enjoy the view up here.",
   ];
   $("reveal-note").textContent = notes[tier];
   $("reveal-points").textContent = "+" + (answer?.points || 0).toLocaleString();
-  $("reveal-progress").textContent = `${game.round} OF 5 DISCOVERIES`;
+  $("reveal-progress").textContent = `STAGE ${game.round} OF 5`;
+  $("reveal-next-note").textContent = game.done
+    ? "Your flight is complete."
+    : "The next question waits for you.";
   $("next").replaceChildren(
-    element("span", game.done ? "See your collection" : "Keep discovering"),
-    element("span", "→"),
+    element("span", game.done ? "View flight report" : "Climb higher"),
+    element("span", "↑", "button-arrow"),
   );
-  renderTray("reveal-collection");
+  renderTray("reveal-route");
   window.scrollTo({ top: 0, behavior: "instant" });
+}
+
+async function launchRound() {
+  show("launch");
+  updateFlight();
+  for (const count of [3, 2, 1]) {
+    $("launch-count").textContent = count;
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+  }
+  $("launch-count").textContent = "↑";
+  acceptState(await api("next", { id: game.id, round: game.round }));
 }
 
 $("next").onclick = async () => {
@@ -484,10 +484,11 @@ $("next").onclick = async () => {
   }
   setBusy(true);
   try {
-    acceptState(await api("next", { id: game.id, round: game.round }));
+    await launchRound();
     render();
     window.scrollTo({ top: 0, behavior: "instant" });
   } catch (error) {
+    renderReveal();
     setError(error.message);
   } finally {
     setBusy(false);
@@ -496,29 +497,29 @@ $("next").onclick = async () => {
 
 function renderResults() {
   show("result");
-  updateScene(4);
+  updateFlight();
   const total = score();
   $("result-heading").replaceChildren(
-    document.createTextNode("A mind of "),
-    element("em", "your own."),
+    document.createTextNode(total >= 2500 ? "A head for " : "Curiosity takes "),
+    element("span", total >= 2500 ? "heights." : "you places."),
   );
   $("result-subtitle").textContent =
-    `${game.mode === "daily" ? "Daily discovery · " + game.day : "Unlimited exploration"} · ${game.answers.filter((answer) => answer.correct).length} of 5 correct`;
+    `${game.mode === "daily" ? "Daily flight · " + game.day : "Practice flight"} · ${game.answers.filter((answer) => answer.correct).length} of 5 correct`;
   $("final-score").textContent = total.toLocaleString();
   const highestTier = Math.max(...game.answers.map((answer) => answer.tier));
   $("rarest-find").textContent = rarityNames[highestTier];
-  $("final-collection").replaceChildren(
+  $("final-route").replaceChildren(
     ...game.answers.map((answer) => {
-      const card = element("div", undefined, "final-specimen");
+      const card = element("div", undefined, "final-stop");
       card.dataset.tier = answer.tier;
       card.append(
-        miniCrystal(answer.tier),
-        element("span", specimenNames[answer.tier]),
-        element("strong", "+" + answer.points),
+        flightMarker(answer.tier),
+        element("span", rarityNames[answer.tier]),
+        element("strong", "+" + answer.points + " m"),
       );
       card.setAttribute(
         "aria-label",
-        `${answer.label || "No answer"}, ${rarityNames[answer.tier]}, ${answer.points} points`,
+        `${answer.label || "No answer"}, ${rarityNames[answer.tier]}, ${answer.points} meters`,
       );
       return card;
     }),
@@ -543,7 +544,7 @@ function renderResults() {
       row.append(
         element("span", String(index + 1).padStart(2, "0"), "round-n"),
         text,
-        element("span", "+" + answer.points, "points"),
+        element("span", "+" + answer.points + " m", "points"),
       );
       return row;
     }),
@@ -554,7 +555,7 @@ function renderResults() {
       const answers = question.answers
         .map(
           (answer) =>
-            `${answer.label} (${[0, 100, 250, 500, 1000][answer.tier]})`,
+            `${answer.label} (+${[0, 100, 250, 500, 1000][answer.tier]} m)`,
         )
         .join(" · ");
       section.append(element("h3", question.prompt), element("p", answers));
@@ -575,7 +576,7 @@ function renderResults() {
 }
 
 async function loadLeaderboard(day) {
-  $("board").textContent = "Finding curious company…";
+  $("board").textContent = "Finding fellow flyers…";
   try {
     const data = await api("leaderboard?day=" + encodeURIComponent(day));
     $("board").replaceChildren(
@@ -584,27 +585,28 @@ async function loadLeaderboard(day) {
         row.append(
           element("span", String(index + 1).padStart(2, "0")),
           element("span", entry.name),
-          element("strong", entry.score.toLocaleString() + " pts"),
+          element("strong", entry.score.toLocaleString() + " m"),
         );
         return row;
       }),
     );
     if (!data.entries.length)
       $("board").textContent =
-        "The first daily collection is still waiting to be discovered.";
+        "The sky is open. Be the first to complete today’s daily flight.";
   } catch {
     $("board").textContent =
-      "The leaderboard is unavailable. Your collection is saved.";
+      "The leaderboard is unavailable. Your completed daily flight is saved in this browser.";
   }
 }
 
 $("share").onclick = async () => {
   if (!game) return;
   const symbols = ["⬛", "⬜", "🟩", "🟪", "🟨"];
-  const text = `RARE · ${game.mode === "daily" ? game.day : "Unlimited"}\n${game.answers.map((answer) => symbols[answer.tier]).join("")}\n${score().toLocaleString()} / 5,000 points\nMy rarest find: ${rarityNames[Math.max(...game.answers.map((answer) => answer.tier))]}\nWhat will you discover?\n${location.origin}`;
+  const text = `RARE FLIGHT ↗ · ${game.mode === "daily" ? game.day : "Practice"}\n${game.answers.map((answer) => symbols[answer.tier]).join("")}\n${score().toLocaleString()} m above the everyday\nMy best updraft: ${rarityNames[Math.max(...game.answers.map((answer) => answer.tier))]}\nHow high can you go?\n${location.origin}`;
   try {
     await navigator.clipboard.writeText(text);
-    $("share-note").textContent = "Copied. Share a little curiosity.";
+    $("share-note").textContent =
+      "Flight copied. Send a little sky to a friend.";
   } catch {
     $("share-note").textContent = text;
   }
@@ -618,27 +620,26 @@ async function initialize() {
       { month: "short", day: "numeric", timeZone: "UTC" },
     );
     $("puzzle-label").textContent =
-      `DAILY DISCOVERY ${String(puzzle.number).padStart(3, "0")} / ${date.toUpperCase()}`;
+      `DAILY FLIGHT ${String(puzzle.number).padStart(3, "0")} · ${date.toUpperCase()}`;
     $("bank-label").textContent =
-      `${puzzle.bankSize} prompts to spark your curiosity.`;
+      `${puzzle.bankSize} questions. A new horizon every day.`;
     const remaining = Math.max(0, puzzle.reset - Date.now());
     $("reset-label").textContent =
-      `Your next discovery in ${Math.floor(remaining / 3600000)}h ${Math.floor((remaining % 3600000) / 60000)}m`;
+      `Next takeoff in ${Math.floor(remaining / 3600000)}h ${Math.floor((remaining % 3600000) / 60000)}m`;
     updateDailyButton();
+    updateFlight();
   } catch (error) {
     setError(error.message);
   }
 }
 
-// The visual layer loads separately so gameplay remains usable on low-end devices.
-import("/crystal.js")
+// Flight visuals load independently of the timed game and scoring requests.
+import("/sky.js")
   .then((module) => {
     scene = module;
-    scene.setSpecimen(sceneState);
+    scene.setFlight(sceneState);
   })
   .catch((error) => {
-    console.info("Using the simplified specimen view.", error.message);
-    document.querySelector(".stage-caption").textContent =
-      "THE EXCEPTIONAL COLLECTION";
+    console.info("Using the still-sky view.", error.message);
   });
 initialize();

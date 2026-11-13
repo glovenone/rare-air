@@ -1,95 +1,141 @@
-.guide {
-  background: var(--bg);
+@font-face {
+  font-family: "DM Sans";
+  src: url("/fonts/dm-sans-400.ttf");
 }
-.guide-header {
+@font-face {
+  font-family: "Bricolage";
+  src: url("/fonts/bricolage-800.ttf");
+  font-weight: 800;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  color: #183c4a;
+  background: #e9f0e5;
+  line-height: 1.8;
+}
+header,
+main,
+footer {
+  width: min(900px, calc(100% - 48px));
+  margin: auto;
+}
+header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  max-width: 960px;
-  margin: auto;
-  padding: 30px 25px;
-  border-bottom: 1px solid var(--line);
+  align-items: center;
+  padding: 25px 0;
+  border-bottom: 1px solid #183c4a22;
 }
-.guide-brand {
-  font-size: 36px;
-  font-weight: 600;
-  letter-spacing: -2px;
+a {
+  color: inherit;
 }
-.guide-header > a:last-child {
-  font-size: 11px;
-  color: var(--accent);
+header a:first-child {
+  font-family: "Bricolage";
+  font-weight: 800;
+  font-size: 30px;
+  text-decoration: none;
 }
-.guide-main {
-  max-width: 760px;
-  margin: auto;
-  padding: 65px 25px;
+header a:last-child {
+  font-size: 12px;
 }
-.guide-main h1 {
-  font: 400 68px/1.05 var(--serif);
+main {
+  padding: 60px 0;
+}
+h1,
+h2 {
+  font-family: "Bricolage";
+  font-weight: 800;
   letter-spacing: -1px;
-  margin: 25px 0 30px;
+  line-height: 1.15;
 }
-.guide-lead {
-  font-size: 18px !important;
-  color: #c4c9b7 !important;
+h1 {
+  font-size: 56px;
+  margin: 20px 0 25px;
 }
-.guide-main p,
-.guide-main li {
-  font-size: 14px;
-  line-height: 1.9;
-  color: #9da68e;
+h2 {
+  font-size: 28px;
+  margin: 0 0 20px;
+}
+p,
+li {
+  font-size: 15px;
+  color: #496976;
+}
+section {
+  padding: 30px 0;
+  border-top: 1px solid #183c4a22;
+}
+.lead {
+  font-size: 18px;
+  max-width: 700px;
 }
 .guide-cta {
-  margin: 20px 0;
-  display: inline-flex;
-  min-width: 230px;
+  display: inline-block;
+  background: #183c4a;
+  color: #fffdf4;
+  text-decoration: none;
+  border-radius: 50px;
+  padding: 13px 24px;
+  margin: 18px 0 25px;
 }
-.guide-main h2 {
-  font: 400 37px/1.2 var(--serif);
-  margin: 43px 0 20px;
-  color: #e1e4d3;
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #c45b46;
 }
-.guide-main .independent {
+.independent {
   font-size: 12px;
-  border-left: 2px solid var(--accent);
-  padding: 14px 20px;
-  background: #282c1e;
+  color: #64807e;
 }
-.guide-main a:not(.primary) {
-  color: var(--accent);
-  text-decoration: underline;
+.tier-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 25px 0;
 }
-.guide-main li {
-  margin-bottom: 15px;
+.tier-grid div {
+  padding: 17px;
+  border: 1px solid #183c4a22;
+  border-radius: 12px;
+  font-size: 13px;
 }
-.guide-main ol {
-  padding-left: 20px;
+.tier-grid strong {
+  display: block;
+  color: #c45b46;
+  font-size: 20px;
 }
-.guide-main strong {
-  font-weight: 600;
-  color: #c8cfb8;
+footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #183c4a22;
+  padding: 20px 0 35px;
+  font-size: 10px;
 }
-@media (max-width: 500px) {
-  .guide-header {
-    padding: 22px;
+@media (max-width: 600px) {
+  header a:last-child {
+    font-size: 10px;
   }
-  .guide-header > a:last-child {
-    font-size: 9px;
+  main {
+    padding-top: 35px;
   }
-  .guide-main {
-    padding: 40px 23px;
+  h1 {
+    font-size: 40px;
   }
-  .guide-main h1 {
-    font-size: 49px;
+  .tier-grid {
+    grid-template-columns: 1fr 1fr;
   }
-  .guide-main h2 {
-    font-size: 32px;
+  .lead {
+    font-size: 16px;
   }
-  .guide-main p,
-  .guide-main li {
-    font-size: 12px;
+  p,
+  li {
+    font-size: 14px;
   }
-  .guide-lead {
-    font-size: 15px !important;
+  h2 {
+    font-size: 25px;
   }
 }
