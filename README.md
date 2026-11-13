@@ -2,7 +2,7 @@
 
 A free daily trivia game where unexpected answers lift a hot-air balloon through an illustrated sky. Built with vanilla JavaScript, Canvas 2D, Cloudflare Workers and D1.
 
-[Play RARE Air](https://rare-daily.happycoin8899.workers.dev/)
+[Play RARE Air](https://krillionunlimited.top/)
 
 ![RARE Air in flight](docs/images/flight.jpg)
 

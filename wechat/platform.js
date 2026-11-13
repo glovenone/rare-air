@@ -4,7 +4,7 @@ import { createOfflineClient } from "../native/offline.js";
 const offlineRequest = createOfflineClient((count) =>
   Array.from({ length: count }, () => Math.floor(Math.random() * 4294967296)),
 );
-const origin = process.env.SITE_URL || "https://rare-daily.happycoin8899.workers.dev";
+const origin = process.env.SITE_URL || "https://krillionunlimited.top";
 
 export function readStorage(key, fallback) {
   try {

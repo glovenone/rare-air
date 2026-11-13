@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /api/
-Sitemap: https://rare-daily.happycoin8899.workers.dev/sitemap.xml
+Sitemap: https://krillionunlimited.top/sitemap.xml

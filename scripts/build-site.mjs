@@ -1,9 +1,38 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 
 const site =
-  process.env.SITE_URL || "https://rare-daily.happycoin8899.workers.dev";
+  process.env.SITE_URL || "https://krillionunlimited.top";
 const origin = new URL(site).origin;
 const pages = [
+  {
+    path: "krillion-unlimited",
+    title: "Krillion Unlimited Alternative | RARE Air Trivia Practice",
+    description:
+      "Looking for Krillion Unlimited? Play repeatable rare-answer trivia in RARE Air. Five timed questions per flight, illustrated updrafts and accepted-answer review.",
+    heading: "Keep the rare answers coming.",
+    intro:
+      "Searching for Krillion Unlimited? RARE Air is an independently developed rare-answer trivia game with repeatable practice flights. Open the game and choose Practice flight for five fresh prompts. Reach for an unexpected correct answer and watch your balloon climb.",
+    sections: [
+      [
+        "Another five-question flight whenever you are ready.",
+        "Practice selects five distinct prompts from a bank of hundreds of curated questions. Explore geography, science, film, books, music and other subjects. Complete a flight, then choose Take another flight for a new set. Some prompts can return across separate flights.",
+        "Each active question has a 30-second clock. Between questions, the reward screen gives you time to enjoy the sky before continuing. A three-second preparation countdown introduces the next stage.",
+      ],
+      [
+        "Find an answer with a little more lift.",
+        "Correct answers earn 100, 250, 500 or 1,000 meters according to fixed editorial rarity tiers. Across five questions, the maximum altitude is 5,000 meters. Capitalization, punctuation and accepted aliases are handled automatically.",
+        "Rarity is a curated rating of answer obscurity. After the final stage, your flight report lists accepted answers so you can explore choices you missed.",
+      ],
+      [
+        "A daily challenge alongside practice.",
+        "The daily flight gives everyone the same five prompts for a date and has an anonymous leaderboard. It resets at midnight UTC. Practice flights let you keep exploring between daily challenges.",
+      ],
+      [
+        "Take the controls.",
+        "Drag the balloon to steer or tap it to catch a gust. Rare answers bring stronger updraft effects, passing clouds and paper-plane companions. The game works in a modern mobile or desktop browser. Sound starts off, and reduced-motion preferences simplify the flight.",
+      ],
+    ],
+  },
   {
     path: "daily-trivia",
     title: "Daily Trivia Game — Five Questions, One Flight | RARE Air",
@@ -61,7 +90,7 @@ const pages = [
       [
         "Play daily, practice or the archive.",
         "Daily games reset at midnight UTC. Each browser identity receives one attempt per date. Practice creates another five-question set, and the archive offers past daily flights from November 12, 2026. Clearing browser cookies creates a new local identity.",
-        "The mobile app also packages 400 offline practice prompts. Offline practice is scored on your device and has its own local history.",
+        "The mobile app also offers bundled offline practice. Offline practice is scored on your device and has its own local history.",
       ],
       [
         "Steer and share.",
@@ -140,7 +169,7 @@ const pages = [
   },
 ];
 const navigation =
-  '<nav><a href="/daily-trivia/">Daily trivia</a><a href="/how-to-play/">How to play</a><a href="/games-like-krillion/">Games like Krillion</a><a href="/privacy/">Privacy</a><a href="/support/">Support</a></nav>';
+  '<nav><a href="/daily-trivia/">Daily trivia</a><a href="/krillion-unlimited/">Unlimited practice</a><a href="/how-to-play/">How to play</a><a href="/games-like-krillion/">Games like Krillion</a><a href="/privacy/">Privacy</a><a href="/support/">Support</a></nav>';
 const escape = (text) =>
   text
     .replaceAll("&", "&amp;")

@@ -7,7 +7,7 @@ import { offlineRequest } from "./offline.js";
 
 export const native = Capacitor.isNativePlatform();
 export const publicOrigin =
-  process.env.SITE_URL || "https://rare-daily.happycoin8899.workers.dev";
+  process.env.SITE_URL || "https://krillionunlimited.top";
 
 export async function request(path, body) {
   if (body?.mode === "offline" || body?.id?.startsWith("offline:"))
