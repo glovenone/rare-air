@@ -1,0 +1,62 @@
+{
+  "status": "saved-in-play-console-pending-review",
+  "dataCollected": true,
+  "encryptedInTransit": true,
+  "accountCreation": false,
+  "deletionRequestsAvailable": false,
+  "collectionOptionalReason": "The launch screen automatically requests the online daily summary when connected, which creates an anonymous identifier and request diagnostics. Offline practice keeps typed answers on the device.",
+  "categories": [
+    {
+      "type": "Device or other IDs",
+      "data": "Random persistent player cookie and session identifiers",
+      "purpose": [
+        "App functionality",
+        "Fraud prevention, security, and compliance"
+      ],
+      "optional": false,
+      "shared": false,
+      "ephemeral": false
+    },
+    {
+      "type": "App interactions",
+      "data": "Daily-summary requests, game mode, question progression, scores and timing",
+      "purpose": [
+        "App functionality"
+      ],
+      "optional": false,
+      "shared": false,
+      "ephemeral": false
+    },
+    {
+      "type": "Other user-generated content",
+      "data": "Typed trivia answers",
+      "purpose": [
+        "App functionality"
+      ],
+      "optional": true,
+      "shared": false,
+      "ephemeral": false
+    },
+    {
+      "type": "Diagnostics",
+      "data": "Cloudflare service request and failure diagnostics",
+      "purpose": [
+        "App functionality",
+        "Analytics",
+        "Fraud prevention, security, and compliance"
+      ],
+      "optional": false,
+      "shared": false,
+      "ephemeral": false
+    }
+  ],
+  "serviceProvider": "Cloudflare Workers and D1",
+  "privacyUrl": "https://krillionunlimited.top/privacy/",
+  "supportUrl": "https://krillionunlimited.top/support/",
+  "publisherChecks": [
+    "Recheck the form when hosting, logging or SDK behavior changes",
+    "A verified deletion workflow is required before claiming deletion requests are supported",
+    "The live Play privacy URL still uses the Cloudflare Workers origin until the purchased domain is activated",
+    "Review the target audience and IARC questionnaire when daily content scope changes"
+  ]
+}

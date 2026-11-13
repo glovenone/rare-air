@@ -1,0 +1,23 @@
+{
+  "appId": "com.letuzhixing.rareair",
+  "appName": "RARE Air",
+  "webDir": "dist/mobile",
+  "server": {
+    "androidScheme": "https"
+  },
+  "ios": {
+    "backgroundColor": "#a4d0de",
+    "contentInset": "never"
+  },
+  "android": {
+    "backgroundColor": "#a4d0de",
+    "allowMixedContent": false
+  },
+  "plugins": {
+    "SystemBars": {
+      "insetsHandling": "native",
+      "style": "LIGHT",
+      "initialViewportFitValueHint": "cover"
+    }
+  }
+}

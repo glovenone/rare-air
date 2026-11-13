@@ -1,3 +1,10 @@
+import {
+  request as api,
+  native,
+  publicOrigin,
+  haptic,
+  shareFlight,
+} from "./platform.js";
 const $ = (id) => document.getElementById(id);
 const rarityNames = ["No lift", "Common", "Uncommon", "Rare", "Exceptional"];
 let game = null;
@@ -40,27 +47,12 @@ function setError(message = "") {
   $("error").hidden = !message;
 }
 
-async function api(path, body) {
-  const response = await fetch("/api/" + path, {
-    method: body ? "POST" : "GET",
-    headers: body ? { "Content-Type": "application/json" } : {},
-    body: body ? JSON.stringify(body) : undefined,
-  });
-  let data;
-  try {
-    data = await response.json();
-  } catch {
-    throw new Error("The connection was interrupted. Please try again.");
-  }
-  if (!response.ok) throw new Error(data.error || "Please try again.");
-  return data;
-}
-
 function setBusy(value) {
   busy = value;
   for (const id of [
     "start",
     "practice",
+    "offline-practice",
     "submit",
     "skip",
     "play-again",
@@ -75,6 +67,13 @@ function score() {
   return game?.answers.reduce((sum, answer) => sum + answer.points, 0) || 0;
 }
 
+function flightHistory() {
+  return [
+    ...Object.values(storage.get("history", {})),
+    ...(native ? storage.get("offline-history", []) : []),
+  ];
+}
+
 function updateFlight(celebrate = false) {
   sceneState = {
     mode: displayView,
@@ -84,7 +83,7 @@ function updateFlight(celebrate = false) {
   document.body.dataset.tier = game?.answers.at(-1)?.tier || 0;
   $("best-altitude").textContent = Math.max(
     0,
-    ...Object.values(storage.get("history", {})).map((item) => item.score),
+    ...flightHistory().map((item) => item.score),
   ).toLocaleString();
   $("progress").replaceChildren(
     ...Array.from({ length: 5 }, (_, index) => {
@@ -188,18 +187,32 @@ $("help").onclick = () => {
   content.append(tiers);
 };
 
-$("about").onclick = () =>
-  openDialog("Take your curiosity somewhere new.", [
+$("about").onclick = () => {
+  const content = openDialog("Take your curiosity somewhere new.", [
     "RARE is an independent daily trivia game. Unexpected answers power a hot-air-balloon journey through an illustrated sky. It is inspired by rare-answer games, including Krillion.",
-    `The current bank has ${puzzle?.bankSize || 400} curated English prompts. Answers and scores are checked on the server. One point represents one game meter. Altitude is a visual game reward and answer rarity is an editorial rating.`,
+    `The current bank has ${puzzle?.bankSize || 400} curated English prompts. Online answers and scores are checked on the server. Offline practice is scored on your device. One point represents one game meter. Altitude is a visual game reward and answer rarity is an editorial rating.`,
     "An anonymous cookie keeps your daily flight. Game results and answers are stored for scoring and the leaderboard. Browser local storage keeps your flight history. Clearing browser data removes your local identity.",
-    "The sky and balloon were created with AI image generation. Sound starts off. Reduced-motion preferences disable balloon and cloud animation. No graphics API or external asset service is needed during play.",
+    "The sky and balloon were created with AI image generation. Sound starts off. Reduced-motion preferences disable balloon and cloud animation. Mobile apps include native sharing, haptics and offline practice.",
   ]);
+  const links = element("p");
+  for (const [label, path] of [
+    ["Privacy policy", "/privacy/"],
+    ["Support", "/support/"],
+    ...(native ? [["Third-party notices", "/licenses/"]] : []),
+  ]) {
+    const link = element("a", label);
+    link.href = path;
+    links.append(link, document.createTextNode(" · "));
+  }
+  content.append(links);
+};
 
 $("stats").onclick = () => {
-  const history = Object.values(storage.get("history", {}));
+  const history = flightHistory();
   const content = openDialog("Your flight log.", [
-    "Your completed daily flights, saved on this browser.",
+    native
+      ? "Your daily flights and offline practice, saved on this device."
+      : "Your completed daily flights, saved on this browser.",
   ]);
   const grid = element("div", undefined, "stats-grid");
   const best = Math.max(0, ...history.map((item) => item.score));
@@ -355,7 +368,11 @@ async function start(mode = "daily", day = puzzle?.day) {
   }
 }
 $("start").onclick = () => start();
-$("practice").onclick = $("play-again").onclick = () => start("practice");
+$("practice").onclick = () => start("practice");
+$("offline-practice").hidden = !native;
+$("offline-practice").onclick = () => start("offline");
+$("play-again").onclick = () =>
+  start(game?.mode === "offline" ? "offline" : "practice");
 
 function home() {
   show("home");
@@ -372,7 +389,11 @@ function render() {
   show("play");
   updateFlight();
   $("mode-label").textContent =
-    game.mode === "daily" ? "DAILY FLIGHT" : "PRACTICE FLIGHT";
+    game.mode === "daily"
+      ? "DAILY FLIGHT"
+      : game.mode === "offline"
+        ? "OFFLINE PRACTICE"
+        : "PRACTICE FLIGHT";
   $("category").textContent = game.question.category;
   $("question").textContent = game.question.prompt;
   $("live-score").textContent = score().toLocaleString();
@@ -431,6 +452,7 @@ function renderReveal() {
   $("rarity-medal").textContent = ["–", "↑", "↑", "✧", "✦"][tier];
   updateFlight(true);
   playSound(tier);
+  haptic(tier);
   $("reveal-kicker").textContent = answer?.correct
     ? "YOU CAUGHT AN UPDRAFT"
     : "STILL A GOOD DAY TO FLY";
@@ -505,7 +527,7 @@ function renderResults() {
     element("span", total >= 2500 ? "heights." : "you places."),
   );
   $("result-subtitle").textContent =
-    `${game.mode === "daily" ? "Daily flight · " + game.day : "Practice flight"} · ${game.answers.filter((answer) => answer.correct).length} of 5 correct`;
+    `${game.mode === "daily" ? "Daily flight · " + game.day : game.mode === "offline" ? "Offline practice" : "Practice flight"} · ${game.answers.filter((answer) => answer.correct).length} of 5 correct`;
   $("final-score").textContent = total.toLocaleString();
   const highestTier = Math.max(...game.answers.map((answer) => answer.tier));
   $("rarest-find").textContent = rarityNames[highestTier];
@@ -564,6 +586,24 @@ function renderResults() {
     }),
   );
   $("share-note").textContent = "";
+  if (game.mode === "offline") {
+    const offlineHistory = storage.get("offline-history", []);
+    offlineHistory.unshift({
+      score: total,
+      day: game.day,
+      tiers: game.answers.map((answer) => answer.tier),
+      id: game.id,
+    });
+    storage.set(
+      "offline-history",
+      offlineHistory
+        .filter(
+          (entry, index, all) =>
+            all.findIndex((item) => item.id === entry.id) === index,
+        )
+        .slice(0, 30),
+    );
+  }
   if (game.mode === "daily") {
     const history = storage.get("history", {});
     history[game.day] = {
@@ -573,7 +613,10 @@ function renderResults() {
     };
     storage.set("history", history);
   }
-  loadLeaderboard(game.day);
+  if (game.mode === "offline") {
+    $("board").textContent =
+      "Offline practice is saved on this device and has its own flight history.";
+  } else loadLeaderboard(game.day);
 }
 
 async function loadLeaderboard(day) {
@@ -603,11 +646,14 @@ async function loadLeaderboard(day) {
 $("share").onclick = async () => {
   if (!game) return;
   const symbols = ["⬛", "⬜", "🟩", "🟪", "🟨"];
-  const text = `RARE FLIGHT ↗ · ${game.mode === "daily" ? game.day : "Practice"}\n${game.answers.map((answer) => symbols[answer.tier]).join("")}\n${score().toLocaleString()} m above the everyday\nMy best updraft: ${rarityNames[Math.max(...game.answers.map((answer) => answer.tier))]}\nHow high can you go?\n${location.origin}`;
+  const text = `RARE FLIGHT ↗ · ${game.mode === "daily" ? game.day : game.mode === "offline" ? "Offline practice" : "Practice"}\n${game.answers.map((answer) => symbols[answer.tier]).join("")}\n${score().toLocaleString()} m above the everyday\nMy best updraft: ${rarityNames[Math.max(...game.answers.map((answer) => answer.tier))]}\nHow high can you go?\n${native ? publicOrigin : location.origin}`;
   try {
-    await navigator.clipboard.writeText(text);
-    $("share-note").textContent =
-      "Flight copied. Send a little sky to a friend.";
+    const outcome = await shareFlight(text);
+    $("share-note").textContent = outcome === "cancelled"
+      ? ""
+      : outcome === "shared"
+        ? "Flight shared. A little sky for a friend."
+        : "Flight copied. Send a little sky to a friend.";
   } catch {
     $("share-note").textContent = text;
   }
@@ -630,9 +676,19 @@ async function initialize() {
     updateDailyButton();
     updateFlight();
   } catch (error) {
-    setError(error.message);
+    if (native) {
+      $("puzzle-label").textContent = "OFFLINE PRACTICE IS READY";
+      $("reset-label").textContent = "Reconnect to take today’s daily flight.";
+    } else setError(error.message);
   }
 }
+
+addEventListener("rare:resume", () => {
+  if (displayView === "play") tick();
+});
+addEventListener("rare:network", (event) => {
+  if (event.detail.connected && displayView === "home") initialize();
+});
 
 // Flight visuals load independently of the timed game and scoring requests.
 import("/sky.js")
