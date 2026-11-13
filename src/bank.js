@@ -9,6 +9,11 @@ export const batches = [
     "batch": "2026-11-13-daily",
     "releasedOn": "2026-11-13",
     "count": 100
+  },
+  {
+    "batch": "2026-11-14-daily",
+    "releasedOn": "2026-11-14",
+    "count": 100
   }
 ];
 export const bank = [
@@ -16298,5 +16303,4655 @@ export const bank = [
     ],
     "releasedOn": "2026-11-13",
     "batch": "2026-11-13-daily"
+  },
+  {
+    "id": "daily-20261114-webb-instruments",
+    "category": "SPACE",
+    "prompt": "Name one of the four scientific instruments aboard the James Webb Space Telescope.",
+    "explanation": "The combined FGS/NIRISS assembly counts as one instrument. Acronyms and expanded instrument names are accepted. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://science.nasa.gov/mission/webb/faqs-full/"
+    ],
+    "answers": [
+      {
+        "label": "NIRCam",
+        "aliases": [
+          "Near Infrared Camera"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "NIRSpec",
+        "aliases": [
+          "Near Infrared Spectrograph"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "MIRI",
+        "aliases": [
+          "Mid Infrared Instrument"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "FGS/NIRISS",
+        "aliases": [
+          "NIRISS",
+          "FGS",
+          "Fine Guidance Sensor",
+          "Near Infrared Imager and Slitless Spectrograph"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-spitzer-instruments",
+    "category": "SPACE",
+    "prompt": "Name a scientific instrument that flew aboard the Spitzer Space Telescope.",
+    "explanation": "The complete original instrument package comprised IRAC, IRS and MIPS, including instruments used before the warm mission. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.jpl.nasa.gov/missions/spitzer-space-telescope/"
+    ],
+    "answers": [
+      {
+        "label": "IRAC",
+        "aliases": [
+          "Infrared Array Camera"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "IRS",
+        "aliases": [
+          "Infrared Spectrograph"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "MIPS",
+        "aliases": [
+          "Multiband Imaging Photometer",
+          "Multiband Imaging Photometer for Spitzer"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-chandra-instruments",
+    "category": "SPACE",
+    "prompt": "Name one of Chandra X-ray Observatory's four main science instruments.",
+    "explanation": "ACIS and HRC are focal-plane instruments. HETG and LETG are the transmission-grating instruments. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://chandra.harvard.edu/about/specs.html"
+    ],
+    "answers": [
+      {
+        "label": "ACIS",
+        "aliases": [
+          "Advanced CCD Imaging Spectrometer",
+          "Advanced Charged Coupled Device Imaging Spectrometer"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "HRC",
+        "aliases": [
+          "High Resolution Camera"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "HETG",
+        "aliases": [
+          "HETGS",
+          "High Energy Transmission Grating",
+          "High Energy Transmission Grating Spectrometer"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "LETG",
+        "aliases": [
+          "LETGS",
+          "Low Energy Transmission Grating",
+          "Low Energy Transmission Grating Spectrometer"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-artemis-one-manikins",
+    "category": "SPACE",
+    "prompt": "Name one of the three human-body test mannequins carried on Artemis I in 2022.",
+    "explanation": "This asks for the named human-body replicas, including Commander Moonikin Campos and the two radiation phantoms. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.nasa.gov/image-article/artemis-i-moonikin-campos-inspection-install/"
+    ],
+    "answers": [
+      {
+        "label": "Moonikin Campos",
+        "aliases": [
+          "Campos",
+          "Commander Moonikin Campos"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Helga",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Zohar",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-solar-eclipse-types",
+    "category": "SPACE",
+    "prompt": "Name a type of solar eclipse in NASA's four-type classification.",
+    "explanation": "The categories describe how the Moon covers the Sun, including a hybrid that changes between total and annular. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://science.nasa.gov/eclipses/types/"
+    ],
+    "answers": [
+      {
+        "label": "Total",
+        "aliases": [
+          "Total eclipse",
+          "Total solar eclipse"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Partial",
+        "aliases": [
+          "Partial eclipse",
+          "Partial solar eclipse"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Annular",
+        "aliases": [
+          "Annular eclipse",
+          "Annular solar eclipse"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Hybrid",
+        "aliases": [
+          "Hybrid eclipse",
+          "Hybrid solar eclipse",
+          "Annular total eclipse"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-martian-geologic-ages",
+    "category": "SPACE",
+    "prompt": "Name one of Mars's three broad geological ages in its standard crater-based timescale.",
+    "explanation": "Use a broad age name. Early, middle and late subdivisions are accepted with their parent age. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://mars.nasa.gov/files/msl/MSL_Press_Kit.pdf"
+    ],
+    "answers": [
+      {
+        "label": "Noachian",
+        "aliases": [
+          "Noachian era",
+          "Noachian period",
+          "Early Noachian",
+          "Middle Noachian",
+          "Late Noachian"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Hesperian",
+        "aliases": [
+          "Hesperian era",
+          "Hesperian period",
+          "Early Hesperian",
+          "Late Hesperian"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Amazonian",
+        "aliases": [
+          "Amazonian era",
+          "Amazonian period",
+          "Early Amazonian",
+          "Middle Amazonian",
+          "Late Amazonian"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-solar-layers",
+    "category": "SPACE",
+    "prompt": "Name a layer of the Sun or its atmosphere in NASA's seven-layer diagram.",
+    "explanation": "The diagram includes the core, two interior transport zones and four atmospheric layers, counting the transition region separately. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://science.nasa.gov/blogs/the-sun-spot/2023/09/26/layers-of-the-sun/"
+    ],
+    "answers": [
+      {
+        "label": "Core",
+        "aliases": [
+          "Solar core"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Radiative zone",
+        "aliases": [
+          "Radiation zone",
+          "Radiative layer"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Convection zone",
+        "aliases": [
+          "Convective zone",
+          "Convection layer"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Photosphere",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Chromosphere",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Transition region",
+        "aliases": [
+          "Transition zone",
+          "Solar transition region"
+        ],
+        "tier": 4
+      },
+      {
+        "label": "Corona",
+        "aliases": [
+          "Solar corona"
+        ],
+        "tier": 1
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-meteorite-main-groups",
+    "category": "SPACE",
+    "prompt": "Name one of the three main meteorite groups classified by metal and silicate content.",
+    "explanation": "Use a main compositional group, rather than a subgroup such as chondrite, pallasite or mesosiderite. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.nhm.ac.uk/discover/types-of-meteorites.html"
+    ],
+    "answers": [
+      {
+        "label": "Iron",
+        "aliases": [
+          "Iron meteorite",
+          "Iron meteorites",
+          "Metallic meteorite"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Stony",
+        "aliases": [
+          "Stony meteorite",
+          "Stony meteorites",
+          "Stone meteorite",
+          "Stone"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Stony iron",
+        "aliases": [
+          "Stony iron meteorite",
+          "Stony iron meteorites",
+          "Iron stony"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-apollo-moonwalkers",
+    "category": "SPACE",
+    "prompt": "Name an astronaut who walked on the Moon during the Apollo program, 1969–1972.",
+    "explanation": "All twelve Apollo moonwalkers are included. Astronauts who stayed in lunar orbit are outside this set. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://science.nasa.gov/moon/moon-walkers/"
+    ],
+    "answers": [
+      {
+        "label": "Neil Armstrong",
+        "aliases": [
+          "Armstrong"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Buzz Aldrin",
+        "aliases": [
+          "Aldrin",
+          "Edwin Aldrin",
+          "Edwin Buzz Aldrin"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Pete Conrad",
+        "aliases": [
+          "Charles Conrad",
+          "Conrad",
+          "Charles Pete Conrad"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Alan Bean",
+        "aliases": [
+          "Bean",
+          "Al Bean"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Alan Shepard",
+        "aliases": [
+          "Shepard",
+          "Alan Shepard Jr"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Edgar Mitchell",
+        "aliases": [
+          "Mitchell",
+          "Ed Mitchell"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "David Scott",
+        "aliases": [
+          "Scott",
+          "Dave Scott"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "James Irwin",
+        "aliases": [
+          "Irwin",
+          "Jim Irwin"
+        ],
+        "tier": 4
+      },
+      {
+        "label": "John Young",
+        "aliases": [
+          "Young"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Charles Duke",
+        "aliases": [
+          "Duke",
+          "Charlie Duke"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Eugene Cernan",
+        "aliases": [
+          "Cernan",
+          "Gene Cernan"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Harrison Schmitt",
+        "aliases": [
+          "Schmitt",
+          "Jack Schmitt"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-iss-partner-agencies",
+    "category": "SPACE",
+    "prompt": "Name one of the five space agencies that partnered to assemble the International Space Station.",
+    "explanation": "The set consists of the five assembly partner agencies. Agency abbreviations and full English names are accepted. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.nasa.gov/international-space-station/space-station-facts-and-figures/"
+    ],
+    "answers": [
+      {
+        "label": "NASA",
+        "aliases": [
+          "National Aeronautics and Space Administration"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "ESA",
+        "aliases": [
+          "European Space Agency"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Roscosmos",
+        "aliases": [
+          "Russian Space Agency",
+          "RSA"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "JAXA",
+        "aliases": [
+          "Japan Aerospace Exploration Agency"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "CSA",
+        "aliases": [
+          "Canadian Space Agency"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-human-tissue-types",
+    "category": "SCIENCE",
+    "prompt": "Name one of the four basic human tissue types.",
+    "explanation": "These are the broad tissue classes used in introductory histology. Specific organs and cell types are outside the set. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://openstax.org/books/anatomy-and-physiology/pages/4-1-types-of-tissues"
+    ],
+    "answers": [
+      {
+        "label": "Epithelial",
+        "aliases": [
+          "Epithelial tissue",
+          "Epithelium"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Connective",
+        "aliases": [
+          "Connective tissue"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Muscle",
+        "aliases": [
+          "Muscle tissue",
+          "Muscular tissue"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Nervous",
+        "aliases": [
+          "Nervous tissue",
+          "Neural tissue"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-synovial-joint-types",
+    "category": "SCIENCE",
+    "prompt": "Name a synovial joint type in the standard six-shape classification.",
+    "explanation": "The categories describe joint-surface shapes. Gliding and ellipsoid are accepted synonyms for plane and condyloid. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://openstax.org/books/anatomy-and-physiology-2e/pages/9-4-synovial-joints"
+    ],
+    "answers": [
+      {
+        "label": "Hinge",
+        "aliases": [
+          "Hinge joint"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Ball and socket",
+        "aliases": [
+          "Ball and socket joint"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Pivot",
+        "aliases": [
+          "Pivot joint"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Saddle",
+        "aliases": [
+          "Saddle joint"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Plane",
+        "aliases": [
+          "Plane joint",
+          "Gliding",
+          "Gliding joint"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Condyloid",
+        "aliases": [
+          "Condyloid joint",
+          "Ellipsoid",
+          "Ellipsoidal joint"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-cranial-bone-types",
+    "category": "SCIENCE",
+    "prompt": "Name a bone of the adult human braincase, counting left and right versions together.",
+    "explanation": "Eight individual braincase bones have six names because temporal and parietal bones occur as pairs. Facial bones are excluded. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-2-the-skull"
+    ],
+    "answers": [
+      {
+        "label": "Frontal",
+        "aliases": [
+          "Frontal bone"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Parietal",
+        "aliases": [
+          "Parietal bone"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Temporal",
+        "aliases": [
+          "Temporal bone"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Occipital",
+        "aliases": [
+          "Occipital bone"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Sphenoid",
+        "aliases": [
+          "Sphenoid bone"
+        ],
+        "tier": 4
+      },
+      {
+        "label": "Ethmoid",
+        "aliases": [
+          "Ethmoid bone"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-carpal-bones",
+    "category": "SCIENCE",
+    "prompt": "Name one of the eight carpal bones in a human wrist.",
+    "explanation": "This includes both carpal rows. The radius, ulna, metacarpals and finger bones are outside the set. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+    ],
+    "answers": [
+      {
+        "label": "Scaphoid",
+        "aliases": [
+          "Scaphoid bone"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Lunate",
+        "aliases": [
+          "Lunate bone"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Triquetrum",
+        "aliases": [
+          "Triquetral",
+          "Triquetral bone"
+        ],
+        "tier": 4
+      },
+      {
+        "label": "Pisiform",
+        "aliases": [
+          "Pisiform bone"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Trapezium",
+        "aliases": [
+          "Trapezium bone"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Trapezoid",
+        "aliases": [
+          "Trapezoid bone"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Capitate",
+        "aliases": [
+          "Capitate bone"
+        ],
+        "tier": 4
+      },
+      {
+        "label": "Hamate",
+        "aliases": [
+          "Hamate bone"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-leukocyte-types",
+    "category": "SCIENCE",
+    "prompt": "Name one of the five major white-blood-cell types in a standard differential blood count.",
+    "explanation": "The five broad circulating leukocyte types are counted. B and T cells both fall within lymphocytes. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://openstax.org/books/anatomy-and-physiology-2e/pages/18-4-leukocytes-and-platelets"
+    ],
+    "answers": [
+      {
+        "label": "Neutrophil",
+        "aliases": [
+          "Neutrophils"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Lymphocyte",
+        "aliases": [
+          "Lymphocytes"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Monocyte",
+        "aliases": [
+          "Monocytes"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Eosinophil",
+        "aliases": [
+          "Eosinophils"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Basophil",
+        "aliases": [
+          "Basophils"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-heart-valves",
+    "category": "SCIENCE",
+    "prompt": "Name one of the four valves of the human heart.",
+    "explanation": "Anatomical names and common left/right atrioventricular synonyms are accepted. Generic semilunar valve is ambiguous. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy"
+    ],
+    "answers": [
+      {
+        "label": "Mitral",
+        "aliases": [
+          "Mitral valve",
+          "Bicuspid",
+          "Bicuspid valve",
+          "Left atrioventricular valve",
+          "Left AV valve"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Tricuspid",
+        "aliases": [
+          "Tricuspid valve",
+          "Right atrioventricular valve",
+          "Right AV valve"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Aortic",
+        "aliases": [
+          "Aortic valve",
+          "Aortic semilunar valve"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Pulmonary",
+        "aliases": [
+          "Pulmonary valve",
+          "Pulmonic valve",
+          "Pulmonary semilunar valve"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-meninges",
+    "category": "SCIENCE",
+    "prompt": "Name one of the three meninges surrounding the human brain and spinal cord.",
+    "explanation": "These are the protective membrane layers, rather than the spaces between them. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system"
+    ],
+    "answers": [
+      {
+        "label": "Dura mater",
+        "aliases": [
+          "Dura"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Arachnoid mater",
+        "aliases": [
+          "Arachnoid"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Pia mater",
+        "aliases": [
+          "Pia"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-cartilage-types",
+    "category": "SCIENCE",
+    "prompt": "Name a cartilage type in the standard three-type human histology classification.",
+    "explanation": "The classification distinguishes hyaline cartilage, elastic cartilage and fibrocartilage by their matrix and fibers. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://openstax.org/books/anatomy-and-physiology-2e/pages/4-3-connective-tissue-supports-and-protects"
+    ],
+    "answers": [
+      {
+        "label": "Hyaline",
+        "aliases": [
+          "Hyaline cartilage"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Elastic",
+        "aliases": [
+          "Elastic cartilage"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Fibrocartilage",
+        "aliases": [
+          "Fibrous cartilage",
+          "Fibro cartilage"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-anatomical-planes",
+    "category": "SCIENCE",
+    "prompt": "Name one of the three principal anatomical planes used to divide the human body.",
+    "explanation": "The principal orthogonal planes are sagittal, frontal and transverse. Median and parasagittal describe sagittal planes. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-6-anatomical-terminology"
+    ],
+    "answers": [
+      {
+        "label": "Sagittal",
+        "aliases": [
+          "Sagittal plane",
+          "Midsagittal",
+          "Midsagittal plane",
+          "Median plane",
+          "Parasagittal"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Frontal",
+        "aliases": [
+          "Frontal plane",
+          "Coronal",
+          "Coronal plane"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Transverse",
+        "aliases": [
+          "Transverse plane",
+          "Horizontal plane",
+          "Axial",
+          "Axial plane"
+        ],
+        "tier": 1
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-crystal-systems",
+    "category": "SCIENCE",
+    "prompt": "Name one of the seven crystal systems in the IUCr classification.",
+    "explanation": "The IUCr system has seven crystal systems, with trigonal and hexagonal separate. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Ispace_group_crystal_system.html"
+    ],
+    "answers": [
+      {
+        "label": "Cubic",
+        "aliases": [
+          "Isometric"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Tetragonal",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Orthorhombic",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Hexagonal",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Trigonal",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Monoclinic",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Triclinic",
+        "aliases": [
+          "Anorthic",
+          "Orthic"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-electron-quantum-numbers",
+    "category": "SCIENCE",
+    "prompt": "Name one of the four quantum numbers used to describe an electron in an atom.",
+    "explanation": "Names and standard symbols n, l, ml and ms are accepted. Angular and azimuthal refer to the orbital angular-momentum number. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://openstax.org/books/chemistry-atoms-first/pages/3-3-development-of-quantum-theory"
+    ],
+    "answers": [
+      {
+        "label": "Principal",
+        "aliases": [
+          "Principal quantum number",
+          "n"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Angular momentum",
+        "aliases": [
+          "Angular momentum quantum number",
+          "Angular quantum number",
+          "Angular",
+          "Azimuthal",
+          "Azimuthal quantum number",
+          "l"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Magnetic",
+        "aliases": [
+          "Magnetic quantum number",
+          "ml",
+          "m_l"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Spin",
+        "aliases": [
+          "Spin quantum number",
+          "Spin magnetic quantum number",
+          "ms",
+          "m_s"
+        ],
+        "tier": 2
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-phase-transition-names",
+    "category": "SCIENCE",
+    "prompt": "Name a direct transition between solid, liquid and gas in the conventional six-transition model.",
+    "explanation": "The set names each direction between the three phases. Boiling and evaporation both count as vaporization. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://openstax.org/books/chemistry-2e/pages/10-3-phase-transitions"
+    ],
+    "answers": [
+      {
+        "label": "Melting",
+        "aliases": [
+          "Fusion"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Freezing",
+        "aliases": [
+          "Solidification"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Vaporization",
+        "aliases": [
+          "Vaporisation",
+          "Evaporation",
+          "Boiling"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Condensation",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Sublimation",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Deposition",
+        "aliases": [
+          "Desublimation",
+          "Reverse sublimation"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-plant-tissue-systems",
+    "category": "NATURE",
+    "prompt": "Name one of the three permanent tissue systems of a vascular plant.",
+    "explanation": "This asks for the broad tissue systems, rather than individual conducting tissues such as xylem and phloem. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://openstax.org/books/biology-2e/pages/30-1-the-plant-body"
+    ],
+    "answers": [
+      {
+        "label": "Dermal",
+        "aliases": [
+          "Dermal tissue",
+          "Dermal tissue system"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Vascular",
+        "aliases": [
+          "Vascular tissue",
+          "Vascular tissue system"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Ground",
+        "aliases": [
+          "Ground tissue",
+          "Ground tissue system"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-gymnosperm-groups",
+    "category": "NATURE",
+    "prompt": "Name one of the four living gymnosperm groups in the standard introductory classification.",
+    "explanation": "Group names and corresponding phylum names are accepted. Angiosperms are flowering plants and lie outside the set. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://openstax.org/books/biology-2e/pages/26-2-gymnosperms"
+    ],
+    "answers": [
+      {
+        "label": "Conifers",
+        "aliases": [
+          "Conifer",
+          "Coniferophyta",
+          "Pinophyta"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Cycads",
+        "aliases": [
+          "Cycad",
+          "Cycadophyta"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Ginkgo",
+        "aliases": [
+          "Ginkgos",
+          "Ginkgoes",
+          "Ginkgophyta"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Gnetophytes",
+        "aliases": [
+          "Gnetophyta",
+          "Gnetophyte"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-carbon-fixation-pathways",
+    "category": "NATURE",
+    "prompt": "Name one of the three main photosynthetic carbon-fixation pathways in plants.",
+    "explanation": "The accepted pathway labels are C3, C4 and CAM. Expanded names for CAM and the C4 pathway are accepted. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.khanacademy.org/science/biology/ap-biology/ap-photosynthesis-in-plants/ap-photorespiration--c3-c4-cam-plants/a/c3-c4-and-cam-plants-agriculture"
+    ],
+    "answers": [
+      {
+        "label": "C3",
+        "aliases": [
+          "C3 photosynthesis",
+          "C3 pathway",
+          "Calvin cycle",
+          "Calvin Benson cycle"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "C4",
+        "aliases": [
+          "C4 photosynthesis",
+          "C4 pathway",
+          "Hatch Slack pathway"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "CAM",
+        "aliases": [
+          "Crassulacean acid metabolism",
+          "CAM photosynthesis",
+          "CAM pathway"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-traditional-plant-hormones",
+    "category": "NATURE",
+    "prompt": "Name a plant hormone group in the traditional five-group classification.",
+    "explanation": "The classic five groups are used here. More recently recognized signaling groups are outside this historical classification. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://openstax.org/books/biology-2e/pages/30-6-plant-sensory-systems-and-responses"
+    ],
+    "answers": [
+      {
+        "label": "Auxins",
+        "aliases": [
+          "Auxin",
+          "IAA",
+          "Indole acetic acid"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Gibberellins",
+        "aliases": [
+          "Gibberellin",
+          "GA",
+          "Gibberellic acid"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Cytokinins",
+        "aliases": [
+          "Cytokinin"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Ethylene",
+        "aliases": [
+          "Ethene"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Abscisic acid",
+        "aliases": [
+          "ABA"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-symbiotic-interactions",
+    "category": "NATURE",
+    "prompt": "Name a main form of symbiosis in the standard three-outcome classification.",
+    "explanation": "The categories distinguish whether each partner benefits, is unaffected or is harmed. Predation and competition are outside this trio. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://openstax.org/books/biology-2e/pages/45-6-community-ecology"
+    ],
+    "answers": [
+      {
+        "label": "Mutualism",
+        "aliases": [
+          "Mutualistic"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Commensalism",
+        "aliases": [
+          "Commensal"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Parasitism",
+        "aliases": [
+          "Parasitic"
+        ],
+        "tier": 2
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-terrestrial-biomes",
+    "category": "NATURE",
+    "prompt": "Name a major terrestrial biome in OpenStax Biology 2e's eight-biome classification.",
+    "explanation": "This specific model separates temperate forests from boreal forests and savannas from temperate grasslands. Aquatic biomes and polar ice are excluded. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://openstax.org/books/biology-2e/pages/44-3-terrestrial-biomes"
+    ],
+    "answers": [
+      {
+        "label": "Tropical wet forest",
+        "aliases": [
+          "Tropical rainforest",
+          "Tropical rain forest",
+          "Tropical wet forests"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Savanna",
+        "aliases": [
+          "Savannas",
+          "Savannah",
+          "Savannahs"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Subtropical desert",
+        "aliases": [
+          "Subtropical deserts",
+          "Hot desert",
+          "Desert"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Chaparral",
+        "aliases": [
+          "Mediterranean shrubland",
+          "Mediterranean scrub"
+        ],
+        "tier": 4
+      },
+      {
+        "label": "Temperate grassland",
+        "aliases": [
+          "Temperate grasslands",
+          "Prairie",
+          "Prairies",
+          "Steppe",
+          "Steppes"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Temperate forest",
+        "aliases": [
+          "Temperate forests",
+          "Temperate deciduous forest",
+          "Deciduous forest"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Boreal forest",
+        "aliases": [
+          "Boreal forests",
+          "Taiga"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Arctic tundra",
+        "aliases": [
+          "Tundra"
+        ],
+        "tier": 2
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-kiwi-species",
+    "category": "NATURE",
+    "prompt": "Name one of the five living kiwi species recognized by Save the Kiwi.",
+    "explanation": "Common English and Maori names are accepted. Brown kiwi by itself refers to the North Island species in this naming convention. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://savethekiwi.nz/about-kiwi/kiwi-species/"
+    ],
+    "answers": [
+      {
+        "label": "North Island brown kiwi",
+        "aliases": [
+          "Brown kiwi",
+          "Kiwi nui",
+          "Apteryx mantelli"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Great spotted kiwi",
+        "aliases": [
+          "Roroa",
+          "Great spotted",
+          "Apteryx haastii"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Little spotted kiwi",
+        "aliases": [
+          "Kiwi pukupuku",
+          "Little spotted",
+          "Apteryx owenii"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Rowi",
+        "aliases": [
+          "Okarito brown kiwi",
+          "Okarito kiwi",
+          "Apteryx rowi"
+        ],
+        "tier": 4
+      },
+      {
+        "label": "Tokoeka",
+        "aliases": [
+          "Southern brown kiwi",
+          "Apteryx australis"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-honeybee-castes",
+    "category": "NATURE",
+    "prompt": "Name one of the three adult honey-bee castes in a colony.",
+    "explanation": "Queens, workers and drones are the adult colony roles. Eggs, larvae and pupae are developmental stages. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://ask.ifas.ufl.edu/publication/IN1102"
+    ],
+    "answers": [
+      {
+        "label": "Queen",
+        "aliases": [
+          "Queen bee",
+          "Queens"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Worker",
+        "aliases": [
+          "Worker bee",
+          "Workers"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Drone",
+        "aliases": [
+          "Drone bee",
+          "Drones"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-npk-elements",
+    "category": "NATURE",
+    "prompt": "Name a chemical element represented by a letter in the fertilizer abbreviation NPK.",
+    "explanation": "NPK stands for the elements nitrogen, phosphorus and potassium. Fertilizer label percentages may express phosphorus and potassium as oxide equivalents. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://extension.umn.edu/garden-and-home/yard-and-garden/lawns-and-landscapes-in-minnesota/fertilizing-lawns"
+    ],
+    "answers": [
+      {
+        "label": "Nitrogen",
+        "aliases": [
+          "N"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Phosphorus",
+        "aliases": [
+          "P",
+          "Phosphorous"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Potassium",
+        "aliases": [
+          "K"
+        ],
+        "tier": 2
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-ecological-pyramids",
+    "category": "NATURE",
+    "prompt": "Name a quantity represented by one of the three standard kinds of ecological pyramid.",
+    "explanation": "The three kinds plot organism numbers, biomass or energy across trophic levels. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://openstax.org/books/biology-2e/pages/46-2-energy-flow-through-ecosystems"
+    ],
+    "answers": [
+      {
+        "label": "Numbers",
+        "aliases": [
+          "Number",
+          "Number of organisms",
+          "Organism numbers",
+          "Pyramid of numbers",
+          "Population numbers"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Biomass",
+        "aliases": [
+          "Pyramid of biomass"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Energy",
+        "aliases": [
+          "Pyramid of energy",
+          "Energy flow",
+          "Productivity",
+          "Pyramid of productivity"
+        ],
+        "tier": 2
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-four-corners-states",
+    "category": "GEOGRAPHY",
+    "prompt": "Name a US state whose boundary meets the Four Corners Monument.",
+    "explanation": "This is the single meeting point of the four state boundaries in the southwestern United States. State abbreviations are accepted. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.govinfo.gov/content/pkg/BILLS-106s28es/pdf/BILLS-106s28es.pdf"
+    ],
+    "answers": [
+      {
+        "label": "Arizona",
+        "aliases": [
+          "AZ"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Colorado",
+        "aliases": [
+          "CO"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "New Mexico",
+        "aliases": [
+          "NM"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Utah",
+        "aliases": [
+          "UT"
+        ],
+        "tier": 2
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-alpine-convention-countries",
+    "category": "GEOGRAPHY",
+    "prompt": "Name one of the eight Alpine countries represented in the Alpine Convention.",
+    "explanation": "The convention's eight-country definition includes Monaco and Liechtenstein. The European Union is a separate contracting party. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.alpconv.org/en/home"
+    ],
+    "answers": [
+      {
+        "label": "Switzerland",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Austria",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "France",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Italy",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Germany",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Slovenia",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Liechtenstein",
+        "aliases": [],
+        "tier": 4
+      },
+      {
+        "label": "Monaco",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-greenwich-meridian-countries",
+    "category": "GEOGRAPHY",
+    "prompt": "Name a country crossed by the Greenwich Prime Meridian on land north of the equator.",
+    "explanation": "Royal Museums Greenwich lists eight countries. Antarctica is outside this northern-hemisphere set. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.rmg.co.uk/stories/time/what-prime-meridian-why-it-greenwich?show=conWebDoc.17910"
+    ],
+    "answers": [
+      {
+        "label": "United Kingdom",
+        "aliases": [
+          "UK",
+          "Britain",
+          "Great Britain",
+          "England"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "France",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Spain",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Algeria",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Mali",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Burkina Faso",
+        "aliases": [],
+        "tier": 4
+      },
+      {
+        "label": "Ghana",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Togo",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-south-africa-capitals",
+    "category": "GEOGRAPHY",
+    "prompt": "Name one of South Africa's three traditional national capital cities.",
+    "explanation": "The traditional allocation is administrative, legislative and judicial. Johannesburg houses the Constitutional Court but is outside this three-capital convention. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.gov.za/about-sa/south-africas-provinces"
+    ],
+    "answers": [
+      {
+        "label": "Pretoria",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Cape Town",
+        "aliases": [
+          "Capetown"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Bloemfontein",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-uae-emirates",
+    "category": "GEOGRAPHY",
+    "prompt": "Name one of the seven emirates of the United Arab Emirates.",
+    "explanation": "This asks for emirates, which share their names with their principal cities. Common English transliterations are accepted. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://u.ae/en/about-the-uae/the-seven-emirates"
+    ],
+    "answers": [
+      {
+        "label": "Dubai",
+        "aliases": [
+          "Dubayy"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Abu Dhabi",
+        "aliases": [
+          "Abu Zabi"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Sharjah",
+        "aliases": [
+          "Ash Shariqah"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Ajman",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Fujairah",
+        "aliases": [
+          "Al Fujairah",
+          "Fujayrah"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Ras Al Khaimah",
+        "aliases": [
+          "Ras Al Khaymah",
+          "RAK"
+        ],
+        "tier": 4
+      },
+      {
+        "label": "Umm Al Quwain",
+        "aliases": [
+          "Umm Al Qaiwain",
+          "Umm Al Qaywayn"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-swiss-national-languages",
+    "category": "GEOGRAPHY",
+    "prompt": "Name one of Switzerland's four national languages.",
+    "explanation": "This asks for national-language status. Romansh has a more limited federal official-language role than the other three. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.aboutswitzerland.eda.admin.ch/en/language"
+    ],
+    "answers": [
+      {
+        "label": "German",
+        "aliases": [
+          "Deutsch",
+          "Swiss German"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "French",
+        "aliases": [
+          "Francais"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Italian",
+        "aliases": [
+          "Italiano"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Romansh",
+        "aliases": [
+          "Romansch",
+          "Rhaeto Romansh",
+          "Rumantsch"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-hawaii-major-islands",
+    "category": "GEOGRAPHY",
+    "prompt": "Name one of the eight main Hawaiian Islands.",
+    "explanation": "The eight-island geographic grouping includes Niihau and Kahoolawe. Big Island refers to the island of Hawaii. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://files.hawaii.gov/dbedt/economic/library/facts/Facts_Figures_browsable.pdf"
+    ],
+    "answers": [
+      {
+        "label": "Hawaii",
+        "aliases": [
+          "Hawaii Island",
+          "Island of Hawaii",
+          "Big Island",
+          "The Big Island"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Oahu",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Maui",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Kauai",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Molokai",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Lanai",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Niihau",
+        "aliases": [],
+        "tier": 4
+      },
+      {
+        "label": "Kahoolawe",
+        "aliases": [
+          "Kaho olawe"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-maghreb-union-founders",
+    "category": "GEOGRAPHY",
+    "prompt": "Name a country that founded the Arab Maghreb Union in 1989.",
+    "explanation": "The five original member countries are used, giving this regional organization question a fixed historical scope. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://maghrebarabe.org/en/member-countries/"
+    ],
+    "answers": [
+      {
+        "label": "Morocco",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Algeria",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Tunisia",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Libya",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Mauritania",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-philippine-island-groups",
+    "category": "GEOGRAPHY",
+    "prompt": "Name one of the Philippines' three main island groups.",
+    "explanation": "The northern, central and southern island groups are intended. Individual smaller islands belong within these groups. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://genevapm.dfa.gov.ph/resources/visit-the-philippines"
+    ],
+    "answers": [
+      {
+        "label": "Luzon",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Visayas",
+        "aliases": [
+          "The Visayas",
+          "Visayan Islands"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Mindanao",
+        "aliases": [],
+        "tier": 2
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-original-panama-locks",
+    "category": "GEOGRAPHY",
+    "prompt": "Name a lock complex of the original Panama Canal opened in 1914.",
+    "explanation": "The original Panamax route has three lock complexes. Agua Clara and Cocoli belong to the later expansion. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://pancanal.com/en/history-of-the-panama-canal/"
+    ],
+    "answers": [
+      {
+        "label": "Gatun",
+        "aliases": [
+          "Gatun Locks"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Miraflores",
+        "aliases": [
+          "Miraflores Locks"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Pedro Miguel",
+        "aliases": [
+          "Pedro Miguel Locks"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-federalist-authors",
+    "category": "HISTORY",
+    "prompt": "Name an author of The Federalist Papers, published under the name Publius.",
+    "explanation": "The three collaborators wrote the essays in 1787–1788. Surnames are accepted because they distinguish this set. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://guides.loc.gov/federalist-papers/introduction"
+    ],
+    "answers": [
+      {
+        "label": "Alexander Hamilton",
+        "aliases": [
+          "Hamilton"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "James Madison",
+        "aliases": [
+          "Madison"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "John Jay",
+        "aliases": [
+          "Jay"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-declaration-committee",
+    "category": "HISTORY",
+    "prompt": "Name a member of the Committee of Five appointed to draft the US Declaration of Independence in 1776.",
+    "explanation": "The complete five-person drafting committee is included. This is smaller than the set of all Declaration signers. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.archives.gov/milestone-documents/declaration-of-independence"
+    ],
+    "answers": [
+      {
+        "label": "Thomas Jefferson",
+        "aliases": [
+          "Jefferson"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "John Adams",
+        "aliases": [
+          "Adams"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Benjamin Franklin",
+        "aliases": [
+          "Franklin",
+          "Ben Franklin"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Roger Sherman",
+        "aliases": [
+          "Sherman"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Robert Livingston",
+        "aliases": [
+          "Robert R Livingston",
+          "Robert R. Livingston",
+          "Livingston"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-magna-carta-custodians",
+    "category": "HISTORY",
+    "prompt": "Name an institution that owns one of the four surviving original 1215 Magna Carta manuscripts.",
+    "explanation": "The British Library owns two copies. Lincoln Cathedral owns the copy displayed at Lincoln Castle, and Salisbury Cathedral owns the fourth. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://wwws.loc.gov/exhibits/magna-carta-muse-and-mentor/lincoln-magna-carta.html"
+    ],
+    "answers": [
+      {
+        "label": "British Library",
+        "aliases": [
+          "The British Library"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Salisbury Cathedral",
+        "aliases": [
+          "Cathedral of Salisbury"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Lincoln Cathedral",
+        "aliases": [
+          "Cathedral of Lincoln"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-german-occupation-powers",
+    "category": "HISTORY",
+    "prompt": "Name an Allied power that administered an occupation zone in Germany after World War II.",
+    "explanation": "The four postwar occupation powers are intended. These are countries rather than individual military commanders. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.dhm.de/en/exhibitions/permanent-exhibition/germany-under-allied-occupation/"
+    ],
+    "answers": [
+      {
+        "label": "United States",
+        "aliases": [
+          "USA",
+          "US",
+          "United States of America",
+          "America"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "United Kingdom",
+        "aliases": [
+          "UK",
+          "Britain",
+          "Great Britain",
+          "British"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "France",
+        "aliases": [
+          "French"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Soviet Union",
+        "aliases": [
+          "USSR",
+          "Union of Soviet Socialist Republics",
+          "Soviet Russia",
+          "Russia"
+        ],
+        "tier": 2
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-chinese-three-kingdoms",
+    "category": "HISTORY",
+    "prompt": "Name a state in China's Three Kingdoms period in the third century CE.",
+    "explanation": "The three rival states were Cao Wei, Shu Han and Eastern Wu. Their usual short names are accepted. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.kyuhaku.jp/en/exhibition/exhibition_s56.html"
+    ],
+    "answers": [
+      {
+        "label": "Wei",
+        "aliases": [
+          "Cao Wei"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Shu",
+        "aliases": [
+          "Shu Han"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Wu",
+        "aliases": [
+          "Eastern Wu",
+          "Sun Wu"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-first-triumvirate",
+    "category": "HISTORY",
+    "prompt": "Name a member of ancient Rome's First Triumvirate.",
+    "explanation": "The informal alliance formed around 60 BCE joined Caesar, Pompey and Crassus. Members of the later Second Triumvirate are outside this set. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://resources.metmuseum.org/resources/metpublications/pdf/The_World_between_Empires_Art_and_Identity_in_the_Ancient_Middle_East.pdf"
+    ],
+    "answers": [
+      {
+        "label": "Julius Caesar",
+        "aliases": [
+          "Caesar",
+          "Gaius Julius Caesar"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Pompey",
+        "aliases": [
+          "Pompey the Great",
+          "Gnaeus Pompeius Magnus",
+          "Pompeius"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Crassus",
+        "aliases": [
+          "Marcus Licinius Crassus",
+          "Marcus Crassus"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-rosetta-scripts",
+    "category": "HISTORY",
+    "prompt": "Name one of the three writing systems used on the Rosetta Stone.",
+    "explanation": "This asks for scripts. The stone uses two languages, Egyptian and Greek, written in three scripts. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://britishmuseum.iro.bl.uk/entities/publication/dc1f7898-fc3c-461d-8bc0-1b2b1fbeec80"
+    ],
+    "answers": [
+      {
+        "label": "Hieroglyphic",
+        "aliases": [
+          "Hieroglyphs",
+          "Hieroglyphics",
+          "Egyptian hieroglyphs",
+          "Egyptian hieroglyphics"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Demotic",
+        "aliases": [
+          "Egyptian Demotic",
+          "Demotic script"
+        ],
+        "tier": 4
+      },
+      {
+        "label": "Greek",
+        "aliases": [
+          "Ancient Greek",
+          "Greek script"
+        ],
+        "tier": 1
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-columbus-first-fleet",
+    "category": "HISTORY",
+    "prompt": "Name a ship in Christopher Columbus's first Atlantic expedition of 1492.",
+    "explanation": "The three vessels were the Santa Maria, Pinta and Nina. Nina was the nickname of the Santa Clara. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://catalogs.marinersmuseum.org/object/CL6831"
+    ],
+    "answers": [
+      {
+        "label": "Santa Maria",
+        "aliases": [
+          "La Santa Maria"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Nina",
+        "aliases": [
+          "La Nina",
+          "Santa Clara",
+          "La Santa Clara"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Pinta",
+        "aliases": [
+          "La Pinta"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-oz-road-companions",
+    "category": "LITERATURE",
+    "prompt": "Name one of the three companions Dorothy meets on the road to Oz in Baum's original novel, excluding Toto.",
+    "explanation": "The trio seek brains, a heart and courage. Toto already accompanies Dorothy from Kansas and is excluded by the prompt. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.gutenberg.org/files/55/55-h/55-h.htm"
+    ],
+    "answers": [
+      {
+        "label": "Scarecrow",
+        "aliases": [
+          "The Scarecrow"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Tin Woodman",
+        "aliases": [
+          "Tin Man",
+          "The Tin Man",
+          "Tin Woodsman",
+          "The Tin Woodman"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Cowardly Lion",
+        "aliases": [
+          "Lion",
+          "The Cowardly Lion"
+        ],
+        "tier": 1
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-christmas-spirits",
+    "category": "LITERATURE",
+    "prompt": "Name a Christmas spirit who visits Scrooge after Marley in Dickens's A Christmas Carol.",
+    "explanation": "The three spirits represent Christmas Past, Present and Yet to Come. Marley's own ghost is excluded. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.gutenberg.org/files/46/46-h/46-h.htm"
+    ],
+    "answers": [
+      {
+        "label": "Ghost of Christmas Past",
+        "aliases": [
+          "Christmas Past",
+          "Past",
+          "Spirit of Christmas Past"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Ghost of Christmas Present",
+        "aliases": [
+          "Christmas Present",
+          "Present",
+          "Spirit of Christmas Present"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Ghost of Christmas Yet to Come",
+        "aliases": [
+          "Christmas Yet to Come",
+          "Yet to Come",
+          "Ghost of Christmas Future",
+          "Christmas Future",
+          "Future",
+          "Spirit of Christmas Yet to Come"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-divine-comedy-canticles",
+    "category": "LITERATURE",
+    "prompt": "Name one of the three canticles of Dante's Divine Comedy.",
+    "explanation": "The three major parts describe Hell, Purgatory and Paradise. Italian titles and English translations are accepted. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.gutenberg.org/ebooks/1004"
+    ],
+    "answers": [
+      {
+        "label": "Inferno",
+        "aliases": [
+          "Hell",
+          "The Inferno"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Purgatorio",
+        "aliases": [
+          "Purgatory"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Paradiso",
+        "aliases": [
+          "Paradise",
+          "Heaven"
+        ],
+        "tier": 2
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-bennet-sisters",
+    "category": "LITERATURE",
+    "prompt": "Name one of the five Bennet sisters in Jane Austen's Pride and Prejudice.",
+    "explanation": "First names, common nicknames and full names are accepted. Catherine Bennet is usually called Kitty. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.gutenberg.org/files/42671/42671-h/42671-h.htm"
+    ],
+    "answers": [
+      {
+        "label": "Elizabeth Bennet",
+        "aliases": [
+          "Elizabeth",
+          "Lizzy",
+          "Lizzie",
+          "Eliza",
+          "Lizzy Bennet"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Jane Bennet",
+        "aliases": [
+          "Jane"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Mary Bennet",
+        "aliases": [
+          "Mary"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Catherine Bennet",
+        "aliases": [
+          "Catherine",
+          "Kitty",
+          "Kitty Bennet"
+        ],
+        "tier": 4
+      },
+      {
+        "label": "Lydia Bennet",
+        "aliases": [
+          "Lydia"
+        ],
+        "tier": 2
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-potter-rabbit-siblings",
+    "category": "LITERATURE",
+    "prompt": "Name one of Mrs Rabbit's four children in Beatrix Potter's The Tale of Peter Rabbit.",
+    "explanation": "The original story names Peter and his three sisters. Benjamin Bunny is their cousin. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.gutenberg.org/cache/epub/14838/pg14838-images.html"
+    ],
+    "answers": [
+      {
+        "label": "Peter",
+        "aliases": [
+          "Peter Rabbit"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Flopsy",
+        "aliases": [
+          "Flopsy Rabbit"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Mopsy",
+        "aliases": [
+          "Mopsy Rabbit"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Cotton-tail",
+        "aliases": [
+          "Cottontail Rabbit",
+          "Cotton Tail Rabbit"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-darling-children",
+    "category": "LITERATURE",
+    "prompt": "Name one of the three Darling children in J. M. Barrie's Peter and Wendy.",
+    "explanation": "The children who fly from the Darling nursery to Neverland are Wendy and her two younger brothers. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.gutenberg.org/files/26654/26654-h/26654-h.htm"
+    ],
+    "answers": [
+      {
+        "label": "Wendy",
+        "aliases": [
+          "Wendy Darling",
+          "Wendy Moira Angela Darling"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "John",
+        "aliases": [
+          "John Darling",
+          "John Napoleon Darling"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Michael",
+        "aliases": [
+          "Michael Darling",
+          "Michael Nicholas Darling"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-karamazov-acknowledged-sons",
+    "category": "LITERATURE",
+    "prompt": "Name one of Fyodor Pavlovich's three acknowledged sons in The Brothers Karamazov.",
+    "explanation": "The acknowledged brothers are Dmitri, Ivan and Alexey. Smerdyakov's suspected parentage is outside the stated set. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.gutenberg.org/files/28054/28054-h/28054-h.htm"
+    ],
+    "answers": [
+      {
+        "label": "Dmitri",
+        "aliases": [
+          "Dmitry",
+          "Dmitri Karamazov",
+          "Dmitry Karamazov",
+          "Mitya",
+          "Mitia"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Ivan",
+        "aliases": [
+          "Ivan Karamazov"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Alexey",
+        "aliases": [
+          "Aleksey",
+          "Alexei",
+          "Alexey Karamazov",
+          "Alexei Karamazov",
+          "Alyosha",
+          "Aliosha"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-pickwick-corresponding-society",
+    "category": "LITERATURE",
+    "prompt": "Name a member of the four-man Corresponding Society that travels in Dickens's The Pickwick Papers.",
+    "explanation": "The traveling group consists of Samuel Pickwick and his three companions. Sam Weller joins later as a servant. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.gutenberg.org/files/580/580-h/580-h.htm"
+    ],
+    "answers": [
+      {
+        "label": "Samuel Pickwick",
+        "aliases": [
+          "Pickwick",
+          "Mr Pickwick"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Nathaniel Winkle",
+        "aliases": [
+          "Winkle",
+          "Mr Winkle"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Augustus Snodgrass",
+        "aliases": [
+          "Snodgrass",
+          "Mr Snodgrass"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Tracy Tupman",
+        "aliases": [
+          "Tupman",
+          "Tracey Tupman",
+          "Mr Tupman"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-bradley-shakespeare-tragedies",
+    "category": "LITERATURE",
+    "prompt": "Name a play studied in A. C. Bradley's Shakespearean Tragedy, the classic study of four great tragedies.",
+    "explanation": "The four plays named in Bradley's title define the set. Other Shakespeare tragedies are outside this particular study. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.gutenberg.org/cache/epub/16966/pg16966-images.html"
+    ],
+    "answers": [
+      {
+        "label": "Hamlet",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Macbeth",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Othello",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "King Lear",
+        "aliases": [
+          "Lear",
+          "The Tragedy of King Lear"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-three-pigs-house-materials",
+    "category": "LITERATURE",
+    "prompt": "Name a house-building material used by a pig in Joseph Jacobs's version of The Three Little Pigs.",
+    "explanation": "Jacobs's English Fairy Tales uses straw, furze and bricks. Furze is gorse brushwood, often retold as sticks. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.gutenberg.org/cache/epub/7439/pg7439.html.utf8"
+    ],
+    "answers": [
+      {
+        "label": "Straw",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Furze",
+        "aliases": [
+          "Gorse",
+          "Brushwood",
+          "Sticks",
+          "Wood",
+          "Twigs"
+        ],
+        "tier": 4
+      },
+      {
+        "label": "Bricks",
+        "aliases": [
+          "Brick"
+        ],
+        "tier": 1
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-musical-texture-types",
+    "category": "MUSIC",
+    "prompt": "Name one of the four basic musical texture types ending in -phony.",
+    "explanation": "This uses the standard monophony, homophony, polyphony and heterophony model. Adjectival forms are accepted. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.potsdam.edu/academics/Crane/MusicTheory/Musical-Terms-and-Concepts"
+    ],
+    "answers": [
+      {
+        "label": "Monophony",
+        "aliases": [
+          "Monophonic",
+          "Monophonic texture"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Homophony",
+        "aliases": [
+          "Homophonic",
+          "Homophonic texture"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Polyphony",
+        "aliases": [
+          "Polyphonic",
+          "Polyphonic texture",
+          "Counterpoint",
+          "Contrapuntal"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Heterophony",
+        "aliases": [
+          "Heterophonic",
+          "Heterophonic texture"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-puccini-triptych",
+    "category": "MUSIC",
+    "prompt": "Name an opera in Puccini's Il trittico.",
+    "explanation": "Il trittico comprises three one-act operas that Puccini intended to be performed together. English title translations are accepted. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.metopera.org/discover/archives/puccini-at-the-met-a-centenary-celebration/il-trittico/"
+    ],
+    "answers": [
+      {
+        "label": "Il tabarro",
+        "aliases": [
+          "Tabarro",
+          "The Cloak"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Suor Angelica",
+        "aliases": [
+          "Sister Angelica"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Gianni Schicchi",
+        "aliases": [
+          "Schicchi"
+        ],
+        "tier": 1
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-holst-planets-movements",
+    "category": "MUSIC",
+    "prompt": "Name a movement of Gustav Holst's original seven-movement suite The Planets, by planet name.",
+    "explanation": "Holst's original suite includes seven planets. Earth and the later Pluto addition by Colin Matthews are outside this set. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://philharmonia.co.uk/planets/"
+    ],
+    "answers": [
+      {
+        "label": "Mars",
+        "aliases": [
+          "Mars the Bringer of War"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Venus",
+        "aliases": [
+          "Venus the Bringer of Peace"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Mercury",
+        "aliases": [
+          "Mercury the Winged Messenger"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Jupiter",
+        "aliases": [
+          "Jupiter the Bringer of Jollity"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Saturn",
+        "aliases": [
+          "Saturn the Bringer of Old Age"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Uranus",
+        "aliases": [
+          "Uranus the Magician"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Neptune",
+        "aliases": [
+          "Neptune the Mystic"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-grand-piano-pedals",
+    "category": "MUSIC",
+    "prompt": "Name a pedal on a standard modern three-pedal grand piano.",
+    "explanation": "The usual grand-piano pedals are the soft, sostenuto and damper pedals. Upright practice pedals are outside this set. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://uk.yamaha.com/en/musical-instruments/pianos/explore/musical-instrument-guide/piano/selection/"
+    ],
+    "answers": [
+      {
+        "label": "Damper",
+        "aliases": [
+          "Damper pedal",
+          "Sustain",
+          "Sustain pedal",
+          "Sustaining pedal",
+          "Forte pedal"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Soft",
+        "aliases": [
+          "Soft pedal",
+          "Una corda",
+          "Una corda pedal"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Sostenuto",
+        "aliases": [
+          "Sostenuto pedal"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-violin-open-strings",
+    "category": "MUSIC",
+    "prompt": "Name the pitch of an open string on a standard four-string violin, using an English note letter.",
+    "explanation": "Standard violin tuning, low to high, is G3, D4, A4 and E5. Note letters with or without octave numbers are accepted. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.yamaha.com/en/musical_instrument_guide/violin/mechanism/mechanism002.html"
+    ],
+    "answers": [
+      {
+        "label": "G",
+        "aliases": [
+          "G3",
+          "G string"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "D",
+        "aliases": [
+          "D4",
+          "D string"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "A",
+        "aliases": [
+          "A4",
+          "A string"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "E",
+        "aliases": [
+          "E5",
+          "E string"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-second-viennese-core",
+    "category": "MUSIC",
+    "prompt": "Name a composer in the central three-composer group of the Second Viennese School.",
+    "explanation": "The central three composers are the intended group. Their surnames and full names are accepted. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.cambridge.org/core/books/abs/schoenberg-in-context/alban-berg-and-anton-webern/A209E0D4D402E14CFCE43E1A4B595E71"
+    ],
+    "answers": [
+      {
+        "label": "Arnold Schoenberg",
+        "aliases": [
+          "Schoenberg",
+          "Schonberg",
+          "Arnold Schonberg"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Alban Berg",
+        "aliases": [
+          "Berg"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Anton Webern",
+        "aliases": [
+          "Webern",
+          "Anton von Webern"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-gagaku-main-winds",
+    "category": "MUSIC",
+    "prompt": "Name an instrument in the main three-instrument wind section of a traditional gagaku ensemble.",
+    "explanation": "The Japan Tourism Agency identifies the hichiriki, sho and ryuteki as the three main wind instruments. Other gagaku styles can use other flutes. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.mlit.go.jp/tagengo-db/en/R1-01552.html"
+    ],
+    "answers": [
+      {
+        "label": "Sho",
+        "aliases": [
+          "Shō",
+          "Japanese mouth organ",
+          "Mouth organ"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Hichiriki",
+        "aliases": [
+          "Gagaku oboe"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Ryuteki",
+        "aliases": [
+          "Ryūteki",
+          "Dragon flute"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-sonata-form-sections",
+    "category": "MUSIC",
+    "prompt": "Name one of the three main sections of a conventional sonata-form movement.",
+    "explanation": "The principal sections are exposition, development and recapitulation. Optional introductions and codas are excluded. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://milnepublishing.geneseo.edu/fundamentals-function-form/chapter/38-sonata-form/"
+    ],
+    "answers": [
+      {
+        "label": "Exposition",
+        "aliases": [
+          "The exposition"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Development",
+        "aliases": [
+          "The development"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Recapitulation",
+        "aliases": [
+          "Recap",
+          "The recapitulation"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-printmaking-process-families",
+    "category": "ARTS",
+    "prompt": "Name a printmaking process family in Cornell's four-family classification.",
+    "explanation": "This is the four-family classification in Cornell's printmaking guide. Use a process family name. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://char.txa.cornell.edu/MEDIA/PRINT/print.htm"
+    ],
+    "answers": [
+      {
+        "label": "Relief",
+        "aliases": [
+          "Relief printing",
+          "Relief printmaking"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Intaglio",
+        "aliases": [
+          "Intaglio printing",
+          "Intaglio printmaking"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Planographic",
+        "aliases": [
+          "Planography",
+          "Planographic printing"
+        ],
+        "tier": 4
+      },
+      {
+        "label": "Stencil",
+        "aliases": [
+          "Stencil printing"
+        ],
+        "tier": 2
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-ballet-foot-positions",
+    "category": "ARTS",
+    "prompt": "Name one of the five basic turned-out foot positions in classical ballet, using its ordinal name.",
+    "explanation": "The traditional positions established by Beauchamp are first through fifth. Later parallel positions are outside this set. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.abt.org/explore/learn/ballet-dictionary/"
+    ],
+    "answers": [
+      {
+        "label": "First",
+        "aliases": [
+          "First position",
+          "1",
+          "1st",
+          "Premiere",
+          "Premiere position"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Second",
+        "aliases": [
+          "Second position",
+          "2",
+          "2nd",
+          "Seconde",
+          "Seconde position"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Third",
+        "aliases": [
+          "Third position",
+          "3",
+          "3rd",
+          "Troisieme",
+          "Troisieme position"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Fourth",
+        "aliases": [
+          "Fourth position",
+          "4",
+          "4th",
+          "Quatrieme",
+          "Quatrieme position"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Fifth",
+        "aliases": [
+          "Fifth position",
+          "5",
+          "5th",
+          "Cinquieme",
+          "Cinquieme position"
+        ],
+        "tier": 2
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-tchaikovsky-ballets",
+    "category": "ARTS",
+    "prompt": "Name a complete ballet score composed by Pyotr Ilyich Tchaikovsky.",
+    "explanation": "Tchaikovsky completed three ballet scores. Later choreographies using his other concert music are excluded. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://en.tchaikovsky-research.net/pages/Ballets"
+    ],
+    "answers": [
+      {
+        "label": "Swan Lake",
+        "aliases": [
+          "Lebedinoye ozero"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "The Nutcracker",
+        "aliases": [
+          "Nutcracker",
+          "Shchelkunchik"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "The Sleeping Beauty",
+        "aliases": [
+          "Sleeping Beauty",
+          "Spyashchaya krasavitsa"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-raphael-vatican-rooms",
+    "category": "ARTS",
+    "prompt": "Name one of the four Raphael Rooms in the Vatican Museums.",
+    "explanation": "English room names, their Italian equivalents and the distinguishing room subject are accepted. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/stanze-di-raffaello.html"
+    ],
+    "answers": [
+      {
+        "label": "Hall of Constantine",
+        "aliases": [
+          "Room of Constantine",
+          "Constantine",
+          "Sala di Costantino",
+          "Stanza di Costantino"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Room of Heliodorus",
+        "aliases": [
+          "Heliodorus",
+          "Stanza di Eliodoro"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Room of the Segnatura",
+        "aliases": [
+          "Segnatura",
+          "Stanza della Segnatura",
+          "Room of the Signatura",
+          "Signatura",
+          "Room of the Signature"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Room of the Fire in the Borgo",
+        "aliases": [
+          "Fire in the Borgo",
+          "Stanza dell Incendio del Borgo",
+          "Incendio del Borgo"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-rodin-calais-figures",
+    "category": "ARTS",
+    "prompt": "Name a man depicted in Rodin's six-figure monument The Burghers of Calais.",
+    "explanation": "The six named burghers are included. The two men surnamed de Wissant need a first name to distinguish them. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.musee-rodin.fr/en/musee/collections/oeuvres/monument-burghers-calais"
+    ],
+    "answers": [
+      {
+        "label": "Eustache de Saint-Pierre",
+        "aliases": [
+          "Eustache",
+          "Eustache Saint Pierre",
+          "Saint Pierre"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Jean d Aire",
+        "aliases": [
+          "Jean dAire",
+          "Jean d’Aire"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Pierre de Wissant",
+        "aliases": [
+          "Pierre Wissant"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Jacques de Wissant",
+        "aliases": [
+          "Jacques Wissant"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Andrieu d Andres",
+        "aliases": [
+          "Andrieu dAndres",
+          "Andrieu d’Andres",
+          "Andrieu"
+        ],
+        "tier": 4
+      },
+      {
+        "label": "Jean de Fiennes",
+        "aliases": [
+          "Jean Fiennes",
+          "Fiennes"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-gaudi-original-world-heritage",
+    "category": "ARTS",
+    "prompt": "Name a Gaudi work included in Barcelona's original three-property UNESCO inscription in 1984.",
+    "explanation": "The original inscription covered Park Guell, Palau Guell and Casa Mila. Four additional works were added in 2005. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.lapedrera.com/en/casa-mila/history/"
+    ],
+    "answers": [
+      {
+        "label": "Park Guell",
+        "aliases": [
+          "Parc Guell",
+          "Guell Park"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Palau Guell",
+        "aliases": [
+          "Guell Palace",
+          "Palacio Guell"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Casa Mila",
+        "aliases": [
+          "La Pedrera",
+          "Pedrera"
+        ],
+        "tier": 2
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-medieval-liberal-arts",
+    "category": "ARTS",
+    "prompt": "Name a subject among the medieval seven liberal arts.",
+    "explanation": "The traditional curriculum combines three language arts in the trivium and four mathematical arts in the quadrivium. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.cabinet.ox.ac.uk/seven-liberal-arts"
+    ],
+    "answers": [
+      {
+        "label": "Grammar",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Rhetoric",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Logic",
+        "aliases": [
+          "Dialectic",
+          "Dialectics"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Arithmetic",
+        "aliases": [
+          "Arithmetics"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Geometry",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Music",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Astronomy",
+        "aliases": [],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-bosch-triptych-scenes",
+    "category": "ARTS",
+    "prompt": "Name a scene shown on an interior panel of Bosch's The Garden of Earthly Delights triptych.",
+    "explanation": "The open triptych depicts Eden, the central Garden of Earthly Delights and Hell. The closed exterior shows the Creation. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.afpradomuseum.org/the-garden-of-earthly-delights-bosch/history"
+    ],
+    "answers": [
+      {
+        "label": "Garden of Eden",
+        "aliases": [
+          "Eden",
+          "Paradise",
+          "Earthly Paradise",
+          "The Garden of Eden"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Garden of Earthly Delights",
+        "aliases": [
+          "The Garden of Earthly Delights",
+          "Earthly Delights"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Hell",
+        "aliases": [
+          "Musical Hell"
+        ],
+        "tier": 2
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-javascript-primitive-types",
+    "category": "TECHNOLOGY",
+    "prompt": "Name a primitive JavaScript value type defined in ECMAScript 2024.",
+    "explanation": "The seven primitive types are included. Object is the remaining language type and is outside the primitive set. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://tc39.es/ecma262/2024/multipage/ecmascript-data-types-and-values.html"
+    ],
+    "answers": [
+      {
+        "label": "Undefined",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Null",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Boolean",
+        "aliases": [
+          "Bool"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "String",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Number",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "BigInt",
+        "aliases": [
+          "Big integer"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Symbol",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-css-position-values",
+    "category": "TECHNOLOGY",
+    "prompt": "Name a position-property value defined by CSS Positioned Layout Level 3, excluding CSS-wide keywords.",
+    "explanation": "The property has five positioning values. Universal keywords such as inherit, initial, unset and revert are excluded. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.w3.org/TR/css-position-3/#position-property"
+    ],
+    "answers": [
+      {
+        "label": "Static",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Relative",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Absolute",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Fixed",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Sticky",
+        "aliases": [],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-unicode-encoding-forms",
+    "category": "TECHNOLOGY",
+    "prompt": "Name one of the three encoding forms defined by the Unicode Standard.",
+    "explanation": "The Unicode Standard defines these three encoding forms. Byte-order variants belong to their parent form. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.unicode.org/faq/utf_bom.html"
+    ],
+    "answers": [
+      {
+        "label": "UTF-8",
+        "aliases": [
+          "UTF8"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "UTF-16",
+        "aliases": [
+          "UTF16",
+          "UTF16LE",
+          "UTF16BE"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "UTF-32",
+        "aliases": [
+          "UTF32",
+          "UTF32LE",
+          "UTF32BE"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-png-critical-chunks",
+    "category": "TECHNOLOGY",
+    "prompt": "Name one of the four standardized critical chunk types in the PNG image format.",
+    "explanation": "Use the four-letter chunk name or expanded purpose. Private extension chunks are outside the set, and PLTE is optional in some images. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.w3.org/TR/png/#11Critical-chunks"
+    ],
+    "answers": [
+      {
+        "label": "IHDR",
+        "aliases": [
+          "Image header"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "PLTE",
+        "aliases": [
+          "Palette"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "IDAT",
+        "aliases": [
+          "Image data"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "IEND",
+        "aliases": [
+          "Image trailer",
+          "Image end"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-xml-predefined-entities",
+    "category": "TECHNOLOGY",
+    "prompt": "Name a predefined general entity in XML 1.0, using its entity name.",
+    "explanation": "There are five predefined entity names. Forms with an ampersand and semicolon are accepted by normalization. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.w3.org/TR/xml/#sec-predefined-ent"
+    ],
+    "answers": [
+      {
+        "label": "amp",
+        "aliases": [
+          "&amp;",
+          "Ampersand"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "lt",
+        "aliases": [
+          "&lt;",
+          "Less than"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "gt",
+        "aliases": [
+          "&gt;",
+          "Greater than"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "apos",
+        "aliases": [
+          "&apos;",
+          "Apostrophe"
+        ],
+        "tier": 4
+      },
+      {
+        "label": "quot",
+        "aliases": [
+          "&quot;",
+          "Quotation mark",
+          "Quote"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-css-two-generic-families",
+    "category": "TECHNOLOGY",
+    "prompt": "Name a generic font family defined in CSS 2.1.",
+    "explanation": "CSS 2.1 defines five generic families. Later additions such as system-ui and emoji are outside this historical specification. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.w3.org/TR/CSS2/fonts.html#generic-font-families"
+    ],
+    "answers": [
+      {
+        "label": "Serif",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Sans-serif",
+        "aliases": [
+          "Sans serif",
+          "Sans"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Monospace",
+        "aliases": [
+          "Monospaced"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Cursive",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Fantasy",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-html-table-row-groups",
+    "category": "TECHNOLOGY",
+    "prompt": "Name an HTML element that represents a group of table rows.",
+    "explanation": "The table model defines row groups using thead, tbody and tfoot. Individual rows and cells are excluded. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://html.spec.whatwg.org/multipage/tables.html#processing-model-1"
+    ],
+    "answers": [
+      {
+        "label": "thead",
+        "aliases": [
+          "Table head",
+          "Table header group"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "tbody",
+        "aliases": [
+          "Table body"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "tfoot",
+        "aliases": [
+          "Table foot",
+          "Table footer group"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-http-two-frame-types",
+    "category": "TECHNOLOGY",
+    "prompt": "Name a frame type defined in HTTP/2's original RFC 7540 specification of 2015.",
+    "explanation": "The ten frame types defined in RFC 7540 are included. Later extension frame types are outside this historical specification. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.rfc-editor.org/rfc/rfc7540.html#section-6"
+    ],
+    "answers": [
+      {
+        "label": "DATA",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "HEADERS",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "PRIORITY",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "RST_STREAM",
+        "aliases": [
+          "Reset stream",
+          "RST stream"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "SETTINGS",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "PUSH_PROMISE",
+        "aliases": [
+          "Push promise"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "PING",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "GOAWAY",
+        "aliases": [
+          "Go away"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "WINDOW_UPDATE",
+        "aliases": [
+          "Window update"
+        ],
+        "tier": 4
+      },
+      {
+        "label": "CONTINUATION",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-triathlon-disciplines",
+    "category": "SPORTS",
+    "prompt": "Name a discipline in a standard triathlon.",
+    "explanation": "The three legs are swimming, cycling and running. Transition areas connect the legs and are excluded as disciplines. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.usatriathlon.org/about/multisport/disciplines/triathlon"
+    ],
+    "answers": [
+      {
+        "label": "Swimming",
+        "aliases": [
+          "Swim"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Cycling",
+        "aliases": [
+          "Cycle",
+          "Biking",
+          "Bike",
+          "Bicycling"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Running",
+        "aliases": [
+          "Run"
+        ],
+        "tier": 1
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-womens-heptathlon-events",
+    "category": "SPORTS",
+    "prompt": "Name an event in the women's outdoor athletics heptathlon.",
+    "explanation": "The seven-event outdoor program is intended. The men's indoor heptathlon has a different event list. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://worldathletics.org/disciplines/combined-events/heptathlon"
+    ],
+    "answers": [
+      {
+        "label": "100 metres hurdles",
+        "aliases": [
+          "100m hurdles",
+          "100 meter hurdles",
+          "100 meters hurdles",
+          "100 metre hurdles",
+          "100mH",
+          "100 hurdles"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "High jump",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Shot put",
+        "aliases": [
+          "Shotput"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "200 metres",
+        "aliases": [
+          "200m",
+          "200 meters",
+          "200 metre",
+          "200 meter",
+          "200"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Long jump",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Javelin throw",
+        "aliases": [
+          "Javelin"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "800 metres",
+        "aliases": [
+          "800m",
+          "800 meters",
+          "800 metre",
+          "800 meter",
+          "800"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-tour-de-france-jerseys",
+    "category": "SPORTS",
+    "prompt": "Name an official classification leader jersey at the 2022 men's Tour de France, by color or pattern.",
+    "explanation": "The four official classification jerseys are intended. National-champion and world-champion jerseys are outside this set. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.letour.fr/en/news/2022/the-leader-jerseys-for-the-2022-tour-de-france-presented-in-paris/1299966"
+    ],
+    "answers": [
+      {
+        "label": "Yellow",
+        "aliases": [
+          "Yellow jersey",
+          "Maillot jaune"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Green",
+        "aliases": [
+          "Green jersey",
+          "Maillot vert"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Polka dot",
+        "aliases": [
+          "Polka dots",
+          "Polka dot jersey",
+          "Red polka dot",
+          "Red and white polka dot",
+          "Maillot a pois"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "White",
+        "aliases": [
+          "White jersey",
+          "Maillot blanc"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-curling-delivery-positions",
+    "category": "SPORTS",
+    "prompt": "Name a delivery-order position on a standard four-player curling team.",
+    "explanation": "The four positions are lead, second, third and fourth. Skip and vice-skip are tactical roles that can be held by players in different delivery positions. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://worldcurling.org/about/curling/"
+    ],
+    "answers": [
+      {
+        "label": "Lead",
+        "aliases": [
+          "First",
+          "First player",
+          "First position",
+          "1",
+          "1st"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Second",
+        "aliases": [
+          "Second player",
+          "Second position",
+          "2",
+          "2nd"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Third",
+        "aliases": [
+          "Third player",
+          "Third position",
+          "3",
+          "3rd"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Fourth",
+        "aliases": [
+          "Fourth player",
+          "Fourth position",
+          "4",
+          "4th"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-triple-jump-phases",
+    "category": "SPORTS",
+    "prompt": "Name a phase of an athletics triple jump.",
+    "explanation": "The regulated sequence is hop, step and jump. Skip is accepted as the familiar name for the middle phase. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://worldathletics.org/disciplines/jump/triple-jump"
+    ],
+    "answers": [
+      {
+        "label": "Hop",
+        "aliases": [
+          "Hopping"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Step",
+        "aliases": [
+          "Skip",
+          "Stepping"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Jump",
+        "aliases": [
+          "Jumping"
+        ],
+        "tier": 1
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-baseball-fielding-positions",
+    "category": "SPORTS",
+    "prompt": "Name one of the nine defensive fielding positions in baseball.",
+    "explanation": "The designated hitter is an offensive role and is excluded. Use a specific outfield position rather than just outfielder. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://probaseballinsider.com/baseball-instruction/baseball-basics/baseball-basics-positions/"
+    ],
+    "answers": [
+      {
+        "label": "Pitcher",
+        "aliases": [
+          "P"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Catcher",
+        "aliases": [
+          "C"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "First baseman",
+        "aliases": [
+          "First base",
+          "1B"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Second baseman",
+        "aliases": [
+          "Second base",
+          "2B"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Third baseman",
+        "aliases": [
+          "Third base",
+          "3B"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Shortstop",
+        "aliases": [
+          "SS"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Left fielder",
+        "aliases": [
+          "Left field",
+          "LF"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Center fielder",
+        "aliases": [
+          "Centre fielder",
+          "Center field",
+          "Centre field",
+          "CF"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Right fielder",
+        "aliases": [
+          "Right field",
+          "RF"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-tokyo-climbing-disciplines",
+    "category": "SPORTS",
+    "prompt": "Name a discipline combined in the sport-climbing event at the Tokyo 2020 Olympics.",
+    "explanation": "Tokyo's combined event included three disciplines. The later Paris format split speed into a separate medal event. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.2020games.metro.tokyo.lg.jp/eng/taikaijyunbi/taikai/syumoku/games-olympics/climbing/index.html"
+    ],
+    "answers": [
+      {
+        "label": "Speed",
+        "aliases": [
+          "Speed climbing"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Bouldering",
+        "aliases": [
+          "Boulder",
+          "Bouldering climbing"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Lead",
+        "aliases": [
+          "Lead climbing"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-winter-sliding-sports",
+    "category": "SPORTS",
+    "prompt": "Name a sliding discipline contested on an ice track at the Winter Olympics.",
+    "explanation": "The three ice-track sliding disciplines are bobsleigh, luge and skeleton. Skiing and speed skating are outside this set. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://olympic.org.nz/sports/bobsleigh"
+    ],
+    "answers": [
+      {
+        "label": "Bobsleigh",
+        "aliases": [
+          "Bobsled",
+          "Bobsledding"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Luge",
+        "aliases": [
+          "Luging"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Skeleton",
+        "aliases": [
+          "Skeleton sledding"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-iso-tea-types",
+    "category": "FOOD",
+    "prompt": "Name a basic tea type in the six-type classification of ISO 20715:2023.",
+    "explanation": "The classification concerns tea from Camellia sinensis. Herbal infusions and further-processed scented teas are outside the six basic types. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.iso.org/obp/ui?_escaped_fragment_=iso%3Astd%3Aiso%3A20715%3Aed-1%3Av1%3Aen"
+    ],
+    "answers": [
+      {
+        "label": "Black tea",
+        "aliases": [
+          "Black",
+          "Hong cha",
+          "Hongcha"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Green tea",
+        "aliases": [
+          "Green",
+          "Lu cha",
+          "Lucha"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "White tea",
+        "aliases": [
+          "White",
+          "Bai cha",
+          "Baicha"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Oolong tea",
+        "aliases": [
+          "Oolong",
+          "Wulong",
+          "Wulong tea"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Dark tea",
+        "aliases": [
+          "Dark",
+          "Hei cha",
+          "Heicha",
+          "Post fermented tea"
+        ],
+        "tier": 4
+      },
+      {
+        "label": "Yellow tea",
+        "aliases": [
+          "Yellow",
+          "Huang cha",
+          "Huangcha"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-pound-cake-core-ingredients",
+    "category": "FOOD",
+    "prompt": "Name a main ingredient in the traditional equal-pounds formula for pound cake.",
+    "explanation": "The original naming formula uses a pound each of four ingredients. Flavorings and additions in modern recipes are outside this core formula. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.kingarthurbaking.com/recipes/king-arthurs-original-pound-cake-recipe"
+    ],
+    "answers": [
+      {
+        "label": "Butter",
+        "aliases": [
+          "Unsalted butter"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Sugar",
+        "aliases": [
+          "White sugar",
+          "Granulated sugar",
+          "Caster sugar",
+          "Castor sugar"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Flour",
+        "aliases": [
+          "Wheat flour",
+          "All purpose flour",
+          "Plain flour",
+          "Cake flour"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Eggs",
+        "aliases": [
+          "Egg",
+          "Whole eggs",
+          "Whole egg"
+        ],
+        "tier": 2
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-grain-kernel-parts",
+    "category": "FOOD",
+    "prompt": "Name one of the three main edible parts of a whole cereal-grain kernel.",
+    "explanation": "The three edible parts are bran, germ and endosperm. An inedible hull or husk is excluded. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://wholegrainscouncil.org/what-whole-grain"
+    ],
+    "answers": [
+      {
+        "label": "Bran",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Germ",
+        "aliases": [
+          "Embryo",
+          "Wheat germ"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Endosperm",
+        "aliases": [
+          "Starchy endosperm"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-lean-bread-formula",
+    "category": "FOOD",
+    "prompt": "Name an ingredient in the basic four-ingredient lean yeast-bread dough.",
+    "explanation": "This standard lean formula contains flour, water, salt and yeast. Enrichments such as milk, sugar and fat are excluded. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://resources.escoffier.edu/textbooks/gisslen/professional_baking7th.pdf"
+    ],
+    "answers": [
+      {
+        "label": "Flour",
+        "aliases": [
+          "Bread flour",
+          "Wheat flour",
+          "All purpose flour",
+          "Plain flour"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Water",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Salt",
+        "aliases": [
+          "Table salt",
+          "Sea salt"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Yeast",
+        "aliases": [
+          "Bakers yeast",
+          "Baker yeast",
+          "Instant yeast",
+          "Active dry yeast",
+          "Fresh yeast"
+        ],
+        "tier": 2
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-haccp-hazard-categories",
+    "category": "FOOD",
+    "prompt": "Name a food-safety hazard category in the standard three-category HACCP model.",
+    "explanation": "The model categorizes hazards as biological, chemical or physical. Allergens are generally classified with chemical hazards in this model. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.fao.org/4/y1390e/y1390e0a.htm"
+    ],
+    "answers": [
+      {
+        "label": "Biological",
+        "aliases": [
+          "Biological hazard",
+          "Biological hazards",
+          "Biohazard",
+          "Microbiological",
+          "Microbial"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Chemical",
+        "aliases": [
+          "Chemical hazard",
+          "Chemical hazards"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Physical",
+        "aliases": [
+          "Physical hazard",
+          "Physical hazards"
+        ],
+        "tier": 2
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-eight-b-vitamins",
+    "category": "FOOD",
+    "prompt": "Name one of the eight recognized B vitamins, by number or common name.",
+    "explanation": "Only the eight currently recognized B vitamins are included. Historical labels such as B4 and B8 do not identify additional vitamins. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://medlineplus.gov/lab-tests/vitamin-b-test/"
+    ],
+    "answers": [
+      {
+        "label": "Vitamin B1",
+        "aliases": [
+          "B1",
+          "Thiamin",
+          "Thiamine"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Vitamin B2",
+        "aliases": [
+          "B2",
+          "Riboflavin"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Vitamin B3",
+        "aliases": [
+          "B3",
+          "Niacin",
+          "Nicotinic acid",
+          "Niacinamide",
+          "Nicotinamide"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Vitamin B5",
+        "aliases": [
+          "B5",
+          "Pantothenic acid",
+          "Pantothenate"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Vitamin B6",
+        "aliases": [
+          "B6",
+          "Pyridoxine",
+          "Pyridoxal",
+          "Pyridoxamine",
+          "Pyridoxal phosphate",
+          "Pyridoxal 5 phosphate",
+          "PLP"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Vitamin B7",
+        "aliases": [
+          "B7",
+          "Biotin",
+          "Vitamin H"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Vitamin B9",
+        "aliases": [
+          "B9",
+          "Folate",
+          "Folic acid"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Vitamin B12",
+        "aliases": [
+          "B12",
+          "Cobalamin",
+          "Cyanocobalamin",
+          "Methylcobalamin"
+        ],
+        "tier": 1
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-mccormick-pumpkin-spices",
+    "category": "FOOD",
+    "prompt": "Name one of the four spices in McCormick's classic Pumpkin Pie Spice blend, as described in its 2026 history.",
+    "explanation": "McCormick's historical blend has four named spices. Other homemade pumpkin-spice recipes may additionally contain cloves. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.mccormickcorporation.com/news-center/blog/articles/2026/10/28/16/12/how-pumpkin-pie-spice-became-a-cultural-phenomenon"
+    ],
+    "answers": [
+      {
+        "label": "Cinnamon",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Ginger",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Nutmeg",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Allspice",
+        "aliases": [
+          "All spice",
+          "Pimento",
+          "Jamaica pepper"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261114-french-shortcrust-doughs",
+    "category": "FOOD",
+    "prompt": "Name a French tart dough in the classic three-shortcrust grouping.",
+    "explanation": "The classic trio consists of brisee, sucree and sablee. Puff pastry and choux belong to different pastry families. Rarity tiers are editorial estimates of familiarity.",
+    "sources": [
+      "https://www.surlatable.com/recipe/three-classic-french-tart-crusts-pate-brisee-pate-sucree-pate-sablee/REC-514312"
+    ],
+    "answers": [
+      {
+        "label": "Pate brisee",
+        "aliases": [
+          "Brisee",
+          "Pâte brisée"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Pate sucree",
+        "aliases": [
+          "Sucree",
+          "Pâte sucrée"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Pate sablee",
+        "aliases": [
+          "Sablee",
+          "Pâte sablée"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-14",
+    "batch": "2026-11-14-daily"
   }
 ];
