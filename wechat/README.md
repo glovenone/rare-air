@@ -23,7 +23,9 @@ Rebuilding refreshes the generated game and assets while preserving the existing
 
 ## Validation
 
-`npm test` exercises a complete five-question flight against WeChat-shaped Canvas, keyboard, touch and storage APIs without browser globals. The November 13, 2026 build also started in WeChat DevTools 2.02.2608031 with base library 3.17.6 and displayed the illustrated home screen without game errors. Phone interaction, network identity, sharing behavior and small-screen keyboard layout still require device validation.
+`npm test` exercises a complete five-question flight against WeChat-shaped Canvas, keyboard, touch and storage APIs without browser globals, and checks long-term wrapping across all 400 prompts. In WeChat DevTools 2.02.2608031 with base library 3.17.6, the November 13, 2026 build completed a five-round offline flight at 1,600 meters with three correct answers and two skips. Native keyboard confirmation, balloon dragging and saved history were verified through the simulator UI. Physical-phone interaction, network identity, sharing behavior and small-screen keyboard layout still require device validation.
+
+Daily mode was checked with URL validation enabled. The current test account rejects `https://krillionunlimited.top` because its legal request-domain list only contains Tencent's default service. Configure the custom domain in the formal game account before online phone validation.
 
 The packaged payload is approximately 1.3 MB. The game uses the project's existing generated illustrations and fonts. Their license files and the project MIT license are included in the package.
 

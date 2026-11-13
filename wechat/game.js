@@ -1,4 +1,5 @@
 import { request, readStorage, writeStorage } from "./platform.js";
+import { wrapText } from "./text.js";
 
 const canvas = wx.createCanvas();
 const paint = canvas.getContext("2d");
@@ -82,18 +83,11 @@ function text(value, x, y, size = 16, color = ink, font = bodyFont, align = "lef
 
 function wrapped(value, x, y, maxWidth, size = 24, lineHeight = 29, font = displayFont) {
   paint.font = `${size}px ${font}`;
-  const words = String(value).split(/\s+/);
-  let line = "";
-  for (const word of words) {
-    const next = line ? line + " " + word : word;
-    if (line && paint.measureText(next).width > maxWidth) {
-      text(line, x, y, size, ink, font);
-      y += lineHeight;
-      line = word;
-    } else line = next;
+  for (const line of wrapText(value, maxWidth, (part) => paint.measureText(part).width)) {
+    text(line, x, y, size, ink, font);
+    y += lineHeight;
   }
-  text(line, x, y, size, ink, font);
-  return y + lineHeight;
+  return y;
 }
 
 function button(label, x, y, w, h, action, secondary = false) {
@@ -242,12 +236,7 @@ function drawQuestion() {
   const prompt = game.question.prompt;
   // Measure wrapping before positioning the complete card above the keyboard.
   paint.font = `23px ${displayFont}`;
-  let lines = 1;
-  let line = "";
-  for (const word of prompt.split(/\s+/)) {
-    if (paint.measureText(line + " " + word).width > 308) { lines++; line = word; }
-    else line += " " + word;
-  }
+  const lines = wrapText(prompt, 308, (part) => paint.measureText(part).width).length;
   const cardHeight = 218 + lines * 28;
   const y = Math.max(top + 89, height - bottom - keyboardHeight - cardHeight - 8);
   card(y, cardHeight);

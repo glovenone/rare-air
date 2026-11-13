@@ -3,6 +3,17 @@ import assert from "node:assert/strict";
 import vm from "node:vm";
 import { build } from "esbuild";
 import { questions } from "../src/questions.js";
+import { wrapText } from "../wechat/text.js";
+
+test("WeChat prompt wrapping keeps long terms inside the question card", () => {
+  for (const question of questions) {
+    const lines = wrapText(question.prompt, 308, (part) => part.length * 15);
+    assert.ok(lines.every((line) => line.length * 15 <= 308), question.id);
+    assert.equal(lines.join("").replace(/\s/g, ""), question.prompt.replace(/\s/g, ""));
+  }
+  assert.deepEqual(wrapText("Rare answers. Higher flights.", 15, (part) => part.length),
+    ["Rare answers.", "Higher flights."]);
+});
 
 // This exercises the packaged game with WeChat-shaped APIs and no browser DOM.
 // It catches accidental web-only dependencies and mismatched keyboard/touch APIs.
@@ -69,7 +80,8 @@ test("WeChat Canvas flight accepts keyboard answers through all five rounds", as
     await new Promise(setImmediate);
     draw();
     const content = drawn.map((item) => item.value).join(" ");
-    const question = questions.find((question) => content.includes(question.prompt));
+    const question = questions.find((question) =>
+      content.replace(/\s/g, "").includes(question.prompt.replace(/\s/g, "")));
     assert.ok(question, "A bank prompt is visible");
     await tap("Tap to type your answer");
     assert.equal(keyboardOpen, true);

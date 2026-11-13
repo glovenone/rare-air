@@ -83,7 +83,7 @@ npx cap open ios
 npx cap open android
 ```
 
-Android builds require JDK 21 and Android SDK 36. Release signing reads an external properties file through `RARE_ANDROID_SIGNING_PROPERTIES`. iOS distribution uses the Apple team configured in Xcode and a distribution provisioning profile. Build output and signing material stay outside Git. The public source includes app icons, store text, a Google Play feature graphic and a captured iPhone screenshot.
+Android builds require JDK 21 and Android SDK 36. Release signing reads an external properties file through `RARE_ANDROID_SIGNING_PROPERTIES`. iOS distribution uses the Apple team configured in Xcode and a distribution provisioning profile. Build output and signing material stay outside Git. The public source includes app icons, store text, a Google Play feature graphic and captured platform screenshots.
 
 See [mobile release preparation](release/README.md) for commands, verification, privacy details and remaining store steps.
 
@@ -105,7 +105,7 @@ The visual module loads independently of the timed game. A still sky and direct 
 
 DM Sans and Bricolage Grotesque are hosted locally with their included SIL Open Font Licenses. The three game illustrations were generated with the built-in ImageGen tool and are stored at `public/art/dawn-sky.png`, `public/art/balloon.png` and `public/art/cloud-bank.png`. Image-generation prompts are recorded below. Runtime gameplay uses the local assets.
 
-Search content at `/games-like-krillion/` describes the independent flight game. Canonical URLs, robots.txt and sitemap.xml use the deployed workers.dev address.
+Search content at `/games-like-krillion/` describes the independent flight game. Canonical URLs, robots.txt and sitemap.xml use `https://krillionunlimited.top`. The custom domain uses Cloudflare-managed HTTPS and DNSSEC.
 
 Additional crawlable pages cover daily trivia, playing rules, privacy and support. `npm run site:build` generates these pages, robots.txt and sitemap.xml. The homepage includes VideoGame structured data and social metadata. Runtime sky illustrations use compressed WebP files. The original PNGs remain in the source repository.
 
