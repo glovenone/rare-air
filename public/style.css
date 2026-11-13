@@ -119,11 +119,19 @@ p {
   height: 100%;
 }
 .balloon {
-  position: absolute;
+  position: fixed;
+  z-index: 1;
   left: 50%;
   top: 43%;
   width: 115px;
-  transform: translate(-50%, 0);
+  padding: 0;
+  background: none;
+  border-radius: 45%;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  transform: translate(calc(-50% + var(--pilot-x, 0px)), var(--pilot-y, 0px))
+    rotate(var(--pilot-bank, 0deg));
   transition:
     left 1s,
     top 1s,
@@ -132,6 +140,7 @@ p {
   will-change: transform;
 }
 .balloon-float {
+  display: block;
   position: relative;
   animation: balloon-sway 7s ease-in-out infinite;
   transform-origin: center 15%;
@@ -1834,7 +1843,8 @@ dialog::backdrop {
   }
 }
 #foreground-canvas {
-  position: absolute;
+  position: fixed;
+  z-index: 2;
   inset: 0;
   width: 100%;
   height: 100%;
@@ -1877,4 +1887,134 @@ body[data-view="result"] #checkpoint {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+main {
+  position: relative;
+  z-index: 3;
+  pointer-events: none;
+}
+.home-dock,
+.control-dock,
+.flight-report {
+  pointer-events: auto;
+}
+.balloon img {
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+.balloon:active {
+  cursor: grabbing;
+}
+.balloon:focus-visible {
+  outline: 2px dashed #b56545;
+  outline-offset: 14px;
+}
+.pilot-hint {
+  position: absolute;
+  left: 50%;
+  bottom: -27px;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  color: #446f78;
+  font-size: 8px;
+  letter-spacing: 0.6px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+.has-steered .pilot-hint,
+body[data-view="result"] .pilot-hint,
+.is-climbing .pilot-hint {
+  opacity: 0;
+}
+body[data-view="result"] .balloon {
+  pointer-events: none;
+}
+.is-piloting .burner-glow {
+  opacity: 0.9;
+}
+.is-climbing .balloon-float {
+  animation: updraft-launch 3.3s cubic-bezier(0.18, 0.7, 0.3, 1) both;
+}
+.is-climbing .reveal-content {
+  animation: reward-arrival 0.7s 0.25s both;
+}
+.is-climbing .rarity-medal {
+  animation: medal-arrival 0.8s 0.3s both;
+}
+.is-climbing .reward {
+  animation: altitude-arrival 0.65s 0.65s both;
+}
+.is-climbing .altitude-readout {
+  animation: instrument-glow 2.8s both;
+}
+@keyframes updraft-launch {
+  0% {
+    transform: translateY(0) scale(1) rotate(-2deg);
+  }
+  10% {
+    transform: translateY(16px) scale(0.95, 1.03) rotate(-5deg);
+  }
+  35% {
+    transform: translateY(calc(-1 * var(--lift-distance, 65px))) scale(1.12)
+      rotate(5deg);
+  }
+  65% {
+    transform: translateY(-18px) scale(1.04) rotate(-3deg);
+  }
+  100% {
+    transform: translateY(0) scale(1) rotate(-2deg);
+  }
+}
+@keyframes reward-arrival {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 16px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+@keyframes medal-arrival {
+  from {
+    opacity: 0;
+    transform: scale(0.45) rotate(-45deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+}
+@keyframes altitude-arrival {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes instrument-glow {
+  15%,
+  55% {
+    color: #b35d3b;
+    filter: drop-shadow(0 0 10px #fff1b0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .balloon {
+    transform: translate(calc(-50% + var(--pilot-x, 0px)), var(--pilot-y, 0px));
+  }
+}
+.pilot-hint {
+  left: 100%;
+  top: 48%;
+  bottom: auto;
+  transform: translate(15px, -50%);
+}
+body:not([data-view="home"]) .pilot-hint {
+  display: none;
 }

@@ -1,8 +1,14 @@
-# RARE — The Daily Climb
+# RARE Air
 
-An illustrated hot-air-balloon English daily trivia game, deployed on Cloudflare Workers + D1.
+A free daily trivia game where unexpected answers lift a hot-air balloon through an illustrated sky. Built with vanilla JavaScript, Canvas 2D, Cloudflare Workers and D1.
 
-Live: https://rare-daily.happycoin8899.workers.dev
+[Play RARE Air](https://rare-daily.happycoin8899.workers.dev/)
+
+![RARE Air in flight](docs/images/flight.jpg)
+
+Five questions, 30 seconds each, and up to 5,000 meters of altitude. Drag the balloon to steer, or focus it and use the arrow keys. Press Space or tap the balloon to catch a gust. Rare answers trigger wind rings, cloud breakthroughs and paper-plane companions.
+
+The project includes 400 English question sets, accepted aliases, editorial rarity tiers, daily and practice modes, a date archive, anonymous daily leaderboards and browser-local flight history.
 
 ## Run locally
 
@@ -32,7 +38,9 @@ npm run db:remote
 npm run deploy
 ```
 
-The tracked Wrangler file refers to the dedicated `rare-daily-db` database. For a different account run `npx wrangler login`, `npx wrangler d1 create rare-daily-db`, replace `database_id`, apply migrations, then deploy. The database ID is a resource identifier, not a credential. Authentication remains in Wrangler's user configuration.
+For your own Cloudflare deployment, run `npx wrangler login` and `npx wrangler d1 create rare-daily-db`. Put the returned database ID into `wrangler.jsonc` and choose a Worker name for your account. Then run the two commands above to apply migrations and deploy.
+
+The checked-in database ID identifies the live demo's resource. Cloudflare authentication is stored by Wrangler outside the repository. Local development uses a separate ignored database in `.wrangler/`.
 
 ## Game
 
@@ -65,13 +73,15 @@ To attach a domain: configure a Workers custom domain in Cloudflare Dashboard fo
 
 ## Daily 100-question task
 
-Codex automation `rare-100` runs daily at 07:00 Asia/Shanghai, beginning November 13, 2026. It creates `content/packs/YYYY-MM-DD-daily.json`, verifies 100 distinct prompts, builds, tests, and deploys with the existing Wrangler authorization. The local computer and Codex app need to be running. Runs consume Codex usage; no separate AI API is configured. A failed run does not silently count as a published batch.
+Each new daily pack belongs in `content/packs/YYYY-MM-DD-daily.json` and must contain 100 distinct prompts with accepted answers, aliases, rarity tiers and source links. Follow [the editorial and publishing rules](content/EDITORIAL.md), run the bank build and checks, then deploy.
+
+The demo's maintainer uses a local Codex automation at 07:00 Asia/Shanghai to prepare and publish these batches. You can configure a corresponding task for your own checkout. The computer and Codex app need to be running, and the task consumes Codex usage.
 
 Use `npm run bank:build` to validate packs and regenerate server-only `src/bank.js`. Each daily pack must have exactly 100 prompts. Public `/api/puzzle` reports `bankSize` and `latestBatch` for deployment verification, without exposing answers.
 
 ## Flight interface
 
-`public/sky.js` renders a continuous vertical flight world using Canvas 2D. A small hot-air balloon travels past cloud banks, birds, kites, other balloons and altitude landmarks. One server-scored point represents one game meter, up to 5,000 meters. The world moves downward with the camera during each ascent. Rarity tiers control distance, burner glow, particle count and reward sound.
+`public/sky.js` renders a continuous vertical flight world using Canvas 2D. A small hot-air balloon travels past cloud banks, birds, kites, other balloons and altitude landmarks. One server-scored point represents one game meter, up to 5,000 meters. The world moves downward with the camera during each ascent. Rarity tiers control distance, burner glow, wind rings, cloud sweeps, paper-plane formations, particle count and reward sound. Pointer dragging and focused arrow keys steer the balloon with spring motion. A tap or Space catches a visual gust.
 
 The timed question and input controls sit directly in the scene. Every new prompt has a three-second preparation countdown. `/api/next` starts the server clock after that countdown. Reward screens wait for explicit continuation. The final flight report includes five stages, accepted answers, daily leaderboard and spoiler-free sharing. Anonymous session IDs and local history keys support previous games.
 
@@ -94,3 +104,7 @@ The balloon prompt was used with a transparent background.
 The cloud prompt was used with a transparent background.
 
 > Use case: stylized-concept. Asset type: a transparent parallax cloud sprite for an illustrated hot-air-balloon browser game. A single long low cloud bank composed of beautiful sculptural billowing cumulus volumes, creamy ivory sunlit tops with pale blue teal shaded undersides, gentle warm peach sunlight from upper right, premium miniature diorama / 3D animation feature-film style, tactile fine cloud details and soft wispy outer edges. Wide horizontal composition, entire cloud fully contained with clear transparent margin, cloud centered, genuinely transparent alpha everywhere outside the cloud. No sky background, no landscape, no mountains, no objects, no text, no outlines, no floor shadow. The cloud should retain opaque rich volumes in its center and clean naturally feathered transparent edges.
+
+## License
+
+The code and original project material are available under the [MIT License](LICENSE). The locally hosted fonts retain their included SIL Open Font Licenses. The illustration prompts and generation provenance are documented above.

@@ -16,5 +16,7 @@
     "@cloudflare/workers-types": "latest",
     "typescript": "^5.9.3",
     "wrangler": "^4.0.0"
-  }
+  },
+  "license": "MIT",
+  "description": "A daily rare-answer trivia game that flies through an illustrated sky, built on Cloudflare Workers and D1."
 }

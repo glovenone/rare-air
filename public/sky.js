@@ -46,9 +46,109 @@ let pendingLandmarks = [];
 let mode = "home";
 let particles = [];
 
+let effectGain = 0;
+let effectTime = 10;
+let pilotX = 0;
+let pilotY = 0;
+let targetPilotX = 0;
+let targetPilotY = 0;
+let pilotBank = 0;
+let dragOrigin = null;
+let manualGust = 0;
+let pilotCenter = { x: innerWidth / 2, y: innerHeight / 2 };
+
+function steer(x, y) {
+  const minX = Math.max(
+    -width * 0.1,
+    14 + balloon.offsetWidth / 2 - balloon.offsetLeft,
+  );
+  const maxX = Math.min(
+    width * 0.16,
+    width - 14 - balloon.offsetWidth / 2 - balloon.offsetLeft,
+  );
+  targetPilotX = Math.max(minX, Math.min(maxX, x));
+  targetPilotY = Math.max(-height * 0.065, Math.min(height * 0.075, y));
+  document.body.classList.add("has-steered");
+}
+
+function catchGust() {
+  manualGust = 1;
+  document.body.classList.add("has-steered");
+}
+
+balloon.addEventListener("pointerdown", (event) => {
+  if (balloon.disabled) return;
+  dragOrigin = { x: event.clientX, y: event.clientY, pilotX, pilotY };
+  balloon.setPointerCapture(event.pointerId);
+  document.body.classList.add("has-steered");
+});
+balloon.addEventListener("pointermove", (event) => {
+  if (!dragOrigin) return;
+  steer(
+    dragOrigin.pilotX + event.clientX - dragOrigin.x,
+    dragOrigin.pilotY + event.clientY - dragOrigin.y,
+  );
+});
+balloon.addEventListener("pointerup", (event) => {
+  if (
+    dragOrigin &&
+    Math.hypot(event.clientX - dragOrigin.x, event.clientY - dragOrigin.y) < 8
+  )
+    catchGust();
+  dragOrigin = null;
+});
+balloon.addEventListener("pointercancel", () => {
+  dragOrigin = null;
+});
+balloon.addEventListener("lostpointercapture", () => {
+  dragOrigin = null;
+});
+balloon.addEventListener("keydown", (event) => {
+  if (event.key.startsWith("Arrow")) {
+    event.preventDefault();
+    const x =
+      event.key === "ArrowLeft" ? -26 : event.key === "ArrowRight" ? 26 : 0;
+    const y =
+      event.key === "ArrowUp" ? -20 : event.key === "ArrowDown" ? 20 : 0;
+    steer(targetPilotX + x, targetPilotY + y);
+  } else if (event.code === "Space" || event.key === "Enter") {
+    event.preventDefault();
+    if (!event.repeat) catchGust();
+  }
+});
+
+function updatePilot(delta) {
+  const bounds = balloon.getBoundingClientRect();
+  pilotCenter = {
+    x: bounds.left + bounds.width / 2,
+    y: bounds.top + bounds.height * 0.65,
+  };
+  const previousX = pilotX;
+  const response = reducedMotion.matches ? 1 : 1 - Math.exp(-delta * 9);
+  pilotX += (targetPilotX - pilotX) * response;
+  pilotY += (targetPilotY - pilotY) * response;
+  pilotBank += ((pilotX - previousX) * 1.2 - pilotBank) * response;
+  manualGust = Math.max(0, manualGust - delta * 1.4);
+  const gustLift = reducedMotion.matches
+    ? 0
+    : Math.sin(manualGust * Math.PI) * 24;
+  root.style.setProperty("--pilot-x", `${pilotX.toFixed(1)}px`);
+  root.style.setProperty("--pilot-y", `${(pilotY - gustLift).toFixed(1)}px`);
+  root.style.setProperty(
+    "--pilot-bank",
+    `${Math.max(-12, Math.min(12, pilotBank)).toFixed(1)}deg`,
+  );
+  document.body.classList.toggle(
+    "is-piloting",
+    manualGust > 0 || dragOrigin !== null,
+  );
+}
+
 function resize() {
   width = innerWidth;
   height = visualViewport?.height || innerHeight;
+  targetPilotX = pilotX = 0;
+  targetPilotY = pilotY = 0;
   root.style.setProperty("--screen-height", `${height}px`);
   const density = Math.min(devicePixelRatio || 1, 1.5);
   for (const [surface, paint] of [
@@ -232,6 +332,174 @@ function drawBurst(delta) {
   particles = particles.filter((particle) => particle.remaining > 0);
 }
 
+function drawPlane(x, y, angle, size, color) {
+  front.save();
+  front.translate(x, y);
+  front.rotate(angle);
+  front.fillStyle = "#25526618";
+  front.beginPath();
+  front.moveTo(-size, size * 0.65);
+  front.lineTo(size * 1.2, 4);
+  front.lineTo(-size * 0.6, -size * 0.25);
+  front.closePath();
+  front.fill();
+  front.fillStyle = color;
+  front.beginPath();
+  front.moveTo(size * 1.3, 0);
+  front.lineTo(-size, -size * 0.48);
+  front.lineTo(-size * 0.48, 0);
+  front.closePath();
+  front.fill();
+  front.fillStyle = "#fff4d9";
+  front.beginPath();
+  front.moveTo(size * 1.3, 0);
+  front.lineTo(-size * 0.72, size * 0.62);
+  front.lineTo(-size * 0.48, 0);
+  front.closePath();
+  front.fill();
+  front.strokeStyle = "#2d65714d";
+  front.lineWidth = 0.7;
+  front.beginPath();
+  front.moveTo(-size * 0.48, 0);
+  front.lineTo(size * 1.3, 0);
+  front.stroke();
+  front.restore();
+}
+
+function drawUpdraft(delta) {
+  if (reducedMotion.matches) return;
+  effectTime += delta;
+  const lifetime = 2.5 + effectGain * 0.0013;
+  const progress = effectTime / lifetime;
+  const active = effectGain > 0 && progress < 1;
+  const envelope = active
+    ? Math.sin(Math.min(1, progress) * Math.PI)
+    : manualGust * 0.45;
+  if (envelope <= 0.001) return;
+  const strength = active ? Math.min(1, effectGain / 1000) : 0.2;
+  const { x, y } = pilotCenter;
+
+  // A single warm exposure leads into the wind tunnel and then fades gently.
+  const glow = front.createRadialGradient(
+    x,
+    y,
+    4,
+    x,
+    y,
+    width < 600 ? 190 : 310,
+  );
+  glow.addColorStop(0, `rgba(255,233,158,${envelope * 0.25})`);
+  glow.addColorStop(0.45, `rgba(255,244,208,${envelope * 0.12})`);
+  glow.addColorStop(1, "rgba(255,244,208,0)");
+  front.fillStyle = glow;
+  front.fillRect(0, 0, width, height);
+
+  const tunnelRadius = width < 600 ? 58 : 95;
+  const travel = active ? effectTime * (100 + strength * 210) : elapsed * 60;
+  const ringCount = strength >= 0.5 ? 7 : 4;
+  for (let ring = 0; ring < ringCount; ring++) {
+    const position = (ring / ringCount + travel / height) % 1;
+    const ringY = y - height * 0.6 + position * height;
+    const radius = tunnelRadius * (0.3 + position * 1.15);
+    const bend = Math.sin(position * Math.PI * 1.8 + effectTime) * 22;
+    front.strokeStyle = `rgba(255,246,203,${envelope * (0.1 + position * 0.35)})`;
+    front.lineWidth = 1 + position * 1.8;
+    front.beginPath();
+    front.ellipse(
+      x + bend,
+      ringY,
+      radius,
+      radius * 0.25,
+      -0.12,
+      0,
+      Math.PI * 2,
+    );
+    front.stroke();
+    front.strokeStyle = `rgba(195,130,62,${envelope * 0.2})`;
+    front.lineWidth = 0.8;
+    front.beginPath();
+    front.ellipse(
+      x + bend,
+      ringY + 2,
+      radius + 5,
+      radius * 0.25,
+      -0.12,
+      0.1,
+      Math.PI * 0.95,
+    );
+    front.stroke();
+  }
+  const streakCount = width < 600 ? 20 : 38;
+  for (let streak = 0; streak < streakCount; streak++) {
+    const lane = (streak * 0.618) % 1;
+    const streakX = x + (lane - 0.5) * tunnelRadius * 4.5;
+    const streakY =
+      ((streak * 71 + travel * (1 + lane)) % (height + 130)) - 100;
+    const length = 14 + lane * 55 + strength * 45;
+    front.strokeStyle = `rgba(255,251,225,${envelope * (0.15 + lane * 0.5)})`;
+    front.lineWidth = lane > 0.8 ? 1.6 : 0.7;
+    front.beginPath();
+    front.moveTo(streakX, streakY);
+    front.lineTo(streakX - 5, streakY + length);
+    front.stroke();
+  }
+
+  if (active && effectGain >= 500) {
+    const fleetSize = effectGain >= 1000 ? 3 : 2;
+    for (let plane = 0; plane < fleetSize; plane++) {
+      const phase = Math.max(0, Math.min(1, progress * 1.15 - plane * 0.07));
+      const orbit = phase * Math.PI * 2.2 + plane * 2;
+      const radius = (width < 600 ? 58 : 125) * (1 - phase * 0.3);
+      const planeX = x + Math.cos(orbit) * radius + phase ** 4 * width * 0.8;
+      const planeY =
+        y + height * 0.2 - phase * height * 0.7 + Math.sin(orbit) * 25;
+      front.globalAlpha =
+        Math.min(1, phase * 10) * Math.min(1, (1 - phase) * 8);
+      front.strokeStyle = plane === 0 ? "#fff0b8a0" : "#e8f7ed80";
+      front.lineWidth = 1.8;
+      front.beginPath();
+      front.moveTo(planeX - Math.cos(orbit) * 28, planeY + 65);
+      front.quadraticCurveTo(planeX - 38, planeY + 25, planeX, planeY);
+      front.stroke();
+      drawPlane(
+        planeX,
+        planeY,
+        -0.9 + Math.sin(orbit) * 0.35,
+        width < 600 ? 12 : 19,
+        ["#db8a62", "#72a9a6", "#d8b066"][plane],
+      );
+    }
+    front.globalAlpha = 1;
+  }
+
+  if (
+    active &&
+    effectGain >= 500 &&
+    cloudImage.complete &&
+    cloudImage.naturalWidth
+  ) {
+    const sweep = Math.max(0, Math.min(1, (progress - 0.08) / 0.65));
+    const opacity = Math.sin(sweep * Math.PI) * 0.72;
+    const cloudWidth = Math.min(width * 0.8, 850);
+    front.globalAlpha = opacity;
+    front.drawImage(
+      cloudImage,
+      x - cloudWidth * 1.05 - sweep * 65,
+      y - height * 0.48 + sweep * height * 0.9,
+      cloudWidth,
+      (cloudWidth * cloudImage.naturalHeight) / cloudImage.naturalWidth,
+    );
+    front.drawImage(
+      cloudImage,
+      x + cloudWidth * 0.08 + sweep * 60,
+      y - height * 0.58 + sweep * height * 0.9,
+      cloudWidth,
+      (cloudWidth * cloudImage.naturalHeight) / cloudImage.naturalWidth,
+    );
+    front.globalAlpha = 1;
+  }
+}
+
 function updateAltitude() {
   const ratio = Math.min(1, Math.max(0, currentAltitude / 5000));
   altitudeLabel.textContent = Math.round(currentAltitude).toLocaleString();
@@ -288,13 +556,28 @@ function render(time) {
     progress < 0.5 ? 4 * progress ** 3 : 1 - (-2 * progress + 2) ** 3 / 2;
   currentAltitude = startAltitude + (targetAltitude - startAltitude) * eased;
   updateAltitude();
+  updatePilot(delta);
   context.clearRect(0, 0, width, height);
   front.clearRect(0, 0, width, height);
   if (mode !== "result") {
+    const zoom =
+      1 +
+      (effectGain > 0 && !reducedMotion.matches
+        ? Math.sin(Math.min(effectTime / 4, 1) * Math.PI) * 0.025
+        : 0);
+    for (const paint of [context, front]) {
+      paint.save();
+      paint.translate(pilotCenter.x, pilotCenter.y);
+      paint.scale(zoom, zoom);
+      paint.translate(-pilotCenter.x, -pilotCenter.y);
+    }
     drawClouds();
     drawWildlife();
     drawLandmarks();
+    context.restore();
+    front.restore();
     drawBurst(delta);
+    drawUpdraft(delta);
   }
 }
 requestAnimationFrame(render);
@@ -304,7 +587,16 @@ export function setFlight({
   altitude = 0,
   gain = 0,
 } = {}) {
+  const modeChanged = mode !== nextMode;
   mode = nextMode;
+  balloon.disabled = nextMode === "result";
+  if (modeChanged) {
+    targetPilotX = 0;
+    targetPilotY = 0;
+    dragOrigin = null;
+  }
+  effectGain = gain;
+  effectTime = gain > 0 ? 0 : 10;
   startAltitude = currentAltitude;
   const previousTarget = targetAltitude;
   targetAltitude = altitude;
@@ -324,7 +616,7 @@ export function setFlight({
     pendingLandmarks = [];
   }
   if (gain > 0 && !reducedMotion.matches) {
-    root.style.setProperty("--lift-distance", `${15 + gain * 0.035}px`);
+    root.style.setProperty("--lift-distance", `${22 + gain * 0.055}px`);
     requestAnimationFrame(() => {
       document.body.classList.add("is-climbing");
       addBurst(gain);

@@ -42,14 +42,27 @@
       <div class="high-sky"></div>
       <canvas id="cloud-canvas"></canvas>
       <div class="sun-haze"></div>
-      <div id="balloon" class="balloon">
-        <div class="balloon-float">
-          <img src="/art/balloon.png" alt="" /><span class="burner-glow"></span>
-        </div>
-      </div>
-      <canvas id="foreground-canvas"></canvas>
       <div class="wind-streaks"><i></i><i></i><i></i><i></i></div>
     </div>
+    <button
+      id="balloon"
+      class="balloon"
+      type="button"
+      aria-label="Steer your balloon"
+      aria-describedby="pilot-instructions"
+    >
+      <span class="balloon-float"
+        ><img src="/art/balloon.png" alt="" draggable="false" /><span
+          class="burner-glow"
+        ></span
+      ></span>
+      <span class="pilot-hint">Drag to steer</span>
+    </button>
+    <span id="pilot-instructions" class="sr-only"
+      >Drag the balloon to surf the breeze. When focused, use arrow keys to
+      steer and Space to catch a gust.</span
+    >
+    <canvas id="foreground-canvas" aria-hidden="true"></canvas>
     <header class="site-header">
       <a class="brand" href="/" aria-label="Rare home">rare<span>↗</span></a>
       <nav aria-label="Main navigation">

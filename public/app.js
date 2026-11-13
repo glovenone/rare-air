@@ -173,6 +173,7 @@ $("modal").addEventListener("click", (event) => {
 $("help").onclick = () => {
   const content = openDialog("A little knowledge. A lot of lift.", [
     "Take a five-question flight. You have 30 seconds to type one correct answer per question. Less obvious answers carry your balloon higher.",
+    "Drag your balloon to surf the breeze. With the balloon focused, use arrow keys to steer and Space to catch a gust. Rare answers summon paper-plane companions and stronger updrafts.",
     "Common answers lift you 100 meters, uncommon answers 250, rare answers 500 and exceptional answers 1,000. A skipped, incorrect or expired answer adds zero. Your final altitude is the sum of all five stages, up to 5,000 meters.",
     "Enjoy the view after each answer. The next question stays hidden and its clock starts when you press Climb higher. Once a question is active, leaving the page or opening a dialog does not pause the clock.",
     "Daily flights reset at midnight UTC with one attempt per browser. Practice creates fresh sets. Capitalization, spacing, punctuation and accepted aliases are handled automatically. Answer rarity uses fixed editorial tiers.",
