@@ -1,4 +1,5 @@
-import { readFile, writeFile, mkdir } from "node:fs/promises";
+import { readFile, writeFile, mkdir, copyFile } from "node:fs/promises";
+import { bankInfo } from "../src/questions.js";
 
 const site =
   process.env.SITE_URL || "https://krillionunlimited.top";
@@ -9,7 +10,7 @@ const pages = [
     title: "Krillion Unlimited Alternative | RARE Air Trivia Practice",
     description:
       "Looking for Krillion Unlimited? Play repeatable rare-answer trivia in RARE Air. Five timed questions per flight, illustrated updrafts and accepted-answer review.",
-    heading: "Keep the rare answers coming.",
+    heading: "Krillion Unlimited alternative with repeatable trivia practice.",
     intro:
       "Searching for Krillion Unlimited? RARE Air is an independently developed rare-answer trivia game with repeatable practice flights. Open the game and choose Practice flight for five fresh prompts. Reach for an unexpected correct answer and watch your balloon climb.",
     sections: [
@@ -168,15 +169,148 @@ const pages = [
     ],
   },
 ];
-const navigation =
-  '<nav><a href="/daily-trivia/">Daily trivia</a><a href="/krillion-unlimited/">Unlimited practice</a><a href="/how-to-play/">How to play</a><a href="/games-like-krillion/">Games like Krillion</a><a href="/privacy/">Privacy</a><a href="/support/">Support</a></nav>';
+pages.push(
+  {
+    path: "rare-answer-trivia",
+    title: "Rare-Answer Trivia Game — Play Free Online | RARE Air",
+    description:
+      "Play free rare-answer trivia in RARE Air. Type one correct answer to each prompt, aim for an unexpected choice and fly higher. Daily and repeatable practice.",
+    heading: "Rare-answer trivia rewards the unexpected.",
+    intro:
+      "In rare-answer trivia, a question can have several correct answers. Your challenge is to find a less obvious one. RARE Air turns that choice into a flight through the clouds, with five open-answer questions, a 30-second timer and up to 5,000 meters to climb.",
+    sections: [
+      [
+        "How an open-answer question works.",
+        "A prompt might ask you to name a planet in the Solar System. You type one answer that fits. There are no multiple-choice options to reveal the possibilities, so recalling a specific example is part of the challenge. Other prompts cover geography, science, books, film and everyday knowledge.",
+        "Scope matters. A question about planets visible to the naked eye has a narrower set of correct answers than a question about all eight planets. Read every qualifier before choosing your answer.",
+      ],
+      [
+        "How RARE Air scores rarity.",
+        "Each accepted answer has a fixed editorial tier. Common answers earn 100 meters, uncommon answers 250, rare answers 500 and exceptional answers 1,000. A wrong answer, skip or timeout earns zero. The ratings stay fixed for your flight and express the intended obscurity of each answer.",
+        "These tiers come from the curated question bank. They do not measure what percentage of today's players typed an answer. You can inspect the accepted answers and their tiers after finishing all five stages.",
+      ],
+      [
+        "Daily questions and repeatable practice.",
+        `The current bank contains ${bankInfo.bankSize} English prompts. Today's daily flight gives everyone the same five questions and resets at midnight UTC. Practice creates another five-question set whenever you want to keep playing. Questions can return across separate practice flights.`,
+        "The game is free to play in a mobile or desktop browser. You can start immediately without creating a player account. An anonymous cookie keeps your daily attempt, and local browser storage keeps your flight history.",
+      ],
+      [
+        "Make your next answer more deliberate.",
+        "Think of a reliable correct answer first, then use the remaining time to look for a more specific example. If you are unsure whether a surprising choice fits the scope, a familiar correct answer can still earn altitude. After the flight, use the report to learn alternatives for future practice.",
+      ],
+    ],
+    related: [
+      ["/trivia-strategy/", "Try these rare-answer trivia strategies"],
+      ["/how-to-play/", "Read the timer and scoring rules"],
+    ],
+  },
+  {
+    path: "trivia-strategy",
+    title: "Rare-Answer Trivia Tips & Practice Guide | RARE Air",
+    description:
+      "Improve your rare-answer trivia choices with practical tips for prompt scope, recall, timing and flight-report review. Practice free in RARE Air online.",
+    heading: "Make the most of your 30 seconds.",
+    intro:
+      "Start by finding one answer you trust. Then look for a less obvious answer that still fits every part of the prompt. These rare-answer trivia tips help you decide when to take that chance during RARE Air's five-question flights.",
+    sections: [
+      [
+        "Read the boundary before searching your memory.",
+        "Watch for a named edition, a date range, a starting letter or a particular region. A correct answer to the general topic can fall outside a narrower prompt. For example, membership of a specific fictional group is different from appearing anywhere in the same story.",
+        "Use the opening seconds to identify the exact set of things the question accepts. That makes the rest of your recall more focused.",
+      ],
+      [
+        "Keep a dependable answer in reserve.",
+        "Recall a familiar example first. If another answer comes to mind, check that it belongs to the same set before submitting. Correctness earns altitude at every tier, so an unfamiliar guess needs to justify the risk of scoring zero.",
+        "Avoid spending the whole clock searching for a perfect answer. RARE Air gives you 30 seconds for an active prompt. The server keeps that clock running while you switch tabs or open a dialog.",
+      ],
+      [
+        "Search a category in smaller groups.",
+        "If a broad category feels blank, try mentally grouping it by place, period or subject. For a geography prompt, move through regions. For a literature prompt, recall authors or series you know. This is a recall technique, so every candidate still needs to satisfy the actual question.",
+        "Use the ordinary name when you know it. RARE Air normalizes capitalization, punctuation and accepted aliases. A spelling variation works when it is present in the curated answer list.",
+      ],
+      [
+        "Use the pauses and the flight report.",
+        "The reward screen waits for you to press Climb higher. Take a breath there. The next question stays hidden during the pause, then a three-second preparation countdown introduces the next stage.",
+        "At the end, review the accepted answers and their editorial tiers. Choose one or two unfamiliar answers to remember, and look up the topic if you want more context. Practice flights provide another five prompts without changing the shared daily leaderboard.",
+      ],
+      [
+        "Treat tiers as the game's scoring rules.",
+        "RARE Air uses fixed editorial rarity tiers, so choosing an answer that feels obscure does not guarantee the maximum score. Your completed report shows how that answer was rated. A missing valid answer can be reported to the maintainer with a reliable source and the prompt's exact wording.",
+      ],
+    ],
+    related: [
+      ["/rare-answer-trivia/", "Understand rare-answer trivia"],
+      ["/krillion-unlimited/", "Explore repeatable trivia practice"],
+      ["/support/", "Report a missing valid answer"],
+    ],
+  },
+);
+const navLinks = [
+  ["/daily-trivia/", "Daily trivia"],
+  ["/krillion-unlimited/", "Unlimited practice"],
+  ["/rare-answer-trivia/", "Rare-answer trivia"],
+  ["/trivia-strategy/", "Trivia tips"],
+  ["/how-to-play/", "How to play"],
+  ["/games-like-krillion/", "Games like Krillion"],
+  ["/privacy/", "Privacy"],
+  ["/support/", "Support"],
+];
 const escape = (text) =>
   text
     .replaceAll("&", "&amp;")
     .replaceAll("<", "&lt;")
     .replaceAll('"', "&quot;");
+const renderLinks = (links) => links
+  .map(([href, label]) => `<a href="${escape(href)}">${escape(label)}</a>`)
+  .join("");
+const navigation = `<nav aria-label="Game guides and information">${renderLinks(navLinks)}</nav>`;
+const socialImage = `${origin}/art/flight-preview.jpg`;
+const socialMetadata = (title, description, url) => `
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="RARE Air"/>
+<meta property="og:title" content="${escape(title)}"/>
+<meta property="og:description" content="${escape(description)}"/>
+<meta property="og:url" content="${escape(url)}"/>
+<meta property="og:image" content="${socialImage}"/>
+<meta property="og:image:type" content="image/jpeg"/>
+<meta property="og:image:width" content="1280"/>
+<meta property="og:image:height" content="720"/>
+<meta property="og:image:alt" content="RARE Air gameplay with a hot-air balloon climbing through clouds after a rare answer"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="${escape(title)}"/>
+<meta name="twitter:description" content="${escape(description)}"/>
+<meta name="twitter:image" content="${socialImage}"/>
+<meta name="twitter:image:alt" content="RARE Air rare-answer trivia flight"/>`;
+await copyFile("docs/images/flight.jpg", "public/art/flight-preview.jpg");
 for (const page of pages) {
-  const html = `<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>${escape(page.title)}</title><meta name="description" content="${escape(page.description)}"/><link rel="canonical" href="${origin}/${page.path}/"/><meta property="og:type" content="website"/><meta property="og:title" content="${escape(page.title)}"/><meta property="og:description" content="${escape(page.description)}"/><meta property="og:url" content="${origin}/${page.path}/"/><meta property="og:image" content="${origin}/art/app-icon.png"/><link rel="icon" href="/favicon.svg"/><link rel="stylesheet" href="/guide.css"/></head><body><header><a href="/">rare ↗</a><a href="/">Take flight ↗</a></header><main><h1>${escape(page.heading)}</h1><p class="lead">${escape(page.intro)}</p><a class="guide-cta" href="/">Play RARE Air ↗</a>${page.sections.map(([heading, ...paragraphs]) => `<section><h2>${escape(heading)}</h2>${paragraphs.map((text) => `<p>${escape(text)}</p>`).join("")}</section>`).join("")}${page.path === "support" ? '<p><a class="guide-cta" href="https://github.com/glovenone/rare-air/issues">Open a support issue ↗</a></p>' : ""}${navigation}</main><footer><a href="/">← Back to the sky</a><span>RARE AIR</span></footer></body></html>`;
+  const url = `${origin}/${page.path}/`;
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      { "@type": "WebPage", name: page.title, description: page.description,
+        url, inLanguage: "en", isPartOf: { "@type": "WebSite", name: "RARE Air", url: `${origin}/` } },
+      { "@type": "BreadcrumbList", itemListElement: [
+        { "@type": "ListItem", position: 1, name: "RARE Air", item: `${origin}/` },
+        { "@type": "ListItem", position: 2, name: page.heading, item: url },
+      ] },
+    ],
+  };
+  const related = page.related ? `<nav aria-label="Related guides">${renderLinks(page.related)}</nav>` : "";
+  const html = `<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>${escape(page.title)}</title>
+<meta name="description" content="${escape(page.description)}"/>
+<link rel="canonical" href="${url}"/>
+${socialMetadata(page.title, page.description, url)}
+<script type="application/ld+json">${JSON.stringify(structuredData).replaceAll("<", "\\u003c")}</script>
+<link rel="icon" href="/favicon.svg"/><link rel="stylesheet" href="/guide.css"/>
+</head><body><header><a href="/">rare ↗</a><a href="/">Take flight ↗</a></header>
+<main><h1>${escape(page.heading)}</h1><p class="lead">${escape(page.intro)}</p>
+<a class="guide-cta" href="/">Play RARE Air ↗</a>
+${page.sections.map(([heading, ...paragraphs]) => `<section><h2>${escape(heading)}</h2>${paragraphs.map((text) => `<p>${escape(text)}</p>`).join("")}</section>`).join("\n")}
+${page.path === "support" ? '<p><a class="guide-cta" href="https://github.com/glovenone/rare-air/issues">Open a support issue ↗</a></p>' : ""}
+${related}${navigation}</main><footer><a href="/">← Back to the sky</a><span>RARE AIR</span></footer></body></html>`;
   await mkdir(`public/${page.path}`, { recursive: true });
   await writeFile(`public/${page.path}/index.html`, html);
 }
@@ -202,6 +336,16 @@ for (const path of [
   const content = await readFile(path, "utf8");
   const canonical = content.match(/rel="canonical"[^>]*href="([^"]+)"/);
   const previousOrigin = canonical ? new URL(canonical[1]).origin : origin;
-  await writeFile(path, content.replaceAll(previousOrigin, origin));
+  let updated = content.replaceAll(previousOrigin, origin);
+  if (path === "public/index.html") {
+    updated = updated.replace(/(<span id="bank-label" class="sr-only">)[^<]*/, `$1${bankInfo.bankSize} questions.`);
+  }
+  if (path === "public/games-like-krillion/index.html") {
+    updated = updated.replace(/\s*<!-- site-sharing:start -->[\s\S]*?<!-- site-sharing:end -->/, "");
+    updated = updated.replace("</head>", `<!-- site-sharing:start -->${socialMetadata("Games Like Krillion — RARE Air Trivia & Practice", "Explore RARE Air, an independent rare-answer trivia game with five timed prompts, daily flights and repeatable practice.", `${origin}/games-like-krillion/`)}<!-- site-sharing:end -->\n  </head>`);
+    updated = updated.replace(/\s*<!-- guide-navigation:start -->[\s\S]*?<!-- guide-navigation:end -->/, "");
+    updated = updated.replace("</main>", `<!-- guide-navigation:start -->${navigation}<!-- guide-navigation:end -->\n    </main>`);
+  }
+  await writeFile(path, updated);
 }
 console.log(`Prepared ${paths.length} crawlable pages for ${origin}.`);

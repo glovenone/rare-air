@@ -1,11 +1,13 @@
 @font-face {
   font-family: "DM Sans";
   src: url("/fonts/dm-sans-400.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "Bricolage";
   src: url("/fonts/bricolage-800.ttf");
   font-weight: 800;
+  font-display: swap;
 }
 * {
   box-sizing: border-box;
