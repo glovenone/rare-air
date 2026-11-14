@@ -14,6 +14,11 @@ export const batches = [
     "batch": "2026-11-14-daily",
     "releasedOn": "2026-11-14",
     "count": 100
+  },
+  {
+    "batch": "2026-11-15-daily",
+    "releasedOn": "2026-11-15",
+    "count": 100
   }
 ];
 export const bank = [
@@ -20953,5 +20958,4926 @@ export const bank = [
     ],
     "releasedOn": "2026-11-14",
     "batch": "2026-11-14-daily"
+  },
+  {
+    "id": "daily-20261115-html-input-types",
+    "category": "TECHNOLOGY",
+    "prompt": "Name a standard HTML input type keyword, excluding obsolete types.",
+    "explanation": "The HTML input type table defines 22 keywords in this set. Type a keyword such as text or datetime-local. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://html.spec.whatwg.org/dev/input.html"
+    ],
+    "answers": [
+      {
+        "label": "text",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "password",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "email",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "checkbox",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "radio",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "submit",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "button",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "number",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "file",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "date",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "hidden",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "search",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "range",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "color",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "reset",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "url",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "tel",
+        "aliases": [
+          "telephone"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "time",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "month",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "week",
+        "aliases": [],
+        "tier": 4
+      },
+      {
+        "label": "datetime-local",
+        "aliases": [
+          "local datetime"
+        ],
+        "tier": 4
+      },
+      {
+        "label": "image",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-html-button-types",
+    "category": "TECHNOLOGY",
+    "prompt": "Name a valid explicit type keyword for an HTML button element.",
+    "explanation": "The explicit type keywords are submit, reset and button. A missing or invalid type places the button in its Auto state. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://html.spec.whatwg.org/dev/form-elements.html#the-button-element"
+    ],
+    "answers": [
+      {
+        "label": "submit",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "button",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "reset",
+        "aliases": [],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-css-border-styles",
+    "category": "TECHNOLOGY",
+    "prompt": "Name a border line-style keyword defined by CSS Backgrounds and Borders Level 3.",
+    "explanation": "The line-style grammar contains ten keywords covering solid and patterned borders, relief styles and absent borders. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.w3.org/TR/css-backgrounds-3/#the-border-style"
+    ],
+    "answers": [
+      {
+        "label": "solid",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "dashed",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "dotted",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "double",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "none",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "hidden",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "groove",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "ridge",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "inset",
+        "aliases": [],
+        "tier": 4
+      },
+      {
+        "label": "outset",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-css-background-repeat",
+    "category": "TECHNOLOGY",
+    "prompt": "Name a single-keyword background-repeat value in CSS Backgrounds and Borders Level 3.",
+    "explanation": "The six single-keyword forms include repeat-x and repeat-y. The question covers each complete one-keyword form. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.w3.org/TR/css-backgrounds-3/#the-background-repeat"
+    ],
+    "answers": [
+      {
+        "label": "repeat",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "no-repeat",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "repeat-x",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "repeat-y",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "space",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "round",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-css-overflow-values",
+    "category": "TECHNOLOGY",
+    "prompt": "Name a value in the CSS Overflow Level 3 overflow-x grammar, excluding CSS-wide keywords.",
+    "explanation": "The overflow-x and overflow-y grammar offers five values controlling visibility, clipping and scrolling. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.w3.org/TR/css-overflow-3/#overflow-properties"
+    ],
+    "answers": [
+      {
+        "label": "hidden",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "scroll",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "auto",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "visible",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "clip",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-css-object-fit",
+    "category": "TECHNOLOGY",
+    "prompt": "Name an object-fit keyword from CSS Images Level 3, excluding CSS-wide keywords.",
+    "explanation": "The five keywords control how replaced content fits its content box. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.w3.org/TR/css-images-3/#the-object-fit"
+    ],
+    "answers": [
+      {
+        "label": "cover",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "contain",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "fill",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "none",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "scale-down",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-css-flex-direction",
+    "category": "TECHNOLOGY",
+    "prompt": "Name a flex-direction value from CSS Flexible Box Layout Level 1.",
+    "explanation": "The four keywords specify row or column layout in forward or reverse order. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.w3.org/TR/css-flexbox-1/#flex-direction-property"
+    ],
+    "answers": [
+      {
+        "label": "row",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "column",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "row-reverse",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "column-reverse",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-css21-text-transform",
+    "category": "TECHNOLOGY",
+    "prompt": "Name a text-transform value defined in CSS 2.1, excluding inherit.",
+    "explanation": "This question uses the four text-transform effect keywords in the CSS 2.1 specification. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.w3.org/TR/CSS21/text.html#caps-prop"
+    ],
+    "answers": [
+      {
+        "label": "uppercase",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "lowercase",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "capitalize",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "none",
+        "aliases": [],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-tcp-connection-states",
+    "category": "TECHNOLOGY",
+    "prompt": "Name a TCP connection state listed in RFC 9293, including the fictional CLOSED state.",
+    "explanation": "RFC 9293 lists eleven states, counting CLOSED as the no-connection state. Hyphens, spaces and underscores normalize consistently. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.rfc-editor.org/rfc/rfc9293.html#section-3.3.2"
+    ],
+    "answers": [
+      {
+        "label": "ESTABLISHED",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "CLOSED",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "LISTEN",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "SYN-SENT",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "SYN-RECEIVED",
+        "aliases": [
+          "SYN-RECV",
+          "SYN-RCVD"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "FIN-WAIT-1",
+        "aliases": [
+          "FIN WAIT ONE"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "FIN-WAIT-2",
+        "aliases": [
+          "FIN WAIT TWO"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "CLOSE-WAIT",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "TIME-WAIT",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "CLOSING",
+        "aliases": [],
+        "tier": 4
+      },
+      {
+        "label": "LAST-ACK",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-css21-font-style",
+    "category": "TECHNOLOGY",
+    "prompt": "Name a font-style keyword defined in CSS 2.1, excluding inherit.",
+    "explanation": "CSS 2.1 defines three font-style effect keywords, normal, italic and oblique. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.w3.org/TR/CSS21/fonts.html#font-styling"
+    ],
+    "answers": [
+      {
+        "label": "italic",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "normal",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "oblique",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-esa-first-signatories",
+    "category": "SPACE",
+    "prompt": "Name a country that signed the ESA Convention on 30 May 1975.",
+    "explanation": "Ten countries signed on 30 May 1975. The signature date fixes the membership for this question. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.esa.int/About_Us/Law_at_ESA/ESA_Convention"
+    ],
+    "answers": [
+      {
+        "label": "France",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Germany",
+        "aliases": [
+          "West Germany",
+          "Federal Republic of Germany"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "United Kingdom",
+        "aliases": [
+          "UK",
+          "Great Britain",
+          "Britain"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Italy",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Spain",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Netherlands",
+        "aliases": [
+          "the Netherlands",
+          "Holland"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Belgium",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Sweden",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Denmark",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Switzerland",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-asteroid-composition-classes",
+    "category": "SPACE",
+    "prompt": "Name one of NASA’s three broad asteroid composition classes, by letter or common description.",
+    "explanation": "NASA’s simplified composition classes are C, S and M. Either a class letter or its composition description is accepted. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/asteroids/facts/"
+    ],
+    "answers": [
+      {
+        "label": "C-type",
+        "aliases": [
+          "C",
+          "carbonaceous",
+          "chondrite"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "S-type",
+        "aliases": [
+          "S",
+          "stony",
+          "silicaceous"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "M-type",
+        "aliases": [
+          "M",
+          "metallic",
+          "metal"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-galaxy-shape-classes",
+    "category": "SPACE",
+    "prompt": "Name one of the four broad morphological galaxy classes, treating barred spirals as spirals.",
+    "explanation": "The four broad morphological classes are spiral, elliptical, lenticular and irregular. Barred spiral counts within the spiral class. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://science.nasa.gov/universe/galaxies/types/"
+    ],
+    "answers": [
+      {
+        "label": "Spiral",
+        "aliases": [
+          "spiral galaxy",
+          "barred spiral",
+          "barred spiral galaxy"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Elliptical",
+        "aliases": [
+          "elliptical galaxy"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Irregular",
+        "aliases": [
+          "irregular galaxy"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Lenticular",
+        "aliases": [
+          "lenticular galaxy"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-stellar-compact-remnants",
+    "category": "SPACE",
+    "prompt": "Name one of the three standard compact remnants left by ordinary stellar evolution.",
+    "explanation": "The three broad remnant types are white dwarfs, neutron stars and stellar-mass black holes. Pulsars and magnetars count as neutron stars. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://science.nasa.gov/universe/stars/types/",
+      "https://science.nasa.gov/universe/black-holes/types/"
+    ],
+    "answers": [
+      {
+        "label": "Black hole",
+        "aliases": [
+          "stellar black hole",
+          "stellar-mass black hole",
+          "black holes"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "White dwarf",
+        "aliases": [
+          "white dwarf star",
+          "white dwarfs"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Neutron star",
+        "aliases": [
+          "neutron stars",
+          "pulsar",
+          "magnetar"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-asteroid-orbit-populations",
+    "category": "SPACE",
+    "prompt": "Name an asteroid orbital population in NASA’s three-group classification.",
+    "explanation": "NASA’s orbital grouping comprises main-belt asteroids, Trojans and near-Earth asteroids. Planet-specific Trojans count within the Trojan group. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/asteroids/facts/"
+    ],
+    "answers": [
+      {
+        "label": "Main belt",
+        "aliases": [
+          "main asteroid belt",
+          "main-belt asteroid",
+          "main belt asteroids",
+          "asteroid belt"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Near-Earth asteroids",
+        "aliases": [
+          "near earth",
+          "near-earth asteroid",
+          "NEA",
+          "NEAs"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Trojans",
+        "aliases": [
+          "Trojan",
+          "Trojan asteroids",
+          "Trojan asteroid",
+          "Jupiter Trojans"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-parker-science-suites",
+    "category": "SPACE",
+    "prompt": "Name one of the four scientific instrument suites on Parker Solar Probe.",
+    "explanation": "The four suites are FIELDS, WISPR, SWEAP and ISʘIS. Each suite combines related measurements or instruments. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://science.nasa.gov/mission/parker-solar-probe/parker-solar-probe-instruments/",
+      "https://svs.gsfc.nasa.gov/13035/"
+    ],
+    "answers": [
+      {
+        "label": "FIELDS",
+        "aliases": [
+          "Electromagnetic Fields Investigation",
+          "Fields Experiment"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "WISPR",
+        "aliases": [
+          "Wide-Field Imager for Solar Probe",
+          "Wide Field Imager for Parker Solar Probe"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "SWEAP",
+        "aliases": [
+          "Solar Wind Electrons Alphas and Protons"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "ISʘIS",
+        "aliases": [
+          "ISOIS",
+          "Integrated Science Investigation of the Sun"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-perseverance-launch-payload",
+    "category": "SPACE",
+    "prompt": "Name one of the seven main science instruments carried by the Perseverance rover at launch.",
+    "explanation": "This question uses the seven original main science instruments. MOXIE remains in the launch payload set after its completed experiment. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://science.nasa.gov/mission/mars-2020-perseverance/science-instruments/"
+    ],
+    "answers": [
+      {
+        "label": "MOXIE",
+        "aliases": [
+          "Mars Oxygen ISRU Experiment",
+          "Mars Oxygen In Situ Resource Utilization Experiment"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "SuperCam",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Mastcam-Z",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "SHERLOC",
+        "aliases": [
+          "Scanning Habitable Environments with Raman and Luminescence for Organics and Chemicals"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "PIXL",
+        "aliases": [
+          "Planetary Instrument for X-ray Lithochemistry"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "MEDA",
+        "aliases": [
+          "Mars Environmental Dynamics Analyzer"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "RIMFAX",
+        "aliases": [
+          "Radar Imager for Mars Subsurface Experiment"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-nasa-1978-women",
+    "category": "SPACE",
+    "prompt": "Name a woman selected for NASA’s astronaut class of 1978.",
+    "explanation": "This class included six women. First-and-last names, unique surnames and common shortened given names are accepted. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.nasa.gov/history/the-class-of-1978-and-the-flats/"
+    ],
+    "answers": [
+      {
+        "label": "Sally Ride",
+        "aliases": [
+          "Ride",
+          "Sally"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Judith Resnik",
+        "aliases": [
+          "Judy Resnik",
+          "Resnik"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Kathryn Sullivan",
+        "aliases": [
+          "Kathy Sullivan",
+          "Sullivan"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Anna Fisher",
+        "aliases": [
+          "Fisher"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Shannon Lucid",
+        "aliases": [
+          "Lucid"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Margaret Rhea Seddon",
+        "aliases": [
+          "Rhea Seddon",
+          "Margaret Seddon",
+          "Seddon"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-muscle-tissue-types",
+    "category": "SCIENCE",
+    "prompt": "Name one of the three types of human muscle tissue.",
+    "explanation": "The anatomical tissue categories are skeletal, cardiac and smooth muscle. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://openstax.org/books/anatomy-and-physiology-2e/pages/10-1-overview-of-muscle-tissues"
+    ],
+    "answers": [
+      {
+        "label": "Skeletal",
+        "aliases": [
+          "skeletal muscle"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Cardiac",
+        "aliases": [
+          "cardiac muscle",
+          "heart muscle"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Smooth",
+        "aliases": [
+          "smooth muscle",
+          "visceral muscle"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-cytoskeleton-filaments",
+    "category": "SCIENCE",
+    "prompt": "Name one of the three main filament components of a human cell’s cytoskeleton.",
+    "explanation": "The three filament categories are microtubules, microfilaments and intermediate filaments. Actin filaments is another name for microfilaments. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://openstax.org/books/anatomy-and-physiology-2e/pages/3-2-the-cytoplasm-and-cellular-organelles"
+    ],
+    "answers": [
+      {
+        "label": "Microtubules",
+        "aliases": [
+          "microtubule",
+          "tubulin"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Microfilaments",
+        "aliases": [
+          "microfilament",
+          "actin filaments",
+          "actin filament",
+          "actin"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Intermediate filaments",
+        "aliases": [
+          "intermediate filament"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-facial-bone-types",
+    "category": "SCIENCE",
+    "prompt": "Name a type of adult human facial bone, counting paired left and right bones together.",
+    "explanation": "The 14 facial bones form eight named types. Paired left and right bones count together, including the inferior nasal conchae. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-2-the-skull"
+    ],
+    "answers": [
+      {
+        "label": "Mandible",
+        "aliases": [
+          "lower jaw",
+          "jawbone",
+          "mandibular bone"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Maxilla",
+        "aliases": [
+          "maxillae",
+          "upper jaw",
+          "maxillary bone",
+          "maxillary bones"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Zygomatic",
+        "aliases": [
+          "zygomatic bone",
+          "cheekbone",
+          "malar bone",
+          "zygomatics",
+          "zygomatic bones",
+          "cheekbones"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Nasal",
+        "aliases": [
+          "nasal bone",
+          "nasal bones"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Lacrimal",
+        "aliases": [
+          "lacrimal bone",
+          "lacrimals",
+          "lacrimal bones"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Palatine",
+        "aliases": [
+          "palatine bone",
+          "palatines",
+          "palatine bones"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Vomer",
+        "aliases": [
+          "vomer bone"
+        ],
+        "tier": 4
+      },
+      {
+        "label": "Inferior nasal concha",
+        "aliases": [
+          "inferior nasal conchae",
+          "inferior turbinate",
+          "inferior nasal turbinate",
+          "inferior turbinates",
+          "inferior nasal turbinates"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-tarsal-bones",
+    "category": "SCIENCE",
+    "prompt": "Name one of the seven tarsal bones in a human foot.",
+    "explanation": "The seven tarsals include three individually named cuneiform bones. Specify medial, intermediate or lateral for a cuneiform. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+    ],
+    "answers": [
+      {
+        "label": "Calcaneus",
+        "aliases": [
+          "heel bone"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Talus",
+        "aliases": [
+          "astragalus"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Navicular",
+        "aliases": [
+          "navicular bone"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Cuboid",
+        "aliases": [
+          "cuboid bone"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Medial cuneiform",
+        "aliases": [
+          "first cuneiform",
+          "1st cuneiform",
+          "internal cuneiform"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Intermediate cuneiform",
+        "aliases": [
+          "middle cuneiform",
+          "second cuneiform",
+          "2nd cuneiform",
+          "middle cuneiform bone"
+        ],
+        "tier": 4
+      },
+      {
+        "label": "Lateral cuneiform",
+        "aliases": [
+          "third cuneiform",
+          "3rd cuneiform",
+          "external cuneiform"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-thyroid-secretions",
+    "category": "SCIENCE",
+    "prompt": "Name a hormone secreted by the human thyroid gland in the standard three-hormone summary.",
+    "explanation": "The standard summary includes the iodinated hormones T3 and T4 and the calcium-regulating hormone calcitonin. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://openstax.org/books/anatomy-and-physiology-2e/pages/17-4-the-thyroid-gland"
+    ],
+    "answers": [
+      {
+        "label": "Thyroxine",
+        "aliases": [
+          "T4",
+          "tetraiodothyronine"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Triiodothyronine",
+        "aliases": [
+          "T3"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Calcitonin",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-anterior-pituitary-six",
+    "category": "SCIENCE",
+    "prompt": "Name one of the six major hormones produced by the anterior pituitary’s anterior lobe.",
+    "explanation": "This question uses the standard six major hormones of the anterior lobe. Both full hormone names and common abbreviations are accepted. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://openstax.org/books/anatomy-and-physiology-2e/pages/17-3-the-pituitary-gland-and-hypothalamus"
+    ],
+    "answers": [
+      {
+        "label": "Growth hormone",
+        "aliases": [
+          "GH",
+          "somatotropin",
+          "human growth hormone",
+          "HGH"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Prolactin",
+        "aliases": [
+          "PRL"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Thyroid-stimulating hormone",
+        "aliases": [
+          "TSH",
+          "thyrotropin",
+          "thyrotrophin"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Follicle-stimulating hormone",
+        "aliases": [
+          "FSH"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Luteinizing hormone",
+        "aliases": [
+          "LH",
+          "lutropin",
+          "luteinising hormone"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Adrenocorticotropic hormone",
+        "aliases": [
+          "ACTH",
+          "corticotropin",
+          "corticotrophin",
+          "adrenocorticotrophic hormone"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-kepler-planetary-laws",
+    "category": "SCIENCE",
+    "prompt": "Name one of Kepler’s three laws of planetary motion by its usual name or law number.",
+    "explanation": "The first law describes elliptical orbits, the second equal areas in equal times and the third the period-distance relationship. Common descriptive names and law numbers are accepted. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/orbits-and-keplers-laws/"
+    ],
+    "answers": [
+      {
+        "label": "Law of ellipses",
+        "tier": 1,
+        "aliases": [
+          "ellipses",
+          "elliptical orbits",
+          "law of orbits",
+          "first law",
+          "Keplers first law",
+          "1",
+          "1st law",
+          "law 1"
+        ]
+      },
+      {
+        "label": "Law of equal areas",
+        "tier": 2,
+        "aliases": [
+          "equal areas",
+          "law of areas",
+          "areas",
+          "equal areas in equal times",
+          "second law",
+          "Keplers second law",
+          "2",
+          "2nd law",
+          "law 2"
+        ]
+      },
+      {
+        "label": "Law of harmonies",
+        "tier": 4,
+        "aliases": [
+          "harmonies",
+          "harmonic law",
+          "law of periods",
+          "period law",
+          "periods",
+          "third law",
+          "Keplers third law",
+          "3",
+          "3rd law",
+          "law 3",
+          "harmonic",
+          "law of harmony",
+          "harmonic law of planetary motion"
+        ]
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-maxwell-laws",
+    "category": "SCIENCE",
+    "prompt": "Name a law represented by one of the four classical Maxwell equations.",
+    "explanation": "The four laws concern electric flux, magnetic flux, electromagnetic induction and the magnetic field from current and changing electric flux. Specify magnetism for magnetic Gauss. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://openstax.org/books/university-physics-volume-2/pages/16-1-maxwells-equations-and-electromagnetic-waves"
+    ],
+    "answers": [
+      {
+        "label": "Gauss's law for electricity",
+        "aliases": [
+          "Gauss's law",
+          "Gauss law",
+          "Gauss",
+          "electric Gauss law",
+          "Gauss law for electric fields"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Faraday's law of induction",
+        "aliases": [
+          "Faraday's law",
+          "Faraday",
+          "law of electromagnetic induction"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Ampere-Maxwell law",
+        "aliases": [
+          "Ampere's law",
+          "Ampere",
+          "Maxwell-Ampere law",
+          "Amperes circuital law"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Gauss's law for magnetism",
+        "aliases": [
+          "magnetic Gauss law",
+          "Gauss law for magnetic fields",
+          "Gauss magnetism",
+          "Gauss law for magnetism",
+          "Gauss magnetic law",
+          "magnetic Gauss"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-si-prefix-names",
+    "category": "SCIENCE",
+    "prompt": "Name an SI decimal prefix recognized after the November 2022 expansion, using its full name.",
+    "explanation": "The 2022-expanded set contains 24 full prefix names from quetta to quecto. Deca and deka are both accepted spellings. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.nist.gov/pml/owm/metric-si-prefixes"
+    ],
+    "answers": [
+      {
+        "label": "kilo",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "milli",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "centi",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "mega",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "giga",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "micro",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "nano",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "tera",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "deci",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "hecto",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "deca",
+        "aliases": [
+          "deka"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "pico",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "peta",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "exa",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "femto",
+        "aliases": [],
+        "tier": 4
+      },
+      {
+        "label": "atto",
+        "aliases": [],
+        "tier": 4
+      },
+      {
+        "label": "zetta",
+        "aliases": [],
+        "tier": 4
+      },
+      {
+        "label": "yotta",
+        "aliases": [],
+        "tier": 4
+      },
+      {
+        "label": "zepto",
+        "aliases": [],
+        "tier": 4
+      },
+      {
+        "label": "yocto",
+        "aliases": [],
+        "tier": 4
+      },
+      {
+        "label": "ronna",
+        "aliases": [],
+        "tier": 4
+      },
+      {
+        "label": "quetta",
+        "aliases": [],
+        "tier": 4
+      },
+      {
+        "label": "ronto",
+        "aliases": [],
+        "tier": 4
+      },
+      {
+        "label": "quecto",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-greek-nuclear-radiations",
+    "category": "SCIENCE",
+    "prompt": "Name a conventional type of nuclear radiation whose name is a Greek letter.",
+    "explanation": "The conventional Greek-letter radiation types are alpha particles, beta particles and gamma rays. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.epa.gov/radiation/radiation-basics"
+    ],
+    "answers": [
+      {
+        "label": "Alpha",
+        "aliases": [
+          "alpha radiation",
+          "alpha particle",
+          "alpha particles",
+          "alpha rays"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Beta",
+        "aliases": [
+          "beta radiation",
+          "beta particle",
+          "beta particles",
+          "beta rays"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Gamma",
+        "aliases": [
+          "gamma radiation",
+          "gamma ray",
+          "gamma rays"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-pangolin-eight-species",
+    "category": "NATURE",
+    "prompt": "Name a pangolin species in the IUCN specialist group’s eight-species 2019 conservation list.",
+    "explanation": "Uses the four Asian and four African species in that dated list. Common alternative names and the listed scientific names are accepted. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://pangolinsg.org/pangolins/"
+    ],
+    "answers": [
+      {
+        "label": "Chinese pangolin",
+        "aliases": [
+          "Chinese",
+          "Manis pentadactyla"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Indian pangolin",
+        "aliases": [
+          "Indian",
+          "Manis crassicaudata"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Sunda pangolin",
+        "aliases": [
+          "Sunda",
+          "Malayan pangolin",
+          "Malayan",
+          "Manis javanica"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Giant pangolin",
+        "aliases": [
+          "giant",
+          "giant ground pangolin",
+          "Smutsia gigantea"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Philippine pangolin",
+        "aliases": [
+          "Philippine",
+          "Palawan pangolin",
+          "Palawan",
+          "Manis culionensis"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "White-bellied pangolin",
+        "aliases": [
+          "white bellied",
+          "white bellied tree pangolin",
+          "tree pangolin",
+          "Phataginus tricuspis"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Black-bellied pangolin",
+        "aliases": [
+          "black bellied",
+          "long tailed pangolin",
+          "long tailed",
+          "Phataginus tetradactyla"
+        ],
+        "tier": 4
+      },
+      {
+        "label": "Temminck's pangolin",
+        "aliases": [
+          "Temminck",
+          "ground pangolin",
+          "Cape pangolin",
+          "Smutsia temminckii"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-tapir-species",
+    "category": "NATURE",
+    "prompt": "Name a tapir species in the IUCN Tapir Specialist Group’s four-species classification.",
+    "explanation": "The specialist group’s classification recognizes Malayan, lowland, Baird’s and mountain tapirs. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://tapirs.org/tapirs/"
+    ],
+    "answers": [
+      {
+        "label": "Malayan tapir",
+        "aliases": [
+          "Malayan",
+          "Malay tapir",
+          "Asian tapir",
+          "Asiatic tapir",
+          "Tapirus indicus"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Lowland tapir",
+        "aliases": [
+          "lowland",
+          "Brazilian tapir",
+          "South American tapir",
+          "Tapirus terrestris"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Baird's tapir",
+        "aliases": [
+          "Baird",
+          "Central American tapir",
+          "Tapirus bairdii"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Mountain tapir",
+        "aliases": [
+          "mountain",
+          "Andean tapir",
+          "woolly tapir",
+          "Tapirus pinchaque"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-alaska-pacific-salmon",
+    "category": "NATURE",
+    "prompt": "Name one of the five Pacific salmon species managed in NOAA’s Alaska salmon fishery plan.",
+    "explanation": "The five commercial Pacific salmon species in this Alaska grouping are accepted, including familiar fishery nicknames. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.fisheries.noaa.gov/alaska/science-data/salmon-research-alaska"
+    ],
+    "answers": [
+      {
+        "label": "Chinook",
+        "aliases": [
+          "Chinook salmon",
+          "king salmon",
+          "king",
+          "Oncorhynchus tshawytscha"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Sockeye",
+        "aliases": [
+          "sockeye salmon",
+          "red salmon",
+          "red",
+          "Oncorhynchus nerka"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Coho",
+        "aliases": [
+          "coho salmon",
+          "silver salmon",
+          "silver",
+          "Oncorhynchus kisutch"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Pink",
+        "aliases": [
+          "pink salmon",
+          "humpback salmon",
+          "humpy",
+          "Oncorhynchus gorbuscha"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Chum",
+        "aliases": [
+          "chum salmon",
+          "dog salmon",
+          "keta salmon",
+          "keta",
+          "Oncorhynchus keta"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-bluebird-species",
+    "category": "NATURE",
+    "prompt": "Name one of the three North American bluebird species in the genus Sialia.",
+    "explanation": "Eastern, western and mountain bluebirds are the three species in Sialia. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.audubon.org/magazine/3-easy-ways-attract-bluebirds-your-home-and-keep-them-around"
+    ],
+    "answers": [
+      {
+        "label": "Eastern bluebird",
+        "aliases": [
+          "eastern",
+          "Sialia sialis"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Western bluebird",
+        "aliases": [
+          "western",
+          "Sialia mexicana"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Mountain bluebird",
+        "aliases": [
+          "mountain",
+          "Sialia currucoides"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-hyena-family-species",
+    "category": "NATURE",
+    "prompt": "Name one of the four living members of the hyena family, Hyaenidae.",
+    "explanation": "Includes the insect-eating aardwolf as well as the three species commonly called hyenas. Hyena and hyaena spellings are accepted. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://animals.sandiegozoo.org/animals/striped-hyena"
+    ],
+    "answers": [
+      {
+        "label": "Spotted hyena",
+        "aliases": [
+          "spotted hyaena",
+          "spotted",
+          "laughing hyena",
+          "Crocuta crocuta"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Striped hyena",
+        "aliases": [
+          "striped hyaena",
+          "striped",
+          "Hyaena hyaena"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Brown hyena",
+        "aliases": [
+          "brown hyaena",
+          "brown",
+          "Parahyaena brunnea",
+          "Hyaena brunnea"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Aardwolf",
+        "aliases": [
+          "Proteles cristata",
+          "Proteles cristatus"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-manatee-species",
+    "category": "NATURE",
+    "prompt": "Name a manatee species in the traditional three-species Trichechus classification.",
+    "explanation": "The US Fish and Wildlife Service recovery plan lists West Indian, Amazonian and West African species. Florida and Antillean manatees count under West Indian. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://ecos.fws.gov/docs/recovery_plan/sfl_msrp/SFL_MSRP_Species.pdf"
+    ],
+    "answers": [
+      {
+        "label": "West Indian manatee",
+        "aliases": [
+          "West Indian",
+          "Caribbean manatee",
+          "Florida manatee",
+          "Antillean manatee",
+          "Trichechus manatus",
+          "Caribbean"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Amazonian manatee",
+        "aliases": [
+          "Amazonian",
+          "Amazon manatee",
+          "Trichechus inunguis"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "West African manatee",
+        "aliases": [
+          "West African",
+          "African manatee",
+          "Trichechus senegalensis",
+          "African"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-mammal-living-groups",
+    "category": "NATURE",
+    "prompt": "Name a major group in the standard three-group classification of living mammals.",
+    "explanation": "Monotremes, marsupials and placental mammals form the standard broad grouping of living mammals by reproduction and evolutionary history. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://openstax.org/books/biology-2e/pages/29-6-mammals"
+    ],
+    "answers": [
+      {
+        "label": "Placental mammals",
+        "aliases": [
+          "placental",
+          "placentals",
+          "eutherians",
+          "Eutheria"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Marsupials",
+        "aliases": [
+          "marsupial",
+          "Metatheria",
+          "metatherians"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Monotremes",
+        "aliases": [
+          "monotreme",
+          "Monotremata",
+          "Prototheria",
+          "egg laying mammals"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-biodiversity-levels",
+    "category": "NATURE",
+    "prompt": "Name one of the three main levels of biodiversity recognized by the Convention on Biological Diversity.",
+    "explanation": "Biodiversity includes variation within species, between species and of ecosystems. These correspond to genetic, species and ecosystem diversity. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.cbd.int/idb/2011/booklet"
+    ],
+    "answers": [
+      {
+        "label": "Species diversity",
+        "aliases": [
+          "species",
+          "species biodiversity"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Genetic diversity",
+        "aliases": [
+          "genetic",
+          "genes",
+          "genetic biodiversity"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Ecosystem diversity",
+        "aliases": [
+          "ecosystem",
+          "ecosystems",
+          "ecological diversity",
+          "ecosystem biodiversity"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-nyc-boroughs",
+    "category": "GEOGRAPHY",
+    "prompt": "Name one of the five boroughs of New York City.",
+    "explanation": "The five borough names and their matching county names are accepted. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://portal.311.nyc.gov/article/?kanumber=KA-02877"
+    ],
+    "answers": [
+      {
+        "label": "Manhattan",
+        "aliases": [
+          "New York County"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Brooklyn",
+        "aliases": [
+          "Kings County"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Queens",
+        "aliases": [
+          "Queens County"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "The Bronx",
+        "aliases": [
+          "Bronx",
+          "Bronx County"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Staten Island",
+        "aliases": [
+          "Richmond County"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-northern-ireland-counties",
+    "category": "GEOGRAPHY",
+    "prompt": "Name one of the six historic counties of Northern Ireland.",
+    "explanation": "The historic county set comprises Antrim, Armagh, Down, Fermanagh, Londonderry and Tyrone. Both Derry and Londonderry are accepted. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.nidirect.gov.uk/sites/default/files/publications/Selected-Extracts-Ireland-1900-1925-Crisis-War-and-Revolution-A-Level-Resource.PDF"
+    ],
+    "answers": [
+      {
+        "label": "Antrim",
+        "aliases": [
+          "County Antrim"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Down",
+        "aliases": [
+          "County Down"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Armagh",
+        "aliases": [
+          "County Armagh"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Londonderry",
+        "aliases": [
+          "Derry",
+          "County Derry",
+          "County Londonderry"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Tyrone",
+        "aliases": [
+          "County Tyrone"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Fermanagh",
+        "aliases": [
+          "County Fermanagh"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-ireland-provinces",
+    "category": "GEOGRAPHY",
+    "prompt": "Name one of Ireland’s four traditional provinces.",
+    "explanation": "The traditional provinces span the whole island of Ireland. Ulster in this grouping comprises nine counties. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.ireland.com/en-gb/help-and-advice/practical-information/irelands-counties-and-provinces/"
+    ],
+    "answers": [
+      {
+        "label": "Ulster",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Munster",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Leinster",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Connacht",
+        "aliases": [
+          "Connaught"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-french-overseas-departments",
+    "category": "GEOGRAPHY",
+    "prompt": "Name a French overseas department in the five-department list after Mayotte joined in 2011.",
+    "explanation": "Mayotte became the fifth overseas department in 2011, joining French Guiana, Réunion, Guadeloupe and Martinique. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.vie-publique.fr/carte/270569-decoupage-administratif-de-la-france-les-departements"
+    ],
+    "answers": [
+      {
+        "label": "French Guiana",
+        "aliases": [
+          "Guyane",
+          "Guiana"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Reunion",
+        "aliases": [
+          "La Reunion"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Guadeloupe",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Martinique",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Mayotte",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-canary-inhabited-islands",
+    "category": "GEOGRAPHY",
+    "prompt": "Name one of the eight inhabited Canary Islands featured by the official tourism board.",
+    "explanation": "The official eight-island tourism grouping includes La Graciosa alongside the seven larger inhabited islands. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.hellocanaryislands.com/"
+    ],
+    "answers": [
+      {
+        "label": "Tenerife",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Gran Canaria",
+        "aliases": [
+          "Grand Canary",
+          "Grand Canaria"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Lanzarote",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Fuerteventura",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "La Palma",
+        "aliases": [
+          "Palma"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "La Gomera",
+        "aliases": [
+          "Gomera"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "El Hierro",
+        "aliases": [
+          "Hierro"
+        ],
+        "tier": 4
+      },
+      {
+        "label": "La Graciosa",
+        "aliases": [
+          "Graciosa"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-azores-islands",
+    "category": "GEOGRAPHY",
+    "prompt": "Name one of the nine islands of the Azores.",
+    "explanation": "Accepts the nine principal islands of the Portuguese archipelago. Accent-free names and common English Saint-name forms are accepted. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://mi.visitazores.com/en/content/things-to-do"
+    ],
+    "answers": [
+      {
+        "label": "Sao Miguel",
+        "aliases": [
+          "Saint Michael",
+          "Sao Miguel Island",
+          "San Miguel"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Terceira",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Pico",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Faial",
+        "aliases": [
+          "Fayal"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Sao Jorge",
+        "aliases": [
+          "Saint George"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Flores",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Santa Maria",
+        "aliases": [
+          "Saint Mary"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Graciosa",
+        "aliases": [],
+        "tier": 4
+      },
+      {
+        "label": "Corvo",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-balearic-main-islands",
+    "category": "GEOGRAPHY",
+    "prompt": "Name one of the four main inhabited Balearic Islands promoted by the regional tourism board.",
+    "explanation": "The tourism board promotes the four main inhabited islands, Mallorca, Menorca, Ibiza and Formentera. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.illesbalears.travel/en/illes-balears"
+    ],
+    "answers": [
+      {
+        "label": "Mallorca",
+        "aliases": [
+          "Majorca"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Ibiza",
+        "aliases": [
+          "Eivissa"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Menorca",
+        "aliases": [
+          "Minorca"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Formentera",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-scotch-regions",
+    "category": "GEOGRAPHY",
+    "prompt": "Name a Scotch whisky region in the Scotch Whisky Association’s five-region grouping.",
+    "explanation": "The association’s five regions are Highland, Lowland, Speyside, Islay and Campbeltown. Highland and Lowland plural forms are accepted. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.scotch-whisky.org.uk/discover-scotch/enjoying-scotch/scotch-whisky-regions/"
+    ],
+    "answers": [
+      {
+        "label": "Highland",
+        "aliases": [
+          "Highlands",
+          "the Highlands"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Speyside",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Islay",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Lowland",
+        "aliases": [
+          "Lowlands",
+          "the Lowlands"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Campbeltown",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-crown-dependencies",
+    "category": "GEOGRAPHY",
+    "prompt": "Name one of the three British Crown Dependencies.",
+    "explanation": "The three Crown Dependencies are the bailiwicks of Jersey and Guernsey and the Isle of Man. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man"
+    ],
+    "answers": [
+      {
+        "label": "Jersey",
+        "aliases": [
+          "Bailiwick of Jersey"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Isle of Man",
+        "aliases": [
+          "Mann",
+          "Man"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Guernsey",
+        "aliases": [
+          "Bailiwick of Guernsey"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-niagara-waterfalls",
+    "category": "GEOGRAPHY",
+    "prompt": "Name one of the three waterfalls that together make up Niagara Falls.",
+    "explanation": "The three named falls are Horseshoe, American and Bridal Veil. Canadian Falls is an accepted name for Horseshoe Falls. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.niagaraparks.com/attractions/hornblower-niagara-cruises/"
+    ],
+    "answers": [
+      {
+        "label": "Horseshoe Falls",
+        "aliases": [
+          "Horseshoe",
+          "Canadian Falls"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "American Falls",
+        "aliases": [
+          "American"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Bridal Veil Falls",
+        "aliases": [
+          "Bridal Veil"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-washington-original-cabinet",
+    "category": "HISTORY",
+    "prompt": "Name one of George Washington’s four original cabinet members.",
+    "explanation": "The original cabinet consisted of the secretaries of State, Treasury and War and the attorney general. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.mountvernon.org/library/digitalhistory/digital-encyclopedia/article/cabinet-members"
+    ],
+    "answers": [
+      {
+        "label": "Thomas Jefferson",
+        "aliases": [
+          "Jefferson"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Alexander Hamilton",
+        "aliases": [
+          "Hamilton"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Henry Knox",
+        "aliases": [
+          "Knox"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Edmund Randolph",
+        "aliases": [
+          "Randolph"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-declaration-named-rights",
+    "category": "HISTORY",
+    "prompt": "Name one of the three unalienable rights explicitly named in the US Declaration of Independence.",
+    "explanation": "The Declaration explicitly names life, liberty and the pursuit of happiness among its unalienable rights. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.archives.gov/founding-docs/declaration-transcript"
+    ],
+    "answers": [
+      {
+        "label": "Life",
+        "aliases": [
+          "right to life"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Liberty",
+        "aliases": [
+          "freedom",
+          "right to liberty"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Pursuit of happiness",
+        "aliases": [
+          "the pursuit of happiness",
+          "happiness",
+          "right to pursue happiness"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-roosevelt-four-freedoms",
+    "category": "HISTORY",
+    "prompt": "Name one of the Four Freedoms in Franklin D. Roosevelt’s January 1941 speech.",
+    "explanation": "Roosevelt’s four freedoms concern expression, worship, material want and fear. Short forms of each freedom are accepted. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.fdrlibrary.org/ff-curriculum-hub"
+    ],
+    "answers": [
+      {
+        "label": "Freedom of speech",
+        "aliases": [
+          "speech",
+          "expression",
+          "freedom of expression",
+          "freedom of speech and expression"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Freedom of worship",
+        "aliases": [
+          "worship",
+          "religion",
+          "freedom of religion",
+          "religious freedom"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Freedom from fear",
+        "aliases": [
+          "fear"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Freedom from want",
+        "aliases": [
+          "want"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-paris-treaty-us-signers",
+    "category": "HISTORY",
+    "prompt": "Name an American who signed the 1783 Treaty of Paris ending the Revolutionary War.",
+    "explanation": "Three American plenipotentiaries signed the definitive treaty on 3 September 1783. David Hartley represented Great Britain. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.archives.gov/milestone-documents/treaty-of-paris"
+    ],
+    "answers": [
+      {
+        "label": "Benjamin Franklin",
+        "aliases": [
+          "Franklin",
+          "Ben Franklin",
+          "B Franklin"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "John Adams",
+        "aliases": [
+          "Adams"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "John Jay",
+        "aliases": [
+          "Jay"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-normandy-landing-beaches",
+    "category": "HISTORY",
+    "prompt": "Name one of the five Allied landing beaches on D-Day, 6 June 1944.",
+    "explanation": "The five beach code names used in the Normandy landings were Utah, Omaha, Gold, Juno and Sword. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://memorials.iwm.org.uk/memorial/113359"
+    ],
+    "answers": [
+      {
+        "label": "Omaha",
+        "aliases": [
+          "Omaha Beach"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Utah",
+        "aliases": [
+          "Utah Beach"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Juno",
+        "aliases": [
+          "Juno Beach"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Sword",
+        "aliases": [
+          "Sword Beach"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Gold",
+        "aliases": [
+          "Gold Beach"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-french-estates-general",
+    "category": "HISTORY",
+    "prompt": "Name one of the three estates represented in France’s Estates General of 1789.",
+    "explanation": "The First Estate represented the clergy, the Second the nobility and the Third the commoners. Estate numbers or group names are accepted. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://en.chateauversailles.fr/discover/history/key-dates/summoning-estates-general-1789"
+    ],
+    "answers": [
+      {
+        "label": "Clergy",
+        "aliases": [
+          "First Estate",
+          "1st Estate",
+          "church"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Nobility",
+        "aliases": [
+          "Second Estate",
+          "2nd Estate",
+          "nobles",
+          "aristocracy"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Commoners",
+        "aliases": [
+          "Third Estate",
+          "3rd Estate",
+          "commons",
+          "the people"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-classical-tragic-playwrights",
+    "category": "HISTORY",
+    "prompt": "Name one of the three major fifth-century BC Athenian tragedians whose complete plays survive.",
+    "explanation": "Surviving complete classical Athenian tragedies are associated with Aeschylus, Sophocles and Euripides. Alternate Greek transliterations are accepted. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.metmuseum.org/essays/theater-in-ancient-greece",
+      "https://www.metmuseum.org/-/media/files/learn/for-educators/publications-for-educators/greek.pdf"
+    ],
+    "answers": [
+      {
+        "label": "Sophocles",
+        "aliases": [
+          "Sophokles"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Euripides",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Aeschylus",
+        "aliases": [
+          "Aeschylos",
+          "Aiskhylos"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-sons-of-horus",
+    "category": "HISTORY",
+    "prompt": "Name one of the Four Sons of Horus associated with ancient Egyptian canopic protection.",
+    "explanation": "The four funerary guardians are Imsety, Hapy, Duamutef and Qebehsenuef. Common transliteration variants are accepted. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.britishmuseum.org/sites/default/files/2023-12/The_British_Museum_Puzzle_Book_Worksheet.pdf"
+    ],
+    "answers": [
+      {
+        "label": "Hapy",
+        "aliases": [
+          "Hapi"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Imsety",
+        "aliases": [
+          "Imseti",
+          "Amset",
+          "Mestha"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Duamutef",
+        "aliases": [
+          "Tuamutef"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Qebehsenuef",
+        "aliases": [
+          "Qebehsenuf",
+          "Kebehsenuef",
+          "Kebehsenuf",
+          "Kebhsenuf"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-panhellenic-crown-games",
+    "category": "HISTORY",
+    "prompt": "Name one of the four ancient Greek Panhellenic crown games.",
+    "explanation": "The traditional four-game circuit comprised the Olympic, Pythian, Isthmian and Nemean festivals. Festival sites are also accepted. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://stillmed.olympics.com/media/Document%20Library/Museum/Visit/TOM-Schools/Teaching-Resources/Information-Kit-on-the-Olympic-Games/Information-Kit-on-the-Olympic-Games-EN.pdf"
+    ],
+    "answers": [
+      {
+        "label": "Olympic Games",
+        "aliases": [
+          "Olympics",
+          "Olympic",
+          "Olympia"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Pythian Games",
+        "aliases": [
+          "Pythian",
+          "Delphi"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Nemean Games",
+        "aliases": [
+          "Nemean",
+          "Nemea"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Isthmian Games",
+        "aliases": [
+          "Isthmian",
+          "Isthmia",
+          "Isthmus of Corinth",
+          "Corinth"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-original-roman-tetrarchy",
+    "category": "HISTORY",
+    "prompt": "Name one of the four rulers in the original Roman Tetrarchy established in AD 293.",
+    "explanation": "Diocletian and Maximian were the Augusti. Galerius and Constantius were their Caesars in this first tetrarchic arrangement. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.metmuseum.org/essays/the-roman-empire-27-b-c-393-a-d"
+    ],
+    "answers": [
+      {
+        "label": "Diocletian",
+        "aliases": [
+          "Gaius Aurelius Valerius Diocletianus"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Maximian",
+        "aliases": [
+          "Maximianus",
+          "Marcus Aurelius Valerius Maximianus",
+          "Maximian Herculius"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Constantius I",
+        "aliases": [
+          "Constantius",
+          "Constantius Chlorus",
+          "Flavius Valerius Constantius"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Galerius",
+        "aliases": [
+          "Gaius Galerius Valerius Maximianus"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-midsummer-four-lovers",
+    "category": "LITERATURE",
+    "prompt": "Name one of the four young Athenian lovers in Shakespeare’s A Midsummer Night’s Dream.",
+    "explanation": "The central young lovers are Hermia, Helena, Lysander and Demetrius. Each becomes entangled in the forest’s romantic confusion. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.folger.edu/explore/shakespeares-works/a-midsummer-nights-dream/read/4/1/"
+    ],
+    "answers": [
+      {
+        "label": "Hermia",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Helena",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Lysander",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "Demetrius",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-lear-daughters",
+    "category": "LITERATURE",
+    "prompt": "Name one of King Lear’s three daughters in Shakespeare’s play.",
+    "explanation": "Lear’s three daughters are Goneril, Regan and Cordelia. Goneril and Regan are older than Cordelia. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.folger.edu/explore/shakespeares-works/king-lear/read/characterList/"
+    ],
+    "answers": [
+      {
+        "label": "Cordelia",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Goneril",
+        "aliases": [
+          "Gonerill"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Regan",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-portia-casket-metals",
+    "category": "LITERATURE",
+    "prompt": "Name a metal used for one of Portia’s three caskets in The Merchant of Venice.",
+    "explanation": "Portia’s suitors face a choice among three caskets made of gold, silver and lead. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.folger.edu/explore/shakespeares-works/the-merchant-of-venice/about-shakespeares-the-merchant-of-venice/"
+    ],
+    "answers": [
+      {
+        "label": "Gold",
+        "aliases": [
+          "golden",
+          "gold casket"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Silver",
+        "aliases": [
+          "silver casket"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Lead",
+        "aliases": [
+          "leaden",
+          "lead casket"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-dashwood-sisters",
+    "category": "LITERATURE",
+    "prompt": "Name one of the three Dashwood sisters in Jane Austen’s Sense and Sensibility.",
+    "explanation": "Elinor and Marianne are the central sisters. Their younger sister Margaret is also an accepted answer. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.gutenberg.org/files/161/161-h/161-h.htm"
+    ],
+    "answers": [
+      {
+        "label": "Elinor Dashwood",
+        "aliases": [
+          "Elinor"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Marianne Dashwood",
+        "aliases": [
+          "Marianne"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Margaret Dashwood",
+        "aliases": [
+          "Margaret"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-borrowers-clock-family",
+    "category": "LITERATURE",
+    "prompt": "Name a member of the three-person Clock family at the center of Mary Norton’s The Borrowers.",
+    "explanation": "The central family consists of Pod, Homily and their daughter Arrietty Clock. A first name is sufficient. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.hachette.co.uk/titles/mary-norton-6/the-borrowers-2-in-1/9781444006537/"
+    ],
+    "answers": [
+      {
+        "label": "Arrietty Clock",
+        "aliases": [
+          "Arrietty",
+          "Arietty"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Pod Clock",
+        "aliases": [
+          "Pod"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Homily Clock",
+        "aliases": [
+          "Homily"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-famous-five-members",
+    "category": "LITERATURE",
+    "prompt": "Name one of Enid Blyton’s Famous Five, including their dog.",
+    "explanation": "The Famous Five are Julian, Dick, Anne, George and Timmy the dog. George’s full name Georgina is accepted. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.enidblyton.co.uk/landing-page/enid-blyton/enid-blyton-books/enid-blyton-the-famous-five/"
+    ],
+    "answers": [
+      {
+        "label": "George",
+        "aliases": [
+          "Georgina",
+          "George Kirrin",
+          "Georgina Kirrin"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Timmy",
+        "aliases": [
+          "Timothy",
+          "Timmy the dog"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Julian",
+        "aliases": [
+          "Julian Kirrin"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Dick",
+        "aliases": [
+          "Dick Kirrin"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Anne",
+        "aliases": [
+          "Anne Kirrin"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-railway-children-siblings",
+    "category": "LITERATURE",
+    "prompt": "Name one of the three siblings in E. Nesbit’s novel The Railway Children.",
+    "explanation": "The three children are Roberta, Peter and Phyllis. Roberta is often called Bobbie, and Phyllis is also called Phil. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.gutenberg.org/files/1874/1874-h/1874-h.htm"
+    ],
+    "answers": [
+      {
+        "label": "Roberta",
+        "aliases": [
+          "Bobbie",
+          "Bobby"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Peter",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Phyllis",
+        "aliases": [
+          "Phil"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-harry-potter-seven-novels",
+    "category": "LITERATURE",
+    "prompt": "Name one of the seven original Harry Potter novels by J. K. Rowling.",
+    "explanation": "The scope is the seven-novel sequence published from 1997 to 2007. Titles with or without the Harry Potter prefix are accepted, including the US first-book title. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.harrypotter.com/discover/books"
+    ],
+    "answers": [
+      {
+        "label": "Philosopher’s Stone",
+        "aliases": [
+          "Harry Potter and the Philosopher’s Stone",
+          "The Philosopher’s Stone",
+          "Sorcerer’s Stone",
+          "The Sorcerer’s Stone",
+          "Harry Potter and the Sorcerer’s Stone"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Chamber of Secrets",
+        "aliases": [
+          "The Chamber of Secrets",
+          "Harry Potter and the Chamber of Secrets"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Prisoner of Azkaban",
+        "aliases": [
+          "The Prisoner of Azkaban",
+          "Harry Potter and the Prisoner of Azkaban"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Goblet of Fire",
+        "aliases": [
+          "The Goblet of Fire",
+          "Harry Potter and the Goblet of Fire"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Deathly Hallows",
+        "aliases": [
+          "The Deathly Hallows",
+          "Harry Potter and the Deathly Hallows"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Order of the Phoenix",
+        "aliases": [
+          "The Order of the Phoenix",
+          "Harry Potter and the Order of the Phoenix"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Half-Blood Prince",
+        "aliases": [
+          "The Half-Blood Prince",
+          "Harry Potter and the Half-Blood Prince"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-twilight-original-quartet",
+    "category": "LITERATURE",
+    "prompt": "Name a novel in Stephenie Meyer’s original four-book Twilight sequence, published in 2005–2008.",
+    "explanation": "The original sequence consists of Twilight, New Moon, Eclipse and Breaking Dawn. Later retellings and companion novellas fall outside this original quartet. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://stepheniemeyer.com/archive/"
+    ],
+    "answers": [
+      {
+        "label": "Twilight",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "New Moon",
+        "aliases": [
+          "Twilight New Moon"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Breaking Dawn",
+        "aliases": [
+          "Twilight Breaking Dawn"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Eclipse",
+        "aliases": [
+          "Twilight Eclipse"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-percy-jackson-original-arc",
+    "category": "LITERATURE",
+    "prompt": "Name a novel in the original 2005–2009 Percy Jackson and the Olympians five-book story arc.",
+    "explanation": "This scope ends with The Last Olympian, which completes the original prophecy story. The series later continued with additional novels. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://rickriordan.com/series/percy-jackson-and-the-olympians/"
+    ],
+    "answers": [
+      {
+        "label": "The Lightning Thief",
+        "aliases": [
+          "Lightning Thief",
+          "Percy Jackson and the Lightning Thief"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "The Sea of Monsters",
+        "aliases": [
+          "Sea of Monsters",
+          "Percy Jackson and the Sea of Monsters"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "The Titan’s Curse",
+        "aliases": [
+          "Titans Curse",
+          "Percy Jackson and the Titans Curse"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "The Battle of the Labyrinth",
+        "aliases": [
+          "Battle of the Labyrinth",
+          "Percy Jackson and the Battle of the Labyrinth"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "The Last Olympian",
+        "aliases": [
+          "Last Olympian",
+          "Percy Jackson and the Last Olympian"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-monkees-original-four",
+    "category": "MUSIC",
+    "prompt": "Name one of the original four members of the Monkees.",
+    "explanation": "The quartet assembled for the television series consisted of Micky Dolenz, Davy Jones, Michael Nesmith and Peter Tork. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.monkees.com/article/the-monkees-announce-farewell-tour-dates"
+    ],
+    "answers": [
+      {
+        "label": "Davy Jones",
+        "aliases": [
+          "David Jones",
+          "Jones"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Micky Dolenz",
+        "aliases": [
+          "Mickey Dolenz",
+          "Dolenz",
+          "Micky"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Michael Nesmith",
+        "aliases": [
+          "Mike Nesmith",
+          "Nesmith"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Peter Tork",
+        "aliases": [
+          "Tork"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-bee-gees-gibb-brothers",
+    "category": "MUSIC",
+    "prompt": "Name one of the three Gibb brothers in the Bee Gees.",
+    "explanation": "Barry, Robin and Maurice Gibb formed the group’s familiar sibling trio. A first name is enough to identify a brother. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://rockhall.com/inductees/bee-gees./"
+    ],
+    "answers": [
+      {
+        "label": "Barry Gibb",
+        "aliases": [
+          "Barry"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Robin Gibb",
+        "aliases": [
+          "Robin"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Maurice Gibb",
+        "aliases": [
+          "Maurice"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-kiss-original-lineup",
+    "category": "MUSIC",
+    "prompt": "Name one of the four original members of the rock band KISS.",
+    "explanation": "The original lineup was Paul Stanley, Gene Simmons, Ace Frehley and Peter Criss. Their stage personas are accepted aliases. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://rockhall.com/inductees/kiss/",
+      "https://rockhall.com/wp-content/uploads/2024/03/KISS_2014.pdf"
+    ],
+    "answers": [
+      {
+        "label": "Gene Simmons",
+        "aliases": [
+          "Simmons",
+          "The Demon",
+          "Demon"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Paul Stanley",
+        "aliases": [
+          "Stanley",
+          "Starchild",
+          "The Starchild"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Ace Frehley",
+        "aliases": [
+          "Frehley",
+          "Ace",
+          "Spaceman",
+          "The Spaceman"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Peter Criss",
+        "aliases": [
+          "Criss",
+          "Catman",
+          "The Catman",
+          "The Cat",
+          "Cat"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-rush-classic-trio",
+    "category": "MUSIC",
+    "prompt": "Name a member of Rush’s long-running trio from 1974 through its final tour in 2015.",
+    "explanation": "Geddy Lee, Alex Lifeson and Neil Peart formed this lineup. Peart joined after the band’s first album. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://rockhall.com/inductees/rush/"
+    ],
+    "answers": [
+      {
+        "label": "Geddy Lee",
+        "aliases": [
+          "Geddy",
+          "Lee"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Neil Peart",
+        "aliases": [
+          "Peart",
+          "Neil"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Alex Lifeson",
+        "aliases": [
+          "Lifeson",
+          "Alex"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-police-classic-trio",
+    "category": "MUSIC",
+    "prompt": "Name a member of the Police’s classic three-person recording lineup.",
+    "explanation": "The trio recognized by the Rock and Roll Hall of Fame consists of Sting, Andy Summers and Stewart Copeland. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://rockhall.com/inductees/police/"
+    ],
+    "answers": [
+      {
+        "label": "Sting",
+        "aliases": [
+          "Gordon Sumner",
+          "Gordon Matthew Thomas Sumner"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Stewart Copeland",
+        "aliases": [
+          "Copeland",
+          "Stewart"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Andy Summers",
+        "aliases": [
+          "Summers",
+          "Andy"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-three-tenors",
+    "category": "MUSIC",
+    "prompt": "Name one of the Three Tenors who performed together in Rome in 1990.",
+    "explanation": "The Three Tenors were Luciano Pavarotti, Plácido Domingo and José Carreras. Zubin Mehta conducted the concert. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.deccaclassics.com/en/artists/josecarreras/news/the-three-tenors-30th-anniversary-edition-259267"
+    ],
+    "answers": [
+      {
+        "label": "Luciano Pavarotti",
+        "aliases": [
+          "Pavarotti",
+          "Luciano"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Plácido Domingo",
+        "aliases": [
+          "Domingo",
+          "Placido"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "José Carreras",
+        "aliases": [
+          "Carreras",
+          "Jose"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-tertian-triad-qualities",
+    "category": "MUSIC",
+    "prompt": "Name one of the four standard triad qualities in Western tonal music.",
+    "explanation": "Stacking two major or minor thirds produces four standard qualities. Major, minor, diminished and augmented are accepted. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://musictheory.pugetsound.edu/mt21c/TriadsIntroduction.html"
+    ],
+    "answers": [
+      {
+        "label": "Major",
+        "aliases": [
+          "major triad",
+          "major chord"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Minor",
+        "aliases": [
+          "minor triad",
+          "minor chord"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Diminished",
+        "aliases": [
+          "diminished triad",
+          "diminished chord",
+          "dim"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Augmented",
+        "aliases": [
+          "augmented triad",
+          "augmented chord",
+          "aug"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-minor-scale-forms",
+    "category": "MUSIC",
+    "prompt": "Name one of the three conventional minor-scale forms taught in Western tonal theory.",
+    "explanation": "The conventional forms are natural, harmonic and melodic minor. Ascending and descending melodic minor belong to the same named form. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://musictheory.pugetsound.edu/mt21c/MinorScales.html"
+    ],
+    "answers": [
+      {
+        "label": "Natural minor",
+        "aliases": [
+          "natural",
+          "natural minor scale",
+          "Aeolian",
+          "Aeolian mode"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Harmonic minor",
+        "aliases": [
+          "harmonic",
+          "harmonic minor scale"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Melodic minor",
+        "aliases": [
+          "melodic",
+          "melodic minor scale",
+          "ascending melodic minor",
+          "descending melodic minor"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-lady-unicorn-tapestries",
+    "category": "ARTS",
+    "prompt": "Name a tapestry in the six-panel Lady and the Unicorn series at the Musée de Cluny.",
+    "explanation": "Five panels represent the senses. The sixth bears the inscription À mon seul désir, also translated as To My Only Desire. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.musee-moyenage.fr/media/documents-pdf/fiches-de-salles/fichesalle13damelicorne-histoireiconographie-ang.pdf",
+      "https://www.dhm.de/assets/DHM/Download/Publikationen/Assesment_of_Significance_Publikation_Neu.pdf"
+    ],
+    "answers": [
+      {
+        "label": "Sight",
+        "aliases": [
+          "vision",
+          "La Vue"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Hearing",
+        "aliases": [
+          "L’ouïe"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Taste",
+        "aliases": [
+          "Le Goût"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Smell",
+        "aliases": [
+          "L’odorat"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Touch",
+        "aliases": [
+          "Le Toucher"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "À mon seul désir",
+        "aliases": [
+          "To My Only Desire",
+          "To My Sole Desire",
+          "My Only Desire",
+          "To My One Desire"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-cole-voyage-of-life",
+    "category": "ARTS",
+    "prompt": "Name one of the four stages in Thomas Cole’s painting series The Voyage of Life.",
+    "explanation": "The four paintings follow one imaginary traveler through Childhood, Youth, Manhood and Old Age. Stage names or full painting titles are accepted. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.nga.gov/stories/sound-thoughts-art/daniel-ho-and-thomas-coles-voyage-life-series"
+    ],
+    "answers": [
+      {
+        "label": "Childhood",
+        "aliases": [
+          "The Voyage of Life Childhood"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Youth",
+        "aliases": [
+          "The Voyage of Life Youth"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Old Age",
+        "aliases": [
+          "The Voyage of Life Old Age"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Manhood",
+        "aliases": [
+          "The Voyage of Life Manhood"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-cole-course-of-empire",
+    "category": "ARTS",
+    "prompt": "Name a painting in Thomas Cole’s five-part series The Course of Empire.",
+    "explanation": "The five canvases trace the rise and fall of an imagined civilization. The Arcadian or Pastoral State has two common shortened names. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://emuseum.nyhistory.org/collections/92582/collection-highlights/objects"
+    ],
+    "answers": [
+      {
+        "label": "Destruction",
+        "aliases": [
+          "The Course of Empire Destruction"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Desolation",
+        "aliases": [
+          "The Course of Empire Desolation"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "The Savage State",
+        "aliases": [
+          "Savage State",
+          "The Course of Empire The Savage State"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "The Consummation of Empire",
+        "aliases": [
+          "Consummation of Empire",
+          "Consummation",
+          "The Course of Empire The Consummation of Empire"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "The Arcadian or Pastoral State",
+        "aliases": [
+          "The Arcadian State",
+          "Arcadian State",
+          "The Pastoral State",
+          "Pastoral State",
+          "Arcadian or Pastoral State",
+          "The Course of Empire The Arcadian or Pastoral State"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-vitruvian-architecture-principles",
+    "category": "ARTS",
+    "prompt": "Name one of Vitruvius’s three famous requirements for architecture, in English or Latin.",
+    "explanation": "In Book I, chapter 3, Vitruvius requires firmitas, utilitas and venustas. English translations commonly use strength, utility and beauty. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://penelope.uchicago.edu/Thayer/L/Roman/Texts/Vitruvius/1%2A.html"
+    ],
+    "answers": [
+      {
+        "label": "Beauty",
+        "aliases": [
+          "venustas",
+          "delight",
+          "grace"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Strength",
+        "aliases": [
+          "firmitas",
+          "firmness",
+          "durability",
+          "stability",
+          "solidity"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Utility",
+        "aliases": [
+          "utilitas",
+          "usefulness",
+          "function",
+          "functionality",
+          "commodity",
+          "convenience"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-acropolis-classical-monuments",
+    "category": "ARTS",
+    "prompt": "Name one of the four principal fifth-century BC Acropolis monuments listed by UNESCO.",
+    "explanation": "UNESCO identifies the Parthenon, Erechtheion, Propylaia and Temple of Athena Nike in its description of this classical building program. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://whc.unesco.org/en/list/404/"
+    ],
+    "answers": [
+      {
+        "label": "Parthenon",
+        "aliases": [
+          "The Parthenon"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Erechtheion",
+        "aliases": [
+          "Erechtheum",
+          "Erechtheon",
+          "The Erechtheion"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Temple of Athena Nike",
+        "aliases": [
+          "Athena Nike",
+          "Athena Nike Temple"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Propylaia",
+        "aliases": [
+          "Propylaea",
+          "Propylaeum",
+          "The Propylaia",
+          "The Propylaea"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-navona-fountains",
+    "category": "ARTS",
+    "prompt": "Name one of the three monumental fountains in Rome’s Piazza Navona.",
+    "explanation": "The square’s fountains depict the Four Rivers, Neptune and the Moor. English and Italian names are accepted. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://turismoroma.it/en/places/navona-square"
+    ],
+    "answers": [
+      {
+        "label": "Fountain of the Four Rivers",
+        "tier": 1,
+        "aliases": [
+          "Four Rivers",
+          "Four Rivers Fountain",
+          "Fontana dei Quattro Fiumi",
+          "Fontana de Quattro Fiumi"
+        ]
+      },
+      {
+        "label": "Fountain of Neptune",
+        "tier": 2,
+        "aliases": [
+          "Neptune",
+          "Neptune Fountain",
+          "Fontana del Nettuno",
+          "Calderari Fountain",
+          "Fontana dei Calderari",
+          "Fontana de Calderari"
+        ]
+      },
+      {
+        "label": "Moor Fountain",
+        "tier": 4,
+        "aliases": [
+          "Fountain of the Moor",
+          "The Moor",
+          "Moor",
+          "Fontana del Moro"
+        ]
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-rome-major-basilicas",
+    "category": "ARTS",
+    "prompt": "Name one of Rome’s four major papal basilicas, including the one in Vatican City.",
+    "explanation": "The group comprises Saint Peter’s, Saint John Lateran, Saint Mary Major and Saint Paul Outside the Walls. Common English and Italian titles are accepted. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://basilicas.vatican.va/"
+    ],
+    "answers": [
+      {
+        "label": "Saint Peter’s Basilica",
+        "aliases": [
+          "St Peter’s Basilica",
+          "Saint Peter",
+          "St Peter",
+          "St Peters",
+          "San Pietro",
+          "Basilica di San Pietro"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Saint John Lateran",
+        "aliases": [
+          "St John Lateran",
+          "Saint John Lateran Basilica",
+          "Archbasilica of Saint John Lateran",
+          "San Giovanni in Laterano",
+          "Lateran Basilica",
+          "Basilica of the Most Holy Saviour at the Lateran"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Saint Mary Major",
+        "aliases": [
+          "St Mary Major",
+          "Santa Maria Maggiore",
+          "Basilica of Saint Mary Major"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Saint Paul Outside the Walls",
+        "aliases": [
+          "St Paul Outside the Walls",
+          "Saint Paul’s Outside the Walls",
+          "San Paolo fuori le Mura",
+          "Saint Paul on the Ostian Way"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-hogarth-four-times-day",
+    "category": "ARTS",
+    "prompt": "Name one of the four titles in William Hogarth’s series The Four Times of the Day.",
+    "explanation": "The series depicts Morning, Noon, Evening and Night in different London settings. A time-of-day title is sufficient. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.csuchico.edu/turner/exhibitions/social-commentary/hogarth.shtml"
+    ],
+    "answers": [
+      {
+        "label": "Morning",
+        "aliases": [
+          "The Four Times of the Day Morning"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Night",
+        "aliases": [
+          "The Four Times of the Day Night"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Evening",
+        "aliases": [
+          "The Four Times of the Day Evening"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Noon",
+        "aliases": [
+          "The Four Times of the Day Noon",
+          "Midday"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-grand-slam-court-surfaces",
+    "category": "SPORTS",
+    "prompt": "Name a court-surface category used at the four tennis Grand Slams in 2024.",
+    "explanation": "Wimbledon uses grass, Roland Garros uses clay, and the Australian and US Opens use hard courts. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.itftennis.com/en/about-us/organisation/tennis-glossary/"
+    ],
+    "answers": [
+      {
+        "label": "Grass",
+        "aliases": [
+          "grass court",
+          "grass courts"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Clay",
+        "aliases": [
+          "clay court",
+          "clay courts",
+          "red clay"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Hard court",
+        "aliases": [
+          "hard",
+          "hard courts"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-volleyball-rotation-zones",
+    "category": "SPORTS",
+    "prompt": "Name one of the six front-or-back court positions in indoor volleyball’s rotation.",
+    "explanation": "The six rotational court zones have left, middle or right and front or back names. Each zone’s official position number is also accepted. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.fivb.com/volleyball/the-game/"
+    ],
+    "answers": [
+      {
+        "label": "Left front",
+        "aliases": [
+          "front left",
+          "left forward",
+          "position 4",
+          "4",
+          "four"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Right front",
+        "aliases": [
+          "front right",
+          "right forward",
+          "position 2",
+          "2",
+          "two"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Middle front",
+        "aliases": [
+          "front middle",
+          "center front",
+          "centre front",
+          "front center",
+          "front centre",
+          "position 3",
+          "3",
+          "three"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Right back",
+        "aliases": [
+          "back right",
+          "right rear",
+          "position 1",
+          "1",
+          "one"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Left back",
+        "aliases": [
+          "back left",
+          "left rear",
+          "position 5",
+          "5",
+          "five"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Middle back",
+        "aliases": [
+          "back middle",
+          "center back",
+          "centre back",
+          "back center",
+          "back centre",
+          "position 6",
+          "6",
+          "six"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-paris-pentathlon-disciplines",
+    "category": "SPORTS",
+    "prompt": "Name an individual discipline of modern pentathlon at Paris 2024, counting Laser Run as two disciplines.",
+    "explanation": "Paris 2024 used riding, fencing, swimming, running and shooting. Laser Run combined the final two. This historical format included horse riding. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.uipmworld.org/sites/default/files/2024_uipm_media_guide_paris_2024_olympic_edition.pdf",
+      "https://www.uipmworld.org/node/193651"
+    ],
+    "answers": [
+      {
+        "label": "Swimming",
+        "aliases": [
+          "swim",
+          "freestyle swimming",
+          "200m freestyle",
+          "200 metre freestyle",
+          "200m swimming",
+          "200 meters freestyle",
+          "200 metres freestyle"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Running",
+        "aliases": [
+          "run",
+          "cross country running",
+          "cross-country run"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Fencing",
+        "aliases": [
+          "fence",
+          "epee",
+          "épée fencing"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Horse riding",
+        "aliases": [
+          "riding",
+          "equestrian",
+          "show jumping",
+          "horse jumping"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Shooting",
+        "aliases": [
+          "shoot",
+          "pistol shooting",
+          "laser shooting",
+          "laser pistol shooting"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-mens-golf-majors",
+    "category": "SPORTS",
+    "prompt": "Name one of the four men’s major golf championships held in 2024.",
+    "explanation": "The four majors were the Masters, PGA Championship, U.S. Open and Open Championship. British Open is a common name for the Open Championship. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.pga.com/story/pga-championship-winners"
+    ],
+    "answers": [
+      {
+        "label": "Masters Tournament",
+        "aliases": [
+          "Masters",
+          "The Masters"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "U.S. Open",
+        "aliases": [
+          "US Open Championship",
+          "United States Open",
+          "United States Open Championship"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "The Open Championship",
+        "aliases": [
+          "Open Championship",
+          "The Open",
+          "British Open",
+          "British Open Championship"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "PGA Championship",
+        "aliases": [
+          "US PGA",
+          "US PGA Championship"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-womens-golf-majors",
+    "category": "SPORTS",
+    "prompt": "Name one of the five LPGA major championships on the 2024 schedule.",
+    "explanation": "The 2024 majors were the Chevron, U.S. Women’s Open, KPMG Women’s PGA, Amundi Evian and AIG Women’s Open championships. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://media.lpga.com/docs/librariesprovider3/2024-evian/amundi-evian-championship-final-round-recap-from-kpmg.pdf"
+    ],
+    "answers": [
+      {
+        "label": "U.S. Women’s Open",
+        "aliases": [
+          "United States Womens Open",
+          "US Womens Open Championship"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "AIG Women’s Open",
+        "aliases": [
+          "Womens Open",
+          "Womens British Open",
+          "British Womens Open",
+          "AIG Womens Open Championship"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "KPMG Women’s PGA Championship",
+        "aliases": [
+          "Womens PGA Championship",
+          "Womens PGA",
+          "KPMG Womens PGA"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "The Chevron Championship",
+        "aliases": [
+          "Chevron Championship",
+          "Chevron"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "The Amundi Evian Championship",
+        "aliases": [
+          "Amundi Evian Championship",
+          "Evian Championship",
+          "Evian",
+          "The Evian Championship"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-handball-playing-positions",
+    "category": "SPORTS",
+    "prompt": "Name a standard seven-a-side handball playing position, distinguishing left and right sides.",
+    "explanation": "The seven positions are goalkeeper, two wings, three backs and a pivot. Centre back is also called playmaker, and pivot is also called line player. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.ihf.info/sites/default/files/2020-03/H%40S_Booklet_1.pdf",
+      "https://www.ihf.info/media-center/news/handball-101-understand-essentials-olympic-handball-tournament-begins"
+    ],
+    "answers": [
+      {
+        "label": "Goalkeeper",
+        "aliases": [
+          "goalie",
+          "keeper",
+          "GK"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Left wing",
+        "aliases": [
+          "left winger",
+          "LW"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Right wing",
+        "aliases": [
+          "right winger",
+          "RW"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Centre back",
+        "aliases": [
+          "center back",
+          "centre",
+          "center",
+          "playmaker",
+          "CB"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Left back",
+        "aliases": [
+          "LB"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Right back",
+        "aliases": [
+          "RB"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Pivot",
+        "aliases": [
+          "line player",
+          "circle runner",
+          "line",
+          "circle player"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-field-archery-bow-categories",
+    "category": "SPORTS",
+    "prompt": "Name one of the three bow categories at the World Archery Field Championships in 2024.",
+    "explanation": "The field championships use recurve, compound and barebow categories. A standard team has one archer from each category. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.worldarchery.sport/sport/disciplines/field-archery"
+    ],
+    "answers": [
+      {
+        "label": "Recurve",
+        "aliases": [
+          "recurve bow"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Compound",
+        "aliases": [
+          "compound bow"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Barebow",
+        "aliases": [
+          "barebow archery"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-bwf-worlds-event-types",
+    "category": "SPORTS",
+    "prompt": "Name one of the five event types in the BWF World Championships’ standard program.",
+    "explanation": "The five types are men’s and women’s singles, men’s and women’s doubles, and mixed doubles. Event abbreviations are accepted. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://system.bwfbadminton.com/documents/folder_1_81/folder_1_82/New-Regulations-2018/5.3.9%20Eligibility%20and%20Processing%20of%20Entries%20for%20WC.pdf"
+    ],
+    "answers": [
+      {
+        "label": "Men’s singles",
+        "aliases": [
+          "male singles",
+          "MS"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Women’s singles",
+        "aliases": [
+          "ladies singles",
+          "female singles",
+          "WS"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Men’s doubles",
+        "aliases": [
+          "male doubles",
+          "MD"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Women’s doubles",
+        "aliases": [
+          "ladies doubles",
+          "female doubles",
+          "WD"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Mixed doubles",
+        "aliases": [
+          "mixed",
+          "XD"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-archery-target-colors",
+    "category": "SPORTS",
+    "prompt": "Name a color on the standard five-color World Archery target face.",
+    "explanation": "The face has gold, red, blue, black and white scoring zones. Yellow is accepted for the gold center. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.worldarchery.sport/sport/disciplines/target-archery"
+    ],
+    "answers": [
+      {
+        "label": "Gold",
+        "aliases": [
+          "yellow"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Red",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Blue",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Black",
+        "aliases": [],
+        "tier": 3
+      },
+      {
+        "label": "White",
+        "aliases": [],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-eventing-three-phases",
+    "category": "SPORTS",
+    "prompt": "Name one of the three competition phases in equestrian eventing.",
+    "explanation": "Each eventing partnership completes dressage, cross-country and show jumping with the same horse. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.fei.org/stories/sport/eventing/eventing-ultimate-guide"
+    ],
+    "answers": [
+      {
+        "label": "Dressage",
+        "aliases": [],
+        "tier": 1
+      },
+      {
+        "label": "Cross-country",
+        "aliases": [
+          "cross country riding",
+          "cross country jumping"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Show jumping",
+        "aliases": [
+          "jumping",
+          "stadium jumping",
+          "stadium show jumping"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-three-ingredient-shortbread",
+    "category": "FOOD",
+    "prompt": "Name one of the three ingredients in Good Food’s basic shortbread-biscuits recipe.",
+    "explanation": "This specific shortbread recipe uses plain flour, butter and caster sugar. Ingredient family names are sufficient. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.bbcgoodfood.com/recipes/shortbread-biscuits"
+    ],
+    "answers": [
+      {
+        "label": "Butter",
+        "aliases": [
+          "salted butter",
+          "unsalted butter"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Flour",
+        "aliases": [
+          "plain flour",
+          "all purpose flour",
+          "wheat flour"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Sugar",
+        "aliases": [
+          "caster sugar",
+          "castor sugar",
+          "superfine sugar",
+          "white sugar",
+          "granulated sugar"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-usda-shell-egg-grades",
+    "category": "FOOD",
+    "prompt": "Name one of the three USDA consumer quality grades for shell eggs.",
+    "explanation": "The three consumer grades are AA, A and B. These are quality designations, and egg sizes use a separate scale. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.ams.usda.gov/grades-standards/egg/grade-shields"
+    ],
+    "answers": [
+      {
+        "label": "AA",
+        "aliases": [
+          "Grade AA",
+          "USDA Grade AA",
+          "US Grade AA"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "A",
+        "aliases": [
+          "Grade A",
+          "USDA Grade A",
+          "US Grade A"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "B",
+        "aliases": [
+          "Grade B",
+          "USDA Grade B",
+          "US Grade B"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-bechamel-base-ingredients",
+    "category": "FOOD",
+    "prompt": "Name one of the three base ingredients of a butter-roux béchamel sauce, excluding seasoning.",
+    "explanation": "Butter and flour make the roux, then milk turns it into béchamel. The prompt covers these three base ingredients. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.bbcgoodfood.com/videos/techniques/how-make-bechamel-white-sauce"
+    ],
+    "answers": [
+      {
+        "label": "Milk",
+        "aliases": [
+          "whole milk"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Butter",
+        "aliases": [
+          "unsalted butter",
+          "salted butter"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Flour",
+        "aliases": [
+          "plain flour",
+          "all purpose flour",
+          "wheat flour"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-classic-roux-colors",
+    "category": "FOOD",
+    "prompt": "Name a roux color in the classic French three-stage classification.",
+    "explanation": "The classic stages are white, blond and brown. The color develops as the flour-and-fat mixture cooks. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://resources.escoffier.edu/textbooks/gisslen/professional_cooking_09.pdf"
+    ],
+    "answers": [
+      {
+        "label": "Brown",
+        "aliases": [
+          "brown roux",
+          "roux brun",
+          "brun"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "White",
+        "aliases": [
+          "white roux",
+          "roux blanc",
+          "blanc"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Blond",
+        "aliases": [
+          "blonde",
+          "blond roux",
+          "blonde roux",
+          "roux blond"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-commercial-yeast-physical-forms",
+    "category": "FOOD",
+    "prompt": "Name a commercial baker’s yeast physical form in King Arthur’s four-form classification.",
+    "explanation": "The four physical forms are cream, compressed, active dry and instant yeast. Osmotolerant describes a performance trait within yeast forms. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.kingarthurbaking.com/pro/reference/yeast"
+    ],
+    "answers": [
+      {
+        "label": "Instant yeast",
+        "aliases": [
+          "instant",
+          "instant dry yeast",
+          "instant dry",
+          "rapid rise yeast",
+          "quick rise yeast"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Active dry yeast",
+        "aliases": [
+          "active dry",
+          "ADY"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Compressed yeast",
+        "aliases": [
+          "compressed",
+          "fresh yeast",
+          "fresh",
+          "cake yeast",
+          "cake"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Cream yeast",
+        "aliases": [
+          "cream",
+          "liquid yeast",
+          "liquid cream yeast"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-us-nine-major-allergens",
+    "category": "FOOD",
+    "prompt": "Name one of the nine major food-allergen categories recognized by US law from January 2023.",
+    "explanation": "The statutory nine-category list includes sesame from 1 January 2023. Use category names, with tree nuts and crustacean shellfish each forming one category. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/food-allergies"
+    ],
+    "answers": [
+      {
+        "label": "Milk",
+        "aliases": [
+          "dairy",
+          "cows milk"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Peanuts",
+        "aliases": [
+          "peanut",
+          "groundnut",
+          "groundnuts"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Eggs",
+        "aliases": [
+          "egg"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Wheat",
+        "aliases": [],
+        "tier": 2
+      },
+      {
+        "label": "Soybeans",
+        "aliases": [
+          "soybean",
+          "soy",
+          "soya"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Tree nuts",
+        "aliases": [
+          "tree nut",
+          "nuts"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Fish",
+        "aliases": [
+          "finfish"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Sesame",
+        "aliases": [
+          "sesame seeds",
+          "sesame seed"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Crustacean shellfish",
+        "aliases": [
+          "crustaceans",
+          "crustacean",
+          "shellfish"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-usda-beef-quality-grades",
+    "category": "FOOD",
+    "prompt": "Name a grade in the USDA’s standard eight-grade beef quality system.",
+    "explanation": "USDA quality grades run from Prime through Canner. The numbered beef yield grades measure a different characteristic. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.ams.usda.gov/grades-standards/public-law-272"
+    ],
+    "answers": [
+      {
+        "label": "Prime",
+        "aliases": [
+          "US Prime",
+          "USDA Prime"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Choice",
+        "aliases": [
+          "US Choice",
+          "USDA Choice"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Select",
+        "aliases": [
+          "US Select",
+          "USDA Select"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Standard",
+        "aliases": [
+          "US Standard",
+          "USDA Standard"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Commercial",
+        "aliases": [
+          "US Commercial",
+          "USDA Commercial"
+        ],
+        "tier": 3
+      },
+      {
+        "label": "Utility",
+        "aliases": [
+          "US Utility",
+          "USDA Utility"
+        ],
+        "tier": 4
+      },
+      {
+        "label": "Cutter",
+        "aliases": [
+          "US Cutter",
+          "USDA Cutter"
+        ],
+        "tier": 4
+      },
+      {
+        "label": "Canner",
+        "aliases": [
+          "US Canner",
+          "USDA Canner"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "daily-20261115-rice-kernel-length-classes",
+    "category": "FOOD",
+    "prompt": "Name a rice category in the standard three-way kernel-length classification.",
+    "explanation": "The length categories are long grain, medium grain and short grain. Milling categories such as brown or white use another classification. Rarity tiers are editorial familiarity estimates.",
+    "sources": [
+      "https://www.usarice.com/thinkrice/discover-us-rice/us-rice-varieties"
+    ],
+    "answers": [
+      {
+        "label": "Long grain",
+        "aliases": [
+          "long",
+          "long grain rice"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Short grain",
+        "aliases": [
+          "short",
+          "short grain rice"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Medium grain",
+        "aliases": [
+          "medium",
+          "medium grain rice"
+        ],
+        "tier": 4
+      }
+    ],
+    "releasedOn": "2026-11-15",
+    "batch": "2026-11-15-daily"
   }
 ];
