@@ -28,3 +28,30 @@ Run the bank build, site build, TypeScript check, test suite and local API integ
 ## Content decisions
 
 Target daily trivia, rare-answer trivia and repeatable practice. Use the game's own name and describe fixed editorial rarity tiers accurately. Use publicly documented mechanics and existing project assets in outreach. Follow each destination's submission rules.
+
+## Delivered
+
+- Cloudflare version `60d6d310-de25-424f-aa01-b89d7982262d` serves nine public pages. All sitemap URLs, robots.txt, the preview image and the puzzle API returned HTTP 200 after deployment. An unknown path returned 404. HTTP redirects to HTTPS.
+- The social preview reuses the 59,826-byte gameplay screenshot. The new rare-answer explanation and strategy guide are linked from the existing guides. The static build refreshes the displayed question count from the bank.
+- Twelve tests, TypeScript checks, local Worker/D1 integration including snapshot and timeout branches, and alternate-origin/idempotent site builds passed.
+- GitHub's project homepage now points to the custom domain. Topics include daily-game, trivia, browser-game, cloudflare-workers and open-source-game.
+- A public listing suggestion was posted to Awesome Daily Games and verified open. Editorial acceptance remains pending. [Submission](https://github.com/ryviuszero/awesome-daily-games/issues/48)
+- Search Console's verification tag is deployed. Browser verification and sitemap submission are pending because the Mac locked during the browser workflow. Search indexing and real-user Core Web Vitals remain unverified.
+
+## Further outreach prepared
+
+Everydle offers a free submission form with accurate gameplay, daily reset, language and payment fields. All the Dles accepts email suggestions. Review the live form and destination rules before submitting. [Everydle](https://everydle.net/submit/), [All the Dles](https://allthedles.com/submit/)
+
+Hacker News explicitly prohibits generated text and automated posting. A human-authored submission would need to follow its current rules. [Hacker News guidelines](https://news.ycombinator.com/newsguidelines.html)
+
+### Short social post draft
+
+> How high can your obscure knowledge take you?
+>
+> RARE Air is a free browser trivia game. Five questions, 30 seconds each, and rare correct answers lift your balloon up to 5,000 m.
+>
+> Play the shared daily flight or keep exploring in practice. No signup.
+>
+> https://krillionunlimited.top/
+
+This draft has not been posted. The browser was locked before social-account access and community rules could be checked.
