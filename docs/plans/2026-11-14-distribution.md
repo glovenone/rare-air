@@ -41,7 +41,7 @@ Screenshots of all eight receipts are kept in the local ignored release/private/
 ## Prepared channels awaiting a user step
 
 - Daily Games to Play has a complete application awaiting the mandatory acceptance of its terms. The confirmation request is pending. [Terms](https://dailygamestoplay.com/terms)
-- vibedgame has a local draft with description, repository link, cover and three screenshots, under Puzzle, Free, Play in browser. The draft selects November 17, the earliest allowed day when it was prepared. It still needs account sign-in and final submission. The current handoff page is GitHub sign-in. [Submission](https://vibedgame.com/submit)
+- vibedgame has a local draft with description, repository link, cover and three screenshots, under Puzzle, Free, Play in browser. The draft selects November 17, the earliest allowed day when it was prepared. It still needs account sign-in and final submission. GitHub sign-in was reached, and the draft was then restored and verified at step 4 with all six readiness checks complete. The draft page is preserved for handoff. [Submission](https://vibedgame.com/submit)
 - All the Dles, Seekdle and Daily Game Index accept email submissions. Gmail access is pending. [All the Dles](https://allthedles.com/submit/), [Seekdle](https://seekdle.com/submit/), [Daily Game Index](https://dailygameindex.com/about/)
 - Reddit WebGames has been opened for rule review. The in-app browser is signed out, and the connected Chrome account is unavailable while the Mac is locked. Public social posts, Product Hunt and itch.io still require account access.
 
@@ -51,3 +51,22 @@ Screenshots of all eight receipts are kept in the local ignored release/private/
 - Eighteen tests and local Worker/D1 integration passed, including the frozen-session, timeout and legacy-session branches.
 - The ownership response at /indexnow-key.txt was verified against the private configured value. The value is stored outside the repository and as a Cloudflare secret.
 - IndexNow accepted all nine sitemap URLs with HTTP 202 at 02:21 UTC on November 14. This is receipt pending the service's key validation. Crawling and indexing remain unverified. [Protocol response meanings](https://www.indexnow.org/documentation)
+- After the later homepage update, its incremental notification returned HTTP 200 at 02:44 UTC. Submission was accepted with the configured ownership key. Search-engine indexing remains unverified.
+
+## Public launch post
+
+The browser launch announcement is published as GitHub release web-v1.0.0, with the play link, a gameplay image, rules, source credits and support links. [Published announcement](https://github.com/glovenone/rare-air/releases/tag/web-v1.0.0)
+
+## Performance verification
+
+The PageSpeed web interface completed successfully after the unauthenticated API had returned a quota error. The first mobile lab run scored 89 for performance, 91 for accessibility, 100 for best practices and 100 for SEO.
+
+The round-progress group now has a valid accessible role, the balloon has intrinsic dimensions and high-priority loading, and the steering hint has stronger contrast. Cloudflare version bb16bc11-dca2-4b6b-95a1-c2ddc3ed530e serves these changes.
+
+The follow-up mobile lab run scored 88 for performance and 100 each for accessibility, best practices and SEO. FCP was 1.1 seconds, LCP 3.5 seconds, TBT 30 ms and CLS 0. Image delivery remains the principal performance opportunity. These are synthetic measurements, and the report has no real-user data. [Mobile report](https://pagespeed.web.dev/analysis/https-krillionunlimited-top/uyor5cm5pw?form_factor=mobile)
+
+The same report's desktop run scored 100 in all four categories, with 0.7-second LCP and zero TBT/CLS. [Desktop report](https://pagespeed.web.dev/analysis/https-krillionunlimited-top/uyor5cm5pw?form_factor=desktop)
+
+An aggregate anonymous-session baseline is saved locally in the ignored promotion directory. It includes validation activity and does not establish a count of individual human players.
+
+The live browser practice flow was exercised through all five stages, including correct answers, a skip and timeouts, ending at 600 meters with two correct answers. System-share delivery to another app remains unverified while the host is locked. The isolated system-share, cancellation and clipboard fallback tests pass. The agent-created test tab was closed after saving the flight report.
