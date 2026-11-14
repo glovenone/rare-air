@@ -116,7 +116,7 @@ const pages = [
       ],
       [
         "Data stored on your device.",
-        "Local storage keeps saved session IDs, completed daily flight history and offline practice history. Offline practice questions and scoring work on your device. Mobile sharing opens your operating system’s share sheet. WeChat sharing uses WeChat’s share controls. You choose whether and where to share a score.",
+        "Local storage keeps saved session IDs, completed daily flight history and offline practice history. Offline practice questions and scoring work on your device. Supported web browsers and mobile apps open your operating system’s share sheet. Web sharing also offers a clipboard fallback. WeChat sharing uses WeChat’s share controls. You choose whether and where to share a score.",
         "Sound is optional. Haptics use the phone’s vibration hardware where supported. These features do not require microphone, camera, contacts or location access.",
       ],
       [

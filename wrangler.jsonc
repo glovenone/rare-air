@@ -5,7 +5,7 @@
   "compatibility_date": "2026-11-12",
   "workers_dev": true,
   "routes": [{ "pattern": "krillionunlimited.top", "custom_domain": true }],
-  "assets": { "directory": "./public", "binding": "ASSETS", "run_worker_first": ["/api/*"] },
+  "assets": { "directory": "./public", "binding": "ASSETS", "run_worker_first": ["/api/*", "/indexnow-key.txt"] },
   "d1_databases": [{ "binding": "DB", "database_name": "rare-daily-db", "database_id": "bca74756-9c72-4e77-8a9b-68cc831dfa40", "migrations_dir": "migrations" }],
   "observability": { "enabled": true }
 }

@@ -1,6 +1,6 @@
 import {schedule, evaluate, publicQuestion, bankInfo} from './questions.js';
 import type {Question} from './questions.js';
-interface Env {DB:D1Database;ASSETS:Fetcher}
+interface Env {DB:D1Database;ASSETS:Fetcher;INDEXNOW_KEY?:string}
 interface Session {id:string;player:string;day:string;mode:string;seed:string;round:number;started:number;created:number;name:string;questions_json:string|null}
 const utc=()=>new Date().toISOString().slice(0,10);
 const json=(data:unknown,status=200,headers:Record<string,string>={})=>Response.json(data,{status,headers:{'Cache-Control':'no-store',...headers}});
@@ -33,4 +33,32 @@ env.DB.prepare('UPDATE sessions SET round=round+1, started=? WHERE id=? AND roun
 ]);const next=await env.DB.prepare('SELECT * FROM sessions WHERE id=?').bind(s.id).first<Session>();return out(await state(next!,env));}
 return fail('Not found.',404);
 }
-export default {async fetch(req:Request,env:Env):Promise<Response>{try{const response=new URL(req.url).pathname.startsWith('/api/')?await api(req,env):await env.ASSETS.fetch(req);const headers=new Headers(response.headers);headers.set('X-Content-Type-Options','nosniff');headers.set('Referrer-Policy','strict-origin-when-cross-origin');headers.set('X-Frame-Options','DENY');headers.set('Content-Security-Policy',"default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; font-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'");return new Response(response.body,{status:response.status,headers});}catch(e){console.error('Request failed',e instanceof Error?e.message:'Unknown error');return fail('Something went wrong. Please retry.',500);}}};
+export default {
+  async fetch(req: Request, env: Env): Promise<Response> {
+    try {
+      const path = new URL(req.url).pathname;
+      let response: Response;
+      if (path === '/indexnow-key.txt') {
+        response = new Response(req.method === 'HEAD' ? null : env.INDEXNOW_KEY || null, {
+          status: env.INDEXNOW_KEY ? 200 : 404,
+          headers: {
+            'Content-Type': 'text/plain; charset=utf-8',
+            'Cache-Control': 'public, max-age=300',
+            'X-Robots-Tag': 'noindex',
+          },
+        });
+      } else {
+        response = path.startsWith('/api/') ? await api(req, env) : await env.ASSETS.fetch(req);
+      }
+      const headers = new Headers(response.headers);
+      headers.set('X-Content-Type-Options', 'nosniff');
+      headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
+      headers.set('X-Frame-Options', 'DENY');
+      headers.set('Content-Security-Policy', "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; font-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'");
+      return new Response(response.body, { status: response.status, headers });
+    } catch (error) {
+      console.error('Request failed', error instanceof Error ? error.message : 'Unknown error');
+      return fail('Something went wrong. Please retry.', 500);
+    }
+  },
+};

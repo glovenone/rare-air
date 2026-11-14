@@ -8,7 +8,7 @@ A free daily trivia game where unexpected answers lift a hot-air balloon through
 
 Five questions, 30 seconds each, and up to 5,000 meters of altitude. Drag the balloon to steer, or focus it and use the arrow keys. Press Space or tap the balloon to catch a gust. Rare answers trigger wind rings, cloud breakthroughs and paper-plane companions.
 
-The project includes 400 English question sets, accepted aliases, editorial rarity tiers, daily and practice modes, a date archive, anonymous daily leaderboards and browser-local flight history.
+The project includes hundreds of English question sets, accepted aliases, editorial rarity tiers, daily and practice modes, a date archive, anonymous daily leaderboards and browser-local flight history.
 
 ## Run locally
 
@@ -46,7 +46,7 @@ The checked-in database ID identifies the live demo's resource. Cloudflare authe
 
 - Five prompts per daily game, 30 seconds for each; daily reset at midnight UTC (08:00 China time).
 - One attempt per browser per date. Practice gets a new random seed. Daily dates use a deterministic versioned shuffle.
-- Curated answer bank: 400 question sets, accepted aliases, four rarity tiers worth 100, 250, 500 and 1,000 points. Invalid/skipped/expired answers get zero.
+- Curated answer bank: hundreds of question sets, accepted aliases, four rarity tiers worth 100, 250, 500 and 1,000 points. Invalid/skipped/expired answers get zero.
 - Rarity is editorial, clearly explained in the game. It is not a population survey. Answers are stored in D1 so aggregate answer distributions can be analyzed later.
 - Refreshing restores the current daily game. Elapsed time comes from the server. Leaving freezes no clock; an expired pending round is recorded when resumed and submitted, then the next round starts.
 - Atomic D1 batches and unique round keys prevent duplicate scoring. Scores are derived server-side. Active sessions never expose their answer lists.
@@ -63,7 +63,7 @@ The checked-in database ID identifies the live demo's resource. Cloudflare authe
 
 ## Content and operations
 
-The bank contains 30 immutable legacy prompts, 270 expansion prompts, and the November 13 daily batch of 100 new prompts. Practice uses all 400 immediately; the new daily pool starts November 13, 2026 UTC. Dated packs are append-only and filtered by release date, so later packs cannot change old daily puzzles. Every new session stores exact question and scoring snapshots; pre-migration sessions retain the legacy bank. See `content/EDITORIAL.md` for content quality and publishing rules. Rarity is editorial, not a measured answer frequency.
+The bank contains 30 immutable legacy prompts, 270 expansion prompts, and dated daily batches of 100 new prompts. Practice uses the current bank, and each new daily pool starts on its release date. Dated packs are append-only and filtered by release date, so later packs cannot change old daily puzzles. Every new session stores exact question and scoring snapshots; pre-migration sessions retain the legacy bank. See `content/EDITORIAL.md` for content quality and publishing rules. Rarity is editorial, not a measured answer frequency.
 
 Anonymous identity is per cookie, not a verified person. Clearing cookies creates another identity. No strong anti-bot control or global request quota is included; add Cloudflare rate limiting/Turnstile for larger public launches. The basic cap is 30 new sessions per browser per hour. No traffic-scale/load test or revenue claim is made.
 
@@ -73,7 +73,7 @@ To attach a domain, configure a Workers custom domain in Cloudflare Dashboard fo
 
 ## Packaged mobile apps
 
-The `ios/` and `android/` projects use Capacitor 8.6.2. They bundle the illustrated game, 400 bundled offline practice prompts, local offline flight history, native score sharing, haptics, Android back navigation and network/lifecycle handling. Online daily flights and practice use the configured Cloudflare API. Offline scoring shares the server's normalization and answer evaluation functions.
+The `ios/` and `android/` projects use Capacitor 8.6.2. They bundle the illustrated game, the question bank available at build time, local offline flight history, native score sharing, haptics, Android back navigation and network/lifecycle handling. Online daily flights and practice use the configured Cloudflare API. Offline scoring shares the server's normalization and answer evaluation functions.
 
 ```sh
 npm ci
