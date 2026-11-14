@@ -1,6 +1,7 @@
 # RARE Air project rules
 
 - Keep the official website at https://krillionunlimited.top/.
+- Open all task-related webpages in the Chrome profile named `happycoin`, as requested by the owner on November 15, 2026. Use that profile for Google Analytics, App Store Connect and other account workflows.
 - Keep Android APK and Apple App Store links visible on the homepage and the How to play page. Maintain their URLs in `src/site-config.js` so site builds preserve both entries.
 - Publish signed release APKs as GitHub Release assets and link to the APK file directly. Verify the release signature, package, version and SHA-256 before replacing the public download. Keep the signing key and passwords outside the repository.
 - Verify the Apple public store URL and availability when updating iOS download information. Record approval, manual release and public availability according to the actual state shown by Apple.

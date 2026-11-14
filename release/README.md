@@ -45,6 +45,8 @@ The publisher reported Apple approval on November 15. The existing app record's 
 
 The website GA4 implementation is prepared with visitor consent, sanitized page views, app-download click events and native-build exclusion. Its actual measurement ID is still pending in `src/site-config.js`, so collection is inactive. Google Analytics account setup and receipt of real events must be completed before reporting daily traffic. Project maintenance requirements are in `AGENTS.md`.
 
+Cloudflare version `e74df229-e407-439a-99b2-e1437d3c6be0` publishes the homepage and rules-page app links. The deployment passed TypeScript checks and all 21 tests. Public HTTPS checks confirmed both download entries and the Apple coming-soon label. Future browser work uses the owner's `happycoin` Chrome profile.
+
 ### iOS
 
 Open `ios/App/App.xcodeproj` in Xcode. Use the configured Apple team, register the bundle identifier, and select a distribution provisioning profile. Build and archive the App scheme for a generic iOS device. `export-options.plist` configures an App Store Connect export with manual version numbering.
