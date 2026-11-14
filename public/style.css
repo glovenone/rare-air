@@ -1916,10 +1916,10 @@ main {
   bottom: -27px;
   transform: translateX(-50%);
   white-space: nowrap;
-  color: #446f78;
+  color: var(--ink);
   font-size: 8px;
   letter-spacing: 0.6px;
-  opacity: 0.8;
+  opacity: 1;
   transition: opacity 0.3s;
   pointer-events: none;
 }

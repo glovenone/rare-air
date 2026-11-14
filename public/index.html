@@ -75,6 +75,7 @@
       crossorigin
     />
     <link rel="preload" href="/art/dawn-sky.webp" as="image" />
+    <link rel="preload" href="/art/balloon.webp" as="image" fetchpriority="high" />
     <link rel="stylesheet" href="/style.css" />
     <script src="/app.js" type="module"></script>
   </head>
@@ -95,7 +96,7 @@
       aria-describedby="pilot-instructions"
     >
       <span class="balloon-float"
-        ><img src="/art/balloon.webp" alt="" draggable="false" /><span
+        ><img src="/art/balloon.webp" width="1024" height="1536" fetchpriority="high" alt="" draggable="false" /><span
           class="burner-glow"
         ></span
       ></span>
@@ -127,7 +128,7 @@
         ><strong><span id="altitude">0</span><small> m</small></strong>
       </div>
       <div class="flight-status">
-        <div class="round-progress" id="progress" aria-label="Round progress">
+        <div class="round-progress" id="progress" role="group" aria-label="Round progress">
           <span></span><span></span><span></span><span></span><span></span>
         </div>
         <span id="question-number">5 DAILY PROMPTS</span>
