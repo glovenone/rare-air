@@ -38,6 +38,7 @@
       ad_user_data: "denied",
       ad_personalization: "denied",
     });
+    window.gtag("set", "send_page_view", false);
     window.gtag("js", new Date());
     window.gtag("config", id, {
       send_page_view: false,

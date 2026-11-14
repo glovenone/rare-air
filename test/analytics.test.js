@@ -61,6 +61,19 @@ test("consented page views remove private URL parameters and download events inc
   assert.equal(JSON.stringify(page.events()).includes("private"), false);
 });
 
+test("manual page views disable automatic collection before Google tag initialization", () => {
+  const page = visit({ consent: "granted" });
+  const events = page.events();
+  const automaticViews = events.findIndex(([kind, key]) => kind === "set" && key === "send_page_view");
+  const initialization = events.findIndex(([kind]) => kind === "js");
+  assert(automaticViews >= 0 && automaticViews < initialization);
+  assert.equal(events[automaticViews][2], false);
+  assert.equal(events.find(([kind]) => kind === "config")[2].send_page_view, false);
+  page.choose("granted");
+  assert.equal(page.events().filter(([kind, name]) => kind === "event" && name === "page_view").length, 1);
+  assert.equal(page.scripts.length, 1);
+});
+
 test("revoking consent stops events, preserves gameplay cookies and supports re-enabling", () => {
   const page = visit({ consent: "granted" });
   page.choose("denied");

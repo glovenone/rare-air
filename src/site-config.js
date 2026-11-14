@@ -4,5 +4,5 @@ export const appDownloads = {
   appleAvailable: false,
 };
 
-// Set this to the website stream's public G- measurement ID after GA4 setup.
-export const googleAnalyticsId = "";
+// Public measurement ID for the RARE Air website stream.
+export const googleAnalyticsId = "G-XQLKBWY0SS";
