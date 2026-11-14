@@ -1,5 +1,6 @@
 import { readFile, writeFile, mkdir, copyFile } from "node:fs/promises";
 import { bankInfo } from "../src/questions.js";
+import { appDownloads, googleAnalyticsId } from "../src/site-config.js";
 
 const site =
   process.env.SITE_URL || "https://krillionunlimited.top";
@@ -97,6 +98,10 @@ const pages = [
         "Steer and share.",
         "Drag the balloon with your mouse or finger. You can focus it with the keyboard, steer with the arrow keys and press Space for a gust. These controls add flight effects. Your answer determines the altitude gain.",
         "After the fifth question, view your flight report and share its spoiler-free altitude card. The report also lists accepted answers for the prompts you completed.",
+      ],
+      [
+        "Play on your phone.",
+        "Download the signed Android APK for Android 7.0 or later, or open the Apple App Store page for iPhone and iPad. Mobile apps include offline practice and device-local flight history. Download links are below.",
       ],
     ],
   },
@@ -264,6 +269,29 @@ const renderLinks = (links) => links
   .map(([href, label]) => `<a href="${escape(href)}">${escape(label)}</a>`)
   .join("");
 const navigation = `<nav aria-label="Game guides and information">${renderLinks(navLinks)}</nav>`;
+const appleLabel = appDownloads.appleAvailable ? "Apple App Store" : "App Store · coming soon";
+const downloads = `<nav class="app-downloads" aria-label="Get the mobile app"><a href="${escape(appDownloads.android)}" data-download-platform="android">Download Android APK <span aria-hidden="true">↓</span></a><a href="${escape(appDownloads.apple)}" data-download-platform="ios">${appleLabel} <span aria-hidden="true">↗</span></a></nav>`;
+if (!appDownloads.appleAvailable) {
+  pages.find((page) => page.path === "how-to-play").sections.at(-1).push(
+    "The Apple App Store page is awaiting public availability.",
+  );
+}
+const analyticsMetadata = /^G-[A-Z0-9]+$/.test(googleAnalyticsId)
+  ? `<meta name="google-analytics-id" content="${googleAnalyticsId}"><link rel="stylesheet" href="/analytics.css"><script src="/analytics.js" defer></script>`
+  : "";
+if (analyticsMetadata) {
+  const privacy = pages.find((page) => page.path === "privacy");
+  privacy.intro = privacy.intro.replace("November 13, 2026", "November 15, 2026");
+  privacy.sections.find(([heading]) => heading === "Hosting and service logs.")[2] =
+    "Gameplay answers and anonymous records are used to operate scoring, session recovery and leaderboards.";
+  privacy.sections.splice(3, 0, [
+    "Optional website analytics.",
+    "When you allow analytics, the website loads Google Analytics 4 to measure visits, sessions, page views, traffic sources, device and country information, and Android or Apple download-link clicks. Google processes technical request information to deliver this service. The _ga and _ga_ cookies help distinguish visits and may persist for up to two years.",
+    "The analytics tag loads after you allow it. Use Analytics settings to decline or change your choice, which is stored as rare_analytics_consent on this browser. Declining stops analytics collection and removes this website’s Google Analytics cookies. Browser privacy tools or blocked scripts can also limit collection.",
+    "Typed trivia answers, game session identifiers and player identifiers are excluded from analytics events. Page addresses and referrers are sent with query strings and fragments removed. Advertising storage, advertising personalization and Google signals are disabled. This website analytics integration is excluded from the packaged mobile and WeChat games.",
+    "Google’s privacy information is available at https://policies.google.com/privacy and https://policies.google.com/technologies/partner-sites. Contact contact@shanxing.top for privacy questions.",
+  ]);
+}
 const socialImage = `${origin}/art/flight-preview.jpg`;
 const socialMetadata = (title, description, url) => `
 <meta property="og:type" content="website"/>
@@ -309,6 +337,7 @@ ${socialMetadata(page.title, page.description, url)}
 <main><h1>${escape(page.heading)}</h1><p class="lead">${escape(page.intro)}</p>
 <a class="guide-cta" href="/">Play RARE Air ↗</a>
 ${page.sections.map(([heading, ...paragraphs]) => `<section><h2>${escape(heading)}</h2>${paragraphs.map((text) => `<p>${escape(text)}</p>`).join("")}</section>`).join("\n")}
+${page.path === "how-to-play" ? downloads : ""}
 ${page.path === "support" ? '<p><a class="guide-cta" href="https://github.com/glovenone/rare-air/issues">Open a support issue ↗</a></p>' : ""}
 ${related}${navigation}</main><footer><a href="/">← Back to the sky</a><span>RARE AIR</span></footer></body></html>`;
   await mkdir(`public/${page.path}`, { recursive: true });
@@ -337,8 +366,11 @@ for (const path of [
   const canonical = content.match(/rel="canonical"[^>]*href="([^"]+)"/);
   const previousOrigin = canonical ? new URL(canonical[1]).origin : origin;
   let updated = content.replaceAll(previousOrigin, origin);
+  updated = updated.replace(/\s*<!-- site-analytics:start -->[\s\S]*?<!-- site-analytics:end -->/, "");
+  updated = updated.replace("</head>", `<!-- site-analytics:start -->${analyticsMetadata}<!-- site-analytics:end -->\n</head>`);
   if (path === "public/index.html") {
     updated = updated.replace(/(<span id="bank-label" class="sr-only">)[^<]*/, `$1${bankInfo.bankSize} questions.`);
+    updated = updated.replace(/<!-- app-downloads:start -->[\s\S]*?<!-- app-downloads:end -->/, `<!-- app-downloads:start -->${downloads}<!-- app-downloads:end -->`);
   }
   if (path === "public/games-like-krillion/index.html") {
     updated = updated.replace(/\s*<!-- site-sharing:start -->[\s\S]*?<!-- site-sharing:end -->/, "");

@@ -39,6 +39,12 @@ The external signing properties file contains `storeFile`, `storePassword`, `key
 
 The bundle is produced at `android/app/build/outputs/bundle/release/app-release.aab`. Verify its signature with JDK `jarsigner -verify`. The debug APK is at `android/app/build/outputs/apk/debug/app-debug.apk`.
 
+On November 15, a signed release APK was built with the existing project key and published as the `RARE-Air-1.0.apk` asset of GitHub release `android-v1.0.0`. The direct download is configured in `src/site-config.js` for the homepage and rules page. Its package is `com.letuzhixing.rareair`, version 1.0 (1), minimum Android 7.0, size 5,968,576 bytes. APK v2 signature verification passed, and a fresh public download matched SHA-256 `8ee9f29f64b0a6a6e546d8634a1439abbd2c4737bd49aedc7d162e1f2782f16b`. Physical Android device validation remains pending.
+
+The publisher reported Apple approval on November 15. The existing app record's public URL `https://apps.apple.com/app/id6834294339` returned HTTP 404, and the US lookup by app ID and bundle identifier returned no public result. The website links to that record with a coming-soon label pending public availability. Browser control repeatedly failed before the current App Store Connect release status could be read.
+
+The website GA4 implementation is prepared with visitor consent, sanitized page views, app-download click events and native-build exclusion. Its actual measurement ID is still pending in `src/site-config.js`, so collection is inactive. Google Analytics account setup and receipt of real events must be completed before reporting daily traffic. Project maintenance requirements are in `AGENTS.md`.
+
 ### iOS
 
 Open `ios/App/App.xcodeproj` in Xcode. Use the configured Apple team, register the bundle identifier, and select a distribution provisioning profile. Build and archive the App scheme for a generic iOS device. `export-options.plist` configures an App Store Connect export with manual version numbering.

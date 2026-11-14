@@ -1,4 +1,4 @@
-import { cp, mkdir, rm, readFile, writeFile } from "node:fs/promises";
+import { cp, mkdir, rm, readFile, writeFile, readdir } from "node:fs/promises";
 import { basename, resolve } from "node:path";
 import { build } from "esbuild";
 
@@ -11,11 +11,19 @@ const sourceOnlyArt = new Set([
   "balloon.png",
   "cloud-bank.png",
   "dawn-sky.png",
+  "analytics.js",
+  "analytics.css",
 ]);
 await cp("public", destination, {
   recursive: true,
   filter: source => !sourceOnlyArt.has(basename(source)),
 });
+for (const path of await readdir(destination, { recursive: true })) {
+  if (!path.endsWith(".html")) continue;
+  const file = resolve(destination, path);
+  const html = await readFile(file, "utf8");
+  await writeFile(file, html.replace(/<!-- site-analytics:start -->[\s\S]*?<!-- site-analytics:end -->/g, ""));
+}
 const notices = [
   ["Capacitor", "node_modules/@capacitor/core/LICENSE"],
   ["Capacitor App", "node_modules/@capacitor/app/LICENSE"],
