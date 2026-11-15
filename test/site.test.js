@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile, stat } from "node:fs/promises";
 import { resolve } from "node:path";
+import { googleAdsenseClient } from "../src/site-config.js";
 
 test("published search pages have consistent metadata and working local links", async () => {
   const sitemap = await readFile("public/sitemap.xml", "utf8");
@@ -23,6 +24,13 @@ test("published search pages have consistent metadata and working local links", 
       html.includes(`rel="canonical"\n      href="${url}"`), `Canonical for ${url}`);
     assert.match(html, /name="twitter:card" content="summary_large_image"/);
     assert.ok(html.includes(`${url.origin}/art/flight-preview.jpg`));
+    assert.equal(
+      html.split(`<meta name="google-adsense-account" content="${googleAdsenseClient}">`).length - 1,
+      1,
+      `One AdSense verification tag for ${url}`,
+    );
+    assert.doesNotMatch(html, /<script\b[^>]*src=["'][^"']*(?:googlesyndication|doubleclick)/i);
+    assert.doesNotMatch(html, /<ins\b[^>]*class=["'][^"']*adsbygoogle/i);
 
     for (const match of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
       const data = JSON.parse(match[1]);
@@ -38,4 +46,8 @@ test("published search pages have consistent metadata and working local links", 
     }
   }
   assert.ok((await stat("public/art/flight-preview.jpg")).size < 100_000);
+  assert.equal(
+    await readFile("public/ads.txt", "utf8"),
+    `google.com, ${googleAdsenseClient.slice(3)}, DIRECT, f08c47fec0942fa0\n`,
+  );
 });

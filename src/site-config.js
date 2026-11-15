@@ -8,3 +8,6 @@ export const androidTestGroup = "https://groups.google.com/g/rare-air-android-te
 
 // Public measurement ID for the RARE Air website stream.
 export const googleAnalyticsId = "G-XQLKBWY0SS";
+
+// Public account identifier used only for website ownership verification.
+export const googleAdsenseClient = "ca-pub-3710260158761283";

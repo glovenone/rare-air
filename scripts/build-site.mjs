@@ -1,6 +1,6 @@
 import { readFile, writeFile, mkdir, copyFile } from "node:fs/promises";
 import { bankInfo } from "../src/questions.js";
-import { appDownloads, androidTestGroup, googleAnalyticsId } from "../src/site-config.js";
+import { appDownloads, androidTestGroup, googleAnalyticsId, googleAdsenseClient } from "../src/site-config.js";
 
 const site =
   process.env.SITE_URL || "https://krillionunlimited.top";
@@ -284,6 +284,14 @@ if (!appDownloads.appleAvailable) {
 const analyticsMetadata = /^G-[A-Z0-9]+$/.test(googleAnalyticsId)
   ? `<meta name="google-analytics-id" content="${googleAnalyticsId}"><link rel="stylesheet" href="/analytics.css"><script src="/analytics.js" defer></script>`
   : "";
+if (!/^ca-pub-\d{16}$/.test(googleAdsenseClient)) {
+  throw new Error("The AdSense verification account must be a valid ca-pub identifier.");
+}
+const adsenseMetadata = `<meta name="google-adsense-account" content="${googleAdsenseClient}">`;
+await writeFile(
+  "public/ads.txt",
+  `google.com, ${googleAdsenseClient.slice(3)}, DIRECT, f08c47fec0942fa0\n`,
+);
 if (analyticsMetadata) {
   const privacy = pages.find((page) => page.path === "privacy");
   privacy.intro = privacy.intro.replace("November 13, 2026", "November 15, 2026");
@@ -297,6 +305,10 @@ if (analyticsMetadata) {
     "Google’s privacy information is available at https://policies.google.com/privacy and https://policies.google.com/technologies/partner-sites. Contact contact@shanxing.top for privacy questions.",
   ]);
 }
+pages.find((page) => page.path === "privacy").sections.splice(4, 0, [
+  "Website advertising preparation.",
+  "The website publishes a Google AdSense ownership-verification meta tag and an ads.txt authorization file for site review. Ad delivery is currently disabled. These static verification records identify the publisher account. Any future advertising activation will be reflected in this policy and the website’s privacy controls.",
+]);
 const socialImage = `${origin}/art/flight-preview.jpg`;
 const socialMetadata = (title, description, url) => `
 <meta property="og:type" content="website"/>
@@ -373,6 +385,8 @@ for (const path of [
   let updated = content.replaceAll(previousOrigin, origin);
   updated = updated.replace(/\s*<!-- site-analytics:start -->[\s\S]*?<!-- site-analytics:end -->/, "");
   updated = updated.replace("</head>", `<!-- site-analytics:start -->${analyticsMetadata}<!-- site-analytics:end -->\n</head>`);
+  updated = updated.replace(/\s*<!-- site-adsense:start -->[\s\S]*?<!-- site-adsense:end -->/, "");
+  updated = updated.replace("</head>", `<!-- site-adsense:start -->${adsenseMetadata}<!-- site-adsense:end -->\n</head>`);
   if (path === "public/index.html") {
     updated = updated.replace(/(<span id="bank-label" class="sr-only">)[^<]*/, `$1${bankInfo.bankSize} questions.`);
     updated = updated.replace(/<!-- app-downloads:start -->[\s\S]*?<!-- app-downloads:end -->/, `<!-- app-downloads:start -->${downloads}<!-- app-downloads:end -->`);

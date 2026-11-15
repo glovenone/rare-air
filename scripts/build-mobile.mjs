@@ -13,6 +13,7 @@ const sourceOnlyArt = new Set([
   "dawn-sky.png",
   "analytics.js",
   "analytics.css",
+  "ads.txt",
 ]);
 await cp("public", destination, {
   recursive: true,
@@ -22,7 +23,9 @@ for (const path of await readdir(destination, { recursive: true })) {
   if (!path.endsWith(".html")) continue;
   const file = resolve(destination, path);
   const html = await readFile(file, "utf8");
-  await writeFile(file, html.replace(/<!-- site-analytics:start -->[\s\S]*?<!-- site-analytics:end -->/g, ""));
+  await writeFile(file, html
+    .replace(/<!-- site-analytics:start -->[\s\S]*?<!-- site-analytics:end -->/g, "")
+    .replace(/<!-- site-adsense:start -->[\s\S]*?<!-- site-adsense:end -->/g, ""));
 }
 const notices = [
   ["Capacitor", "node_modules/@capacitor/core/LICENSE"],
