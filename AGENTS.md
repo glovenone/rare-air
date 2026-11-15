@@ -2,6 +2,7 @@
 
 - Keep the official website at https://krillionunlimited.top/.
 - Open all task-related webpages in the Chrome profile named `happycoin`, as requested by the owner on November 15, 2026. Use that profile for Google Analytics, App Store Connect and other account workflows.
+- Prefer the owner's happycoin email identity for new registrations, operational contacts and account access. The exact email and verified existing-account exceptions are recorded in the main checkout's ignored `release/private/preferred-account.md`. Verify the signed-in identity before changing service settings and preserve the existing project assets when consolidating access or contact details.
 - The owner's personal X account is `@Glove00000`. Write Chinese developer updates there. Use English on other promotion channels. Attach actual game screenshots and use a natural first-person developer voice grounded in the work performed.
 - Use the generated Glove avatar at `docs/images/glove-avatar.jpg` for the owner's promotion profiles. The owner requested Codex's built-in image generation for this avatar on November 15, 2026.
 - Android volunteers join `https://groups.google.com/g/rare-air-android-testers`. Record real Play enrollment, feedback and release status in `release/android-testing.md`. Follow the owner's authorization to publish after successful testing and production access approval.
