@@ -4,5 +4,7 @@ export const appDownloads = {
   appleAvailable: false,
 };
 
+export const androidTestGroup = "https://groups.google.com/g/rare-air-android-testers";
+
 // Public measurement ID for the RARE Air website stream.
 export const googleAnalyticsId = "G-XQLKBWY0SS";

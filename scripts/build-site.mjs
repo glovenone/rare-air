@@ -1,6 +1,6 @@
 import { readFile, writeFile, mkdir, copyFile } from "node:fs/promises";
 import { bankInfo } from "../src/questions.js";
-import { appDownloads, googleAnalyticsId } from "../src/site-config.js";
+import { appDownloads, androidTestGroup, googleAnalyticsId } from "../src/site-config.js";
 
 const site =
   process.env.SITE_URL || "https://krillionunlimited.top";
@@ -98,6 +98,11 @@ const pages = [
         "Steer and share.",
         "Drag the balloon with your mouse or finger. You can focus it with the keyboard, steer with the arrow keys and press Space for a gust. These controls add flight effects. Your answer determines the altitude gain.",
         "After the fifth question, view your flight report and share its spoiler-free altitude card. The report also lists accepted answers for the prompts you completed.",
+      ],
+      [
+        "Help test the Android app.",
+        "Volunteer Android testers can join the RARE Air testing group using the same Google Account they use on their Android device. The first Google Play closed-test release has been submitted for review. The group has instructions and will carry availability updates when the release is approved.",
+        "After approval, join the Play test through the group’s opt-in link and install from Google Play. Please stay opted in for at least 14 continuous days and try several sessions. Send bugs and usability feedback through the group, private Play feedback or contact@shanxing.top. Joining the group alone does not enroll you in the Play test.",
       ],
       [
         "Play on your phone.",
@@ -270,7 +275,7 @@ const renderLinks = (links) => links
   .join("");
 const navigation = `<nav aria-label="Game guides and information">${renderLinks(navLinks)}</nav>`;
 const appleLabel = appDownloads.appleAvailable ? "Apple App Store" : "App Store · coming soon";
-const downloads = `<nav class="app-downloads" aria-label="Get the mobile app"><a href="${escape(appDownloads.android)}" data-download-platform="android">Download Android APK <span aria-hidden="true">↓</span></a><a href="${escape(appDownloads.apple)}" data-download-platform="ios">${appleLabel} <span aria-hidden="true">↗</span></a></nav>`;
+const downloads = `<nav class="app-downloads" aria-label="Get the mobile app"><a href="${escape(appDownloads.android)}" data-download-platform="android">Download Android APK <span aria-hidden="true">↓</span></a><a href="${escape(appDownloads.apple)}" data-download-platform="ios">${appleLabel} <span aria-hidden="true">↗</span></a><a href="${escape(androidTestGroup)}">Join Android test group <span aria-hidden="true">↗</span></a></nav>`;
 if (!appDownloads.appleAvailable) {
   pages.find((page) => page.path === "how-to-play").sections.at(-1).push(
     "The Apple App Store page is awaiting public availability.",

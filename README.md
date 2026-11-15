@@ -87,6 +87,12 @@ Android builds require JDK 21 and Android SDK 36. Release signing reads an exter
 
 See [mobile release preparation](release/README.md) for commands, verification, privacy details and remaining store steps.
 
+### Android volunteers
+
+Help test RARE Air on Android 7.0 or later. Join the [Android testing group](https://groups.google.com/g/rare-air-android-testers) for instructions and availability updates. The first Google Play closed-test release is submitted for review. Once approved, testers can opt in and install from Play. We need at least 12 people to stay opted in continuously for 14 days before applying for production access.
+
+Share real-device feedback in the [recruitment issue](https://github.com/glovenone/rare-air/issues/2) or testing group. See the [test status and checklist](release/android-testing.md).
+
 ## Daily 100-question task
 
 Each new daily pack belongs in `content/packs/YYYY-MM-DD-daily.json` and must contain 100 distinct prompts with accepted answers, aliases, rarity tiers and source links. Follow [the editorial and publishing rules](content/EDITORIAL.md), run the bank build and checks, then deploy.
