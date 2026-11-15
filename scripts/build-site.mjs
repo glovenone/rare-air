@@ -101,8 +101,8 @@ const pages = [
       ],
       [
         "Help test the Android app.",
-        "Volunteer Android testers can join the RARE Air testing group using the same Google Account they use on their Android device. The first Google Play closed-test release has been submitted for review. The group has instructions and will carry availability updates when the release is approved.",
-        "After approval, join the Play test through the group’s opt-in link and install from Google Play. Please stay opted in for at least 14 continuous days and try several sessions. Send bugs and usability feedback through the group, private Play feedback or contact@shanxing.top. Joining the group alone does not enroll you in the Play test.",
+        "The RARE Air Android closed test is open on Google Play. Join the testing group using the same Google Account you use on your Android device. Follow the group’s Google Play enrollment link, choose Become a tester, then install from Google Play. Android 7.0 or later is required.",
+        "Please stay opted in for at least 14 continuous days and try several sessions. Send bugs and usability feedback through the group, private Play feedback or contact@shanxing.top. Complete the Google Play enrollment step to join the test.",
       ],
       [
         "Play on your phone.",

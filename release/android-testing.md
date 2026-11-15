@@ -4,18 +4,20 @@
 
 Updated November 15, 2026. The owner authorized recruiting real Android testers and publishing after successful testing. Recruitment is voluntary and unpaid.
 
-The version 1.0 (1) Alpha release and 16 listing, content and testing changes have been submitted through Play Console. Automated checks completed and the console confirms that the changes are being reviewed. Google approval and tester installation remain pending.
+Google approved and published the version 1.0 (1) Alpha closed-test release on November 15, 2026. Play Console marks the closed-test publication task complete. The enrollment page displays RARE Air, its correct publisher and testing group, and the Become a tester button. The dashboard still reports zero opted-in testers. Actual volunteer installation and use remain pending.
 
 The closed-test track uses [RARE Air Android Testers](https://groups.google.com/g/rare-air-android-testers). Anyone may join with a Google Account. Only the owner can view the member list. The track now targets all countries and regions offered by Play Console to accommodate international volunteers. Its country targeting is independent of production.
 
 ## Joining and feedback
 
 1. Join the group with the Google Account used on the Android device.
-2. After approval, [opt in through Google Play](https://play.google.com/apps/testing/com.letuzhixing.rareair) and install from that page. Group membership and APK sideloading do not establish Play test enrollment.
+2. [Opt in through Google Play](https://play.google.com/apps/testing/com.letuzhixing.rareair), choose Become a tester, and install using the Google Play link provided after enrollment.
 3. Remain opted in for at least 14 continuous days and try several sessions. Android 7.0 or later is required.
 4. Report the device model, Android version, app version, reproduction steps, expected result and actual result through the group, private Play feedback or contact@shanxing.top.
 
 [The group welcome post](https://groups.google.com/g/rare-air-android-testers/c/uj4S3q5jXXY) explains the process. Suggested checks cover daily completion, answer entry, incorrect answers, timing, practice, offline use, sound, sharing and background/resume.
+
+An approval update was posted in that thread after the test release became available, with the enrollment steps and a real gameplay screenshot.
 
 ## Recruitment record
 
@@ -29,6 +31,7 @@ The closed-test track uses [RARE Air Android Testers](https://groups.google.com/
 - Created the `glovenone` Indie Hackers account with the owner's approval of its registration terms. The [RARE Air product page](https://www.indiehackers.com/product/rare-air) is published in English with a real gameplay screenshot, website link and free-use business model. The start date uses November 2026 and revenue is kept private. New-account community posts remain gated by the site.
 - Updated the personal avatars on X, Reddit and Indie Hackers to the same generated Glove illustration. X and Indie Hackers have developer biographies, and the latter links to `@Glove00000`.
 - VibedGame is waiting for the owner's approval of GitHub email-read authorization. Submission has not been completed.
+- The owner confirmed disabling the temporary Chrome extension file-URL permission after the image uploads. The browser URL policy requires the owner to operate that setting manually.
 - Confirmed enrolled Play testers at the start of this work were zero. The group initially contains only its owner.
 
 ## Release gates

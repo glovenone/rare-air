@@ -89,7 +89,7 @@ See [mobile release preparation](release/README.md) for commands, verification, 
 
 ### Android volunteers
 
-Help test RARE Air on Android 7.0 or later. Join the [Android testing group](https://groups.google.com/g/rare-air-android-testers) for instructions and availability updates. The first Google Play closed-test release is submitted for review. Once approved, testers can opt in and install from Play. We need at least 12 people to stay opted in continuously for 14 days before applying for production access.
+Help test RARE Air on Android 7.0 or later. The first Google Play closed-test release is approved and open for enrollment. Join the [Android testing group](https://groups.google.com/g/rare-air-android-testers), then [opt in through Google Play](https://play.google.com/apps/testing/com.letuzhixing.rareair) using the same Google Account and install from that page. We need at least 12 people to stay opted in continuously for 14 days before applying for production access.
 
 Share real-device feedback in the [recruitment issue](https://github.com/glovenone/rare-air/issues/2) or testing group. See the [test status and checklist](release/android-testing.md).
 
