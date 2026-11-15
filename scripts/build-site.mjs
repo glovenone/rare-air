@@ -92,6 +92,7 @@ const pages = [
       [
         "Play daily, practice or the archive.",
         "Daily games reset at midnight UTC. Each browser identity receives one attempt per date. Practice creates another five-question set, and the archive offers past daily flights from November 12, 2026. Clearing browser cookies creates a new local identity.",
+        "On the website, choose Pick a topic for a subject-focused practice flight. Nine free topics cover geography and history, science and space, nature, movies, books and words, music, games and sport, art and culture, and food and everyday knowledge. Take another flight continues with your selected topic.",
         "The mobile app also offers bundled offline practice. Offline practice is scored on your device and has its own local history.",
       ],
       [

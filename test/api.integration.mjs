@@ -40,4 +40,21 @@ if(base==='http://127.0.0.1:8787'){
  const oldResumed=(await request('resume',{id:oldGame.id})).data;
  assert.equal(oldResumed.question.id,schedule(oldGame.id,true)[0].id,'legacy sessions retain original bank');
 }
-console.log('PASS: paused reveal state, hidden next prompts, idempotent clock start, frozen scoring snapshots, legacy session compatibility, server-enforced timeout, game lifecycle, real D1, concurrent submissions, idempotency, ownership, same-origin, aliases, leaderboard, daily replay protection, practice, date validation.');
+assert.equal(p.data.topics.length,9);
+assert.equal((await request('start',{mode:'daily',topic:'science'})).status,400);
+assert.equal((await request('start',{mode:'practice',topic:'missing'})).status,400);
+assert.equal((await request('start',{mode:'practice',topic:42})).status,400);
+let topicGame=(await request('start',{mode:'practice',topic:'science'})).data;
+assert.equal(topicGame.topic,'science');
+assert.equal(topicGame.mode,'practice');
+const topicId=topicGame.id;
+while(!topicGame.done){
+ topicGame=(await request('next',{id:topicId,round:topicGame.round})).data;
+ assert.equal(topicGame.topic,'science');
+ assert.ok(['SCIENCE','SPACE','TECH','TECHNOLOGY','MATH'].includes(topicGame.question.category));
+ assert.equal(topicGame.question.answers,undefined);
+ topicGame=(await request('answer',{id:topicId,round:topicGame.round,answer:''})).data;
+}
+assert.equal(topicGame.review.length,5);
+assert.equal((await request('resume',{id:topicId})).data.topic,'science');
+console.log('PASS: paused reveal state, hidden next prompts, idempotent clock start, frozen scoring snapshots, legacy session compatibility, server-enforced timeout, game lifecycle, real D1, concurrent submissions, idempotency, ownership, same-origin, aliases, leaderboard, daily replay protection, practice, date validation, topic metadata and validation, five topic rounds and topic recovery.');

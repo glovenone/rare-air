@@ -1,4 +1,4 @@
-import {schedule, evaluate, publicQuestion, bankInfo} from './questions.js';
+import {schedule, evaluate, publicQuestion, bankInfo, practiceTopics} from './questions.js';
 import type {Question} from './questions.js';
 interface Env {DB:D1Database;ASSETS:Fetcher;INDEXNOW_KEY?:string}
 interface Session {id:string;player:string;day:string;mode:string;seed:string;round:number;started:number;created:number;name:string;questions_json:string|null}
@@ -7,19 +7,60 @@ const json=(data:unknown,status=200,headers:Record<string,string>={})=>Response.
 const fail=(message:string,status=400)=>json({error:message},status);
 const names=['Curious Otter','Quiet Fox','Clever Finch','Rare Panda','Cosmic Owl','Lucky Moth','Wild Kiwi','Wise Gecko'];
 const sessionQuestions=(s:Session):Question[]=>s.questions_json?JSON.parse(s.questions_json):schedule(s.seed,true);
-async function state(s:Session,env:Env){const qs=sessionQuestions(s);const {results}=await env.DB.prepare('SELECT round, question, label, tier, points, correct, timed_out FROM answers WHERE session=? ORDER BY round').bind(s.id).all();const done=s.round>=5;return {id:s.id,day:s.day,mode:s.mode,name:s.name,round:s.round,done,awaitingStart:!done&&s.started===0,deadline:s.started===0?null:s.started+30000,serverNow:Date.now(),question:done||s.started===0?null:publicQuestion(qs[s.round]),answers:results,review:done?qs.map(q=>({...publicQuestion(q),answers:q.answers.map(a=>({label:a.label,tier:a.tier}))})):null};}
+async function state(s: Session, env: Env) {
+  const qs = sessionQuestions(s);
+  const { results } = await env.DB.prepare(
+    'SELECT round, question, label, tier, points, correct, timed_out FROM answers WHERE session=? ORDER BY round',
+  ).bind(s.id).all();
+  const done = s.round >= 5;
+  return {
+    id: s.id, day: s.day, mode: s.mode, name: s.name, round: s.round, done,
+    topic: s.mode === 'practice' ? (s.seed.match(/^topic:([a-z]+):/)?.[1] ?? null) : null,
+    awaitingStart: !done && s.started === 0,
+    deadline: s.started === 0 ? null : s.started + 30000,
+    serverNow: Date.now(),
+    question: done || s.started === 0 ? null : publicQuestion(qs[s.round]),
+    answers: results,
+    review: done ? qs.map(question => ({
+      ...publicQuestion(question),
+      answers: question.answers.map(answer => ({ label: answer.label, tier: answer.tier })),
+    })) : null,
+  };
+}
 async function api(req:Request,env:Env){const url=new URL(req.url);const path=url.pathname;const origin=req.headers.get('Origin');if(req.method==='POST'&&origin&&origin!==url.origin)return fail('Request origin not allowed.',403);
 let player=req.headers.get('Cookie')?.match(/(?:^|; )rare_player=([a-f0-9-]{36})(?:;|$)/)?.[1];let cookie='';if(!player){player=crypto.randomUUID();cookie=`rare_player=${player}; HttpOnly; SameSite=Lax; Path=/; Max-Age=31536000${url.protocol==='https:'?'; Secure':''}`;}
 const out=(data:unknown)=>json(data,200,cookie?{'Set-Cookie':cookie}:{});
-if(path==='/api/puzzle'&&req.method==='GET'){const day=utc();return out({...bankInfo,day,number:Math.floor(Date.parse(day)/86400000)-Math.floor(Date.parse('2026-11-12')/86400000)+1,categories:schedule(day).map(q=>q.category),reset:Date.parse(day)+86400000});}
+if(path==='/api/puzzle'&&req.method==='GET'){const day=utc();return out({...bankInfo,day,number:Math.floor(Date.parse(day)/86400000)-Math.floor(Date.parse('2026-11-12')/86400000)+1,categories:schedule(day).map(q=>q.category),topics:practiceTopics,reset:Date.parse(day)+86400000});}
 if(path==='/api/leaderboard'&&req.method==='GET'){let day=url.searchParams.get('day')||utc();if(!/^\d{4}-\d{2}-\d{2}$/.test(day))return fail('Invalid date.');const {results}=await env.DB.prepare(`SELECT s.name, SUM(a.points) score FROM sessions s JOIN answers a ON a.session=s.id WHERE s.mode='daily' AND s.day=? AND s.round=5 GROUP BY s.id ORDER BY score DESC,s.created ASC LIMIT 20`).bind(day).all();return out({day,entries:results});}
 if(req.method!=='POST')return fail('Not found.',404);
 if(Number(req.headers.get('Content-Length')||0)>2048)return fail('Request too large.',413);
 const raw=await req.text();if(raw.length>2048)return fail('Request too large.',413);let b:Record<string,unknown>;try{b=JSON.parse(raw);}catch{return fail('Invalid JSON.');}if(!b||typeof b!=='object'||Array.isArray(b))return fail('Invalid request.');
 if(path==='/api/start'){
 const mode=b.mode==='practice'?'practice':'daily';const day=typeof b.day==='string'?b.day:utc();if(!/^\d{4}-\d{2}-\d{2}$/.test(day)||!Number.isFinite(Date.parse(day))||new Date(day).toISOString().slice(0,10)!==day||day>utc()||day<'2026-11-12')return fail('Choose an available puzzle date.');
+if (b.topic !== undefined && (
+  mode !== 'practice' || typeof b.topic !== 'string' || !practiceTopics.some(topic => topic.id === b.topic)
+)) return fail('Choose an available practice topic.');
+const topic = typeof b.topic === 'string' ? b.topic : null;
 let s=mode==='daily'?await env.DB.prepare("SELECT * FROM sessions WHERE player=? AND day=? AND mode='daily'").bind(player,day).first<Session>():null;
-if(!s){const rate=await env.DB.prepare('SELECT COUNT(*) n FROM sessions WHERE player=? AND created>?').bind(player,Date.now()-3600000).first<{n:number}>();if((rate?.n||0)>=30)return fail('You have started 30 games this hour. Come back shortly.',429);const id=crypto.randomUUID();const now=Date.now();await env.DB.prepare('INSERT OR IGNORE INTO sessions(id,player,day,mode,seed,started,created,name,questions_json) VALUES(?,?,?,?,?,?,?,?,?)').bind(id,player,day,mode,mode==='daily'?day:id,0,now,names[crypto.getRandomValues(new Uint32Array(1))[0]%names.length]+' '+id.slice(0,4),JSON.stringify(schedule(mode==='daily'?day:id))).run();s=await env.DB.prepare(mode==='daily'?"SELECT * FROM sessions WHERE player=? AND day=? AND mode='daily'":'SELECT * FROM sessions WHERE id=? AND player=?').bind(...(mode==='daily'?[player,day]:[id,player])).first<Session>();}
+if (!s) {
+  const rate = await env.DB.prepare('SELECT COUNT(*) n FROM sessions WHERE player=? AND created>?')
+    .bind(player, Date.now() - 3600000).first<{ n: number }>();
+  if ((rate?.n || 0) >= 30) return fail('You have started 30 games this hour. Come back shortly.', 429);
+  const id = crypto.randomUUID();
+  const now = Date.now();
+  const seed = mode === 'daily' ? day : topic ? `topic:${topic}:${id}` : id;
+  await env.DB.prepare(
+    'INSERT OR IGNORE INTO sessions(id,player,day,mode,seed,started,created,name,questions_json) VALUES(?,?,?,?,?,?,?,?,?)',
+  ).bind(
+    id, player, day, mode, seed, 0, now,
+    names[crypto.getRandomValues(new Uint32Array(1))[0] % names.length] + ' ' + id.slice(0, 4),
+    JSON.stringify(schedule(seed, false, topic)),
+  ).run();
+  s = await env.DB.prepare(mode === 'daily'
+    ? "SELECT * FROM sessions WHERE player=? AND day=? AND mode='daily'"
+    : 'SELECT * FROM sessions WHERE id=? AND player=?')
+    .bind(...(mode === 'daily' ? [player, day] : [id, player])).first<Session>();
+}
 return out(await state(s!,env));}
 if(path==='/api/answer'||path==='/api/resume'||path==='/api/next'){
 if(typeof b.id!=='string'||b.id.length>50)return fail('Invalid game.');const s=await env.DB.prepare('SELECT * FROM sessions WHERE id=? AND player=?').bind(b.id,player).first<Session>();if(!s)return fail('Game not found. Start a new game.',404);

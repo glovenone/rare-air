@@ -52,6 +52,7 @@ function setBusy(value) {
   for (const id of [
     "start",
     "practice",
+    "topic-practice",
     "offline-practice",
     "submit",
     "skip",
@@ -65,6 +66,10 @@ function setBusy(value) {
 
 function score() {
   return game?.answers.reduce((sum, answer) => sum + answer.points, 0) || 0;
+}
+
+function practiceLabel() {
+  return puzzle?.topics?.find((topic) => topic.id === game?.topic)?.label || "Practice flight";
 }
 
 function flightHistory() {
@@ -341,7 +346,7 @@ function acceptState(data) {
   rememberGame();
 }
 
-async function start(mode = "daily", day = puzzle?.day) {
+async function start(mode = "daily", day = puzzle?.day, topic = null) {
   if (busy) return;
   setBusy(true);
   setError();
@@ -355,7 +360,7 @@ async function start(mode = "daily", day = puzzle?.day) {
         if (!error.message.includes("Game not found")) throw error;
         data = await api("start", { mode, day });
       }
-    } else data = await api("start", { mode, day });
+    } else data = await api("start", { mode, day, ...(topic ? { topic } : {}) });
     acceptState(data);
     if (game.awaitingStart && game.answers.length === 0) await launchRound();
     render();
@@ -369,10 +374,36 @@ async function start(mode = "daily", day = puzzle?.day) {
 }
 $("start").onclick = () => start();
 $("practice").onclick = () => start("practice");
+$("topic-practice").onclick = () => {
+  const content = openDialog("Choose your airspace.", [
+    "Pick a subject for a five-question practice flight.",
+  ]);
+  const topics = puzzle?.topics || [];
+  if (!topics.length) {
+    content.append(element("p", "Connect to load the available topics, then try again."));
+    return;
+  }
+  const grid = element("div", undefined, "topic-grid");
+  for (const topic of topics) {
+    const button = element("button", undefined, "topic-card");
+    button.type = "button";
+    button.append(
+      element("strong", topic.label),
+      element("span", topic.description),
+      element("small", `${topic.questionCount} questions ↗`),
+    );
+    button.onclick = () => {
+      $("modal").close();
+      start("practice", puzzle?.day, topic.id);
+    };
+    grid.append(button);
+  }
+  content.append(grid);
+};
 $("offline-practice").hidden = !native;
 $("offline-practice").onclick = () => start("offline");
 $("play-again").onclick = () =>
-  start(game?.mode === "offline" ? "offline" : "practice");
+  start(game?.mode === "offline" ? "offline" : "practice", puzzle?.day, game?.topic || null);
 
 function home() {
   show("home");
@@ -393,7 +424,7 @@ function render() {
       ? "DAILY FLIGHT"
       : game.mode === "offline"
         ? "OFFLINE PRACTICE"
-        : "PRACTICE FLIGHT";
+        : practiceLabel().toUpperCase();
   $("category").textContent = game.question.category;
   $("question").textContent = game.question.prompt;
   $("live-score").textContent = score().toLocaleString();
@@ -527,7 +558,7 @@ function renderResults() {
     element("span", total >= 2500 ? "heights." : "you places."),
   );
   $("result-subtitle").textContent =
-    `${game.mode === "daily" ? "Daily flight · " + game.day : game.mode === "offline" ? "Offline practice" : "Practice flight"} · ${game.answers.filter((answer) => answer.correct).length} of 5 correct`;
+    `${game.mode === "daily" ? "Daily flight · " + game.day : game.mode === "offline" ? "Offline practice" : practiceLabel()} · ${game.answers.filter((answer) => answer.correct).length} of 5 correct`;
   $("final-score").textContent = total.toLocaleString();
   const highestTier = Math.max(...game.answers.map((answer) => answer.tier));
   $("rarest-find").textContent = rarityNames[highestTier];
@@ -646,7 +677,7 @@ async function loadLeaderboard(day) {
 $("share").onclick = async () => {
   if (!game) return;
   const symbols = ["⬛", "⬜", "🟩", "🟪", "🟨"];
-  const text = `RARE FLIGHT ↗ · ${game.mode === "daily" ? game.day : game.mode === "offline" ? "Offline practice" : "Practice"}\n${game.answers.map((answer) => symbols[answer.tier]).join("")}\n${score().toLocaleString()} m above the everyday\nMy best updraft: ${rarityNames[Math.max(...game.answers.map((answer) => answer.tier))]}\nHow high can you go?\n${native ? publicOrigin : location.origin}`;
+  const text = `RARE FLIGHT ↗ · ${game.mode === "daily" ? game.day : game.mode === "offline" ? "Offline practice" : practiceLabel()}\n${game.answers.map((answer) => symbols[answer.tier]).join("")}\n${score().toLocaleString()} m above the everyday\nMy best updraft: ${rarityNames[Math.max(...game.answers.map((answer) => answer.tier))]}\nHow high can you go?\n${native ? publicOrigin : location.origin}`;
   try {
     const outcome = await shareFlight(text);
     $("share-note").textContent = outcome === "cancelled"
