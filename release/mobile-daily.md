@@ -33,7 +33,7 @@ Apple's approved version has three medium-display iPhone screenshots, three iPad
 
 Google Play's default English listing has the app icon, feature graphic and four actual Android screenshots. Its short description has been revised to describe daily trivia, balloon lift, online play and offline practice. The store's asset flow has been updated to label the icon, feature graphic and four screenshots containing generated game artwork as AI-generated or edited. The source screenshots remain actual captures of the running app.
 
-The single English listing change was submitted for Google review in this session. Its automated common-issue checks completed, and publishing overview confirms that the change is now under review. Standard publishing remains enabled, so an approved change is published automatically.
+The single English listing change was submitted for Google review. A subsequent November 15 check confirms approval and automatic publication. Publishing overview has no outstanding review item for this change and displays the application-update-published notification. Standard publishing remains enabled. The app's production-access requirement continues to apply to the production track.
 
 Cloudflare version `a436bfa7-ee01-44ce-b4ef-1c9d2e6d4649` publishes the website's available App Store download label on the homepage and How to play page. The site build, type check and all 22 tests passed. Live browser checks confirmed the Apple and Android links, GA4 and AdSense verification metadata, and zero ad-delivery scripts or units.
 

@@ -4,11 +4,13 @@ Updated November 15, 2026, Asia/Shanghai.
 
 ## Review status
 
-The owner requested AdSense preparation and review while keeping advertising disabled for visitors. The existing AdSense account in the happycoin Chrome profile belongs to `glovenone@gmail.com`. Its public publisher ID is `pub-3710260158761283`.
+The owner requested AdSense preparation and review while keeping advertising disabled for visitors. The existing publisher account was originally accessed using the maintainer's glove identity. Its public publisher ID is `pub-3710260158761283`.
+
+On November 15 the owner approved consolidating daily operations under the preferred happycoin identity, including the linked AdMob administrator permission shown by Google. The new administrator invitation was accepted and both happycoin and glove now appear as active administrators. The preferred identity was used to sign in and verify access to the same publisher's website list. The exact account routing and local evidence are maintained in the main checkout's ignored `release/private/preferred-account.md`.
 
 Added `krillionunlimited.top`, deployed its ownership-verification meta tag on all nine public HTML pages, and published the account-authorized `/ads.txt` entry. AdSense confirmed site ownership and accepted the review request. The console displays **Getting ready** and **Review requested**. Approval remains pending.
 
-The public `/ads.txt` response was verified in Chrome. AdSense's separate ads.txt crawl status still displays **Not found** at the latest check and awaits Google's next crawl.
+The public `/ads.txt` response was verified in Chrome. A subsequent November 15 console check confirms its crawl status is now **Authorized**. The website itself remains in the requested-review state.
 
 The console confirms both Auto ads and automatic optimization are disabled for this site. The live homepage contains zero ad-delivery scripts and zero ad units. The site uses the static verification method provided by Google. Advertising activation requires the owner's later instruction.
 
