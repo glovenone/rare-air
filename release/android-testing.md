@@ -20,9 +20,15 @@ The closed-test track uses [RARE Air Android Testers](https://groups.google.com/
 ## Recruitment record
 
 - Created the self-join Google Group and saved it as the Alpha tester audience.
-- Published an open [volunteer recruitment issue](https://github.com/glovenone/rare-air/issues/2) in the source repository and added the joining instructions to its README.
-- [Reddit recruitment post](https://www.reddit.com/r/AndroidClosedTesting/comments/1xwh6jb/volunteer_android_testers_wanted_for_rare_air_a/) was created but removed by Reddit filters. An administrator-review message is prepared, with sending disabled by the site. It has not been sent.
-- X recruitment failed after the site requested a refresh and one retry. No successful X post has been verified.
+- Published and pinned an open [volunteer recruitment issue](https://github.com/glovenone/rare-air/issues/2) with two real game screenshots, and added joining instructions to the repository README.
+- Deployed a test-group link on the homepage and How to play page. Cloudflare version `63227a48-269c-41b8-9b41-8d63250dc077` includes it. The site build, type check and all 22 tests passed.
+- [Reddit recruitment post](https://www.reddit.com/r/AndroidClosedTesting/comments/1xwh6jb/volunteer_android_testers_wanted_for_rare_air_a/) includes a real gameplay screenshot but is removed by Reddit filters. An administrator-review message is prepared, with sending disabled by the site. It has not been sent.
+- The old X account failed to publish. The owner switched to `@Glove00000`, where a [Chinese developer update](https://x.com/Glove00000/status/2121759000761172093) was successfully published with two real gameplay screenshots and the official website link.
+- Published a [Chinese Android-testing reply](https://x.com/Glove00000/status/2121762216475308120) beneath that update with the self-join group link, Android runtime screenshot and accurate review and 14-day enrollment details.
+- Found the owner's existing CocoPlayer group with 30 members and actual historical Android feedback. Published one [voluntary invitation](https://groups.google.com/g/cocoplayer/c/gHfD8F2GMaQ) there with a real gameplay screenshot and the separate RARE Air group link. The post is verified present. Individual email delivery, new volunteers and new Play enrollment remain unverified.
+- Created the `glovenone` Indie Hackers account with the owner's approval of its registration terms. The [RARE Air product page](https://www.indiehackers.com/product/rare-air) is published in English with a real gameplay screenshot, website link and free-use business model. The start date uses November 2026 and revenue is kept private. New-account community posts remain gated by the site.
+- Updated the personal avatars on X, Reddit and Indie Hackers to the same generated Glove illustration. X and Indie Hackers have developer biographies, and the latter links to `@Glove00000`.
+- VibedGame is waiting for the owner's approval of GitHub email-read authorization. Submission has not been completed.
 - Confirmed enrolled Play testers at the start of this work were zero. The group initially contains only its owner.
 
 ## Release gates
@@ -32,3 +38,11 @@ The app's Play dashboard requires at least 12 testers continuously opted in for 
 The public APK remains available from [GitHub Releases](https://github.com/glovenone/rare-air/releases/tag/android-v1.0.0).
 
 Official guidance is available in Google's [testing requirements](https://support.google.com/googleplay/android-developer/answer/14151465?hl=en) and [test setup instructions](https://support.google.com/googleplay/android-developer/answer/9845334?hl=en).
+
+## Profile image provenance
+
+The Glove avatar was generated with Codex's built-in image tool on November 15, 2026, following the owner's instruction to use the model directly. A reusable 512-pixel JPEG is saved at `docs/images/glove-avatar.jpg`. The full-resolution PNG remains in the maintainer's local ignored promotion assets.
+
+The final generation prompt was as follows.
+
+> Create one exquisite square profile avatar for an independent software maker whose online name is Glove. An original ivory-white glove character, a single hand facing the viewer with a relaxed two-finger peace gesture and a rounded thumb. Two small expressive dark teal oval eyes and a subtle warm smile sit on the palm. A deep teal knitted cuff with one tiny coral-orange fabric tab. Tactile matte clay and finely woven fabric, polished contemporary 3D illustration with editorial taste, soft studio sunlight from upper left, gentle dimensional shadows. Solid pale turquoise background with a very subtle cream halo, strong readable silhouette, close-up centered composition with generous circular crop safe margin. Restrained palette of ivory, dark teal and a tiny coral accent. Warm, curious, quietly confident independent maker personality. Beautiful and legible at a small profile photo size. No lettering, logos, watermark, props, photorealistic person, or extra hands. One finished avatar, square.
