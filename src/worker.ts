@@ -1,4 +1,6 @@
 import {schedule, evaluate, publicQuestion, bankInfo, practiceTopics} from './questions.js';
+import {withTranslations, answerLabel} from './localization.js';
+import {resolveLocale} from '../public/locales.js';
 import type {Question} from './questions.js';
 interface Env {DB:D1Database;ASSETS:Fetcher;INDEXNOW_KEY?:string}
 interface Session {id:string;player:string;day:string;mode:string;seed:string;round:number;started:number;created:number;name:string;questions_json:string|null}
@@ -6,8 +8,8 @@ const utc=()=>new Date().toISOString().slice(0,10);
 const json=(data:unknown,status=200,headers:Record<string,string>={})=>Response.json(data,{status,headers:{'Cache-Control':'no-store',...headers}});
 const fail=(message:string,status=400)=>json({error:message},status);
 const names=['Curious Otter','Quiet Fox','Clever Finch','Rare Panda','Cosmic Owl','Lucky Moth','Wild Kiwi','Wise Gecko'];
-const sessionQuestions=(s:Session):Question[]=>s.questions_json?JSON.parse(s.questions_json):schedule(s.seed,true);
-async function state(s: Session, env: Env) {
+const sessionQuestions=(s:Session):Question[]=>s.questions_json?JSON.parse(s.questions_json).map(withTranslations):schedule(s.seed,true);
+async function state(s: Session, env: Env, language = "en") {
   const qs = sessionQuestions(s);
   const { results } = await env.DB.prepare(
     'SELECT round, question, label, tier, points, correct, timed_out FROM answers WHERE session=? ORDER BY round',
@@ -19,15 +21,15 @@ async function state(s: Session, env: Env) {
     awaitingStart: !done && s.started === 0,
     deadline: s.started === 0 ? null : s.started + 30000,
     serverNow: Date.now(),
-    question: done || s.started === 0 ? null : publicQuestion(qs[s.round]),
-    answers: results,
+    question: done || s.started === 0 ? null : publicQuestion(qs[s.round], language),
+    answers: results.map((answer) => ({...answer, label: answer.correct ? answerLabel(qs[Number(answer.round)], String(answer.label), language) : answer.label})),
     review: done ? qs.map(question => ({
-      ...publicQuestion(question),
-      answers: question.answers.map(answer => ({ label: answer.label, tier: answer.tier })),
+      ...publicQuestion(question, language),
+      answers: question.answers.map(answer => ({ label: answerLabel(question, answer.label, language), tier: answer.tier })),
     })) : null,
   };
 }
-async function api(req:Request,env:Env){const url=new URL(req.url);const path=url.pathname;const origin=req.headers.get('Origin');if(req.method==='POST'&&origin&&origin!==url.origin)return fail('Request origin not allowed.',403);
+async function api(req:Request,env:Env){const url=new URL(req.url);const path=url.pathname;let language=resolveLocale(url.searchParams.get('lang')).code;const origin=req.headers.get('Origin');if(req.method==='POST'&&origin&&origin!==url.origin)return fail('Request origin not allowed.',403);
 let player=req.headers.get('Cookie')?.match(/(?:^|; )rare_player=([a-f0-9-]{36})(?:;|$)/)?.[1];let cookie='';if(!player){player=crypto.randomUUID();cookie=`rare_player=${player}; HttpOnly; SameSite=Lax; Path=/; Max-Age=31536000${url.protocol==='https:'?'; Secure':''}`;}
 const out=(data:unknown)=>json(data,200,cookie?{'Set-Cookie':cookie}:{});
 if(path==='/api/puzzle'&&req.method==='GET'){const day=utc();return out({...bankInfo,day,number:Math.floor(Date.parse(day)/86400000)-Math.floor(Date.parse('2026-11-12')/86400000)+1,categories:schedule(day).map(q=>q.category),topics:practiceTopics,reset:Date.parse(day)+86400000});}
@@ -35,6 +37,7 @@ if(path==='/api/leaderboard'&&req.method==='GET'){let day=url.searchParams.get('
 if(req.method!=='POST')return fail('Not found.',404);
 if(Number(req.headers.get('Content-Length')||0)>2048)return fail('Request too large.',413);
 const raw=await req.text();if(raw.length>2048)return fail('Request too large.',413);let b:Record<string,unknown>;try{b=JSON.parse(raw);}catch{return fail('Invalid JSON.');}if(!b||typeof b!=='object'||Array.isArray(b))return fail('Invalid request.');
+language=resolveLocale(b.language ?? language).code;
 if(path==='/api/start'){
 const mode=b.mode==='practice'?'practice':'daily';const day=typeof b.day==='string'?b.day:utc();if(!/^\d{4}-\d{2}-\d{2}$/.test(day)||!Number.isFinite(Date.parse(day))||new Date(day).toISOString().slice(0,10)!==day||day>utc()||day<'2026-11-12')return fail('Choose an available puzzle date.');
 if (b.topic !== undefined && (
@@ -61,17 +64,17 @@ if (!s) {
     : 'SELECT * FROM sessions WHERE id=? AND player=?')
     .bind(...(mode === 'daily' ? [player, day] : [id, player])).first<Session>();
 }
-return out(await state(s!,env));}
+return out(await state(s!,env,language));}
 if(path==='/api/answer'||path==='/api/resume'||path==='/api/next'){
 if(typeof b.id!=='string'||b.id.length>50)return fail('Invalid game.');const s=await env.DB.prepare('SELECT * FROM sessions WHERE id=? AND player=?').bind(b.id,player).first<Session>();if(!s)return fail('Game not found. Start a new game.',404);
-if(path==='/api/resume'||s.round>=5)return out(await state(s,env));
-if(path==='/api/next'){if(b.round!==s.round)return out(await state(s,env));await env.DB.prepare('UPDATE sessions SET started=? WHERE id=? AND round=? AND started=0').bind(Date.now(),s.id,s.round).run();const started=await env.DB.prepare('SELECT * FROM sessions WHERE id=?').bind(s.id).first<Session>();return out(await state(started!,env));}
-if(!Number.isInteger(b.round)||b.round!==s.round)return out(await state(s,env));if(s.started===0)return fail('Start the next round before answering.',409);if(typeof b.answer!=='string'||b.answer.length>100)return fail('Use an answer under 100 characters.');
-const now=Date.now();const timedOut=now>s.started+30000;const q=sessionQuestions(s)[s.round];const result=evaluate(q,timedOut?'':b.answer.trim());
+if(path==='/api/resume'||s.round>=5)return out(await state(s,env,language));
+if(path==='/api/next'){if(b.round!==s.round)return out(await state(s,env,language));await env.DB.prepare('UPDATE sessions SET started=? WHERE id=? AND round=? AND started=0').bind(Date.now(),s.id,s.round).run();const started=await env.DB.prepare('SELECT * FROM sessions WHERE id=?').bind(s.id).first<Session>();return out(await state(started!,env,language));}
+if(!Number.isInteger(b.round)||b.round!==s.round)return out(await state(s,env,language));if(s.started===0)return fail('Start the next round before answering.',409);if(typeof b.answer!=='string'||b.answer.length>100)return fail('Use an answer under 100 characters.');
+const now=Date.now();const timedOut=now>s.started+30000;const q=sessionQuestions(s)[s.round];const result=evaluate(q,timedOut?'':b.answer.trim(),language);
 await env.DB.batch([
 env.DB.prepare(`INSERT OR IGNORE INTO answers(session,round,question,answer,label,tier,points,correct,timed_out) SELECT id,?,?,?,?,?,?,?,? FROM sessions WHERE id=? AND round=?`).bind(s.round,q.id,timedOut?'':b.answer.trim(),result.label,result.tier,result.points,Number(result.correct),Number(timedOut),s.id,s.round),
 env.DB.prepare('UPDATE sessions SET round=round+1, started=? WHERE id=? AND round=? AND EXISTS(SELECT 1 FROM answers WHERE session=? AND round=?)').bind(0,s.id,s.round,s.id,s.round)
-]);const next=await env.DB.prepare('SELECT * FROM sessions WHERE id=?').bind(s.id).first<Session>();return out(await state(next!,env));}
+]);const next=await env.DB.prepare('SELECT * FROM sessions WHERE id=?').bind(s.id).first<Session>();return out(await state(next!,env,language));}
 return fail('Not found.',404);
 }
 export default {

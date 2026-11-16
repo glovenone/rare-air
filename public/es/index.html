@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#d8eaf0" />
+    <meta
+      name="description"
+      content="Juega trivia de respuestas raras gratis en RARE Air. Cinco preguntas con límite de tiempo, un nuevo desafío diario y vuelos de práctica ilimitados. Las respuestas inesperadas te elevan más." data-i18n-content="Play free rare-answer trivia in RARE Air. Five timed questions, a new daily challenge and unlimited practice flights. Unexpected answers lift you higher."
+    />
+    <title>Trivia diaria y práctica ilimitada — RARE Air</title>
+    <meta name="google-site-verification" content="PMa4oQ8beHhAIRnVCPs1gOP06_cn2FeRNk6kO_43Tc0" />
+    <link
+      rel="canonical"
+      href="https://krillionunlimited.top/es/"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="RARE Air" />
+    <meta property="og:title" content="RARE Air: ¿Hasta dónde puedes llegar?" data-i18n-content="RARE Air — How high can you go?" />
+    <meta
+      property="og:description"
+      content="Cinco preguntas. Un globo curioso. Juega trivia diaria gratuita donde las respuestas raras te elevan más." data-i18n-content="Five questions. One curious balloon. Play free daily trivia where rare answers take you higher."
+    />
+    <meta
+      property="og:url"
+      content="https://krillionunlimited.top/es/"
+    />
+    <meta
+      property="og:image"
+      content="https://krillionunlimited.top/art/flight-preview.jpg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="720" />
+    <meta property="og:image:alt" content="Jugabilidad de RARE Air con un globo aerostático ascendiendo entre las nubes tras una respuesta rara" data-i18n-content="RARE Air gameplay with a hot-air balloon climbing through clouds after a rare answer" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="RARE Air: ¿Hasta dónde puedes llegar?" data-i18n-content="RARE Air — How high can you go?" />
+    <meta name="twitter:description" content="Cinco preguntas. Un globo curioso. Juega trivia diaria gratuita donde las respuestas raras te elevan más." data-i18n-content="Five questions. One curious balloon. Play free daily trivia where rare answers take you higher." />
+    <meta name="twitter:image" content="https://krillionunlimited.top/art/flight-preview.jpg" />
+    <meta name="twitter:image:alt" content="Vuelo de trivia de respuestas raras de RARE Air" data-i18n-content="RARE Air rare-answer trivia flight" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoGame","name":"RARE Air","url":"https://krillionunlimited.top/es/","description":"A free daily trivia game with five open-answer questions. Rare correct answers lift a hot-air balloon higher.","applicationCategory":"GameApplication","genre":["Trivia","Educational"],"gamePlatform":["Web browser"],"playMode":"SinglePlayer","inLanguage":"es","isAccessibleForFree":true,"image":"https://krillionunlimited.top/art/flight-preview.jpg","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="/fonts/bricolage-800.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/dm-sans-400.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="preload" href="/art/dawn-sky.webp" as="image" />
+    <link rel="preload" href="/art/balloon.webp" as="image" fetchpriority="high" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/app.js" type="module"></script>
+<!-- site-analytics:start --><meta name="google-analytics-id" content="G-XQLKBWY0SS"><link rel="stylesheet" href="/analytics.css"><script src="/analytics.js" defer></script><!-- site-analytics:end -->
+<!-- site-adsense:start --><meta name="google-adsense-account" content="ca-pub-3710260158761283"><!-- site-adsense:end -->
+<!-- site-languages:start --><meta name="rare-source-title" content="Daily Trivia &amp; Unlimited Practice — RARE Air"><link rel="alternate" hreflang="en" href="https://krillionunlimited.top/"><link rel="alternate" hreflang="zh-Hans" href="https://krillionunlimited.top/zh/"><link rel="alternate" hreflang="es" href="https://krillionunlimited.top/es/"><link rel="alternate" hreflang="fr" href="https://krillionunlimited.top/fr/"><link rel="alternate" hreflang="pt" href="https://krillionunlimited.top/pt/"><link rel="alternate" hreflang="de" href="https://krillionunlimited.top/de/"><link rel="alternate" hreflang="ja" href="https://krillionunlimited.top/ja/"><link rel="alternate" hreflang="ru" href="https://krillionunlimited.top/ru/"><link rel="alternate" hreflang="ar" href="https://krillionunlimited.top/ar/"><link rel="alternate" hreflang="id" href="https://krillionunlimited.top/id/"><link rel="alternate" hreflang="x-default" href="https://krillionunlimited.top/"><link rel="stylesheet" href="/language.css"><!-- site-languages:end --></head>
+  <body data-view="home" data-tier="4">
+    <div id="sky-stage" class="sky-stage" aria-hidden="true">
+      <div class="sky-color"></div>
+      <div class="sky-landscape"></div>
+      <div class="high-sky"></div>
+      <canvas id="cloud-canvas"></canvas>
+      <div class="sun-haze"></div>
+      <div class="wind-streaks"><i></i><i></i><i></i><i></i></div>
+    </div>
+    <button
+      id="balloon"
+      class="balloon"
+      type="button"
+      aria-label="Dirige tu globo" data-i18n-aria-label="Steer your balloon"
+      aria-describedby="pilot-instructions"
+    >
+      <span class="balloon-float"
+        ><img src="/art/balloon.webp" width="1024" height="1536" fetchpriority="high" alt="" draggable="false" /><span
+          class="burner-glow"
+        ></span
+      ></span>
+      <span class="pilot-hint"><!--i18n:Drag%20to%20steer-->Arrastra para dirigir</span>
+    </button>
+    <span id="pilot-instructions" class="sr-only"
+      ><!--i18n:Drag%20the%20balloon%20to%20surf%20the%20breeze.%20When%20focused%2C%20use%20arrow%20keys%20to%20steer%20and%20Space%20to%20catch%20a%20gust.-->Arrastra el globo para surcar la brisa. Cuando esté enfocado, usa las teclas de flecha para dirigir y Espacio para atrapar una ráfaga.</span
+    >
+    <canvas id="foreground-canvas" aria-hidden="true"></canvas>
+    <header class="site-header">
+      <a class="brand" href="/es/" aria-label="Inicio de RARE Air" data-i18n-aria-label="Rare home"><!--i18n:rare-->rare<span>↗</span></a>
+      <nav aria-label="Navegación principal" data-i18n-aria-label="Main navigation">
+        <button id="help" aria-label="Cómo volar" data-i18n-aria-label="How to fly"><!--i18n:How%20to%20fly%20-->Cómo volar <span>↗</span></button>
+        <button id="stats" aria-label="Tu libro de vuelo" data-i18n-aria-label="Your flight log">▤</button>
+        <button
+          id="sound"
+          class="sound-button"
+          aria-label="Activar sonido" data-i18n-aria-label="Enable sound"
+          aria-pressed="false"
+        >
+          ♪<span id="sound-state"><!--i18n:off-->no</span>
+        </button>
+      </nav>
+    </header>
+    <div class="flight-hud">
+      <div class="altitude-readout" aria-label="Altitud de vuelo" data-i18n-aria-label="Flight altitude">
+        <span><!--i18n:ALTITUDE-->ALTITUD</span
+        ><strong><span id="altitude">0</span><small><!--i18n:%20m--> m</small></strong>
+      </div>
+      <div class="flight-status">
+        <div class="round-progress" id="progress" role="group" aria-label="Progreso de la ronda" data-i18n-aria-label="Round progress">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <span id="question-number"><!--i18n:5%20DAILY%20PROMPTS-->5 PREGUNTAS DIARIAS</span>
+      </div>
+      <div class="best-readout">
+        <span><!--i18n:PERSONAL%20BEST-->MEJOR PERSONAL</span
+        ><strong><span id="best-altitude">0</span><small><!--i18n:%20m--> m</small></strong>
+      </div>
+    </div>
+    <aside class="altimeter" aria-label="Escala de altitud" data-i18n-aria-label="Altitude scale">
+      <span class="altimeter-title"><!--i18n:THE%20CLIMB-->LA ESCALADA</span>
+      <div class="altimeter-track">
+        <div id="altitude-fill"></div>
+        <i id="altitude-pointer"></i><span class="tick tick-top"><!--i18n:5%2C000%20m-->5,000 m</span
+        ><span class="tick tick-mid"><!--i18n:2%2C500%20m-->2,500 m</span
+        ><span class="tick tick-bottom"><!--i18n:0%20m-->0 m</span>
+      </div>
+      <span id="sky-zone"><!--i18n:THE%20LAUNCHPAD-->EL PLATAFORMA DE LANZAMIENTO</span>
+    </aside>
+    <div id="checkpoint" class="checkpoint" role="status"></div>
+    <main>
+      <section id="home" class="home-screen">
+        <div class="home-heading">
+          <div class="daily-label" id="puzzle-label"><!--i18n:THE%20DAILY%20CLIMB-->LA ESCALADA DIARIA</div>
+          <h1><!--i18n:%0A%20%20%20%20%20%20%20%20%20%20%20%20Rare%20air-->
+            Rare air<span>.</span
+            ><span class="sr-only"><!--i18n:%20%E2%80%94%20Daily%20trivia%20game--> — Juego de trivia diaria</span>
+          </h1>
+        </div>
+        <div class="home-dock">
+          <p class="home-rule"><!--i18n:%0A%20%20%20%20%20%20%20%20%20%20%20%20Rarer%20answers%20take%20you%20higher.-->
+            Las respuestas más raras te llevan más alto.<br /><span
+              ><!--i18n:Five%20questions.%20Free%20daily%20trivia%20and%20practice.-->Cinco preguntas. Trivia diaria y práctica gratuitas.</span
+            >
+          </p>
+          <button class="primary" id="start">
+            <span><!--i18n:Take%20flight-->Despegar</span><span class="button-arrow">↑</span></button
+          ><button id="practice" class="practice-link"><!--i18n:%0A%20%20%20%20%20%20%20%20%20%20%20%20Practice%20flight%20-->
+            Vuelo de práctica <span>↗</span>
+          </button>
+          <button id="topic-practice" class="practice-link topic-link"><!--i18n:%0A%20%20%20%20%20%20%20%20%20%20%20%20Pick%20a%20topic%20-->
+            Elige un tema <span aria-hidden="true">↗</span>
+          </button>
+          <button id="offline-practice" class="practice-link" hidden><!--i18n:%0A%20%20%20%20%20%20%20%20%20%20%20%20Offline%20practice%20%E2%86%97%0A%20%20%20%20%20%20%20%20%20%20-->
+            Práctica sin conexión ↗
+          </button>
+          <!-- app-downloads:start --><nav class="app-downloads" aria-label="Obtén la aplicación móvil" data-i18n-aria-label="Get the mobile app"><a href="https://github.com/glovenone/rare-air/releases/download/android-v1.0.0/RARE-Air-1.0.apk" data-download-platform="android"><!--i18n:Download%20Android%20APK%20-->Descargar APK de Android <span aria-hidden="true">↓</span></a><a href="https://apps.apple.com/app/id6834294339" data-download-platform="ios"><!--i18n:Apple%20App%20Store%20-->Tienda de aplicaciones de Apple <span aria-hidden="true">↗</span></a><a href="https://groups.google.com/g/rare-air-android-testers"><!--i18n:Join%20Android%20test%20group%20-->Unirse al grupo de prueba de Android <span aria-hidden="true">↗</span></a></nav><!-- app-downloads:end -->
+          <div class="home-links">
+            <a href="/es/how-to-play/"><!--i18n:How%20to%20play-->Cómo jugar</a
+            ><button id="archive"><!--i18n:Previous%20flights-->Vuelos anteriores</button
+            ><span id="reset-label"><!--i18n:A%20fresh%20flight%20every%20day.-->Un vuelo nuevo cada día.</span>
+          </div>
+          <span id="bank-label" class="sr-only"><!--i18n:601%20questions.-->601 preguntas.</span>
+        </div>
+      </section>
+      <section id="launch" class="launch-screen" hidden aria-live="polite">
+        <span class="eyebrow"><!--i18n:CATCH%20THE%20BREEZE-->ATRAPA LA BRISA</span
+        ><strong id="launch-count">3</strong>
+        <p><!--i18n:Your%20next%20question%20is%20just%20above%20the%20clouds.-->Tu próxima pregunta está justo encima de las nubes.</p>
+      </section>
+      <section id="play" class="play-screen" hidden>
+        <div class="question-content">
+          <div class="question-meta">
+            <span id="mode-label"><!--i18n:DAILY%20FLIGHT-->VUELO DIARIO</span><span id="category"></span>
+          </div>
+          <h1 id="question"></h1>
+          <p class="question-hint"><!--i18n:%0A%20%20%20%20%20%20%20%20%20%20%20%20One%20correct%20answer.%20The%20less%20obvious%2C%20the%20better.%0A%20%20%20%20%20%20%20%20%20%20-->
+            Una respuesta correcta. Cuanto menos obvia, mejor.
+          </p>
+        </div>
+        <div class="control-dock">
+          <form id="answer-form">
+            <div class="timer-row">
+              <span class="timer"
+                ><span id="timer" role="timer">30</span
+                ><small><!--i18n:seconds-->segundos</small></span
+              >
+              <div class="timer-track"><div id="time-fill"></div></div>
+              <button class="back" id="skip" type="button"><!--i18n:Skip%20%E2%86%92-->Saltar →</button>
+            </div>
+            <div class="answer-field">
+              <label for="answer" class="sr-only"><!--i18n:Your%20answer-->Tu respuesta</label
+              ><input
+                id="answer"
+                dir="auto"
+                maxlength="100"
+                placeholder="Piensa en algo inesperado…" data-i18n-placeholder="Think of something unexpected…"
+                autocomplete="off"
+                autocapitalize="none"
+                spellcheck="false"
+              /><button id="submit" type="submit">
+                <span><!--i18n:Fly-->Volar</span><span>↑</span>
+              </button>
+            </div>
+          </form>
+          <div class="dock-bottom">
+            <button class="back" id="back-home"><!--i18n:%E2%86%90%20Back%20to%20ground-->← Volver al suelo</button
+            ><span><span id="live-score">0</span><!--i18n:%20m%20gained--> m ganados</span>
+          </div>
+          <div
+            id="play-route"
+            class="sr-only"
+            aria-label="Tus cinco etapas de vuelo" data-i18n-aria-label="Your five flight stages"
+          ></div>
+        </div>
+      </section>
+      <section id="reveal" class="reveal-screen" hidden aria-live="polite">
+        <div class="reveal-content">
+          <div id="rarity-medal" class="rarity-medal" aria-hidden="true">↑</div>
+          <div class="eyebrow" id="reveal-kicker"><!--i18n:YOU%20CAUGHT%20AN%20UPDRAFT-->ATRAPASTE UNA CORRIENTE ASCENDENTE</div>
+          <h1 id="reveal-tier"><!--i18n:Exceptional-->Excepcional</h1>
+          <p class="reveal-answer" id="reveal-answer"></p>
+          <div class="reward">
+            <strong id="reveal-points">+1,000</strong><span><!--i18n:METERS-->METROS</span>
+          </div>
+          <p class="reveal-note" id="reveal-note"></p>
+        </div>
+        <div class="control-dock reveal-dock">
+          <button id="next" class="primary">
+            <span><!--i18n:Climb%20higher-->Sube más alto</span><span class="button-arrow">↑</span>
+          </button>
+          <div class="reveal-footer">
+            <span id="reveal-progress"></span
+            ><span id="reveal-next-note"><!--i18n:The%20next%20question%20waits%20for%20you.-->La siguiente pregunta te espera.</span>
+          </div>
+          <div
+            id="reveal-route"
+            class="sr-only"
+            aria-label="Tus cinco etapas de vuelo" data-i18n-aria-label="Your five flight stages"
+          ></div>
+        </div>
+      </section>
+      <section id="result" class="result-screen" hidden>
+        <div class="flight-report">
+          <div class="report-top">
+            <span class="eyebrow"><!--i18n:FLIGHT%20COMPLETE-->VUELO COMPLETADO</span>
+          </div>
+          <h1 id="result-heading"><!--i18n:Oh%2C%20the%20places-->Oh, los lugares<br /><!--i18n:your%20mind%20can%20go.-->a los que puede llegar tu mente.</h1>
+          <p id="result-subtitle"></p>
+          <div class="final-summary">
+            <div>
+              <span><!--i18n:YOUR%20FINAL%20ALTITUDE-->TU ALTITUD FINAL</span><strong id="final-score">0</strong
+              ><small><!--i18n:meters%20above%20the%20everyday-->metros sobre lo cotidiano</small>
+            </div>
+            <div class="best-lift">
+              <span><!--i18n:BEST%20UPDRAFT-->MEJOR CORRIENTE ASCENDENTE</span
+              ><strong id="rarest-find"><!--i18n:Exceptional-->Excepcional</strong
+              ><small><!--i18n:Editorial%20answer%20rarity-->Rareza de la respuesta editorial</small>
+            </div>
+          </div>
+          <div
+            id="final-route"
+            class="final-route"
+            aria-label="Tus cinco etapas de vuelo" data-i18n-aria-label="Your five flight stages"
+          ></div>
+          <div class="result-actions">
+            <button class="primary" id="share">
+              <span><!--i18n:Share%20your%20flight-->Comparte tu vuelo</span><span>↗</span></button
+            ><button class="secondary" id="play-again"><!--i18n:%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20Take%20another%20flight%20%E2%86%97%0A%20%20%20%20%20%20%20%20%20%20%20%20-->
+              Realizar otro vuelo ↗
+            </button>
+          </div>
+          <p class="share-note" id="share-note" role="status"></p>
+          <div id="result-rows" class="result-rows"></div>
+          <details class="answer-review">
+            <summary><!--i18n:Explore%20the%20accepted%20answers%20-->Explorar las respuestas aceptadas <span>+</span></summary>
+            <div id="review-content"></div>
+          </details>
+          <section class="leaderboard">
+            <div class="section-top">
+              <h2><!--i18n:In%20good%20air.-->En buen aire.</h2>
+              <span><!--i18n:DAILY%20TOP%2020-->TOP 20 DIARIO</span>
+            </div>
+            <p><!--i18n:%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20Completed%20daily%20flights.%20Equal%20altitudes%20are%20ordered%20by%20start%20time.%0A%20%20%20%20%20%20%20%20%20%20%20%20-->
+              Vuelos diarios completados. Las altitudes iguales se ordenan por hora de inicio.
+            </p>
+            <div id="board"></div>
+          </section>
+          <button class="back" id="result-home"><!--i18n:%E2%86%90%20Back%20to%20the%20launchpad-->← Volver a la plataforma de lanzamiento</button>
+        </div>
+      </section>
+      <div id="error" role="alert" hidden></div>
+    </main>
+    <footer>
+      <span><!--i18n:TAKE%20YOUR%20CURIOSITY%20SOMEWHERE%20NEW.-->LLEVA TU CURIOSIDAD A ALGÚN LUGAR NUEVO.</span
+      ><button id="about"><!--i18n:About%20%26%20privacy-->Acerca y privacidad</button
+      ><a href="/es/games-like-krillion/"><!--i18n:Games%20like%20Krillion-->Juegos como Krillion</a>
+    </footer>
+    <dialog id="modal">
+      <button id="close-modal" aria-label="Cerrar diálogo" data-i18n-aria-label="Close dialog">×</button>
+      <div id="modal-content"></div>
+    </dialog>
+    <noscript
+      ><p class="noscript"><!--i18n:%0A%20%20%20%20%20%20%20%20Play%20RARE%20Air%2C%20a%20free%20daily%20trivia%20game%20with%20five%20open-answer%20questions.%20Enable%20JavaScript%20to%20take%20flight%2C%20or%20-->
+        Juega a RARE Air, un juego de trivia diario gratuito con cinco preguntas de respuesta abierta. Habilita JavaScript para tomar vuelo, o <a href="/es/how-to-play/"><!--i18n:read%20the%20rules-->lee las reglas</a>.
+      </p></noscript
+    >
+  </body>
+</html>

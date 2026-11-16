@@ -1,7 +1,8 @@
 import {questions as legacyQuestions} from './legacy-questions.js';
 import {bank, batches} from './bank.js';
+import {withTranslations} from './localization.js';
 export {legacyQuestions};
-export const questions = [...legacyQuestions, ...bank];
+export const questions = [...legacyQuestions, ...bank].map(withTranslations);
 export const bankInfo = {bankSize:questions.length, latestBatch:batches[batches.length-1]?.batch || 'legacy'};
 export { normalize, evaluate, publicQuestion } from './answers.js';
 const topicGroups = [
@@ -67,5 +68,5 @@ export function schedule(key, legacyOnly = false, topic = null) {
     const other = seed % (index + 1);
     [pool[index], pool[other]] = [pool[other], pool[index]];
   }
-  return pool.slice(0, 5);
+  return pool.slice(0, 5).map(withTranslations);
 }

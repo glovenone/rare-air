@@ -28,7 +28,7 @@ test("web sharing uses the system share sheet and preserves the scorecard", asyn
     clipboard: { writeText: () => assert.fail("Unexpected clipboard write") },
   });
   assert.equal(await platform.shareFlight(text), "shared");
-  assert.equal(payload.title, "RARE Air flight");
+  assert.equal(payload.title, "RARE Air");
   assert.equal(payload.text, text);
 });
 

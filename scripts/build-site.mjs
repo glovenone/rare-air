@@ -47,7 +47,7 @@ const pages = [
       "Play RARE Air, a free daily trivia game with five open-answer questions. Find less obvious correct answers and climb up to 5,000 meters through the clouds.",
     heading: "A daily trivia game that takes you higher.",
     intro:
-      "RARE Air is a free English daily trivia game with five open-answer questions. You get 30 seconds per question. Correct answers give your hot-air balloon lift, and less obvious answers take you further. A new daily flight opens at midnight UTC.",
+      "RARE Air is a free daily trivia game in ten languages with five open-answer questions. You get 30 seconds per question. Correct answers give your hot-air balloon lift, and less obvious answers take you further. A new daily flight opens at midnight UTC.",
     sections: [
       [
         "Five prompts, one shared daily challenge.",
@@ -83,6 +83,7 @@ const pages = [
       [
         "Pick a correct answer that fits the whole prompt.",
         "Read the scope carefully. Some prompts specify a particular book, game edition, region, alphabet letter or scientific model. Common names and accepted aliases work automatically. A misspelled answer is accepted only when it is included in the curated aliases.",
+        "On this website, choose your language from the header. Questions and answer review are available in English, Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Arabic and Indonesian. You can answer in your selected language or English. Changing language keeps the same flight and its running clock. Literal code keywords remain unchanged.",
       ],
       [
         "Turn answer rarity into altitude.",
@@ -207,7 +208,7 @@ pages.push(
       ],
       [
         "Daily questions and repeatable practice.",
-        `The current bank contains ${bankInfo.bankSize} English prompts. Today's daily flight gives everyone the same five questions and resets at midnight UTC. Practice creates another five-question set whenever you want to keep playing. Questions can return across separate practice flights.`,
+        `The current bank contains ${bankInfo.bankSize} prompts in ten languages. Today's daily flight gives everyone the same five questions and resets at midnight UTC. Practice creates another five-question set whenever you want to keep playing. Questions can return across separate practice flights.`,
         "The game is free to play in a mobile or desktop browser. You can start immediately without creating a player account. An anonymous cookie keeps your daily attempt, and local browser storage keeps your flight history.",
       ],
       [
@@ -394,7 +395,7 @@ for (const path of [
   updated = updated.replace(/\s*<!-- site-adsense:start -->[\s\S]*?<!-- site-adsense:end -->/, "");
   updated = updated.replace("</head>", `<!-- site-adsense:start -->${adsenseMetadata}<!-- site-adsense:end -->\n</head>`);
   if (path === "public/index.html") {
-    updated = updated.replace(/(<span id="bank-label" class="sr-only">)[^<]*/, `$1${bankInfo.bankSize} questions.`);
+    updated = updated.replace(/(<span id="bank-label" class="sr-only">)[\s\S]*?<\/span>/, `$1${bankInfo.bankSize} questions.</span>`);
     updated = updated.replace(/<!-- app-downloads:start -->[\s\S]*?<!-- app-downloads:end -->/, `<!-- app-downloads:start -->${downloads}<!-- app-downloads:end -->`);
   }
   if (path === "public/games-like-krillion/index.html") {

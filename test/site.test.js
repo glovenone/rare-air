@@ -3,11 +3,12 @@ import assert from "node:assert/strict";
 import { readFile, stat } from "node:fs/promises";
 import { resolve } from "node:path";
 import { googleAdsenseClient } from "../src/site-config.js";
+import { locales, localizedPath, resolveLocale } from "../public/locales.js";
 
 test("published search pages have consistent metadata and working local links", async () => {
   const sitemap = await readFile("public/sitemap.xml", "utf8");
   const urls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map((match) => new URL(match[1]));
-  assert.equal(urls.length, 9);
+  assert.equal(urls.length, 90);
   assert.equal(new Set(urls.map(String)).size, urls.length);
   const titles = new Set();
   const descriptions = new Set();
@@ -20,6 +21,14 @@ test("published search pages have consistent metadata and working local links", 
     assert.ok(description && !descriptions.has(description), `Unique description for ${url}`);
     titles.add(title);
     descriptions.add(description);
+    const language = resolveLocale(url.pathname.split("/")[1]);
+    assert.ok(html.includes(`<html lang="${language.tag}" dir="${language.direction}">`));
+    const basePath = localizedPath(url.pathname, "en");
+    for (const locale of locales) {
+      assert.ok(html.includes(`hreflang="${locale.tag}" href="${url.origin}${localizedPath(basePath, locale.code)}"`));
+    }
+    assert.equal([...html.matchAll(/hreflang="/g)].length, 11, `Ten languages and x-default for ${url}`);
+    assert.doesNotMatch(html, /hreflang="(?:hi|bn|ur)"/);
     assert.ok(html.includes(`rel="canonical" href="${url}"`) ||
       html.includes(`rel="canonical"\n      href="${url}"`), `Canonical for ${url}`);
     assert.match(html, /name="twitter:card" content="summary_large_image"/);
@@ -36,7 +45,7 @@ test("published search pages have consistent metadata and working local links", 
       const data = JSON.parse(match[1]);
       assert.equal(data["@context"], "https://schema.org");
     }
-    if (url.pathname !== "/") {
+    if (basePath !== "/") {
       assert.equal([...html.matchAll(/<h1[ >]/g)].length, 1, `Guide heading for ${url}`);
     }
     for (const [, href] of html.matchAll(/(?:href|src)="(\/[^"#]*)"/g)) {

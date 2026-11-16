@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#d8eaf0" />
+    <meta
+      name="description"
+      content="在 RARE Air 中玩免费的稀有答案 知识问答 游戏。五个限时问题，每日新挑战和无限制练习飞行。意想不到的答案让你飞得更高。" data-i18n-content="Play free rare-answer trivia in RARE Air. Five timed questions, a new daily challenge and unlimited practice flights. Unexpected answers lift you higher."
+    />
+    <title>每日知识挑战与无限练习 — RARE Air</title>
+    <meta name="google-site-verification" content="PMa4oQ8beHhAIRnVCPs1gOP06_cn2FeRNk6kO_43Tc0" />
+    <link
+      rel="canonical"
+      href="https://krillionunlimited.top/zh/"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="RARE Air" />
+    <meta property="og:title" content="RARE Air — 你能飞多高？" data-i18n-content="RARE Air — How high can you go?" />
+    <meta
+      property="og:description"
+      content="五个问题。一个好奇的气球。玩免费的每日 知识问答 游戏，稀有答案带你飞得更高。" data-i18n-content="Five questions. One curious balloon. Play free daily trivia where rare answers take you higher."
+    />
+    <meta
+      property="og:url"
+      content="https://krillionunlimited.top/zh/"
+    />
+    <meta
+      property="og:image"
+      content="https://krillionunlimited.top/art/flight-preview.jpg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="720" />
+    <meta property="og:image:alt" content="RARE Air 游戏画面：热气球在给出稀有答案后穿过云层攀升" data-i18n-content="RARE Air gameplay with a hot-air balloon climbing through clouds after a rare answer" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="RARE Air — 你能飞多高？" data-i18n-content="RARE Air — How high can you go?" />
+    <meta name="twitter:description" content="五个问题。一个好奇的气球。玩免费的每日 知识问答 游戏，稀有答案带你飞得更高。" data-i18n-content="Five questions. One curious balloon. Play free daily trivia where rare answers take you higher." />
+    <meta name="twitter:image" content="https://krillionunlimited.top/art/flight-preview.jpg" />
+    <meta name="twitter:image:alt" content="RARE Air 冷门答案飞行挑战" data-i18n-content="RARE Air rare-answer trivia flight" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoGame","name":"RARE Air","url":"https://krillionunlimited.top/zh/","description":"A free daily trivia game with five open-answer questions. Rare correct answers lift a hot-air balloon higher.","applicationCategory":"GameApplication","genre":["Trivia","Educational"],"gamePlatform":["Web browser"],"playMode":"SinglePlayer","inLanguage":"zh-Hans","isAccessibleForFree":true,"image":"https://krillionunlimited.top/art/flight-preview.jpg","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="/fonts/bricolage-800.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/dm-sans-400.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="preload" href="/art/dawn-sky.webp" as="image" />
+    <link rel="preload" href="/art/balloon.webp" as="image" fetchpriority="high" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/app.js" type="module"></script>
+<!-- site-analytics:start --><meta name="google-analytics-id" content="G-XQLKBWY0SS"><link rel="stylesheet" href="/analytics.css"><script src="/analytics.js" defer></script><!-- site-analytics:end -->
+<!-- site-adsense:start --><meta name="google-adsense-account" content="ca-pub-3710260158761283"><!-- site-adsense:end -->
+<!-- site-languages:start --><meta name="rare-source-title" content="Daily Trivia &amp; Unlimited Practice — RARE Air"><link rel="alternate" hreflang="en" href="https://krillionunlimited.top/"><link rel="alternate" hreflang="zh-Hans" href="https://krillionunlimited.top/zh/"><link rel="alternate" hreflang="es" href="https://krillionunlimited.top/es/"><link rel="alternate" hreflang="fr" href="https://krillionunlimited.top/fr/"><link rel="alternate" hreflang="pt" href="https://krillionunlimited.top/pt/"><link rel="alternate" hreflang="de" href="https://krillionunlimited.top/de/"><link rel="alternate" hreflang="ja" href="https://krillionunlimited.top/ja/"><link rel="alternate" hreflang="ru" href="https://krillionunlimited.top/ru/"><link rel="alternate" hreflang="ar" href="https://krillionunlimited.top/ar/"><link rel="alternate" hreflang="id" href="https://krillionunlimited.top/id/"><link rel="alternate" hreflang="x-default" href="https://krillionunlimited.top/"><link rel="stylesheet" href="/language.css"><!-- site-languages:end --></head>
+  <body data-view="home" data-tier="4">
+    <div id="sky-stage" class="sky-stage" aria-hidden="true">
+      <div class="sky-color"></div>
+      <div class="sky-landscape"></div>
+      <div class="high-sky"></div>
+      <canvas id="cloud-canvas"></canvas>
+      <div class="sun-haze"></div>
+      <div class="wind-streaks"><i></i><i></i><i></i><i></i></div>
+    </div>
+    <button
+      id="balloon"
+      class="balloon"
+      type="button"
+      aria-label="操控你的气球" data-i18n-aria-label="Steer your balloon"
+      aria-describedby="pilot-instructions"
+    >
+      <span class="balloon-float"
+        ><img src="/art/balloon.webp" width="1024" height="1536" fetchpriority="high" alt="" draggable="false" /><span
+          class="burner-glow"
+        ></span
+      ></span>
+      <span class="pilot-hint"><!--i18n:Drag%20to%20steer-->拖动以转向</span>
+    </button>
+    <span id="pilot-instructions" class="sr-only"
+      ><!--i18n:Drag%20the%20balloon%20to%20surf%20the%20breeze.%20When%20focused%2C%20use%20arrow%20keys%20to%20steer%20and%20Space%20to%20catch%20a%20gust.-->拖动气球以乘风滑行。集中注意力时，使用方向键转向，按空格键捕捉阵风。</span
+    >
+    <canvas id="foreground-canvas" aria-hidden="true"></canvas>
+    <header class="site-header">
+      <a class="brand" href="/zh/" aria-label="RARE Air 首页" data-i18n-aria-label="Rare home"><!--i18n:rare-->rare<span>↗</span></a>
+      <nav aria-label="主导航" data-i18n-aria-label="Main navigation">
+        <button id="help" aria-label="飞行指南" data-i18n-aria-label="How to fly"><!--i18n:How%20to%20fly%20-->飞行指南 <span>↗</span></button>
+        <button id="stats" aria-label="飞行记录" data-i18n-aria-label="Your flight log">▤</button>
+        <button
+          id="sound"
+          class="sound-button"
+          aria-label="启用声音" data-i18n-aria-label="Enable sound"
+          aria-pressed="false"
+        >
+          ♪<span id="sound-state"><!--i18n:off-->关</span>
+        </button>
+      </nav>
+    </header>
+    <div class="flight-hud">
+      <div class="altitude-readout" aria-label="飞行高度" data-i18n-aria-label="Flight altitude">
+        <span><!--i18n:ALTITUDE-->高度</span
+        ><strong><span id="altitude">0</span><small><!--i18n:%20m--> m</small></strong>
+      </div>
+      <div class="flight-status">
+        <div class="round-progress" id="progress" role="group" aria-label="回合进度" data-i18n-aria-label="Round progress">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <span id="question-number"><!--i18n:5%20DAILY%20PROMPTS-->每日 5 题</span>
+      </div>
+      <div class="best-readout">
+        <span><!--i18n:PERSONAL%20BEST-->个人最佳</span
+        ><strong><span id="best-altitude">0</span><small><!--i18n:%20m--> m</small></strong>
+      </div>
+    </div>
+    <aside class="altimeter" aria-label="高度刻度" data-i18n-aria-label="Altitude scale">
+      <span class="altimeter-title"><!--i18n:THE%20CLIMB-->攀登</span>
+      <div class="altimeter-track">
+        <div id="altitude-fill"></div>
+        <i id="altitude-pointer"></i><span class="tick tick-top"><!--i18n:5%2C000%20m-->5,000 m</span
+        ><span class="tick tick-mid"><!--i18n:2%2C500%20m-->2,500 m</span
+        ><span class="tick tick-bottom"><!--i18n:0%20m-->0 m</span>
+      </div>
+      <span id="sky-zone"><!--i18n:THE%20LAUNCHPAD-->起飞平台</span>
+    </aside>
+    <div id="checkpoint" class="checkpoint" role="status"></div>
+    <main>
+      <section id="home" class="home-screen">
+        <div class="home-heading">
+          <div class="daily-label" id="puzzle-label"><!--i18n:THE%20DAILY%20CLIMB-->每日攀登</div>
+          <h1><!--i18n:%0A%20%20%20%20%20%20%20%20%20%20%20%20Rare%20air-->
+            Rare air<span>.</span
+            ><span class="sr-only"><!--i18n:%20%E2%80%94%20Daily%20trivia%20game--> — 每日知识挑战</span>
+          </h1>
+        </div>
+        <div class="home-dock">
+          <p class="home-rule"><!--i18n:%0A%20%20%20%20%20%20%20%20%20%20%20%20Rarer%20answers%20take%20you%20higher.-->
+            越冷门的正确答案，让你飞得越高。<br /><span
+              ><!--i18n:Five%20questions.%20Free%20daily%20trivia%20and%20practice.-->每天五道题，也能随时自由练习。</span
+            >
+          </p>
+          <button class="primary" id="start">
+            <span><!--i18n:Take%20flight-->开始飞行</span><span class="button-arrow">↑</span></button
+          ><button id="practice" class="practice-link"><!--i18n:%0A%20%20%20%20%20%20%20%20%20%20%20%20Practice%20flight%20-->
+            自由练习 <span>↗</span>
+          </button>
+          <button id="topic-practice" class="practice-link topic-link"><!--i18n:%0A%20%20%20%20%20%20%20%20%20%20%20%20Pick%20a%20topic%20-->
+            选择主题 <span aria-hidden="true">↗</span>
+          </button>
+          <button id="offline-practice" class="practice-link" hidden><!--i18n:%0A%20%20%20%20%20%20%20%20%20%20%20%20Offline%20practice%20%E2%86%97%0A%20%20%20%20%20%20%20%20%20%20-->
+            离线练习 ↗
+          </button>
+          <!-- app-downloads:start --><nav class="app-downloads" aria-label="获取移动应用" data-i18n-aria-label="Get the mobile app"><a href="https://github.com/glovenone/rare-air/releases/download/android-v1.0.0/RARE-Air-1.0.apk" data-download-platform="android"><!--i18n:Download%20Android%20APK%20-->下载 Android APK <span aria-hidden="true">↓</span></a><a href="https://apps.apple.com/app/id6834294339" data-download-platform="ios"><!--i18n:Apple%20App%20Store%20-->Apple App Store <span aria-hidden="true">↗</span></a><a href="https://groups.google.com/g/rare-air-android-testers"><!--i18n:Join%20Android%20test%20group%20-->加入 Android 测试组 <span aria-hidden="true">↗</span></a></nav><!-- app-downloads:end -->
+          <div class="home-links">
+            <a href="/zh/how-to-play/"><!--i18n:How%20to%20play-->玩法说明</a
+            ><button id="archive"><!--i18n:Previous%20flights-->历史飞行</button
+            ><span id="reset-label"><!--i18n:A%20fresh%20flight%20every%20day.-->每日全新飞行。</span>
+          </div>
+          <span id="bank-label" class="sr-only"><!--i18n:601%20questions.-->601 道题目。</span>
+        </div>
+      </section>
+      <section id="launch" class="launch-screen" hidden aria-live="polite">
+        <span class="eyebrow"><!--i18n:CATCH%20THE%20BREEZE-->乘风而起</span
+        ><strong id="launch-count">3</strong>
+        <p><!--i18n:Your%20next%20question%20is%20just%20above%20the%20clouds.-->你的下一道问题就在云层之上。</p>
+      </section>
+      <section id="play" class="play-screen" hidden>
+        <div class="question-content">
+          <div class="question-meta">
+            <span id="mode-label"><!--i18n:DAILY%20FLIGHT-->每日飞行</span><span id="category"></span>
+          </div>
+          <h1 id="question"></h1>
+          <p class="question-hint"><!--i18n:%0A%20%20%20%20%20%20%20%20%20%20%20%20One%20correct%20answer.%20The%20less%20obvious%2C%20the%20better.%0A%20%20%20%20%20%20%20%20%20%20-->
+            一个正确答案。越不寻常，越出色。
+          </p>
+        </div>
+        <div class="control-dock">
+          <form id="answer-form">
+            <div class="timer-row">
+              <span class="timer"
+                ><span id="timer" role="timer">30</span
+                ><small><!--i18n:seconds-->秒</small></span
+              >
+              <div class="timer-track"><div id="time-fill"></div></div>
+              <button class="back" id="skip" type="button"><!--i18n:Skip%20%E2%86%92-->跳过 →</button>
+            </div>
+            <div class="answer-field">
+              <label for="answer" class="sr-only"><!--i18n:Your%20answer-->你的答案</label
+              ><input
+                id="answer"
+                dir="auto"
+                maxlength="100"
+                placeholder="想想意想不到的事情……" data-i18n-placeholder="Think of something unexpected…"
+                autocomplete="off"
+                autocapitalize="none"
+                spellcheck="false"
+              /><button id="submit" type="submit">
+                <span><!--i18n:Fly-->起飞</span><span>↑</span>
+              </button>
+            </div>
+          </form>
+          <div class="dock-bottom">
+            <button class="back" id="back-home"><!--i18n:%E2%86%90%20Back%20to%20ground-->← 返回地面</button
+            ><span><span id="live-score">0</span><!--i18n:%20m%20gained--> 上升高度</span>
+          </div>
+          <div
+            id="play-route"
+            class="sr-only"
+            aria-label="您的五个飞行阶段" data-i18n-aria-label="Your five flight stages"
+          ></div>
+        </div>
+      </section>
+      <section id="reveal" class="reveal-screen" hidden aria-live="polite">
+        <div class="reveal-content">
+          <div id="rarity-medal" class="rarity-medal" aria-hidden="true">↑</div>
+          <div class="eyebrow" id="reveal-kicker"><!--i18n:YOU%20CAUGHT%20AN%20UPDRAFT-->您遇到了上升气流</div>
+          <h1 id="reveal-tier"><!--i18n:Exceptional-->绝妙</h1>
+          <p class="reveal-answer" id="reveal-answer"></p>
+          <div class="reward">
+            <strong id="reveal-points">+1,000</strong><span><!--i18n:METERS-->米</span>
+          </div>
+          <p class="reveal-note" id="reveal-note"></p>
+        </div>
+        <div class="control-dock reveal-dock">
+          <button id="next" class="primary">
+            <span><!--i18n:Climb%20higher-->飞得更高</span><span class="button-arrow">↑</span>
+          </button>
+          <div class="reveal-footer">
+            <span id="reveal-progress"></span
+            ><span id="reveal-next-note"><!--i18n:The%20next%20question%20waits%20for%20you.-->下一道题在等待您。</span>
+          </div>
+          <div
+            id="reveal-route"
+            class="sr-only"
+            aria-label="您的五个飞行阶段" data-i18n-aria-label="Your five flight stages"
+          ></div>
+        </div>
+      </section>
+      <section id="result" class="result-screen" hidden>
+        <div class="flight-report">
+          <div class="report-top">
+            <span class="eyebrow"><!--i18n:FLIGHT%20COMPLETE-->飞行完成</span>
+          </div>
+          <h1 id="result-heading"><!--i18n:Oh%2C%20the%20places-->你的思想<br /><!--i18n:your%20mind%20can%20go.-->能抵达的远方。</h1>
+          <p id="result-subtitle"></p>
+          <div class="final-summary">
+            <div>
+              <span><!--i18n:YOUR%20FINAL%20ALTITUDE-->最终飞行高度</span><strong id="final-score">0</strong
+              ><small><!--i18n:meters%20above%20the%20everyday-->米 · 超越日常</small>
+            </div>
+            <div class="best-lift">
+              <span><!--i18n:BEST%20UPDRAFT-->最佳答案</span
+              ><strong id="rarest-find"><!--i18n:Exceptional-->绝妙</strong
+              ><small><!--i18n:Editorial%20answer%20rarity-->人工评定的答案稀有度</small>
+            </div>
+          </div>
+          <div
+            id="final-route"
+            class="final-route"
+            aria-label="您的五个飞行阶段" data-i18n-aria-label="Your five flight stages"
+          ></div>
+          <div class="result-actions">
+            <button class="primary" id="share">
+              <span><!--i18n:Share%20your%20flight-->分享飞行成绩</span><span>↗</span></button
+            ><button class="secondary" id="play-again"><!--i18n:%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20Take%20another%20flight%20%E2%86%97%0A%20%20%20%20%20%20%20%20%20%20%20%20-->
+              再次起飞 ↗
+            </button>
+          </div>
+          <p class="share-note" id="share-note" role="status"></p>
+          <div id="result-rows" class="result-rows"></div>
+          <details class="answer-review">
+            <summary><!--i18n:Explore%20the%20accepted%20answers%20-->查看正确答案 <span>+</span></summary>
+            <div id="review-content"></div>
+          </details>
+          <section class="leaderboard">
+            <div class="section-top">
+              <h2><!--i18n:In%20good%20air.-->一起乘风向上。</h2>
+              <span><!--i18n:DAILY%20TOP%2020-->每日前 20 名</span>
+            </div>
+            <p><!--i18n:%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20Completed%20daily%20flights.%20Equal%20altitudes%20are%20ordered%20by%20start%20time.%0A%20%20%20%20%20%20%20%20%20%20%20%20-->
+              完成的每日飞行。高度相同时按开始时间排序。
+            </p>
+            <div id="board"></div>
+          </section>
+          <button class="back" id="result-home"><!--i18n:%E2%86%90%20Back%20to%20the%20launchpad-->← 返回起点</button>
+        </div>
+      </section>
+      <div id="error" role="alert" hidden></div>
+    </main>
+    <footer>
+      <span><!--i18n:TAKE%20YOUR%20CURIOSITY%20SOMEWHERE%20NEW.-->让好奇心带你探索新天地。</span
+      ><button id="about"><!--i18n:About%20%26%20privacy-->关于与隐私</button
+      ><a href="/zh/games-like-krillion/"><!--i18n:Games%20like%20Krillion-->类似 Krillion 的游戏</a>
+    </footer>
+    <dialog id="modal">
+      <button id="close-modal" aria-label="关闭对话框" data-i18n-aria-label="Close dialog">×</button>
+      <div id="modal-content"></div>
+    </dialog>
+    <noscript
+      ><p class="noscript"><!--i18n:%0A%20%20%20%20%20%20%20%20Play%20RARE%20Air%2C%20a%20free%20daily%20trivia%20game%20with%20five%20open-answer%20questions.%20Enable%20JavaScript%20to%20take%20flight%2C%20or%20-->
+        玩 RARE Air，一款免费的每日 知识问答 游戏，包含五个开放式问题。启用 JavaScript 以起飞，或 <a href="/zh/how-to-play/"><!--i18n:read%20the%20rules-->阅读规则</a>.
+      </p></noscript
+    >
+  </body>
+</html>

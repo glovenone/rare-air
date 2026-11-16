@@ -19,7 +19,7 @@ export async function haptic() {}
 export async function shareFlight(text) {
   if (typeof navigator.share === "function") {
     try {
-      await navigator.share({ title: "RARE Air flight", text });
+      await navigator.share({ title: "RARE Air", text });
       return "shared";
     } catch (error) {
       if (error?.name === "AbortError") return "cancelled";
