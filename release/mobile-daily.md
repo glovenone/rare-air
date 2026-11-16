@@ -62,3 +62,8 @@ The subscription proposal remains an internal design deliverable. The current ap
 - [Apple version release options](https://developer.apple.com/help/app-store-connect/manage-your-apps-availability/select-an-app-store-version-release-option/)
 - [Google review and publishing controls](https://support.google.com/googleplay/android-developer/answer/9859654?hl=en)
 - [Google store-asset AI declarations](https://support.google.com/googleplay/android-developer/answer/17262077?hl=en)
+
+
+## November 16 public-link check
+
+The generic app URL and explicit US listing both rendered RARE Air in happycoin Chrome. The US listing still carries the published 1.0 description with 400 offline prompts. A China-store search for RARE Air did not return this app; that search alone does not establish the configured regional availability. App Store Connect requires a fresh login, so current territory settings could not be verified. The website now uses the verified full US listing URL. A storefront URL cannot guarantee installation with an Apple Account from another region. The owner was asked for the exact error and account region to complete diagnosis.
