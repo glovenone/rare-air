@@ -66,7 +66,7 @@ for (const path of paths) {
     const scripts = path === "/" ? "" : '<script src="/language.js" type="module"></script>';
     html = html.replace("</head>", `<!-- site-languages:start --><meta name="rare-source-title" content="${escape(sourceTitle)}">${alternates}<link rel="alternate" hreflang="x-default" href="${origin}${path}"><link rel="stylesheet" href="/language.css">${scripts}<!-- site-languages:end --></head>`);
     await mkdir(`public${localPath}`, { recursive: true });
-    await writeFile(`public${localPath}index.html`, html.replace(/[\t ]+$/gm, ""));
+    await writeFile(`public${localPath}index.html`, html.replace(/[\t ]+$/gm, "").replace(/\n{2,}/g, "\n"));
     allPaths.push(localPath);
   }
 }
