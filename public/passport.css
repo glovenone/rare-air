@@ -19,6 +19,7 @@
   border-radius: 12px;
   color: inherit;
   font: inherit;
+  font-size: 16px;
 }
 .passport-content input[type="checkbox"] {
   width: 20px;
@@ -69,7 +70,8 @@
   overflow: hidden;
 }
 .passport-card:after {
-  content: "↗";
+  content: "↗\FE0E";
+  pointer-events: none;
   position: absolute;
   inset-inline-end: 15px;
   top: 8px;

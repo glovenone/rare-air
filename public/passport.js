@@ -24,7 +24,10 @@ export function initPassport({
   const button = (value, fn, cls = "passport-button") => {
     const e = text("button", value, cls);
     e.type = "button";
-    e.onclick = () => run(fn);
+    e.onclick = () => {
+      document.activeElement?.blur();
+      run(fn);
+    };
     return e;
   };
   const input = (label, type = "text") => {

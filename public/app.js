@@ -181,6 +181,9 @@ function openDialog(title, paragraphs) {
 
 $("close-modal").onclick = () => $("modal").close();
 $("modal").addEventListener("click", (event) => {
+  // Native keyboards can move the dialog between pointer down and click.
+  // Keep dismissal on the explicit close/back controls in the packaged app.
+  if (native) return;
   if (event.target !== $("modal")) return;
   const bounds = $("modal").getBoundingClientRect();
   if (

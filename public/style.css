@@ -1236,7 +1236,7 @@ body[data-view="result"] .altimeter {
 }
 dialog {
   width: min(530px, calc(100% - 34px));
-  max-height: 85svh;
+  max-height: min(85svh, calc(var(--screen-height, 100svh) - env(safe-area-inset-top) - env(safe-area-inset-bottom) - 28px));
   overflow-y: auto;
   border: 1px solid #fff;
   padding: 37px;
@@ -2135,4 +2135,10 @@ body:not([data-view="home"]) .pilot-hint {
   .native-app .question-content {
     top: calc(25% + env(safe-area-inset-top) * 0.4);
   }
+}
+
+.native-app dialog {
+  inset-block-start: max(14px, env(safe-area-inset-top));
+  inset-block-end: auto;
+  margin-block: 0;
 }
