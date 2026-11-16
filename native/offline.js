@@ -1,9 +1,12 @@
 import { evaluate, publicQuestion } from "../src/answers.js";
+import { answerLabel } from "../src/localization.js";
+import { resolveLocale } from "../public/locales.js";
 import { questions } from "../src/questions.js";
 
 export function createOfflineClient(randomWords = (count) =>
   crypto.getRandomValues(new Uint32Array(count))) {
   let session = null;
+  let language = "en";
 
   function state() {
     if (!session) throw new Error("Start an offline flight first.");
@@ -21,13 +24,13 @@ export function createOfflineClient(randomWords = (count) =>
       question:
         done || session.started === 0
           ? null
-          : publicQuestion(session.questions[session.round]),
-      answers: session.answers,
+          : publicQuestion(session.questions[session.round], language),
+      answers: session.answers.map((answer, index) => ({ ...answer, label: answer.correct ? answerLabel(session.questions[index], answer.label, language) : answer.label })),
       review: done
         ? session.questions.map((question) => ({
-            ...publicQuestion(question),
+            ...publicQuestion(question, language),
             answers: question.answers.map((answer) => ({
-              label: answer.label,
+              label: answerLabel(question, answer.label, language),
               tier: answer.tier,
             })),
           }))
@@ -36,6 +39,7 @@ export function createOfflineClient(randomWords = (count) =>
   }
 
   return function offlineRequest(path, body = {}) {
+    language = resolveLocale(body.language || language).code;
     if (path === "start") {
       const day = new Date().toISOString().slice(0, 10);
       const pool = questions.filter((question) =>
@@ -77,7 +81,7 @@ export function createOfflineClient(randomWords = (count) =>
           throw new Error("Use an answer under 100 characters.");
         const timedOut = Date.now() > session.started + 30000;
         const question = session.questions[session.round];
-        const result = evaluate(question, timedOut ? "" : body.answer.trim());
+        const result = evaluate(question, timedOut ? "" : body.answer.trim(), language);
         session.answers.push({
           ...result,
           question: question.id,

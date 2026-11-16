@@ -1,3 +1,4 @@
+import { t, language } from "./i18n.js";
 const canvas = document.getElementById("cloud-canvas");
 const foreground = document.getElementById("foreground-canvas");
 const context = canvas.getContext("2d");
@@ -291,9 +292,9 @@ function drawLandmarks() {
     context.lineTo(x + 23, y + 9);
     context.stroke();
     context.fillStyle = "#2d6978";
-    context.fillText(`${landmark.altitude.toLocaleString()} m`, x, y, maxWidth);
+    context.fillText(`${landmark.altitude.toLocaleString(language())} m`, x, y, maxWidth);
     context.globalAlpha = 0.75;
-    context.fillText(landmark.label, x, y + (mobile ? 23 : 27), maxWidth);
+    context.fillText(t(landmark.label), x, y + (mobile ? 23 : 27), maxWidth);
   }
   context.globalAlpha = 1;
 }
@@ -502,7 +503,7 @@ function drawUpdraft(delta) {
 
 function updateAltitude() {
   const ratio = Math.min(1, Math.max(0, currentAltitude / 5000));
-  altitudeLabel.textContent = Math.round(currentAltitude).toLocaleString();
+  altitudeLabel.textContent = Math.round(currentAltitude).toLocaleString(language());
   root.style.setProperty("--altitude-ratio", ratio);
   root.style.setProperty(
     "--sky-shift",
@@ -513,7 +514,7 @@ function updateAltitude() {
     Math.max(0, 1 - currentAltitude / 1900),
   );
   root.style.setProperty("--high-opacity", ratio);
-  zoneLabel.textContent =
+  zoneLabel.textContent = t(
     currentAltitude >= 4200
       ? "THE HIGH BLUE"
       : currentAltitude >= 2500
@@ -522,13 +523,13 @@ function updateAltitude() {
           ? "THE CLOUDLINE"
           : currentAltitude > 0
             ? "THE OPEN AIR"
-            : "THE LAUNCHPAD";
+            : "THE LAUNCHPAD");
   const passed = pendingLandmarks.filter(
     (landmark) => currentAltitude >= landmark.altitude - 1,
   );
   if (passed.length) {
     const landmark = passed.at(-1);
-    checkpoint.textContent = `${landmark.altitude.toLocaleString()} m · ${landmark.label}`;
+    checkpoint.textContent = t`${landmark.altitude.toLocaleString(language())} m · ${t(landmark.label)}`;
     checkpoint.classList.add("visible");
     clearTimeout(checkpointTimer);
     checkpointTimer = setTimeout(

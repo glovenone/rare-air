@@ -1,0 +1,2290 @@
+{
+  "questions": {
+    "zh": {
+      "noble-gases": {
+        "answers": {
+          "Helium": "氦",
+          "Neon": "氖",
+          "Argon": "氩",
+          "Krypton": "氪",
+          "Xenon": "氙",
+          "Radon": "氡",
+          "Oganesson": "鿫"
+        },
+        "aliases": {
+          "Helium": [
+            "氦气"
+          ],
+          "Neon": [
+            "氖气"
+          ],
+          "Argon": [
+            "氩气"
+          ],
+          "Krypton": [
+            "氪气"
+          ],
+          "Xenon": [
+            "氙气"
+          ],
+          "Radon": [
+            "氡气"
+          ]
+        }
+      },
+      "chess": {
+        "answers": {
+          "King": "王",
+          "Queen": "后",
+          "Pawn": "兵",
+          "Knight": "马",
+          "Rook": "车",
+          "Bishop": "象"
+        },
+        "aliases": {
+          "King": [
+            "国王"
+          ],
+          "Queen": [
+            "皇后",
+            "王后"
+          ],
+          "Bishop": [
+            "主教"
+          ]
+        }
+      },
+      "zodiac": {
+        "answers": {
+          "Aries": "白羊座",
+          "Taurus": "金牛座",
+          "Gemini": "双子座",
+          "Cancer": "巨蟹座",
+          "Leo": "狮子座",
+          "Virgo": "处女座",
+          "Libra": "天秤座",
+          "Scorpio": "天蝎座",
+          "Sagittarius": "射手座",
+          "Capricorn": "摩羯座",
+          "Aquarius": "水瓶座",
+          "Pisces": "双鱼座"
+        }
+      },
+      "oceans": {
+        "answers": {
+          "Pacific": "太平洋",
+          "Atlantic": "大西洋",
+          "Indian": "印度洋",
+          "Arctic": "北冰洋",
+          "Southern": "南冰洋"
+        },
+        "aliases": {
+          "Southern": [
+            "南大洋"
+          ]
+        }
+      },
+      "dwarfs": {
+        "answers": {
+          "Pluto": "冥王星",
+          "Ceres": "谷神星",
+          "Eris": "阋神星",
+          "Haumea": "妊神星",
+          "Makemake": "鸟神星"
+        }
+      },
+      "si": {
+        "answers": {
+          "Metre": "米",
+          "Kilogram": "千克",
+          "Second": "秒",
+          "Ampere": "安培",
+          "Kelvin": "开尔文",
+          "Mole": "摩尔",
+          "Candela": "坎德拉"
+        },
+        "aliases": {
+          "Kilogram": [
+            "公斤"
+          ],
+          "Ampere": [
+            "安"
+          ],
+          "Kelvin": [
+            "开"
+          ],
+          "Mole": [
+            "摩"
+          ],
+          "Candela": [
+            "坎"
+          ]
+        }
+      },
+      "great-lakes": {
+        "answers": {
+          "Michigan": "密歇根湖",
+          "Superior": "苏必利尔湖",
+          "Erie": "伊利湖",
+          "Ontario": "安大略湖",
+          "Huron": "休伦湖"
+        }
+      },
+      "greek": {
+        "answers": {
+          "Alpha": "阿尔法",
+          "Beta": "贝塔",
+          "Gamma": "伽马",
+          "Delta": "德尔塔",
+          "Epsilon": "艾普西龙",
+          "Zeta": "泽塔",
+          "Eta": "伊塔",
+          "Theta": "西塔",
+          "Iota": "约塔",
+          "Kappa": "卡帕",
+          "Lambda": "兰姆达",
+          "Mu": "缪",
+          "Nu": "纽",
+          "Xi": "克西",
+          "Omicron": "奥密克戎",
+          "Pi": "派",
+          "Rho": "柔",
+          "Sigma": "西格玛",
+          "Tau": "陶",
+          "Upsilon": "宇普西龙",
+          "Phi": "斐",
+          "Chi": "希",
+          "Psi": "普西",
+          "Omega": "欧米伽"
+        },
+        "aliases": {
+          "Alpha": [
+            "α",
+            "Α"
+          ],
+          "Beta": [
+            "β",
+            "Β"
+          ],
+          "Gamma": [
+            "γ",
+            "Γ"
+          ],
+          "Delta": [
+            "δ",
+            "Δ"
+          ],
+          "Epsilon": [
+            "ε",
+            "Ε"
+          ],
+          "Zeta": [
+            "ζ",
+            "Ζ"
+          ],
+          "Eta": [
+            "η",
+            "Η"
+          ],
+          "Theta": [
+            "θ",
+            "Θ"
+          ],
+          "Iota": [
+            "ι",
+            "Ι"
+          ],
+          "Kappa": [
+            "κ",
+            "Κ"
+          ],
+          "Lambda": [
+            "λ",
+            "Λ",
+            "拉姆达"
+          ],
+          "Mu": [
+            "μ",
+            "Μ"
+          ],
+          "Nu": [
+            "ν",
+            "Ν"
+          ],
+          "Xi": [
+            "ξ",
+            "Ξ"
+          ],
+          "Omicron": [
+            "ο",
+            "Ο",
+            "奥米克戎",
+            "奥米克隆"
+          ],
+          "Pi": [
+            "π",
+            "Π"
+          ],
+          "Rho": [
+            "ρ",
+            "Ρ"
+          ],
+          "Sigma": [
+            "σ",
+            "Σ",
+            "ς"
+          ],
+          "Tau": [
+            "τ",
+            "Τ"
+          ],
+          "Upsilon": [
+            "υ",
+            "Υ"
+          ],
+          "Phi": [
+            "φ",
+            "Φ",
+            "菲"
+          ],
+          "Chi": [
+            "χ",
+            "Χ"
+          ],
+          "Psi": [
+            "ψ",
+            "Ψ"
+          ],
+          "Omega": [
+            "ω",
+            "Ω",
+            "欧米茄",
+            "奥米伽"
+          ]
+        }
+      },
+      "exp-896822c8c7354e": {
+        "answers": {
+          "Frodo": "弗罗多",
+          "Sam": "山姆",
+          "Gandalf": "甘道夫",
+          "Aragorn": "阿拉贡",
+          "Legolas": "莱戈拉斯",
+          "Gimli": "金雳",
+          "Boromir": "波罗米尔",
+          "Merry": "梅里",
+          "Pippin": "皮聘"
+        },
+        "aliases": {
+          "Frodo": [
+            "佛罗多",
+            "弗罗多·巴金斯",
+            "佛罗多·巴金斯"
+          ],
+          "Aragorn": [
+            "亚拉冈",
+            "神行侠"
+          ],
+          "Legolas": [
+            "勒苟拉斯",
+            "莱格拉斯"
+          ],
+          "Gimli": [
+            "金霹",
+            "吉姆利"
+          ],
+          "Boromir": [
+            "波罗莫",
+            "博罗米尔"
+          ],
+          "Merry": [
+            "梅利",
+            "梅力"
+          ],
+          "Pippin": [
+            "皮平"
+          ]
+        }
+      },
+      "exp-d9d452d96cb524": {
+        "answers": {
+          "Physical": "物理层",
+          "Data link": "数据链路层",
+          "Network": "网络层",
+          "Transport": "传输层",
+          "Session": "会话层",
+          "Presentation": "表示层",
+          "Application": "应用层"
+        },
+        "aliases": {
+          "Physical": [
+            "物理"
+          ],
+          "Data link": [
+            "数据链路"
+          ],
+          "Network": [
+            "网络"
+          ],
+          "Transport": [
+            "传输"
+          ],
+          "Session": [
+            "会话"
+          ],
+          "Presentation": [
+            "表示"
+          ],
+          "Application": [
+            "应用"
+          ]
+        }
+      },
+      "exp-3cf5ef7cccf41d": {
+        "answers": {
+          "Encapsulation": "封装",
+          "Abstraction": "抽象",
+          "Inheritance": "继承",
+          "Polymorphism": "多态"
+        }
+      },
+      "exp-dd8f28df8fc892": {
+        "answers": {
+          "Atomicity": "原子性",
+          "Consistency": "一致性",
+          "Isolation": "隔离性",
+          "Durability": "持久性"
+        }
+      },
+      "exp-fd776f979c8928": {
+        "answers": {
+          "String": "字符串",
+          "Number": "数字",
+          "Boolean": "布尔值",
+          "Null": "空值"
+        },
+        "aliases": {
+          "Number": [
+            "数值"
+          ],
+          "Boolean": [
+            "布尔"
+          ]
+        }
+      },
+      "exp-e010b6e5fcba24": {
+        "answers": {
+          "Modified": "已修改",
+          "Staged": "已暂存",
+          "Committed": "已提交"
+        }
+      },
+      "exp-a4eddea09f20ed": {
+        "answers": {
+          "Confidentiality": "机密性",
+          "Integrity": "完整性",
+          "Availability": "可用性"
+        },
+        "aliases": {
+          "Confidentiality": [
+            "保密性"
+          ]
+        }
+      },
+      "disney": {
+        "answers": {
+          "Dopey": "糊涂蛋",
+          "Grumpy": "爱生气",
+          "Happy": "开心果",
+          "Sleepy": "瞌睡虫",
+          "Doc": "万事通",
+          "Sneezy": "喷嚏精",
+          "Bashful": "害羞鬼"
+        }
+      },
+      "exp-81758f0c0fbe22": {
+        "answers": {
+          "Captain Falcon": "飞隼队长"
+        }
+      },
+      "exp-a48b9f233aaa1f": {
+        "answers": {
+          "Tennessine": "鿬",
+          "Oganesson": "鿫",
+          "Roentgenium": "𬬭",
+          "Copernicium": "鿔",
+          "Nihonium": "鿭"
+        }
+      },
+      "daily-20261115-si-prefix-names": {
+        "answers": {
+          "zepto": "zepto",
+          "yocto": "yocto",
+          "ronto": "ronto",
+          "quecto": "quecto"
+        }
+      },
+      "exp-674c20d29e5cfc": {
+        "answers": {
+          "Tennessine": "鿬"
+        }
+      },
+      "exp-26f5b5b3d6f2fe": {
+        "answers": {
+          "Copernicium": "鿔"
+        }
+      },
+      "exp-c4d470ba95cec5": {
+        "answers": {
+          "Nihonium": "鿭"
+        }
+      },
+      "exp-cf702d5f96d195": {
+        "answers": {
+          "Tennessine": "鿬"
+        }
+      },
+      "exp-63b45886fe5a37": {
+        "answers": {
+          "Queen": "后",
+          "Rook": "车",
+          "Bishop": "象",
+          "Knight": "马"
+        },
+        "aliases": {
+          "Queen": [
+            "皇后",
+            "王后"
+          ],
+          "Bishop": [
+            "主教"
+          ]
+        }
+      },
+      "cards": {
+        "aliases": {
+          "Hearts": [
+            "红心"
+          ],
+          "Clubs": [
+            "草花"
+          ]
+        }
+      },
+      "daily-20261115-harry-potter-seven-novels": {
+        "answers": {
+          "Philosopher’s Stone": "魔法石",
+          "Chamber of Secrets": "密室",
+          "Prisoner of Azkaban": "阿兹卡班的囚徒",
+          "Goblet of Fire": "火焰杯",
+          "Order of the Phoenix": "凤凰社",
+          "Half-Blood Prince": "混血王子",
+          "Deathly Hallows": "死亡圣器"
+        },
+        "aliases": {
+          "Philosopher’s Stone": [
+            "哈利·波特与魔法石"
+          ],
+          "Chamber of Secrets": [
+            "哈利·波特与密室"
+          ],
+          "Prisoner of Azkaban": [
+            "哈利·波特与阿兹卡班的囚徒",
+            "阿兹卡班囚徒",
+            "哈利·波特与阿兹卡班囚徒"
+          ],
+          "Goblet of Fire": [
+            "哈利·波特与火焰杯"
+          ],
+          "Order of the Phoenix": [
+            "哈利·波特与凤凰社"
+          ],
+          "Half-Blood Prince": [
+            "哈利·波特与混血王子"
+          ],
+          "Deathly Hallows": [
+            "哈利·波特与死亡圣器"
+          ]
+        }
+      },
+      "planets": {
+        "answers": {
+          "Earth": "地球",
+          "Mars": "火星",
+          "Jupiter": "木星",
+          "Saturn": "土星",
+          "Venus": "金星",
+          "Mercury": "水星",
+          "Neptune": "海王星",
+          "Uranus": "天王星"
+        },
+        "aliases": {}
+      },
+      "exp-6cc000633d2dab": {
+        "answers": {
+          "Mars": "火星",
+          "Venus": "金星",
+          "Jupiter": "木星",
+          "Saturn": "土星",
+          "Mercury": "水星"
+        },
+        "aliases": {}
+      },
+      "exp-777847c8960a10": {
+        "answers": {
+          "Saturn": "土星",
+          "Jupiter": "木星",
+          "Uranus": "天王星",
+          "Neptune": "海王星"
+        },
+        "aliases": {}
+      },
+      "exp-2bdb9129038074": {
+        "answers": {
+          "Earth": "地球",
+          "Mars": "火星",
+          "Venus": "金星",
+          "Mercury": "水星"
+        },
+        "aliases": {}
+      },
+      "daily-20261114-holst-planets-movements": {
+        "answers": {
+          "Mars": "火星",
+          "Venus": "金星",
+          "Mercury": "水星",
+          "Jupiter": "木星",
+          "Saturn": "土星",
+          "Uranus": "天王星",
+          "Neptune": "海王星"
+        },
+        "aliases": {}
+      }
+    },
+    "es": {
+      "disney": {
+        "answers": {
+          "Dopey": "Mudito",
+          "Bashful": "Tímido"
+        },
+        "aliases": {
+          "Dopey": [
+            "Tontín"
+          ]
+        }
+      },
+      "daily-20261114-three-pigs-house-materials": {
+        "answers": {
+          "Furze": "Tojo"
+        },
+        "aliases": {
+          "Furze": [
+            "Aulaga"
+          ]
+        }
+      },
+      "daily-20261115-twilight-original-quartet": {
+        "answers": {
+          "Twilight": "Crepúsculo",
+          "New Moon": "Luna nueva",
+          "Breaking Dawn": "Amanecer",
+          "Eclipse": "Eclipse"
+        }
+      },
+      "chess": {
+        "answers": {
+          "King": "Rey",
+          "Queen": "Reina",
+          "Pawn": "Peón",
+          "Knight": "Caballo",
+          "Rook": "Torre",
+          "Bishop": "Alfil"
+        },
+        "aliases": {
+          "Queen": [
+            "Dama"
+          ]
+        }
+      },
+      "exp-63b45886fe5a37": {
+        "answers": {
+          "Queen": "Reina",
+          "Rook": "Torre",
+          "Bishop": "Alfil",
+          "Knight": "Caballo"
+        },
+        "aliases": {
+          "Queen": [
+            "Dama"
+          ]
+        }
+      },
+      "cards": {
+        "aliases": {
+          "Hearts": [
+            "Corazón"
+          ],
+          "Spades": [
+            "Pica"
+          ],
+          "Diamonds": [
+            "Diamante"
+          ],
+          "Clubs": [
+            "Trébol"
+          ]
+        }
+      },
+      "daily-20261115-harry-potter-seven-novels": {
+        "answers": {
+          "Philosopher’s Stone": "La piedra filosofal",
+          "Chamber of Secrets": "La cámara secreta",
+          "Prisoner of Azkaban": "El prisionero de Azkaban",
+          "Goblet of Fire": "El cáliz de fuego",
+          "Order of the Phoenix": "La Orden del Fénix",
+          "Half-Blood Prince": "El misterio del príncipe",
+          "Deathly Hallows": "Las reliquias de la muerte"
+        },
+        "aliases": {
+          "Philosopher’s Stone": [
+            "Harry Potter y la piedra filosofal",
+            "piedra filosofal"
+          ],
+          "Chamber of Secrets": [
+            "Harry Potter y la cámara secreta",
+            "cámara secreta"
+          ],
+          "Prisoner of Azkaban": [
+            "Harry Potter y el prisionero de Azkaban",
+            "prisionero de Azkaban"
+          ],
+          "Goblet of Fire": [
+            "Harry Potter y el cáliz de fuego",
+            "cáliz de fuego"
+          ],
+          "Order of the Phoenix": [
+            "Harry Potter y la Orden del Fénix",
+            "Orden del Fénix"
+          ],
+          "Half-Blood Prince": [
+            "Harry Potter y el misterio del príncipe",
+            "misterio del príncipe"
+          ],
+          "Deathly Hallows": [
+            "Harry Potter y las reliquias de la muerte",
+            "reliquias de la muerte"
+          ]
+        }
+      },
+      "planets": {
+        "answers": {
+          "Earth": "Tierra",
+          "Mars": "Marte",
+          "Jupiter": "Júpiter",
+          "Saturn": "Saturno",
+          "Venus": "Venus",
+          "Mercury": "Mercurio",
+          "Neptune": "Neptuno",
+          "Uranus": "Urano"
+        },
+        "aliases": {
+          "Earth": [
+            "La Tierra"
+          ]
+        }
+      },
+      "exp-6cc000633d2dab": {
+        "answers": {
+          "Mars": "Marte",
+          "Venus": "Venus",
+          "Jupiter": "Júpiter",
+          "Saturn": "Saturno",
+          "Mercury": "Mercurio"
+        },
+        "aliases": {}
+      },
+      "exp-777847c8960a10": {
+        "answers": {
+          "Saturn": "Saturno",
+          "Jupiter": "Júpiter",
+          "Uranus": "Urano",
+          "Neptune": "Neptuno"
+        },
+        "aliases": {}
+      },
+      "exp-2bdb9129038074": {
+        "answers": {
+          "Earth": "Tierra",
+          "Mars": "Marte",
+          "Venus": "Venus",
+          "Mercury": "Mercurio"
+        },
+        "aliases": {
+          "Earth": [
+            "La Tierra"
+          ]
+        }
+      },
+      "daily-20261114-holst-planets-movements": {
+        "answers": {
+          "Mars": "Marte",
+          "Venus": "Venus",
+          "Mercury": "Mercurio",
+          "Jupiter": "Júpiter",
+          "Saturn": "Saturno",
+          "Uranus": "Urano",
+          "Neptune": "Neptuno"
+        },
+        "aliases": {}
+      }
+    },
+    "pt": {
+      "disney": {
+        "answers": {
+          "Dopey": "Dunga",
+          "Grumpy": "Zangado",
+          "Happy": "Feliz",
+          "Sleepy": "Soneca",
+          "Doc": "Mestre",
+          "Sneezy": "Atchim",
+          "Bashful": "Dengoso"
+        },
+        "aliases": {
+          "Bashful": [
+            "Tímido"
+          ]
+        }
+      },
+      "daily-20261115-twilight-original-quartet": {
+        "answers": {
+          "Twilight": "Crepúsculo",
+          "New Moon": "Lua nova",
+          "Breaking Dawn": "Amanhecer",
+          "Eclipse": "Eclipse"
+        }
+      },
+      "chess": {
+        "answers": {
+          "King": "Rei",
+          "Queen": "Rainha",
+          "Pawn": "Peão",
+          "Knight": "Cavalo",
+          "Rook": "Torre",
+          "Bishop": "Bispo"
+        },
+        "aliases": {
+          "Queen": [
+            "Dama"
+          ]
+        }
+      },
+      "exp-63b45886fe5a37": {
+        "answers": {
+          "Queen": "Rainha",
+          "Rook": "Torre",
+          "Bishop": "Bispo",
+          "Knight": "Cavalo"
+        },
+        "aliases": {
+          "Queen": [
+            "Dama"
+          ]
+        }
+      },
+      "cards": {
+        "aliases": {
+          "Hearts": [
+            "Copa"
+          ],
+          "Spades": [
+            "Espada"
+          ],
+          "Diamonds": [
+            "Ouro"
+          ],
+          "Clubs": [
+            "Pau"
+          ]
+        }
+      },
+      "daily-20261115-harry-potter-seven-novels": {
+        "answers": {
+          "Philosopher’s Stone": "A Pedra Filosofal",
+          "Chamber of Secrets": "A Câmara Secreta",
+          "Prisoner of Azkaban": "O Prisioneiro de Azkaban",
+          "Goblet of Fire": "O Cálice de Fogo",
+          "Order of the Phoenix": "A Ordem da Fênix",
+          "Half-Blood Prince": "O Enigma do Príncipe",
+          "Deathly Hallows": "As Relíquias da Morte"
+        },
+        "aliases": {
+          "Philosopher’s Stone": [
+            "Harry Potter e a Pedra Filosofal",
+            "Pedra Filosofal"
+          ],
+          "Chamber of Secrets": [
+            "Harry Potter e a Câmara Secreta",
+            "Câmara Secreta"
+          ],
+          "Prisoner of Azkaban": [
+            "Harry Potter e o Prisioneiro de Azkaban",
+            "Prisioneiro de Azkaban"
+          ],
+          "Goblet of Fire": [
+            "Harry Potter e o Cálice de Fogo",
+            "Cálice de Fogo"
+          ],
+          "Order of the Phoenix": [
+            "Harry Potter e a Ordem da Fênix",
+            "Ordem da Fênix"
+          ],
+          "Half-Blood Prince": [
+            "Harry Potter e o Enigma do Príncipe",
+            "Enigma do Príncipe",
+            "O Príncipe Misterioso",
+            "Príncipe Misterioso",
+            "Harry Potter e o Príncipe Misterioso"
+          ],
+          "Deathly Hallows": [
+            "Harry Potter e as Relíquias da Morte",
+            "Relíquias da Morte"
+          ]
+        }
+      },
+      "planets": {
+        "answers": {
+          "Earth": "Terra",
+          "Mars": "Marte",
+          "Jupiter": "Júpiter",
+          "Saturn": "Saturno",
+          "Venus": "Vênus",
+          "Mercury": "Mercúrio",
+          "Neptune": "Netuno",
+          "Uranus": "Urano"
+        },
+        "aliases": {
+          "Earth": [
+            "A Terra"
+          ],
+          "Venus": [
+            "Vénus"
+          ],
+          "Neptune": [
+            "Neptuno"
+          ]
+        }
+      },
+      "exp-6cc000633d2dab": {
+        "answers": {
+          "Mars": "Marte",
+          "Venus": "Vênus",
+          "Jupiter": "Júpiter",
+          "Saturn": "Saturno",
+          "Mercury": "Mercúrio"
+        },
+        "aliases": {
+          "Venus": [
+            "Vénus"
+          ]
+        }
+      },
+      "exp-777847c8960a10": {
+        "answers": {
+          "Saturn": "Saturno",
+          "Jupiter": "Júpiter",
+          "Uranus": "Urano",
+          "Neptune": "Netuno"
+        },
+        "aliases": {
+          "Neptune": [
+            "Neptuno"
+          ]
+        }
+      },
+      "exp-2bdb9129038074": {
+        "answers": {
+          "Earth": "Terra",
+          "Mars": "Marte",
+          "Venus": "Vênus",
+          "Mercury": "Mercúrio"
+        },
+        "aliases": {
+          "Earth": [
+            "A Terra"
+          ],
+          "Venus": [
+            "Vénus"
+          ]
+        }
+      },
+      "daily-20261114-holst-planets-movements": {
+        "answers": {
+          "Mars": "Marte",
+          "Venus": "Vênus",
+          "Mercury": "Mercúrio",
+          "Jupiter": "Júpiter",
+          "Saturn": "Saturno",
+          "Uranus": "Urano",
+          "Neptune": "Netuno"
+        },
+        "aliases": {
+          "Venus": [
+            "Vénus"
+          ],
+          "Neptune": [
+            "Neptuno"
+          ]
+        }
+      }
+    },
+    "fr": {
+      "daily-20261115-twilight-original-quartet": {
+        "answers": {
+          "Twilight": "Fascination",
+          "New Moon": "Tentation",
+          "Breaking Dawn": "Révélation",
+          "Eclipse": "Hésitation"
+        }
+      },
+      "chess": {
+        "answers": {
+          "King": "Roi",
+          "Queen": "Dame",
+          "Pawn": "Pion",
+          "Knight": "Cavalier",
+          "Rook": "Tour",
+          "Bishop": "Fou"
+        },
+        "aliases": {
+          "Queen": [
+            "Reine"
+          ]
+        }
+      },
+      "exp-63b45886fe5a37": {
+        "answers": {
+          "Queen": "Dame",
+          "Rook": "Tour",
+          "Bishop": "Fou",
+          "Knight": "Cavalier"
+        },
+        "aliases": {
+          "Queen": [
+            "Reine"
+          ]
+        }
+      },
+      "cards": {
+        "aliases": {
+          "Hearts": [
+            "Cœur",
+            "Coeur"
+          ],
+          "Spades": [
+            "Pique"
+          ],
+          "Diamonds": [
+            "Carreau"
+          ],
+          "Clubs": [
+            "Trèfle"
+          ]
+        }
+      },
+      "daily-20261115-harry-potter-seven-novels": {
+        "answers": {
+          "Philosopher’s Stone": "À l'école des sorciers",
+          "Chamber of Secrets": "La Chambre des secrets",
+          "Prisoner of Azkaban": "Le Prisonnier d'Azkaban",
+          "Goblet of Fire": "La Coupe de feu",
+          "Order of the Phoenix": "L’Ordre du Phénix",
+          "Half-Blood Prince": "Le Prince de sang-mêlé",
+          "Deathly Hallows": "Les Reliques de la Mort"
+        },
+        "aliases": {
+          "Philosopher’s Stone": [
+            "Harry Potter à l'école des sorciers"
+          ],
+          "Chamber of Secrets": [
+            "Harry Potter et la Chambre des secrets",
+            "Chambre des secrets"
+          ],
+          "Prisoner of Azkaban": [
+            "Harry Potter et le Prisonnier d'Azkaban",
+            "Prisonnier d'Azkaban"
+          ],
+          "Goblet of Fire": [
+            "Harry Potter et la Coupe de feu",
+            "Coupe de feu"
+          ],
+          "Order of the Phoenix": [
+            "Harry Potter et l’Ordre du Phénix",
+            "Ordre du Phénix"
+          ],
+          "Half-Blood Prince": [
+            "Harry Potter et le Prince de sang-mêlé",
+            "Prince de sang-mêlé"
+          ],
+          "Deathly Hallows": [
+            "Harry Potter et les Reliques de la Mort",
+            "Reliques de la Mort"
+          ]
+        }
+      },
+      "planets": {
+        "answers": {
+          "Earth": "Terre",
+          "Mars": "Mars",
+          "Jupiter": "Jupiter",
+          "Saturn": "Saturne",
+          "Venus": "Vénus",
+          "Mercury": "Mercure",
+          "Neptune": "Neptune",
+          "Uranus": "Uranus"
+        },
+        "aliases": {
+          "Earth": [
+            "La Terre"
+          ]
+        }
+      },
+      "exp-6cc000633d2dab": {
+        "answers": {
+          "Mars": "Mars",
+          "Venus": "Vénus",
+          "Jupiter": "Jupiter",
+          "Saturn": "Saturne",
+          "Mercury": "Mercure"
+        },
+        "aliases": {}
+      },
+      "exp-777847c8960a10": {
+        "answers": {
+          "Saturn": "Saturne",
+          "Jupiter": "Jupiter",
+          "Uranus": "Uranus",
+          "Neptune": "Neptune"
+        },
+        "aliases": {}
+      },
+      "exp-2bdb9129038074": {
+        "answers": {
+          "Earth": "Terre",
+          "Mars": "Mars",
+          "Venus": "Vénus",
+          "Mercury": "Mercure"
+        },
+        "aliases": {
+          "Earth": [
+            "La Terre"
+          ]
+        }
+      },
+      "daily-20261114-holst-planets-movements": {
+        "answers": {
+          "Mars": "Mars",
+          "Venus": "Vénus",
+          "Mercury": "Mercure",
+          "Jupiter": "Jupiter",
+          "Saturn": "Saturne",
+          "Uranus": "Uranus",
+          "Neptune": "Neptune"
+        },
+        "aliases": {}
+      }
+    },
+    "de": {
+      "chess": {
+        "answers": {
+          "King": "König",
+          "Queen": "Dame",
+          "Pawn": "Bauer",
+          "Knight": "Springer",
+          "Rook": "Turm",
+          "Bishop": "Läufer"
+        },
+        "aliases": {
+          "Knight": [
+            "Pferd"
+          ]
+        }
+      },
+      "exp-63b45886fe5a37": {
+        "answers": {
+          "Queen": "Dame",
+          "Rook": "Turm",
+          "Bishop": "Läufer",
+          "Knight": "Springer"
+        },
+        "aliases": {
+          "Knight": [
+            "Pferd"
+          ]
+        }
+      },
+      "exp-8f60ab2845bc85": {
+        "prompt": "Nenne ein Gerät im Kunstturnen der Frauen.",
+        "answers": {
+          "Floor": "Boden",
+          "Vault": "Sprung",
+          "Uneven bars": "Stufenbarren",
+          "Balance beam": "Schwebebalken"
+        }
+      },
+      "exp-6441382fe03ea6": {
+        "answers": {
+          "Lesser flamingo": "Zwergflamingo",
+          "Andean flamingo": "Andenflamingo"
+        }
+      },
+      "exp-602781b64ac91d": {
+        "answers": {
+          "Cosecant": "Kosekans",
+          "Cotangent": "Kotangens"
+        }
+      },
+      "exp-aa8508a0ebc10b": {
+        "answers": {
+          "Degree": "Grad",
+          "Gradian": "Gon"
+        },
+        "aliases": {
+          "Gradian": [
+            "Neugrad"
+          ],
+          "Degree": [
+            "Altgrad"
+          ]
+        }
+      },
+      "daily-20261115-harry-potter-seven-novels": {
+        "answers": {
+          "Philosopher’s Stone": "Der Stein der Weisen",
+          "Chamber of Secrets": "Die Kammer des Schreckens",
+          "Prisoner of Azkaban": "Der Gefangene von Askaban",
+          "Goblet of Fire": "Der Feuerkelch",
+          "Order of the Phoenix": "Der Orden des Phönix",
+          "Half-Blood Prince": "Der Halbblutprinz",
+          "Deathly Hallows": "Die Heiligtümer des Todes"
+        },
+        "aliases": {
+          "Philosopher’s Stone": [
+            "Harry Potter und der Stein der Weisen",
+            "Stein der Weisen"
+          ],
+          "Chamber of Secrets": [
+            "Harry Potter und die Kammer des Schreckens",
+            "Kammer des Schreckens"
+          ],
+          "Prisoner of Azkaban": [
+            "Harry Potter und der Gefangene von Askaban",
+            "Gefangene von Askaban"
+          ],
+          "Goblet of Fire": [
+            "Harry Potter und der Feuerkelch",
+            "Feuerkelch"
+          ],
+          "Order of the Phoenix": [
+            "Harry Potter und der Orden des Phönix",
+            "Orden des Phönix"
+          ],
+          "Half-Blood Prince": [
+            "Harry Potter und der Halbblutprinz",
+            "Halbblutprinz"
+          ],
+          "Deathly Hallows": [
+            "Harry Potter und die Heiligtümer des Todes",
+            "Heiligtümer des Todes"
+          ]
+        }
+      },
+      "daily-20261114-tokyo-climbing-disciplines": {
+        "answers": {
+          "Speed": "Speedklettern",
+          "Bouldering": "Bouldern",
+          "Lead": "Vorstiegsklettern"
+        },
+        "aliases": {
+          "Lead": [
+            "Vorstieg",
+            "Schwierigkeitsklettern"
+          ],
+          "Speed": [
+            "Geschwindigkeitsklettern"
+          ]
+        }
+      },
+      "planets": {
+        "answers": {
+          "Earth": "Erde",
+          "Mars": "Mars",
+          "Jupiter": "Jupiter",
+          "Saturn": "Saturn",
+          "Venus": "Venus",
+          "Mercury": "Merkur",
+          "Neptune": "Neptun",
+          "Uranus": "Uranus"
+        },
+        "aliases": {}
+      },
+      "exp-6cc000633d2dab": {
+        "answers": {
+          "Mars": "Mars",
+          "Venus": "Venus",
+          "Jupiter": "Jupiter",
+          "Saturn": "Saturn",
+          "Mercury": "Merkur"
+        },
+        "aliases": {}
+      },
+      "exp-777847c8960a10": {
+        "answers": {
+          "Saturn": "Saturn",
+          "Jupiter": "Jupiter",
+          "Uranus": "Uranus",
+          "Neptune": "Neptun"
+        },
+        "aliases": {}
+      },
+      "exp-2bdb9129038074": {
+        "answers": {
+          "Earth": "Erde",
+          "Mars": "Mars",
+          "Venus": "Venus",
+          "Mercury": "Merkur"
+        },
+        "aliases": {}
+      },
+      "daily-20261114-holst-planets-movements": {
+        "answers": {
+          "Mars": "Mars",
+          "Venus": "Venus",
+          "Mercury": "Merkur",
+          "Jupiter": "Jupiter",
+          "Saturn": "Saturn",
+          "Uranus": "Uranus",
+          "Neptune": "Neptun"
+        },
+        "aliases": {}
+      },
+      "daily-20261113-177a58c636fe": {
+        "prompt": "Nenne eine reguläre Multi-Akt-Zone im ursprünglichen Sonic the Hedgehog für Mega Drive/Genesis (1991)."
+      }
+    },
+    "ja": {
+      "chess": {
+        "answers": {
+          "King": "キング",
+          "Queen": "クイーン",
+          "Pawn": "ポーン",
+          "Knight": "ナイト",
+          "Rook": "ルーク",
+          "Bishop": "ビショップ"
+        },
+        "aliases": {}
+      },
+      "exp-63b45886fe5a37": {
+        "answers": {
+          "Queen": "クイーン",
+          "Rook": "ルーク",
+          "Bishop": "ビショップ",
+          "Knight": "ナイト"
+        },
+        "aliases": {}
+      },
+      "cards": {
+        "aliases": {
+          "Diamonds": [
+            "ダイヤモンド"
+          ],
+          "Clubs": [
+            "クローバー"
+          ]
+        }
+      },
+      "daily-20261115-harry-potter-seven-novels": {
+        "answers": {
+          "Philosopher’s Stone": "賢者の石",
+          "Chamber of Secrets": "秘密の部屋",
+          "Prisoner of Azkaban": "アズカバンの囚人",
+          "Goblet of Fire": "炎のゴブレット",
+          "Order of the Phoenix": "不死鳥の騎士団",
+          "Half-Blood Prince": "謎のプリンス",
+          "Deathly Hallows": "死の秘宝"
+        },
+        "aliases": {
+          "Philosopher’s Stone": [
+            "ハリー・ポッターと賢者の石"
+          ],
+          "Chamber of Secrets": [
+            "ハリー・ポッターと秘密の部屋"
+          ],
+          "Prisoner of Azkaban": [
+            "ハリー・ポッターとアズカバンの囚人"
+          ],
+          "Goblet of Fire": [
+            "ハリー・ポッターと炎のゴブレット"
+          ],
+          "Order of the Phoenix": [
+            "ハリー・ポッターと不死鳥の騎士団"
+          ],
+          "Half-Blood Prince": [
+            "ハリー・ポッターと謎のプリンス"
+          ],
+          "Deathly Hallows": [
+            "ハリー・ポッターと死の秘宝"
+          ]
+        }
+      },
+      "exp-103ad0e1f83a0a": {
+        "answers": {
+          "Sun bear": "マレーグマ",
+          "Brown bear": "ヒグマ"
+        }
+      },
+      "exp-ba69edf391273b": {
+        "answers": {
+          "Study": "書斎",
+          "Library": "図書室"
+        },
+        "aliases": {
+          "Library": [
+            "ライブラリー"
+          ]
+        }
+      },
+      "exp-109e44e6b8208e": {
+        "answers": {
+          "The Fellowship of the Ring": "旅の仲間",
+          "The Two Towers": "二つの塔",
+          "The Return of the King": "王の帰還"
+        },
+        "aliases": {
+          "The Fellowship of the Ring": [
+            "ロード・オブ・ザ・リング 旅の仲間",
+            "指輪物語 旅の仲間"
+          ],
+          "The Two Towers": [
+            "ロード・オブ・ザ・リング 二つの塔",
+            "指輪物語 二つの塔"
+          ],
+          "The Return of the King": [
+            "ロード・オブ・ザ・リング 王の帰還",
+            "指輪物語 王の帰還"
+          ]
+        }
+      },
+      "daily-20261114-cartilage-types": {
+        "answers": {
+          "Hyaline": "硝子軟骨",
+          "Elastic": "弾性軟骨",
+          "Fibrocartilage": "線維軟骨"
+        }
+      },
+      "daily-20261113-57798a5c570d": {
+        "answers": {
+          "Asteroidea": "ヒトデ綱",
+          "Ophiuroidea": "クモヒトデ綱",
+          "Echinoidea": "ウニ綱",
+          "Holothuroidea": "ナマコ綱",
+          "Crinoidea": "ウミユリ綱"
+        },
+        "aliases": {
+          "Asteroidea": [
+            "ヒトデ"
+          ],
+          "Ophiuroidea": [
+            "クモヒトデ",
+            "蛇尾綱"
+          ],
+          "Echinoidea": [
+            "ウニ"
+          ],
+          "Holothuroidea": [
+            "ナマコ"
+          ],
+          "Crinoidea": [
+            "ウミユリ"
+          ]
+        }
+      },
+      "daily-20261113-1116c266f1d3": {
+        "answers": {
+          "Mosses": "セン類",
+          "Liverworts": "タイ類",
+          "Hornworts": "ツノゴケ類"
+        },
+        "aliases": {
+          "Mosses": [
+            "蘚類"
+          ],
+          "Liverworts": [
+            "苔類"
+          ],
+          "Hornworts": [
+            "角苔類"
+          ]
+        }
+      },
+      "daily-20261113-42c720e97eb4": {
+        "answers": {
+          "Common wombat": "ヒメウォンバット",
+          "Southern hairy-nosed wombat": "ミナミケバナウォンバット",
+          "Northern hairy-nosed wombat": "キタケバナウォンバット"
+        }
+      },
+      "planets": {
+        "answers": {
+          "Earth": "地球",
+          "Mars": "火星",
+          "Jupiter": "木星",
+          "Saturn": "土星",
+          "Venus": "金星",
+          "Mercury": "水星",
+          "Neptune": "海王星",
+          "Uranus": "天王星"
+        },
+        "aliases": {}
+      },
+      "exp-6cc000633d2dab": {
+        "answers": {
+          "Mars": "火星",
+          "Venus": "金星",
+          "Jupiter": "木星",
+          "Saturn": "土星",
+          "Mercury": "水星"
+        },
+        "aliases": {}
+      },
+      "exp-777847c8960a10": {
+        "answers": {
+          "Saturn": "土星",
+          "Jupiter": "木星",
+          "Uranus": "天王星",
+          "Neptune": "海王星"
+        },
+        "aliases": {}
+      },
+      "exp-2bdb9129038074": {
+        "answers": {
+          "Earth": "地球",
+          "Mars": "火星",
+          "Venus": "金星",
+          "Mercury": "水星"
+        },
+        "aliases": {}
+      },
+      "daily-20261114-holst-planets-movements": {
+        "answers": {
+          "Mars": "火星",
+          "Venus": "金星",
+          "Mercury": "水星",
+          "Jupiter": "木星",
+          "Saturn": "土星",
+          "Uranus": "天王星",
+          "Neptune": "海王星"
+        },
+        "aliases": {}
+      }
+    },
+    "ru": {
+      "chess": {
+        "answers": {
+          "King": "Король",
+          "Queen": "Ферзь",
+          "Pawn": "Пешка",
+          "Knight": "Конь",
+          "Rook": "Ладья",
+          "Bishop": "Слон"
+        },
+        "aliases": {}
+      },
+      "exp-63b45886fe5a37": {
+        "answers": {
+          "Queen": "Ферзь",
+          "Rook": "Ладья",
+          "Bishop": "Слон",
+          "Knight": "Конь"
+        },
+        "aliases": {}
+      },
+      "cards": {
+        "aliases": {
+          "Hearts": [
+            "Черви",
+            "Черва"
+          ],
+          "Spades": [
+            "Пика"
+          ],
+          "Diamonds": [
+            "Бубна"
+          ],
+          "Clubs": [
+            "Трефа"
+          ]
+        }
+      },
+      "daily-20261115-harry-potter-seven-novels": {
+        "answers": {
+          "Philosopher’s Stone": "Философский камень",
+          "Chamber of Secrets": "Тайная комната",
+          "Prisoner of Azkaban": "Узник Азкабана",
+          "Goblet of Fire": "Кубок огня",
+          "Order of the Phoenix": "Орден Феникса",
+          "Half-Blood Prince": "Принц-полукровка",
+          "Deathly Hallows": "Дары Смерти"
+        },
+        "aliases": {
+          "Philosopher’s Stone": [
+            "Гарри Поттер и философский камень"
+          ],
+          "Chamber of Secrets": [
+            "Гарри Поттер и тайная комната"
+          ],
+          "Prisoner of Azkaban": [
+            "Гарри Поттер и узник Азкабана"
+          ],
+          "Goblet of Fire": [
+            "Гарри Поттер и кубок огня"
+          ],
+          "Order of the Phoenix": [
+            "Гарри Поттер и орден Феникса"
+          ],
+          "Half-Blood Prince": [
+            "Гарри Поттер и принц-полукровка"
+          ],
+          "Deathly Hallows": [
+            "Гарри Поттер и дары Смерти"
+          ]
+        }
+      },
+      "planets": {
+        "answers": {
+          "Earth": "Земля",
+          "Mars": "Марс",
+          "Jupiter": "Юпитер",
+          "Saturn": "Сатурн",
+          "Venus": "Венера",
+          "Mercury": "Меркурий",
+          "Neptune": "Нептун",
+          "Uranus": "Уран"
+        },
+        "aliases": {}
+      },
+      "exp-6cc000633d2dab": {
+        "answers": {
+          "Mars": "Марс",
+          "Venus": "Венера",
+          "Jupiter": "Юпитер",
+          "Saturn": "Сатурн",
+          "Mercury": "Меркурий"
+        },
+        "aliases": {}
+      },
+      "exp-777847c8960a10": {
+        "answers": {
+          "Saturn": "Сатурн",
+          "Jupiter": "Юпитер",
+          "Uranus": "Уран",
+          "Neptune": "Нептун"
+        },
+        "aliases": {}
+      },
+      "exp-2bdb9129038074": {
+        "answers": {
+          "Earth": "Земля",
+          "Mars": "Марс",
+          "Venus": "Венера",
+          "Mercury": "Меркурий"
+        },
+        "aliases": {}
+      },
+      "daily-20261114-holst-planets-movements": {
+        "answers": {
+          "Mars": "Марс",
+          "Venus": "Венера",
+          "Mercury": "Меркурий",
+          "Jupiter": "Юпитер",
+          "Saturn": "Сатурн",
+          "Uranus": "Уран",
+          "Neptune": "Нептун"
+        },
+        "aliases": {}
+      },
+      "exp-004b976447574c": {
+        "answers": {
+          "Loggerhead sea turtle": "Логгерхед",
+          "Leatherback sea turtle": "Кожистая морская черепаха"
+        },
+        "aliases": {
+          "Loggerhead sea turtle": [
+            "Головастая морская черепаха",
+            "Каретта"
+          ]
+        }
+      },
+      "exp-9db6a86a6dc525": {
+        "answers": {
+          "Vault": "Опорный прыжок",
+          "Horizontal bar": "Перекладина"
+        }
+      },
+      "daily-20261114-grand-piano-pedals": {
+        "answers": {
+          "Damper": "Правая педаль",
+          "Soft": "Левая педаль",
+          "Sostenuto": "Педаль состенуто"
+        },
+        "aliases": {
+          "Damper": [
+            "Демпферная педаль",
+            "Сустейн",
+            "Педаль сустейн",
+            "Правая"
+          ],
+          "Soft": [
+            "Уна корда",
+            "Una corda",
+            "Левая"
+          ],
+          "Sostenuto": [
+            "Состенуто",
+            "Сустенуто",
+            "Средняя педаль",
+            "Средняя"
+          ]
+        }
+      },
+      "daily-20261114-triple-jump-phases": {
+        "answers": {
+          "Hop": "Скачок",
+          "Step": "Шаг",
+          "Jump": "Прыжок"
+        }
+      }
+    },
+    "ar": {
+      "chess": {
+        "answers": {
+          "King": "ملك",
+          "Queen": "وزير",
+          "Pawn": "بيدق",
+          "Knight": "حصان",
+          "Rook": "رخ",
+          "Bishop": "فيل"
+        },
+        "aliases": {
+          "King": [
+            "الملك"
+          ],
+          "Queen": [
+            "الوزير",
+            "ملكة",
+            "الملكة"
+          ],
+          "Pawn": [
+            "البيدق",
+            "جندي",
+            "الجندي"
+          ],
+          "Knight": [
+            "الحصان"
+          ],
+          "Rook": [
+            "الرخ",
+            "قلعة",
+            "القلعة"
+          ],
+          "Bishop": [
+            "الفيل"
+          ]
+        }
+      },
+      "exp-63b45886fe5a37": {
+        "answers": {
+          "Queen": "وزير",
+          "Rook": "رخ",
+          "Bishop": "فيل",
+          "Knight": "حصان"
+        },
+        "aliases": {
+          "Queen": [
+            "الوزير",
+            "ملكة",
+            "الملكة"
+          ],
+          "Knight": [
+            "الحصان"
+          ],
+          "Rook": [
+            "الرخ",
+            "قلعة",
+            "القلعة"
+          ],
+          "Bishop": [
+            "الفيل"
+          ]
+        }
+      },
+      "daily-20261115-harry-potter-seven-novels": {
+        "answers": {
+          "Philosopher’s Stone": "حجر الفيلسوف",
+          "Chamber of Secrets": "حجرة الأسرار",
+          "Prisoner of Azkaban": "سجين أزكابان",
+          "Goblet of Fire": "كأس النار",
+          "Order of the Phoenix": "جماعة العنقاء",
+          "Half-Blood Prince": "الأمير الهجين",
+          "Deathly Hallows": "مقدسات الموت"
+        },
+        "aliases": {
+          "Philosopher’s Stone": [
+            "هاري بوتر وحجر الفيلسوف"
+          ],
+          "Chamber of Secrets": [
+            "هاري بوتر وحجرة الأسرار",
+            "غرفة الأسرار",
+            "هاري بوتر وغرفة الأسرار"
+          ],
+          "Prisoner of Azkaban": [
+            "هاري بوتر وسجين أزكابان"
+          ],
+          "Goblet of Fire": [
+            "هاري بوتر وكأس النار"
+          ],
+          "Order of the Phoenix": [
+            "هاري بوتر وجماعة العنقاء"
+          ],
+          "Half-Blood Prince": [
+            "هاري بوتر والأمير الهجين"
+          ],
+          "Deathly Hallows": [
+            "هاري بوتر ومقدسات الموت"
+          ]
+        }
+      },
+      "planets": {
+        "answers": {
+          "Earth": "الأرض",
+          "Mars": "المريخ",
+          "Jupiter": "المشتري",
+          "Saturn": "زحل",
+          "Venus": "الزهرة",
+          "Mercury": "عطارد",
+          "Neptune": "نبتون",
+          "Uranus": "أورانوس"
+        },
+        "aliases": {
+          "Earth": [
+            "أرض"
+          ],
+          "Mars": [
+            "مريخ"
+          ],
+          "Jupiter": [
+            "مشتري"
+          ],
+          "Venus": [
+            "زهرة"
+          ],
+          "Neptune": [
+            "نيبتون"
+          ]
+        }
+      },
+      "exp-6cc000633d2dab": {
+        "answers": {
+          "Mars": "المريخ",
+          "Venus": "الزهرة",
+          "Jupiter": "المشتري",
+          "Saturn": "زحل",
+          "Mercury": "عطارد"
+        },
+        "aliases": {
+          "Mars": [
+            "مريخ"
+          ],
+          "Jupiter": [
+            "مشتري"
+          ],
+          "Venus": [
+            "زهرة"
+          ]
+        }
+      },
+      "exp-777847c8960a10": {
+        "answers": {
+          "Saturn": "زحل",
+          "Jupiter": "المشتري",
+          "Uranus": "أورانوس",
+          "Neptune": "نبتون"
+        },
+        "aliases": {
+          "Jupiter": [
+            "مشتري"
+          ],
+          "Neptune": [
+            "نيبتون"
+          ]
+        }
+      },
+      "exp-2bdb9129038074": {
+        "answers": {
+          "Earth": "الأرض",
+          "Mars": "المريخ",
+          "Venus": "الزهرة",
+          "Mercury": "عطارد"
+        },
+        "aliases": {
+          "Earth": [
+            "أرض"
+          ],
+          "Mars": [
+            "مريخ"
+          ],
+          "Venus": [
+            "زهرة"
+          ]
+        }
+      },
+      "daily-20261114-holst-planets-movements": {
+        "answers": {
+          "Mars": "المريخ",
+          "Venus": "الزهرة",
+          "Mercury": "عطارد",
+          "Jupiter": "المشتري",
+          "Saturn": "زحل",
+          "Uranus": "أورانوس",
+          "Neptune": "نبتون"
+        },
+        "aliases": {
+          "Mars": [
+            "مريخ"
+          ],
+          "Jupiter": [
+            "مشتري"
+          ],
+          "Venus": [
+            "زهرة"
+          ],
+          "Neptune": [
+            "نيبتون"
+          ]
+        }
+      },
+      "greek": {
+        "answers": {
+          "Epsilon": "إبسيلون",
+          "Upsilon": "أبسيلون",
+          "Eta": "إيتا",
+          "Iota": "يوتا"
+        },
+        "aliases": {
+          "Iota": [
+            "إيوتا",
+            "يوطا"
+          ],
+          "Epsilon": [
+            "ε",
+            "Ε",
+            "إبسلون"
+          ],
+          "Upsilon": [
+            "υ",
+            "Υ",
+            "أبسلون",
+            "أوبسيلون"
+          ]
+        }
+      },
+      "track": {
+        "answers": {
+          "Shot put": "دفع الجلة",
+          "Javelin throw": "رمي الرمح"
+        }
+      },
+      "exp-cf6e2d75ef34ca": {
+        "answers": {
+          "Right": "قائم الزاوية",
+          "Acute": "حاد الزاوية",
+          "Obtuse": "منفرج الزاوية"
+        }
+      },
+      "exp-6298ac6cd6ae8e": {
+        "answers": {
+          "Cumulus": "الركام",
+          "Cirrus": "السمحاق",
+          "Stratus": "الرهج",
+          "Cumulonimbus": "المزن الركامي",
+          "Altocumulus": "الركام الأعلى",
+          "Altostratus": "الرهج الأعلى",
+          "Cirrocumulus": "السمحاق الركامي",
+          "Cirrostratus": "السمحاق الرهجي",
+          "Nimbostratus": "الرهج المزني",
+          "Stratocumulus": "الرهج الركامي"
+        },
+        "aliases": {
+          "Cumulus": [
+            "ركام"
+          ],
+          "Cirrus": [
+            "سمحاق"
+          ],
+          "Stratus": [
+            "رهج",
+            "سحاب طبقي",
+            "سحب طبقية"
+          ],
+          "Cumulonimbus": [
+            "مزن الركامي"
+          ],
+          "Altocumulus": [
+            "ركام الأعلى",
+            "ركام متوسط",
+            "ركامي متوسط",
+            "السحاب الركامي المتوسط"
+          ],
+          "Altostratus": [
+            "رهج الأعلى",
+            "سحاب طبقي متوسط",
+            "رهج متوسط"
+          ],
+          "Cirrocumulus": [
+            "سمحاق الركامي"
+          ],
+          "Cirrostratus": [
+            "سمحاق الرهجي",
+            "سمحاق طبقي"
+          ],
+          "Nimbostratus": [
+            "رهج المزني",
+            "مزن طبقي",
+            "المزن الطبقي"
+          ],
+          "Stratocumulus": [
+            "رهج الركامي",
+            "ركام طبقي",
+            "ركام رهجي",
+            "الركام الرهجي",
+            "الركام الطبقي"
+          ]
+        }
+      },
+      "exp-3d7ed6dc1ae07b": {
+        "answers": {
+          "Grevy's zebra": "حمار غريفي الوحشي",
+          "Mountain zebra": "حمار الزرد الجبلي"
+        },
+        "aliases": {
+          "Grevy's zebra": [
+            "حمار جريفي الوحشي",
+            "حمار زرد غريفي"
+          ],
+          "Mountain zebra": [
+            "الحمار الوحشي الجبلي"
+          ]
+        }
+      }
+    },
+    "id": {
+      "chess": {
+        "answers": {
+          "King": "Raja",
+          "Queen": "Menteri",
+          "Pawn": "Pion",
+          "Knight": "Kuda",
+          "Rook": "Benteng",
+          "Bishop": "Gajah"
+        },
+        "aliases": {
+          "Queen": [
+            "Ratu"
+          ]
+        }
+      },
+      "exp-63b45886fe5a37": {
+        "answers": {
+          "Queen": "Menteri",
+          "Rook": "Benteng",
+          "Bishop": "Gajah",
+          "Knight": "Kuda"
+        },
+        "aliases": {
+          "Queen": [
+            "Ratu"
+          ]
+        }
+      },
+      "daily-20261115-harry-potter-seven-novels": {
+        "answers": {
+          "Philosopher’s Stone": "Batu Bertuah",
+          "Chamber of Secrets": "Kamar Rahasia",
+          "Prisoner of Azkaban": "Tawanan Azkaban",
+          "Goblet of Fire": "Piala Api",
+          "Order of the Phoenix": "Orde Phoenix",
+          "Half-Blood Prince": "Pangeran Berdarah Campuran",
+          "Deathly Hallows": "Relikui Kematian"
+        },
+        "aliases": {
+          "Philosopher’s Stone": [
+            "Harry Potter dan Batu Bertuah"
+          ],
+          "Chamber of Secrets": [
+            "Harry Potter dan Kamar Rahasia"
+          ],
+          "Prisoner of Azkaban": [
+            "Harry Potter dan Tawanan Azkaban"
+          ],
+          "Goblet of Fire": [
+            "Harry Potter dan Piala Api"
+          ],
+          "Order of the Phoenix": [
+            "Harry Potter dan Orde Phoenix"
+          ],
+          "Half-Blood Prince": [
+            "Harry Potter dan Pangeran Berdarah Campuran"
+          ],
+          "Deathly Hallows": [
+            "Harry Potter dan Relikui Kematian"
+          ]
+        }
+      },
+      "planets": {
+        "answers": {
+          "Earth": "Bumi",
+          "Mars": "Mars",
+          "Jupiter": "Jupiter",
+          "Saturn": "Saturnus",
+          "Venus": "Venus",
+          "Mercury": "Merkurius",
+          "Neptune": "Neptunus",
+          "Uranus": "Uranus"
+        },
+        "aliases": {}
+      },
+      "exp-6cc000633d2dab": {
+        "answers": {
+          "Mars": "Mars",
+          "Venus": "Venus",
+          "Jupiter": "Jupiter",
+          "Saturn": "Saturnus",
+          "Mercury": "Merkurius"
+        },
+        "aliases": {}
+      },
+      "exp-777847c8960a10": {
+        "answers": {
+          "Saturn": "Saturnus",
+          "Jupiter": "Jupiter",
+          "Uranus": "Uranus",
+          "Neptune": "Neptunus"
+        },
+        "aliases": {}
+      },
+      "exp-2bdb9129038074": {
+        "answers": {
+          "Earth": "Bumi",
+          "Mars": "Mars",
+          "Venus": "Venus",
+          "Mercury": "Merkurius"
+        },
+        "aliases": {}
+      },
+      "daily-20261114-holst-planets-movements": {
+        "answers": {
+          "Mars": "Mars",
+          "Venus": "Venus",
+          "Mercury": "Merkurius",
+          "Jupiter": "Jupiter",
+          "Saturn": "Saturnus",
+          "Uranus": "Uranus",
+          "Neptune": "Neptunus"
+        },
+        "aliases": {}
+      },
+      "track": {
+        "answers": {
+          "Shot put": "Tolak peluru",
+          "Javelin throw": "Lempar lembing"
+        }
+      },
+      "exp-c2cf1c8c4618e1": {
+        "answers": {
+          "Shot put": "Tolak peluru",
+          "Javelin": "Lempar lembing"
+        }
+      },
+      "exp-8997664ddecd72": {
+        "answers": {
+          "Cesium": "Sesium"
+        }
+      },
+      "exp-8d15d7eb362409": {
+        "answers": {
+          "Cerium": "Serium"
+        }
+      },
+      "exp-ae8ab6c1af9558": {
+        "answers": {
+          "Cesium": "Sesium",
+          "Cerium": "Serium"
+        }
+      },
+      "exp-26f5b5b3d6f2fe": {
+        "answers": {
+          "Cesium": "Sesium",
+          "Cerium": "Serium"
+        }
+      },
+      "daily-20261114-womens-heptathlon-events": {
+        "answers": {
+          "Shot put": "Tolak peluru",
+          "Javelin throw": "Lempar lembing"
+        }
+      }
+    }
+  },
+  "messages": {
+    "zh": {
+      "— Daily trivia game": "— 每日知识挑战",
+      "Daily Trivia & Unlimited Practice — RARE Air": "每日知识挑战与无限练习 — RARE Air",
+      "RARE Air rare-answer trivia flight": "RARE Air 冷门答案飞行挑战",
+      "TAKE YOUR CURIOSITY SOMEWHERE NEW.": "让好奇心带你探索新天地。",
+      "TAKE YOUR CURIOSITY SOMEWHERE NEW": "让好奇心带你探索新天地",
+      "Rarer answers take you higher.": "越冷门的正确答案，让你飞得越高。",
+      "Take flight": "开始飞行",
+      "Practice flight": "自由练习",
+      "Pick a topic": "选择主题",
+      "Fly": "起飞",
+      "Exceptional": "绝妙",
+      "Uncommon": "不常见",
+      "Common": "常见",
+      "Rare": "冷门",
+      "No lift": "未获升力",
+      "THE LAUNCHPAD": "起飞平台",
+      "Your answer": "你的答案",
+      "Your flight log": "飞行记录",
+      "Language": "语言",
+      "RARE is an independent daily trivia game. Unexpected answers power a hot-air-balloon journey through an illustrated sky. It is inspired by rare-answer games, including Krillion.": "RARE 是一款独立的每日 知识问答 游戏。意想不到的答案驱动着穿越插画天空的热气球之旅。它灵感来源于稀有答案游戏，包括 Krillion。",
+      "Five questions. Free daily trivia and practice.": "每天五道题，也能随时自由练习。",
+      "Play RARE Air, a free daily trivia game with five open-answer questions. Enable JavaScript to take flight, or": "玩 RARE Air，一款免费的每日 知识问答 游戏，包含五个开放式问题。启用 JavaScript 以起飞，或",
+      "Play free rare-answer trivia in RARE Air. Five timed questions, a new daily challenge and unlimited practice flights. Unexpected answers lift you higher.": "在 RARE Air 中玩免费的稀有答案 知识问答 游戏。五个限时问题，每日新挑战和无限制练习飞行。意想不到的答案让你飞得更高。",
+      "Five questions. One curious balloon. Play free daily trivia where rare answers take you higher.": "五个问题。一个好奇的气球。玩免费的每日 知识问答 游戏，稀有答案带你飞得更高。",
+      "Games Like Krillion — RARE Daily Trivia & Practice Flights": "类似 Krillion 的游戏 — RARE 每日 知识问答 与练习飞行",
+      "If you enjoy finding the answer nobody else thinks of, take a flight with RARE. Answer five trivia prompts and watch a hot-air balloon climb through the clouds. Less obvious correct answers give you more lift.": "如果您喜欢找到别人想不到的答案，请加入 RARE 的飞行。回答五个 知识问答 问题，看着热气球穿过云层攀升。不那么显而易见的正确答案会带来更大的升力。",
+      "RARE is an independent game inspired by rare-answer trivia. Visit": "RARE 是一款受罕见答案 知识问答 启发的独立游戏。访问",
+      "Daily trivia": "每日 知识问答",
+      "Rare-answer trivia": "稀有答案 知识问答",
+      "Trivia tips": "知识问答 技巧",
+      "Enjoy rare-answer games like Krillion? Take flight in RARE, an independent daily trivia game where unexpected answers carry your balloon higher.": "喜欢 Krillion 等稀有答案游戏？加入 RARE，这是一款独立的每日 知识问答 游戏，意想不到的答案会让您的飞艇飞得更高。",
+      "Games Like Krillion — RARE Air Trivia & Practice": "类似 Krillion 的游戏 — RARE Air  知识问答 与练习",
+      "Explore RARE Air, an independent rare-answer trivia game with five timed prompts, daily flights and repeatable practice.": "探索 RARE Air，一款独立的罕见答案 知识问答 游戏，包含五个限时提示、每日飞行和可重复的练习。",
+      "Daily Trivia Game — Five Questions, One Flight | RARE Air": "每日 知识问答 游戏 — 五道问题，一次飞行 | RARE Air",
+      "A daily trivia game that takes you higher.": "一款让你飞得更高的每日 知识问答 游戏。",
+      "RARE Air is a free daily trivia game in ten languages with five open-answer questions. You get 30 seconds per question. Correct answers give your hot-air balloon lift, and less obvious answers take you further. A new daily flight opens at midnight UTC.": "RARE Air 是一款免费的每日 知识问答 游戏，提供十种语言，包含五个开放性问题。每题你有 30 秒时间作答。正确答案让你的热气球升空，而更不寻常的答案能让你飞得更高。每天 UTC 午夜开放一个新的每日飞行。",
+      "Play RARE Air, a free daily trivia game with five open-answer questions. Find less obvious correct answers and climb up to 5,000 meters through the clouds.": "游玩 RARE Air，这是一款免费的每日 知识问答 游戏，包含五道开放式问答题。找到不那么显而易见的正确答案，穿越云层，攀升至 5,000 米。",
+      "How to Play RARE Air — Daily Trivia Rules & Scoring": "如何游玩 RARE Air — 每日 知识问答 规则与计分",
+      "Learn the RARE Air trivia rules, 30-second timer, answer rarity tiers, daily resets, practice flights, archive and score sharing.": "了解 RARE Air  知识问答 规则、30 秒计时器、答案稀有度等级、每日重置、练习飞行、归档和分数分享。",
+      "Krillion Unlimited Alternative | RARE Air Trivia Practice": "Krillion Unlimited 替代方案 | RARE Air 知识问答 练习",
+      "Krillion Unlimited alternative with repeatable trivia practice.": "可重复 知识问答 练习的 Krillion Unlimited 替代方案。",
+      "Searching for Krillion Unlimited? RARE Air is an independently developed rare-answer trivia game with repeatable practice flights. Open the game and choose Practice flight for five fresh prompts. Reach for an unexpected correct answer and watch your balloon climb.": "正在寻找 Krillion Unlimited？RARE Air 是一款独立开发的罕见答案 知识问答 游戏，支持可重复的练习飞行。打开游戏并选择“练习”飞行，获取五个全新的提示。选择一个出人意料的正确答案，看着你的气球升空。",
+      "Looking for Krillion Unlimited? Play repeatable rare-answer trivia in RARE Air. Five timed questions per flight, illustrated updrafts and accepted-answer review.": "寻找 Krillion Unlimited？在 RARE Air 中玩可重复的罕见答案 知识问答 游戏。每次飞行包含五道限时问题，配有插图上升气流和已接受答案的回顾。",
+      "Privacy Policy | RARE Air Daily Trivia": "隐私政策 | RARE Air 每日 知识问答",
+      "Typed trivia answers, game session identifiers and player identifiers are excluded from analytics events. Page addresses and referrers are sent with query strings and fragments removed. Advertising storage, advertising personalization and Google signals are disabled. This website analytics integration is excluded from the packaged mobile and WeChat games.": "已输入的 知识问答 游戏答案、游戏会话标识符和玩家标识符不包含在分析事件中。页面地址和引荐来源会发送，但会移除查询字符串和片段。广告存储、广告个性化和 Google 信号已禁用。此网站分析集成不包含在打包的移动游戏和微信游戏中。",
+      "Rare-Answer Trivia Game — Play Free Online | RARE Air": "冷门答案知识问答 Game — 免费在线游玩 | RARE Air",
+      "Rare-answer trivia rewards the unexpected.": "冷门答案知识问答 奖励意想不到的答案。",
+      "In rare-answer trivia, a question can have several correct answers. Your challenge is to find a less obvious one. RARE Air turns that choice into a flight through the clouds, with five open-answer questions, a 30-second timer and up to 5,000 meters to climb.": "在 冷门答案知识问答 中，一个问题可能有多个正确答案。您的挑战是找到一个不太明显的答案。RARE Air 将这种选择转化为穿越云层的飞行，包含五个开放式问题、30 秒计时器和最高 5,000 米的爬升。",
+      "Try these rare-answer trivia strategies": "尝试这些罕见答案 知识问答 策略",
+      "Play free rare-answer trivia in RARE Air. Type one correct answer to each prompt, aim for an unexpected choice and fly higher. Daily and repeatable practice.": "在 RARE Air 中免费游玩罕见答案 知识问答。为每个提示输入一个正确答案，目标是选择意想不到的答案并飞得更高。每日可重复练习。",
+      "Support & Contact | RARE Air Trivia Game": "支持与联系 | RARE Air  知识问答 游戏",
+      "Get help with RARE Air daily trivia, saved flights, accepted answers, timeouts and privacy requests. Contact the open-source project maintainer.": "获取有关 RARE Air 每日 知识问答、保存的飞行、已接受答案、超时和隐私请求的帮助。请联系开源项目维护者。",
+      "Rare-Answer Trivia Tips & Practice Guide | RARE Air": "罕见答案 知识问答 技巧与练习指南 | RARE Air",
+      "Start by finding one answer you trust. Then look for a less obvious answer that still fits every part of the prompt. These rare-answer trivia tips help you decide when to take that chance during RARE Air's five-question flights.": "首先找到一个您信任的答案。然后寻找一个不那么明显但仍符合提示所有部分的答案。这些罕见答案 知识问答 技巧可帮助您在 RARE Air 的五题飞行中决定何时冒险。",
+      "Understand rare-answer trivia": "了解冷僻题目 知识问答",
+      "Explore repeatable trivia practice": "探索可重复的 知识问答 练习",
+      "Improve your rare-answer trivia choices with practical tips for prompt scope, recall, timing and flight-report review. Practice free in RARE Air online.": "通过关于题目范围、回忆、时机和飞行报告审查的实用技巧，提升您对冷僻题目 知识问答 的选择。在 RARE Air 在线免费练习。",
+      "on": "开",
+      "off": "关",
+      "Rare home": "RARE Air 首页",
+      "5 DAILY PROMPTS": "每日 5 题",
+      "Share your flight": "分享飞行成绩",
+      "Explore the accepted answers": "查看正确答案",
+      "Editorial answer rarity": "人工评定的答案稀有度",
+      "meters above the everyday": "米 · 超越日常",
+      "In good air.": "一起乘风向上。",
+      "YOUR FINAL ALTITUDE": "最终飞行高度",
+      "BEST UPDRAFT": "最佳答案",
+      "No height gained this time. Your journey carries on.": "这次没获得升力，继续探索吧。",
+      "STAGE {0} OF 5": "第 {0} / 5 题",
+      "← Back to the launchpad": "← 返回起点",
+      "Choose your airspace.": "选择答题主题",
+      "On this website, choose your language from the header. Questions and answer review are available in English, Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Arabic and Indonesian. You can answer in your selected language or English. Changing language keeps the same flight and its running clock. Literal code keywords remain unchanged.": "在本网站，从标题栏选择你的语言。问题和答案回顾提供英语、中文、西班牙语、法语、葡萄牙语、德语、日语、俄语、阿拉伯语和印尼语。你可以用所选语言或英语作答。更改语言不会改变当前航班及其运行计时器。字面代码关键词保持不变。"
+    },
+    "es": {
+      "on": "sí",
+      "off": "no",
+      "Rare home": "Inicio de RARE Air",
+      "5 DAILY PROMPTS": "5 PREGUNTAS DIARIAS",
+      "RARE Air is a free daily trivia game in ten languages with five open-answer questions. You get 30 seconds per question. Correct answers give your hot-air balloon lift, and less obvious answers take you further. A new daily flight opens at midnight UTC.": "RARE Air es un juego de trivia diario gratuito en diez idiomas con cinco preguntas de respuesta abierta. Tienes 30 segundos por pregunta. Las respuestas correctas dan elevación a tu globo aerostático, y las respuestas menos obvias te llevan más lejos. Un nuevo vuelo diario se abre a medianoche UTC.",
+      "On this website, choose your language from the header. Questions and answer review are available in English, Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Arabic and Indonesian. You can answer in your selected language or English. Changing language keeps the same flight and its running clock. Literal code keywords remain unchanged.": "En este sitio web, elige tu idioma desde la cabecera. Las preguntas y la revisión de respuestas están disponibles en inglés, chino, español, francés, portugués, alemán, japonés, ruso, árabe e indonesio. Puedes responder en tu idioma seleccionado o en inglés. Cambiar de idioma mantiene el mismo vuelo y su reloj en curso. Las palabras clave literales del código permanecen sin cambios."
+    },
+    "fr": {
+      "on": "oui",
+      "off": "non",
+      "Rare home": "Accueil RARE Air",
+      "5 DAILY PROMPTS": "5 QUESTIONS PAR JOUR",
+      "On this website, choose your language from the header. Questions and answer review are available in English, Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Arabic and Indonesian. You can answer in your selected language or English. Changing language keeps the same flight and its running clock. Literal code keywords remain unchanged.": "Sur ce site, choisissez votre langue dans l'en-tête. Les questions et la révision des réponses sont disponibles en anglais, chinois, espagnol, français, portugais, allemand, japonais, russe, arabe et indonésien. Vous pouvez répondre dans votre langue sélectionnée ou en anglais. Changer de langue conserve le même vol et son compte à rebours. Les mots-clés de code littéraux restent inchangés."
+    },
+    "pt": {
+      "on": "ligado",
+      "off": "desligado",
+      "Rare home": "Início do RARE Air",
+      "5 DAILY PROMPTS": "5 PERGUNTAS DIÁRIAS",
+      "On this website, choose your language from the header. Questions and answer review are available in English, Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Arabic and Indonesian. You can answer in your selected language or English. Changing language keeps the same flight and its running clock. Literal code keywords remain unchanged.": "Neste site, escolha seu idioma no cabeçalho. Perguntas e revisão de respostas estão disponíveis em inglês, chinês, espanhol, francês, português, alemão, japonês, russo, árabe e indonésio. Você pode responder no seu idioma selecionado ou em inglês. Mudar o idioma mantém o mesmo voo e seu cronômetro em execução. Palavras-chave de código literais permanecem inalteradas."
+    },
+    "de": {
+      "on": "an",
+      "off": "aus",
+      "Rare home": "RARE-Air-Startseite",
+      "5 DAILY PROMPTS": "5 FRAGEN PRO TAG",
+      "Steer your balloon": "Steuere deinen Ballon",
+      "Rare-Answer Trivia Game — Play Free Online | RARE Air": "Quiz mit seltenen Antworten – kostenlos online spielen | RARE Air",
+      "On this website, choose your language from the header. Questions and answer review are available in English, Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Arabic and Indonesian. You can answer in your selected language or English. Changing language keeps the same flight and its running clock. Literal code keywords remain unchanged.": "Auf dieser Website: Wähle deine Sprache aus der Kopfzeile. Fragen und Antwortüberprüfung sind auf Englisch, Chinesisch, Spanisch, Französisch, Portugiesisch, Deutsch, Japanisch, Russisch, Arabisch und Indonesisch verfügbar. Du kannst in deiner ausgewählten Sprache oder auf Englisch antworten. Das Ändern der Sprache behält denselben Flug und dessen Laufuhr bei. Wörtliche Code-Schlüsselwörter bleiben unverändert."
+    },
+    "ja": {
+      "on": "オン",
+      "off": "オフ",
+      "Rare home": "RARE Air ホーム",
+      "5 DAILY PROMPTS": "毎日5問",
+      "Steer your balloon": "熱気球を操縦",
+      "Drag to steer": "ドラッグで操縦",
+      "On this website, choose your language from the header. Questions and answer review are available in English, Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Arabic and Indonesian. You can answer in your selected language or English. Changing language keeps the same flight and its running clock. Literal code keywords remain unchanged.": "このウェブサイトでは、ヘッダーから言語を選択してください。質問と回答レビューは英語、中国語、スペイン語、フランス語、ポルトガル語、ドイツ語、日本語、ロシア語、アラビア語、インドネシア語で利用可能です。選択した言語または英語で回答できます。言語を変更しても、同じフライトとそのカウントダウン時計が保持されます。リテラルなコードキーワードは変更されません。"
+    },
+    "ru": {
+      "on": "вкл",
+      "off": "выкл",
+      "Rare home": "Главная RARE Air",
+      "5 DAILY PROMPTS": "5 ВОПРОСОВ КАЖДЫЙ ДЕНЬ",
+      "On this website, choose your language from the header. Questions and answer review are available in English, Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Arabic and Indonesian. You can answer in your selected language or English. Changing language keeps the same flight and its running clock. Literal code keywords remain unchanged.": "На этом сайте: Выберите язык в заголовке. Вопросы и проверка ответов доступны на английском, китайском, испанском, французском, португальском, немецком, японском, русском, арабском и индонезийском языках. Вы можете отвечать на выбранном вами языке или на английском. Смена языка сохраняет тот же полёт и его обратный отсчёт. Буквенные кодовые ключевые слова остаются неизменными."
+    },
+    "ar": {
+      "on": "مفعّل",
+      "off": "متوقف",
+      "Rare home": "الصفحة الرئيسية لـ RARE Air",
+      "5 DAILY PROMPTS": "5 أسئلة يومية",
+      "Steer your balloon": "وجّه منطادك",
+      "Climb higher": "حلّق أعلى",
+      "Play RARE Air, a free daily trivia game with five open-answer questions. Find less obvious correct answers and climb up to 5,000 meters through the clouds.": "العب RARE Air، لعبة أسئلة يومية مجانية مع خمس أسئلة مفتوحة الإجابة. ابحث عن إجابات صحيحة أقل وضوحاً وتسلق حتى 5,000 متر عبر السحب.",
+      "How to Play RARE Air — Daily Trivia Rules & Scoring": "كيفية اللعب في RARE Air — قواعد أسئلة يومية ونظام النقاط",
+      "How to play RARE Air.": "كيفية اللعب في RARE Air.",
+      "On this website, choose your language from the header. Questions and answer review are available in English, Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Arabic and Indonesian. You can answer in your selected language or English. Changing language keeps the same flight and its running clock. Literal code keywords remain unchanged.": "على هذا الموقع، اختر لغتك من الشريط العلوي. الأسئلة ومراجعة الإجابات متاحة باللغات الإنجليزية والصينية والإسبانية والفرنسية والبرتغالية والألمانية واليابانية والروسية والعربية والإندونيسية. يمكنك الإجابة بلغتك المختارة أو بالإنجليزية. تغيير اللغة يحافظ على نفس الرحلة وساعتها المتحركة. تظل الكلمات المفتاحية البرمجية حرفية دون تغيير."
+    },
+    "id": {
+      "on": "aktif",
+      "off": "nonaktif",
+      "Rare home": "Beranda RARE Air",
+      "5 DAILY PROMPTS": "5 PERTANYAAN HARIAN",
+      "On this website, choose your language from the header. Questions and answer review are available in English, Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Arabic and Indonesian. You can answer in your selected language or English. Changing language keeps the same flight and its running clock. Literal code keywords remain unchanged.": "Di situs web ini, pilih bahasa Anda dari header. Pertanyaan dan tinjauan jawaban tersedia dalam bahasa Inggris, Mandarin, Spanyol, Prancis, Portugis, Jerman, Jepang, Rusia, Arab, dan Indonesia. Anda dapat menjawab dalam bahasa yang dipilih atau bahasa Inggris. Mengubah bahasa tetap mempertahankan penerbangan yang sama dan jam yang berjalan. Kata kunci kode literal tetap tidak berubah."
+    }
+  }
+}

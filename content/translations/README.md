@@ -1,0 +1,31 @@
+# Game and website languages
+
+The owner selected English, simplified Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Modern Standard Arabic and Indonesian on November 16, 2026. This is a product language selection rather than a ranking by speaker count. Hindi, Bengali and Urdu were excluded at the owner's request.
+
+English question packs remain the editorial source. Each `<code>.json` holds contextual translations of every prompt and canonical answer label, in the original answer order. Its `sourceHash` is SHA-256 of `JSON.stringify([prompt, canonicalAnswerLabels])`. An updated or missing source cannot silently use an old translation. Keep IDs, order and rarity tiers unchanged. Literal programming keywords, model codes, single-letter symbols and numeric answers remain literal where the prompt requires them.
+
+When generating new answer translations, use the unchanged English canonical label as the dictionary key and the translated label as its value. Assemble the published answer array by those keys afterwards. This prevents a translator's chronological or alphabetical reordering from changing which answer receives a rarity tier. Review factual terminology as well as structure.
+
+`messages.en.json` lists interface and guide source strings. `messages.<code>.json` contains translated messages, preserving numbered placeholders. When changing public copy, first run `node scripts/build-site.mjs` and `npm run locale:extract`, translate the new or changed keys in every locale, then run `npm run locale:build` and `npm run site:build`. The English source dictionary is extracted from the original pages and code, never the generated language directories.
+
+The normal `bank:build` and deployment pipeline also refresh English guide sources and extract messages before validating every locale. New interface or guide text therefore blocks deployment until its translations are present. Changing the bank-size sentence in a guide requires updating that message too; variable game counters use numbered placeholders.
+
+The initial content uses contextual machine translation generated during preparation with the local Qwen3.6-35B-A3B model. Some initial interface messages used Google translation. No translation API runs during gameplay. Structural validation and selected terminology checks do not constitute fluent human review of all languages; translations can still need editorial correction.
+
+Record reviewed corrections in `overrides.json`. `questions.<code>.<id>.answers` maps English canonical labels to corrected localized display labels; `aliases` adds common localized alternatives by English canonical label. Optional `prompt` replaces that prompt. `messages.<code>` overrides individual interface strings. These corrections survive regeneration. The build checks completeness, source fingerprints, placeholder preservation, input length and normalized answer collisions across all supported aliases. Fix terminology rather than accepting an ambiguous alias for two different answers.
+
+The server-only generated `src/localized-bank.js` is imported by the Worker and bundled offline game. Public website assets contain interface messages and guides, without the server question bank or answer keys. Every accepted translated answer maps back to its English canonical answer and unchanged points. Completed review and previously accepted answers are displayed in the selected language. Historic mismatched question snapshots retain their exact original content.
+
+Evaluate localized labels and aliases for the selected language first, then the existing English aliases. Always keep English canonical answer names unambiguous. Validate collisions within each locale, including against English canonical names. English abbreviations can have a different local meaning: German `Grad` means degree, while English `grad` can mean gradian. The selected language resolves that case. Question text, answer labels, user input and literal keywords such as `HEAD` must be displayed directly, without a second pass through interface-message translation.
+
+Arabic vowel marks and decorative elongation are ignored. Hamza and madda remain meaningful; a spelling that omits them is accepted only when it identifies one localized answer. This distinguishes Arabic epsilon and upsilon while allowing unambiguous everyday spellings.
+
+Each language has nine public paths, reciprocal `hreflang` links, its own canonical URL and localized metadata. The root paths are English, with `/zh/`, `/es/`, `/fr/`, `/pt/`, `/de/`, `/ja/`, `/ru/`, `/ar/` and `/id/` variants. Arabic uses RTL. A language change resumes the current game rather than starting another daily attempt or resetting the timer.
+
+The shared web and Capacitor game use this system. The separate WeChat Canvas interface does not yet expose this language selector. Native store availability still depends on building, testing and publishing a new binary; deploying the website does not update an installed offline bundle.
+
+Selected Chinese name and alias checks use the [Greek-letter reference](https://zh.wiktionary.org/zh-hans/Appendix:%E5%B8%8C%E8%87%98%E5%AD%97%E6%AF%8D) and [Fellowship membership and translated names](https://zh.wikipedia.org/wiki/%E9%AD%94%E6%88%92%E9%81%A0%E5%BE%81%E9%9A%8A). Common translated variants are retained as aliases where they identify the same answer.
+
+Additional selected checks use [Carlsen's German Potter book list](https://www.carlsen.de/harry-potter/faq), [Larousse's French titles](https://www.larousse.fr/encyclopedie/divers/Harry_Potter/103056), [Gramedia's Indonesian box set](https://gpu.id/book/81151/box-set-harry-potter), [Ikeda City's wombat species](https://www.city.ikeda.osaka.jp/ikeda_wombat/15111.html), the [Union of Japanese Societies for Systematic Biology's echinoderm classes](https://www.ujssb.org/biospnum/search.php?Kingdom=Animalia&Phylum=Echinodermata) and the [National Museum of Nature and Science's bryophyte groups](https://www.kahaku.go.jp/research/db/botany/koke/).
+
+Arabic references include the [WMO International Cloud Atlas genera](https://cloudatlas.wmo.int/ar/clouds-genera.html) and [MedCalc's Greek-letter reference](https://www.medcalc.org/ar/manual/greek-alphabet.php).

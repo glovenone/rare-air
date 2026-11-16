@@ -10,11 +10,13 @@
     "deploy": "npm run bank:build && npm run site:build && npm run check && npm test && wrangler deploy",
     "db:local": "wrangler d1 migrations apply DB --local",
     "db:remote": "wrangler d1 migrations apply DB --remote",
-    "bank:build": "node scripts/build-bank.mjs",
+    "bank:build": "node scripts/build-bank.mjs && node scripts/build-site.mjs && npm run locale:extract && npm run locale:build",
     "mobile:build": "node scripts/build-mobile.mjs",
     "mobile:sync": "npm run mobile:build && cap sync",
-    "site:build": "node scripts/build-site.mjs",
-    "wechat:build": "node scripts/build-wechat.mjs"
+    "site:build": "node scripts/build-site.mjs && node scripts/build-localized-site.mjs",
+    "wechat:build": "node scripts/build-wechat.mjs",
+    "locale:build": "node scripts/build-locales.mjs",
+    "locale:extract": "node scripts/extract-messages.mjs"
   },
   "devDependencies": {
     "@capacitor/cli": "8.6.2",

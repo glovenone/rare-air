@@ -93,6 +93,16 @@
   settings.type = "button";
   settings.className = "analytics-settings";
   settings.textContent = "Analytics settings";
+  const translateChoices = () => {
+    const tr = window.RareI18n?.t || ((text) => text);
+    settings.textContent = tr("Analytics settings");
+    banner.setAttribute("aria-label", tr("Analytics preferences"));
+    banner.querySelector("p").firstChild.textContent = tr("Allow Google Analytics to help us understand visits and app downloads?") + " ";
+    banner.querySelector("a").textContent = tr("Privacy policy");
+    banner.querySelector('[data-choice="granted"]').textContent = tr("Allow analytics");
+    banner.querySelector('[data-choice="denied"]').textContent = tr("Decline");
+  };
+  window.addEventListener?.("rare:language", translateChoices);
   settings.addEventListener("click", () => {
     banner.hidden = false;
     banner.querySelector("button").focus();

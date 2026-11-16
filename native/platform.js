@@ -49,9 +49,9 @@ export async function haptic(tier) {
 export async function shareFlight(text) {
   try {
     await Share.share({
-      title: "My RARE Air flight",
+      title: "RARE Air",
       text,
-      dialogTitle: "Share your flight",
+      dialogTitle: window.RareI18n?.t("Share your flight") || "Share your flight",
     });
     return "shared";
   } catch (error) {

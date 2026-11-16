@@ -8,7 +8,7 @@ A free daily trivia game where unexpected answers lift a hot-air balloon through
 
 Five questions, 30 seconds each, and up to 5,000 meters of altitude. Drag the balloon to steer, or focus it and use the arrow keys. Press Space or tap the balloon to catch a gust. Rare answers trigger wind rings, cloud breakthroughs and paper-plane companions.
 
-The project includes hundreds of English question sets, accepted aliases, editorial rarity tiers, daily and practice modes, a date archive, anonymous daily leaderboards and browser-local flight history.
+The project includes hundreds of question sets in ten languages, accepted aliases, editorial rarity tiers, daily and practice modes, a date archive, anonymous daily leaderboards and browser-local flight history. English remains the source for editorial content.
 
 ## Run locally
 
