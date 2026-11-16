@@ -2,6 +2,7 @@ import { t, language } from "./i18n.js";
 import { startRegistration, startAuthentication } from "./vendor/passkeys.js";
 import { selectCompanion } from "./companions.js";
 import { selectTrail } from "./trails.js";
+import { reconcilePassportCache } from "./passport-cache.js";
 export function initPassport({
   request,
   openDialog,
@@ -12,7 +13,9 @@ export function initPassport({
   let state = { account: null },
     busy = false,
     view = "passport",
-    recovery = null;
+    recovery = null,
+    loadRevision = 0,
+    loaded = false;
   let invitation = new URL(location.href).searchParams.get("friend") || "";
   const node = (tag, text, cls) => {
     const e = document.createElement(tag);
@@ -62,7 +65,21 @@ export function initPassport({
     body.append(p);
   }
   async function load() {
-    state = await request("passport");
+    const revision = ++loadRevision;
+    const latest = await request("passport");
+    if (revision !== loadRevision) return state;
+    const identityChanged = loaded && state.account?.id !== latest.account?.id;
+    state = latest;
+    loaded = true;
+    let changed = false;
+    try {
+      changed = reconcilePassportCache(localStorage, state.account);
+    } catch {}
+    if (changed || identityChanged) {
+      selectCompanion(state.account?.buddy || "swallow");
+      selectTrail(state.account?.trail || "classic");
+      window.dispatchEvent(new Event("rare:identity"));
+    }
     const entry = document.getElementById("passport-entry");
     entry.textContent = state.account
       ? state.account.name + " ↗"
@@ -70,14 +87,12 @@ export function initPassport({
     return state;
   }
   async function syncIdentity() {
-    for (const key of ["history", "sessions", "progression"])
-      try {
-        localStorage.removeItem("rare:" + key);
-      } catch {}
     await load();
     if (state.account) {
+      const owner = state.account.id;
       const log = await request("passport/history", {}),
         history = {};
+      if (state.account?.id !== owner) return;
       for (const flight of log.entries)
         if (flight.mode === "daily" && !history[flight.day])
           history[flight.day] = {
@@ -96,7 +111,7 @@ export function initPassport({
       selectCompanion("swallow");
       selectTrail("classic");
     }
-    window.dispatchEvent(new Event("rare:identity"));
+    window.dispatchEvent(new Event("rare:history"));
   }
   function panel(title, intro) {
     const body = openDialog(title, intro ? [intro] : []);
@@ -466,6 +481,10 @@ export function initPassport({
   addEventListener("rare:language", () => {
     if (document.querySelector("#modal[open] .passport-content"))
       run(() => open(view));
+  });
+  addEventListener("storage", (event) => {
+    if (event.key === "rare:passport-owner" || event.key === null)
+      syncIdentity().catch(() => {});
   });
   load()
     .then(() => (state.account ? syncIdentity() : null))

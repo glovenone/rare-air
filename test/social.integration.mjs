@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
 import { questions } from "../src/questions.js";
 import { encodeCBOR } from "@levischuck/tiny-cbor";
-const base = process.env.TEST_URL || "http://127.0.0.1:8791";
+const base = process.env.TEST_URL || "http://127.0.0.1:8787";
 const sql = (command) =>
   JSON.parse(
     execFileSync(

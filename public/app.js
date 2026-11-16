@@ -11,10 +11,16 @@ import {
   haptic,
   shareFlight,
 } from "./platform.js";
-const api = (path, body) => platformRequest(
-  body ? path : path + (path.includes("?") ? "&" : "?") + "lang=" + language(),
-  body ? { ...body, language: language() } : undefined,
-);
+import { createFlightIdentityGate } from "./passport-cache.js";
+const flightIdentity = createFlightIdentityGate();
+const api = (path, body) => {
+  const request = () => platformRequest(
+    body ? path : path + (path.includes("?") ? "&" : "?") + "lang=" + language(),
+    body ? { ...body, language: language() } : undefined,
+  );
+  return ["start", "answer", "next", "resume"].includes(path)
+    ? flightIdentity.run(request) : request();
+};
 const $ = (id) => document.getElementById(id);
 const rarityNames = ["No lift", "Common", "Uncommon", "Rare", "Exceptional"];
 let game = null;
@@ -380,6 +386,7 @@ async function start(mode = "daily", day = puzzle?.day, topic = null, chapter = 
       try {
         data = await api("resume", { id: savedId });
       } catch (error) {
+        if (error.name === "IdentityChangedError") throw error;
         if (!error.message.includes("Game not found")) throw error;
         data = await api("start", { mode, day });
       }
@@ -389,6 +396,7 @@ async function start(mode = "daily", day = puzzle?.day, topic = null, chapter = 
     render();
     window.scrollTo({ top: 0, behavior: "instant" });
   } catch (error) {
+    if (error.name === "IdentityChangedError") return;
     if (displayView === "launch") home();
     setError(error.message);
   } finally {
@@ -486,6 +494,7 @@ async function submit(answer) {
     if (game.awaitingStart || game.done) renderReveal();
     else render();
   } catch (error) {
+    if (error.name === "IdentityChangedError") return;
     clearInterval(timer);
     setError(`${t(error.message)} ${t("Submit again to sync your flight.")}`);
     $("submit").textContent = t("↻");
@@ -547,11 +556,13 @@ function renderReveal(celebrate = true) {
 }
 
 async function launchRound() {
+  const checkpoint = flightIdentity.checkpoint();
   show("launch");
   updateFlight();
   for (const count of [3, 2, 1]) {
     $("launch-count").textContent = t(count);
     await new Promise((resolve) => setTimeout(resolve, 1000));
+    flightIdentity.assertCurrent(checkpoint);
   }
   $("launch-count").textContent = t("↑");
   acceptState(await api("next", { id: game.id, round: game.round }));
@@ -570,6 +581,7 @@ $("next").onclick = async () => {
     render();
     window.scrollTo({ top: 0, behavior: "instant" });
   } catch (error) {
+    if (error.name === "IdentityChangedError") return;
     renderReveal();
     setError(error.message);
   } finally {
@@ -789,6 +801,7 @@ createLanguageSelector(async (code) => {
       }
     } else await initialize();
   } catch (error) {
+    if (error.name === "IdentityChangedError") return;
     setError(error.message);
   } finally {
     applyLanguage();
@@ -800,5 +813,6 @@ createLanguageSelector(async (code) => {
 applyLanguage();
 initialize();
 const passport = initPassport({request:api,openDialog,native,publicOrigin,shareFlight});
-addEventListener("rare:identity",()=>{ game=null; home(); initialize(); });
+addEventListener("rare:identity",()=>{ flightIdentity.reset(); clearInterval(timer); game=null; home(); initialize(); });
+addEventListener("rare:history",()=>{ updateDailyButton(); updateFlight(); });
 initRelay({ request: api, shareFlight, publicOrigin, passport, onFlight: (flight) => scene?.setFlight(flight || sceneState) });

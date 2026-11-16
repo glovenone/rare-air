@@ -1,0 +1,7 @@
+# Passport cache isolation and background history refresh
+
+The November 17 maintenance review found that a passport session expiring or being revoked leaves the prior account's local history visible to the new guest: startup only synchronizes when an account exists. Conversely, every signed-in startup clears online caches and fires an identity event again after asynchronous history loading, potentially returning a newly started flight to the launchpad.
+
+Keep a local marker containing only the public account ID or `guest`. Reconcile it whenever passport status is read. Preserve caches for the same identity and legacy guests; clear only online history, sessions, practice and progression when identity changes. Offline practice history, language and analytics preferences stay local and independent. An identity transition resets the current game once; completion of background history loading updates statistics without resetting the active flight.
+
+Acceptance: tests cover authenticated→guest, account A→B, same-account reload, legacy guest migration and unavailable storage. A browser fixture must exercise delayed history while a flight is active and verify that logout/expiry clears prior online history. Keep all existing questions, translations, scores, timers, schemas and Cloudflare backend unchanged. Run existing tests/builds and relevant integration; prepare native bundles from the same shared frontend and retain the current store review queues.
