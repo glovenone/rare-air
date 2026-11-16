@@ -2218,7 +2218,14 @@
       "STAGE {0} OF 5": "第 {0} / 5 题",
       "← Back to the launchpad": "← 返回起点",
       "Choose your airspace.": "选择答题主题",
-      "On this website, choose your language from the header. Questions and answer review are available in English, Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Arabic and Indonesian. You can answer in your selected language or English. Changing language keeps the same flight and its running clock. Literal code keywords remain unchanged.": "在本网站，从标题栏选择你的语言。问题和答案回顾提供英语、中文、西班牙语、法语、葡萄牙语、德语、日语、俄语、阿拉伯语和印尼语。你可以用所选语言或英语作答。更改语言不会改变当前航班及其运行计时器。字面代码关键词保持不变。"
+      "On this website, choose your language from the header. Questions and answer review are available in English, Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Arabic and Indonesian. You can answer in your selected language or English. Changing language keeps the same flight and its running clock. Literal code keywords remain unchanged.": "在本网站，从标题栏选择你的语言。问题和答案回顾提供英语、中文、西班牙语、法语、葡萄牙语、德语、日语、俄语、阿拉伯语和印尼语。你可以用所选语言或英语作答。更改语言不会改变当前航班及其运行计时器。字面代码关键词保持不变。",
+      "The room is busy. Please try again.": "房间正在处理其他操作，请重试。",
+      "The room shares 30 seconds, with at least 8 seconds after a pass. A timeout costs one heart and starts the next stage. Clearing every answer also advances the stage.": "所有玩家共享 30 秒倒计时，每次交棒后至少保留 8 秒。超时会失去一颗心并进入下一关。当本题所有答案都被答出时，也会进入下一关。",
+      "Waiting for the host to start.": "等待房主开始。",
+      "Only the host can start this flight.": "只有房主可以开始这场飞行。",
+      "Play with friends ↗": "与好友同玩 ↗",
+      "Already flown": "本关已用答案",
+      "{0} caught {1} m.": "{0} 上升了 {1} 米。"
     },
     "es": {
       "on": "sí",
@@ -2249,7 +2256,8 @@
       "5 DAILY PROMPTS": "5 FRAGEN PRO TAG",
       "Steer your balloon": "Steuere deinen Ballon",
       "Rare-Answer Trivia Game — Play Free Online | RARE Air": "Quiz mit seltenen Antworten – kostenlos online spielen | RARE Air",
-      "On this website, choose your language from the header. Questions and answer review are available in English, Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Arabic and Indonesian. You can answer in your selected language or English. Changing language keeps the same flight and its running clock. Literal code keywords remain unchanged.": "Auf dieser Website: Wähle deine Sprache aus der Kopfzeile. Fragen und Antwortüberprüfung sind auf Englisch, Chinesisch, Spanisch, Französisch, Portugiesisch, Deutsch, Japanisch, Russisch, Arabisch und Indonesisch verfügbar. Du kannst in deiner ausgewählten Sprache oder auf Englisch antworten. Das Ändern der Sprache behält denselben Flug und dessen Laufuhr bei. Wörtliche Code-Schlüsselwörter bleiben unverändert."
+      "On this website, choose your language from the header. Questions and answer review are available in English, Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Arabic and Indonesian. You can answer in your selected language or English. Changing language keeps the same flight and its running clock. Literal code keywords remain unchanged.": "Auf dieser Website: Wähle deine Sprache aus der Kopfzeile. Fragen und Antwortüberprüfung sind auf Englisch, Chinesisch, Spanisch, Französisch, Portugiesisch, Deutsch, Japanisch, Russisch, Arabisch und Indonesisch verfügbar. Du kannst in deiner ausgewählten Sprache oder auf Englisch antworten. Das Ändern der Sprache behält denselben Flug und dessen Laufuhr bei. Wörtliche Code-Schlüsselwörter bleiben unverändert.",
+      "Stage {0} of {1}": "Etappe {0} von {1}"
     },
     "ja": {
       "on": "オン",
@@ -2277,7 +2285,9 @@
       "Play RARE Air, a free daily trivia game with five open-answer questions. Find less obvious correct answers and climb up to 5,000 meters through the clouds.": "العب RARE Air، لعبة أسئلة يومية مجانية مع خمس أسئلة مفتوحة الإجابة. ابحث عن إجابات صحيحة أقل وضوحاً وتسلق حتى 5,000 متر عبر السحب.",
       "How to Play RARE Air — Daily Trivia Rules & Scoring": "كيفية اللعب في RARE Air — قواعد أسئلة يومية ونظام النقاط",
       "How to play RARE Air.": "كيفية اللعب في RARE Air.",
-      "On this website, choose your language from the header. Questions and answer review are available in English, Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Arabic and Indonesian. You can answer in your selected language or English. Changing language keeps the same flight and its running clock. Literal code keywords remain unchanged.": "على هذا الموقع، اختر لغتك من الشريط العلوي. الأسئلة ومراجعة الإجابات متاحة باللغات الإنجليزية والصينية والإسبانية والفرنسية والبرتغالية والألمانية واليابانية والروسية والعربية والإندونيسية. يمكنك الإجابة بلغتك المختارة أو بالإنجليزية. تغيير اللغة يحافظ على نفس الرحلة وساعتها المتحركة. تظل الكلمات المفتاحية البرمجية حرفية دون تغيير."
+      "On this website, choose your language from the header. Questions and answer review are available in English, Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Arabic and Indonesian. You can answer in your selected language or English. Changing language keeps the same flight and its running clock. Literal code keywords remain unchanged.": "على هذا الموقع، اختر لغتك من الشريط العلوي. الأسئلة ومراجعة الإجابات متاحة باللغات الإنجليزية والصينية والإسبانية والفرنسية والبرتغالية والألمانية واليابانية والروسية والعربية والإندونيسية. يمكنك الإجابة بلغتك المختارة أو بالإنجليزية. تغيير اللغة يحافظ على نفس الرحلة وساعتها المتحركة. تظل الكلمات المفتاحية البرمجية حرفية دون تغيير.",
+      "After five stages, or when one pilot remains, more hearts wins. Altitude breaks ties. Equal results share a rank.": "تنتهي اللعبة بعد خمس مراحل أو عند بقاء طيار واحد. يفوز صاحب أكبر عدد من القلوب، وعند التعادل يُقارن الارتفاع. ومن يتساوون في الأمرين يشتركون في المرتبة.",
+      "The room shares 30 seconds, with at least 8 seconds after a pass. A timeout costs one heart and starts the next stage. Clearing every answer also advances the stage.": "يشترك الجميع في عدّاد يبدأ من 30 ثانية. بعد تمرير الدور يحصل اللاعب التالي على 8 ثوانٍ على الأقل. انتهاء الوقت يفقد اللاعب قلباً وينقل الجميع إلى المرحلة التالية. وتبدأ مرحلة جديدة أيضاً عندما تُكتشف جميع الإجابات المقبولة."
     },
     "id": {
       "on": "aktif",

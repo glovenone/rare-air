@@ -137,6 +137,10 @@ const pages = [
         "Sound is optional. Haptics use the phone’s vibration hardware where supported. These features do not require microphone, camera, contacts or location access.",
       ],
       [
+        "Private relay rooms.",
+        "Relay rooms store pilot names, answers, scores and private seat tokens. Rooms expire after 24 hours. Expired records are removed when a new room is created. This tab keeps your seat token in session storage. Room participants can see your pilot name, score and accepted answers. Choose a nickname without personal details.",
+      ],
+      [
         "Hosting and service logs.",
         "Cloudflare Workers and D1 host the online game and gameplay database. Cloudflare processes network requests and may process IP addresses, request details and service logs to operate and protect the service. The game enables Worker observability for diagnosing service failures.",
         "The project currently includes no advertising SDK, analytics tracker or cross-app advertising identifier. Gameplay answers and anonymous records are used to operate scoring, session recovery and leaderboards.",
@@ -301,7 +305,7 @@ await writeFile(
 );
 if (analyticsMetadata) {
   const privacy = pages.find((page) => page.path === "privacy");
-  privacy.intro = privacy.intro.replace("November 13, 2026", "November 15, 2026");
+  privacy.intro = privacy.intro.replace("November 13, 2026", "November 16, 2026");
   privacy.sections.find(([heading]) => heading === "Hosting and service logs.")[2] =
     "Gameplay answers and anonymous records are used to operate scoring, session recovery and leaderboards.";
   privacy.sections.splice(3, 0, [
@@ -317,6 +321,13 @@ pages.find((page) => page.path === "privacy").sections.splice(4, 0, [
   "The website publishes a Google AdSense ownership-verification meta tag and an ads.txt authorization file for site review. Ad delivery is currently disabled. These static verification records identify the publisher account. Any future advertising activation will be reflected in this policy and the website’s privacy controls.",
 ]);
 const socialImage = `${origin}/art/flight-preview.jpg`;
+pages.find(page => page.path === 'how-to-play').sections.push([
+  'Sky Relay',
+  'Invite 2–6 pilots. Take turns naming fresh answers before the shared clock runs out.',
+  'Each pilot has three hearts. An unused correct answer earns altitude and passes the turn. Wrong or repeated answers keep the clock running.',
+  'The room shares 30 seconds, with at least 8 seconds after a pass. A timeout costs one heart and starts the next stage. Clearing every answer also advances the stage.',
+  'After five stages, or when one pilot remains, more hearts wins. Altitude breaks ties. Equal results share a rank.',
+]);
 const socialMetadata = (title, description, url) => `
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="RARE Air"/>
