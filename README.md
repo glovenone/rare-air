@@ -28,6 +28,7 @@ npm test
 # With local development server running:
 node test/api.integration.mjs
 node test/relay.integration.mjs
+node test/progression.integration.mjs
 ```
 
 The integration test creates local game records. Run against the local URL, not production. Test rules cover every alias, normalized spelling, scoring tiers, deterministic dates and absence of public answer keys.
@@ -47,6 +48,8 @@ The checked-in database ID identifies the live demo's resource. Cloudflare authe
 
 - Five prompts per daily game, 30 seconds for each; daily reset at midnight UTC (08:00 China time).
 - On the website, choose Pick a topic for free subject-focused practice across nine knowledge areas. Each flight contains five distinct questions, and Take another flight retains the chosen topic.
+- Flight routes contain 54 fixed chapters across nine subjects. Finish a chapter to unlock the next, retain your best score and earn stars at 1,000, 2,500 and 4,000 meters.
+- Daily streaks use on-time UTC daily completions. Cosmetic trails unlock at best streaks of 3, 7, 14 and 30 days. Earlier records without completion timestamps retain their history and totals.
 - Choose Play with friends for Sky Relay. Invite two to six pilots using a private room code or link, take turns answering and protect three hearts across five stages. The server keeps the shared clock, accepted-answer history and final standings. Each tab keeps its private seat in session storage. Rooms expire after 24 hours.
 - One attempt per browser per date. Practice gets a new random seed. Daily dates use a deterministic versioned shuffle.
 - Curated answer bank: hundreds of question sets, accepted aliases, four rarity tiers worth 100, 250, 500 and 1,000 points. Invalid/skipped/expired answers get zero.

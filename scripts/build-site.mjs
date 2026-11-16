@@ -328,6 +328,12 @@ pages.find(page => page.path === 'how-to-play').sections.push([
   'The room shares 30 seconds, with at least 8 seconds after a pass. A timeout costs one heart and starts the next stage. Clearing every answer also advances the stage.',
   'After five stages, or when one pilot remains, more hearts wins. Altitude breaks ties. Equal results share a rank.',
 ]);
+pages.find(page => page.path === 'how-to-play').sections.push([
+  'Your flight routes.',
+  'Complete chapters, collect stars and explore a new part of the sky.',
+  'Finish all five questions to open the next chapter. Earn stars at 1,000, 2,500 and 4,000 meters.',
+  'Complete today’s daily flight to keep your streak. Days reset at midnight UTC. Archive replays and offline practice do not extend it.',
+]);
 const socialMetadata = (title, description, url) => `
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="RARE Air"/>

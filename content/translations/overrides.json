@@ -2225,7 +2225,18 @@
       "Only the host can start this flight.": "只有房主可以开始这场飞行。",
       "Play with friends ↗": "与好友同玩 ↗",
       "Already flown": "本关已用答案",
-      "{0} caught {1} m.": "{0} 上升了 {1} 米。"
+      "{0} caught {1} m.": "{0} 上升了 {1} 米。",
+      "Your flight routes.": "你的主题航线。",
+      "Flight routes ↗": "主题航线 ↗",
+      "Keep your sky streak.": "连续挑战",
+      "day streak": "天连续挑战",
+      "Best streak {0} days": "最长连续 {0} 天",
+      "Earlier flights remain in your log. Streaks count new daily completions.": "早期飞行仍保留在记录中。连续挑战天数从此次更新后的每日挑战完成开始计算。",
+      "Complete today’s daily flight to keep your streak. Days reset at midnight UTC. Archive replays and offline practice do not extend it.": "每天完成当天挑战即可保持连续记录。每日 UTC 00:00 重置，历史回玩和离线练习不计入连续天数。",
+      "Finish all five questions to open the next chapter. Earn stars at 1,000, 2,500 and 4,000 meters.": "完成五题即可解锁下一章。达到 1,000、2,500 和 4,000 米，分别获得一、二、三颗星。",
+      "{0}-day best streak": "最长连续挑战 {0} 天后解锁",
+      "Your flight trails.": "你的飞行尾迹。",
+      "Continue your route ↗": "继续主题航线 ↗"
     },
     "es": {
       "on": "sí",
