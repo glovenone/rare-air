@@ -103,6 +103,7 @@
     banner.querySelector('[data-choice="denied"]').textContent = tr("Decline");
   };
   window.addEventListener?.("rare:language", translateChoices);
+  if (window.RareI18n) translateChoices();
   settings.addEventListener("click", () => {
     banner.hidden = false;
     banner.querySelector("button").focus();

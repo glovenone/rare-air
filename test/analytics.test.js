@@ -5,12 +5,12 @@ import { runInNewContext } from "node:vm";
 
 const source = await readFile(new URL("../public/analytics.js", import.meta.url), "utf8");
 
-function visit({ consent = null, hostname = "krillionunlimited.top", id = "G-TEST123" } = {}) {
+function visit({ consent = null, hostname = "krillionunlimited.top", id = "G-TEST123", translate } = {}) {
   const scripts = [];
   const elements = [];
   const listeners = {};
   const cookieWrites = [];
-  const window = {};
+  const window = translate ? { RareI18n: { t: translate } } : {};
   const document = {
     title: "RARE Air",
     referrer: "https://example.com/guide?email=private#section",
@@ -21,7 +21,7 @@ function visit({ consent = null, hostname = "krillionunlimited.top", id = "G-TES
       tag,
       setAttribute() {},
       addEventListener(type, handler) { this[type] = handler; },
-      querySelector: () => ({ focus() {} }),
+      querySelector: () => ({ focus() {}, firstChild: {} }),
     }),
     head: { append: (tag) => scripts.push(tag) },
     body: { append: (element) => elements.push(element) },
@@ -38,6 +38,12 @@ function visit({ consent = null, hostname = "krillionunlimited.top", id = "G-TES
   const events = () => (window.dataLayer || []).map((args) => [...args]);
   return { scripts, elements, listeners, window, cookieWrites, choose, events };
 }
+
+test("analytics controls use an already-initialized page language", () => {
+  const page = visit({ translate: (text) => text === "Analytics settings" ? "统计设置" : text });
+  assert.equal(page.elements[1].textContent, "统计设置");
+  assert.equal(page.scripts.length, 0);
+});
 
 test("website analytics waits for consent and stays absent from native hosts or missing configuration", () => {
   const page = visit();
