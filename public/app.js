@@ -1,5 +1,6 @@
 import { t, language, selectLanguage, initialLanguage, applyLanguage, createLanguageSelector } from "./i18n.js";
 import { localizedPath } from "./locales.js";
+import { initRelay } from "./relay.js";
 import {
   request as platformRequest,
   native,
@@ -784,3 +785,4 @@ createLanguageSelector(async (code) => {
 });
 applyLanguage();
 initialize();
+initRelay({ request: api, shareFlight, publicOrigin, onFlight: (flight) => scene?.setFlight(flight || sceneState) });

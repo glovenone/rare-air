@@ -2,6 +2,7 @@ import {schedule, evaluate, publicQuestion, bankInfo, practiceTopics} from './qu
 import {withTranslations, answerLabel} from './localization.js';
 import {resolveLocale} from '../public/locales.js';
 import type {Question} from './questions.js';
+import {relayApi} from './relay-api.js';
 interface Env {DB:D1Database;ASSETS:Fetcher;INDEXNOW_KEY?:string}
 interface Session {id:string;player:string;day:string;mode:string;seed:string;round:number;started:number;created:number;name:string;questions_json:string|null}
 const utc=()=>new Date().toISOString().slice(0,10);
@@ -38,6 +39,7 @@ if(req.method!=='POST')return fail('Not found.',404);
 if(Number(req.headers.get('Content-Length')||0)>2048)return fail('Request too large.',413);
 const raw=await req.text();if(raw.length>2048)return fail('Request too large.',413);let b:Record<string,unknown>;try{b=JSON.parse(raw);}catch{return fail('Invalid JSON.');}if(!b||typeof b!=='object'||Array.isArray(b))return fail('Invalid request.');
 language=resolveLocale(b.language ?? language).code;
+if(path.startsWith('/api/relay/')) return relayApi(env.DB, player, path.slice('/api/relay/'.length), b, language, out);
 if(path==='/api/start'){
 const mode=b.mode==='practice'?'practice':'daily';const day=typeof b.day==='string'?b.day:utc();if(!/^\d{4}-\d{2}-\d{2}$/.test(day)||!Number.isFinite(Date.parse(day))||new Date(day).toISOString().slice(0,10)!==day||day>utc()||day<'2026-11-12')return fail('Choose an available puzzle date.');
 if (b.topic !== undefined && (

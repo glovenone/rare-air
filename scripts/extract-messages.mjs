@@ -10,9 +10,9 @@ function add(text) {
   if (key && !["RARE Air", "Rare air", "Rare air.", "rare", "rare ↗", "home", "daily", "offline", "cancelled", "shared", "POST", "GET", "HEAD", "DENY", "UTC"].includes(key) &&
       /[A-Za-z]{2}/.test(key) && !key.startsWith("http") &&
       !/<\/?(?:div|span|p|button)\b/.test(key) &&
-      !/SELECT |INSERT |UPDATE |CREATE |default-src|Max-Age|SameSite/.test(key)) collected.add(key);
+      !/SELECT |INSERT |UPDATE |CREATE |DELETE FROM |default-src|Max-Age|SameSite/.test(key)) collected.add(key);
 }
-for (const path of ["public/app.js", "public/sky.js", "public/analytics.js", "src/worker.ts", "native/platform.js", "native/offline.js"]) {
+for (const path of ["public/app.js", "public/sky.js", "public/analytics.js", "public/relay.js", "src/worker.ts", "src/relay-api.ts", "src/relay.js", "native/platform.js", "native/offline.js"]) {
   const source = await readFile(path, "utf8");
   const tree = ts.createSourceFile(path, source, ts.ScriptTarget.Latest, true);
   function visit(node) {
@@ -20,6 +20,8 @@ for (const path of ["public/app.js", "public/sky.js", "public/analytics.js", "sr
       let argument = node;
       while (argument.parent && !ts.isCallExpression(argument.parent) && !ts.isStatement(argument.parent)) argument = argument.parent;
       const call = argument.parent;
+      if (call && ts.isCallExpression(call) && ts.isPropertyAccessExpression(call.expression) &&
+          ['querySelector', 'querySelectorAll'].includes(call.expression.name.text)) return;
       const translatedArgument = call && ts.isCallExpression(call) &&
         (call.expression.getText(tree) === "t" ||
          call.expression.getText(tree) === "element" && call.arguments[1] === argument);
