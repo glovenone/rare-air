@@ -1,9 +1,9 @@
 {
-  "status": "saved-in-play-console-pending-review",
+  "status": "build4-prepared-locally-not-saved-in-play-console",
   "dataCollected": true,
   "encryptedInTransit": true,
-  "accountCreation": false,
-  "deletionRequestsAvailable": false,
+  "accountCreation": true,
+  "deletionRequestsAvailable": true,
   "collectionOptionalReason": "The launch screen automatically requests the online daily summary when connected, which creates an anonymous identifier and request diagnostics. Offline practice keeps typed answers on the device.",
   "categories": [
     {
@@ -29,7 +29,7 @@
     },
     {
       "type": "Other user-generated content",
-      "data": "Typed trivia answers",
+      "data": "Typed trivia answers, chosen public pilot names and moderation reports",
       "purpose": [
         "App functionality"
       ],
@@ -48,15 +48,31 @@
       "optional": false,
       "shared": false,
       "ephemeral": false
+    },
+    {
+      "type": "User IDs",
+      "data": "Optional public passport ID and private account-to-game links",
+      "purpose": [
+        "App functionality",
+        "Account management",
+        "Fraud prevention, security, and compliance"
+      ],
+      "optional": true,
+      "shared": false,
+      "ephemeral": false
     }
   ],
-  "serviceProvider": "Cloudflare Workers and D1",
+  "serviceProvider": "Cloudflare Workers, D1 and SQLite Durable Objects",
   "privacyUrl": "https://krillionunlimited.top/privacy/",
   "supportUrl": "https://krillionunlimited.top/support/",
   "publisherChecks": [
-    "Recheck the form when hosting, logging or SDK behavior changes",
-    "A verified deletion workflow is required before claiming deletion requests are supported",
-    "The live Play privacy URL still uses the Cloudflare Workers origin until the purchased domain is activated",
-    "Review the target audience and IARC questionnaire when daily content scope changes"
-  ]
+    "Before submitting build4, update Play account-creation answers and User IDs disclosure; website deletion entry and native recovery/deletion have been validated.",
+    "Declare public multiplayer interaction, nickname-only content, blocking and reporting in the new IARC questionnaire.",
+    "Preserve the current build3 review queue; do not claim build4 is approved or submitted.",
+    "Recheck the form when hosting, logging or SDK behavior changes."
+  ],
+  "accountCreationMethods": [
+    "Other: optional flight passport with private recovery code; website also offers passkeys"
+  ],
+  "deletionUrl": "https://krillionunlimited.top/?passport=delete"
 }

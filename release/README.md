@@ -1,5 +1,7 @@
 # Mobile release preparation
 
+Current social candidate: Android 1.0.2 (4) is available as a signed direct APK; iOS 1.0.2 (4) is archived but distribution export needs restored Xcode login. Store 1.0.1 (3) reviews continue. See [current release evidence](mobile-daily.md).
+
 ## Product configuration
 
 - Name `RARE Air: Daily Trivia`

@@ -2,7 +2,17 @@
 
 Updated November 16, 2026, Asia/Shanghai.
 
-## November 16 candidate and direct Android release
+## November 16 social update — current candidate
+
+The website now uses Cloudflare Workers, D1 and a SQLite Durable Object for optional flight passports, cross-device history, friends, public/quick/rated multiplayer and exactly-once Elo results. Source `6ec5970` includes the final native keyboard, safe-area and iOS focus-zoom fixes. Nine illustrated route environments, 150 fixed chapters and eight earned companions are included; later chapters reuse reviewed questions in distinct fixed combinations. The question bank remains 601 prompts in ten languages.
+
+Android **1.0.2 versionCode 4** is signed and public at [android-v1.0.2](https://github.com/glovenone/rare-air/releases/tag/android-v1.0.2). A fresh anonymous download verified the original signature and SHA-256 `8b9a828bf4c29065a9eb141450ebd288897f50d7d8454c3971f2cf518397b6f5`. Signed AAB SHA-256 `9dcd105f57c2f6da756fcb2d19cb76ccf969c9531f6bd45aaadbc315c90c80d7`. Website download entries now point to the new APK.
+
+Type checking, 48 unit tests and four real-D1/DO integration groups passed. Android signed-release testing verified creation, saved recovery code, logout and restoration to the same passport. Two final iPhone 17 Pro / iOS 26.5 XCTest tests passed native creation, logout, recovery, actual account deletion and selecting the ten-seat control. Earlier failed runs exposed iOS input focus zoom and test locator assumptions; product input sizes and keyboard handling were corrected before the final run. Device passkey hardware and physical haptics remain separate hardware checks. Website analytics and AdSense are absent from the packaged HTML and runtime modules.
+
+iOS **1.0.2 build 4** archives successfully. Final distribution export is currently blocked by Xcode's **No Accounts** and missing iOS Distribution identity; the owner has been asked to restore Xcode login. An earlier export predates the keyboard fixes and is explicitly marked stale in the ignored artifact folder; do not upload it. No build 4 store binary has been uploaded or submitted. Current build 3 Apple and Google review queues remain intact, with automatic release after approval. The prepared build 4 Google data-safety draft requires updated optional account/User IDs/deletion answers and IARC public multiplayer/block/report answers before its next submission. Do not report the local draft as saved in Play Console. Production testing eligibility remains unchanged.
+
+## November 16 earlier candidate and direct Android release
 
 Prepared iOS **1.0.1 build 3** and Android **1.0.1 versionCode 3** from feature commit `8dc9e94`, merged through PR #5. Both package 601 offline questions. The shared game includes ten languages, nine topic choices, 54 fixed chapters, UTC daily streak rewards and private Sky Relay rooms. Rules and store metadata describe the required online connection for chapters, streaks and multiplayer.
 
