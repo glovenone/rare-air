@@ -1,5 +1,5 @@
 export const appDownloads = {
-  android: "https://github.com/glovenone/rare-air/releases/download/android-v1.0.0/RARE-Air-1.0.apk",
+  android: "https://github.com/glovenone/rare-air/releases/download/android-v1.0.1/RARE-Air-1.0.1.apk",
   apple: "https://apps.apple.com/app/id6834294339",
   appleAvailable: true,
 };
