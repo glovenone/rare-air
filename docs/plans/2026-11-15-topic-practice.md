@@ -20,4 +20,4 @@ Build an original multiplayer flight relay with private rooms and a join code. A
 
 The first playable acceptance covers two independently controlled clients joining the same room, starting together, taking turns, rejecting a repeated answer, handling a timeout, reconnecting to the current state and seeing the same final result. A third client attempting an invalid or full-room join receives an actionable error. Verify these flows before exposing a public entry. Review the current Cloudflare deployment configuration and available room-state primitives during implementation, then document the chosen persistence and operating cost.
 
-Krillion research verified public entry points, rules and a one-participant room's settings. Full multiplayer play remains a research follow-up. The relay is a development candidate awaiting implementation.
+Krillion research verified public entry points, rules and a one-participant room's settings. Full competitor multiplayer play remains a research follow-up. RARE Air's private Sky Relay shipped on November 16. Its implementation and independent-client verification are recorded in docs/plans/2026-11-16-sky-relay.md.
