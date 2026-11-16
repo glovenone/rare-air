@@ -1,6 +1,16 @@
 # Daily iOS and Android releases
 
-Updated November 15, 2026, Asia/Shanghai.
+Updated November 16, 2026, Asia/Shanghai.
+
+## November 16 candidate
+
+Prepared iOS **1.0.1 build 2** and Android **1.0.1 versionCode 2** from the topic-practice source and the first trend-led question addition. Both package 601 offline questions. Online practice adds nine free subject choices and retains the selected subject on another flight. The candidate store text and release notes in `store-metadata.en-US.json` describe this build.
+
+TypeScript, all 26 unit tests, the local Worker/D1 integration suite, site generation, mobile bundling and Capacitor synchronization passed. The iPhone 17 Pro simulator build and device archive succeeded. Android debug APK, signed release APK and signed AAB builds succeeded. The APK verifies with v2 signing and the same certificate as the public 1.0 APK. Its package is `com.letuzhixing.rareair`, minimum SDK 24 and target SDK 36. The AAB passes JAR signature verification. The shared mobile JavaScript was checked for all 601 question IDs and the production origin, and its HTML excludes website analytics and AdSense tags.
+
+The new debug builds were installed and launched on the iPhone 17 Pro iOS 26.5 simulator and the Rare_Air_Validation Android emulator. Full native UI verification remains pending because the computer-control tool continues reporting a locked Mac. iOS distribution export failed with `No Accounts` and no available distribution certificate. The owner has been asked to unlock the desktop and check Xcode's developer account. Store upload and submission remain pending. The public app versions and existing direct-download URL still refer to the preceding release.
+
+Candidate APK, AAB and hashes are saved in the main checkout's ignored `release/artifacts/2026-11-16/`. The iOS archive remains in the daily worktree's ignored release artifacts. The private daily execution record holds exact paths and recovery steps. Before uploading, verify current store build records to confirm these candidate build numbers are still available, then continue the existing automatic-release workflow.
 
 ## Owner authorization and current state
 
