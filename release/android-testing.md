@@ -2,9 +2,9 @@
 
 ## Current status
 
-Updated November 15, 2026. The owner authorized recruiting real Android testers and publishing after successful testing. Recruitment is voluntary and unpaid.
+Updated November 16, 2026. The owner authorized recruiting real Android testers and publishing after successful testing. Recruitment is voluntary and unpaid.
 
-Google approved and published the version 1.0 (1) Alpha closed-test release on November 15, 2026. Play Console marks the closed-test publication task complete. The enrollment page displays RARE Air, its correct publisher and testing group, and the Become a tester button. The dashboard still reports zero opted-in testers. Actual volunteer installation and use remain pending.
+Google approved and published the version 1.0 (1) Alpha closed-test release on November 15, 2026. Play Console marks the closed-test publication task complete. The enrollment page displays RARE Air, its correct publisher and testing group, and the Become a tester button. The November 16 dashboard reports one opted-in tester. Actual volunteer installation, sustained use and feedback remain unverified.
 
 The closed-test track uses [RARE Air Android Testers](https://groups.google.com/g/rare-air-android-testers). Anyone may join with a Google Account. Only the owner can view the member list. The track now targets all countries and regions offered by Play Console to accommodate international volunteers. Its country targeting is independent of production.
 
@@ -40,7 +40,7 @@ An approval update was posted in that thread after the test release became avail
 
 The app's Play dashboard requires at least 12 testers continuously opted in for 14 days before applying for production access. Google then reviews the production-access application. Keep an accurate record of participation, actual feedback and fixes for that application. Confirm production access, release validation and the current review state before publishing.
 
-The public APK remains available from [GitHub Releases](https://github.com/glovenone/rare-air/releases/tag/android-v1.0.0).
+The public APK remains available from [GitHub Releases](https://github.com/glovenone/rare-air/releases/tag/android-v1.0.1).
 
 Official guidance is available in Google's [testing requirements](https://support.google.com/googleplay/android-developer/answer/14151465?hl=en) and [test setup instructions](https://support.google.com/googleplay/android-developer/answer/9845334?hl=en).
 
@@ -55,4 +55,4 @@ The final generation prompt was as follows.
 
 ## November 16 follow-up
 
-The happycoin Play dashboard reports 1 opted-in closed-test participant. Its production-access conditions still require at least 12 participants for 14 days. Prepared the Alpha 1.0.1 versionCode 3 update, with 601 offline questions, ten languages, fixed chapter routes, UTC streak rewards and private Sky Relay. Its signed AAB is ready, while the browser upload awaits temporary local-file access. The signed APK is already publicly downloadable from GitHub Release android-v1.0.1 and linked on the official website. No new feedback or 14-day completion was established by this check.
+The happycoin Play dashboard reports 1 opted-in closed-test participant. Its production-access conditions still require at least 12 participants for 14 days. Prepared the Alpha 1.0.1 versionCode 3 update, with 601 offline questions, ten languages, fixed chapter routes, UTC streak rewards and private Sky Relay. Its signed AAB was uploaded, validated and submitted with the refreshed interaction rating. Publishing overview shows changes in review with automated pre-review checks still running. Managed publishing is off; approval will publish to Alpha. The signed APK is already publicly downloadable from GitHub Release android-v1.0.1 and linked on the official website. No new feedback or 14-day completion was established by this check.
