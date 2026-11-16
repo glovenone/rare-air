@@ -1,4 +1,7 @@
 import { t, language } from "./i18n.js";
+import { selectedTrail } from "./trails.js";
+let trail = selectedTrail();
+addEventListener('rare:trail', () => { trail = selectedTrail(); });
 const canvas = document.getElementById("cloud-canvas");
 const foreground = document.getElementById("foreground-canvas");
 const context = canvas.getContext("2d");
@@ -324,7 +327,7 @@ function drawBurst(delta) {
     particle.y += particle.vy * delta;
     particle.vy += delta * 10;
     front.globalAlpha = Math.max(0, particle.remaining / particle.life);
-    front.fillStyle = "#fff0ac";
+    front.fillStyle = trail.color;
     front.beginPath();
     front.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
     front.fill();
@@ -467,7 +470,7 @@ function drawUpdraft(delta) {
         planeY,
         -0.9 + Math.sin(orbit) * 0.35,
         width < 600 ? 12 : 19,
-        ["#db8a62", "#72a9a6", "#d8b066"][plane],
+        trail.planes[plane],
       );
     }
     front.globalAlpha = 1;

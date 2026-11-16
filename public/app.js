@@ -1,6 +1,7 @@
 import { t, language, selectLanguage, initialLanguage, applyLanguage, createLanguageSelector } from "./i18n.js";
 import { localizedPath } from "./locales.js";
 import { initRelay } from "./relay.js";
+import { initProgression } from "./progression.js";
 import {
   request as platformRequest,
   native,
@@ -82,6 +83,7 @@ function score() {
 }
 
 function practiceLabel() {
+  if (game?.chapter) return t`Chapter ${game.chapter.number} · ${t(game.chapter.label)}`;
   return puzzle?.topics?.find((topic) => topic.id === game?.topic)?.label || "Practice flight";
 }
 
@@ -250,6 +252,7 @@ $("stats").onclick = () => {
     grid.append(cell);
   }
   content.append(grid);
+  progression.decorateLog(content);
   const recent = history
     .slice()
     .sort((a, b) => b.day.localeCompare(a.day))
@@ -360,7 +363,7 @@ function acceptState(data) {
   rememberGame();
 }
 
-async function start(mode = "daily", day = puzzle?.day, topic = null) {
+async function start(mode = "daily", day = puzzle?.day, topic = null, chapter = null) {
   if (busy) return;
   setBusy(true);
   setError();
@@ -374,7 +377,7 @@ async function start(mode = "daily", day = puzzle?.day, topic = null) {
         if (!error.message.includes("Game not found")) throw error;
         data = await api("start", { mode, day });
       }
-    } else data = await api("start", { mode, day, ...(topic ? { topic } : {}) });
+    } else data = await api("start", { mode, day, ...(topic ? { topic } : {}), ...(chapter ? { chapter } : {}) });
     acceptState(data);
     if (game.awaitingStart && game.answers.length === 0) await launchRound();
     render();
@@ -416,8 +419,10 @@ $("topic-practice").onclick = () => {
 };
 $("offline-practice").hidden = !native;
 $("offline-practice").onclick = () => start("offline");
-$("play-again").onclick = () =>
+$("play-again").onclick = () => {
+  if (game?.chapter) return progression.openRoutes(game.chapter.route);
   start(game?.mode === "offline" ? "offline" : "practice", puzzle?.day, game?.topic || null);
+};
 
 function home() {
   show("home");
@@ -570,6 +575,7 @@ function renderResults() {
   show("result");
   updateFlight();
   const total = score();
+  $("play-again").textContent = t(game.chapter ? "Continue your route ↗" : "Take another flight ↗");
   $("result-heading").replaceChildren(
     element("span", total >= 2500 ? "A head for heights." : "Curiosity takes you places."),
   );
@@ -664,6 +670,7 @@ function renderResults() {
     $("board").textContent =
       t("Offline practice is saved on this device and has its own flight history.");
   } else loadLeaderboard(game.day);
+  progression.recordCompletion(game);
 }
 
 async function loadLeaderboard(day) {
@@ -754,6 +761,7 @@ import("/sky.js")
     console.info("Using the still-sky view.", error.message);
   });
 
+const progression = initProgression({ request: api, openDialog, startChapter: chapter => start("practice", puzzle?.day, null, chapter) });
 selectLanguage(initialLanguage());
 if (!native) history.replaceState(null, "", localizedPath(location.pathname, language()) + location.search + location.hash);
 createLanguageSelector(async (code) => {
