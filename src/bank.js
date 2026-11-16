@@ -19,6 +19,11 @@ export const batches = [
     "batch": "2026-11-15-daily",
     "releasedOn": "2026-11-15",
     "count": 100
+  },
+  {
+    "batch": "2026-11-16-daily",
+    "releasedOn": "2026-11-17",
+    "count": 1
   }
 ];
 export const bank = [
@@ -25879,5 +25884,56 @@ export const bank = [
     ],
     "releasedOn": "2026-11-15",
     "batch": "2026-11-15-daily"
+  },
+  {
+    "id": "trend-20261116-nfc-north",
+    "category": "SPORT",
+    "prompt": "Name one of the four NFL teams in the NFC North division during the 2026 season.",
+    "explanation": "The division contains Chicago, Detroit, Green Bay and Minnesota. Team nicknames and full names are accepted. The question fixes membership to the 2026 season. Rarity tiers are editorial choices.",
+    "sources": [
+      "https://www.chicagobears.com/team/standings/"
+    ],
+    "answers": [
+      {
+        "label": "Green Bay Packers",
+        "aliases": [
+          "Packers",
+          "Green Bay",
+          "The Packers"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Detroit Lions",
+        "aliases": [
+          "Lions",
+          "Detroit",
+          "The Lions"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Minnesota Vikings",
+        "aliases": [
+          "Vikings",
+          "Minnesota",
+          "The Vikings",
+          "Vikes"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Chicago Bears",
+        "aliases": [
+          "Bears",
+          "Chicago",
+          "The Bears",
+          "Da Bears"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-17",
+    "batch": "2026-11-16-daily"
   }
 ];

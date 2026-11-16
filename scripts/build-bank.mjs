@@ -9,8 +9,10 @@ const assert=(ok,message)=>{if(!ok)throw new Error(message)};
 for(const file of files){const pack=JSON.parse(await readFile(new URL(file,dir),'utf8'));const {batch,releasedOn,questions}=pack;
  assert(typeof batch==='string'&&batch+'.json'===file,'Batch must match file: '+file);
  assert(/^\d{4}-\d{2}-\d{2}$/.test(releasedOn)&&new Date(releasedOn).toISOString().slice(0,10)===releasedOn,'Invalid release date: '+file);
- assert(Array.isArray(questions)&&questions.length===(file.endsWith('-daily.json')?100:270),'Incorrect batch count: '+file);
- if(file.endsWith('-daily.json')){const counts=new Map();for(const q of questions)counts.set(q.category,(counts.get(q.category)||0)+1);assert(counts.size>=8&&[...counts.values()].every(n=>n<=25),'Daily pack needs 8+ categories and <=25 per category: '+file);}
+ const validCount = Array.isArray(questions) && (
+  file.endsWith('-daily.json') ? questions.length > 0 : questions.length === 270
+ );
+ assert(validCount, 'Incorrect batch count: ' + file);
  for(const q of questions){const tag=file+': '+q.id;
  assert(typeof q.id==='string'&&/^[a-z0-9-]{3,100}$/.test(q.id)&&!ids.has(q.id),'Duplicate/invalid ID '+tag);ids.add(q.id);
  assert(typeof q.category==='string'&&/^[A-Z ]{3,30}$/.test(q.category),'Invalid category '+tag);

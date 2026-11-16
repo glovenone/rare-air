@@ -64,7 +64,7 @@ The checked-in database ID identifies the live demo's resource. Cloudflare authe
 
 ## Content and operations
 
-The bank contains 30 immutable legacy prompts, 270 expansion prompts, and dated daily batches of 100 new prompts. Practice uses the current bank, and each new daily pool starts on its release date. Dated packs are append-only and filtered by release date, so later packs cannot change old daily puzzles. Every new session stores exact question and scoring snapshots; pre-migration sessions retain the legacy bank. See `content/EDITORIAL.md` for content quality and publishing rules. Rarity is editorial, not a measured answer frequency.
+The bank contains 30 immutable legacy prompts, 270 expansion prompts, and dated content batches. New additions follow current English-market search trends and verified events. Practice uses the current bank, and each new daily pool starts on its release date. Dated packs are append-only and filtered by release date, so later packs cannot change old daily puzzles. Every new session stores exact question and scoring snapshots; pre-migration sessions retain the legacy bank. See `content/EDITORIAL.md` for content quality and publishing rules. Rarity is editorial, not a measured answer frequency.
 
 Anonymous identity is per cookie, not a verified person. Clearing cookies creates another identity. No strong anti-bot control or global request quota is included; add Cloudflare rate limiting/Turnstile for larger public launches. The basic cap is 30 new sessions per browser per hour. No traffic-scale/load test or revenue claim is made.
 
@@ -94,13 +94,13 @@ Help test RARE Air on Android 7.0 or later. The first Google Play closed-test re
 
 Share real-device feedback in the [recruitment issue](https://github.com/glovenone/rare-air/issues/2) or testing group. See the [test status and checklist](release/android-testing.md).
 
-## Daily 100-question task
+## Daily trend-led content review
 
-Each new daily pack belongs in `content/packs/YYYY-MM-DD-daily.json` and must contain 100 distinct prompts with accepted answers, aliases, rarity tiers and source links. Follow [the editorial and publishing rules](content/EDITORIAL.md), run the bank build and checks, then deploy.
+Check current search trends and verified events relevant to English-speaking players. Add distinct, bounded trivia questions only when suitable new material exists. Record the trend evidence and selection decisions. A day may add zero questions, in which case the review record is sufficient. New nonempty packs belong in `content/packs/YYYY-MM-DD-daily.json` and include accepted answers, aliases, rarity tiers and source links. Follow [the editorial and publishing rules](content/EDITORIAL.md), run the bank build and checks, then deploy additions.
 
-The demo's maintainer uses a local Codex automation at 07:00 Asia/Shanghai to prepare and publish these batches. You can configure a corresponding task for your own checkout. The computer and Codex app need to be running, and the task consumes Codex usage.
+The demo's maintainer uses a local Codex automation at 07:00 Asia/Shanghai for this review and any resulting publication. You can configure a corresponding task for your own checkout. The computer and Codex app need to be running, and the task consumes Codex usage.
 
-Use `npm run bank:build` to validate packs and regenerate server-only `src/bank.js`. Each daily pack must have exactly 100 prompts. Public `/api/puzzle` reports `bankSize` and `latestBatch` for deployment verification, without exposing answers.
+Use `npm run bank:build` to validate packs and regenerate server-only `src/bank.js`. Daily packs accept any positive question count and can focus on one topic. Public `/api/puzzle` reports `bankSize` and `latestBatch` for deployment verification, without exposing answers.
 
 ## Flight interface
 

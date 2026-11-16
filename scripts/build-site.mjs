@@ -21,6 +21,11 @@ const pages = [
         "Each active question has a 30-second clock. Between questions, the reward screen gives you time to enjoy the sky before continuing. A three-second preparation countdown introduces the next stage.",
       ],
       [
+        "Choose a subject for your next flight.",
+        "Pick a topic opens nine free practice areas. Choose geography and history, science and space, nature, movies, books and words, music, games and sport, art and culture, or food and everyday knowledge. The cards show each subject's current question count.",
+        "Each topic flight contains five distinct questions. After the report, Take another flight keeps the same subject. Choose Practice flight on the homepage for a mixed set, or Pick a topic to change subjects. Topic practice uses the same timing, editorial rarity and accepted-answer review as mixed practice.",
+      ],
+      [
         "Find an answer with a little more lift.",
         "Correct answers earn 100, 250, 500 or 1,000 meters according to fixed editorial rarity tiers. Across five questions, the maximum altitude is 5,000 meters. Capitalization, punctuation and accepted aliases are handled automatically.",
         "Rarity is a curated rating of answer obscurity. After the final stage, your flight report lists accepted answers so you can explore choices you missed.",
