@@ -2395,5 +2395,17 @@
       "rating": "peringkat",
       "Private flights have five stages; ten-seat, quick and rated flights have up to 30. One remaining pilot ends the flight early. More hearts wins; altitude breaks ties. Rare answers charge extra hearts.": "Penerbangan pribadi memiliki 5 tahap; meja 10 kursi serta penerbangan cepat dan peringkat memiliki hingga 30 tahap. Penerbangan berakhir lebih awal jika tersisa satu pilot. Jawaban langka dan luar biasa mengumpulkan energi hati: setiap 1.500 meter memulihkan satu hati, hingga lima hati. Hati terbanyak menang; ketinggian menentukan hasil seri."
     }
+  },
+  "zh": {
+    "Meet in the flight deck. Find a table, invite your crew or fly for a rating.": "来到飞行甲板，找个房间、邀请好友，或挑战排位。",
+    "Your crew is still quiet. Invite someone you know.": "好友列表还空着，邀请认识的朋友一起飞行吧。",
+    "Join my RARE Air flight crew. {0}": "加入我的 RARE Air 飞行小队。{0}",
+    "Public rooms appear here. Your table may be quiet while the community grows.": "公开房间会显示在这里。现在玩家还不多，也可以邀请好友一起玩。",
+    "Open your flight passport to play rated.": "打开您的飞行护照以进行排位模式。",
+    "Finish or leave your other rated flight first.": "请先完成或离开您其他的排位飞行。",
+    "Join rated flights through matchmaking.": "通过匹配系统加入排位飞行。",
+    "Waiting for the rated table to fill.": "等待排位房间填满。",
+    "Invite 2–10 pilots, browse public rooms or find a quick or rated table.": "邀请 2–10 名飞行员，浏览公共房间或寻找快速或排位房间。",
+    "Choose a two-, three-, six- or ten-seat table. Private rooms use invitation codes; public rooms appear in the flight deck. Quick and rated tables start when full. There are no simulated opponents. If the queue is quiet, choose a smaller table or invite a friend. Rated play requires a passport; leaving an active rated flight counts in its result.": "选择两座、三座、六座或十座桌位。私人房间使用邀请码；公共房间显示在飞行甲板中。快速和排位房间满员后开始。没有模拟对手。如果队列空闲，请选择较小的桌位或邀请好友。排位模式需要护照；离开活跃的排位飞行会计入其结果。"
   }
 }
