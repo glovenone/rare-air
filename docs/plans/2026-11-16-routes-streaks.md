@@ -13,3 +13,12 @@ Unlock permanent cosmetic flight trails at best streaks of 3, 7, 14 and 30 days.
 3. Add the routes dialog and rewards in the flight log using the established typography, sky artwork and responsive layout. Translate new interface and guide text into all ten selected languages.
 4. Verify normal browser entry points, chapter completion/replay, progress after reload, mobile and Arabic RTL. Run the existing game and relay integrations and native bundle compatibility builds.
 5. Push source, apply the additive migration, deploy and verify the public game. Refresh the existing daily automation and actual mobile candidate records. Check store build identifiers before packaging the new shared native source.
+
+
+## Delivery and verification
+
+Feature commit `8dc9e94` merged through PR #5. Migration 0004 is applied. Final website source `b507b17` and Cloudflare deployment `312fd0fc-6a7c-4c00-a86f-b78fb8287c56` publish the chapters and rewards with the verified Android 1.0.1 download.
+
+Type checking, 45 unit tests and all three local D1 integrations passed. Local browser play earned 5,000 meters and three stars, unlocked Chapter 2, then confirmed retained progress. A three-day synthetic local fixture tested reward eligibility and selection after reload. A complete production Chinese chapter, including a genuine timeout in its second stage during inspection, retained 4,000 meters and three stars and unlocked Chapter 2. Chinese and Arabic layouts fit 320px. All 90 live pages passed canonical, reciprocal hreflang, analytics and ad-disabled checks. Published APK hashes match a fresh public download.
+
+Shared native build 3 packages this feature. Android APK and AAB signing, iOS simulator/device archive and cross-package bundle checks passed. The direct APK is published. Google Play upload awaits browser local-file access, and iOS distribution export awaits the owner's Xcode account and certificate. Store metadata and automatic-release settings have been prepared and verified according to release/mobile-daily.md.

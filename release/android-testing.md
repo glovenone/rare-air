@@ -51,3 +51,8 @@ The Glove avatar was generated with Codex's built-in image tool on November 15, 
 The final generation prompt was as follows.
 
 > Create one exquisite square profile avatar for an independent software maker whose online name is Glove. An original ivory-white glove character, a single hand facing the viewer with a relaxed two-finger peace gesture and a rounded thumb. Two small expressive dark teal oval eyes and a subtle warm smile sit on the palm. A deep teal knitted cuff with one tiny coral-orange fabric tab. Tactile matte clay and finely woven fabric, polished contemporary 3D illustration with editorial taste, soft studio sunlight from upper left, gentle dimensional shadows. Solid pale turquoise background with a very subtle cream halo, strong readable silhouette, close-up centered composition with generous circular crop safe margin. Restrained palette of ivory, dark teal and a tiny coral accent. Warm, curious, quietly confident independent maker personality. Beautiful and legible at a small profile photo size. No lettering, logos, watermark, props, photorealistic person, or extra hands. One finished avatar, square.
+
+
+## November 16 follow-up
+
+The happycoin Play dashboard reports 1 opted-in closed-test participant. Its production-access conditions still require at least 12 participants for 14 days. Prepared the Alpha 1.0.1 versionCode 3 update, with 601 offline questions, ten languages, fixed chapter routes, UTC streak rewards and private Sky Relay. Its signed AAB is ready, while the browser upload awaits temporary local-file access. The signed APK is already publicly downloadable from GitHub Release android-v1.0.1 and linked on the official website. No new feedback or 14-day completion was established by this check.
