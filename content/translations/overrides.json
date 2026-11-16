@@ -2236,7 +2236,32 @@
       "Finish all five questions to open the next chapter. Earn stars at 1,000, 2,500 and 4,000 meters.": "完成五题即可解锁下一章。达到 1,000、2,500 和 4,000 米，分别获得一、二、三颗星。",
       "{0}-day best streak": "最长连续挑战 {0} 天后解锁",
       "Your flight trails.": "你的飞行尾迹。",
-      "Continue your route ↗": "继续主题航线 ↗"
+      "Continue your route ↗": "继续主题航线 ↗",
+      "Private flights have five stages; ten-seat, quick and rated flights have up to 30. One remaining pilot ends the flight early.": "私密飞行有 5 关；10 人、快速匹配和排位飞行最多 30 关。只剩一名飞行员时会提前结束。",
+      "Rare and exceptional answers charge an extra heart: 1,500 rare meters restores one, up to five hearts. More hearts wins; altitude breaks ties.": "稀有和卓越答案会积攒生命充能，每累计 1,500 米可恢复一颗心，最多持有五颗。心数多者获胜，同心数时比较高度。",
+      "Heart charge {0}/1,500": "生命充能 {0}/1,500",
+      "A rare or exceptional answer adds its meters to heart charge. Every 1,500 charged meters restores one heart, up to five. Five-stage private flights and 30-stage quick, rated or ten-seat flights end sooner if only one pilot remains. Hearts rank first, altitude second. Rated results update pairwise Elo once; private rooms do not change ratings.": "稀有或卓越答案获得的米数会计入生命充能。每积攒 1,500 米恢复一颗心，最多五颗。私密飞行共 5 关，快速匹配、排位及 10 人飞行共 30 关，只剩一人时提前结束。先比较心数，再比较高度。排位赛结束后只结算一次 Elo 分数；私密房间不影响排位分。",
+      "Passport": "护照",
+      "Friends": "好友",
+      "rating": "排位分",
+      "Private flights have five stages; ten-seat, quick and rated flights have up to 30. One remaining pilot ends the flight early. More hearts wins; altitude breaks ties. Rare answers charge extra hearts.": "私密飞行有 5 关；10 人、快速匹配和排位飞行最多 30 关。只剩一名飞行员时会提前结束。 稀有和卓越答案会积攒生命充能，每累计 1,500 米可恢复一颗心，最多持有五颗。心数多者获胜，同心数时比较高度。",
+      "Rated flight": "排位飞行",
+      "rated flights": "排位飞行",
+      "Quick play": "快速匹配",
+      "Public room": "公开房间",
+      "Private room": "私密房间",
+      "Browse public rooms": "浏览公开房间",
+      "Recovery code": "恢复码",
+      "Copy recovery code": "复制恢复码",
+      "Recovery code copied.": "恢复码已复制。",
+      "I saved my recovery code.": "我已保存恢复码。",
+      "Passkey cancelled. Your passport is unchanged.": "已取消通行密钥操作，飞行护照没有更改。",
+      "Open my passport": "打开飞行护照",
+      "Create a passport": "创建飞行护照",
+      "Restore my passport": "恢复飞行护照",
+      "Play as a guest, or create a free passport to keep your progress and play rated. No email address is required.": "你可以直接以访客身份游玩，也可以免费创建飞行护照，同步进度并参加排位，无需提供邮箱。",
+      "Quick and rated tables start when full. Rated flights need a passport. Leaving an active rated flight counts in the result.": "快速匹配和排位房间满员后自动开始。排位需要飞行护照，开始后退出仍会计入比赛结果。",
+      "Rated flight · similar ratings first, wider matches as you wait.": "排位飞行 · 优先匹配相近分数，等待越久，匹配范围越宽。"
     },
     "es": {
       "on": "sí",
@@ -2244,21 +2269,45 @@
       "Rare home": "Inicio de RARE Air",
       "5 DAILY PROMPTS": "5 PREGUNTAS DIARIAS",
       "RARE Air is a free daily trivia game in ten languages with five open-answer questions. You get 30 seconds per question. Correct answers give your hot-air balloon lift, and less obvious answers take you further. A new daily flight opens at midnight UTC.": "RARE Air es un juego de trivia diario gratuito en diez idiomas con cinco preguntas de respuesta abierta. Tienes 30 segundos por pregunta. Las respuestas correctas dan elevación a tu globo aerostático, y las respuestas menos obvias te llevan más lejos. Un nuevo vuelo diario se abre a medianoche UTC.",
-      "On this website, choose your language from the header. Questions and answer review are available in English, Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Arabic and Indonesian. You can answer in your selected language or English. Changing language keeps the same flight and its running clock. Literal code keywords remain unchanged.": "En este sitio web, elige tu idioma desde la cabecera. Las preguntas y la revisión de respuestas están disponibles en inglés, chino, español, francés, portugués, alemán, japonés, ruso, árabe e indonesio. Puedes responder en tu idioma seleccionado o en inglés. Cambiar de idioma mantiene el mismo vuelo y su reloj en curso. Las palabras clave literales del código permanecen sin cambios."
+      "On this website, choose your language from the header. Questions and answer review are available in English, Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Arabic and Indonesian. You can answer in your selected language or English. Changing language keeps the same flight and its running clock. Literal code keywords remain unchanged.": "En este sitio web, elige tu idioma desde la cabecera. Las preguntas y la revisión de respuestas están disponibles en inglés, chino, español, francés, portugués, alemán, japonés, ruso, árabe e indonesio. Puedes responder en tu idioma seleccionado o en inglés. Cambiar de idioma mantiene el mismo vuelo y su reloj en curso. Las palabras clave literales del código permanecen sin cambios.",
+      "Private flights have five stages; ten-seat, quick and rated flights have up to 30. One remaining pilot ends the flight early.": "Los vuelos privados tienen 5 etapas; las mesas de 10 plazas y los vuelos rápidos o clasificatorios tienen hasta 30 etapas. La partida termina antes si solo queda un piloto.",
+      "Rare and exceptional answers charge an extra heart: 1,500 rare meters restores one, up to five hearts. More hearts wins; altitude breaks ties.": "Las respuestas raras y excepcionales acumulan energía: cada 1.500 metros recuperan un corazón, hasta un máximo de cinco. Gana quien tiene más corazones; la altitud desempata.",
+      "Heart charge {0}/1,500": "Energía de corazón {0}/1.500",
+      "A rare or exceptional answer adds its meters to heart charge. Every 1,500 charged meters restores one heart, up to five. Five-stage private flights and 30-stage quick, rated or ten-seat flights end sooner if only one pilot remains. Hearts rank first, altitude second. Rated results update pairwise Elo once; private rooms do not change ratings.": "Los metros de las respuestas raras o excepcionales acumulan energía. Cada 1.500 metros recuperan un corazón, hasta cinco. Los vuelos privados tienen 5 etapas; los rápidos, clasificatorios o de 10 plazas tienen 30, y terminan antes si queda un solo piloto. Primero cuentan los corazones y luego la altitud. El Elo por parejas se actualiza una sola vez por resultado clasificatorio; las salas privadas no cambian la puntuación.",
+      "Passport": "Pasaporte",
+      "Friends": "Amigos",
+      "rating": "puntuación",
+      "Private flights have five stages; ten-seat, quick and rated flights have up to 30. One remaining pilot ends the flight early. More hearts wins; altitude breaks ties. Rare answers charge extra hearts.": "Los vuelos privados tienen 5 etapas; las mesas de 10 plazas y los vuelos rápidos o clasificatorios tienen hasta 30 etapas. La partida termina antes si solo queda un piloto. Las respuestas raras y excepcionales acumulan energía: cada 1.500 metros recuperan un corazón, hasta un máximo de cinco. Gana quien tiene más corazones; la altitud desempata."
     },
     "fr": {
       "on": "oui",
       "off": "non",
       "Rare home": "Accueil RARE Air",
       "5 DAILY PROMPTS": "5 QUESTIONS PAR JOUR",
-      "On this website, choose your language from the header. Questions and answer review are available in English, Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Arabic and Indonesian. You can answer in your selected language or English. Changing language keeps the same flight and its running clock. Literal code keywords remain unchanged.": "Sur ce site, choisissez votre langue dans l'en-tête. Les questions et la révision des réponses sont disponibles en anglais, chinois, espagnol, français, portugais, allemand, japonais, russe, arabe et indonésien. Vous pouvez répondre dans votre langue sélectionnée ou en anglais. Changer de langue conserve le même vol et son compte à rebours. Les mots-clés de code littéraux restent inchangés."
+      "On this website, choose your language from the header. Questions and answer review are available in English, Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Arabic and Indonesian. You can answer in your selected language or English. Changing language keeps the same flight and its running clock. Literal code keywords remain unchanged.": "Sur ce site, choisissez votre langue dans l'en-tête. Les questions et la révision des réponses sont disponibles en anglais, chinois, espagnol, français, portugais, allemand, japonais, russe, arabe et indonésien. Vous pouvez répondre dans votre langue sélectionnée ou en anglais. Changer de langue conserve le même vol et son compte à rebours. Les mots-clés de code littéraux restent inchangés.",
+      "Private flights have five stages; ten-seat, quick and rated flights have up to 30. One remaining pilot ends the flight early.": "Les vols privés comptent 5 étapes ; les tables de 10 places et les vols rapides ou classés en comptent jusqu’à 30. Le vol se termine plus tôt s’il ne reste qu’un pilote.",
+      "Rare and exceptional answers charge an extra heart: 1,500 rare meters restores one, up to five hearts. More hearts wins; altitude breaks ties.": "Les réponses rares et exceptionnelles accumulent de l’énergie : 1 500 mètres redonnent un cœur, dans la limite de cinq. Le plus de cœurs gagne ; l’altitude départage les égalités.",
+      "Heart charge {0}/1,500": "Énergie de cœur {0}/1 500",
+      "A rare or exceptional answer adds its meters to heart charge. Every 1,500 charged meters restores one heart, up to five. Five-stage private flights and 30-stage quick, rated or ten-seat flights end sooner if only one pilot remains. Hearts rank first, altitude second. Rated results update pairwise Elo once; private rooms do not change ratings.": "Les mètres gagnés par les réponses rares ou exceptionnelles chargent les cœurs. Chaque tranche de 1 500 mètres redonne un cœur, jusqu’à cinq. Les vols privés ont 5 étapes ; les vols rapides, classés ou à 10 places en ont 30 et se terminent plus tôt s’il ne reste qu’un pilote. Les cœurs priment sur l’altitude. Le classement Elo par paires n’est actualisé qu’une fois par résultat classé ; les salles privées ne le modifient pas.",
+      "Passport": "Passeport",
+      "Friends": "Amis",
+      "rating": "classement",
+      "Private flights have five stages; ten-seat, quick and rated flights have up to 30. One remaining pilot ends the flight early. More hearts wins; altitude breaks ties. Rare answers charge extra hearts.": "Les vols privés comptent 5 étapes ; les tables de 10 places et les vols rapides ou classés en comptent jusqu’à 30. Le vol se termine plus tôt s’il ne reste qu’un pilote. Les réponses rares et exceptionnelles accumulent de l’énergie : 1 500 mètres redonnent un cœur, dans la limite de cinq. Le plus de cœurs gagne ; l’altitude départage les égalités."
     },
     "pt": {
       "on": "ligado",
       "off": "desligado",
       "Rare home": "Início do RARE Air",
       "5 DAILY PROMPTS": "5 PERGUNTAS DIÁRIAS",
-      "On this website, choose your language from the header. Questions and answer review are available in English, Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Arabic and Indonesian. You can answer in your selected language or English. Changing language keeps the same flight and its running clock. Literal code keywords remain unchanged.": "Neste site, escolha seu idioma no cabeçalho. Perguntas e revisão de respostas estão disponíveis em inglês, chinês, espanhol, francês, português, alemão, japonês, russo, árabe e indonésio. Você pode responder no seu idioma selecionado ou em inglês. Mudar o idioma mantém o mesmo voo e seu cronômetro em execução. Palavras-chave de código literais permanecem inalteradas."
+      "On this website, choose your language from the header. Questions and answer review are available in English, Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Arabic and Indonesian. You can answer in your selected language or English. Changing language keeps the same flight and its running clock. Literal code keywords remain unchanged.": "Neste site, escolha seu idioma no cabeçalho. Perguntas e revisão de respostas estão disponíveis em inglês, chinês, espanhol, francês, português, alemão, japonês, russo, árabe e indonésio. Você pode responder no seu idioma selecionado ou em inglês. Mudar o idioma mantém o mesmo voo e seu cronômetro em execução. Palavras-chave de código literais permanecem inalteradas.",
+      "Private flights have five stages; ten-seat, quick and rated flights have up to 30. One remaining pilot ends the flight early.": "Os voos privados têm 5 etapas; as mesas de 10 lugares e os voos rápidos ou ranqueados têm até 30 etapas. O voo termina antes se restar apenas um piloto.",
+      "Rare and exceptional answers charge an extra heart: 1,500 rare meters restores one, up to five hearts. More hearts wins; altitude breaks ties.": "Respostas raras e excepcionais acumulam energia: a cada 1.500 metros recupera-se um coração, até cinco. Vence quem tem mais corações; a altitude desempata.",
+      "Heart charge {0}/1,500": "Energia do coração {0}/1.500",
+      "A rare or exceptional answer adds its meters to heart charge. Every 1,500 charged meters restores one heart, up to five. Five-stage private flights and 30-stage quick, rated or ten-seat flights end sooner if only one pilot remains. Hearts rank first, altitude second. Rated results update pairwise Elo once; private rooms do not change ratings.": "Os metros das respostas raras ou excepcionais acumulam energia. A cada 1.500 metros, um coração é recuperado, até cinco. Voos privados têm 5 etapas; rápidos, ranqueados ou de 10 lugares têm 30 e terminam antes se restar um piloto. Os corações têm prioridade, seguidos da altitude. O Elo entre pares é atualizado uma única vez por resultado ranqueado; salas privadas não alteram a pontuação.",
+      "Passport": "Passaporte",
+      "Friends": "Amigos",
+      "rating": "pontuação",
+      "Private flights have five stages; ten-seat, quick and rated flights have up to 30. One remaining pilot ends the flight early. More hearts wins; altitude breaks ties. Rare answers charge extra hearts.": "Os voos privados têm 5 etapas; as mesas de 10 lugares e os voos rápidos ou ranqueados têm até 30 etapas. O voo termina antes se restar apenas um piloto. Respostas raras e excepcionais acumulam energia: a cada 1.500 metros recupera-se um coração, até cinco. Vence quem tem mais corações; a altitude desempata."
     },
     "de": {
       "on": "an",
@@ -2268,7 +2317,15 @@
       "Steer your balloon": "Steuere deinen Ballon",
       "Rare-Answer Trivia Game — Play Free Online | RARE Air": "Quiz mit seltenen Antworten – kostenlos online spielen | RARE Air",
       "On this website, choose your language from the header. Questions and answer review are available in English, Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Arabic and Indonesian. You can answer in your selected language or English. Changing language keeps the same flight and its running clock. Literal code keywords remain unchanged.": "Auf dieser Website: Wähle deine Sprache aus der Kopfzeile. Fragen und Antwortüberprüfung sind auf Englisch, Chinesisch, Spanisch, Französisch, Portugiesisch, Deutsch, Japanisch, Russisch, Arabisch und Indonesisch verfügbar. Du kannst in deiner ausgewählten Sprache oder auf Englisch antworten. Das Ändern der Sprache behält denselben Flug und dessen Laufuhr bei. Wörtliche Code-Schlüsselwörter bleiben unverändert.",
-      "Stage {0} of {1}": "Etappe {0} von {1}"
+      "Stage {0} of {1}": "Etappe {0} von {1}",
+      "Private flights have five stages; ten-seat, quick and rated flights have up to 30. One remaining pilot ends the flight early.": "Private Flüge haben 5 Etappen; Zehnertische sowie schnelle und gewertete Flüge haben bis zu 30 Etappen. Bleibt nur ein Pilot übrig, endet der Flug vorzeitig.",
+      "Rare and exceptional answers charge an extra heart: 1,500 rare meters restores one, up to five hearts. More hearts wins; altitude breaks ties.": "Seltene und außergewöhnliche Antworten sammeln Herzenergie: Je 1.500 Meter gibt es ein Herz zurück, bis zu fünf Herzen. Mehr Herzen gewinnen; bei Gleichstand entscheidet die Höhe.",
+      "Heart charge {0}/1,500": "Herzenergie {0}/1.500",
+      "A rare or exceptional answer adds its meters to heart charge. Every 1,500 charged meters restores one heart, up to five. Five-stage private flights and 30-stage quick, rated or ten-seat flights end sooner if only one pilot remains. Hearts rank first, altitude second. Rated results update pairwise Elo once; private rooms do not change ratings.": "Meter aus seltenen oder außergewöhnlichen Antworten laden die Herzenergie auf. Je 1.500 Meter wird ein Herz wiederhergestellt, bis zu fünf. Private Flüge haben 5 Etappen; schnelle, gewertete und Zehnerflüge haben 30 und enden früher, wenn nur ein Pilot bleibt. Zuerst zählen Herzen, dann die Höhe. Paarweises Elo wird pro gewertetem Ergebnis genau einmal aktualisiert; private Räume ändern die Wertung nicht.",
+      "Passport": "Flugpass",
+      "Friends": "Freunde",
+      "rating": "Wertung",
+      "Private flights have five stages; ten-seat, quick and rated flights have up to 30. One remaining pilot ends the flight early. More hearts wins; altitude breaks ties. Rare answers charge extra hearts.": "Private Flüge haben 5 Etappen; Zehnertische sowie schnelle und gewertete Flüge haben bis zu 30 Etappen. Bleibt nur ein Pilot übrig, endet der Flug vorzeitig. Seltene und außergewöhnliche Antworten sammeln Herzenergie: Je 1.500 Meter gibt es ein Herz zurück, bis zu fünf Herzen. Mehr Herzen gewinnen; bei Gleichstand entscheidet die Höhe."
     },
     "ja": {
       "on": "オン",
@@ -2277,14 +2334,30 @@
       "5 DAILY PROMPTS": "毎日5問",
       "Steer your balloon": "熱気球を操縦",
       "Drag to steer": "ドラッグで操縦",
-      "On this website, choose your language from the header. Questions and answer review are available in English, Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Arabic and Indonesian. You can answer in your selected language or English. Changing language keeps the same flight and its running clock. Literal code keywords remain unchanged.": "このウェブサイトでは、ヘッダーから言語を選択してください。質問と回答レビューは英語、中国語、スペイン語、フランス語、ポルトガル語、ドイツ語、日本語、ロシア語、アラビア語、インドネシア語で利用可能です。選択した言語または英語で回答できます。言語を変更しても、同じフライトとそのカウントダウン時計が保持されます。リテラルなコードキーワードは変更されません。"
+      "On this website, choose your language from the header. Questions and answer review are available in English, Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Arabic and Indonesian. You can answer in your selected language or English. Changing language keeps the same flight and its running clock. Literal code keywords remain unchanged.": "このウェブサイトでは、ヘッダーから言語を選択してください。質問と回答レビューは英語、中国語、スペイン語、フランス語、ポルトガル語、ドイツ語、日本語、ロシア語、アラビア語、インドネシア語で利用可能です。選択した言語または英語で回答できます。言語を変更しても、同じフライトとそのカウントダウン時計が保持されます。リテラルなコードキーワードは変更されません。",
+      "Private flights have five stages; ten-seat, quick and rated flights have up to 30. One remaining pilot ends the flight early.": "プライベートフライトは5ステージ、10人・クイック・ランクフライトは最大30ステージです。残り1人になると早期終了します。",
+      "Rare and exceptional answers charge an extra heart: 1,500 rare meters restores one, up to five hearts. More hearts wins; altitude breaks ties.": "レア・エクセプショナル回答でハートのエネルギーがたまり、合計1,500mごとにハートを1つ回復します。上限は5つです。ハート数が多い人が勝ち、同数なら高度で決まります。",
+      "Heart charge {0}/1,500": "ハートチャージ {0}/1,500",
+      "A rare or exceptional answer adds its meters to heart charge. Every 1,500 charged meters restores one heart, up to five. Five-stage private flights and 30-stage quick, rated or ten-seat flights end sooner if only one pilot remains. Hearts rank first, altitude second. Rated results update pairwise Elo once; private rooms do not change ratings.": "レア・エクセプショナル回答の獲得高度がハートチャージに加算されます。1,500mごとにハートが1つ回復し、上限は5つです。プライベートは5ステージ、クイック・ランク・10人フライトは30ステージで、残り1人になると早期終了します。ハート数、高度の順に順位を決定します。ランク戦では対戦者ごとのEloを結果につき1回だけ更新し、プライベートルームでは更新しません。",
+      "Passport": "パスポート",
+      "Friends": "フレンド",
+      "rating": "レーティング",
+      "Private flights have five stages; ten-seat, quick and rated flights have up to 30. One remaining pilot ends the flight early. More hearts wins; altitude breaks ties. Rare answers charge extra hearts.": "プライベートフライトは5ステージ、10人・クイック・ランクフライトは最大30ステージです。残り1人になると早期終了します。 レア・エクセプショナル回答でハートのエネルギーがたまり、合計1,500mごとにハートを1つ回復します。上限は5つです。ハート数が多い人が勝ち、同数なら高度で決まります。"
     },
     "ru": {
       "on": "вкл",
       "off": "выкл",
       "Rare home": "Главная RARE Air",
       "5 DAILY PROMPTS": "5 ВОПРОСОВ КАЖДЫЙ ДЕНЬ",
-      "On this website, choose your language from the header. Questions and answer review are available in English, Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Arabic and Indonesian. You can answer in your selected language or English. Changing language keeps the same flight and its running clock. Literal code keywords remain unchanged.": "На этом сайте: Выберите язык в заголовке. Вопросы и проверка ответов доступны на английском, китайском, испанском, французском, португальском, немецком, японском, русском, арабском и индонезийском языках. Вы можете отвечать на выбранном вами языке или на английском. Смена языка сохраняет тот же полёт и его обратный отсчёт. Буквенные кодовые ключевые слова остаются неизменными."
+      "On this website, choose your language from the header. Questions and answer review are available in English, Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Arabic and Indonesian. You can answer in your selected language or English. Changing language keeps the same flight and its running clock. Literal code keywords remain unchanged.": "На этом сайте: Выберите язык в заголовке. Вопросы и проверка ответов доступны на английском, китайском, испанском, французском, португальском, немецком, японском, русском, арабском и индонезийском языках. Вы можете отвечать на выбранном вами языке или на английском. Смена языка сохраняет тот же полёт и его обратный отсчёт. Буквенные кодовые ключевые слова остаются неизменными.",
+      "Private flights have five stages; ten-seat, quick and rated flights have up to 30. One remaining pilot ends the flight early.": "В частных полётах 5 этапов; в быстрых, рейтинговых и за столом на 10 человек — до 30 этапов. Полёт завершается досрочно, если остаётся один пилот.",
+      "Rare and exceptional answers charge an extra heart: 1,500 rare meters restores one, up to five hearts. More hearts wins; altitude breaks ties.": "Редкие и исключительные ответы накапливают заряд: каждые 1 500 метров восстанавливают одно сердце, максимум — пять. Побеждает тот, у кого больше сердец; при равенстве решает высота.",
+      "Heart charge {0}/1,500": "Заряд сердца {0}/1 500",
+      "A rare or exceptional answer adds its meters to heart charge. Every 1,500 charged meters restores one heart, up to five. Five-stage private flights and 30-stage quick, rated or ten-seat flights end sooner if only one pilot remains. Hearts rank first, altitude second. Rated results update pairwise Elo once; private rooms do not change ratings.": "Метры за редкие и исключительные ответы пополняют заряд сердца. Каждые 1 500 метров восстанавливают одно сердце, максимум — пять. Частные полёты состоят из 5 этапов, быстрые, рейтинговые и на 10 человек — из 30; полёт завершается раньше, если остаётся один пилот. Сначала учитываются сердца, затем высота. Попарный рейтинг Эло обновляется один раз за рейтинговый результат; частные комнаты не влияют на рейтинг.",
+      "Passport": "Паспорт",
+      "Friends": "Друзья",
+      "rating": "рейтинг",
+      "Private flights have five stages; ten-seat, quick and rated flights have up to 30. One remaining pilot ends the flight early. More hearts wins; altitude breaks ties. Rare answers charge extra hearts.": "В частных полётах 5 этапов; в быстрых, рейтинговых и за столом на 10 человек — до 30 этапов. Полёт завершается досрочно, если остаётся один пилот. Редкие и исключительные ответы накапливают заряд: каждые 1 500 метров восстанавливают одно сердце, максимум — пять. Побеждает тот, у кого больше сердец; при равенстве решает высота."
     },
     "ar": {
       "on": "مفعّل",
@@ -2297,15 +2370,30 @@
       "How to Play RARE Air — Daily Trivia Rules & Scoring": "كيفية اللعب في RARE Air — قواعد أسئلة يومية ونظام النقاط",
       "How to play RARE Air.": "كيفية اللعب في RARE Air.",
       "On this website, choose your language from the header. Questions and answer review are available in English, Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Arabic and Indonesian. You can answer in your selected language or English. Changing language keeps the same flight and its running clock. Literal code keywords remain unchanged.": "على هذا الموقع، اختر لغتك من الشريط العلوي. الأسئلة ومراجعة الإجابات متاحة باللغات الإنجليزية والصينية والإسبانية والفرنسية والبرتغالية والألمانية واليابانية والروسية والعربية والإندونيسية. يمكنك الإجابة بلغتك المختارة أو بالإنجليزية. تغيير اللغة يحافظ على نفس الرحلة وساعتها المتحركة. تظل الكلمات المفتاحية البرمجية حرفية دون تغيير.",
-      "After five stages, or when one pilot remains, more hearts wins. Altitude breaks ties. Equal results share a rank.": "تنتهي اللعبة بعد خمس مراحل أو عند بقاء طيار واحد. يفوز صاحب أكبر عدد من القلوب، وعند التعادل يُقارن الارتفاع. ومن يتساوون في الأمرين يشتركون في المرتبة.",
-      "The room shares 30 seconds, with at least 8 seconds after a pass. A timeout costs one heart and starts the next stage. Clearing every answer also advances the stage.": "يشترك الجميع في عدّاد يبدأ من 30 ثانية. بعد تمرير الدور يحصل اللاعب التالي على 8 ثوانٍ على الأقل. انتهاء الوقت يفقد اللاعب قلباً وينقل الجميع إلى المرحلة التالية. وتبدأ مرحلة جديدة أيضاً عندما تُكتشف جميع الإجابات المقبولة."
+      "The room shares 30 seconds, with at least 8 seconds after a pass. A timeout costs one heart and starts the next stage. Clearing every answer also advances the stage.": "يشترك الجميع في عدّاد يبدأ من 30 ثانية. بعد تمرير الدور يحصل اللاعب التالي على 8 ثوانٍ على الأقل. انتهاء الوقت يفقد اللاعب قلباً وينقل الجميع إلى المرحلة التالية. وتبدأ مرحلة جديدة أيضاً عندما تُكتشف جميع الإجابات المقبولة.",
+      "Private flights have five stages; ten-seat, quick and rated flights have up to 30. One remaining pilot ends the flight early.": "تتكون الرحلات الخاصة من 5 مراحل، بينما تضم رحلات الطاولة ذات العشرة مقاعد والرحلات السريعة والمصنفة ما يصل إلى 30 مرحلة. تنتهي الرحلة مبكراً إذا بقي طيار واحد.",
+      "Rare and exceptional answers charge an extra heart: 1,500 rare meters restores one, up to five hearts. More hearts wins; altitude breaks ties.": "تجمع الإجابات النادرة والاستثنائية طاقة القلوب: كل 1,500 متر تستعيد قلباً واحداً، بحد أقصى خمسة قلوب. يفوز صاحب القلوب الأكثر، ويُحسم التعادل بالارتفاع.",
+      "Heart charge {0}/1,500": "طاقة القلب {0}/1,500",
+      "A rare or exceptional answer adds its meters to heart charge. Every 1,500 charged meters restores one heart, up to five. Five-stage private flights and 30-stage quick, rated or ten-seat flights end sooner if only one pilot remains. Hearts rank first, altitude second. Rated results update pairwise Elo once; private rooms do not change ratings.": "تُضاف أمتار الإجابات النادرة والاستثنائية إلى طاقة القلب. كل 1,500 متر تستعيد قلباً واحداً، حتى خمسة قلوب. الرحلات الخاصة من 5 مراحل، والسريعة والمصنفة وذات العشرة مقاعد من 30 مرحلة، وتنتهي مبكراً إذا بقي طيار واحد. تُقارن القلوب أولاً ثم الارتفاع. يُحدَّث تصنيف إيلو بين كل زوج من اللاعبين مرة واحدة لكل نتيجة مصنفة، ولا تغير الغرف الخاصة التصنيف.",
+      "Passport": "جواز الطيران",
+      "Friends": "الأصدقاء",
+      "rating": "التصنيف",
+      "Private flights have five stages; ten-seat, quick and rated flights have up to 30. One remaining pilot ends the flight early. More hearts wins; altitude breaks ties. Rare answers charge extra hearts.": "تتكون الرحلات الخاصة من 5 مراحل، بينما تضم رحلات الطاولة ذات العشرة مقاعد والرحلات السريعة والمصنفة ما يصل إلى 30 مرحلة. تنتهي الرحلة مبكراً إذا بقي طيار واحد. تجمع الإجابات النادرة والاستثنائية طاقة القلوب: كل 1,500 متر تستعيد قلباً واحداً، بحد أقصى خمسة قلوب. يفوز صاحب القلوب الأكثر، ويُحسم التعادل بالارتفاع."
     },
     "id": {
       "on": "aktif",
       "off": "nonaktif",
       "Rare home": "Beranda RARE Air",
       "5 DAILY PROMPTS": "5 PERTANYAAN HARIAN",
-      "On this website, choose your language from the header. Questions and answer review are available in English, Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Arabic and Indonesian. You can answer in your selected language or English. Changing language keeps the same flight and its running clock. Literal code keywords remain unchanged.": "Di situs web ini, pilih bahasa Anda dari header. Pertanyaan dan tinjauan jawaban tersedia dalam bahasa Inggris, Mandarin, Spanyol, Prancis, Portugis, Jerman, Jepang, Rusia, Arab, dan Indonesia. Anda dapat menjawab dalam bahasa yang dipilih atau bahasa Inggris. Mengubah bahasa tetap mempertahankan penerbangan yang sama dan jam yang berjalan. Kata kunci kode literal tetap tidak berubah."
+      "On this website, choose your language from the header. Questions and answer review are available in English, Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Arabic and Indonesian. You can answer in your selected language or English. Changing language keeps the same flight and its running clock. Literal code keywords remain unchanged.": "Di situs web ini, pilih bahasa Anda dari header. Pertanyaan dan tinjauan jawaban tersedia dalam bahasa Inggris, Mandarin, Spanyol, Prancis, Portugis, Jerman, Jepang, Rusia, Arab, dan Indonesia. Anda dapat menjawab dalam bahasa yang dipilih atau bahasa Inggris. Mengubah bahasa tetap mempertahankan penerbangan yang sama dan jam yang berjalan. Kata kunci kode literal tetap tidak berubah.",
+      "Private flights have five stages; ten-seat, quick and rated flights have up to 30. One remaining pilot ends the flight early.": "Penerbangan pribadi memiliki 5 tahap; meja 10 kursi serta penerbangan cepat dan peringkat memiliki hingga 30 tahap. Penerbangan berakhir lebih awal jika tersisa satu pilot.",
+      "Rare and exceptional answers charge an extra heart: 1,500 rare meters restores one, up to five hearts. More hearts wins; altitude breaks ties.": "Jawaban langka dan luar biasa mengumpulkan energi hati: setiap 1.500 meter memulihkan satu hati, hingga lima hati. Hati terbanyak menang; ketinggian menentukan hasil seri.",
+      "Heart charge {0}/1,500": "Energi hati {0}/1.500",
+      "A rare or exceptional answer adds its meters to heart charge. Every 1,500 charged meters restores one heart, up to five. Five-stage private flights and 30-stage quick, rated or ten-seat flights end sooner if only one pilot remains. Hearts rank first, altitude second. Rated results update pairwise Elo once; private rooms do not change ratings.": "Meter dari jawaban langka atau luar biasa menambah energi hati. Setiap 1.500 meter memulihkan satu hati, hingga lima. Penerbangan pribadi memiliki 5 tahap; penerbangan cepat, peringkat, dan 10 kursi memiliki 30 tahap dan berakhir lebih awal jika tersisa satu pilot. Hati dibandingkan dahulu, lalu ketinggian. Elo antarpasangan diperbarui tepat sekali untuk setiap hasil peringkat; ruang pribadi tidak mengubah peringkat.",
+      "Passport": "Paspor",
+      "Friends": "Teman",
+      "rating": "peringkat",
+      "Private flights have five stages; ten-seat, quick and rated flights have up to 30. One remaining pilot ends the flight early. More hearts wins; altitude breaks ties. Rare answers charge extra hearts.": "Penerbangan pribadi memiliki 5 tahap; meja 10 kursi serta penerbangan cepat dan peringkat memiliki hingga 30 tahap. Penerbangan berakhir lebih awal jika tersisa satu pilot. Jawaban langka dan luar biasa mengumpulkan energi hati: setiap 1.500 meter memulihkan satu hati, hingga lima hati. Hati terbanyak menang; ketinggian menentukan hasil seri."
     }
   }
 }

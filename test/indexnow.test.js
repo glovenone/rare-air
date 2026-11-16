@@ -7,7 +7,23 @@ const { outputFiles } = await build({
   bundle: true,
   write: false,
   format: "esm",
-  platform: "neutral",
+  platform: "node",
+  mainFields: ["module", "main"],
+  plugins: [
+    {
+      name: "cloudflare-runtime-for-static-routing-test",
+      setup(builder) {
+        builder.onResolve({ filter: /^cloudflare:workers$/ }, () => ({
+          path: "runtime",
+          namespace: "test-runtime",
+        }));
+        builder.onLoad({ filter: /.*/, namespace: "test-runtime" }, () => ({
+          contents: "export class DurableObject {}",
+          loader: "js",
+        }));
+      },
+    },
+  ],
 });
 const { default: worker } = await import(
   `data:text/javascript;base64,${Buffer.from(outputFiles[0].text).toString("base64")}`
@@ -37,7 +53,12 @@ test("ordinary static requests keep using the asset service", async () => {
   let requested;
   const request = new Request("https://krillionunlimited.top/how-to-play/");
   const response = await worker.fetch(request, {
-    ASSETS: { fetch: async (value) => { requested = value; return new Response("guide"); } },
+    ASSETS: {
+      fetch: async (value) => {
+        requested = value;
+        return new Response("guide");
+      },
+    },
   });
   assert.equal(requested, request);
   assert.equal(await response.text(), "guide");

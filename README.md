@@ -1,6 +1,6 @@
 # RARE Air
 
-A free daily trivia game where unexpected answers lift a hot-air balloon through an illustrated sky. Built with vanilla JavaScript, Canvas 2D, Cloudflare Workers and D1.
+A free daily trivia game where unexpected answers lift a hot-air balloon through an illustrated sky. Built with vanilla JavaScript, Canvas 2D, Cloudflare Workers and D1 and SQLite Durable Objects.
 
 [Play RARE Air](https://krillionunlimited.top/)
 
@@ -15,7 +15,7 @@ The project includes hundreds of question sets in ten languages, accepted aliase
 ```sh
 npm ci
 npm run db:local
-npm run dev
+npm run dev -- --infer-origin-from-routes false
 ```
 
 Open http://localhost:8787. No external API keys or AI service required.
@@ -29,6 +29,7 @@ npm test
 node test/api.integration.mjs
 node test/relay.integration.mjs
 node test/progression.integration.mjs
+node test/social.integration.mjs
 ```
 
 The integration test creates local game records. Run against the local URL, not production. Test rules cover every alias, normalized spelling, scoring tiers, deterministic dates and absence of public answer keys.
@@ -42,15 +43,19 @@ npm run deploy
 
 For your own Cloudflare deployment, run `npx wrangler login` and `npx wrangler d1 create rare-daily-db`. Put the returned database ID into `wrangler.jsonc` and choose a Worker name for your account. Then run the two commands above to apply migrations and deploy.
 
+The SQLite Durable Object binding serializes matchmaking and works with Cloudflare’s SQLite-backed Durable Objects. The account must have D1 and Durable Objects available; published quotas apply. No external login, email, realtime or AI backend is required. See [Cloudflare social architecture](docs/cloudflare-social.md).
+
 The checked-in database ID identifies the live demo's resource. Cloudflare authentication is stored by Wrangler outside the repository. Local development uses a separate ignored database in `.wrangler/`.
 
 ## Game
 
 - Five prompts per daily game, 30 seconds for each; daily reset at midnight UTC (08:00 China time).
 - On the website, choose Pick a topic for free subject-focused practice across nine knowledge areas. Each flight contains five distinct questions, and Take another flight retains the chosen topic.
-- Flight routes contain 54 fixed chapters across nine subjects. Finish a chapter to unlock the next, retain your best score and earn stars at 1,000, 2,500 and 4,000 meters.
+- Flight routes contain 150 fixed chapters across nine subjects. World, Movies, Books and Games have 30 chapters each; five other routes have six. Later chapters reuse reviewed questions in distinct fixed combinations. Finish a chapter to unlock the next, retain your best score and earn stars at 1,000, 2,500 and 4,000 meters.
 - Daily streaks use on-time UTC daily completions. Cosmetic trails unlock at best streaks of 3, 7, 14 and 30 days. Earlier records without completion timestamps retain their history and totals.
-- Choose Play with friends for Sky Relay. Invite two to six pilots using a private room code or link, take turns answering and protect three hearts across five stages. The server keeps the shared clock, accepted-answer history and final standings. Each tab keeps its private seat in session storage. Rooms expire after 24 hours.
+- Choose Play with friends for Sky Relay: two-, three-, six- or ten-seat tables; private invites, public waiting rooms, quick matching and passport-only rated matching. Private small tables have five stages; automatic matches and ten-seat tables have 30. Each 1,500 meters earned from rare/exceptional answers restores one heart, up to five. The server keeps the shared clock, accepted-answer history and final standings. Each tab keeps its private seat in session storage. Rooms expire after 24 hours.
+- Open a free flight passport for cross-device online history, passkeys or a private recovery code, friend invitations, spoiler-gated daily comparisons and Elo ratings. Save the recovery code before continuing. Import existing guest history explicitly. Delete a passport and its linked online history from the passport controls.
+- Eight earned companions unlock at best daily streaks of 5, 14, 30, 45, 60, 75, 100 and 150 days. Nine routes have original illustrated environments.
 - One attempt per browser per date. Practice gets a new random seed. Daily dates use a deterministic versioned shuffle.
 - Curated answer bank: hundreds of question sets, accepted aliases, four rarity tiers worth 100, 250, 500 and 1,000 points. Invalid/skipped/expired answers get zero.
 - Rarity is editorial, clearly explained in the game. It is not a population survey. Answers are stored in D1 so aggregate answer distributions can be analyzed later.
@@ -71,9 +76,9 @@ The checked-in database ID identifies the live demo's resource. Cloudflare authe
 
 The bank contains 30 immutable legacy prompts, 270 expansion prompts, and dated content batches. New additions follow current English-market search trends and verified events. Practice uses the current bank, and each new daily pool starts on its release date. Dated packs are append-only and filtered by release date, so later packs cannot change old daily puzzles. Every new session stores exact question and scoring snapshots; pre-migration sessions retain the legacy bank. See `content/EDITORIAL.md` for content quality and publishing rules. Rarity is editorial, not a measured answer frequency.
 
-Anonymous identity is per cookie, not a verified person. Clearing cookies creates another identity. No strong anti-bot control or global request quota is included; add Cloudflare rate limiting/Turnstile for larger public launches. The basic cap is 30 new sessions per browser per hour. No traffic-scale/load test or revenue claim is made.
+Anonymous identity is per cookie, not a verified person. Clearing cookies creates another identity. Passport sign-ins, social actions and public matchmaking have server-side request quotas; these are not proof of a unique human. Add Cloudflare rate limiting/Turnstile if abuse warrants it. The basic cap is 30 new sessions per browser per hour. No traffic-scale/load test or revenue claim is made.
 
-D1 stores opaque player IDs, game state and chosen answers. No account emails or advertising IDs. Local storage holds stats. Production resources are separate from Wrangler's ignored local development database. Wrangler may use paid quotas according to the account plan.
+D1 stores opaque private player IDs, game state, chosen answers and optional passport/friend/rating records. Passport sessions and recovery codes are hashed. Passkeys store public keys only. No account emails, passwords, biometrics or advertising IDs are collected. Local storage holds a cache of stats. Production resources are separate from Wrangler's ignored local development database. Wrangler may use paid quotas according to the account plan.
 
 To attach a domain, configure a Workers custom domain in Cloudflare Dashboard for `rare-daily`. Set `SITE_URL` to the owned HTTPS origin when running `npm run site:build` and `npm run mobile:sync`, then deploy the rebuilt website. This aligns canonical URLs, the sitemap, mobile API requests and native score sharing with that domain.
 

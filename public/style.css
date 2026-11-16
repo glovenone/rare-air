@@ -667,10 +667,11 @@ body[data-view="result"] .balloon {
 .control-dock::before {
   content: "";
   pointer-events: none;
-  position: fixed;
+  position: absolute;
   top: -70px;
-  left: -100vw;
-  right: -100vw;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
   bottom: -50px;
   background: linear-gradient(transparent, #cce2d633 50%, #e2e9d555);
   z-index: -1;

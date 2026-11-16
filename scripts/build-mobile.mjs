@@ -28,6 +28,7 @@ for (const path of await readdir(destination, { recursive: true })) {
     .replace(/<!-- site-adsense:start -->[\s\S]*?<!-- site-adsense:end -->/g, ""));
 }
 const notices = [
+  ["SimpleWebAuthn browser", "node_modules/@simplewebauthn/browser/LICENSE.md"],
   ["Capacitor", "node_modules/@capacitor/core/LICENSE"],
   ["Capacitor App", "node_modules/@capacitor/app/LICENSE"],
   ["Capacitor Haptics", "node_modules/@capacitor/haptics/LICENSE"],

@@ -12,7 +12,7 @@ function add(text) {
       !/<\/?(?:div|span|p|button)\b/.test(key) &&
       !/SELECT |INSERT |UPDATE |CREATE |DELETE FROM |default-src|Max-Age|SameSite/.test(key)) collected.add(key);
 }
-for (const path of ["public/app.js", "public/sky.js", "public/analytics.js", "public/relay.js", "public/progression.js", "public/trails.js", "src/worker.ts", "src/relay-api.ts", "src/relay.js", "native/platform.js", "native/offline.js"]) {
+for (const path of ["public/app.js", "public/sky.js", "public/analytics.js", "public/relay.js", "public/progression.js", "public/passport.js", "public/companions.js", "public/environments.js", "src/auth.ts", "src/passport-api.ts", "src/matchmaker.ts", "public/trails.js", "src/worker.ts", "src/relay-api.ts", "src/relay.js", "native/platform.js", "native/offline.js"]) {
   const source = await readFile(path, "utf8");
   const tree = ts.createSourceFile(path, source, ts.ScriptTarget.Latest, true);
   function visit(node) {
@@ -48,7 +48,7 @@ for (const path of paths) {
     }
   }
 }
-for (const message of ["Language", "No lift", "Common", "Uncommon", "Rare", "Exceptional", "Skipped", "Fly", "seconds", "METERS", "FLIGHTS", "on", "off", "Support", "Decline", "Privacy policy", "Allow analytics", "Analytics settings", "Analytics preferences", "Allow Google Analytics to help us understand visits and app downloads?"]) add(message);
+for (const message of ["Passport", "Friends", "rating", "Language", "No lift", "Common", "Uncommon", "Rare", "Exceptional", "Skipped", "Fly", "seconds", "METERS", "FLIGHTS", "on", "off", "Support", "Decline", "Privacy policy", "Allow analytics", "Analytics settings", "Analytics preferences", "Allow Google Analytics to help us understand visits and app downloads?"]) add(message);
 for (const category of ["GEOGRAPHY", "HISTORY", "SCIENCE", "SPACE", "TECH", "TECHNOLOGY", "MATH", "NATURE", "MOVIES", "BOOKS", "LITERATURE", "LANGUAGE", "MUSIC", "GAMES", "SPORT", "SPORTS", "ART", "ARTS", "CULTURE", "FOOD", "EVERYDAY"]) add(category);
 const questionSource = await readFile("src/questions.js", "utf8");
 for (const [, value] of questionSource.matchAll(/(?:label|description): '([^']+)'/g)) add(value);

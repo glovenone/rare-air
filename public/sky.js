@@ -1,5 +1,10 @@
 import { t, language } from "./i18n.js";
 import { selectedTrail } from "./trails.js";
+import { selectedCompanion } from './companions.js';
+const buddyStage = document.createElement('div'); buddyStage.className = 'companion-stage'; buddyStage.setAttribute('aria-hidden','true');
+const buddyImage = document.createElement('img'); buddyImage.alt = ''; buddyStage.append(buddyImage); document.body.append(buddyStage);
+const refreshBuddy = () => { buddyImage.src = '/art/companions/' + selectedCompanion().id + '.svg'; }; refreshBuddy();
+addEventListener('rare:companion',refreshBuddy);
 let trail = selectedTrail();
 addEventListener('rare:trail', () => { trail = selectedTrail(); });
 const canvas = document.getElementById("cloud-canvas");

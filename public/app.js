@@ -1,5 +1,7 @@
 import { t, language, selectLanguage, initialLanguage, applyLanguage, createLanguageSelector } from "./i18n.js";
 import { localizedPath } from "./locales.js";
+import { initPassport } from "./passport.js";
+import { setEnvironment } from "./environments.js";
 import { initRelay } from "./relay.js";
 import { initProgression } from "./progression.js";
 import {
@@ -95,6 +97,7 @@ function flightHistory() {
 }
 
 function updateFlight(celebrate = false) {
+  setEnvironment(displayView === "home" ? null : game?.chapter?.route || game?.topic);
   sceneState = {
     mode: displayView,
     altitude: displayView === "home" ? 0 : score(),
@@ -793,4 +796,6 @@ createLanguageSelector(async (code) => {
 });
 applyLanguage();
 initialize();
-initRelay({ request: api, shareFlight, publicOrigin, onFlight: (flight) => scene?.setFlight(flight || sceneState) });
+const passport = initPassport({request:api,openDialog,native,publicOrigin,shareFlight});
+addEventListener("rare:identity",()=>{ game=null; home(); initialize(); });
+initRelay({ request: api, shareFlight, publicOrigin, passport, onFlight: (flight) => scene?.setFlight(flight || sceneState) });

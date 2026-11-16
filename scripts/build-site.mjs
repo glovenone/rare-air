@@ -129,7 +129,7 @@ const pages = [
       [
         "Data used for online play.",
         "The game uses a randomly generated player identifier to keep a daily attempt and its game session. Online sessions store the date, mode, generated display name, question snapshot, chosen answers, scores and timing information. Daily leaderboards show generated names and totals.",
-        "A browser cookie named rare_player stores your anonymous player identifier for up to one year. In the mobile app, the native networking cookie store maintains the corresponding session. The WeChat game retains this anonymous cookie in device-local storage. The game does not ask you to create a player account or provide a WeChat profile or OpenID.",
+        "A browser cookie named rare_player stores your anonymous player identifier for up to one year. In the mobile app, the native networking cookie store maintains the corresponding session. The WeChat game retains this anonymous cookie in device-local storage. Guest play needs no account. The separate WeChat game does not request a WeChat profile or OpenID.",
       ],
       [
         "Data stored on your device.",
@@ -138,7 +138,7 @@ const pages = [
       ],
       [
         "Private relay rooms.",
-        "Relay rooms store pilot names, answers, scores and private seat tokens. Rooms expire after 24 hours. Expired records are removed when a new room is created. This tab keeps your seat token in session storage. Room participants can see your pilot name, score and accepted answers. Choose a nickname without personal details.",
+        "Relay rooms store pilot names, answers, scores, companion choices and private seat tokens. Rooms expire after 24 hours. Expired records are removed when a new room is created. This tab keeps your seat token in session storage. Room participants can see your pilot name, score, companion and accepted answers. Public waiting rooms expose their host nickname, capacity and room code. Choose a nickname without personal details.",
       ],
       [
         "Hosting and service logs.",
@@ -323,16 +323,30 @@ pages.find((page) => page.path === "privacy").sections.splice(4, 0, [
 const socialImage = `${origin}/art/flight-preview.jpg`;
 pages.find(page => page.path === 'how-to-play').sections.push([
   'Sky Relay',
-  'Invite 2–6 pilots. Take turns naming fresh answers before the shared clock runs out.',
+  'Invite 2–10 pilots, browse public rooms or find a quick or rated table.',
   'Each pilot has three hearts. An unused correct answer earns altitude and passes the turn. Wrong or repeated answers keep the clock running.',
   'The room shares 30 seconds, with at least 8 seconds after a pass. A timeout costs one heart and starts the next stage. Clearing every answer also advances the stage.',
-  'After five stages, or when one pilot remains, more hearts wins. Altitude breaks ties. Equal results share a rank.',
+  'Private flights have five stages; ten-seat, quick and rated flights have up to 30. One remaining pilot ends the flight early. More hearts wins; altitude breaks ties. Rare answers charge extra hearts.',
 ]);
 pages.find(page => page.path === 'how-to-play').sections.push([
   'Your flight routes.',
   'Complete chapters, collect stars and explore a new part of the sky.',
   'Finish all five questions to open the next chapter. Earn stars at 1,000, 2,500 and 4,000 meters.',
   'Complete today’s daily flight to keep your streak. Days reset at midnight UTC. Archive replays and offline practice do not extend it.',
+]);
+pages.find(page => page.path === 'privacy').sections.push([
+  'Optional flight passports.',
+  'A free passport stores a public pilot name, a private game identity, a hashed recovery code, hashed login sessions, passkey public keys, preferences, friends and rating records in Cloudflare D1. We do not collect an email address, password or biometric data. Your device handles passkey verification. Keep your recovery code private; anyone with it can open your passport.',
+  'Login cookies expire after 30 days. Passkey challenges expire after five minutes and are single use. Friend invitations expire after seven days. Earlier guest flights are linked only after you choose Import this device history. Offline practice remains on its device.',
+  'Friends can compare completed daily answers only after completing that daily flight themselves. Rated tables store finishing positions and rating changes. Blocks prevent new friend relationships and matching with blocked accounts. Reports store the reporter, pilot, room, explanation and time for moderation; contact support for urgent concerns.',
+  'Use Recovery and deletion in your passport to replace a recovery code or permanently delete your passport and its linked online flight history. Deletion requires the current recovery code. Public room snapshots expire separately after 24 hours. Security rate limits store short-lived hashed request keys rather than raw IP addresses.'
+]);
+pages.find(page => page.path === 'how-to-play').sections.push([
+  'Passports, friends and the flight deck.',
+  'Create a free flight passport, save its recovery code and optionally add a passkey on the website. Restore that passport on another device to continue online history and chapters. Invite friends with a seven-day link and accept invitations explicitly. Offline practice stays local.',
+  'Choose a two-, three-, six- or ten-seat table. Private rooms use invitation codes; public rooms appear in the flight deck. Quick and rated tables start when full. There are no simulated opponents. If the queue is quiet, choose a smaller table or invite a friend. Rated play requires a passport; leaving an active rated flight counts in its result.',
+  'A rare or exceptional answer adds its meters to heart charge. Every 1,500 charged meters restores one heart, up to five. Five-stage private flights and 30-stage quick, rated or ten-seat flights end sooner if only one pilot remains. Hearts rank first, altitude second. Rated results update pairwise Elo once; private rooms do not change ratings.',
+  'Four major routes now have 30 chapters each, alongside five six-chapter routes. Chapters reuse reviewed questions in different fixed combinations; they are not all new questions. Existing chapter sets and earned progress are preserved. Companions unlock at best daily streaks of 5, 14, 30, 45, 60, 75, 100 and 150 days.'
 ]);
 const socialMetadata = (title, description, url) => `
 <meta property="og:type" content="website"/>

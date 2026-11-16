@@ -2,9 +2,11 @@ import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
 import { questions } from '../src/questions.js';
 
-const base = 'http://127.0.0.1:8787';
-const cookie = 'rare_player=' + crypto.randomUUID();
+const base = process.env.TEST_URL || 'http://127.0.0.1:8787';
+const cookies = new Map();
 async function call(action, body, headers = {}) {
+  if (!cookies.has(body.token)) cookies.set(body.token, 'rare_player=' + crypto.randomUUID());
+  const cookie = cookies.get(body.token);
   const response = await fetch(base + '/api/relay/' + action, {
     method: 'POST', headers: { 'Content-Type': 'application/json', Cookie: cookie, ...headers },
     body: JSON.stringify(body),

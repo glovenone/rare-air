@@ -34,6 +34,8 @@
     "@capacitor/haptics": "8.0.2",
     "@capacitor/ios": "8.6.2",
     "@capacitor/network": "8.0.1",
-    "@capacitor/share": "8.0.3"
+    "@capacitor/share": "8.0.3",
+    "@simplewebauthn/browser": "^14.0.0",
+    "@simplewebauthn/server": "^14.1.0"
   }
 }

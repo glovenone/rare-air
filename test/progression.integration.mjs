@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
 import { chapterQuestions } from '../src/chapters.js';
 
-const origin = 'http://127.0.0.1:8787';
+const origin = process.env.TEST_URL || 'http://127.0.0.1:8787';
 const player = crypto.randomUUID();
 const cookie = 'rare_player=' + player;
 async function request(path, body) {
