@@ -1,6 +1,6 @@
 # Mobile release preparation
 
-Current social candidate: Android 1.0.2 (4) is available as a signed direct APK; iOS 1.0.2 (4) is archived but distribution export needs restored Xcode login. Store 1.0.1 (3) reviews continue. See [current release evidence](mobile-daily.md).
+Current maintenance candidate: 1.0.3 (5) includes passport cache and asynchronous flight isolation fixes. It is prepared locally and awaiting fresh native UI acceptance. Public Android direct download remains 1.0.2 (4); store 1.0.1 (3) is the last verified review candidate. Current store/signing checks require restored browser access and an unlocked Mac. See [release evidence](mobile-daily.md).
 
 ## Product configuration
 

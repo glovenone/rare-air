@@ -1,6 +1,14 @@
 # Daily iOS and Android releases
 
-Updated November 16, 2026, Asia/Shanghai.
+Updated November 17, 2026, Asia/Shanghai.
+
+## November 17 passport continuity maintenance
+
+Website source `ed3fff1` is deployed to Cloudflare version `b6850206-9233-42c1-8342-47992715ca14`. Expired or switched passports clear previous online caches while preserving offline history and preferences. Same-passport refresh retains daily resume IDs. Background history loading updates statistics without restarting an active flight, and stale game/status/history responses cannot restore a previous identity. Cross-tab account changes are recognized.
+
+All 64 tests passed, including actual game startup/answer/countdown cancellation and asynchronous passport-history tests. The original game and real D1/DO social integration passed. Bank 601 and 629 source messages remain unchanged in ten languages. A 90-page live SEO audit found no canonical/hreflang/verification-tag errors or ad-delivery scripts. Today's verified trend review selected zero new prompts.
+
+Prepared native version **1.0.3, build/code 5**, using the same shared frontend. iOS archive succeeds. Android signing uses a separately verified Temurin 21 toolchain because the local Homebrew `openjdk@21` alias currently resolves to Java 25, which Gradle 8.14.3 rejects. Build 5 is a local candidate, not a published APK/store release. Fresh native GUI acceptance and current GA4/Search Console/store verification are blocked by the locked Mac and failing browser connection. The public direct APK remains 1.0.2/code 4. Store 1.0.1/build 3 review status is the last confirmed November 16 observation; no review queue was canceled or replaced today. Existing automatic-release preferences are retained. Xcode GUI contains the developer account/team, but CLI export of the prior final build 4 still returns No Accounts/missing distribution certificate. Do not upload its stale earlier export. Recheck signing and eligible store state after unlock, then prefer the new validated candidate.
 
 ## November 16 social update — current candidate
 
