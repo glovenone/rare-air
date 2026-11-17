@@ -30,8 +30,10 @@ export function initWardrobe({ request, openDialog, passport, progression }) {
     return img;
   }
   function updateHome() {
-    const img = document.getElementById("pilot-avatar");
-    if (img) img.src = avatarImage(selectedAvatar().id);
+    for (const id of ["pilot-avatar", "reward-avatar"]) {
+      const img = document.getElementById(id);
+      if (img) img.src = avatarImage(selectedAvatar().id);
+    }
     for (const id of ["reward-balance", "result-reward-balance"]) {
       const balance = document.getElementById(id);
       if (balance)
@@ -76,6 +78,17 @@ export function initWardrobe({ request, openDialog, passport, progression }) {
     );
     summary.append(wallet);
     root.append(summary);
+    if (!state) {
+      const onboarding = node("section", undefined, "wardrobe-onboarding");
+      onboarding.append(
+        node("p", t("Create a free passport to earn points and redeem icons.")),
+      );
+      const join = node("button", t("Open my passport"), "wardrobe-secondary");
+      join.type = "button";
+      join.onclick = () => passport.open();
+      onboarding.append(join);
+      root.append(onboarding);
+    }
     const tabs = node("div", undefined, "wardrobe-tabs");
     for (const [id, label] of [
       ["icons", "Pilot icons"],
@@ -124,12 +137,6 @@ export function initWardrobe({ request, openDialog, passport, progression }) {
       confirm.append(approve, cancel);
       root.append(confirm);
       return;
-    }
-    if (!state) {
-      const join = node("button", t("Open my passport"), "wardrobe-secondary");
-      join.type = "button";
-      join.onclick = () => passport.open();
-      root.append(join);
     }
     const grid = node("div", undefined, "avatar-grid");
     const owned =

@@ -104,6 +104,8 @@ test("late reward responses from a previous passport cannot replace the new avat
   await tick();
   assert.equal(ui.node("reward-balance").textContent, "20 Sky points");
   assert.equal(ui.context.__selected, "wren");
+  assert.equal(ui.node("reward-avatar").src, "wren");
+  assert.equal(ui.node("pilot-avatar").src, "wren");
   old.resolve({ balance: 900, selected: "dragon" });
   await tick();
   assert.equal(ui.node("reward-balance").textContent, "20 Sky points");

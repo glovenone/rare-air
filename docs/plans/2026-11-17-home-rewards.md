@@ -22,3 +22,9 @@ Make the daily challenge and all main game modes readable and immediately action
 - Passport integration in `src/auth.ts`, `src/passport-api.ts` and `public/passport.js`
 - New message extraction and all nine message catalogs
 - Focused points tests and a local-only D1 integration
+
+## November 18 visibility refinement
+
+The owner requested stronger emphasis on the main actions and clearer icon and earned-point discovery. Increase action titles to 21px on desktop and 19px on phones, with 14px descriptions, opaque light cards and dark ink. Use a single-column horizontal card layout at widths of 380px or less so narrow screens retain readable labels. Emphasize the customization card with a gold surface and the equipped icon. Synchronize its icon preview with the passport preview, including after reload and account changes.
+
+Explain the free passport requirement directly inside the customization center for guests, beside its action button. Keep the existing three free icons and six earned icons, with the existing 120–600 point prices and server-verified earning rules. Compact the mobile summary and hide empty status space so the first free icons remain visible. Verify free selection, persistence, redemption confirmation, balance reduction and insufficient-balance feedback through the normal UI against a local database.

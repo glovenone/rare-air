@@ -4,6 +4,8 @@ A free daily trivia game where unexpected answers lift a hot-air balloon through
 
 [Play RARE Air](https://krillionunlimited.top/)
 
+[Collaboration and current status](COLLABORATION.md) · [Progress record](PROGRESS.md)
+
 ![RARE Air in flight](docs/images/flight.jpg)
 
 Five questions, 30 seconds each, and up to 5,000 meters of altitude. Drag the balloon to steer, or focus it and use the arrow keys. Press Space or tap the balloon to catch a gust. Rare answers trigger wind rings, cloud breakthroughs and paper-plane companions.
