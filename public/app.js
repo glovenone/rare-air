@@ -1,3 +1,4 @@
+import { initWardrobe } from "./wardrobe.js";
 import { t, language, selectLanguage, initialLanguage, applyLanguage, createLanguageSelector } from "./i18n.js";
 import { localizedPath } from "./locales.js";
 import { initPassport } from "./passport.js";
@@ -813,6 +814,7 @@ createLanguageSelector(async (code) => {
 applyLanguage();
 initialize();
 const passport = initPassport({request:api,openDialog,native,publicOrigin,shareFlight});
+initWardrobe({ request: api, openDialog, passport, progression });
 addEventListener("rare:identity",()=>{ flightIdentity.reset(); clearInterval(timer); game=null; home(); initialize(); });
 addEventListener("rare:history",()=>{ updateDailyButton(); updateFlight(); });
 initRelay({ request: api, shareFlight, publicOrigin, passport, onFlight: (flight) => scene?.setFlight(flight || sceneState) });

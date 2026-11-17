@@ -64,6 +64,7 @@
     <script src="/app.js" type="module"></script>
     <link rel="stylesheet" href="/relay.css" />
     <link rel="stylesheet" href="/progression.css" />
+    <link rel="stylesheet" href="/home.css" />
 <link rel="stylesheet" href="/passport.css"><link rel="stylesheet" href="/environments.css">
 <!-- site-analytics:start --><meta name="google-analytics-id" content="G-XQLKBWY0SS"><link rel="stylesheet" href="/analytics.css"><script src="/analytics.js" defer></script><!-- site-analytics:end -->
 <!-- site-adsense:start --><meta name="google-adsense-account" content="ca-pub-3710260158761283"><!-- site-adsense:end -->
@@ -153,13 +154,37 @@
             >
           </p>
           <button class="primary" id="start">
-            <span><!--i18n:Take%20flight-->Despegar</span><span class="button-arrow">↑</span></button
-          ><button id="practice" class="practice-link"><!--i18n:%0A%20%20%20%20%20%20%20%20%20%20%20%20Practice%20flight%20-->
-            Vuelo de práctica <span>↗</span>
+            <span><!--i18n:Take%20flight-->Despegar</span><span class="button-arrow" aria-hidden="true">↑</span>
           </button>
-          <div class="home-modes"><button id="topic-practice" class="practice-link topic-link"><!--i18n:%0A%20%20%20%20%20%20%20%20%20%20%20%20Pick%20a%20topic%20-->
-            Elige un tema <span aria-hidden="true">↗</span>
-          </button><button id="routes-entry" class="practice-link"><!--i18n:Flight%20routes%20%E2%86%97-->Rutas de vuelo ↗</button><button id="passport-entry" class="practice-link"><!--i18n:Flight%20passport%20%E2%86%97-->Pasaporte de vuelo ↗</button><button id="relay-entry" class="practice-link"><!--i18n:Play%20with%20friends%20%E2%86%97-->Juega con amigos ↗</button></div>
+          <nav class="home-modes" aria-label="Elige cómo jugar" data-i18n-aria-label="Choose how to play">
+            <button id="practice" class="home-mode mode-practice">
+              <span class="mode-icon" aria-hidden="true">∞</span>
+              <span class="mode-copy"><strong><!--i18n:Practice%20flight-->Vuelo de práctica</strong><small><!--i18n:Unlimited%2C%20at%20your%20pace-->Sin límites, a tu ritmo</small></span>
+              <span class="mode-arrow" aria-hidden="true">↗</span>
+            </button>
+            <button id="topic-practice" class="home-mode mode-topics">
+              <span class="mode-icon" aria-hidden="true">◈</span>
+              <span class="mode-copy"><strong><!--i18n:Pick%20a%20topic-->Elige un tema</strong><small><!--i18n:Follow%20your%20curiosity-->Sigue tu curiosidad</small></span>
+              <span class="mode-arrow" aria-hidden="true">↗</span>
+            </button>
+            <button id="routes-entry" class="home-mode mode-routes">
+              <span class="mode-icon" aria-hidden="true">⌁</span>
+              <span class="mode-copy"><strong><!--i18n:Flight%20routes%20%E2%86%97-->Rutas de vuelo ↗</strong><small><!--i18n:Chapters%2C%20stars%20%26%20new%20skies-->Capítulos, estrellas y nuevos cielos</small></span>
+            </button>
+            <button id="passport-entry" class="home-mode mode-passport">
+              <img id="pilot-avatar" class="mode-icon" src="/art/companions/swallow.svg" width="42" height="42" alt="">
+              <span class="mode-copy"><strong id="passport-label"><!--i18n:Flight%20passport%20%E2%86%97-->Pasaporte de vuelo ↗</strong><small id="passport-caption"><!--i18n:Save%20progress%20across%20devices-->Guarda tu progreso entre dispositivos</small></span>
+            </button>
+            <button id="relay-entry" class="home-mode mode-friends">
+              <span class="mode-icon" aria-hidden="true">✦</span>
+              <span class="mode-copy"><strong><!--i18n:Play%20with%20friends%20%E2%86%97-->Juega con amigos ↗</strong><small><!--i18n:Join%20a%20table.%20Chase%20the%20lead.-->Únete a una mesa y busca el primer puesto.</small></span>
+            </button>
+            <button id="wardrobe-entry" class="home-mode mode-rewards">
+              <span class="mode-icon" aria-hidden="true">✧</span>
+              <span class="mode-copy"><strong><!--i18n:Style%20%26%20rewards-->Estilo y recompensas</strong><small id="reward-balance"><!--i18n:Icons%2C%20companions%20%26%20trails-->Iconos, compañeros y estelas</small></span>
+              <span class="mode-arrow" aria-hidden="true">↗</span>
+            </button>
+          </nav>
           <button id="offline-practice" class="practice-link" hidden><!--i18n:%0A%20%20%20%20%20%20%20%20%20%20%20%20Offline%20practice%20%E2%86%97%0A%20%20%20%20%20%20%20%20%20%20-->
             Práctica sin conexión ↗
           </button>
@@ -279,6 +304,7 @@
               Realizar otro vuelo ↗
             </button>
           </div>
+          <button id="result-rewards" class="result-rewards" type="button"><strong><!--i18n:Style%20%26%20rewards-->Estilo y recompensas</strong><span id="result-reward-balance"><!--i18n:Icons%2C%20companions%20%26%20trails-->Iconos, compañeros y estelas</span><span aria-hidden="true">↗</span></button>
           <p class="share-note" id="share-note" role="status"></p>
           <div id="result-rows" class="result-rows"></div>
           <details class="answer-review">

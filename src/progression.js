@@ -30,9 +30,12 @@ export function dailyStreak(days, today) {
 }
 
 export function progressFromRecords(records, today) {
+  /** @type {Record<string, {score: number, stars: number, attempts: number}>} */
   const chapters = {};
   const eligible = [];
   const dailyDates = new Set();
+  /** @type {Record<string, number>} */
+  const dailyBest = {};
   let totalDaily = 0;
   let legacyDaily = 0;
   for (const record of records) {
@@ -42,8 +45,10 @@ export function progressFromRecords(records, today) {
       if (record.completed_at == null) legacyDaily++;
       else if (
         new Date(record.completed_at).toISOString().slice(0, 10) === record.day
-      )
+      ) {
         eligible.push(record.day);
+        dailyBest[record.day] = Math.max(dailyBest[record.day] || 0, Number(record.score));
+      }
     }
     const id = record.seed.match(/^chapter:([a-z]+-\d{2}):/)?.[1];
     if (!id) continue;
@@ -59,6 +64,7 @@ export function progressFromRecords(records, today) {
   return {
     day: today,
     totalDaily,
+    dailyBest,
     legacyDaily,
     chapters,
     streak,

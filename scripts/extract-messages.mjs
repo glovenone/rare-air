@@ -12,7 +12,7 @@ function add(text) {
       !/<\/?(?:div|span|p|button)\b/.test(key) &&
       !/SELECT |INSERT |UPDATE |CREATE |DELETE FROM |default-src|Max-Age|SameSite/.test(key)) collected.add(key);
 }
-for (const path of ["public/app.js", "public/sky.js", "public/analytics.js", "public/relay.js", "public/progression.js", "public/passport.js", "public/companions.js", "public/environments.js", "src/auth.ts", "src/passport-api.ts", "src/matchmaker.ts", "public/trails.js", "src/worker.ts", "src/relay-api.ts", "src/relay.js", "native/platform.js", "native/offline.js"]) {
+for (const path of ["public/wardrobe.js", "public/avatars.js", "src/rewards.ts", "public/app.js", "public/sky.js", "public/analytics.js", "public/relay.js", "public/progression.js", "public/passport.js", "public/companions.js", "public/environments.js", "src/auth.ts", "src/passport-api.ts", "src/matchmaker.ts", "public/trails.js", "src/worker.ts", "src/relay-api.ts", "src/relay.js", "native/platform.js", "native/offline.js"]) {
   const source = await readFile(path, "utf8");
   const tree = ts.createSourceFile(path, source, ts.ScriptTarget.Latest, true);
   function visit(node) {

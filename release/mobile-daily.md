@@ -2,6 +2,16 @@
 
 Updated November 17, 2026, Asia/Shanghai.
 
+## November 17 homepage and earned icon update
+
+The shared frontend now has a high-contrast six-card launch menu with 17px mode labels, a larger daily action, a direct customization center and a rewards entry on the completed-flight screen. Narrow screens scroll while preserving readable text. Pilot icons are separate from the existing streak companions and trails. Three icons are freely selectable and six are redeemable for 120–600 earned Sky points. Passport icon selection and redemption records use Cloudflare D1 migration `0006_avatar_rewards.sql`.
+
+Points count verified daily flights completed on their UTC date and unique chapters. Each eligible challenge earns 10 completion points plus one point per 100 best meters, capped at 60. Improved replays add the difference. Explicitly imported eligible history counts. Redemption uses a conditional SQLite insert and an account/item unique key, with server-owned prices and balance calculations. Guest free-icon choices remain device-local. Passport redemptions and selection restore across devices and are removed with passport deletion.
+
+Validation includes 68 tests, original game, relay, progression, social and reward integration against real local D1/DO, and browser checks at desktop, 390px and 320px including Arabic RTL. Local UI fixtures verified cancellation, 240→120 point redemption, equipped icon persistence after reload and visible balance. Those fixtures stay in the isolated local database. Initial reward refresh waits for passport history synchronization and discards previous-account responses. The packaged shared mobile bundle builds successfully with the website analytics and ad tags excluded.
+
+The existing 1.0.3 (5) archive and Android artifacts predate this update. Package this source into the next increasing native build and complete native acceptance and store checks before its submission. Current store availability and review state require their own verification.
+
 ## November 17 passport continuity maintenance
 
 Website source `ed3fff1` is deployed to Cloudflare version `b6850206-9233-42c1-8342-47992715ca14`. Expired or switched passports clear previous online caches while preserving offline history and preferences. Same-passport refresh retains daily resume IDs. Background history loading updates statistics without restarting an active flight, and stale game/status/history responses cannot restore a previous identity. Cross-tab account changes are recognized.

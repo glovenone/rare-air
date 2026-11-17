@@ -17,6 +17,7 @@ export interface Passport {
   matches: number;
   buddy: string;
   trail: string;
+  avatar: string;
 }
 export const hashSecret = async (value: string) =>
   Array.from(
@@ -80,7 +81,7 @@ export async function authenticated(req: Request, db: D1Database) {
   if (!/^[a-f0-9]{64}$/.test(secret)) return null;
   return db
     .prepare(
-      "SELECT p.id,p.player,p.name,p.created,p.rating,p.matches,p.buddy,p.trail FROM passports p JOIN passport_sessions s ON s.account=p.id WHERE s.hash=? AND s.expires>?",
+      "SELECT p.id,p.player,p.name,p.created,p.rating,p.matches,p.buddy,p.trail,p.avatar FROM passports p JOIN passport_sessions s ON s.account=p.id WHERE s.hash=? AND s.expires>?",
     )
     .bind(await hashSecret(secret), Date.now())
     .first<Passport>();

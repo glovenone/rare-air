@@ -1,0 +1,613 @@
+/* The launch menu keeps readable type at every height. Short screens scroll. */
+body[data-view="home"] {
+  height: auto;
+  min-height: 100dvh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+body[data-view="home"] .home-screen {
+  height: auto;
+  min-height: max(700px, 100dvh);
+  padding-bottom: 28px;
+}
+body[data-view="home"] .home-heading {
+  top: 25%;
+  width: 48%;
+  right: auto;
+  padding: 0 24px;
+}
+body[data-view="home"] .home-heading h1 {
+  font-size: clamp(64px, 7.4vw, 116px);
+  letter-spacing: -6px;
+}
+body[data-view="home"] .daily-label {
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  color: #214957;
+}
+body[data-view="home"] .balloon {
+  left: 24%;
+  top: 48%;
+  width: 132px;
+}
+body[data-view="home"] .pilot-hint {
+  font-size: 12px;
+  color: #204653;
+}
+body[data-view="home"] .home-dock {
+  position: relative;
+  left: 49%;
+  bottom: auto;
+  transform: none;
+  width: min(700px, 47%);
+  padding-top: 153px;
+  text-align: start;
+}
+.home-dock .home-rule {
+  display: block;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.45;
+  margin-bottom: 20px;
+  color: #153d49;
+}
+.home-dock .home-rule span {
+  font-size: 15px;
+  font-weight: 400;
+  color: #264d58;
+}
+.home-dock > .primary {
+  width: 100%;
+  height: 66px;
+  font-size: 21px;
+  border-radius: 18px;
+  background: #193f4c;
+  box-shadow: 0 8px 22px #163c4a24;
+}
+.home-dock > .primary:hover {
+  background: #2b5864;
+}
+.home-modes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 14px;
+}
+.home-mode {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  gap: 12px;
+  min-width: 0;
+  min-height: 88px;
+  padding: 14px;
+  border: 1px solid #fffaf0;
+  border-radius: 16px;
+  background: #fffdf5f2;
+  color: #173d49;
+  box-shadow: 0 3px 12px #254c5810;
+}
+.home-mode:hover {
+  background: #fffdf5;
+  border-color: #517b7e;
+  transform: translateY(-2px);
+  box-shadow: 0 7px 18px #24485424;
+}
+.home-mode:active {
+  transform: translateY(0);
+}
+.mode-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  color: #315d65;
+  background: #e7eeea;
+  font-size: 30px;
+  font-weight: 600;
+  object-fit: contain;
+}
+.mode-topics .mode-icon {
+  background: #f6e8cb;
+  color: #775629;
+}
+.mode-routes .mode-icon {
+  background: #e0ebe5;
+  color: #31685a;
+}
+.mode-friends .mode-icon {
+  background: #f7e3d6;
+  color: #9b4f35;
+}
+.mode-rewards {
+  background: #fff0d5f5;
+  border-color: #f7d495;
+}
+.mode-rewards .mode-icon {
+  background: #f7dca9;
+  color: #73481f;
+}
+.mode-copy {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+}
+.mode-copy strong {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+.mode-copy small {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #3c5d63;
+}
+.mode-arrow {
+  margin-inline-start: auto;
+  font-size: 19px;
+  flex-shrink: 0;
+}
+.home-dock .app-downloads {
+  justify-content: flex-start;
+  margin-top: 18px;
+}
+.home-dock .app-downloads a {
+  font-size: 12px;
+  min-height: 44px;
+  background: #fffdf5e8;
+}
+.home-dock .home-links {
+  justify-content: flex-start;
+  gap: 12px 22px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: #244b56;
+  margin-top: 18px;
+}
+.home-dock .home-links a,
+.home-dock .home-links button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.home-dock .home-links #reset-label {
+  align-self: center;
+  font-size: 12px;
+}
+.site-header nav > button {
+  font-size: 14px;
+  min-width: 44px;
+  min-height: 44px;
+}
+.site-header .sound-button span {
+  font-size: 12px;
+}
+.home-dock #offline-practice {
+  font-size: 16px;
+  min-height: 44px;
+  color: #173d49;
+  background: #fffdf5ed;
+  border-radius: 12px;
+}
+
+.wardrobe-content h2 {
+  font-size: clamp(26px, 5vw, 36px);
+}
+.wardrobe-summary {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px 0;
+}
+.wardrobe-preview {
+  width: 92px;
+  height: 92px;
+  padding: 10px;
+  background: #e4ece6;
+  border-radius: 28px;
+}
+.wardrobe-summary strong {
+  font-size: 19px;
+}
+.wardrobe-summary .wallet-balance {
+  font-size: 19px;
+  color: #775020;
+  font-weight: 600;
+  margin: 6px 0 0;
+}
+.wardrobe-tabs {
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid #d3ddd4;
+  padding-bottom: 12px;
+}
+.wardrobe-tabs button,
+.wardrobe-secondary {
+  min-height: 44px;
+  padding: 10px 15px;
+  background: #e8eee7;
+  border-radius: 12px;
+  color: #1c4650;
+  font-size: 15px;
+  font-weight: 600;
+}
+.wardrobe-tabs button[aria-pressed="true"] {
+  background: #224c56;
+  color: #fffdf5;
+}
+.wardrobe-content .wardrobe-status {
+  min-height: 24px;
+  font-size: 15px;
+  color: #7b431f;
+  margin: 12px 0;
+}
+.avatar-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.avatar-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  min-height: 162px;
+  border: 2px solid #dce4dc;
+  border-radius: 18px;
+  padding: 16px 8px;
+  background: #f4f7ef;
+  color: #214953;
+  text-align: center;
+}
+.avatar-card img {
+  width: 68px;
+  height: 68px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 4px #244c4c14);
+}
+.avatar-card strong {
+  font-size: 15px;
+  line-height: 1.3;
+}
+.avatar-card .avatar-price {
+  margin-top: auto;
+  font-size: 13px;
+  font-weight: 600;
+  color: #71502a;
+}
+.avatar-card[aria-pressed="true"] {
+  border-color: #30645e;
+  background: #e4eee3;
+}
+.avatar-card[aria-pressed="true"] .avatar-price {
+  color: #245c4f;
+}
+.avatar-card:hover {
+  border-color: #7a9a8e;
+  transform: translateY(-2px);
+}
+.points-rules {
+  margin: 22px 0;
+  padding: 16px;
+  background: #f2eadb;
+  border-radius: 14px;
+}
+.points-rules summary {
+  cursor: pointer;
+  min-height: 28px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.wardrobe-content .points-rules p {
+  font-size: 14px;
+  line-height: 1.65;
+  margin-top: 12px;
+}
+.redeem-confirm {
+  padding: 20px;
+  border: 1px solid #d8c7a0;
+  background: #faf0dd;
+  border-radius: 18px;
+  text-align: center;
+}
+.redeem-confirm h3 {
+  font-size: 21px;
+  line-height: 1.4;
+}
+.redeem-confirm .primary {
+  width: 100%;
+  min-width: 0;
+  justify-content: center;
+  font-size: 17px;
+  margin-bottom: 12px;
+}
+.redeem-confirm > img {
+  width: 100px;
+  height: 100px;
+}
+.passport-avatar {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  float: inline-end;
+  margin-inline-start: 12px;
+}
+.friend-avatar {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+.wardrobe-content .trail-card strong,
+.wardrobe-content .companion-card strong {
+  font-size: 15px;
+}
+.wardrobe-content .trail-card small,
+.wardrobe-content .companion-card small {
+  font-size: 13px;
+}
+
+@media (max-width: 1050px) {
+  body[data-view="home"] .home-heading {
+    width: 100%;
+    position: relative;
+    top: auto;
+    padding-top: 146px;
+  }
+  body[data-view="home"] .home-heading h1 {
+    font-size: 78px;
+    letter-spacing: -4px;
+    margin-top: 8px;
+  }
+  body[data-view="home"] .balloon {
+    top: 270px;
+    left: 50%;
+    width: 96px;
+  }
+  body[data-view="home"] .home-dock {
+    left: auto;
+    width: min(680px, calc(100% - 36px));
+    margin: 155px auto 0;
+    padding-top: 0;
+  }
+  .home-dock .home-rule {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .home-dock .home-rule span {
+    font-size: 14px;
+  }
+  .home-dock .home-links,
+  .home-dock .app-downloads {
+    justify-content: center;
+  }
+}
+@media (max-width: 600px) {
+  body[data-view="home"] .home-heading {
+    padding-top: 132px;
+  }
+  body[data-view="home"] .home-heading h1 {
+    font-size: 64px;
+  }
+  body[data-view="home"] .daily-label {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  body[data-view="home"] .balloon {
+    top: 236px;
+    width: 82px;
+  }
+  body[data-view="home"] .home-dock {
+    margin-top: 132px;
+  }
+  .home-dock .home-rule {
+    font-size: 19px;
+  }
+  .home-dock > .primary {
+    height: 60px;
+    font-size: 20px;
+  }
+  .home-mode {
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 136px;
+    gap: 10px;
+    padding: 14px;
+  }
+  .home-mode .mode-arrow {
+    display: none;
+  }
+  .mode-copy strong {
+    font-size: 17px;
+  }
+  .mode-copy small {
+    font-size: 12px;
+  }
+  .mode-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 26px;
+  }
+  .home-dock .home-links {
+    margin-top: 12px;
+    gap: 4px 20px;
+  }
+  .site-header nav > button {
+    font-size: 12px;
+  }
+  .avatar-grid {
+    gap: 8px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .avatar-card {
+    padding: 12px 8px;
+  }
+  .wardrobe-summary {
+    gap: 12px;
+  }
+  .wardrobe-tabs button {
+    font-size: 14px;
+    padding: 10px;
+    flex: 1;
+  }
+}
+.native-app body[data-view="home"] .home-dock {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-mode:hover,
+  .avatar-card:hover {
+    transform: none;
+  }
+}
+body[data-view="home"] .altimeter {
+  display: none;
+}
+body[data-view="home"] .flight-hud .altitude-readout > span,
+body[data-view="home"] .flight-hud .best-readout > span,
+body[data-view="home"] #question-number {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #244e5a;
+}
+body[data-view="home"] .site-header #help {
+  white-space: nowrap;
+}
+body[data-view="home"] .best-readout {
+  color: #264d58;
+}
+@media (max-width: 600px) {
+  body[data-view="home"] .site-header {
+    gap: 8px;
+  }
+  body[data-view="home"] .site-header nav {
+    gap: 4px;
+  }
+  body[data-view="home"] .site-header #help {
+    font-size: 13px;
+  }
+}
+@media (max-width: 380px) {
+  body[data-view="home"] .site-header #help {
+    font-size: 0;
+  }
+  body[data-view="home"] .site-header nav > button {
+    min-width: 40px;
+    min-height: 44px;
+  }
+  body[data-view="home"] .site-header .language-selector select {
+    max-width: 86px;
+  }
+  body[data-view="home"] .balloon {
+    top: 236px;
+    width: 82px;
+  }
+  body[data-view="home"] .home-rule span {
+    display: inline;
+  }
+}
+#modal-content p {
+  font-size: 15px;
+  line-height: 1.75;
+  color: #35585d;
+}
+#modal-content .wardrobe-content h2 {
+  font-size: clamp(26px, 5vw, 36px);
+  letter-spacing: -1px;
+}
+#modal-content .wardrobe-content .wallet-balance {
+  font-size: 19px;
+  font-weight: 600;
+  color: #775020;
+}
+#modal-content .wardrobe-content .wardrobe-status {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #7b431f;
+}
+#modal-content .wardrobe-content .points-rules p {
+  font-size: 14px;
+  line-height: 1.65;
+}
+#modal:has(.wardrobe-content) {
+  width: min(640px, calc(100% - 24px));
+  overflow: hidden;
+  padding: 24px;
+}
+#modal:has(.wardrobe-content) #modal-content {
+  max-height: calc(85svh - 84px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding-inline-end: 8px;
+  margin-top: 24px;
+}
+#modal:has(.wardrobe-content) #close-modal {
+  width: 44px;
+  height: 44px;
+  top: 4px;
+  right: 8px;
+  color: #254d56;
+  z-index: 2;
+}
+@media (max-width: 600px) {
+  #modal:has(.wardrobe-content) {
+    padding: 20px 16px;
+  }
+  #modal:has(.wardrobe-content) #modal-content {
+    padding-inline-end: 4px;
+  }
+}
+.wardrobe-content > .wardrobe-secondary {
+  margin-bottom: 16px;
+}
+.avatar-card {
+  background: color-mix(in srgb, var(--avatar-color) 10%, #f4f7ef);
+}
+body[data-view="home"] .site-header {
+  background: linear-gradient(#d9e9e5d9, #e1ede300);
+}
+.result-rewards {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  width: 100%;
+  min-height: 60px;
+  padding: 14px 18px;
+  margin-top: 18px;
+  border-radius: 16px;
+  background: #f5e5c6;
+  color: #553f21;
+  text-align: start;
+}
+.result-rewards strong {
+  font-size: 17px;
+}
+.result-rewards > span {
+  font-size: 14px;
+}
+.result-rewards > span:last-child {
+  margin-inline-start: auto;
+  font-size: 22px;
+}
+@media (max-width: 1050px) {
+  .native-app body[data-view="home"] .home-heading {
+    padding-top: calc(146px + env(safe-area-inset-top, 0px));
+  }
+  .native-app body[data-view="home"] .balloon {
+    top: calc(270px + env(safe-area-inset-top, 0px));
+  }
+}
+@media (max-width: 600px) {
+  .native-app body[data-view="home"] .home-heading {
+    padding-top: calc(132px + env(safe-area-inset-top, 0px));
+  }
+  .native-app body[data-view="home"] .balloon {
+    top: calc(236px + env(safe-area-inset-top, 0px));
+  }
+}

@@ -124,7 +124,7 @@ const pages = [
       "Read how RARE Air uses anonymous gameplay records, a browser cookie, local flight history and Cloudflare hosting to operate the game.",
     heading: "Privacy policy.",
     intro:
-      "Effective November 13, 2026. RARE Air is operated by the project maintainer, glovenone, and its source code is available on GitHub. This policy covers the web game, packaged RARE Air mobile apps and WeChat game edition.",
+      "Effective November 17, 2026. RARE Air is operated by the project maintainer, glovenone, and its source code is available on GitHub. This policy covers the web game, packaged RARE Air mobile apps and WeChat game edition.",
     sections: [
       [
         "Data used for online play.",
@@ -329,6 +329,11 @@ pages.find(page => page.path === 'how-to-play').sections.push([
   'Private flights have five stages; ten-seat, quick and rated flights have up to 30. One remaining pilot ends the flight early. More hearts wins; altitude breaks ties. Rare answers charge extra hearts.',
 ]);
 pages.find(page => page.path === 'how-to-play').sections.push([
+  'Style & rewards',
+  'Finish an online daily flight on its UTC day or complete a chapter. Each unique challenge earns 10 points plus 1 per 100 best meters, up to 60 points.',
+  'A higher replay score adds only the improvement. Archive replays and free or offline practice do not earn points. Earlier eligible passport history counts too.',
+]);
+pages.find(page => page.path === 'how-to-play').sections.push([
   'Your flight routes.',
   'Complete chapters, collect stars and explore a new part of the sky.',
   'Finish all five questions to open the next chapter. Earn stars at 1,000, 2,500 and 4,000 meters.',
@@ -336,6 +341,7 @@ pages.find(page => page.path === 'how-to-play').sections.push([
 ]);
 pages.find(page => page.path === 'privacy').sections.push([
   'Optional flight passports.',
+  'Your selected pilot icon and point-redemption records are stored with your passport in Cloudflare D1. Point balances are calculated from eligible online flight scores. Deleting the passport removes its icon preferences and redemption records.',
   'A free passport stores a public pilot name, a private game identity, a hashed recovery code, hashed login sessions, passkey public keys, preferences, friends and rating records in Cloudflare D1. We do not collect an email address, password or biometric data. Your device handles passkey verification. Keep your recovery code private; anyone with it can open your passport.',
   'Login cookies expire after 30 days. Passkey challenges expire after five minutes and are single use. Friend invitations expire after seven days. Earlier guest flights are linked only after you choose Import this device history. Offline practice remains on its device.',
   'Friends can compare completed daily answers only after completing that daily flight themselves. Rated tables store finishing positions and rating changes. Blocks prevent new friend relationships and matching with blocked accounts. Reports store the reporter, pilot, room, explanation and time for moderation; contact support for urgent concerns.',

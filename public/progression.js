@@ -273,6 +273,7 @@ export function initProgression({ request, openDialog, startChapter }) {
       if (game.mode === "offline" || refreshedGame === game.id) return;
       refreshedGame = game.id;
       load().catch(() => {});
+      window.dispatchEvent(new Event("rare:rewards"));
     },
   };
 }

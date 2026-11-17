@@ -1,3 +1,4 @@
+import { avatarImage, selectAvatar } from "./avatars.js";
 import { t, language } from "./i18n.js";
 import { startRegistration, startAuthentication } from "./vendor/passkeys.js";
 import { selectCompanion } from "./companions.js";
@@ -80,11 +81,15 @@ export function initPassport({
       selectTrail(state.account?.trail || "classic");
       window.dispatchEvent(new Event("rare:identity"));
     }
-    const entry = document.getElementById("passport-entry");
-    entry.textContent = state.account
-      ? state.account.name + " ↗"
-      : t("Flight passport ↗");
+    updateEntry();
+    if (state.account) selectAvatar(state.account.avatar || "swallow");
     return state;
+  }
+  function updateEntry() {
+    const entry = document.getElementById("passport-label") || document.getElementById("passport-entry");
+    entry.textContent = t("Flight passport ↗");
+    const caption = document.getElementById("passport-caption");
+    if (caption) caption.textContent = state.account?.name || t("Save progress across devices");
   }
   async function syncIdentity() {
     await load();
@@ -225,6 +230,10 @@ export function initPassport({
       return;
     }
     const card = node("section", undefined, "passport-card");
+    const avatar = node("img", undefined, "passport-avatar");
+    avatar.src = avatarImage(state.account.avatar);
+    avatar.alt = "";
+    card.append(avatar);
     card.append(
       text("span", "FLIGHT PASSPORT", "eyebrow"),
       node("h3", state.account.name),
@@ -238,7 +247,7 @@ export function initPassport({
       text("span", "rated flights"),
     );
     card.append(stats);
-    body.append(card);
+    body.append(card, button("Style & rewards", () => window.dispatchEvent(new Event("rare:wardrobe"))));
     if (invitation) {
       try {
         const invite = await request("passport/invite-preview", {
@@ -380,7 +389,11 @@ export function initPassport({
       );
     for (const friend of entries) {
       const row = node("article", undefined, "friend-row");
+      const avatar = node("img", undefined, "friend-avatar");
+      avatar.src = avatarImage(friend.avatar);
+      avatar.alt = "";
       row.append(
+        avatar,
         node("strong", friend.name),
         node("span", String(friend.rating)),
         button("Remove friend", async () => {
@@ -479,6 +492,7 @@ export function initPassport({
   }
   document.getElementById("passport-entry").onclick = () => run(() => open());
   addEventListener("rare:language", () => {
+    updateEntry();
     if (document.querySelector("#modal[open] .passport-content"))
       run(() => open(view));
   });
@@ -486,7 +500,7 @@ export function initPassport({
     if (event.key === "rare:passport-owner" || event.key === null)
       syncIdentity().catch(() => {});
   });
-  load()
+  const ready = load()
     .then(() => (state.account ? syncIdentity() : null))
     .catch(() => {});
   if (
@@ -495,6 +509,7 @@ export function initPassport({
   )
     run(() => open());
   return {
+    ready,
     open: () => run(() => open()),
     load,
     report: (target, room) => run(() => report(target, room)),

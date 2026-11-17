@@ -12,6 +12,7 @@ import {
 import { questions } from "./questions.js";
 import { answerLabel } from "./localization.js";
 import { resolveLocale } from "../public/locales.js";
+import { rewardsApi } from "./rewards.js";
 import { playerProgress } from "./progression.js";
 export async function passportApi(
   req: Request,
@@ -148,6 +149,8 @@ export async function passportApi(
       .all();
     return json({ entries: results });
   }
+  if (["wardrobe", "redeem", "avatar"].includes(action))
+    return rewardsApi(db, account, action, b);
   if (action === "profile") {
     const name = safeName(b.name);
     if (!name) return authFailure("Enter a pilot name.");
@@ -229,7 +232,7 @@ export async function passportApi(
   if (action === "friends") {
     const { results } = await db
       .prepare(
-        "SELECT p.id,p.name,p.rating,p.matches,p.buddy FROM friendships f JOIN passports p ON p.id=CASE WHEN f.a=? THEN f.b ELSE f.a END WHERE f.a=? OR f.b=?",
+        "SELECT p.id,p.name,p.rating,p.matches,p.buddy,p.avatar FROM friendships f JOIN passports p ON p.id=CASE WHEN f.a=? THEN f.b ELSE f.a END WHERE f.a=? OR f.b=?",
       )
       .bind(account.id, account.id, account.id)
       .all();
