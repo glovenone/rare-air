@@ -611,3 +611,9 @@ body[data-view="home"] .site-header {
     top: calc(236px + env(safe-area-inset-top, 0px));
   }
 }
+body[data-view="home"] #passport-entry {
+  max-width: none;
+  overflow: visible;
+  text-overflow: clip;
+  white-space: normal;
+}
