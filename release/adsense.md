@@ -51,3 +51,7 @@ When activation is requested, implement the unit through the website build with 
 - [Google's site-review status definitions](https://support.google.com/adsense/answer/12170222?hl=en)
 - [Live ads.txt](https://krillionunlimited.top/ads.txt)
 - Local console screenshots are stored in the ignored `release/private/adsense-20261115/` folder of the maintainer's main checkout.
+
+## 2026-11-17T15:29:36+08:00 additional Google administrator
+
+The owner confirmed administrator access for the requested additional Google identity. The RARE Air GA4 property and shared AdSense publisher show administrator access, with AdSense displaying active status. The shared publisher grant includes its associated sites and the linked AdMob access described by Google. Recipient details and verification screenshots are retained in ignored `release/private/google-access-20261117/`.

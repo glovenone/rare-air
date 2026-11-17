@@ -105,3 +105,7 @@ The subscription proposal remains an internal design deliverable. The current ap
 ## November 16 public-link check
 
 The generic app URL and explicit US listing both rendered RARE Air in happycoin Chrome. The US listing still carries the published 1.0 description with 400 offline prompts. A China-store search for RARE Air did not return this app; that search alone does not establish the configured regional availability. App Store Connect requires a fresh login, so current territory settings could not be verified. The website now uses the verified full US listing URL. A storefront URL cannot guarantee installation with an Apple Account from another region. The owner was asked for the exact error and account region to complete diagnosis.
+
+## 2026-11-17T15:29:36+08:00 additional Google administrator
+
+The owner confirmed administrator access for the requested additional Google identity. The RARE Air GA4 property and shared AdSense publisher show administrator access, with AdSense displaying active status. The shared publisher grant includes its associated sites and the linked AdMob access described by Google. Recipient details and verification screenshots are retained in ignored `release/private/google-access-20261117/`.
