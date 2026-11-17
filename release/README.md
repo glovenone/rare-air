@@ -1,6 +1,6 @@
 # Mobile release preparation
 
-Current maintenance candidate: 1.0.3 (5) includes passport cache and asynchronous flight isolation fixes. It is prepared locally and awaiting fresh native UI acceptance. Public Android direct download remains 1.0.2 (4); store 1.0.1 (3) is the last verified review candidate. Current store/signing checks require restored browser access and an unlocked Mac. See [release evidence](mobile-daily.md).
+Current maintenance candidate: 1.0.3 (5) includes passport cache and asynchronous flight isolation fixes. It is prepared locally and awaiting fresh native UI acceptance. Public Android direct download remains 1.0.2 (4); store 1.0.1 (3) is the last verified review candidate. Build 5 has now been exported successfully through Organizer cloud signing with the existing Xcode session. Native gameplay acceptance and current store checks are pending. See [release evidence](mobile-daily.md).
 
 ## Product configuration
 
@@ -53,7 +53,7 @@ Cloudflare version `e74df229-e407-439a-99b2-e1437d3c6be0` publishes the homepage
 
 Open `ios/App/App.xcodeproj` in Xcode. Use the configured Apple team, register the bundle identifier, and select a distribution provisioning profile. Build and archive the App scheme for a generic iOS device. `export-options.plist` configures an App Store Connect export with manual version numbering.
 
-The simulator can build with `CODE_SIGNING_ALLOWED=NO`. A device archive built that way requires distribution signing before upload. Sign in through Xcode Settings → Accounts to make the developer team available to Xcode.
+The simulator can build with `CODE_SIGNING_ALLOWED=NO`. A device archive built that way requires distribution signing before upload. Check Xcode Settings → Accounts for the existing developer account and team before requesting another login. On November 17, CLI export returned `No Accounts` while the GUI account remained valid. Organizer successfully exported build 5 using its existing cloud-managed distribution certificate. With no local Apple Distribution private key, use Organizer → Distribute App → Custom → App Store Connect → Export → Automatically manage signing, keeping version/build management disabled. See [signing verification](mobile-daily.md#november-17-xcode-signing-verification).
 
 ## Store assets
 
