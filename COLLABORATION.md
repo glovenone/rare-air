@@ -6,6 +6,8 @@ RARE Air is an open-source daily rare-answer trivia game. Its website runs on Cl
 
 The November 18 update strengthens the six main action cards, shows the equipped icon on the rewards entry and explains the free passport requirement for earning and redeeming points. Desktop titles are 21px, phone titles 19px and supporting labels 14px. Narrow layouts use full-width cards.
 
+Source commit `785532e` is deployed to [the website](https://krillionunlimited.top/) as Cloudflare version `1c613514-932f-49ed-9d1b-a741d76f301c`. Live desktop and 320px browser checks passed, along with local 390px English and Arabic RTL checks. The website currently serves its existing ten-language catalog.
+
 Three pilot icons are free to select. Six additional icons cost 120–600 earned Sky points. Online daily completions on their UTC day and chapter completions earn points from verified results. The rewards balance, ownership, retry handling and selection are maintained by D1. The implementation and earning rules are described in [the homepage plan](docs/plans/2026-11-17-home-rewards.md).
 
 ## Verify and deploy
@@ -17,6 +19,8 @@ After source review and tests, push the commit to GitHub and run Wrangler deploy
 ## Mobile handoff
 
 The web game is shared with packaged Android and iOS builds. Website deployment and native store publication have separate records. Follow [the mobile release workflow](release/mobile-daily.md) to build, sign, test and submit a native update containing the new web assets. The homepage's existing APK and App Store links are maintained in `src/site-config.js`.
+
+This homepage refinement has a validated shared mobile web bundle. Native installers and store submissions incorporating source `785532e` are pending the mobile release workflow.
 
 ## Operational boundaries
 

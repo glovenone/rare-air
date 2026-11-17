@@ -109,3 +109,7 @@ The generic app URL and explicit US listing both rendered RARE Air in happycoin 
 ## 2026-11-17T15:29:36+08:00 additional Google administrator
 
 The owner confirmed administrator access for the requested additional Google identity. The RARE Air GA4 property and shared AdSense publisher show administrator access, with AdSense displaying active status. The shared publisher grant includes its associated sites and the linked AdMob access described by Google. Recipient details and verification screenshots are retained in ignored `release/private/google-access-20261117/`.
+
+## November 18 homepage release handoff
+
+Website source `785532e` is live in Cloudflare deployment `1c613514-932f-49ed-9d1b-a741d76f301c`. It strengthens homepage action typography and contrast, synchronizes the equipped rewards icon and clarifies free-passport onboarding. Type checking, all 68 tests, the real local D1 rewards integration and shared mobile web packaging passed. Integrate this commit into the next native release candidate before synchronization, native testing and store upload. See [the progress record](../PROGRESS.md) for verification scope.
