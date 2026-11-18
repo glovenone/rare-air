@@ -8,7 +8,7 @@ import { locales, localizedPath, resolveLocale } from "../public/locales.js";
 test("published search pages have consistent metadata and working local links", async () => {
   const sitemap = await readFile("public/sitemap.xml", "utf8");
   const urls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map((match) => new URL(match[1]));
-  assert.equal(urls.length, 90);
+  assert.equal(urls.length, locales.length * 9);
   assert.equal(new Set(urls.map(String)).size, urls.length);
   const titles = new Set();
   const descriptions = new Set();
@@ -27,7 +27,7 @@ test("published search pages have consistent metadata and working local links", 
     for (const locale of locales) {
       assert.ok(html.includes(`hreflang="${locale.tag}" href="${url.origin}${localizedPath(basePath, locale.code)}"`));
     }
-    assert.equal([...html.matchAll(/hreflang="/g)].length, 11, `Ten languages and x-default for ${url}`);
+    assert.equal([...html.matchAll(/hreflang="/g)].length, locales.length + 1, `All languages and x-default for ${url}`);
     assert.doesNotMatch(html, /hreflang="(?:hi|bn|ur)"/);
     assert.ok(html.includes(`rel="canonical" href="${url}"`) ||
       html.includes(`rel="canonical"\n      href="${url}"`), `Canonical for ${url}`);

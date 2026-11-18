@@ -1,0 +1,6524 @@
+{
+  "language": "ko",
+  "provenance": "Google machine translation with canonical answer mapping, structural validation and selected contextual review.",
+  "questions": {
+    "planets": {
+      "sourceHash": "d85eadc39d8ad738df20666bdb092aa637435cc8931a2aabdc85e6a84fc4949e",
+      "prompt": "우리 태양계에 있는 행성의 이름을 지정하세요.",
+      "answers": [
+        "지구",
+        "화성",
+        "목성",
+        "토성",
+        "비너스",
+        "머큐리",
+        "해왕성",
+        "천왕성"
+      ]
+    },
+    "noble-gases": {
+      "sourceHash": "699943efad7359a728974e4d166a474008c898dd253fe3194bfca3629bfc9613",
+      "prompt": "희가스의 이름을 지정하세요.",
+      "answers": [
+        "헬륨",
+        "네온",
+        "아르곤",
+        "크립톤",
+        "제논",
+        "라돈",
+        "오가네손"
+      ]
+    },
+    "chess": {
+      "sourceHash": "1c147cb6d8da372e85d8bca8f009ce9f01b30d8404dadb6d9c26f20806b6fa38",
+      "prompt": "체스 말의 종류를 말해보세요.",
+      "answers": [
+        "킹",
+        "퀸",
+        "폰",
+        "기사",
+        "루크",
+        "비숍"
+      ]
+    },
+    "greek": {
+      "sourceHash": "34774668155644b9b04fc09bef1546152055c694f93f279b5401187dec486b39",
+      "prompt": "그리스 알파벳의 한 글자를 말해보세요.",
+      "answers": [
+        "알파",
+        "베타",
+        "감마",
+        "델타",
+        "엡실론",
+        "제타",
+        "에타",
+        "세타",
+        "이오타",
+        "카파",
+        "람다",
+        "무",
+        "누",
+        "자이",
+        "오미크론",
+        "파이",
+        "로",
+        "시그마",
+        "타우",
+        "입실론",
+        "피",
+        "치",
+        "사이",
+        "오메가"
+      ]
+    },
+    "months": {
+      "sourceHash": "3f7636d95da6d5c82391b27ec69ff194dd216a2a2d8046dae7cdb118bf971cb0",
+      "prompt": "정확히 30일이 있는 달의 이름을 지정하세요.",
+      "answers": [
+        "4월",
+        "6월",
+        "9월",
+        "11월"
+      ]
+    },
+    "zodiac": {
+      "sourceHash": "556d087afbec88006b6be879ada914ab8ee9b558b2ee5396c464076a477da515",
+      "prompt": "12개의 서양 황도대 별자리 중 하나의 이름을 말하세요.",
+      "answers": [
+        "양자리",
+        "황소자리",
+        "쌍둥이자리",
+        "암",
+        "레오",
+        "처녀자리",
+        "천칭자리",
+        "전갈자리",
+        "궁수자리",
+        "염소자리",
+        "물병자리",
+        "물고기자리"
+      ]
+    },
+    "strings": {
+      "sourceHash": "ee1574f35153311666d10820c2f07799eef332f32cf84ee6f2970eeac5367f48",
+      "prompt": "오케스트라 현악 섹션의 표준 악기 이름을 지정합니다.",
+      "answers": [
+        "바이올린",
+        "첼로",
+        "비올라",
+        "더블베이스"
+      ]
+    },
+    "oceans": {
+      "sourceHash": "fd09ef77ca908199ed77c3bb0e0561c2d482403c680e1ad89a7f124a53f5bf28",
+      "prompt": "지구의 5대 해양 중 하나의 이름을 말하세요.",
+      "answers": [
+        "태평양",
+        "대서양",
+        "인디언",
+        "북극",
+        "남부"
+      ]
+    },
+    "dwarfs": {
+      "sourceHash": "eea22bcc10824d2e59196e3c94679dbd1d73c07dd402650c1f35ca87424deb26",
+      "prompt": "IAU가 인정한 왜행성의 이름을 지정하세요.",
+      "answers": [
+        "명왕성",
+        "세레스",
+        "에리스",
+        "하우메아",
+        "마케메이크"
+      ]
+    },
+    "si": {
+      "sourceHash": "8d1db55ad9748de05cf0410402e1327e8000ebd6b60a7252f975ffcd2ada2c65",
+      "prompt": "SI 기본 단위의 이름을 지정합니다(접두사가 아님).",
+      "answers": [
+        "미터",
+        "킬로그램",
+        "두 번째",
+        "암페어",
+        "켈빈",
+        "두더지",
+        "칸델라"
+      ]
+    },
+    "nordic": {
+      "sourceHash": "e70f94fe09bda3336789971b6a7da273cf9f34dfaed90f1226fb25084cbfa48a",
+      "prompt": "주권을 지닌 북유럽 국가의 이름을 지정하세요.",
+      "answers": [
+        "스웨덴",
+        "노르웨이",
+        "덴마크",
+        "핀란드",
+        "아이슬란드"
+      ]
+    },
+    "great-lakes": {
+      "sourceHash": "7ff2d0620b55ec8daf7a03148a1546c50d0e4131d86362339703b24ada2c7c52",
+      "prompt": "북미 오대호 중 하나의 이름을 말하십시오.",
+      "answers": [
+        "미시간",
+        "슈페리어",
+        "이리",
+        "온타리오",
+        "휴런"
+      ]
+    },
+    "rainbow": {
+      "sourceHash": "ad2c01dd8c1607f5ed5dc3e37a5ce5fc14199943cf4f28164e00f9fb45c59403",
+      "prompt": "전통적인 일곱 가지 무지개 색상 중 하나를 말해보세요.",
+      "answers": [
+        "레드",
+        "오렌지",
+        "옐로우",
+        "그린",
+        "블루",
+        "인디고",
+        "바이올렛"
+      ]
+    },
+    "disney": {
+      "sourceHash": "9edf45a58bb933bd7a0bfc2a38be4aae6b2deca1211f966b300de177bd72b958",
+      "prompt": "디즈니의 1937년 백설공주에 등장하는 일곱 난쟁이 중 한 명의 이름을 말해보세요.",
+      "answers": [
+        "멍멍",
+        "심술쟁이",
+        "해피",
+        "슬리피",
+        "문서",
+        "재채기",
+        "수줍음이 많은"
+      ]
+    },
+    "bonds": {
+      "sourceHash": "ed79d7e1ceb6ddd56cd90017cc3e361e43a03cd33798a76538a9b28374d91a79",
+      "prompt": "Eon이 제작한 영화에서 제임스 본드 역을 맡은 배우의 이름을 말해보세요.",
+      "answers": [
+        "다니엘 크레이그",
+        "숀 코너리",
+        "피어스 브로스넌",
+        "로저 무어",
+        "티모시 달튼",
+        "조지 라젠비"
+      ]
+    },
+    "tennis": {
+      "sourceHash": "e46a4a6e49e2b8aac387e1c6e794dfb82ba6e254c880fc69f42dd2f5a26e4812",
+      "prompt": "4개의 테니스 그랜드 슬램 토너먼트 중 하나의 이름을 말하십시오.",
+      "answers": [
+        "윔블던",
+        "US 오픈",
+        "호주 오픈",
+        "프랑스 오픈"
+      ]
+    },
+    "roman": {
+      "sourceHash": "4179a34facfc9af190ed7fe887536385ccbc8c98eb0736d3c118cc72e76dfc71",
+      "prompt": "표준 로마 숫자로 사용되는 문자의 이름을 지정하세요.",
+      "answers": [
+        "I",
+        "V",
+        "X",
+        "L",
+        "C",
+        "D",
+        "M"
+      ]
+    },
+    "g7": {
+      "sourceHash": "2faf2309c887e8dfb5e748261e15a8b5d5074e8ff4dc3d3c3866e630e39b373e",
+      "prompt": "G7 회원국을 지정하세요.",
+      "answers": [
+        "미국",
+        "영국",
+        "캐나다",
+        "프랑스",
+        "독일",
+        "일본",
+        "이탈리아"
+      ]
+    },
+    "mercury": {
+      "sourceHash": "8945f3d0a547ca2cae961fb2dc5b1f1289397cce8430f4b05a17290ff3dc277f",
+      "prompt": "화학 기호가 단일 문자인 원소의 이름을 지정하십시오.",
+      "answers": [
+        "수소",
+        "붕소",
+        "카본",
+        "질소",
+        "산소",
+        "불소",
+        "인",
+        "유황",
+        "칼륨",
+        "바나듐",
+        "이트륨",
+        "요오드",
+        "텅스텐",
+        "우라늄"
+      ]
+    },
+    "us-states-a": {
+      "sourceHash": "7ed2875c99095e9ec4abf9fa7fe37dd8325c1688bf58cb2f16a7e50275a9cd8e",
+      "prompt": "문자 A로 시작하는 미국 주의 이름을 지정하세요.",
+      "answers": [
+        "앨라배마",
+        "알래스카",
+        "애리조나",
+        "아칸소"
+      ]
+    },
+    "senses": {
+      "sourceHash": "dc8a85af068801d36ed84cf27cac35e7df879016bcf0b8a68205628414037520",
+      "prompt": "인간의 전통적인 오감 중 하나를 말해보세요.",
+      "answers": [
+        "시력",
+        "청력",
+        "맛",
+        "냄새",
+        "터치"
+      ]
+    },
+    "bronte": {
+      "sourceHash": "c5df38a8e4b6847b5ec4222895e88a04f55a6a82a59b9cf2f4c2c3e3a28a5dbd",
+      "prompt": "소설을 출판한 브론테 자매의 이름을 말해보세요.",
+      "answers": [
+        "샬롯",
+        "에밀리",
+        "앤"
+      ]
+    },
+    "continents": {
+      "sourceHash": "f4f02644df0c8a6778874f8cc29e797628100f1ada88c823d452292c2a19f03b",
+      "prompt": "7대륙 모델에서 대륙의 이름을 지정하세요.",
+      "answers": [
+        "아시아",
+        "아프리카",
+        "유럽",
+        "북미",
+        "남아메리카",
+        "남극 대륙",
+        "호주"
+      ]
+    },
+    "solids": {
+      "sourceHash": "b5baf3e52f245a7ecfc42542c3a095addb28f5bf8c04fc197b720cb9cc182ec7",
+      "prompt": "플라톤 입체의 이름을 지정하십시오.",
+      "answers": [
+        "큐브",
+        "사면체",
+        "팔면체",
+        "정십이면체",
+        "정이십면체"
+      ]
+    },
+    "cards": {
+      "sourceHash": "1db153a7157d24c23cffbaa904426a68629d9153bee9cfb7d03182203379ee17",
+      "prompt": "표준 프랑스식 카드 덱에서 슈트 이름을 지정하세요.",
+      "answers": [
+        "하트",
+        "스페이드",
+        "다이아몬드",
+        "클럽"
+      ]
+    },
+    "musical-notes": {
+      "sourceHash": "b5d9da6f43d8c12c51a550625ef9004e16d1fe9b097cc01ad3394468e9b14f17",
+      "prompt": "영어 표기법으로 자연스러운 음표에 사용되는 글자를 말해보세요.",
+      "answers": [
+        "C",
+        "A",
+        "G",
+        "D",
+        "E",
+        "F",
+        "B"
+      ]
+    },
+    "us-states-n": {
+      "sourceHash": "a8545ada1e499e321f3f52c9f02a515820ca8386a2cafc350c385c2276ce41c0",
+      "prompt": "문자 N으로 시작하는 미국 주의 이름을 지정하세요.",
+      "answers": [
+        "뉴욕",
+        "뉴저지",
+        "네바다",
+        "노스캐롤라이나",
+        "뉴멕시코",
+        "네브라스카",
+        "뉴햄프셔",
+        "노스다코타"
+      ]
+    },
+    "mars-moons": {
+      "sourceHash": "570f15b6efe960f57b996dcaf32985db137bcd4a441655b5a37916add3f0bbe8",
+      "prompt": "화성의 위성 이름을 지정하세요.",
+      "answers": [
+        "포보스",
+        "데이모스"
+      ]
+    },
+    "ninja-turtles": {
+      "sourceHash": "0d42877c6c6f873d97316577247f5d34599073bc83dd8c813f889b58cc0af632",
+      "prompt": "십대 돌연변이 닌자 거북이 네 마리 중 한 마리의 이름을 말해보세요.",
+      "answers": [
+        "레오나르도",
+        "미켈란젤로",
+        "라파엘",
+        "도나텔로"
+      ]
+    },
+    "track": {
+      "sourceHash": "6979525436559165adf0696b92b073fdf62633560d1f916691c2e8aa81bfee09",
+      "prompt": "남자 올림픽 10종 경기 종목의 이름을 지정하세요.",
+      "answers": [
+        "100미터",
+        "멀리뛰기",
+        "포환던지기",
+        "높이뛰기",
+        "400미터",
+        "110미터 장애물",
+        "원반던지기",
+        "장대높이뛰기",
+        "창던지기",
+        "1500미터"
+      ]
+    },
+    "exp-55622ba9509049": {
+      "sourceHash": "29e6fbc5e0087ce6cbfd3991b4529de00f556c7f01dac0db4e31751a32920239",
+      "prompt": "목성의 갈릴리 위성 4개 중 하나의 이름을 말하세요.",
+      "answers": [
+        "유로파",
+        "이오",
+        "가니메데",
+        "칼리스토"
+      ]
+    },
+    "exp-3c159bbe3f304d": {
+      "sourceHash": "4501695c587f446c06f362267168e513b8f5b8e8812c3136d88e1589c479ea84",
+      "prompt": "아폴로 11호에 탑승한 세 명의 우주비행사 중 한 명의 이름을 말하세요.",
+      "answers": [
+        "닐 암스트롱",
+        "버즈 올드린",
+        "마이클 콜린스"
+      ]
+    },
+    "exp-6e023fed54321c": {
+      "sourceHash": "508c923082dda375d327fb0232fa32eb41d8af014432509b1c22c9873ec9a1cf",
+      "prompt": "아폴로 8호에 탑승한 세 명의 우주비행사 중 한 명의 이름을 말해보세요.",
+      "answers": [
+        "짐 러벨",
+        "프랭크 보먼",
+        "윌리엄 앤더스"
+      ]
+    },
+    "exp-14319ba2a869d4": {
+      "sourceHash": "14deb05966bfc3f4e4d2d1677dff0f01a11ada7d53842f6d0e6bafa39b8bfdfc",
+      "prompt": "아폴로 13호에 탑승한 세 명의 우주 비행사 중 한 명의 이름을 말하십시오.",
+      "answers": [
+        "짐 러벨",
+        "잭 스위거트",
+        "프레드 헤이즈"
+      ]
+    },
+    "exp-e62cef64877e56": {
+      "sourceHash": "4cfab3d73c1478a3fa039cfd72e117594f1c20ee8fae7c0a1c07041cc48ea163",
+      "prompt": "우주를 비행한 NASA 우주 왕복선 궤도선의 이름을 지정하세요.",
+      "answers": [
+        "콜롬비아",
+        "챌린저",
+        "디스커버리",
+        "아틀란티스",
+        "노력"
+      ]
+    },
+    "exp-6cc000633d2dab": {
+      "sourceHash": "09d1be0170981900eb62b4f45bc8844926f60ccdec0fb68139d4cfc9ab45e66e",
+      "prompt": "지구에서 육안으로 볼 수 있는 다섯 개의 행성 중 하나의 이름을 말하십시오.",
+      "answers": [
+        "화성",
+        "비너스",
+        "목성",
+        "토성",
+        "머큐리"
+      ]
+    },
+    "exp-45a934868a4667": {
+      "sourceHash": "d041d7cee53c0efd55448a082eec3f556a9db9f776c8b33f71832c67cbc7803e",
+      "prompt": "5개의 라그랑주 점 중 하나를 지정하여 지정하십시오.",
+      "answers": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5"
+      ]
+    },
+    "exp-08e963b245d16d": {
+      "sourceHash": "3ace5ca9459f5a240a8f5aed5475508cc48587e9334908e60b203d6c763dfae5",
+      "prompt": "2024년 말까지 화성에서 성공적으로 작동한 NASA 탐사선의 이름을 지정하세요.",
+      "answers": [
+        "호기심",
+        "인내",
+        "기회",
+        "정신",
+        "소저너"
+      ]
+    },
+    "exp-777847c8960a10": {
+      "sourceHash": "f47b1e016fd4cc73cc09f470edc165128e165bafd9ab7dfda3505d66090771d2",
+      "prompt": "우리 태양계에 고리 시스템이 있는 행성의 이름을 지정하세요.",
+      "answers": [
+        "토성",
+        "목성",
+        "천왕성",
+        "해왕성"
+      ]
+    },
+    "exp-2bdb9129038074": {
+      "sourceHash": "a788eac845c4c31acca5b3b1ea120ae94e37247c78ce0a6f4159302732400777",
+      "prompt": "우리 태양계에 있는 지구형 행성의 이름을 말해보세요.",
+      "answers": [
+        "지구",
+        "화성",
+        "비너스",
+        "머큐리"
+      ]
+    },
+    "exp-2fb35b34f35fe1": {
+      "sourceHash": "6dd20f647577db3ad7dcbd7fb2d589c92d9d7d24af0763354f7f1e95547a312d",
+      "prompt": "여름의 대삼각형 별자리에 이름을 붙여보세요.",
+      "answers": [
+        "시그너스",
+        "라이라",
+        "아퀼라"
+      ]
+    },
+    "exp-88861f905ce810": {
+      "sourceHash": "34f75ce29f17b8953026403d154a5374ca75274edaa3c179828cb554d8d65938",
+      "prompt": "여름의 대삼각형 별자리에 있는 별의 이름을 지정하세요.",
+      "answers": [
+        "베가",
+        "알테어",
+        "데네브"
+      ]
+    },
+    "exp-3e436d72681cea": {
+      "sourceHash": "276dae93e5bc56566d95b30cbf447993d3b0f56db9551506068d8e909530ef2c",
+      "prompt": "원자의 표준 입문 모형에 있는 세 개의 입자 중 하나의 이름을 지정하십시오.",
+      "answers": [
+        "전자",
+        "양성자",
+        "중성자"
+      ]
+    },
+    "exp-0cdc81c8237b39": {
+      "sourceHash": "fe9373764d8309b0c4390c9a0c5b35ca35bdbc777e10b86510f89c5c3ba8f667",
+      "prompt": "생명의 3영역 분류 중 3개 영역 중 하나를 말해보세요.",
+      "answers": [
+        "박테리아",
+        "Archaea",
+        "유카리아"
+      ]
+    },
+    "exp-bcdc3979059bfc": {
+      "sourceHash": "b64cc3387f0bf7967a85448a5be119ad661768bbc78e66f23058fec3c4e4a3c2",
+      "prompt": "4단계 모델에서 유사분열 단계의 이름을 지정하세요.",
+      "answers": [
+        "프로페이즈",
+        "중기",
+        "아나페이즈",
+        "텔로페이즈"
+      ]
+    },
+    "exp-82f9a52f3608fc": {
+      "sourceHash": "393e28252710092fab160c711ef328478131edbab189324b797d43bb7fe8bd0b",
+      "prompt": "인간 심장의 네 방 중 하나의 이름을 말하십시오.",
+      "answers": [
+        "좌심실",
+        "우심실",
+        "좌심방",
+        "우심방"
+      ]
+    },
+    "exp-fc635a98213828": {
+      "sourceHash": "3a163a3bf04dc5fdb78e41f304bc4315f046e98f389c2709ccf9e8bb32bb0ee5",
+      "prompt": "전통적인 4엽 모델에서 인간 두뇌의 엽 이름을 지정하세요.",
+      "answers": [
+        "전두엽",
+        "측두엽",
+        "두정엽",
+        "후두엽"
+      ]
+    },
+    "exp-ff0a813d6ed740": {
+      "sourceHash": "9a59afb0012186d8ca38b1c90dd0785c13e74948411c955473d48c16bded6df2",
+      "prompt": "인간의 중이에 있는 뼈의 이름을 말해보세요.",
+      "answers": [
+        "해머",
+        "모루",
+        "등자"
+      ]
+    },
+    "exp-318bd219be107c": {
+      "sourceHash": "b56d3cd3f674f27ac5970298c21cca7ddfcfbfaa26a93fd4d9a546bcb792ab5c",
+      "prompt": "인간 소장의 주요 해부학적 부분의 이름을 지정하십시오.",
+      "answers": [
+        "십이지장",
+        "제주넘",
+        "회장"
+      ]
+    },
+    "exp-0c10b1d327cd2f": {
+      "sourceHash": "4fb4e0bc0e8e3b8f5f2dce3b3800475a021f6ecb6399e8376842a0a7f55c25db",
+      "prompt": "혈구의 주요 분류를 말하시오.",
+      "answers": [
+        "적혈구",
+        "백혈구",
+        "혈소판"
+      ]
+    },
+    "exp-f13fb78dc9a3c2": {
+      "sourceHash": "b08a8b3bf50ff5564c4902f8efee37feea00f8b5d7fe807a10de3539b90e4f46",
+      "prompt": "ABO 혈액형의 이름을 지정합니다.",
+      "answers": [
+        "A",
+        "B",
+        "AB",
+        "O"
+      ]
+    },
+    "exp-531c776d101167": {
+      "sourceHash": "1f54b2f4f26a6f58764ad95ff94f7ed9151d763130e2ebe94a12ea0e6d20284b",
+      "prompt": "인간의 면역글로불린 종류를 말해보세요.",
+      "answers": [
+        "IgG",
+        "IgA",
+        "IgM",
+        "IgE",
+        "IgD"
+      ]
+    },
+    "exp-5f7922edf17138": {
+      "sourceHash": "02eb08c2969cb4884f48ac802bb158d683af53db0e5961570cb0f67fe418b632",
+      "prompt": "표피-진피-피하 모델에서 피부 층의 이름을 지정합니다.",
+      "answers": [
+        "표피",
+        "진피",
+        "피하"
+      ]
+    },
+    "exp-67ad32cf61d9d4": {
+      "sourceHash": "9ad16df1cd7c9e108181daf0e2d9dcdfaeb0e7cf705de6fcbaeffd7705ad3d90",
+      "prompt": "3쌍 모델에서 주요 타액선의 이름을 지정합니다.",
+      "answers": [
+        "이하선",
+        "턱밑",
+        "설하"
+      ]
+    },
+    "exp-379021f050a5a0": {
+      "sourceHash": "bb85c0f83e793460c27730a0496bc873784751df26e640b3802ca41b7b1489b5",
+      "prompt": "탄수화물-단백질-지방 삼중 영양소의 이름을 지정하세요.",
+      "answers": [
+        "탄수화물",
+        "단백질",
+        "지방"
+      ]
+    },
+    "exp-8e6f589f59e9bd": {
+      "sourceHash": "6fd63958743d3e78ece84d7442c19e935d4ac5ee74f808845cf6606039704c91",
+      "prompt": "지용성 비타민 중 하나를 문자로 명명하십시오.",
+      "answers": [
+        "A",
+        "D",
+        "E",
+        "K"
+      ]
+    },
+    "exp-6c0e1022eb8b2e": {
+      "sourceHash": "97999c0ffffc41369305d8b0fe918ff149a9d08c1e9df02e77ccbd6fbd6375e5",
+      "prompt": "세 개의 충전된 렙톤 중 하나의 이름을 말하십시오.",
+      "answers": [
+        "전자",
+        "무온",
+        "타우"
+      ]
+    },
+    "exp-724cc5241979f9": {
+      "sourceHash": "ff2da65a914c94269883059eab2212c52dc356795b9a8e1f53c5e509e951e5e9",
+      "prompt": "물리학의 기본적인 상호작용을 말해보세요.",
+      "answers": [
+        "중력",
+        "전자기학",
+        "강력한 상호 작용",
+        "약한 상호작용"
+      ]
+    },
+    "exp-e90f99aba6fd6d": {
+      "sourceHash": "0927cfdd8fc6634f1e6da443e2161d3b60be73d6fd1ea876a376b9455b08b0c1",
+      "prompt": "표준 3모드 모델에서 열 전달 모드의 이름을 지정합니다.",
+      "answers": [
+        "전도",
+        "대류",
+        "방사선"
+      ]
+    },
+    "exp-9770a193b59e03": {
+      "sourceHash": "3177e02918f17d8561ef536e3b486113ffd7e85643fea01519f0a423cdfea1d9",
+      "prompt": "공통 4상태 모델에서 물질의 상태를 명명합니다.",
+      "answers": [
+        "솔리드",
+        "액체",
+        "가스",
+        "플라즈마"
+      ]
+    },
+    "exp-2ba82613eda736": {
+      "sourceHash": "d9a01e6b5b485260bddc403d553d324bfb392544a1eae805970df3538955a372",
+      "prompt": "사람의 이름을 딴 SI 단위의 이름을 지정하고 힘, 에너지 또는 전력에 사용됩니다.",
+      "answers": [
+        "뉴턴",
+        "줄",
+        "와트"
+      ]
+    },
+    "exp-75c5fc581d5346": {
+      "sourceHash": "5dab6cb54197304fcae381fefaf36b41e4ba1a9091bac00144116b4d22f09429",
+      "prompt": "RGB 모델에서 빛의 기본 색상을 지정합니다.",
+      "answers": [
+        "레드",
+        "그린",
+        "블루"
+      ]
+    },
+    "exp-b7b2cfe76e9c38": {
+      "sourceHash": "1339f96b646083244f3c76d499dd7793ea1ffad44786704cb768b31a4712146c",
+      "prompt": "CMY 모델에서 감산 기본 색상의 이름을 지정합니다.",
+      "answers": [
+        "시안",
+        "마젠타",
+        "옐로우"
+      ]
+    },
+    "exp-fc80fcaa3b14a1": {
+      "sourceHash": "8113b36f3cc3d52f09e6f7f89a56aaccfa2b3883a31f69388404920be44aece5",
+      "prompt": "CMYK 인쇄 모델의 색상 구성 요소 이름을 지정합니다.",
+      "answers": [
+        "시안",
+        "마젠타",
+        "옐로우",
+        "블랙"
+      ]
+    },
+    "exp-e65e8fee3b51bf": {
+      "sourceHash": "dff8a54c7570bf3e5fe2ffc0406449bf119505eb6167153903f4733df78858d0",
+      "prompt": "고전적인 6개 기계 목록에서 심플머신의 유형을 지정하세요.",
+      "answers": [
+        "레버",
+        "풀리",
+        "휠 및 차축",
+        "경사면",
+        "웨지",
+        "나사"
+      ]
+    },
+    "exp-66450f8b1325f8": {
+      "sourceHash": "be998843100c16fac852b80e8951b55e3e9e33adec8ef1046b008500a5743fa2",
+      "prompt": "암석 순환에서 암석의 주요 유형을 말하십시오.",
+      "answers": [
+        "화성",
+        "퇴적암",
+        "변성"
+      ]
+    },
+    "exp-84574a7d2be2f9": {
+      "sourceHash": "d70846db8f3f2c3cd62167ece6d5b06c52d95b759c4936a404f236ffb2b66691",
+      "prompt": "3층 모델에서 지구의 주요 구성층 이름을 지정하세요.",
+      "answers": [
+        "크러스트",
+        "맨틀",
+        "코어"
+      ]
+    },
+    "exp-a4dba09cebf657": {
+      "sourceHash": "5d7e5cd7af7d5039f1ba259c8bf77e1097d2a7207e46d424db6f8d94b5c673c2",
+      "prompt": "5층 온도 모델에서 지구 대기층의 이름을 지정하세요.",
+      "answers": [
+        "대류권",
+        "성층권",
+        "중간권",
+        "열권",
+        "외기권"
+      ]
+    },
+    "exp-720e7830f12aa8": {
+      "sourceHash": "5fdfb65100f52d8ef9afc251346157c3806f427ab6e39a28ee830b0a2643397a",
+      "prompt": "P-S-Love-Rayleigh 분류에서 지진 본체파 또는 표면파의 유형을 지정합니다.",
+      "answers": [
+        "P파",
+        "S 웨이브",
+        "러브 웨이브",
+        "레일리 웨이브"
+      ]
+    },
+    "exp-c38881bbf4da5a": {
+      "sourceHash": "dacba1fdcefac6aab28c771946e9de04e0dae242296aeb29c460d752a8e2360f",
+      "prompt": "세 개의 밀란코비치 궤도 주기 중 하나의 이름을 말하십시오.",
+      "answers": [
+        "편심",
+        "경사도",
+        "세차"
+      ]
+    },
+    "exp-8202349595ba5f": {
+      "sourceHash": "f443b87bb703960bdd65354c4f6dae6bce97905da7bf6c03ae23c60c582f29ea",
+      "prompt": "이름이 '-us'로 끝나고 복합 접두사가 없는 세 가지 기존 클라우드 속 중 하나의 이름을 지정하세요.",
+      "answers": [
+        "적운",
+        "권운",
+        "스트라투스"
+      ]
+    },
+    "exp-6298ac6cd6ae8e": {
+      "sourceHash": "7779bcf7162ecd08fd5768047b19eb277e368ea73a1a2a11d36b5099346375c1",
+      "prompt": "10종 국제 클라우드 아틀라스(International Cloud Atlas)에서 클라우드 속의 이름을 지정합니다.",
+      "answers": [
+        "적운",
+        "권운",
+        "스트라투스",
+        "적란운",
+        "고적운",
+        "알토스트라투스",
+        "권적운",
+        "권층운",
+        "님보스트라투스",
+        "성층권"
+      ]
+    },
+    "exp-561a92d51bb8b3": {
+      "sourceHash": "1a130fff3b048deded645068bb22b0d95af8783068908ffa582fe55fe40a12e2",
+      "prompt": "인간 이외의 살아있는 유인원의 이름을 말해보세요.",
+      "answers": [
+        "침팬지",
+        "보노보",
+        "서부고릴라",
+        "동부 고릴라",
+        "보르네오오랑우탄",
+        "수마트라 오랑우탄",
+        "타파눌리 오랑우탄"
+      ]
+    },
+    "exp-103ad0e1f83a0a": {
+      "sourceHash": "2404765cea500dc10efff23a8aa9374f3628f0ee03ec94b365afcd964608c688",
+      "prompt": "살아있는 곰 종의 이름을 말해보세요.",
+      "answers": [
+        "북극곰",
+        "브라운 베어",
+        "자이언트 팬더",
+        "아메리카 흑곰",
+        "아시아 흑곰",
+        "썬베어",
+        "느림보곰",
+        "안경곰"
+      ]
+    },
+    "exp-a6314836776aa5": {
+      "sourceHash": "ae326a5efd30127dc198e9847bcf51de8963d7338f38bfc68fb4e6bf873781df",
+      "prompt": "Panthera속에 속하는 호랑이 크기 이하의 살아있는 고양이 종의 이름을 지정하십시오.",
+      "answers": [
+        "타이거",
+        "라이온",
+        "표범",
+        "재규어",
+        "눈표범"
+      ]
+    },
+    "exp-3d7ed6dc1ae07b": {
+      "sourceHash": "a826e4f298f29369b4beeed660064a612d3a66e4d05d5869404d8c4969f62bbb",
+      "prompt": "일반적인 영어 이름을 사용하여 Equus 속의 살아있는 종의 이름을 지정하십시오.",
+      "answers": [
+        "말",
+        "당나귀",
+        "평원 얼룩말",
+        "그레비의 얼룩말",
+        "마운틴 얼룩말",
+        "오나거",
+        "키앙"
+      ]
+    },
+    "exp-1e02eaef67df90": {
+      "sourceHash": "2eee0fb8e6fba59f3bd7568fb7aeb95c3d3f908f4760643e75dd3b3c9fa85a13",
+      "prompt": "살아있는 코뿔소 종의 이름을 말해보세요.",
+      "answers": [
+        "흰코뿔소",
+        "검은 코뿔소",
+        "인도 코뿔소",
+        "자바 코뿔소",
+        "수마트라 코뿔소"
+      ]
+    },
+    "exp-004b976447574c": {
+      "sourceHash": "60e8576cd25a25d3272beb7bdcd08fcb91de012347d2a4ee54f62eebdd72415c",
+      "prompt": "살아있는 바다거북의 이름을 말해보세요.",
+      "answers": [
+        "녹색바다거북",
+        "바다거북 바다거북",
+        "가죽등 바다거북",
+        "대모바다거북",
+        "올리브 리들리 바다거북",
+        "켐프각시바다거북",
+        "플랫백 바다거북"
+      ]
+    },
+    "exp-42625d5e91f127": {
+      "sourceHash": "632eb0c85936c497d000a2b73769e365d437bda2e2b5643ab0f5b0b944b49451",
+      "prompt": "현존하는 세 가지 코끼리 종 중 하나의 이름을 말하십시오.",
+      "answers": [
+        "아프리카 부시코끼리",
+        "아시아 코끼리",
+        "아프리카 숲 코끼리"
+      ]
+    },
+    "exp-68a7a24d19e4f1": {
+      "sourceHash": "667e2d60e3e29c6527f9817beef768166b17844c2ad0b05f548d08b5722f440c",
+      "prompt": "황제, 왕 또는 꼬마 펭귄 종의 이름을 일반적인 짧은 이름으로 지정하세요.",
+      "answers": [
+        "황제",
+        "킹",
+        "리틀"
+      ]
+    },
+    "exp-21f1653b1c695c": {
+      "sourceHash": "6688370d0e9d526b49c2362e19a457c6db02f8bd200d4f50f0f3c7dcc789018f",
+      "prompt": "아프리카 전통 사파리 '빅 파이브'의 구성원을 말해보세요.",
+      "answers": [
+        "라이온",
+        "코끼리",
+        "코뿔소",
+        "표범",
+        "버팔로"
+      ]
+    },
+    "exp-d95136f99cabb5": {
+      "sourceHash": "68bcb7bb1e880baf4526098f9d2bc85136b8c1e97cd07ead847fc03101a46234",
+      "prompt": "나비의 생애주기를 4단계 주기로 말해보세요.",
+      "answers": [
+        "계란",
+        "캐터필러",
+        "번데기",
+        "성인"
+      ]
+    },
+    "exp-c86c528ab53526": {
+      "sourceHash": "c4bc81d36960c744bcd4ff5d807add1172e7e7e79d265804e76602471bc4872d",
+      "prompt": "표준 3부분 모델에서 곤충의 신체 부위 이름을 지정하세요.",
+      "answers": [
+        "헤드",
+        "흉부",
+        "복부"
+      ]
+    },
+    "exp-02d2c890e1b3a5": {
+      "sourceHash": "458eed6d15328e0d6fcd00dc4fd8ee00594b7c6bdd1635774277ea76b7e52579",
+      "prompt": "전통적인 7등급 계층 구조에서 왕국과 종 사이의 분류학적 등급을 지정합니다.",
+      "answers": [
+        "문",
+        "클래스",
+        "주문",
+        "제품군",
+        "속"
+      ]
+    },
+    "exp-594f423a9101a5": {
+      "sourceHash": "78aef43079b70bddeda73245c8cfbb20ccd48a56b78b03de4bafa3c7219948ba",
+      "prompt": "살아있는 단공류 속의 이름을 지정하십시오.",
+      "answers": [
+        "오르니토르린쿠스",
+        "타키글로서스",
+        "자글로서스"
+      ]
+    },
+    "exp-1a03c925078a71": {
+      "sourceHash": "d2cc6f28fde3a60756dc425a9e54c2ab5074f649ec80487c29c5efb76a9d8dcd",
+      "prompt": "혈관 식물의 세 가지 주요 기관 중 하나를 말하십시오.",
+      "answers": [
+        "루트",
+        "줄기",
+        "리프"
+      ]
+    },
+    "exp-54159f79ce383f": {
+      "sourceHash": "884328f31faaa181090f7d33e427bf244cd8da5d18d7d7d7e29129739c20b249",
+      "prompt": "표준 4나선 모델에서 주요 꽃무늬 소용돌이의 이름을 지정합니다.",
+      "answers": [
+        "꽃잎",
+        "꽃받침",
+        "수술",
+        "카펠"
+      ]
+    },
+    "exp-8abebf39abf236": {
+      "sourceHash": "06792a38e021f1a7a61f2720cf1844e0d3ece84d3ef84c580f2f679f3989e9b9",
+      "prompt": "식물의 1차 분열조직 이름을 지정합니다.",
+      "answers": [
+        "프로토덤",
+        "지상 분열조직",
+        "전형성층"
+      ]
+    },
+    "exp-6441382fe03ea6": {
+      "sourceHash": "427e2740e7901496d7687d07220f097d9daef2ce7698a4be6e9c18408a490acc",
+      "prompt": "알려진 플라밍고 종의 이름을 말해보세요.",
+      "answers": [
+        "그레이터 플라밍고",
+        "레서 플라밍고",
+        "아메리칸 플라밍고",
+        "칠레 플라밍고",
+        "안데스 플라밍고",
+        "제임스의 플라밍고"
+      ]
+    },
+    "exp-e19c62195dc06e": {
+      "sourceHash": "8fbe5aa950f03d9594c22e4b779b6d2448b39081d6886f491e10524ee7688da3",
+      "prompt": "변의 길이에 따라 분류된 삼각형의 종류를 말해보세요.",
+      "answers": [
+        "등변",
+        "이등변",
+        "스케일린"
+      ]
+    },
+    "exp-cf6e2d75ef34ca": {
+      "sourceHash": "d73b7dc01e1f6c0a7df10fc288b5b2ed9a5c971fdaf25a598185ee3c04c0e916",
+      "prompt": "각도에 따라 분류된 삼각형의 종류를 말해보세요.",
+      "answers": [
+        "오른쪽",
+        "급성",
+        "둔감"
+      ]
+    },
+    "exp-27ce50957ef996": {
+      "sourceHash": "a96e1cbc91676fa106ad94cec712602f02c0f38c132c9a70def4c879557534a9",
+      "prompt": "사인-코사인-탄젠트 트리오에서 1차 삼각 함수의 이름을 지정하세요.",
+      "answers": [
+        "사인",
+        "코사인",
+        "탄젠트"
+      ]
+    },
+    "exp-602781b64ac91d": {
+      "sourceHash": "f26e3892f3c25727c4adac5a43caf2e226cc5a5bbfc3fcb92df680d8436c7533",
+      "prompt": "역삼각함수 이름을 지정하세요.",
+      "answers": [
+        "코시컨트",
+        "시컨트",
+        "코탄젠트"
+      ]
+    },
+    "exp-7f23e5008d9bf8": {
+      "sourceHash": "64672731c46c69751643730dee1a38edc1ae69de35b416d07a702179748c2b1b",
+      "prompt": "평균-중위수-모드 트리오의 중심 경향 측정값을 지정하세요.",
+      "answers": [
+        "평균",
+        "중앙값",
+        "모드"
+      ]
+    },
+    "exp-110e596c9130bf": {
+      "sourceHash": "6a524bcca97c0d951ae3ada5d3843093266ccf281ff03a15803ce86c08ab7b4e",
+      "prompt": "30보다 작은 양의 소수의 이름을 지정하세요.",
+      "answers": [
+        "2",
+        "3",
+        "5",
+        "7",
+        "11",
+        "13",
+        "17",
+        "19",
+        "23",
+        "29"
+      ]
+    },
+    "exp-ec3d4ef656ca1c": {
+      "sourceHash": "ebbd42c93e664475234ae507244d4c866884ccf3075bc69e5064576341c3f1ba",
+      "prompt": "0보다 크고 100보다 작은 완전제곱수의 이름을 지정하세요.",
+      "answers": [
+        "1",
+        "4",
+        "9",
+        "16",
+        "25",
+        "36",
+        "49",
+        "64",
+        "81"
+      ]
+    },
+    "exp-6b7963777aa401": {
+      "sourceHash": "9793e8079c9c93b9442a546bbcd34f241496e2e0e9f6bd84336318340b6b3b57",
+      "prompt": "양수인 24의 이름을 지정하세요.",
+      "answers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "6",
+        "8",
+        "12",
+        "24"
+      ]
+    },
+    "exp-66c11e2800c243": {
+      "sourceHash": "8c70929d0a45bb550d1b229e0373dca633704f52bb3edb1afb39ef73bbf7e1dc",
+      "prompt": "양수인 36의 이름을 지정하세요.",
+      "answers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "6",
+        "9",
+        "12",
+        "18",
+        "36"
+      ]
+    },
+    "exp-f46fe6644a0d0f": {
+      "sourceHash": "d7f739f44563e0b7e44a88f982189a531d937167ed60988037d578f11813c908",
+      "prompt": "소수이기도 한 십진수의 이름을 지정하세요.",
+      "answers": [
+        "2",
+        "3",
+        "5",
+        "7"
+      ]
+    },
+    "exp-29fc476bde3d76": {
+      "sourceHash": "25ea4d2311b1d98894cde1a9f6473902f13d63f96371e71748d2b836c42cd809",
+      "prompt": "1,000보다 작은 양의 큐브 번호를 지정하세요.",
+      "answers": [
+        "1",
+        "8",
+        "27",
+        "64",
+        "125",
+        "216",
+        "343",
+        "512",
+        "729"
+      ]
+    },
+    "exp-86d42ab49f7457": {
+      "sourceHash": "bfe67bdf04ac5991fb444dc12047f5b0881358cecfd582b5305a97c01208635e",
+      "prompt": "원-타원-포물선-쌍곡선 분류에서 원뿔 단면의 이름을 지정합니다.",
+      "answers": [
+        "서클",
+        "타원",
+        "포물선",
+        "쌍곡선"
+      ]
+    },
+    "exp-aa8508a0ebc10b": {
+      "sourceHash": "10bb76d372c3f42fe21d041fe29bcd1dba011c248fcb17c15e7c700d3dd783c4",
+      "prompt": "각도-라디안-그라디언트 트리오에서 각도의 단위를 지정합니다.",
+      "answers": [
+        "학위",
+        "라디안",
+        "그라디안"
+      ]
+    },
+    "exp-8f2eddcb852945": {
+      "sourceHash": "affe7eecb6309166c8dcf889f771b8abbcf339ec800610b5f01494b4594159b9",
+      "prompt": "3차원 직교 좌표축의 이름을 지정합니다.",
+      "answers": [
+        "X",
+        "Y",
+        "Z"
+      ]
+    },
+    "exp-aea51ce1d87fc6": {
+      "sourceHash": "4fe7b6d6f4e84f8bdccbfc19c04c4f069648d013333c61b09b2fa1942fa0db80",
+      "prompt": "4가지 유형 분류에서 2차원 유클리드 아이소메트리 유형을 명명합니다.",
+      "answers": [
+        "번역",
+        "회전",
+        "반사",
+        "글라이드 반사"
+      ]
+    },
+    "exp-d984d81c650783": {
+      "sourceHash": "383060ba1d3d192edaf9698318d7184c5491d18a3864b83a597789352c582067",
+      "prompt": "평면을 스스로 타일링할 수 있는 정다각형의 이름을 지정하세요.",
+      "answers": [
+        "정삼각형",
+        "광장",
+        "정육각형"
+      ]
+    },
+    "exp-5a23c730e993f4": {
+      "sourceHash": "a16b79c70bafa4a39294bf3c0364d2a9f305a63ec9002c6a34029bdb51d091fe",
+      "prompt": "클래식 US Monopoly 보드에서 시작 속성 색상 그룹의 이름을 지정합니다.",
+      "answers": [
+        "브라운",
+        "라이트 블루",
+        "핑크",
+        "오렌지",
+        "레드",
+        "옐로우",
+        "그린",
+        "진한 파란색"
+      ]
+    },
+    "exp-7decc034e51c27": {
+      "sourceHash": "fececac3b87b3f14cb249e6da10fbc94d449bd37aae02958be5f3d82a7480189",
+      "prompt": "고전적인 US Monopoly 보드에서 철도 이름을 지정하세요.",
+      "answers": [
+        "독서철도",
+        "펜실베니아 철도",
+        "B&O 철도",
+        "짧은 라인"
+      ]
+    },
+    "exp-92705b70f0fb95": {
+      "sourceHash": "3cb3252d95075822821c6c727e55e49c3204ab4dff77f2fb6372190d5ab4d429",
+      "prompt": "고전적인 US Monopoly 보드의 모서리 사각형 이름을 지정합니다.",
+      "answers": [
+        "이동",
+        "감옥",
+        "무료 주차",
+        "감옥에 가라"
+      ]
+    },
+    "exp-504d6d68cd8a2a": {
+      "sourceHash": "8f16f443eae644f0d0ca3b9435f3804a0adef8072c92e7a83e0ad10ac4febdf7",
+      "prompt": "6명의 용의자 단서 게임에서 용의자의 이름을 지정하세요.",
+      "answers": [
+        "미스 스칼렛",
+        "머스타드 대령",
+        "매화 교수",
+        "미스터 그린",
+        "화이트 부인",
+        "공작부인"
+      ]
+    },
+    "exp-aec6d3f3bae3a8": {
+      "sourceHash": "468d014d9073bfb46140b0fef07eb9276850e6fd8c683d61cfbabeaded9555ba",
+      "prompt": "고전적인 6개 무기 단서 게임에서 무기 이름을 지정하세요.",
+      "answers": [
+        "로프",
+        "촛대",
+        "칼",
+        "리볼버",
+        "리드 파이프",
+        "렌치"
+      ]
+    },
+    "exp-ba69edf391273b": {
+      "sourceHash": "8bd95d1ca9e7c9599a6de49f21f11c0ae8268520865e0fd5a0c5cccfdb6416a6",
+      "prompt": "클래식 단서 보드에 방 이름을 지정하세요.",
+      "answers": [
+        "주방",
+        "볼룸",
+        "온실",
+        "다이닝룸",
+        "당구장",
+        "라이브러리",
+        "라운지",
+        "홀",
+        "연구"
+      ]
+    },
+    "exp-7f8fbd9db1cdbf": {
+      "sourceHash": "e76a2e8e649e91beeb4b079fe2bef8ef7b56c30a9ec23b434382fc3ae7fcfd95",
+      "prompt": "단일 문자 이름으로 표준 테트로미노의 이름을 지정합니다.",
+      "answers": [
+        "I",
+        "O",
+        "T",
+        "S",
+        "Z",
+        "J",
+        "L"
+      ]
+    },
+    "exp-bd69cab1efdd39": {
+      "sourceHash": "5ddca3ca2760cd2be44f2d715da07f64a411c37ac7613d3df220a9d2c269cada",
+      "prompt": "원래 Pac-Man 아케이드 게임에서 유령의 영어 별명을 사용하여 이름을 지정하세요.",
+      "answers": [
+        "블링키",
+        "핑키",
+        "잉키",
+        "클라이드"
+      ]
+    },
+    "exp-b4579ba525cea0": {
+      "sourceHash": "fbab4197a7e98999111ea21e68c2426269c04e42aa54f744487aa65c3d11fa0f",
+      "prompt": "포켓몬 레드와 블루에서 원래 스타팅 포켓몬 종의 이름을 지정하세요.",
+      "answers": [
+        "참맨더",
+        "꼬부기",
+        "이상해씨"
+      ]
+    },
+    "exp-34f7832aa450ed": {
+      "sourceHash": "a84c31dea116970c7f129699d66cadd892412f49a4665bbf8f80e7e873eccfdf",
+      "prompt": "원래 관동 전설적인 새 트리오의 멤버를 말해보세요.",
+      "answers": [
+        "아르티쿠노",
+        "잽도스",
+        "몰트레스"
+      ]
+    },
+    "exp-3c4d0f7df4d54b": {
+      "sourceHash": "fa778dd73ff883eaa79340c798054264746ec0cb0f72151052b8815c72ded8cb",
+      "prompt": "포켓몬스터 골드, 실버에 등장한 전설적인 야수 3인방의 멤버를 말해보세요.",
+      "answers": [
+        "라이코우",
+        "엔테이",
+        "스이쿤"
+      ]
+    },
+    "exp-4bbe21d3a296bd": {
+      "sourceHash": "73554088ae80a927deffb00317869f255af6b45c8acff313653d67e39452a3c7",
+      "prompt": "1세대에 도입된 Eevee 진화의 이름을 지정하세요.",
+      "answers": [
+        "바포레온",
+        "졸테온",
+        "플라레온"
+      ]
+    },
+    "exp-1ceb161098faa8": {
+      "sourceHash": "3033d8de3a1e8789fd675a703f4d1cd11e731564240deb056c619367220f85b3",
+      "prompt": "1992년 원작 Super Mario Kart에서 플레이 가능한 캐릭터의 이름을 지정하세요.",
+      "answers": [
+        "마리오",
+        "루이지",
+        "피치 공주",
+        "요시",
+        "바우저",
+        "두꺼비",
+        "동키콩 주니어",
+        "쿠파 트로파"
+      ]
+    },
+    "exp-81758f0c0fbe22": {
+      "sourceHash": "0107501ced7abc3e38bbeb98ad0d7bbd0bbb4bb85e1e68b325284b0a258eb459",
+      "prompt": "1999년 Nintendo 64용 Super Smash Bros.에서 플레이 가능한 오리지널 전투기의 이름을 지정하세요.",
+      "answers": [
+        "마리오",
+        "동키콩",
+        "링크",
+        "사무스",
+        "요시",
+        "커비",
+        "폭스",
+        "피카츄",
+        "루이지",
+        "캡틴 팔콘",
+        "네스",
+        "지글리퍼프"
+      ]
+    },
+    "exp-63b45886fe5a37": {
+      "sourceHash": "fc36285cc4b53d4a985760df4a3bfb34c38729d2bd2a651275b64afd67479aa0",
+      "prompt": "폰 프로모션 선택으로 허용되는 표준 체스 말의 이름을 지정하세요.",
+      "answers": [
+        "퀸",
+        "루크",
+        "비숍",
+        "기사"
+      ]
+    },
+    "exp-17760d3e7c406a": {
+      "sourceHash": "dcb127a6aa3bb2cd3f14e54f5e030d13fc8e94a335c214ac560a15a70a55c9ab",
+      "prompt": "표준 가위바위보의 손 모양을 말해보세요.",
+      "answers": [
+        "락",
+        "종이",
+        "가위"
+      ]
+    },
+    "exp-2a354019aff8af": {
+      "sourceHash": "2905be14a403a5967c48d828644ac2de0bfb792de0ab56d187f58961508f04a1",
+      "prompt": "가위바위보-도마뱀-스팍의 손 모양을 말해보세요.",
+      "answers": [
+        "락",
+        "종이",
+        "가위",
+        "도마뱀",
+        "스팍"
+      ]
+    },
+    "exp-d507a4e3baad4f": {
+      "sourceHash": "03332c23424924c52e2ddfe551b0bbbe61d8b479f6019b8939a07ce2b4528f11",
+      "prompt": "클래식 Yahtzee 스코어카드의 하단 섹션에 카테고리 이름을 지정하세요.",
+      "answers": [
+        "쓰리 오브 어 카인드",
+        "포 오브 어 카인드",
+        "풀하우스",
+        "스몰 스트레이트",
+        "라지 스트레이트",
+        "Yahtzee",
+        "찬스"
+      ]
+    },
+    "exp-a14ca6c5f22115": {
+      "sourceHash": "fbeec1c397a7273d543b0c3d7cd5ebb883558809c9cc0fde67a7336f19c84e6d",
+      "prompt": "표준 영어 스크래블에서 최소 8포인트에 해당하는 문자의 이름을 지정하세요.",
+      "answers": [
+        "Q",
+        "Z",
+        "J",
+        "X"
+      ]
+    },
+    "exp-ea0ac3453f7723": {
+      "sourceHash": "edcb31ffe3b3f0191c191a2087b0cc62d009d9d27ad1960df0b1460c7b85e57e",
+      "prompt": "비틀즈 멤버의 이름을 말해보세요.",
+      "answers": [
+        "존 레논",
+        "폴 매카트니",
+        "조지 해리슨",
+        "링고 스타"
+      ]
+    },
+    "exp-22662e586739db": {
+      "sourceHash": "94b19721fc074d500693f2ddc5e2234ed642ed0c39bcdc6fd154dd6afa285097",
+      "prompt": "ABBA 멤버의 이름을 알려주세요.",
+      "answers": [
+        "아그네타 팔츠코그",
+        "비요른 울바에우스",
+        "베니 앤더슨",
+        "애니프리드 린스타드"
+      ]
+    },
+    "exp-f854e8cfdd4736": {
+      "sourceHash": "07ce6ad3f775ffd153c84f7b35e3d04f98dfabcba42738e954de78195d9c614b",
+      "prompt": "무대 별명으로 Spice Girl의 이름을 지정하세요.",
+      "answers": [
+        "베이비 스파이스",
+        "무서운 향신료",
+        "스포티 스파이스",
+        "진저 스파이스",
+        "포쉬 스파이스"
+      ]
+    },
+    "exp-5cef970df77282": {
+      "sourceHash": "dd110a521295af34647720d98b39efa945db1c14a551d9712e69b4dcefccbeb9",
+      "prompt": "퀸의 클래식 4인 라인업 멤버를 말해보세요.",
+      "answers": [
+        "프레디 머큐리",
+        "브라이언 메이",
+        "로저 테일러",
+        "존 디콘"
+      ]
+    },
+    "exp-8f6ee067a7aadd": {
+      "sourceHash": "cee2219082ebc441584b38377ff5873ee40d8615eddbcb7863b6af15d8bac186",
+      "prompt": "표준 SATB 합창단의 성악 파트 이름을 지정하세요.",
+      "answers": [
+        "소프라노",
+        "알토",
+        "테너",
+        "베이스"
+      ]
+    },
+    "exp-5714df3d21662e": {
+      "sourceHash": "6af396445171048a827e7c0899682659ee63e5ecfe572cacf792ced8b659d954",
+      "prompt": "비발디 사계의 무브먼트를 시즌 제목으로 명명하세요.",
+      "answers": [
+        "봄",
+        "여름",
+        "가을",
+        "겨울"
+      ]
+    },
+    "exp-84c031852c12b7": {
+      "sourceHash": "d27ac12a8824c7b52f4102fdda7efe8a4c8ed43f10bb6d1c798e8e697deca48f",
+      "prompt": "모차르트의 다 폰테 3부작 중 오페라 이름을 지정하세요.",
+      "answers": [
+        "피가로의 결혼",
+        "돈 조반니",
+        "코시팬투테"
+      ]
+    },
+    "exp-74aee2e4dd4aed": {
+      "sourceHash": "13a676bc4e6a3fe9fd098d758f357529e4bc87a496008993ed8124c0b49f29f0",
+      "prompt": "바그너의 링 사이클에서 완전한 오페라의 이름을 지정하십시오.",
+      "answers": [
+        "다스 라인골드",
+        "다이워커",
+        "지그프리트",
+        "고터댐머룽"
+      ]
+    },
+    "exp-1806da5f1883f7": {
+      "sourceHash": "a78aeef3713584d2d0ce019e9cb1ead84fd8d1d175c44bd6d04560f806068877",
+      "prompt": "클래식 오케스트라 목관악기 섹션에서 표준이 되는 목관악기의 이름을 지정하세요.",
+      "answers": [
+        "플루트",
+        "오보에",
+        "클라리넷",
+        "바순"
+      ]
+    },
+    "exp-5bdcef26fda16d": {
+      "sourceHash": "37b349e133f57d4cd180c7418b345df18eb472060a93e183bdb81eb5285078f5",
+      "prompt": "심포니 오케스트라의 표준 금관악기 이름을 지정하세요.",
+      "answers": [
+        "트럼펫",
+        "트롬본",
+        "프렌치 호른",
+        "튜바"
+      ]
+    },
+    "exp-e2e2c154b693c5": {
+      "sourceHash": "c3afcc0eb026f3de11f665589f4ad7e7876832cde5735034968e573cc588d515",
+      "prompt": "표준 튜닝의 표준 6현 기타 현에 음표 문자로 이름을 지정합니다.",
+      "answers": [
+        "E",
+        "A",
+        "D",
+        "G",
+        "B"
+      ]
+    },
+    "exp-8b2c37c04a5c35": {
+      "sourceHash": "eb7740e01bed8b21beff7a38b7b597e20f2ebd80da34227a8238e37dc4b0901a",
+      "prompt": "오리지널 Destiny's Child 4인 녹음 라인업의 멤버를 말해보세요.",
+      "answers": [
+        "비욘세 놀스",
+        "켈리 롤랜드",
+        "라타비아 로버슨",
+        "르토야 루켓"
+      ]
+    },
+    "exp-5f43275b7d3ec7": {
+      "sourceHash": "325347ec5c33dcab68f5efac1c358cd65f1d5a0033bc9dd1fb061578fd11f0fe",
+      "prompt": "Nirvana의 Nevermind 시대 트리오 멤버를 말해보세요.",
+      "answers": [
+        "커트 코베인",
+        "데이브 그롤",
+        "크리스 노보셀릭"
+      ]
+    },
+    "exp-63cdf2a88c49ca": {
+      "sourceHash": "60d12f666fb1b1b49df9ebd00299f4a838de30d9b0c26c1a9aaa65245c122a31",
+      "prompt": "Green Day의 클래식 트리오 멤버를 말해보세요.",
+      "answers": [
+        "빌리 조 암스트롱",
+        "마이크 던트",
+        "트레 쿨"
+      ]
+    },
+    "exp-17b0f71f59c2ed": {
+      "sourceHash": "6e58c6def9b2e1fecc1055a932ce7547d0dbe1fba7c4db1a15c677dae28a569f",
+      "prompt": "Blink-182의 국가 관장 라인업 멤버 중 한 명을 지명하세요.",
+      "answers": [
+        "마크 호퍼스",
+        "톰 드롱지",
+        "트래비스 바커"
+      ]
+    },
+    "exp-1b5c3acf8fc79c": {
+      "sourceHash": "a7de54fbf46d5a9539e268efbc2fde49e747d1b6a2c07d4e368ced62e069791a",
+      "prompt": "원작 백 투 더 퓨처 3부작에 등장하는 영화의 이름을 지정하세요.",
+      "answers": [
+        "백 투 더 퓨쳐",
+        "백 투 더 퓨쳐 2부",
+        "백 투 더 퓨쳐 3부"
+      ]
+    },
+    "exp-109e44e6b8208e": {
+      "sourceHash": "8050136d740c4ee00785c5ca0bf642699827fc3524dfed61ef462d373e4cfd82",
+      "prompt": "피터 잭슨의 반지의 제왕 3부작에 나오는 영화 이름을 지정해 보세요.",
+      "answers": [
+        "반지 원정대",
+        "두 개의 탑",
+        "왕의 귀환"
+      ]
+    },
+    "exp-a39b8e4f1a9584": {
+      "sourceHash": "369de53ae135cc4f21b1864850df5e64510a716527222f0f74b24754bdc2250a",
+      "prompt": "피터 잭슨의 호빗 3부작 영화 이름을 지정해 보세요.",
+      "answers": [
+        "예상치 못한 여정",
+        "스마우그의 폐허",
+        "다섯군대 전투"
+      ]
+    },
+    "exp-352fa86228e2f6": {
+      "sourceHash": "2b2518b4c24cf73c9f8ac9084f5b78c28cee58b0cf36d52122be4d3e577a1add",
+      "prompt": "오리지널 스타워즈 3부작에 나오는 영화의 이름을 지정하세요.",
+      "answers": [
+        "새로운 희망",
+        "제국의 역습",
+        "제다이의 귀환"
+      ]
+    },
+    "exp-7e9290b077a9a7": {
+      "sourceHash": "9cf7cb6121d6fce5472b4de909d469197f269c58b5e70b7686c9fa76f7188f10",
+      "prompt": "스타워즈 프리퀄 3부작에 나오는 영화의 이름을 지정하세요.",
+      "answers": [
+        "보이지 않는 위협",
+        "클론의 공격",
+        "시스의 복수"
+      ]
+    },
+    "exp-5db79f898e3903": {
+      "sourceHash": "d1e2085fc113d7b4838620361c289e1c86560b3cecbbc1ba7e926cea43acb69b",
+      "prompt": "스타워즈 속편 3부작에 나오는 영화의 이름을 지정하세요.",
+      "answers": [
+        "깨어난 포스",
+        "라스트 제다이",
+        "라이즈 오브 스카이워커"
+      ]
+    },
+    "exp-808f5333394c23": {
+      "sourceHash": "2c016fde8694d3eace4a479a78baa67daa796e127be6cfee968ea43400b22364",
+      "prompt": "첫 번째 해리포터 영화에 등장하는 3인 메인 트리오의 멤버 이름을 말해보세요.",
+      "answers": [
+        "해리포터",
+        "론 위즐리",
+        "헤르미온느 그레인저"
+      ]
+    },
+    "exp-51ea6f4d2e8f4d": {
+      "sourceHash": "d91d9b9edd11208e90e65d5775926475e661fa12405bc9eec7f0d52051b306f2",
+      "prompt": "호그와트 기숙사 이름을 지정하세요.",
+      "answers": [
+        "그리핀도르",
+        "슬리데린",
+        "래번클로",
+        "후플푸프"
+      ]
+    },
+    "exp-35ffa743710a00": {
+      "sourceHash": "35cd5bc054409070ec0b0878b1f9c6053a318c2aa1ba2067ae4eaeca2e8ceb1e",
+      "prompt": "이름, 성 또는 전체 이름을 사용하여 호그와트 창립자의 이름을 지정하세요.",
+      "answers": [
+        "고드릭 그리핀도르",
+        "살라자르 슬리데린",
+        "로웨나 래번클로",
+        "헬가 후플푸프"
+      ]
+    },
+    "exp-87f8e1915a7d91": {
+      "sourceHash": "36f933ed6f566acb0c8fbef78bc30d48aa7a301201af13153e80046e5a69e201",
+      "prompt": "해리포터의 죽음의 성물 이름을 지정합니다.",
+      "answers": [
+        "장로 지팡이",
+        "부활석",
+        "투명 망토"
+      ]
+    },
+    "exp-5ad321a330b474": {
+      "sourceHash": "7ed7e8e1eff6e0cb03ade3c8d3eba522892edcdaca1889a308e1a53f1dbf327b",
+      "prompt": "해리포터에 나오는 용서할 수 없는 저주의 이름을 지정하세요.",
+      "answers": [
+        "아바다 케다브라",
+        "크루시오",
+        "임페리오"
+      ]
+    },
+    "exp-9b3b3e1dff2ded": {
+      "sourceHash": "0bf4b31c8857a7961144d9d919a29917c86d5141fd66d00e20138e0a5d955aa6",
+      "prompt": "1984년 영화에 등장한 오리지널 고스트버스터즈의 4인조 팀 멤버 중 한 명을 말해보세요.",
+      "answers": [
+        "피터 Venkman",
+        "레이 스탠츠",
+        "에곤 스펭글러",
+        "윈스턴 제드모어"
+      ]
+    },
+    "exp-7723f5f9155fba": {
+      "sourceHash": "65c869130407629743a595e73ee73e21474be7e9d5eb22370886b2b028e312ab",
+      "prompt": "Pixar의 The Incredibles에 등장하는 Parr 가족 구성원의 이름을 말해보세요.",
+      "answers": [
+        "밥 파",
+        "헬렌 파",
+        "바이올렛 파",
+        "대시 파",
+        "잭잭 파"
+      ]
+    },
+    "exp-7f8256178a0eb4": {
+      "sourceHash": "8f1b154e47c4aa05e3ec1b2b684d13c6962ef4228e426e541f6a282ef68cab8f",
+      "prompt": "Pixar의 2015년 오리지널 인사이드 아웃의 주요 감정팀 멤버를 말해보세요.",
+      "answers": [
+        "조이",
+        "슬픔",
+        "분노",
+        "공포",
+        "혐오감"
+      ]
+    },
+    "exp-24515ae2107fb6": {
+      "sourceHash": "98b92b6edc76433d07c36e1607800c9a8209b29646e140623622e3bafd7ce4b0",
+      "prompt": "오리지널 아이스 에이지 영화에 등장하는 주요 영웅 3인방의 이름을 말해보세요.",
+      "answers": [
+        "매니",
+        "시드",
+        "디에고"
+      ]
+    },
+    "exp-e75d11a2b0afe6": {
+      "sourceHash": "c3758562cb10ab2d5b32e230c62db7213d85ccb77e64aa24463dd0eba5fdb604",
+      "prompt": "크리스토퍼 놀란 감독의 배트맨 3부작에 나오는 영화 이름을 지정해 보세요.",
+      "answers": [
+        "배트맨 비긴즈",
+        "다크 나이트",
+        "다크 나이트 라이즈"
+      ]
+    },
+    "exp-15a98146c671ad": {
+      "sourceHash": "11789fe9e9f23c47e361cfc5d0b867d21136877c2ea964a23ca634eaf5b21cfd",
+      "prompt": "2012년 영화 '어벤저스'에서 뭉친 6명의 어벤져스 중 한 명을 말해보세요.",
+      "answers": [
+        "아이언맨",
+        "캡틴 아메리카",
+        "토르",
+        "헐크",
+        "블랙 위도우",
+        "호크아이"
+      ]
+    },
+    "exp-6a159d0f959af9": {
+      "sourceHash": "dde1ad5f2abba15742dff425c7be9376da2fb8681047c05595283781acbd7a2e",
+      "prompt": "공식 유형에 따라 인피니티 스톤의 이름을 지정하세요.",
+      "answers": [
+        "스페이스",
+        "시간",
+        "마인드",
+        "전원",
+        "현실",
+        "소울"
+      ]
+    },
+    "exp-896822c8c7354e": {
+      "sourceHash": "70c8c751da0787e99c8b4ffcf51ee355686bda72d85610271f94d649cf59f208",
+      "prompt": "톨킨의 이야기에 나오는 반지 원정대 멤버의 이름을 말해보세요.",
+      "answers": [
+        "프로도",
+        "샘",
+        "간달프",
+        "아라곤",
+        "레골라스",
+        "김리",
+        "보로미르",
+        "메리",
+        "피핀"
+      ]
+    },
+    "exp-542c9b81b14330": {
+      "sourceHash": "91b8a7c0e149f0cbf093977c77e93df907769c4c9dfd7ddc4c6e58a18432e4da",
+      "prompt": "나니아 연대기에서 Pevensie 형제의 이름을 지정하세요.",
+      "answers": [
+        "루시",
+        "피터",
+        "수잔",
+        "에드먼드"
+      ]
+    },
+    "exp-c030aadc93ef46": {
+      "sourceHash": "d88a28cce2aa25f54928fbbdc279d38ffddfcb1aff8c3211862ff7c62cca4332",
+      "prompt": "작은 아씨들에서 3월의 자매 이름을 지어주세요.",
+      "answers": [
+        "조",
+        "메그",
+        "베스",
+        "에이미"
+      ]
+    },
+    "exp-b5e0959d26a202": {
+      "sourceHash": "ceb920651ec6c9c298176e9a575e8adad873172f1a28e6dccd750dc74f5295ce",
+      "prompt": "일련의 불행한 사건에서 Baudelaire 형제의 이름을 지정하세요.",
+      "answers": [
+        "바이올렛",
+        "클라우스",
+        "써니"
+      ]
+    },
+    "exp-e414ed02a85d52": {
+      "sourceHash": "e2cc13200d8f9296e9d1bee39dbc51bbb06b86b01fe88ecde54ebda65866f7e4",
+      "prompt": "Suzanne Collins의 오리지널 Hunger Games 3부작 소설에 이름을 붙여 보세요.",
+      "answers": [
+        "헝거 게임",
+        "불이 붙다",
+        "모킹제이"
+      ]
+    },
+    "exp-06bc81154abb9c": {
+      "sourceHash": "59802a89aac6f5c966384b1df481cea2750f5d5cfa2f7c5f276b1ba5e830e898",
+      "prompt": "Philip Pullman의 His Dark Materials 3부작 중 책 이름을 지정하세요.",
+      "answers": [
+        "북극광",
+        "미묘한 칼",
+        "호박색 망원경"
+      ]
+    },
+    "exp-7d60b60e8764e1": {
+      "sourceHash": "edc06082350c0539d10e46d437fe4573d27703a1255914ddb2061f8463fef371",
+      "prompt": "Dumas의 칭호에 이름이 붙은 삼총사 중 한 사람의 이름을 말하십시오.",
+      "answers": [
+        "아토스",
+        "포르토스",
+        "아라미스"
+      ]
+    },
+    "exp-79a1c9f69d9da4": {
+      "sourceHash": "e6c1e963bbde816f5c29e747ba88eec291c59ef74f30aa08f8f47590e3958823",
+      "prompt": "조지 오웰(George Orwell)의 1984년에 등장하는 중앙 디스토피아 슈퍼국가의 이름을 지정하세요.",
+      "answers": [
+        "오세아니아",
+        "유라시아",
+        "이스트아시아"
+      ]
+    },
+    "exp-6c12becee2d527": {
+      "sourceHash": "863991aeea7a79b58a3f59ff77fb1ba9ab0c77c4823efbf0ff61ea1500c8d7d1",
+      "prompt": "742 Evergreen Terrace에 살고 있는 Simpson 가족 구성원의 이름을 말해보세요.",
+      "answers": [
+        "호머",
+        "마지",
+        "바트",
+        "리사",
+        "매기"
+      ]
+    },
+    "exp-0b1d2f30317be7": {
+      "sourceHash": "d8baee1298cc4f5781a8bf0f00754fd937efcff976739427b6a8b4bd5027dfbb",
+      "prompt": "6인조 프렌즈 앙상블의 주인공을 말해보세요.",
+      "answers": [
+        "레이첼 그린",
+        "모니카 겔러",
+        "피비 부페이",
+        "조이 트리비아니",
+        "챈들러 빙",
+        "로스 겔러"
+      ]
+    },
+    "exp-557bc3e92f19a1": {
+      "sourceHash": "35223ad199045ab49e2b22689d3136842d75082f4ccdd199d8bb6bb5e4c2439a",
+      "prompt": "원래 Scooby-Doo Mystery Inc. 갱단의 구성원을 말해보세요.",
+      "answers": [
+        "스쿠비두",
+        "섀기 로저스",
+        "프레드 존스",
+        "다프네 블레이크",
+        "벨마 딘클리"
+      ]
+    },
+    "exp-d2d1687bda8934": {
+      "sourceHash": "31be6215ec0cef961036c02f5b256c7a96225a7df6a1c1e98849226aa907be5a",
+      "prompt": "파워퍼프걸 중 한 명을 말해보세요.",
+      "answers": [
+        "블라썸",
+        "버블",
+        "버터컵"
+      ]
+    },
+    "exp-ba5277a9732cb1": {
+      "sourceHash": "f272ddfb10adfad62e92fb17c9c011ac51a2fc8a28aa49e2e34f362e24cfa971",
+      "prompt": "오리지널 4인조 Teletubbies 출연진의 주인공 이름을 지정하세요.",
+      "answers": [
+        "틴키 윙키",
+        "딥시",
+        "라라라",
+        "포"
+      ]
+    },
+    "exp-5fdbecfd771592": {
+      "sourceHash": "0770f895cc8e5ecc5829e76a99d4be0ba903e848a1be074fddc3be265ccac5e0",
+      "prompt": "South Park의 주요 소년 4명 중 한 명을 말해보세요.",
+      "answers": [
+        "스탠 마쉬",
+        "카일 브로플로브스키",
+        "에릭 카트먼",
+        "케니 맥코믹"
+      ]
+    },
+    "exp-5d8cf076e79381": {
+      "sourceHash": "dd801723ed6645835d6ca55bfde075aae0b2b00e32b4ab84387fd345876ef3f3",
+      "prompt": "Donald Duck의 세 조카 중 한 명의 이름을 말해보세요.",
+      "answers": [
+        "휴이",
+        "듀이",
+        "루이"
+      ]
+    },
+    "exp-abfa94f07349c4": {
+      "sourceHash": "c8715ec4df55937bc13bd7e89c5ad0d794b5a959cd05693327015ca68386a073",
+      "prompt": "Alvin과 Chipmunks의 메인 트리오 멤버 이름을 말해보세요.",
+      "answers": [
+        "앨빈",
+        "사이먼",
+        "테오도르"
+      ]
+    },
+    "exp-23c62e312b7543": {
+      "sourceHash": "02cfed77049f85e403d1df78e43b2fe4ba8d59dfe776315d0b1ee42702b75859",
+      "prompt": "Chipettes의 메인 트리오 멤버를 말해보세요.",
+      "answers": [
+        "브리타니",
+        "자네트",
+        "엘레노어"
+      ]
+    },
+    "exp-59477562e88045": {
+      "sourceHash": "6cd07028fc26d5e2bd2d36ff96128781b340c08690c11db0566b3e7477b2863f",
+      "prompt": "그리스 신화에 나오는 운명을 말해보세요.",
+      "answers": [
+        "클로토",
+        "라케시스",
+        "아트로포스"
+      ]
+    },
+    "exp-85b443a4deac56": {
+      "sourceHash": "148fd475f521180fea8476ef6e0b3ec472a0b9a06d311ab030d434604a0c9409",
+      "prompt": "그리스 고르곤의 이름을 지정하세요.",
+      "answers": [
+        "메두사",
+        "스테노",
+        "에우리알레"
+      ]
+    },
+    "exp-ad4413c881654f": {
+      "sourceHash": "44e0cd4738b7569941518aa503b926935bc197221f5a259ab3629f8fd2100980",
+      "prompt": "그리스 퓨리(Erinys)의 이름을 개인 이름으로 지정하세요.",
+      "answers": [
+        "알렉토",
+        "메가이라",
+        "티시폰"
+      ]
+    },
+    "exp-1443e3c6da573d": {
+      "sourceHash": "0662d340771f905c7581fb4f94f42888145a23e7c52620d9d042427642660b12",
+      "prompt": "전통적인 9인 그룹에서 그리스 뮤즈의 이름을 지정하세요.",
+      "answers": [
+        "칼리오페",
+        "클리오",
+        "에라토",
+        "에우테르페",
+        "멜포메네",
+        "다극성",
+        "테르프시코레",
+        "탈리아",
+        "우라니아"
+      ]
+    },
+    "exp-592121767fd0f9": {
+      "sourceHash": "40fbf48c60e37a4d1b8e145e3a4af6f44bad1219bed744ffc84954c11e050903",
+      "prompt": "우주를 나눈 세 명의 주요 그리스 형제 중 한 사람의 이름을 말하십시오.",
+      "answers": [
+        "제우스",
+        "포세이돈",
+        "하데스"
+      ]
+    },
+    "exp-8e207039707a77": {
+      "sourceHash": "26a1dae8987d6f696023485d417ef9e87c2e692b1cfb312d11d8207a8b497ca5",
+      "prompt": "북유럽 신화에서 일반적으로 명명되는 세 가지 Norns 중 하나를 말하십시오.",
+      "answers": [
+        "우르드",
+        "베르단디",
+        "스컬드"
+      ]
+    },
+    "exp-e1baf50050622c": {
+      "sourceHash": "8e1659a2ad794cd73624ec90b7be906e4e6e12fb1337f3a58a282d084162e106",
+      "prompt": "띠에 나오는 생물의 이름을 말해보세요.",
+      "answers": [
+        "쥐",
+        "황소",
+        "타이거",
+        "토끼",
+        "드래곤",
+        "스네이크",
+        "말",
+        "염소",
+        "원숭이",
+        "수탉",
+        "개",
+        "돼지"
+      ]
+    },
+    "exp-c7934073797d5f": {
+      "sourceHash": "4c9f32bf3d98e64187a22c4812a31e4a27aae5c5585498653229c76fbcbdddff",
+      "prompt": "세 마리 현명한 원숭이 중 하나가 피하는 행동으로 이름을 지정하세요.",
+      "answers": [
+        "악을 보지 말라",
+        "악한 소리는 듣지 마세요",
+        "악한 말은 하지 마세요"
+      ]
+    },
+    "exp-db88c68c97033c": {
+      "sourceHash": "7fbda5b4b0f4301d159d9d93553d6ecbe5f34c9b57a2f7526aa8d1ec84b35933",
+      "prompt": "한자-히라가나-가타카나 트리오로 전통적인 일본 문자의 이름을 지정합니다.",
+      "answers": [
+        "한자",
+        "히라가나",
+        "가타카나"
+      ]
+    },
+    "exp-07b2012f18e26a": {
+      "sourceHash": "6ec3cbd428e65664ef59fcfa13b45aa9c8ffafaf31640d269af8a60050908b7c",
+      "prompt": "전통적인 십대 돌연변이 닌자 거북이 명명 4중주에서 아티스트의 이름을 지정하세요.",
+      "answers": [
+        "레오나르도 다빈치",
+        "미켈란젤로",
+        "라파엘",
+        "도나텔로"
+      ]
+    },
+    "exp-4d923a977be1fc": {
+      "sourceHash": "bb6bd83e578773b921bd6a676c1e0e2ec3bbfdd9ac216b6bc973e029076d27a2",
+      "prompt": "전통적인 RYB 화가 모델의 기본 색상을 지정하십시오.",
+      "answers": [
+        "레드",
+        "옐로우",
+        "블루"
+      ]
+    },
+    "exp-056650edd1977e": {
+      "sourceHash": "2813113e95759409fc5e22f7671e340afdcce5e061b018a1a101348a16fcc6be",
+      "prompt": "전통적인 RYB 화가 모델의 보조 색상을 지정하세요.",
+      "answers": [
+        "오렌지",
+        "그린",
+        "퍼플"
+      ]
+    },
+    "exp-9ed2d015413db1": {
+      "sourceHash": "4632e98c1a72bcff8a7e9145375f507b24eaf6c034ee706d6ae380806118d48f",
+      "prompt": "원래의 세 가지 순서 목록에서 고전 그리스 건축 순서의 이름을 지정하십시오.",
+      "answers": [
+        "도릭",
+        "이온",
+        "코린트식"
+      ]
+    },
+    "exp-f949a8f251bc9b": {
+      "sourceHash": "2b338e828808b353a291e919a7f7afadf04516c8758992479edfb8111cb4c2d7",
+      "prompt": "아키텍처의 고전적인 5차 목록에서 순서를 지정하세요.",
+      "answers": [
+        "도릭",
+        "이온",
+        "코린트식",
+        "토스카나",
+        "복합"
+      ]
+    },
+    "exp-bf80736cf98ad6": {
+      "sourceHash": "057473718a525c98c302d948b1599d2034c86dcc8a5ec10ec5fbfd810857b97b",
+      "prompt": "가끔 모음인 Y를 제외한 영어 모음 문자를 명명합니다.",
+      "answers": [
+        "A",
+        "E",
+        "I",
+        "O",
+        "U"
+      ]
+    },
+    "exp-3279dee597151a": {
+      "sourceHash": "392b2dc30d15a91772a736ef20809b52db2cd812b656366c433164d7397797dc",
+      "prompt": "모음 문자로 시작하는 NATO 음성 알파벳의 단어 이름을 지정하세요.",
+      "answers": [
+        "알파",
+        "에코",
+        "인도",
+        "오스카",
+        "유니폼"
+      ]
+    },
+    "exp-b4dc1e8aa89e29": {
+      "sourceHash": "75f756524e3f7502491e4004035ccf7247030ed4853ef309da1535d1349773e4",
+      "prompt": "영어 니모닉 FANBOYS에서 등위 접속사를 지정하세요.",
+      "answers": [
+        "의 경우",
+        "그리고",
+        "도 아니고",
+        "하지만",
+        "또는",
+        "아직",
+        "그래서"
+      ]
+    },
+    "exp-552ce6a66ab2ab": {
+      "sourceHash": "e27cc0349d9a22f3d66b369f8b7af9f2045dac127f8179c747f297df61d3f73b",
+      "prompt": "주격-객관-소유 분류에서 전통적인 영어 사례를 지정합니다.",
+      "answers": [
+        "명목",
+        "대물렌즈",
+        "소유격"
+      ]
+    },
+    "exp-0fb5434f3a93eb": {
+      "sourceHash": "9df1de22ecc5233e13e871abcd6582371775797a572c6b969b1602a4b62c525a",
+      "prompt": "전통적인 5대 로망스 언어 목록에 있는 언어의 이름을 지정하세요.",
+      "answers": [
+        "스페인어",
+        "프랑스어",
+        "이탈리아어",
+        "포르투갈어",
+        "루마니아어"
+      ]
+    },
+    "exp-9ae140abdd5469": {
+      "sourceHash": "34d96a1b659d31dce87b5c4b240abbc42137937ffe6dd48a5336d6e2af43008f",
+      "prompt": "스칸디나비아 본토 삼중어의 언어를 말해보세요.",
+      "answers": [
+        "스웨덴어",
+        "덴마크어",
+        "노르웨이어"
+      ]
+    },
+    "exp-6088f556dbc33a": {
+      "sourceHash": "100769075e17e163827feb85a1d8caee8ac2b1de65213a09a2cea3b241413acd",
+      "prompt": "다섯 가지 기본 맛 중 하나를 말해보세요.",
+      "answers": [
+        "달콤한",
+        "사워",
+        "솔티",
+        "비터",
+        "감칠맛"
+      ]
+    },
+    "exp-bd34ec0b47d9c8": {
+      "sourceHash": "58521733e681f437efd97f8e1dbb2f2afefa00aa46f3f0608e5d7d59441c3702",
+      "prompt": "Escoffier의 표준 5가지 소스 분류에서 프랑스 마더 소스의 이름을 지정하세요.",
+      "answers": [
+        "베샤멜",
+        "벨루트",
+        "에스파뇰",
+        "홀랜다이즈",
+        "토마토"
+      ]
+    },
+    "exp-1ebdde1ebd0c67": {
+      "sourceHash": "e0a63d4ea950028ad183ac0a973f5b458b113d9d26a9f2b36d2e176a2525bbed",
+      "prompt": "고전적인 등분 네그로니의 성분 이름을 지정하세요.",
+      "answers": [
+        "진",
+        "캄파리",
+        "스위트 버몬트"
+      ]
+    },
+    "exp-b415de8d26063b": {
+      "sourceHash": "178b4ab4535d1c7c26c48c38959bc58c954fee4f975451fc41771fc1425d58cc",
+      "prompt": "고전적인 등분 사이드카 칵테일의 재료 이름을 지정하세요.",
+      "answers": [
+        "꼬냑",
+        "오렌지 리큐어",
+        "레몬 주스"
+      ]
+    },
+    "exp-50713e4c32db1e": {
+      "sourceHash": "7e654dbf3c7d0cfcee4ce6e0698712c4846b5bd751c6604fe936591c4acc8696",
+      "prompt": "프랑스-이탈리아-스위스 트리오 머랭의 종류를 말해보세요.",
+      "answers": [
+        "프랑스어",
+        "이탈리아어",
+        "스위스"
+      ]
+    },
+    "exp-445343c0ef073b": {
+      "sourceHash": "0b2e1fdb895e7f0d3c49f6001955349580bb76c29c5ab9a02969c3f3c165c4c1",
+      "prompt": "진한 유백색의 세 가지 초콜릿 중 주요 유형의 초콜릿을 말해보세요.",
+      "answers": [
+        "다크",
+        "우유",
+        "화이트"
+      ]
+    },
+    "exp-dcdbb3e8a6b4f8": {
+      "sourceHash": "a84b3a9b750eaab9fd1dd06f60e393f3f27c22f391605c9255648530420782c6",
+      "prompt": "전통적인 세 자매 농업 시스템에서 식물 제품의 이름을 지정하세요.",
+      "answers": [
+        "옥수수",
+        "콩",
+        "스쿼시"
+      ]
+    },
+    "exp-ca8d16b7d09562": {
+      "sourceHash": "ed16e30f6f6359e67a066b45c48a4e332abe8abffd7629732b9d4862f510952c",
+      "prompt": "고전적인 프랑스 미르푸아(mirepoix)로 야채 이름을 지어보세요.",
+      "answers": [
+        "양파",
+        "당근",
+        "셀러리"
+      ]
+    },
+    "exp-900290c95353af": {
+      "sourceHash": "75589d7670c5372e731af16c22a1dccf54a63fc854fc3314d0d3eafe1dfc58e4",
+      "prompt": "케이준 삼위일체의 고추, 양파 또는 셀러리 성분의 이름을 지정하십시오.",
+      "answers": [
+        "양파",
+        "셀러리",
+        "피망"
+      ]
+    },
+    "exp-35ac13592efa1c": {
+      "sourceHash": "62b440c8503fc1443d8e5e6c9e5e9faf6c8b73617d911641b9e76a19cd066656",
+      "prompt": "이니셜로 표현되는 전통적인 BLT 샌드위치의 주요 구성 요소를 말해보세요.",
+      "answers": [
+        "베이컨",
+        "상추",
+        "토마토"
+      ]
+    },
+    "exp-ee2fe385b3f8e9": {
+      "sourceHash": "7409cf395e330b102fa2086aa750e9b10544469644e6bf169a4a0b9df6d23b64",
+      "prompt": "올림픽에서 별도 종목으로 사용되는 수영 영법의 이름을 지정하세요.",
+      "answers": [
+        "자유형",
+        "배영",
+        "평영",
+        "나비"
+      ]
+    },
+    "exp-166445cb99db76": {
+      "sourceHash": "b1619bec74fa898e816b534198b34715ef57b13bb4730f4d7b74abb8e614da46",
+      "prompt": "올림픽에서 사용된 펜싱 무기의 이름을 지정하세요.",
+      "answers": [
+        "포일",
+        "에페",
+        "세이버"
+      ]
+    },
+    "exp-9db6a86a6dc525": {
+      "sourceHash": "c5fb4443fa34d2d33ae815a8287fbfdec20386a90913fea91110ca6496007309",
+      "prompt": "남자 기계 체조 기구의 이름을 지정하세요.",
+      "answers": [
+        "바닥",
+        "안마",
+        "반지",
+        "금고",
+        "평행봉",
+        "수평 막대"
+      ]
+    },
+    "exp-8f60ab2845bc85": {
+      "sourceHash": "7750628b217d1bfdb050463f38fbf0c73ad701d7f72780af2fd3e679cdd20792",
+      "prompt": "개인 여자 기계 체조 기구의 이름을 지정하십시오.",
+      "answers": [
+        "바닥",
+        "금고",
+        "고르지 못한 막대",
+        "평균대"
+      ]
+    },
+    "exp-cc51a250b2f56f": {
+      "sourceHash": "7d5f50eaa45031e9626fe0e0b5415ebdeac9a5f3374e7fa81f645c8112e1ce69",
+      "prompt": "올림픽 완주자 3명에게 수여되는 메달 색상을 말해보세요.",
+      "answers": [
+        "골드",
+        "실버",
+        "브론즈"
+      ]
+    },
+    "exp-f0fbd561523cac": {
+      "sourceHash": "a5fb87fc954690b0087fc181e4f341226a9943af4d2c84d3a28fcc3a77bb5f6f",
+      "prompt": "2024년 올림픽 승마 종목의 이름을 지정하세요.",
+      "answers": [
+        "조마술",
+        "이벤트",
+        "점프"
+      ]
+    },
+    "exp-c2cf1c8c4618e1": {
+      "sourceHash": "463c399a27c13e6c9ab5dfa680c554439d99ec84cc364ac92bfe77063e589d8b",
+      "prompt": "표준 올림픽 프로그램에서 육상 투척 종목의 이름을 지정하세요.",
+      "answers": [
+        "포환던지기",
+        "원반",
+        "자벨린",
+        "해머"
+      ]
+    },
+    "exp-44f64334b1af7c": {
+      "sourceHash": "a949e3ad46da10a02dd973b0e9ad075f95c6756400845745e7f83b0ec9b6df3b",
+      "prompt": "표준 올림픽 프로그램에서 육상 점프 종목의 이름을 지정하세요.",
+      "answers": [
+        "높이뛰기",
+        "멀리뛰기",
+        "삼중 점프",
+        "장대높이뛰기"
+      ]
+    },
+    "exp-07db50a92c503e": {
+      "sourceHash": "0bf280aa158b2ff6afc2792c89eb180188c499d03f8b10c09f40eb038783b152",
+      "prompt": "올림픽 반지의 색상 이름을 지정하세요.",
+      "answers": [
+        "블루",
+        "옐로우",
+        "블랙",
+        "그린",
+        "레드"
+      ]
+    },
+    "exp-0ad824109ba833": {
+      "sourceHash": "8e778587011dbafdbf03fbf8b08d148a2cbd506aacb098f7bb041b18842c9e67",
+      "prompt": "협회 축구의 골키퍼-수비수-미드필더-포워드 모델에서 포지션 카테고리를 지정하세요.",
+      "answers": [
+        "골키퍼",
+        "수비수",
+        "미드필더",
+        "앞으로"
+      ]
+    },
+    "exp-c85210e71bc3e2": {
+      "sourceHash": "e32dabd36bc4cc6842771411553fd0229c3c03bb51d8550be5e0766c9f2a5fd1",
+      "prompt": "럭비 유니온의 득점 결과를 말해보세요.",
+      "answers": [
+        "시도해 보세요",
+        "변환",
+        "페널티킥 목표",
+        "드롭 골"
+      ]
+    },
+    "exp-0feb98a73d8d22": {
+      "sourceHash": "e303642b558f733d3a8369c8a015d91f5d2236acaf64acff016ce99915d9e6ee",
+      "prompt": "홈을 포함한 야구 베이스의 이름을 지정하세요.",
+      "answers": [
+        "첫 번째",
+        "두 번째",
+        "세 번째",
+        "홈"
+      ]
+    },
+    "exp-4247ef2faa8dfc": {
+      "sourceHash": "40f26bc67d76e26c1e26b9dc4d73583f121dfda762e27ca57ab6b40f5f6eb81d",
+      "prompt": "5포지션 모델에서 표준 농구 포지션의 이름을 지정하세요.",
+      "answers": [
+        "포인트 가드",
+        "슈팅가드",
+        "스몰 포워드",
+        "파워 포워드",
+        "센터"
+      ]
+    },
+    "exp-654effc195d720": {
+      "sourceHash": "ae89340dd9b967a407aabf55b4a7bb57df94d6cbe3a6d7598c1236d1f6057cc0",
+      "prompt": "일반적인 단어나 숫자를 사용하여 듀스 전에 테니스 포인트 점수를 지정합니다.",
+      "answers": [
+        "사랑",
+        "열다섯",
+        "서티",
+        "포티"
+      ]
+    },
+    "exp-f703d6116c40fa": {
+      "sourceHash": "20a55f95147cfea32fc1a4d02c42afff2e586ac06ebb57956bac84cb5066ca20",
+      "prompt": "파리 2024에서 열리는 올림픽 라켓 개인 종목의 이름을 지정하세요.",
+      "answers": [
+        "테니스",
+        "배드민턴",
+        "탁구"
+      ]
+    },
+    "exp-0cd497d3f463d8": {
+      "sourceHash": "a6969be51ae6fc14ddae502289edf2ba270e2f89d68c2026251c771587eaea5f",
+      "prompt": "2024년 올림픽의 5개 사이클링 종목에서 사이클링 이벤트 유형을 말해보세요.",
+      "answers": [
+        "도로",
+        "트랙",
+        "산악 자전거",
+        "BMX 레이싱",
+        "BMX 자유형"
+      ]
+    },
+    "exp-d9d452d96cb524": {
+      "sourceHash": "8a67b669ad4ad0a72b1803762c78f3bccfb4f3014217d5900e3bb6fd1198552c",
+      "prompt": "전통적인 7계층 OSI 네트워크 모델에서 계층 이름을 지정합니다.",
+      "answers": [
+        "Physical",
+        "Data link",
+        "Network",
+        "Transport",
+        "Session",
+        "Presentation",
+        "Application"
+      ]
+    },
+    "exp-bcb6c396a9f063": {
+      "sourceHash": "0afbd1146501c2155aae4480ca7a14e3c97f64a333bb5d8ea2cf7ef58b44aa10",
+      "prompt": "HTML-CSS-JavaScript 트리오의 핵심 웹 기술에 대해 설명하세요.",
+      "answers": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    },
+    "exp-0421c37abb3de5": {
+      "sourceHash": "e2dd53b143b2db59b29bf945d959a420ae66294d999a9f991740e28569a95d79",
+      "prompt": "RFC 9110에 정의된 HTTP 요청 방법의 이름을 지정합니다.",
+      "answers": [
+        "GET",
+        "HEAD",
+        "POST",
+        "PUT",
+        "DELETE",
+        "CONNECT",
+        "OPTIONS",
+        "TRACE"
+      ]
+    },
+    "exp-5584aa5875c014": {
+      "sourceHash": "931dbca53e201a8e2c634009b84d2264e53d230c39d1a6f676b94c6dbeb4dd57",
+      "prompt": "HTTP 상태 코드 클래스의 이름을 백 자리로 지정합니다.",
+      "answers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    "exp-3cf5ef7cccf41d": {
+      "sourceHash": "ca9cd94bc1b20f4135c65c8a65f920e52bbb49c7d97ae164e6cd78d352f54794",
+      "prompt": "일반적인 4개 기둥 모델에서 객체 지향 프로그래밍의 기둥 이름을 지정하세요.",
+      "answers": [
+        "Encapsulation",
+        "Abstraction",
+        "Inheritance",
+        "Polymorphism"
+      ]
+    },
+    "exp-c5bec71c62267a": {
+      "sourceHash": "cbe0fda97ea1b21249dd667963a6765281be4ea3913b34b1fa453a232cf1c48a",
+      "prompt": "AND-OR-NOT 트리오의 표준 논리 연산자의 이름을 지정합니다.",
+      "answers": [
+        "AND",
+        "OR",
+        "NOT"
+      ]
+    },
+    "exp-be60256400a97b": {
+      "sourceHash": "c7d19bcc2ac4a32568c149f135dea2c70a18831cf9f50bf48a722ddda47e1b0a",
+      "prompt": "COUNT-SUM-AVG-MIN-MAX 세트에서 SQL 집계 함수의 이름을 지정합니다.",
+      "answers": [
+        "COUNT",
+        "SUM",
+        "AVG",
+        "MIN",
+        "MAX"
+      ]
+    },
+    "exp-dd8f28df8fc892": {
+      "sourceHash": "ca3913a5f12b6cd8e78980597b86b6e4cdd3895e851c47f06b2eb9782c1a5d82",
+      "prompt": "ACID에서 데이터베이스 트랜잭션 속성의 이름을 지정합니다.",
+      "answers": [
+        "Atomicity",
+        "Consistency",
+        "Isolation",
+        "Durability"
+      ]
+    },
+    "exp-de9496b2a7468e": {
+      "sourceHash": "039c73c04311a91961590cf6be0334416a67efcda281262174e037f36363a7aa",
+      "prompt": "태그 이름으로 HTML 제목 요소의 이름을 지정합니다.",
+      "answers": [
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6"
+      ]
+    },
+    "exp-fd776f979c8928": {
+      "sourceHash": "42a838774605361329fb6e17984c644fb45eaf4a86ccac2166facb84aab223cb",
+      "prompt": "배열과 객체를 제외한 기본 JSON 값 유형의 이름을 지정합니다.",
+      "answers": [
+        "String",
+        "Number",
+        "Boolean",
+        "Null"
+      ]
+    },
+    "exp-e010b6e5fcba24": {
+      "sourceHash": "b44cb532965a536aa9dcfabec1118f84e3de7bf9931277713204b0be70fa490f",
+      "prompt": "Git의 기본 수정 단계 커밋 모델에서 상태 이름을 지정합니다.",
+      "answers": [
+        "Modified",
+        "Staged",
+        "Committed"
+      ]
+    },
+    "exp-04d9d4b741bceb": {
+      "sourceHash": "5f68d05d906e865a416172b984eea297988d329d6d7fd02a1ad30d1c1f0259f5",
+      "prompt": "2024년의 오리지널 웹 브라우저 '빅 3' 엔진 제품군의 구성원을 말해보세요.",
+      "answers": [
+        "Blink",
+        "Gecko",
+        "WebKit"
+      ]
+    },
+    "exp-a4eddea09f20ed": {
+      "sourceHash": "626d638346a97701ee0c1d64e1f0d75d73580251ae63cc67ad2ae3da91f1cceb",
+      "prompt": "CIA 정보 보안 3대 요소의 구성 요소를 말해보세요.",
+      "answers": [
+        "Confidentiality",
+        "Integrity",
+        "Availability"
+      ]
+    },
+    "exp-90d599e7f5140d": {
+      "sourceHash": "72b02d656371e1f5b33603c0c2a4d51c984d1dcf2b45a6609f78db5133143d2b",
+      "prompt": "월요일부터 금요일까지 근무하는 주중의 요일을 지정합니다.",
+      "answers": [
+        "월요일",
+        "화요일",
+        "수요일",
+        "목요일",
+        "금요일"
+      ]
+    },
+    "exp-d1ad7326172097": {
+      "sourceHash": "265ecd054492c04b11e2a3ee015be0cc8887574cbd2b39a40fbfe4325087f87b",
+      "prompt": "정확히 31일이 있는 달의 이름을 지정하세요.",
+      "answers": [
+        "1월",
+        "3월",
+        "5월",
+        "7월",
+        "8월",
+        "10월",
+        "12월"
+      ]
+    },
+    "exp-8e1fb06f6d217d": {
+      "sourceHash": "3af2d936a4f1761f2be268bb8a425a675806f09298f28dfffa6233f4cf68af2a",
+      "prompt": "기본 나침반 방향의 이름을 지정합니다.",
+      "answers": [
+        "노스",
+        "사우스",
+        "이스트",
+        "웨스트"
+      ]
+    },
+    "exp-b912dbac8e2f1b": {
+      "sourceHash": "8082b83743ba60dd870e88ff6ff23de6a8ae837cf76f53ea9f996415549c44df",
+      "prompt": "간 나침반 방향의 이름을 지정합니다.",
+      "answers": [
+        "북동쪽",
+        "남동쪽",
+        "남서부",
+        "노스웨스트"
+      ]
+    },
+    "exp-a45ac68b8c187a": {
+      "sourceHash": "40d87e66a537da41c48e4abab2161fbc62e4607cc18b550f2e4a2f3dd7f28712",
+      "prompt": "삼색 도로 신호등의 표준 색상을 말해보세요.",
+      "answers": [
+        "레드",
+        "옐로우",
+        "그린"
+      ]
+    },
+    "exp-e5167ccea712f9": {
+      "sourceHash": "bb7be8d605aa63467b602f1a791ae36ab2e5785b29c81297ae156c8800bb59c1",
+      "prompt": "밀리미터-센티미터-미터-킬로미터 세트에서 일반적인 미터법 길이 단위의 이름을 지정하세요.",
+      "answers": [
+        "미터",
+        "센티미터",
+        "킬로미터",
+        "밀리미터"
+      ]
+    },
+    "exp-8997664ddecd72": {
+      "sourceHash": "d6fc42c9516207677c485f1072607753993bd309fb8b1e01aaa9a0fa88e766a0",
+      "prompt": "PubChem에서 알칼리 금속으로 분류한 원소의 이름을 지정하세요.",
+      "answers": [
+        "리튬",
+        "나트륨",
+        "칼륨",
+        "루비듐",
+        "세슘",
+        "프랑슘"
+      ]
+    },
+    "exp-ab806b234c7eb5": {
+      "sourceHash": "3265087fbec23c2580385f53929486086934885068311cf3e7a9fbe36c30e1a0",
+      "prompt": "PubChem에서 알칼리 토금속으로 분류한 원소의 이름을 지정하세요.",
+      "answers": [
+        "베릴륨",
+        "마그네슘",
+        "칼슘",
+        "스트론튬",
+        "바륨",
+        "라듐"
+      ]
+    },
+    "exp-674c20d29e5cfc": {
+      "sourceHash": "461360139f8f9f63d129e0881a798f4460624623c7bc395fc798ceec14e60d7d",
+      "prompt": "PubChem에서 분류한 원소의 이름을 할로겐으로 지정하십시오.",
+      "answers": [
+        "불소",
+        "염소",
+        "브롬",
+        "요오드",
+        "아스타틴",
+        "테네신"
+      ]
+    },
+    "exp-2fa24e38f205fb": {
+      "sourceHash": "ef4f4ee0ba5c7130171c07c83e859a4fe10b19d8f29454131e439a635e82cd21",
+      "prompt": "PubChem에서 분류한 원소를 준금속으로 명명합니다.",
+      "answers": [
+        "붕소",
+        "실리콘",
+        "게르마늄",
+        "비소",
+        "안티몬",
+        "텔루르",
+        "폴로늄"
+      ]
+    },
+    "exp-8d15d7eb362409": {
+      "sourceHash": "2118bca1b6c9d67599496dc03b298f6bb1c2113d04ea722799f0ad347990a416",
+      "prompt": "PubChem이 분류한 원소의 이름을 란탄족 원소로 지정하십시오.",
+      "answers": [
+        "란타늄",
+        "세륨",
+        "프라세오디뮴",
+        "네오디뮴",
+        "프로메튬",
+        "사마륨",
+        "유로피움",
+        "가돌리늄",
+        "테르븀",
+        "디스프로슘",
+        "홀뮴",
+        "에르븀",
+        "툴륨",
+        "이테르븀",
+        "루테튬"
+      ]
+    },
+    "exp-ada4480798d927": {
+      "sourceHash": "89dfc0f0d8a47bca6564ed89e3ed5e674b2c9d4f0070ae8494b38851810ec077",
+      "prompt": "PubChem에 의해 분류된 원소의 이름을 악티늄족으로 지정합니다.",
+      "answers": [
+        "악티늄",
+        "토륨",
+        "프로탁티늄",
+        "우라늄",
+        "넵투늄",
+        "플루토늄",
+        "아메리슘",
+        "큐륨",
+        "베르켈륨",
+        "캘리포늄",
+        "아인슈타이늄",
+        "페르뮴",
+        "멘델레비움",
+        "노벨리움",
+        "로렌슘"
+      ]
+    },
+    "exp-239aabf5c4ecbf": {
+      "sourceHash": "4a6e5f940aa8eb15937a69712b31995c7788e2b681aef0d82c93d693b8759759",
+      "prompt": "주기율표의 2주기에 있는 원소의 이름을 지정하세요.",
+      "answers": [
+        "리튬",
+        "베릴륨",
+        "붕소",
+        "카본",
+        "질소",
+        "산소",
+        "불소",
+        "네온"
+      ]
+    },
+    "exp-dca9a1a2b4c0c0": {
+      "sourceHash": "ef3c63dd7272a4038238f266f0795aea4e5f367a763c14b13e56f1376b8b64e6",
+      "prompt": "주기율표의 3주기에 있는 원소의 이름을 지정하세요.",
+      "answers": [
+        "나트륨",
+        "마그네슘",
+        "알루미늄",
+        "실리콘",
+        "인",
+        "유황",
+        "염소",
+        "아르곤"
+      ]
+    },
+    "exp-03a35c6914f29a": {
+      "sourceHash": "072808f2f8d83293bf13baeff61fa195c9717b001b6e82cd03abccc4b8b4f622",
+      "prompt": "주기율표의 4주기에 있는 원소의 이름을 지정하세요.",
+      "answers": [
+        "칼륨",
+        "칼슘",
+        "스칸듐",
+        "티타늄",
+        "바나듐",
+        "크롬",
+        "망간",
+        "철",
+        "코발트",
+        "니켈",
+        "구리",
+        "아연",
+        "갈륨",
+        "게르마늄",
+        "비소",
+        "셀레늄",
+        "브롬",
+        "크립톤"
+      ]
+    },
+    "exp-813681c4e07b1a": {
+      "sourceHash": "055887dc25e533c53014fb34eb9ca0cf45df14a80d6aee4b59caa9d765d1b036",
+      "prompt": "주기율표의 5주기에 있는 원소의 이름을 지정하세요.",
+      "answers": [
+        "루비듐",
+        "스트론튬",
+        "이트륨",
+        "지르코늄",
+        "니오븀",
+        "몰리브덴",
+        "테크네티움",
+        "루테늄",
+        "로듐",
+        "팔라듐",
+        "실버",
+        "카드뮴",
+        "인듐",
+        "주석",
+        "안티몬",
+        "텔루르",
+        "요오드",
+        "제논"
+      ]
+    },
+    "exp-ae8ab6c1af9558": {
+      "sourceHash": "d490cf605e8521ba87b16cc6bdb57881f0da80b929a96d94ad5f65a1bf94dee2",
+      "prompt": "주기율표의 6주기에 있는 원소의 이름을 지정하세요.",
+      "answers": [
+        "세슘",
+        "바륨",
+        "란타늄",
+        "세륨",
+        "프라세오디뮴",
+        "네오디뮴",
+        "프로메튬",
+        "사마륨",
+        "유로피움",
+        "가돌리늄",
+        "테르븀",
+        "디스프로슘",
+        "홀뮴",
+        "에르븀",
+        "툴륨",
+        "이테르븀",
+        "루테튬",
+        "하프늄",
+        "탄탈륨",
+        "텅스텐",
+        "레늄",
+        "오스뮴",
+        "이리듐",
+        "플래티넘",
+        "골드",
+        "머큐리",
+        "탈륨",
+        "리드",
+        "비스무트",
+        "폴로늄",
+        "아스타틴",
+        "라돈"
+      ]
+    },
+    "exp-a48b9f233aaa1f": {
+      "sourceHash": "9ca184bcbaaa38756915a246527ef2cb94b92cd3c151ddee7dda83c7998c6a3c",
+      "prompt": "주기율표의 7주기에 있는 원소의 이름을 지정하세요.",
+      "answers": [
+        "프랑슘",
+        "라듐",
+        "악티늄",
+        "토륨",
+        "프로탁티늄",
+        "우라늄",
+        "넵투늄",
+        "플루토늄",
+        "아메리슘",
+        "큐륨",
+        "베르켈륨",
+        "캘리포늄",
+        "아인슈타이늄",
+        "페르뮴",
+        "멘델레비움",
+        "노벨리움",
+        "로렌슘",
+        "러더포디움",
+        "더브늄",
+        "시보르기움",
+        "보륨",
+        "하슘",
+        "마이트네리움",
+        "다름스타튬",
+        "뢴트게늄",
+        "코페르니슘",
+        "니호늄",
+        "플레로비움",
+        "모스코비움",
+        "리버모리움",
+        "테네신",
+        "오가네손"
+      ]
+    },
+    "exp-37bcab3bfba832": {
+      "sourceHash": "91001f57aea579c74ab07c8708afef10f2a3040d4f1ca15eb3e4bc031b8b5d3c",
+      "prompt": "영어 이름이 A로 시작하는 화학 원소의 이름을 지정하십시오.",
+      "answers": [
+        "알루미늄",
+        "아르곤",
+        "비소",
+        "안티몬",
+        "아스타틴",
+        "악티늄",
+        "아메리슘"
+      ]
+    },
+    "exp-5c81a7b3da8c93": {
+      "sourceHash": "115878d0387cccc07cbc5ab839cd0a8d78be91499a4921c19f570a25a0a86219",
+      "prompt": "영어 이름이 B로 시작하는 화학 원소의 이름을 지정하십시오.",
+      "answers": [
+        "베릴륨",
+        "붕소",
+        "브롬",
+        "바륨",
+        "비스무트",
+        "베르켈륨",
+        "보륨"
+      ]
+    },
+    "exp-26f5b5b3d6f2fe": {
+      "sourceHash": "35cc933eb31882e7c5e9a34db6bc3ccc964081d4f65eeb63f425d1c68bdbbe27",
+      "prompt": "영어 이름이 C로 시작하는 화학 원소의 이름을 말해보세요.",
+      "answers": [
+        "카본",
+        "염소",
+        "칼슘",
+        "크롬",
+        "코발트",
+        "구리",
+        "카드뮴",
+        "세슘",
+        "세륨",
+        "큐륨",
+        "캘리포늄",
+        "코페르니슘"
+      ]
+    },
+    "exp-b17c45b5f0e6de": {
+      "sourceHash": "9146f59c8a38e50ad7602f20e1a6b0c6df18f8b45f617a23b3846f056c6a5a30",
+      "prompt": "영어 이름이 H로 시작하는 화학 원소의 이름을 말해보세요.",
+      "answers": [
+        "수소",
+        "헬륨",
+        "홀뮴",
+        "하프늄",
+        "하슘"
+      ]
+    },
+    "exp-dee72894990df0": {
+      "sourceHash": "b099b18579c62af1d482e15f4649386dfdc8323f871244e12ebd3d644b17d4e0",
+      "prompt": "영문명이 M으로 시작하는 화학원소의 이름을 말하시오.",
+      "answers": [
+        "마그네슘",
+        "망간",
+        "몰리브덴",
+        "머큐리",
+        "멘델레비움",
+        "마이트네리움",
+        "모스코비움"
+      ]
+    },
+    "exp-c4d470ba95cec5": {
+      "sourceHash": "aeeddd26395c17f0695d4f991df51800670e4ec462bc60608bde1dba88e5fe89",
+      "prompt": "영문명이 N으로 시작하는 화학원소의 이름을 말하시오.",
+      "answers": [
+        "질소",
+        "네온",
+        "니켈",
+        "니오븀",
+        "네오디뮴",
+        "넵투늄",
+        "노벨리움",
+        "니호늄"
+      ]
+    },
+    "exp-eded939e9bdab8": {
+      "sourceHash": "2c1303f42d0732543c41a891061a7959d7716970a1a98c5e26272e509c4d8e3e",
+      "prompt": "영어 이름이 P로 시작하는 화학 원소의 이름을 말해보세요.",
+      "answers": [
+        "인",
+        "칼륨",
+        "팔라듐",
+        "프라세오디뮴",
+        "프로메튬",
+        "플래티넘",
+        "폴로늄",
+        "프로탁티늄",
+        "플루토늄"
+      ]
+    },
+    "exp-3b6b195c35a3f5": {
+      "sourceHash": "9b58a0ab1285d5fb34c59dd82ac88a6a4023d39290aa3db21128832f23b942ff",
+      "prompt": "영어 이름이 S로 시작하는 화학 원소의 이름을 말해보세요.",
+      "answers": [
+        "나트륨",
+        "실리콘",
+        "유황",
+        "스칸듐",
+        "셀레늄",
+        "스트론튬",
+        "실버",
+        "사마륨",
+        "시보르기움"
+      ]
+    },
+    "exp-cf702d5f96d195": {
+      "sourceHash": "8bbcbcc7ee4285dec6e8d19a6f169e0cd1f57bca7160d35d7bcb2aa4ca170f3c",
+      "prompt": "영문 이름이 T로 시작하는 화학 원소의 이름을 말해보세요.",
+      "answers": [
+        "티타늄",
+        "테크네티움",
+        "주석",
+        "텔루르",
+        "테르븀",
+        "툴륨",
+        "탄탈륨",
+        "텅스텐",
+        "탈륨",
+        "토륨",
+        "테네신"
+      ]
+    },
+    "exp-6d3c487a0f8a64": {
+      "sourceHash": "6399a737456a4bd4de40e22e2cff03e7912f146ea9491d2901da40f4d8ed7d1d",
+      "prompt": "이름이 C로 시작하는 미국 주의 이름을 지정하세요.",
+      "answers": [
+        "캘리포니아",
+        "콜로라도",
+        "코네티컷"
+      ]
+    },
+    "exp-fe65870ed274ad": {
+      "sourceHash": "8e21e1045f9e3616d537cfe38f04bdfa8c9ad5300516989a372cc0f77bd10980",
+      "prompt": "이름이 I로 시작하는 미국 주의 이름을 지정하세요.",
+      "answers": [
+        "아이다호",
+        "일리노이",
+        "인디애나",
+        "아이오와"
+      ]
+    },
+    "exp-33898616a197c8": {
+      "sourceHash": "465b0906b216c7a581014b75f79c8861da70247907955df19530fcedb489b842",
+      "prompt": "이름이 M으로 시작하는 미국 주의 이름을 지정하세요.",
+      "answers": [
+        "메인",
+        "메릴랜드",
+        "매사추세츠",
+        "미시간",
+        "미네소타",
+        "미시시피",
+        "미주리",
+        "몬타나"
+      ]
+    },
+    "exp-d538f3a5e7779e": {
+      "sourceHash": "3c9587cb3d273d8d67c4f77a381eb6857b1b6a083ce0f2196e127cd8a2fe1e60",
+      "prompt": "이름이 O로 시작하는 미국 주의 이름을 지정하세요.",
+      "answers": [
+        "오하이오",
+        "오클라호마",
+        "오레곤"
+      ]
+    },
+    "exp-84ff24338193ea": {
+      "sourceHash": "d9654781cc390b3d7db9c64db5db31089aa30f6bfe02dca5c164a58ed8bd0ed2",
+      "prompt": "이름이 W로 시작하는 미국 주의 이름을 지정하세요.",
+      "answers": [
+        "워싱턴",
+        "웨스트버지니아",
+        "위스콘신",
+        "와이오밍"
+      ]
+    },
+    "exp-2c1d15d7c9f95e": {
+      "sourceHash": "53d99437330ab40aa737fa52dab223828974d14b7784aef4fae4be080519a6a9",
+      "prompt": "인구 조사국의 뉴잉글랜드 부서에 있는 미국 주의 이름을 지정하십시오.",
+      "answers": [
+        "코네티컷",
+        "메인",
+        "매사추세츠",
+        "뉴햄프셔",
+        "로드아일랜드",
+        "버몬트"
+      ]
+    },
+    "exp-76643a0ec9fbd4": {
+      "sourceHash": "940a6faffc5107ea1684e84bb64d927c1f6e9219f455d8911a9c3eb85cfd5bfe",
+      "prompt": "인구 조사국 중부 대서양 구역에 있는 미국 주의 이름을 지정하십시오.",
+      "answers": [
+        "뉴저지",
+        "뉴욕",
+        "펜실베니아"
+      ]
+    },
+    "exp-c96aaffc01fdaf": {
+      "sourceHash": "f1f100915b6e5fcc1494a88e413af044980302c7292f82d4b63cf46a3402aaac",
+      "prompt": "인구 조사국의 동북중부 구역에 있는 미국 주의 이름을 지정하십시오.",
+      "answers": [
+        "일리노이",
+        "인디애나",
+        "미시간",
+        "오하이오",
+        "위스콘신"
+      ]
+    },
+    "exp-b5186e138b28d8": {
+      "sourceHash": "93946bc5389889141765f2db634d425ba1f8e5dfc8646840aeab93375d3d4307",
+      "prompt": "인구조사국의 서부 중북부에 있는 미국 주의 이름을 지정하십시오.",
+      "answers": [
+        "아이오와",
+        "캔자스",
+        "미네소타",
+        "미주리",
+        "네브라스카",
+        "노스다코타",
+        "사우스다코타"
+      ]
+    },
+    "exp-83aceb3b7c0785": {
+      "sourceHash": "0efb91c0ae9807224993e54730785db78e670dbcd857d7c969434654012df52c",
+      "prompt": "인구 조사국의 남대서양 부서에 있는 미국 주의 이름을 지정하십시오.",
+      "answers": [
+        "델라웨어",
+        "플로리다",
+        "조지아",
+        "메릴랜드",
+        "노스캐롤라이나",
+        "사우스캐롤라이나",
+        "버지니아",
+        "웨스트버지니아"
+      ]
+    },
+    "exp-7072c46a66cf07": {
+      "sourceHash": "6029225fc604b8b4cdbf731bdd5637879dcf4ebfedf3995dfc2410c2eef3a043",
+      "prompt": "인구 조사국의 동부 중부 지역에 있는 미국 주의 이름을 지정하십시오.",
+      "answers": [
+        "앨라배마",
+        "켄터키",
+        "미시시피",
+        "테네시"
+      ]
+    },
+    "exp-e046d311fa631b": {
+      "sourceHash": "c4f2c1d8ca9d3ed72c9242002fce6b4b198cb4d7b89249aba5caeef24c9ec6f8",
+      "prompt": "인구 조사국의 서부 중부 지역에 있는 미국 주의 이름을 지정하십시오.",
+      "answers": [
+        "아칸소",
+        "루이지애나",
+        "오클라호마",
+        "텍사스"
+      ]
+    },
+    "exp-33ff8961eee508": {
+      "sourceHash": "12e403a3e16f63f7d01fffa6032f48dc1e449b391ab9d9404b5fea6bf182ce5d",
+      "prompt": "인구 조사국의 산악 부문에 있는 미국 주의 이름을 지정하십시오.",
+      "answers": [
+        "애리조나",
+        "콜로라도",
+        "아이다호",
+        "몬타나",
+        "네바다",
+        "뉴멕시코",
+        "유타",
+        "와이오밍"
+      ]
+    },
+    "exp-b9d46d5b83799d": {
+      "sourceHash": "cbec61ed2549e44a86f16bdb6fab30b4509bbc06b1525ad03c7e5ffbb0cff3c2",
+      "prompt": "인구 조사국의 태평양 부서에 있는 미국 주의 이름을 지정하십시오.",
+      "answers": [
+        "알래스카",
+        "캘리포니아",
+        "하와이",
+        "오레곤",
+        "워싱턴"
+      ]
+    },
+    "exp-8a12d31d605217": {
+      "sourceHash": "c4a2a946217f09b636b2638cd7f072d9f3ff53cbca05dfe87ca0b872a305ab4f",
+      "prompt": "Alpha Centauri 시스템의 세 별 중 하나의 이름을 지정하십시오.",
+      "answers": [
+        "프록시마 센타우리",
+        "알파 센타우리 A",
+        "알파 센타우리 B"
+      ]
+    },
+    "exp-b64fce35bf7340": {
+      "sourceHash": "277f503dee2b7b4d48bbbd79632132716571416bf2ce2cf8d9a833c628c5e5c1",
+      "prompt": "오리온 벨트의 세 별 중 하나의 이름을 말해보세요.",
+      "answers": [
+        "알니탁",
+        "알닐람",
+        "민타카"
+      ]
+    },
+    "exp-0b35ef059e5c30": {
+      "sourceHash": "5edbbee7d473270a80664370266699dd181077a6bc083ecf28287380cbe7eb17",
+      "prompt": "여섯 가지 쿼크 맛 중 하나를 말해보세요.",
+      "answers": [
+        "위로",
+        "다운",
+        "상단",
+        "바닥",
+        "참",
+        "이상한"
+      ]
+    },
+    "exp-7a3d81a1ff4cdc": {
+      "sourceHash": "d93e011156c664de33eacdf440ac0c6af287ab8ac8f9fde3f78e17f4f462e5ab",
+      "prompt": "표준 DNA 알파벳으로 핵염기의 이름을 지정하세요.",
+      "answers": [
+        "아데닌",
+        "티민",
+        "시토신",
+        "구아닌"
+      ]
+    },
+    "exp-5697522294a860": {
+      "sourceHash": "25834ff32300e44a00b78c440fd950c5ef75e749564c0002030edbda55def985",
+      "prompt": "DNA에서도 발견되는 RNA의 핵염기 이름을 지정하세요.",
+      "answers": [
+        "아데닌",
+        "시토신",
+        "구아닌"
+      ]
+    },
+    "exp-d4d9461e80dcc4": {
+      "sourceHash": "01a11ffee653d2524aba7fa9866d92198d70ea57a5ac9ea02759d030a05dd9fa",
+      "prompt": "표준 4가지 유형 분류에서 사람의 치아 유형을 지정합니다.",
+      "answers": [
+        "앞니",
+        "개",
+        "소구치",
+        "몰"
+      ]
+    },
+    "exp-f8228821d66441": {
+      "sourceHash": "c686b8f23adb66e7ce17bb15cfadfcbd62f288494034d00fa5e8403ac75a15ed",
+      "prompt": "1945년 2월 얄타 회담에서 연합군 지도자 3명 중 한 사람의 이름을 말하십시오.",
+      "answers": [
+        "윈스턴 처칠",
+        "프랭클린 D 루즈벨트",
+        "조셉 스탈린"
+      ]
+    },
+    "exp-b4b3b7763b4411": {
+      "sourceHash": "3fe827c4d6e34972469a6828d50a3c8fd9dec02dab6d6d10ec7a0e0ea198c5ea",
+      "prompt": "제1차 세계 대전 발발 당시 삼국 협상에 참여한 국가의 이름을 지정하세요.",
+      "answers": [
+        "영국",
+        "프랑스",
+        "러시아"
+      ]
+    },
+    "exp-f8d6526a705cd6": {
+      "sourceHash": "c528ad5fef92823d8a86c81ba438a07d4abe054d8a08bcabe9beaed7e3f200d9",
+      "prompt": "1957년 유럽 경제 공동체의 창립 회원국 이름을 지정하십시오.",
+      "answers": [
+        "프랑스",
+        "서독",
+        "이탈리아",
+        "벨기에",
+        "네덜란드",
+        "룩셈부르크"
+      ]
+    },
+    "exp-8e6a2f0ea21e10": {
+      "sourceHash": "335c6bfa42a72cc672f1257e97cb5d4d59656fa728b4df91887cf68d5fbd4f8d",
+      "prompt": "러시모어 산에 새겨진 미국 대통령의 이름을 말해보세요.",
+      "answers": [
+        "조지 워싱턴",
+        "토머스 제퍼슨",
+        "에이브러햄 링컨",
+        "시어도어 루즈벨트"
+      ]
+    },
+    "exp-115a7b70406f25": {
+      "sourceHash": "d2319f48a79263697a1432e6a20b151be04df5850923e26c783da8a1fb8669f7",
+      "prompt": "UN 안전보장이사회 상임이사국이 있는 국가의 이름을 지정하세요.",
+      "answers": [
+        "미국",
+        "영국",
+        "프랑스",
+        "중국",
+        "러시아"
+      ]
+    },
+    "exp-2ce258fecba399": {
+      "sourceHash": "cb18789b8d129bff2041c67e1f6ce0d0e936c7b1ef2910c51d7f7ee1f73ba50d",
+      "prompt": "1979년 SALT II 협정에 서명한 소련 또는 미국 지도자 또는 협정이 체결된 오스트리아 도시의 이름을 지정하십시오.",
+      "answers": [
+        "지미 카터",
+        "레오니드 브레즈네프",
+        "비엔나"
+      ]
+    },
+    "exp-7ab2b443c12137": {
+      "sourceHash": "37b896c6980420f829e6c5d0a9e727aa6e6274842d7cb215874e976537c1f11a",
+      "prompt": "발트해 국가의 이름을 지정하세요.",
+      "answers": [
+        "에스토니아",
+        "라트비아",
+        "리투아니아"
+      ]
+    },
+    "exp-590d24617de1a8": {
+      "sourceHash": "4d03bc44aca72f0caaa56d6eeb6f175ff0bf8b6de67ce855f5318671d6c93270",
+      "prompt": "베네룩스 국가의 이름을 지정하세요.",
+      "answers": [
+        "벨기에",
+        "네덜란드",
+        "룩셈부르크"
+      ]
+    },
+    "exp-dfce0d811f84de": {
+      "sourceHash": "8e72152a76c0dd0db6060d965235cd1d2914e9058992103d878db72730b7acb6",
+      "prompt": "영국에 있는 국가의 이름을 지정하세요.",
+      "answers": [
+        "영국",
+        "스코틀랜드",
+        "웨일즈",
+        "북아일랜드"
+      ]
+    },
+    "exp-c028ea3e182c74": {
+      "sourceHash": "aa24c65936c1ca65fa534c89920f3b865877d7162637669646861c49c67148c3",
+      "prompt": "호주의 주(영토가 아님)의 이름을 지정하세요.",
+      "answers": [
+        "뉴 사우스 웨일즈",
+        "빅토리아",
+        "퀸즈랜드",
+        "서부 호주",
+        "사우스 오스트레일리아",
+        "태즈메이니아"
+      ]
+    },
+    "exp-36379bb015222e": {
+      "sourceHash": "6c1813ec17abbf28f6c7f9444a7e4046e31c324991790b003df34a75b7e101f0",
+      "prompt": "캐나다 대초원 지방의 이름을 지정하십시오.",
+      "answers": [
+        "앨버타",
+        "서스캐처원",
+        "매니토바"
+      ]
+    },
+    "exp-974c76ee5696b0": {
+      "sourceHash": "cb3101451b71811e9a9baf757a27131a75208e8fe8244d8de7767487ae9f8bc5",
+      "prompt": "캐나다 대서양 지역의 이름을 지정하세요.",
+      "answers": [
+        "뉴브런즈윅",
+        "노바스코샤",
+        "프린스 에드워드 아일랜드",
+        "뉴펀들랜드 앤 래브라도"
+      ]
+    },
+    "exp-33db88c2f1a6eb": {
+      "sourceHash": "abcfa24467c606d157b9a009915c9d805367fb966f5e9cbc0939482127bdec49",
+      "prompt": "캐나다 영토(지방이 아님)의 이름을 지정하세요.",
+      "answers": [
+        "유콘",
+        "노스웨스트 준주",
+        "누나부트 준주"
+      ]
+    },
+    "exp-92eac625bfa1c6": {
+      "sourceHash": "231776eb94e011f19cfb24e61bfc64c74d30779d610faaebc7af2cff655e8cde",
+      "prompt": "일본의 4개 주요 섬 중 하나의 이름을 말하십시오.",
+      "answers": [
+        "혼슈",
+        "홋카이도",
+        "큐슈",
+        "시코쿠"
+      ]
+    },
+    "exp-c5e75860ab11f1": {
+      "sourceHash": "b2e68fa5162d80c579616f72ff1d20b858bcd0eea78dafce2fe714225671334c",
+      "prompt": "지중해에서 가장 큰 세 개의 섬 중 하나의 이름을 말하십시오.",
+      "answers": [
+        "시칠리아",
+        "사르디니아",
+        "키프로스"
+      ]
+    },
+    "exp-274b7c763b07a3": {
+      "sourceHash": "f28984dddecdc225fc1a426b35d1f7532daf941a3ea566ac3fb59ae708b37f8b",
+      "prompt": "포르투갈, 룩셈부르크, 모나코와 육로로 국경을 접하고 있는 국가의 이름을 말하세요.",
+      "answers": [
+        "스페인",
+        "벨기에",
+        "프랑스",
+        "독일"
+      ]
+    },
+    "exp-1f38e52d4407c8": {
+      "sourceHash": "e3fdb43347709dc9d5a931ad3c6c878af5634b4a0a0c72b5f9de427e1ee6019a",
+      "prompt": "카스피해에 접해 있는 국가의 이름을 말하세요.",
+      "answers": [
+        "러시아",
+        "이란",
+        "카자흐스탄",
+        "투르크메니스탄",
+        "아제르바이잔"
+      ]
+    },
+    "exp-63f330ff85c170": {
+      "sourceHash": "45ec41df9394870ab59e5c2e26290da800f9d0ca82c6619dd59905c296350967",
+      "prompt": "빅토리아 호수와 접해 있는 국가의 이름을 말하세요.",
+      "answers": [
+        "케냐",
+        "우간다",
+        "탄자니아"
+      ]
+    },
+    "exp-0d65a29ca8b26d": {
+      "sourceHash": "a2da1eda5724f461f39afb1cecdb499ee33f1fd08b6185e0b69c12e193cb9049",
+      "prompt": "탕가니카 호수와 접해 있는 국가의 이름을 말하세요.",
+      "answers": [
+        "탄자니아",
+        "콩고민주공화국",
+        "부룬디",
+        "잠비아"
+      ]
+    },
+    "exp-392d275f5fe4d0": {
+      "sourceHash": "b66fcf22219981f494276583f473c9e0e032dca7080b18256fa9bb58a6e05648",
+      "prompt": "육지로 독일과 국경을 접하고 있는 국가의 이름을 말하세요.",
+      "answers": [
+        "프랑스",
+        "폴란드",
+        "오스트리아",
+        "스위스",
+        "벨기에",
+        "네덜란드",
+        "체코",
+        "덴마크",
+        "룩셈부르크"
+      ]
+    },
+    "daily-20261113-c9846318fece": {
+      "sourceHash": "c5db29b3d72483f87928f66c0029ce59d0076f8f19ddac17b759df7dcaa9c485",
+      "prompt": "오스트리아와 국경을 접하고 있는 국가의 이름을 말하세요.",
+      "answers": [
+        "독일",
+        "이탈리아",
+        "스위스",
+        "헝가리",
+        "체코",
+        "슬로바키아",
+        "슬로베니아",
+        "리히텐슈타인"
+      ]
+    },
+    "daily-20261113-dafbd99989e3": {
+      "sourceHash": "2aef01b8f867b44d9eb8139b2dae8624c17f0ba726a0ce0d2628a314c1f9e22b",
+      "prompt": "스위스와 국경을 접하고 있는 국가의 이름을 말하세요.",
+      "answers": [
+        "프랑스",
+        "독일",
+        "이탈리아",
+        "오스트리아",
+        "리히텐슈타인"
+      ]
+    },
+    "daily-20261113-f92374077615": {
+      "sourceHash": "2e2b77a7e84c140b56da029031c621043aa43c264949757aeac2c9b3d92a4f15",
+      "prompt": "아르헨티나와 국경을 접하고 있는 국가의 이름을 말하세요.",
+      "answers": [
+        "브라질",
+        "칠레",
+        "우루과이",
+        "파라과이",
+        "볼리비아"
+      ]
+    },
+    "daily-20261113-af950b91dbb2": {
+      "sourceHash": "bead503519329bffe55109bbdd22ccd00f5a90b9c3a86660c023014d993602eb",
+      "prompt": "태국과 국경을 접하고 있는 국가의 이름을 말하세요.",
+      "answers": [
+        "말레이시아",
+        "캄보디아",
+        "미얀마",
+        "라오스"
+      ]
+    },
+    "daily-20261113-5c726fedcb5a": {
+      "sourceHash": "62724ed9c24aaf6fff8ec66d8d50d9aedc957d4da316462cf42abaa9819ddb4c",
+      "prompt": "남아프리카공화국과 국경을 접하고 있는 국가의 이름을 말하세요.",
+      "answers": [
+        "나미비아",
+        "보츠와나",
+        "짐바브웨",
+        "모잠비크",
+        "에스와티니",
+        "레소토"
+      ]
+    },
+    "daily-20261113-4dc3cd442e64": {
+      "sourceHash": "97d3d64ab0a188b375082b98d77a9441e8f787e6b392a914502cd73e2c63f73b",
+      "prompt": "케냐와 국경을 접하고 있는 국가의 이름을 말하세요.",
+      "answers": [
+        "탄자니아",
+        "우간다",
+        "에티오피아",
+        "소말리아",
+        "남수단"
+      ]
+    },
+    "daily-20261113-eb91c6f28096": {
+      "sourceHash": "bbae81aa5c72e0e0196008dc6ea59b1a742ca1aad0ecceeff4fef794bde191d2",
+      "prompt": "폴란드와 국경을 접하고 있는 국가의 이름을 말하세요.",
+      "answers": [
+        "독일",
+        "체코",
+        "슬로바키아",
+        "우크라이나",
+        "벨로루시",
+        "리투아니아",
+        "러시아"
+      ]
+    },
+    "daily-20261113-2cda1280544c": {
+      "sourceHash": "003314f0f34d24ead9e450d79d749e48f5bd28202703ca0574f4dc75f1b2e6ba",
+      "prompt": "그리스와 육지 국경을 접하고 있는 국가의 이름을 말하세요.",
+      "answers": [
+        "알바니아",
+        "북마케도니아",
+        "불가리아",
+        "터키"
+      ]
+    },
+    "daily-20261113-93d8c6675007": {
+      "sourceHash": "4ee4fef0fd8fc26533ad36da98270f30a1c769bdb7c69bb53b4a43deb47734a0",
+      "prompt": "보르네오 섬의 세 주권 국가 중 하나의 이름을 말하십시오.",
+      "answers": [
+        "인도네시아",
+        "말레이시아",
+        "브루나이"
+      ]
+    },
+    "daily-20261113-206c8e0e5aa1": {
+      "sourceHash": "cd6d9c80e230ea7c4816551a85bee46bf2b5611b2ddf916a1ef86bc1d69cdbcd",
+      "prompt": "뉴질랜드의 3개 주요 섬 그룹에 속하는 섬의 이름을 지정하세요.",
+      "answers": [
+        "북섬",
+        "남섬",
+        "스튜어트 아일랜드"
+      ]
+    },
+    "daily-20261113-8329a10e1f0c": {
+      "sourceHash": "2b86af0173b8316ff315a7330732b3de9740cb221093129186e5035eb8a03d32",
+      "prompt": "천왕성의 5개 주요 위성 중 하나의 이름을 말하세요.",
+      "answers": [
+        "티타니아",
+        "오베론",
+        "아리엘",
+        "움브리엘",
+        "미란다"
+      ]
+    },
+    "daily-20261113-d478b56252a2": {
+      "sourceHash": "51e6232eb6b12e777f15be87fae632e8acfd7a30f77a2bf913eecce89f163356",
+      "prompt": "7명의 수성 우주 비행사 중 한 명의 이름을 밝히십시오.",
+      "answers": [
+        "존 글렌",
+        "앨런 셰퍼드",
+        "거스 그리섬",
+        "스콧 카펜터",
+        "월리 쉬라",
+        "고든 쿠퍼",
+        "데크 슬레이튼"
+      ]
+    },
+    "daily-20261113-ab1db28ee116": {
+      "sourceHash": "77a3c97b57d281cdcf427e70a4d7c01fa56f5ed79cd3b740b21e8079ae5eb1ad",
+      "prompt": "Apollo 17 승무원의 우주비행사 이름을 지정하세요.",
+      "answers": [
+        "유진 서넌",
+        "해리슨 슈미트",
+        "로널드 에반스"
+      ]
+    },
+    "daily-20261113-985307bd6b11": {
+      "sourceHash": "37492e6efd7a03a1b2c313e2adbfaed27b7708b9fb566bbe03e6e0c567085564",
+      "prompt": "NASA의 원래 Great Observatories 프로그램에서 망원경의 이름을 지정하십시오.",
+      "answers": [
+        "허블 우주 망원경",
+        "찬드라 엑스레이 천문대",
+        "스피처 우주 망원경",
+        "콤프턴 감마선 관측소"
+      ]
+    },
+    "daily-20261113-d70d6b660c97": {
+      "sourceHash": "759248c90bab8799ee21d1e5dbd7351575adc2fcd8a2853b921ceca249ffef1b",
+      "prompt": "1807년 말 이전에 발견된 네 개의 소행성 중 하나의 이름을 말하십시오.",
+      "answers": [
+        "세레스",
+        "팔라스",
+        "주노",
+        "베스타"
+      ]
+    },
+    "daily-20261113-361c3af62285": {
+      "sourceHash": "ad7f752317fea7be7e05f8623baec47af64060eea4cf62ecfdb007a3268c2bff",
+      "prompt": "표준 7등급 항성 온도 순서에서 문자의 이름을 지정하세요.",
+      "answers": [
+        "O",
+        "B",
+        "A",
+        "F",
+        "G",
+        "K",
+        "M"
+      ]
+    },
+    "daily-20261113-8963e2cc1f3f": {
+      "sourceHash": "e3aff8d1b449373487c0be06bfda0fc0e7cb6557b2f453f757be12511a20a16c",
+      "prompt": "전통적인 8단계 달 주기의 한 단계를 지정합니다.",
+      "answers": [
+        "뉴문",
+        "보름달",
+        "1분기",
+        "3분기",
+        "왁싱 크레센트",
+        "왁싱 기버스",
+        "쇠퇴하는 기버스",
+        "약해지는 초승달"
+      ]
+    },
+    "daily-20261113-86f4ea178bc6": {
+      "sourceHash": "a1b60355907c7cb5a8e61fcb28f415830fe321ea43c3b70459d35de03fdffdab",
+      "prompt": "위치 요소에 대한 실제 이상을 사용하여 고전적인 케플러 궤도 요소의 이름을 지정합니다.",
+      "answers": [
+        "편심",
+        "성향",
+        "장반경 축",
+        "상승교점의 경도",
+        "근점 인수",
+        "시대의 진정한 변칙"
+      ]
+    },
+    "daily-20261113-78b635521441": {
+      "sourceHash": "84eb1efd13c5ccbff8e2794e197b4c2b6716e470b5df3e016d85e5ab6ab23fac",
+      "prompt": "겨울 대삼각형의 세 별 중 하나가 포함된 별자리의 이름을 지정하세요.",
+      "answers": [
+        "오리온",
+        "큰개자리",
+        "큰 개자리"
+      ]
+    },
+    "daily-20261113-5a39b260c154": {
+      "sourceHash": "a8140a3297e6e48ae336823207d72befaf4c6782c40775cb95dcf1d06b3ada32",
+      "prompt": "겨울의 대삼각형의 세 별 중 하나를 말해보세요.",
+      "answers": [
+        "시리우스",
+        "베텔게우스",
+        "프로키온"
+      ]
+    },
+    "daily-20261113-d32fb4480958": {
+      "sourceHash": "d7deca3e0daea6c6551e25dbe3e32fd5484d2d409d390be0879f4b248903ecc5",
+      "prompt": "20가지 표준 단백질 생성 아미노산 중 하나를 말하십시오.",
+      "answers": [
+        "글리신",
+        "알라닌",
+        "발린",
+        "류신",
+        "이소류신",
+        "세린",
+        "트레오닌",
+        "시스테인",
+        "메티오닌",
+        "아스파르트산",
+        "글루탐산",
+        "아스파라긴",
+        "글루타민",
+        "라이신",
+        "아르기닌",
+        "히스티딘",
+        "페닐알라닌",
+        "티로신",
+        "트립토판",
+        "프롤린"
+      ]
+    },
+    "daily-20261113-801b62c77a78": {
+      "sourceHash": "06198c4984ffc2cb7d577bda4e3889c42ffe03273d5cdbee153a2effe446eabc",
+      "prompt": "표준 RNA 유전자 코드에서 정지 코돈의 이름을 지정합니다.",
+      "answers": [
+        "UAA",
+        "UAG",
+        "UGA"
+      ]
+    },
+    "daily-20261113-19ea0d7e696b": {
+      "sourceHash": "efc054f79477b28829d8b74e268782539464572ef1d1828986dafba7a6be3042",
+      "prompt": "G1-S-G2-M 분류에서 세포주기의 주요 단계를 지정하십시오.",
+      "answers": [
+        "G1",
+        "S",
+        "G2",
+        "M"
+      ]
+    },
+    "daily-20261113-97ed13300d85": {
+      "sourceHash": "8df14592e4da1616a42ccf74e1e4d48cf12c17f363123a2a82dd55e5c841b37b",
+      "prompt": "인간의 윗팔 또는 팔뚝 뼈의 이름을 지정하세요.",
+      "answers": [
+        "상완골",
+        "반경",
+        "울나"
+      ]
+    },
+    "daily-20261113-401b1f41fc84": {
+      "sourceHash": "11a0be3c788977e7f2afb367614639438139bc196ef0f953fa8cf693cda5cb56",
+      "prompt": "슬개골을 제외한 인간 허벅지 또는 다리 아래쪽의 긴 뼈의 이름을 지정하십시오.",
+      "answers": [
+        "대퇴골",
+        "경골",
+        "비골"
+      ]
+    },
+    "daily-20261113-372c9ebfc48a": {
+      "sourceHash": "709873d1cc699c5abc78f5c357322e86e7fadbb3bb938c1a576cb3efa4476e4e",
+      "prompt": "인간 귀의 표준 외부-중간-내부 부분에 있는 영역의 이름을 지정합니다.",
+      "answers": [
+        "외이",
+        "중이",
+        "내이"
+      ]
+    },
+    "daily-20261113-7c7ec70da800": {
+      "sourceHash": "0b2bb824a706d47129e65082f9da432b88dcedba06b1ff83f26f849332a67716",
+      "prompt": "심장-안저-체-유문 모델에서 위 부위의 이름을 지정합니다.",
+      "answers": [
+        "카디아",
+        "안저",
+        "본체",
+        "유문"
+      ]
+    },
+    "daily-20261113-9d5a3957fed9": {
+      "sourceHash": "f9b347fc833703541cb895542764081b145c2cadde594f536399673aa1e9ec05",
+      "prompt": "인간 안구의 세 가지 주요 코트 또는 튜닉 중 하나를 말하십시오.",
+      "answers": [
+        "섬유질 튜닉",
+        "혈관 튜닉",
+        "신경 튜닉"
+      ]
+    },
+    "daily-20261113-7cb2e62ddedd": {
+      "sourceHash": "e6cb2bfd5138cd02ab61f4a7238676bcfd59da21286f95230a4d881eda72194b",
+      "prompt": "표준 5개 영역 모델에서 인간의 척추 영역의 이름을 지정하십시오.",
+      "answers": [
+        "경추",
+        "흉부",
+        "요추",
+        "천골",
+        "미골"
+      ]
+    },
+    "daily-20261113-c3fab0cc6fd6": {
+      "sourceHash": "ac3a423ceb98b0adc359fe29bc5915efe69446a2c1bfde50b7526dd6d95126fd",
+      "prompt": "표준 단백질 합성 트리오에서 RNA의 범주를 지정하십시오.",
+      "answers": [
+        "메신저 RNA",
+        "전송 RNA",
+        "리보솜 RNA"
+      ]
+    },
+    "daily-20261113-42c720e97eb4": {
+      "sourceHash": "989e3eafc226c055f8249867ea2b53e031c3321ea78e85402c09f938a97fe6b2",
+      "prompt": "살아있는 웜뱃 종의 이름을 말해보세요.",
+      "answers": [
+        "일반적인 웜뱃",
+        "남부털코웜뱃",
+        "북부털코웜뱃"
+      ]
+    },
+    "daily-20261113-0d41a5d30871": {
+      "sourceHash": "82511b4eca071e50a5be076163bc28cd6ab1b7c25cf0cfc7fa1979cf9d92c89b",
+      "prompt": "삼중배아 동물 배아의 1차 배아층 이름을 지정하세요.",
+      "answers": [
+        "외배엽",
+        "중배엽",
+        "내배엽"
+      ]
+    },
+    "daily-20261113-57eeedaa407b": {
+      "sourceHash": "6dd505c85d394005c40ac7b6f04a34bb5923a7f961e374bcbd9162be7fb43234",
+      "prompt": "Spheniscus속에 속하는 살아있는 펭귄 종의 이름을 말해보세요.",
+      "answers": [
+        "아프리카 펭귄",
+        "갈라파고스 펭귄",
+        "훔볼트 펭귄",
+        "마젤란 펭귄"
+      ]
+    },
+    "daily-20261113-34e9abc3fa27": {
+      "sourceHash": "04f4e09d8eb6f0b2ec63e10fec53ca86e4b2842b72587b40042b921721d82e92",
+      "prompt": "살아있는 오랑우탄 종의 이름을 말해보세요.",
+      "answers": [
+        "보르네오오랑우탄",
+        "수마트라 오랑우탄",
+        "타파눌리 오랑우탄"
+      ]
+    },
+    "daily-20261113-caab4eac2229": {
+      "sourceHash": "38b03cf880a33c6f70c29cc7efa0326d1ddbf2b80962abd16b1ef233d2efc26a",
+      "prompt": "현존하는 악어과의 이름을 말해보세요.",
+      "answers": [
+        "악어과",
+        "악어과",
+        "가비알과"
+      ]
+    },
+    "daily-20261113-57798a5c570d": {
+      "sourceHash": "0d131b88f8a258f94502928239e06da68040000148bae0ffada0f0d094fbf4b0",
+      "prompt": "다섯 개의 살아있는 극피동물 강 중에서 한 강을 말해보세요.",
+      "answers": [
+        "아스테로이드",
+        "오피로이데아",
+        "에키노이데아",
+        "홀로투로이데아",
+        "크리노이데아"
+      ]
+    },
+    "daily-20261113-1116c266f1d3": {
+      "sourceHash": "e74a32c92270b555759ba51c5b54d59dd0b957137d552717b3dcd9b5a530e4a2",
+      "prompt": "선태식물의 전통적인 3방향 구분에서 그룹의 이름을 지정하세요.",
+      "answers": [
+        "이끼",
+        "리버워츠",
+        "혼워츠"
+      ]
+    },
+    "daily-20261113-911905b0af8f": {
+      "sourceHash": "36756e19eac7f15d667a084e7eef8e43b21d339d13e4fe0180d2e1e47601c1e9",
+      "prompt": "American Kennel Club의 7개 그룹 시스템에서 개 품종 그룹의 이름을 지정하세요.",
+      "answers": [
+        "스포팅",
+        "하운드",
+        "작동 중",
+        "테리어",
+        "장난감",
+        "비스포츠용",
+        "무리 짓기"
+      ]
+    },
+    "daily-20261113-d4933272ea0a": {
+      "sourceHash": "d3020f622f0c41249466637112c6b2784f536558e096cb8d1feeab147bfc5454",
+      "prompt": "표준 4칸 반추동물 모델의 위칸 이름을 지정하세요.",
+      "answers": [
+        "루멘",
+        "세망",
+        "오마섬",
+        "아보마섬"
+      ]
+    },
+    "daily-20261113-d2555752e401": {
+      "sourceHash": "6412e7f65c7e8e7788b08af03ff13e41f5ef62c455e56cb9ca47e60c696e7677",
+      "prompt": "식물 암술의 세 가지 주요 부분 중 하나를 말하십시오.",
+      "answers": [
+        "스티그마",
+        "스타일",
+        "난소"
+      ]
+    },
+    "daily-20261113-6a02a016bbeb": {
+      "sourceHash": "75dbf3143e019accb2c3cf7237e9880abeddd3f954e3d7d300d6773cad4f1512",
+      "prompt": "제인 오스틴의 생애 중 또는 사후 1817년에 출판된 완성된 소설의 이름을 말하십시오.",
+      "answers": [
+        "오만과 편견",
+        "센스 앤 센서빌리티",
+        "엠마",
+        "맨스필드 파크",
+        "설득",
+        "노생거 수도원"
+      ]
+    },
+    "daily-20261113-2fc750207d10": {
+      "sourceHash": "c2eb60065cdee900f7509aaf8851c3b11198dbf4867413caa1795930138baa49",
+      "prompt": "Charles Dickens의 다섯 권의 크리스마스 책 중 하나를 말해보세요.",
+      "answers": [
+        "크리스마스 캐롤",
+        "차임즈",
+        "난로 위의 귀뚜라미",
+        "생명의 전투",
+        "유령의 남자와 유령의 거래"
+      ]
+    },
+    "daily-20261113-a75672327415": {
+      "sourceHash": "1c4d51b3de07062240584dcb47bb08cdcdf1f38703f70c5d57ab8a6cbf49ea0b",
+      "prompt": "호빗에서 소린의 회사에 있던 13명의 난쟁이 중 한 명의 이름을 말하세요.",
+      "answers": [
+        "소린",
+        "발린",
+        "드왈린",
+        "필리",
+        "킬리",
+        "도리",
+        "노리",
+        "오리",
+        "오인",
+        "글로인",
+        "비푸르",
+        "보푸르",
+        "봄버"
+      ]
+    },
+    "daily-20261113-11cc608f1e1f": {
+      "sourceHash": "e465373e3c5150cff6b34329a666afa5f1b9cadcc8175569b14e20b121d4bc14",
+      "prompt": "Arthur Weasley와 Molly Weasley의 일곱 자녀 중 한 명의 이름을 말하십시오.",
+      "answers": [
+        "론",
+        "지니",
+        "프레드",
+        "조지",
+        "퍼시",
+        "빌",
+        "찰리"
+      ]
+    },
+    "daily-20261113-9a7ae31212e2": {
+      "sourceHash": "d76b138e5c767a54c7bac02ba8a780214d5d658f0e878e61d9de4add2c8c8a1a",
+      "prompt": "표준 퀴디치 팀의 플레이 포지션 이름을 지정하세요.",
+      "answers": [
+        "시커",
+        "키퍼",
+        "체이서",
+        "비터"
+      ]
+    },
+    "daily-20261113-522503efb765": {
+      "sourceHash": "06cd4cac806f63a8c665d8870f2c8aa659f801ff030fd12286ca39ecded7f940",
+      "prompt": "해리포터와 불의 잔의 트리위저드 토너먼트에 참가하는 챔피언의 이름을 지정하세요.",
+      "answers": [
+        "해리포터",
+        "세드릭 디고리",
+        "빅터 크룸",
+        "플뢰르 델라쿠르"
+      ]
+    },
+    "daily-20261113-9dd21bf296b8": {
+      "sourceHash": "f1920f24a8fa6aacfde286552e6b4aa3f6d08ced1ecfa289c87dc12b33ff37e0",
+      "prompt": "C. S. Lewis의 7권으로 구성된 나니아 연대기에 있는 책의 이름을 지정하세요.",
+      "answers": [
+        "사자와 마녀와 옷장",
+        "캐스피언 왕자",
+        "새벽 출정호의 항해",
+        "실버 의자",
+        "말과 그의 소년",
+        "마술사의 조카",
+        "마지막 전투"
+      ]
+    },
+    "daily-20261113-785c78cfb310": {
+      "sourceHash": "8bd5badafa19e865c97ebd38220f01be2d4eead960cbf0009093f8fa5b83a32f",
+      "prompt": "Arthur Conan Doyle이 쓴 Sherlock Holmes 소설의 이름을 지정하십시오.",
+      "answers": [
+        "스칼렛 연구",
+        "바스커빌 가문의 사냥개",
+        "4의 표시",
+        "공포의 계곡"
+      ]
+    },
+    "daily-20261113-41f12819b3aa": {
+      "sourceHash": "d4eac8f2df96c543be2161e27c1733b965fa480367348894bdaa9ff068ae31e2",
+      "prompt": "Frank Herbert가 쓴 Dune 소설의 이름을 지정하세요.",
+      "answers": [
+        "듄",
+        "듄 메시아",
+        "듄의 아이들",
+        "듄의 신 황제",
+        "모래 언덕의 이단자",
+        "챕터하우스 듄"
+      ]
+    },
+    "daily-20261113-07a17dca792a": {
+      "sourceHash": "0f633f243187dfbe87037bedb9e393e84f6ddc6e85a9726c9fed32c2c1a1b19a",
+      "prompt": "얼음과 불의 노래 소설에 등장하는 Daenerys Targaryen의 세 용 중 하나의 이름을 지정하세요.",
+      "answers": [
+        "드로곤",
+        "라에갈",
+        "비세리온"
+      ]
+    },
+    "daily-20261113-f9684a4ed0e7": {
+      "sourceHash": "557a66a2919fa4f7651f5e25369b7312b917c8b9b10473031b9cb043e64faa63",
+      "prompt": "2019년 말까지 개봉한 메인 시리즈 토이 스토리 장편 영화 이름을 지정하세요.",
+      "answers": [
+        "토이 스토리",
+        "토이 스토리 2",
+        "토이 스토리 3",
+        "토이 스토리 4"
+      ]
+    },
+    "daily-20261113-feeb4c76ec72": {
+      "sourceHash": "f826dd4d1a29a56ac6e7c4b68df4488ae8916aeafae96fa83de4fe0c2ed2d9f3",
+      "prompt": "Pixar의 Cars 3부작에 나오는 영화 이름을 지정해 주세요.",
+      "answers": [
+        "자동차",
+        "자동차 2",
+        "자동차 3"
+      ]
+    },
+    "daily-20261113-eea084810c0d": {
+      "sourceHash": "ccb3e0075ccb1fdf8c14de4f7b2dda034da2b69afd4aa85b729f52342d180731",
+      "prompt": "2016년 말에 개봉한 쿵푸 팬더 장편 영화 이름을 지정하세요.",
+      "answers": [
+        "쿵푸 팬더",
+        "쿵푸 팬더 2",
+        "쿵푸 팬더 3"
+      ]
+    },
+    "daily-20261113-8fcec4122d42": {
+      "sourceHash": "fdcc8564435ce11c69725be6abfc1e0e6839c28d6f5607ed5897ef82876e08b8",
+      "prompt": "해리슨 포드가 인디애나 존스 역을 맡은 인디애나 존스 장편 영화의 이름을 지정하십시오.",
+      "answers": [
+        "잃어버린 방주의 침입자",
+        "인디애나 존스와 파멸의 사원",
+        "인디애나 존스와 최후의 성전",
+        "인디애나 존스와 크리스탈 해골의 왕국",
+        "인디애나 존스와 운명의 다이얼"
+      ]
+    },
+    "daily-20261113-cf4685070b18": {
+      "sourceHash": "4f5facf6b3bbd2ecd4c8244f226a6085a4cadbacea0b416c47e51e2119fb7eff",
+      "prompt": "Jurassic World 이전의 오리지널 Jurassic Park 3부작에 포함된 영화의 이름을 지정하세요.",
+      "answers": [
+        "쥬라기 공원",
+        "잃어버린 세계 쥬라기 공원",
+        "쥬라기 공원 III"
+      ]
+    },
+    "daily-20261113-281b9fff6461": {
+      "sourceHash": "502d56e66f3182a1ce8bb05a01fd0c0a487b8f54097c9f874f9c861500d2129b",
+      "prompt": "마다가스카르 주요 애니메이션 3부작에 나오는 영화의 이름을 지정하세요.",
+      "answers": [
+        "마다가스카르",
+        "마다가스카르 탈출 2 아프리카",
+        "마다가스카르 3 유럽에서 가장 지명수배된 인물"
+      ]
+    },
+    "daily-20261113-9d7c91082325": {
+      "sourceHash": "58f6c54ce6b204654cbe67d665c2ef1f290cb6b25d59b213cfd609a58245ecf9",
+      "prompt": "2010년 말에 개봉한 슈렉 메인 시리즈 장편 영화 이름을 지정하세요.",
+      "answers": [
+        "슈렉",
+        "슈렉 2",
+        "슈렉 3세",
+        "슈렉 포에버 애프터"
+      ]
+    },
+    "daily-20261113-9f5445239f47": {
+      "sourceHash": "db808b02b3208e0692436629c40e2fb607c129d9e518d9ea6f610a7984410266",
+      "prompt": "DreamWorks의 오리지널 애니메이션 드래곤 길들이기 3부작에 나오는 영화의 이름을 지정해 보세요.",
+      "answers": [
+        "드래곤을 훈련하는 방법",
+        "드래곤 훈련 방법 2",
+        "드래곤을 훈련하는 방법 숨겨진 세계"
+      ]
+    },
+    "daily-20261113-9a5a0ca0b545": {
+      "sourceHash": "4b4d3e937d941124ea02cb2f1c3f49e76b97316e207bc8ada6eb533f4466818a",
+      "prompt": "Edgar Wright의 세 가지 맛 Cornetto 3부작에 나오는 영화 이름을 지정하세요.",
+      "answers": [
+        "망자의 숀",
+        "핫 퍼즈",
+        "세상의 끝"
+      ]
+    },
+    "daily-20261113-b641eab59e7d": {
+      "sourceHash": "46eac422382476c355e02eb24c677e11a6e300ec8bb691f912bc2459801c499a",
+      "prompt": "2003년 말에 개봉된 오리지널 매트릭스 3부작에 포함된 영화의 이름을 지정하세요.",
+      "answers": [
+        "매트릭스",
+        "매트릭스 리로디드",
+        "매트릭스 혁명"
+      ]
+    },
+    "daily-20261113-dd9a235ea4b2": {
+      "sourceHash": "6f914039b4d04817d1060f1f23a50bd4a9bb5a955cf8d70a0f80db912e90a657",
+      "prompt": "핑크 플로이드(Pink Floyd)의 클래식 1970년대 4인조 라인업 멤버를 말해보세요.",
+      "answers": [
+        "데이비드 길모어",
+        "로저 워터스",
+        "닉 메이슨",
+        "리처드 라이트"
+      ]
+    },
+    "daily-20261113-fced20795127": {
+      "sourceHash": "1a0027e38f9034e9694163a1538b8da654ba747d62fc171df71bfd4a7d12ff5c",
+      "prompt": "레드 제플린의 오리지널 4인 라인업 멤버 중 한 명을 꼽아보세요.",
+      "answers": [
+        "로버트 플랜트",
+        "지미 페이지",
+        "존 본햄",
+        "존 폴 존스"
+      ]
+    },
+    "daily-20261113-402e343b98c5": {
+      "sourceHash": "de8a217b90658685917f9598f5f7b86526474a904ee7fbeedd64670a539f8374",
+      "prompt": "Who's 클래식 4인 라인업의 멤버를 지명하세요.",
+      "answers": [
+        "로저 달트리",
+        "피트 타운센드",
+        "키스 문",
+        "존 엔트위슬"
+      ]
+    },
+    "daily-20261113-a2fb90d738f4": {
+      "sourceHash": "fbe16ed827f5eb2799d1915e76ac8d0f55e80a55ab383e7eeda57c0ea914d0ef",
+      "prompt": "1991년 자칭 Black Album에서 공연한 Metallica 멤버의 이름을 말해보세요.",
+      "answers": [
+        "제임스 헷필드",
+        "라스 울리히",
+        "커크 해밋",
+        "제이슨 뉴스테드"
+      ]
+    },
+    "daily-20261113-52da427ccf2b": {
+      "sourceHash": "96d03c03cf9526041a44b6d58c408fdaec51ec41c150f4fe921548dc6b7a5504",
+      "prompt": "기존의 7모드 시스템에서 메이저 스케일의 모드를 명명합니다.",
+      "answers": [
+        "이오니아식",
+        "도리안",
+        "프리지아어",
+        "리디안",
+        "믹솔리디안",
+        "에올리안",
+        "로크리안"
+      ]
+    },
+    "daily-20261113-a0286957a835": {
+      "sourceHash": "bc8cb7fc53cf7fa213c951af140a90db0f17b1610266588cbe971f8bc5075e07",
+      "prompt": "C 메이저 키의 기본 메이저 3화음을 근음 또는 코드 이름으로 명명합니다.",
+      "answers": [
+        "C",
+        "F",
+        "G"
+      ]
+    },
+    "daily-20261113-661a89350970": {
+      "sourceHash": "7724c2451f63f6b94f9cebd3bee24a2a04df081e11009db66284b6602f1f72dc",
+      "prompt": "표준 클래식 현악 4중주에서 악기 유형의 이름을 지정하세요.",
+      "answers": [
+        "바이올린",
+        "비올라",
+        "첼로"
+      ]
+    },
+    "daily-20261113-c9efb98b323a": {
+      "sourceHash": "44d9e616260081d263aac978c3f452a1e593c624ec10b06ae3e2c99446fe2b96",
+      "prompt": "표준 리드 트리오 앙상블의 악기 이름을 지정하세요.",
+      "answers": [
+        "오보에",
+        "클라리넷",
+        "바순"
+      ]
+    },
+    "daily-20261113-0a8ac98f7f55": {
+      "sourceHash": "ad1027a3f7a8a75b552b1c37ceeeade5206421e4de1282e877fe88a32364a096",
+      "prompt": "표준 클래식 피아노 트리오의 악기 유형을 지정하세요.",
+      "answers": [
+        "피아노",
+        "바이올린",
+        "첼로"
+      ]
+    },
+    "daily-20261113-ae83038bf6b2": {
+      "sourceHash": "8fc8d6e292c6a0432ef108700a2e7358c17e54e739c203f1d35f4ca81d6cbcc7",
+      "prompt": "표준 SATB 색소폰 4중주에서 색소폰 유형을 지정합니다.",
+      "answers": [
+        "소프라노",
+        "알토",
+        "테너",
+        "바리톤"
+      ]
+    },
+    "daily-20261113-2a710f138591": {
+      "sourceHash": "5d469e84a5dbe19df220096b1bd081937f6b4d723ec2227d97db9f4a501156d9",
+      "prompt": "원래 Catan 기본 게임에서 지형 타일로 생성된 자원의 이름을 지정합니다.",
+      "answers": [
+        "목재",
+        "브릭",
+        "울",
+        "그레인",
+        "광석"
+      ]
+    },
+    "daily-20261113-8bf0c85d5bf4": {
+      "sourceHash": "9dcfd0ed2955190f4f576e32f3481bde2248e9119f1f5ef3ca71e2aa2024dcbc",
+      "prompt": "원래 Catan 기본 게임에서 개발 카드 유형의 이름을 지정합니다.",
+      "answers": [
+        "기사",
+        "승리 포인트",
+        "도로 빌딩",
+        "풍년",
+        "모노폴리"
+      ]
+    },
+    "daily-20261113-020ac9b7a76c": {
+      "sourceHash": "a8d8cad4c6fc330fc407a2aa4b7aaf6539c02b310193035822f19f6815ba72ae",
+      "prompt": "전통 마작에서 번호가 매겨진 세 가지 타일 중 하나를 말해보세요.",
+      "answers": [
+        "대나무",
+        "서클",
+        "캐릭터"
+      ]
+    },
+    "daily-20261113-aadf3463383f": {
+      "sourceHash": "eb6cb9855594df1d5afe4382051d688d27d5d2b4a1f93c7e73948816ad2af259",
+      "prompt": "마작 타일의 전통적인 적합-명예-보너스 그룹화에서 광범위한 범주를 지정합니다.",
+      "answers": [
+        "적합한 타일",
+        "명예 타일",
+        "보너스 타일"
+      ]
+    },
+    "daily-20261113-b3539723b79a": {
+      "sourceHash": "c0494ce206e6d670b32430872059e7055f3587ac592f4e90f9badf51ba597f12",
+      "prompt": "전통 마작에서 용의 명예 타일의 이름을 지정합니다.",
+      "answers": [
+        "레드 드래곤",
+        "그린 드래곤",
+        "화이트 드래곤"
+      ]
+    },
+    "daily-20261113-b0cb8cc8e162": {
+      "sourceHash": "3a73453448cbf989520e94ace850b14dc2a5a72084c828ed43b5255b4908bc7d",
+      "prompt": "표준 6개 능력 Dungeons & Dragons 시스템의 능력 점수를 지정합니다.",
+      "answers": [
+        "강도",
+        "민첩성",
+        "헌법",
+        "인텔리전스",
+        "지혜",
+        "카리스마"
+      ]
+    },
+    "daily-20261113-8b118b115555": {
+      "sourceHash": "a0605c3ac003ee595cdcf96e138e2edd72e2488becbeed415832e992ff2e6d49",
+      "prompt": "Dungeons & Dragons의 고전적인 9개 정렬 그리드에서 정렬의 이름을 지정합니다.",
+      "answers": [
+        "합법적인 좋은",
+        "중립 좋음",
+        "카오스 굿",
+        "질서 중립",
+        "진정한 중립",
+        "카오스 중립",
+        "질서악",
+        "중립악",
+        "혼돈의 악"
+      ]
+    },
+    "daily-20261113-177a58c636fe": {
+      "sourceHash": "f36311a9bb7c1b05fcf223aad92e238ff0222971b1f2eaa314f9bc619bdd4d65",
+      "prompt": "Mega Drive/Genesis용 오리지널 1991년 Sonic the Hedgehog의 일반 멀티액트 구역에 이름을 지정합니다.",
+      "answers": [
+        "그린힐",
+        "대리석",
+        "스프링 야드",
+        "미궁",
+        "스타 라이트",
+        "스크랩 브레인"
+      ]
+    },
+    "daily-20261113-3e59e0751d4b": {
+      "sourceHash": "af9fab1395d293bbceaee8b8cacd622180c934ee0115b714a7d2c520404273de",
+      "prompt": "젤다의 전설에서 트라이포스의 구성 요소 이름을 지정하세요.",
+      "answers": [
+        "전원",
+        "지혜",
+        "용기"
+      ]
+    },
+    "daily-20261113-7ade5d48a023": {
+      "sourceHash": "8eb3b880f2b38a7fbc7aa87c3c4a9a767155c76c4b37aeaab8db51ab980b9248",
+      "prompt": "오리지널 1세대 게임에 등장하는 포켓몬 유형의 이름을 지정하세요.",
+      "answers": [
+        "노멀",
+        "화재",
+        "물",
+        "잔디",
+        "전기",
+        "아이스",
+        "파이팅",
+        "포이즌",
+        "접지",
+        "비행",
+        "심령술사",
+        "버그",
+        "락",
+        "고스트",
+        "드래곤"
+      ]
+    },
+    "daily-20261113-08b6137644bc": {
+      "sourceHash": "c3645e16f572672e437c072937d0e018da91085738233dd93633380a577c20ba",
+      "prompt": "고대 세계 7대 불가사의 중 하나를 말해보세요.",
+      "answers": [
+        "기자의 대 피라미드",
+        "바빌론의 공중정원",
+        "올림피아의 제우스 동상",
+        "에베소의 아르테미스 신전",
+        "할리카르나소스의 영묘",
+        "로도스의 거상",
+        "알렉산드리아 등대"
+      ]
+    },
+    "daily-20261113-ba56359edf0c": {
+      "sourceHash": "8e6b29403769d222a83e6658d8602283c68870d75d101a06318ebf472f90e9b9",
+      "prompt": "플라비안 왕조의 로마 황제의 이름을 말해보세요.",
+      "answers": [
+        "베스파시아누스",
+        "티투스",
+        "도미시안"
+      ]
+    },
+    "daily-20261113-79a278ac9aae": {
+      "sourceHash": "fea29a5dae9a79d05c36d59554bb1526fe3025960a486900cce4da8cfec4ffb8",
+      "prompt": "전통적인 다섯 선한 황제 그룹에서 로마 황제의 이름을 지정하십시오.",
+      "answers": [
+        "마르쿠스 아우렐리우스",
+        "트라야누스",
+        "하드리안",
+        "네르바",
+        "안토니누스 피우스"
+      ]
+    },
+    "daily-20261113-4e5f630eca47": {
+      "sourceHash": "2470acdec09a6289fa030687fa1a549d3f6debfa5a9380d5a39bbe3492fea1e8",
+      "prompt": "훌리오-클라우디아 왕조의 로마 황제의 이름을 말해보세요.",
+      "answers": [
+        "아우구스투스",
+        "티베리우스",
+        "칼리굴라",
+        "클라우디우스",
+        "네로"
+      ]
+    },
+    "daily-20261113-bcfee7eb9e4e": {
+      "sourceHash": "e50ac5ea8b4812d8e239043866cef5e435f4f75dad05b7f167c629abf26a566f",
+      "prompt": "서기 69년 4대 황제의 해에 로마를 통치한 황제의 이름을 말해보세요.",
+      "answers": [
+        "베스파시아누스",
+        "갈바",
+        "오토",
+        "비텔리우스"
+      ]
+    },
+    "daily-20261113-35aa8eb156c8": {
+      "sourceHash": "5fb61f12ea3a2d37054b07e64ad95491b4440e8f6e7e9560a97e727142cffaac",
+      "prompt": "튜더 왕조의 영국 군주의 이름을 말해보세요.",
+      "answers": [
+        "헨리 7세",
+        "헨리 8세",
+        "에드워드 6세",
+        "메리 1세",
+        "엘리자베스 1세"
+      ]
+    },
+    "daily-20261113-4ca18937fe84": {
+      "sourceHash": "390abbe685b87971def8d85e27f1d07bfd87632933fff8ac98e0fab8d11195af",
+      "prompt": "제1차 세계대전 당시 동맹국의 일원 중 한 명을 말해보세요.",
+      "answers": [
+        "독일 제국",
+        "오스트리아-헝가리",
+        "오스만 제국",
+        "불가리아"
+      ]
+    },
+    "daily-20261113-777ac8b7a80e": {
+      "sourceHash": "393d28bcd025dc5a38a7fbadc00bcdce645abb8e946643be5b7b7e82b941ef65",
+      "prompt": "1940년 9월에 삼국 조약을 최초로 체결한 국가의 이름을 말하십시오.",
+      "answers": [
+        "독일",
+        "이탈리아",
+        "일본"
+      ]
+    },
+    "daily-20261113-5539906b7349": {
+      "sourceHash": "4686e29f3b1a74768172a04de8d2d5511eb1e9a9c30cfae3aca06862266b1f2f",
+      "prompt": "2024년 말까지 재임 중 암살된 미국 대통령의 이름을 지정하세요.",
+      "answers": [
+        "에이브러햄 링컨",
+        "존 F 케네디",
+        "제임스 A. 가필드",
+        "윌리엄 맥킨리"
+      ]
+    },
+    "daily-20261113-e764371f71ec": {
+      "sourceHash": "fcfce02658439e759e06dbe77739f0a7bfa20eaa5a0e4843610c6600b58f7332",
+      "prompt": "주요 피라미드가 기자의 세 피라미드 중 하나인 파라오의 이름을 말하십시오.",
+      "answers": [
+        "쿠푸",
+        "카프레",
+        "멘카우레"
+      ]
+    },
+    "daily-20261113-a40dc205df65": {
+      "sourceHash": "0eeb5c2e6c5c61a04066e6f2dc41a43390ae44f0c0f379aafeb34c60b931035d",
+      "prompt": "IBA의 고전적인 마가리타 레시피에서 액체 성분의 이름을 지정하세요.",
+      "answers": [
+        "데킬라",
+        "트리플 초",
+        "라임 주스"
+      ]
+    },
+    "daily-20261113-aa90bae7c2b0": {
+      "sourceHash": "7f0a949a16605a5cdbba9edb51ef1f8375428f78a6d25919c12ed89469a8cd00",
+      "prompt": "IBA의 클래식 다이커리에서 얼음을 제외한 기본 성분의 이름을 지정하세요.",
+      "answers": [
+        "화이트 럼",
+        "라임 주스",
+        "설탕"
+      ]
+    },
+    "daily-20261113-e413d3476d59": {
+      "sourceHash": "0297449e1af12c9d440678f8ecaf5cb12d23929d0bc1e568e4eaf3e28df5dd2e",
+      "prompt": "고전적인 화이트 러시안 칵테일의 세 가지 기본 재료 중 하나를 말하십시오.",
+      "answers": [
+        "보드카",
+        "커피 리큐어",
+        "크림"
+      ]
+    },
+    "daily-20261113-dadcba76077b": {
+      "sourceHash": "8820c44bc74036b1d13a4cde2ea507752eb712f005f2012d1ef83ccd3c7dbabc",
+      "prompt": "고명을 제외한 IBA 알렉산더 칵테일의 액체 성분 이름을 지정하세요.",
+      "answers": [
+        "꼬냑",
+        "크렘 드 카카오",
+        "크림"
+      ]
+    },
+    "daily-20261113-ed4790c8eb0d": {
+      "sourceHash": "ca332326d4b90bc176fb717ab669dd2d1ea089c1f622a45dfe34cafeb857718a",
+      "prompt": "전통적인 나폴리 아이스크림의 맛을 말해 보세요.",
+      "answers": [
+        "초콜릿",
+        "바닐라",
+        "딸기"
+      ]
+    },
+    "daily-20261113-a092b55cba00": {
+      "sourceHash": "2156b4f6e5ff4d4e6d4c985914e2d0fd53caf96d1690eae74f8029251c46dda8",
+      "prompt": "스카치 위스키 규정의 5개 카테고리 분류에서 카테고리 이름을 지정하세요.",
+      "answers": [
+        "싱글몰트 스카치 위스키",
+        "싱글 그레인 스카치 위스키",
+        "블렌디드 스카치 위스키",
+        "블렌디드 몰트 스카치 위스키",
+        "블렌디드 그레인 스카치 위스키"
+      ]
+    },
+    "daily-20261113-bec94028b003": {
+      "sourceHash": "d8dac3085dc79fabf6cb998a4c495b67e6522e47ecc92983484562ea079fd9ac",
+      "prompt": "로마의 전통적인 4가지 파스타 4중주에서 파스타 요리의 이름을 지정하세요.",
+      "answers": [
+        "카르보나라",
+        "카시오 에 페페",
+        "아마트리시아나",
+        "그리시아"
+      ]
+    },
+    "daily-20261113-467bcae95a4b": {
+      "sourceHash": "7e69b2ecfb932070afc9499ed1e85959606570d43a3ecd1e7036e03d62c2e531",
+      "prompt": "초콜릿 제조에 사용되는 전통적인 3품종 분류에 따라 카카오 품종을 명명합니다.",
+      "answers": [
+        "크리올로",
+        "포라스테로",
+        "트리니타리오"
+      ]
+    },
+    "daily-20261113-c95821be811e": {
+      "sourceHash": "1213910edcf58df71e7e9ae249187c2e6936009b4d2594cf52c19fc23864452d",
+      "prompt": "IBA의 아이리시 커피 레시피에 나오는 재료의 이름을 지정하세요.",
+      "answers": [
+        "아이리시 위스키",
+        "뜨거운 커피",
+        "설탕",
+        "크림"
+      ]
+    },
+    "daily-20261113-facae5552bd4": {
+      "sourceHash": "c011eb61fe2081615c88beba33f678b15ba254eec7e4c33581a5e081ee8d07be",
+      "prompt": "전통적인 7가지 성분 페스토 제노베제의 성분 이름을 지정하세요.",
+      "answers": [
+        "바질",
+        "엑스트라 버진 올리브 오일",
+        "잣",
+        "마늘",
+        "파르미지아노 레지아노",
+        "페코리노",
+        "소금"
+      ]
+    },
+    "daily-20261114-webb-instruments": {
+      "sourceHash": "784ab5262c01f1b277a4158d49b02dc584660ef40b6ad029558e6ceeeb9cb53c",
+      "prompt": "제임스 웹 우주 망원경에 탑재된 4개의 과학 장비 중 하나의 이름을 말하십시오.",
+      "answers": [
+        "NIR캠",
+        "NIRSpec",
+        "미리",
+        "FGS/NIRISS"
+      ]
+    },
+    "daily-20261114-spitzer-instruments": {
+      "sourceHash": "437e13cce2bf16e1eadef188099424845b97f0bde8e67d66e03716694eaf3331",
+      "prompt": "스피처 우주 망원경에 탑재된 과학 장비의 이름을 말해보세요.",
+      "answers": [
+        "IRAC",
+        "IRS",
+        "MIPS"
+      ]
+    },
+    "daily-20261114-chandra-instruments": {
+      "sourceHash": "efbf7c1afcaee289a598a80e49275946c93cfd56723f07ae0dc5d48d8d77a2a7",
+      "prompt": "Chandra X-ray Observatory의 4가지 주요 과학 장비 중 하나의 이름을 말하십시오.",
+      "answers": [
+        "ACIS",
+        "HRC",
+        "HETG",
+        "LETG"
+      ]
+    },
+    "daily-20261114-artemis-one-manikins": {
+      "sourceHash": "64f073ab0ee54eb7abf7159a650e96cbf7c9a757a1ef114af2251b9462047f8c",
+      "prompt": "2022년에 아르테미스 1세에 탑재된 인체 테스트용 마네킹 3개 중 하나를 말해보세요.",
+      "answers": [
+        "무니킨 캄포스",
+        "헬가",
+        "조하르"
+      ]
+    },
+    "daily-20261114-solar-eclipse-types": {
+      "sourceHash": "279739bdeecd30cda0c9f27862396d32ca3ca7996513a5e9ee88b6a34a6b06c7",
+      "prompt": "NASA의 4가지 유형 분류에서 일식의 유형을 지정하세요.",
+      "answers": [
+        "합계",
+        "부분",
+        "환형",
+        "하이브리드"
+      ]
+    },
+    "daily-20261114-martian-geologic-ages": {
+      "sourceHash": "d0eb7084ebf6852c6aebb516e7f50dbc495eeb28c0a86a8072dc4d5c5ddcc437",
+      "prompt": "화성의 표준 분화구 기반 시간 척도에서 화성의 세 가지 광범위한 지질학적 연대 중 하나를 말하십시오.",
+      "answers": [
+        "노아치안",
+        "헤스페리안",
+        "아마존"
+      ]
+    },
+    "daily-20261114-solar-layers": {
+      "sourceHash": "3361d39559277eec3649c7fa4609b553c5b28368bb2a3359e7fad6b4e856acc9",
+      "prompt": "NASA의 7층 다이어그램에서 태양 또는 대기층의 이름을 지정하세요.",
+      "answers": [
+        "코어",
+        "방사 영역",
+        "대류 구역",
+        "포토스피어",
+        "채층",
+        "전환 영역",
+        "코로나"
+      ]
+    },
+    "daily-20261114-meteorite-main-groups": {
+      "sourceHash": "2a3d87cef50c7887b6638a267e35f226dc54b5b421ec96bf79aee00681fa04bc",
+      "prompt": "금속과 규산염 함량으로 분류된 세 가지 주요 운석 그룹 중 하나를 말하십시오.",
+      "answers": [
+        "철",
+        "스토니",
+        "스토니 아이언"
+      ]
+    },
+    "daily-20261114-apollo-moonwalkers": {
+      "sourceHash": "a52288a5e200717cea8899ba28b2ff5e67d466653edd17646f4329921d9e2645",
+      "prompt": "1969년부터 1972년까지 아폴로 프로그램 동안 달 위를 걸었던 우주비행사의 이름을 말해보세요.",
+      "answers": [
+        "닐 암스트롱",
+        "버즈 올드린",
+        "피트 콘래드",
+        "앨런 빈",
+        "앨런 셰퍼드",
+        "에드가 미첼",
+        "데이비드 스콧",
+        "제임스 어윈",
+        "존 영",
+        "찰스 듀크",
+        "유진 서넌",
+        "해리슨 슈미트"
+      ]
+    },
+    "daily-20261114-iss-partner-agencies": {
+      "sourceHash": "b1848d49cd046eec6a4f4a7c39c7c9836a59e17562bb23dfee6581a185d5e678",
+      "prompt": "국제 우주 정거장을 건설하기 위해 협력한 5개 우주 기관 중 하나의 이름을 말하십시오.",
+      "answers": [
+        "NASA",
+        "ESA",
+        "로스코스모스",
+        "JAXA",
+        "CSA"
+      ]
+    },
+    "daily-20261114-human-tissue-types": {
+      "sourceHash": "2c987366778f568f45f8cb67ee6ba3abcd49608e20821ac0c8e914271300ecbd",
+      "prompt": "네 가지 기본 인간 조직 유형 중 하나를 말하십시오.",
+      "answers": [
+        "상피",
+        "연결형",
+        "근육",
+        "긴장"
+      ]
+    },
+    "daily-20261114-synovial-joint-types": {
+      "sourceHash": "30b1d00f5b018ed5f3a1e125a29c28c1efbf11cfd8d21972a080ffaa288723b9",
+      "prompt": "표준 6형 분류에서 윤활관절 유형을 지정합니다.",
+      "answers": [
+        "힌지",
+        "볼 및 소켓",
+        "피벗",
+        "안장",
+        "평면",
+        "콘딜로이드"
+      ]
+    },
+    "daily-20261114-cranial-bone-types": {
+      "sourceHash": "04105c82271ee1a203942e9d0c45c583c729d1e4273e6f6aa1956782e556ba10",
+      "prompt": "왼쪽 버전과 오른쪽 버전을 함께 세어 성인 인간 두뇌의 뼈 이름을 지정하세요.",
+      "answers": [
+        "정면",
+        "정수리",
+        "임시",
+        "후두골",
+        "접형체",
+        "사골"
+      ]
+    },
+    "daily-20261114-carpal-bones": {
+      "sourceHash": "d21fd699a3052fc7121ffa7565101de114fe0b09fa070ae136f51424666ad04a",
+      "prompt": "인간의 손목에 있는 8개의 손목뼈 중 하나의 이름을 말해보세요.",
+      "answers": [
+        "주상골",
+        "루네이트",
+        "트라이퀘트럼",
+        "Pisiform",
+        "사다리꼴",
+        "사다리꼴",
+        "카피테이트",
+        "하메이트"
+      ]
+    },
+    "daily-20261114-leukocyte-types": {
+      "sourceHash": "ec130abc3cf2c089debf5b1ae3adfb030b49bd152f4910bf76b7f76ee6f721d8",
+      "prompt": "표준 감별 혈구 수치에서 5가지 주요 백혈구 유형 중 하나를 말하십시오.",
+      "answers": [
+        "호중구",
+        "림프구",
+        "단핵구",
+        "호산구",
+        "호염기구"
+      ]
+    },
+    "daily-20261114-heart-valves": {
+      "sourceHash": "25c4ff814bcace81b95ee65f59cde569834e52ab4eebf96aa19f6b4451ea2d2f",
+      "prompt": "인간 심장의 4개 판막 중 하나의 이름을 말하십시오.",
+      "answers": [
+        "미트랄",
+        "삼첨판",
+        "대동맥",
+        "폐"
+      ]
+    },
+    "daily-20261114-meninges": {
+      "sourceHash": "46874ded52608a7eb44ee21d6b55a8c1efab0c2547f2807aee0b50a522c4d9c0",
+      "prompt": "인간의 뇌와 척수를 둘러싸고 있는 세 개의 수막 중 하나를 말하십시오.",
+      "answers": [
+        "경질막",
+        "거미막 교배",
+        "피아 메이터"
+      ]
+    },
+    "daily-20261114-cartilage-types": {
+      "sourceHash": "d71b36f1625c277c31d74bcf0c96232261435171d32bee86f7c3f31a031838c5",
+      "prompt": "표준 3가지 유형의 인체 조직학 분류에서 연골 유형을 지정합니다.",
+      "answers": [
+        "히알린",
+        "탄성",
+        "섬유연골"
+      ]
+    },
+    "daily-20261114-anatomical-planes": {
+      "sourceHash": "0c84398874a240754f48d647fb9df7c1e1b316b651a53a4a6bcc8c5029785ad7",
+      "prompt": "인체를 나누는 데 사용되는 세 가지 주요 해부학적 평면 중 하나를 말하십시오.",
+      "answers": [
+        "시상면",
+        "정면",
+        "가로"
+      ]
+    },
+    "daily-20261114-crystal-systems": {
+      "sourceHash": "91763128065156434b06469230800c6be7c0b7b14a78c31979a241603858efd3",
+      "prompt": "IUCr 분류에 있는 7개의 결정 시스템 중 하나를 말하십시오.",
+      "answers": [
+        "큐빅",
+        "정방형",
+        "사방정계",
+        "육각형",
+        "삼각",
+        "단사정",
+        "트리클리닉"
+      ]
+    },
+    "daily-20261114-electron-quantum-numbers": {
+      "sourceHash": "47553ef65b51b36ae918065cf1b57956d5df3800b31938ad9646948a5318cf31",
+      "prompt": "원자의 전자를 설명하는 데 사용되는 네 가지 양자수 중 하나를 말하십시오.",
+      "answers": [
+        "교장",
+        "각운동량",
+        "자기",
+        "스핀"
+      ]
+    },
+    "daily-20261114-phase-transition-names": {
+      "sourceHash": "d164e5c2824d8d981b8adbe9efcd4c8491516e6406d370df4f82f2056cb1c68c",
+      "prompt": "기존의 6전이 모델에서 고체, 액체, 기체 사이의 직접 전이를 지정하세요.",
+      "answers": [
+        "녹는 중",
+        "냉동",
+        "기화",
+        "응축",
+        "승화",
+        "증착"
+      ]
+    },
+    "daily-20261114-plant-tissue-systems": {
+      "sourceHash": "16c8a4dbd42a4d915cbc5dbf3dbb9c059b43564c54f636ab270295f35dc75845",
+      "prompt": "혈관 식물의 세 가지 영구 조직 시스템 중 하나를 말하십시오.",
+      "answers": [
+        "피부",
+        "혈관",
+        "접지"
+      ]
+    },
+    "daily-20261114-gymnosperm-groups": {
+      "sourceHash": "895a2e281c123b4fdab5d1d1b8b5410c5c00b2fca3ea9a122cedb2e56e37f191",
+      "prompt": "표준 입문 분류에서 살아있는 겉씨식물 그룹 4개 중 하나의 이름을 지정하십시오.",
+      "answers": [
+        "침엽수",
+        "소철",
+        "은행나무",
+        "Gnetophytes"
+      ]
+    },
+    "daily-20261114-carbon-fixation-pathways": {
+      "sourceHash": "963b055424386dea6abd3019045bb316b486e0ade77663a554aacd4d6122f5ce",
+      "prompt": "식물의 세 가지 주요 광합성 탄소 고정 경로 중 하나를 말하십시오.",
+      "answers": [
+        "C3",
+        "C4",
+        "캠"
+      ]
+    },
+    "daily-20261114-traditional-plant-hormones": {
+      "sourceHash": "d3f204d9009bbcaf2b7ecc1b60c7a40a38ec5fc20f93394ff1f6a44f9122d7bc",
+      "prompt": "전통적인 5개 그룹 분류에서 식물 호르몬 그룹을 지정합니다.",
+      "answers": [
+        "옥신",
+        "지베렐린",
+        "사이토키닌",
+        "에틸렌",
+        "앱시스산"
+      ]
+    },
+    "daily-20261114-symbiotic-interactions": {
+      "sourceHash": "10df543fac1205f3899146c225279892b837b7b6961db7a919f7da68cf067133",
+      "prompt": "표준 3가지 결과 분류에서 공생의 주요 형태를 지정하십시오.",
+      "answers": [
+        "상호주의",
+        "공생",
+        "기생"
+      ]
+    },
+    "daily-20261114-terrestrial-biomes": {
+      "sourceHash": "751c9044237c15c756e7d0b59446a02bdff88aee0497a1b1ccf7faff3083f6c7",
+      "prompt": "OpenStax Biology 2e의 8개 생물 군계 분류에서 주요 육상 생물 군계의 이름을 지정하세요.",
+      "answers": [
+        "열대습윤림",
+        "사바나",
+        "아열대 사막",
+        "챠파랄",
+        "온대 초원",
+        "온대림",
+        "북방림",
+        "북극 툰드라"
+      ]
+    },
+    "daily-20261114-kiwi-species": {
+      "sourceHash": "7b6e1b1ac7b7cead210ea4824fa0278e30c7ab570fd62e0f950053e06dcbf75f",
+      "prompt": "세이브 더 키위(Save the Kiwi)가 인정한 살아있는 키위 5종 중 하나의 이름을 말하십시오.",
+      "answers": [
+        "노스 아일랜드 브라운 키위",
+        "큰 점박이 키위",
+        "작은얼룩키위",
+        "로위",
+        "토코에카"
+      ]
+    },
+    "daily-20261114-honeybee-castes": {
+      "sourceHash": "74a11647178b287fdf74c9304efa7d535bbf07de9c3b8f6a5f010853df963d82",
+      "prompt": "한 벌집에 있는 세 마리의 성체 꿀벌 계층 중 하나의 이름을 말하십시오.",
+      "answers": [
+        "퀸",
+        "작업자",
+        "드론"
+      ]
+    },
+    "daily-20261114-npk-elements": {
+      "sourceHash": "514804638d67534def57be87dc530bf08a047d1426e08057b0257fa8d2097212",
+      "prompt": "비료 약어 NPK에서 문자로 표시되는 화학 원소의 이름을 지정하십시오.",
+      "answers": [
+        "질소",
+        "인",
+        "칼륨"
+      ]
+    },
+    "daily-20261114-ecological-pyramids": {
+      "sourceHash": "504246bcbc1c942b17249de6fb5faaf1b5d1c79f6b692a4b5ea9504fd6ec320a",
+      "prompt": "세 가지 표준 종류의 생태 피라미드 중 하나로 표시되는 수량을 말하십시오.",
+      "answers": [
+        "번호",
+        "바이오매스",
+        "에너지"
+      ]
+    },
+    "daily-20261114-four-corners-states": {
+      "sourceHash": "d22d745bda7c926ccd0fc08d5ce935ba3a57c2b62c882967501d80afd3d25037",
+      "prompt": "경계가 Four Corners 기념물과 만나는 미국 주의 이름을 지정하십시오.",
+      "answers": [
+        "애리조나",
+        "콜로라도",
+        "뉴멕시코",
+        "유타"
+      ]
+    },
+    "daily-20261114-alpine-convention-countries": {
+      "sourceHash": "1cd826bf6a862321bdd6e7d44400b067b1ffa12f054a373869ba74f903b9f8f8",
+      "prompt": "알파인 협약에 대표되는 8개 알파인 국가 중 하나의 이름을 말하십시오.",
+      "answers": [
+        "스위스",
+        "오스트리아",
+        "프랑스",
+        "이탈리아",
+        "독일",
+        "슬로베니아",
+        "리히텐슈타인",
+        "모나코"
+      ]
+    },
+    "daily-20261114-greenwich-meridian-countries": {
+      "sourceHash": "7a79d2c169ecaace808c7fe17df6793aea6deceda99fd8ba88df5a1ef9f3c378",
+      "prompt": "적도 북쪽 육지에서 그리니치 본초 자오선이 교차하는 국가의 이름을 지정하십시오.",
+      "answers": [
+        "영국",
+        "프랑스",
+        "스페인",
+        "알제리",
+        "말리",
+        "부르키나파소",
+        "가나",
+        "토고"
+      ]
+    },
+    "daily-20261114-south-africa-capitals": {
+      "sourceHash": "eb24bf8a4511c3d77130b676bfd1365f9b171c61b248602a20f9302310817ce3",
+      "prompt": "남아프리카의 전통적인 국가 수도 세 곳 중 하나의 이름을 말하세요.",
+      "answers": [
+        "프리토리아",
+        "케이프타운",
+        "블룸폰테인"
+      ]
+    },
+    "daily-20261114-uae-emirates": {
+      "sourceHash": "c921ca5c0a899ae94cd90ccaf5fdd8b4f162446a362f058bf0879506bf319d13",
+      "prompt": "아랍에미리트의 7개 토후국 중 하나의 이름을 말하십시오.",
+      "answers": [
+        "두바이",
+        "아부다비",
+        "샤르자",
+        "아지만",
+        "푸자이라",
+        "라스 알 카이마",
+        "움 알 쿠와인"
+      ]
+    },
+    "daily-20261114-swiss-national-languages": {
+      "sourceHash": "efa30f9525f23f66eed3f86253d55daa3efacaebdea7c3c6513fa02733a4ac53",
+      "prompt": "스위스의 4개 국어 중 하나를 말해보세요.",
+      "answers": [
+        "독일어",
+        "프랑스어",
+        "이탈리아어",
+        "로만쉬"
+      ]
+    },
+    "daily-20261114-hawaii-major-islands": {
+      "sourceHash": "32e3b38a89029b847082f01481e66336730547269b6dce71ee834bf5f663bdb9",
+      "prompt": "하와이의 주요 8개 섬 중 하나의 이름을 말해보세요.",
+      "answers": [
+        "하와이",
+        "오아후",
+        "마우이",
+        "카우아이",
+        "몰로카이",
+        "라나이",
+        "니하우",
+        "카훌라웨"
+      ]
+    },
+    "daily-20261114-maghreb-union-founders": {
+      "sourceHash": "9176b38a74146051b6c57d07dc5442c1ab2e9c503e41cc5851f1fe04da3e3e80",
+      "prompt": "1989년에 아랍 마그레브 연합을 창설한 국가의 이름을 말하십시오.",
+      "answers": [
+        "모로코",
+        "알제리",
+        "튀니지",
+        "리비아",
+        "모리타니"
+      ]
+    },
+    "daily-20261114-philippine-island-groups": {
+      "sourceHash": "698a33a523e4e981a47be682fcb153236167412c26c248a3c60420ee5642833b",
+      "prompt": "필리핀의 세 가지 주요 섬 그룹 중 하나의 이름을 말하십시오.",
+      "answers": [
+        "루존",
+        "비사야스",
+        "민다나오"
+      ]
+    },
+    "daily-20261114-original-panama-locks": {
+      "sourceHash": "3fdf46c224bf169b0e24f26407dc0652b4e0707c742da49f403f59335a37d9a9",
+      "prompt": "1914년에 개통된 원래 파나마 운하의 수문 단지의 이름을 지정하세요.",
+      "answers": [
+        "가툰",
+        "미라플로레스",
+        "페드로 미구엘"
+      ]
+    },
+    "daily-20261114-federalist-authors": {
+      "sourceHash": "d7d17e0147520b6425fa3bd2ddd073c5ec6facec3940c656e98c410078d76ea6",
+      "prompt": "Publius라는 이름으로 출판된 The Federalist Papers의 저자를 지정하십시오.",
+      "answers": [
+        "알렉산더 해밀턴",
+        "제임스 매디슨",
+        "존 제이"
+      ]
+    },
+    "daily-20261114-declaration-committee": {
+      "sourceHash": "408d83c5d6135e6114c0b294edb85afaf2c559c623124f2355170c902c1c1ce6",
+      "prompt": "1776년 미국 독립 선언문 초안 작성을 위해 임명된 5인 위원회 위원의 이름을 지정하세요.",
+      "answers": [
+        "토머스 제퍼슨",
+        "존 아담스",
+        "벤자민 프랭클린",
+        "로저 셔먼",
+        "로버트 리빙스턴"
+      ]
+    },
+    "daily-20261114-magna-carta-custodians": {
+      "sourceHash": "4254b46eeec48236a10cd9324cf22bd9558b83fb931ae9d62bbdc8fa04fb5639",
+      "prompt": "현존하는 1215년 마그나 카르타 사본 4개 중 하나를 소유한 기관의 이름을 말하십시오.",
+      "answers": [
+        "영국 도서관",
+        "솔즈베리 대성당",
+        "링컨 대성당"
+      ]
+    },
+    "daily-20261114-german-occupation-powers": {
+      "sourceHash": "35dbd14116a7a16049a624bd178cf81ca81fff24aeed8f16fab6c9eb7cf2766e",
+      "prompt": "제2차 세계 대전 이후 독일의 점령 지역을 관리한 연합국의 이름을 지정하십시오.",
+      "answers": [
+        "미국",
+        "영국",
+        "프랑스",
+        "소련"
+      ]
+    },
+    "daily-20261114-chinese-three-kingdoms": {
+      "sourceHash": "087dba1686f586ecc551b744352d67e110acb96e4c4a2a7bc69c727c70b2af12",
+      "prompt": "3세기 중국 삼국시대의 국가를 말해보세요.",
+      "answers": [
+        "웨이",
+        "슈",
+        "우"
+      ]
+    },
+    "daily-20261114-first-triumvirate": {
+      "sourceHash": "145f9ebb2ffcd37585b734b541402172a51be7ecfcfd7bfcb56ddff880193238",
+      "prompt": "고대 로마 제1차 삼두정의 일원의 이름을 말해보세요.",
+      "answers": [
+        "율리우스 카이사르",
+        "폼페이",
+        "크라수스"
+      ]
+    },
+    "daily-20261114-rosetta-scripts": {
+      "sourceHash": "8a7df1139120331a599e0370b1b428cdbaaca0a40ceb67e3e241f588ef2c7a90",
+      "prompt": "로제타스톤에 사용된 세 가지 문자 체계 중 하나를 말하세요.",
+      "answers": [
+        "상형문자",
+        "데모틱",
+        "그리스어"
+      ]
+    },
+    "daily-20261114-columbus-first-fleet": {
+      "sourceHash": "b1e35dc6131d44327a3975f70c5420a1535224b39fc5934dbe36976bfff1759b",
+      "prompt": "1492년 크리스토퍼 콜럼버스의 첫 번째 대서양 탐험에 등장하는 배의 이름을 지정하세요.",
+      "answers": [
+        "산타마리아",
+        "니나",
+        "핀타"
+      ]
+    },
+    "daily-20261114-oz-road-companions": {
+      "sourceHash": "aa6003eb3498b35c4b6104721c5aeebee498c07e84eecc904911da02fa0bc7d3",
+      "prompt": "바움의 원작 소설에서 도로시가 오즈로 가는 길에서 만나는 세 명의 동료 중 토토를 제외하고 한 명의 이름을 말하세요.",
+      "answers": [
+        "허수아비",
+        "양철나무꾼",
+        "겁쟁이 사자"
+      ]
+    },
+    "daily-20261114-christmas-spirits": {
+      "sourceHash": "52a266775896b83bfbf3d935e526b2533c52f3506b4220e6d875c7d83c2ffd6c",
+      "prompt": "Dickens의 A Christmas Carol에서 Marley를 따라 Scrooge를 방문하는 크리스마스 정신의 이름을 지정하세요.",
+      "answers": [
+        "과거의 크리스마스 유령",
+        "크리스마스 선물의 유령",
+        "아직 오지 않은 크리스마스의 유령"
+      ]
+    },
+    "daily-20261114-divine-comedy-canticles": {
+      "sourceHash": "4f9c2ee1ec3a39d44f38f3307a27c1f6203f55d06ec0dfbd986d9c0059b25d7e",
+      "prompt": "단테의 신곡 중 세 곡 중 하나를 말해보세요.",
+      "answers": [
+        "인페르노",
+        "퍼가토리오",
+        "파라디소"
+      ]
+    },
+    "daily-20261114-bennet-sisters": {
+      "sourceHash": "e0573de3c1d186fd85c8bc5f71dc6b74c59c0738561c80d97a742ac0800257e6",
+      "prompt": "제인 오스틴(Jane Austen)의 오만과 편견(Pride and Prejudice)에 등장하는 다섯 명의 베넷 자매 중 한 명의 이름을 말해보세요.",
+      "answers": [
+        "엘리자베스 베넷",
+        "제인 베넷",
+        "메리 베넷",
+        "캐서린 베넷",
+        "리디아 베넷"
+      ]
+    },
+    "daily-20261114-potter-rabbit-siblings": {
+      "sourceHash": "74044461008a6966c97c5d4b7390d75891744e0627fc0296b396c848e2d424df",
+      "prompt": "Beatrix Potter의 The Tale of Peter Rabbit에 나오는 Rabbit 부인의 네 자녀 중 한 명의 이름을 말하십시오.",
+      "answers": [
+        "피터",
+        "플로시",
+        "몹시",
+        "코튼 테일"
+      ]
+    },
+    "daily-20261114-darling-children": {
+      "sourceHash": "ba3199666eae16d6e7a7fffe208889844e0448f28385c45e052a0f3e97de0f7b",
+      "prompt": "J. M. Barrie의 Peter와 Wendy에 나오는 세 명의 사랑스러운 아이들 중 한 명을 말해보세요.",
+      "answers": [
+        "웬디",
+        "존",
+        "마이클"
+      ]
+    },
+    "daily-20261114-karamazov-acknowledged-sons": {
+      "sourceHash": "fd58cd3b1f4d9e5fb9923debfd15955101001b26d9837d3566779f147510eda7",
+      "prompt": "The Brothers Karamazov에서 Fyodor Pavlovich의 인정받은 세 아들 중 한 명의 이름을 말하십시오.",
+      "answers": [
+        "드미트리",
+        "이반",
+        "알렉세이"
+      ]
+    },
+    "daily-20261114-pickwick-corresponding-society": {
+      "sourceHash": "a39f18bdf665613d5df69e3ac66c7e87a15422627ba0b7f64239bae138fc7a30",
+      "prompt": "Dickens의 The Pickwick Papers를 여행하는 4인 통신협회 회원의 이름을 말하십시오.",
+      "answers": [
+        "사무엘 픽윅",
+        "너다니엘 윙클",
+        "아우구스투스 스노드그래스",
+        "트레이시 터프먼"
+      ]
+    },
+    "daily-20261114-bradley-shakespeare-tragedies": {
+      "sourceHash": "30fb8302ce93dc73e08374913393065a6878789702c8a719332e752ddae711d0",
+      "prompt": "네 가지 위대한 비극에 대한 고전적인 연구인 A. C. Bradley의 셰익스피어 비극에서 연구된 희곡의 이름을 말하십시오.",
+      "answers": [
+        "햄릿",
+        "맥베스",
+        "오델로",
+        "리어왕"
+      ]
+    },
+    "daily-20261114-three-pigs-house-materials": {
+      "sourceHash": "3d13bc6d5d9807ab8dfdbaef43eee2c5caa0cc02d13c97c7d980493f2406711d",
+      "prompt": "Joseph Jacobs의 The Three Little Pigs 버전에서 돼지가 사용하는 주택 건축 자재의 이름을 지정하세요.",
+      "answers": [
+        "밀짚",
+        "퍼즈",
+        "브릭"
+      ]
+    },
+    "daily-20261114-musical-texture-types": {
+      "sourceHash": "af25332d66827ff9eed27851406384f314759c4a1f3ffe3474e733509013455d",
+      "prompt": "-phony로 끝나는 네 가지 기본 음악적 질감 유형 중 하나를 말하십시오.",
+      "answers": [
+        "모노포니",
+        "동음이의어",
+        "다성음악",
+        "헤테로포니"
+      ]
+    },
+    "daily-20261114-puccini-triptych": {
+      "sourceHash": "13d41a4186481e71985eb29c3d8c18261d6fc3d28ccb1ca0a10301155e4435b7",
+      "prompt": "푸치니의 Il trittico에서 오페라 이름을 지정하세요.",
+      "answers": [
+        "일 타바로",
+        "수오르 안젤리카",
+        "지아니 스키키"
+      ]
+    },
+    "daily-20261114-holst-planets-movements": {
+      "sourceHash": "9880ab6bb6c8e05a10c0a1234fed7ee88a4c073baa3667f15eb263fde71286b3",
+      "prompt": "구스타프 홀스트(Gustav Holst)의 독창적인 7악장 모음곡 The Planets의 무브먼트를 행성 이름으로 지정하세요.",
+      "answers": [
+        "화성",
+        "비너스",
+        "머큐리",
+        "목성",
+        "토성",
+        "천왕성",
+        "해왕성"
+      ]
+    },
+    "daily-20261114-grand-piano-pedals": {
+      "sourceHash": "db69b93e978f7112f02038235553915068f2efea5de01b0b51836aba50745697",
+      "prompt": "표준 현대식 3페달 그랜드 피아노의 페달 이름을 지정하세요.",
+      "answers": [
+        "댐퍼",
+        "소프트",
+        "소스테누토"
+      ]
+    },
+    "daily-20261114-violin-open-strings": {
+      "sourceHash": "246fc711e2c3a5e70bee1af9ebfceec8b8291a10ae6ad728bd2750cf16b79248",
+      "prompt": "영어 음표 문자를 사용하여 표준 4현 바이올린의 개방현 피치 이름을 지정합니다.",
+      "answers": [
+        "G",
+        "D",
+        "A",
+        "E"
+      ]
+    },
+    "daily-20261114-second-viennese-core": {
+      "sourceHash": "0587d8329632f3b74de52bf8ca26dee54b65f06cd21a7b81af80d4053fc5674c",
+      "prompt": "비엔나 제2악파의 중앙 3인 작곡가 그룹의 작곡가를 말해보세요.",
+      "answers": [
+        "아놀드 쇤베르크",
+        "알반 버그",
+        "안톤 베베른"
+      ]
+    },
+    "daily-20261114-gagaku-main-winds": {
+      "sourceHash": "fee64d4965609212ff51f8c4bc10b670369fdae0bb879e1a9cfcc382bae0a8d4",
+      "prompt": "전통 가가쿠 앙상블의 주요 3악기 관악기 섹션에 포함된 악기의 이름을 지정하세요.",
+      "answers": [
+        "쇼",
+        "히치리키",
+        "류테키"
+      ]
+    },
+    "daily-20261114-sonata-form-sections": {
+      "sourceHash": "4ddd0f19fe06e882d63be8abe294bdcc2ff384c6a1eb18bcc5883dd8d584d9f4",
+      "prompt": "전통적인 소나타 형식 악장의 세 가지 주요 부분 중 하나를 말하십시오.",
+      "answers": [
+        "박람회",
+        "개발",
+        "요약"
+      ]
+    },
+    "daily-20261114-printmaking-process-families": {
+      "sourceHash": "494e81f3f111fc67340483de6c1677d95cfde2965a0aa8e421e4dfe14316a9ef",
+      "prompt": "코넬의 4개 제품군 분류에서 판화 프로세스 제품군의 이름을 지정하세요.",
+      "answers": [
+        "릴리프",
+        "음각",
+        "플래노그래픽",
+        "스텐실"
+      ]
+    },
+    "daily-20261114-ballet-foot-positions": {
+      "sourceHash": "e45ab7ea147b3450e7331fbb73d837dc574367a2f3b672efcc61db18cd31b9bf",
+      "prompt": "클래식 발레의 다섯 가지 기본 발 자세 중 하나를 서수 이름을 사용하여 지정하십시오.",
+      "answers": [
+        "첫 번째",
+        "두 번째",
+        "세 번째",
+        "네번째",
+        "다섯 번째"
+      ]
+    },
+    "daily-20261114-tchaikovsky-ballets": {
+      "sourceHash": "6ce36bdf57554c55db545c23a62d50c66c694f52639a92833fe10803a65efd69",
+      "prompt": "표트르 일리치 차이콥스키가 작곡한 발레곡 전체를 말해보세요.",
+      "answers": [
+        "백조의 호수",
+        "호두까기 인형",
+        "잠자는 숲속의 미녀"
+      ]
+    },
+    "daily-20261114-raphael-vatican-rooms": {
+      "sourceHash": "d05f6bbcab31ea3bd5d503bd73d048415751aeb79fff715ca2ad8b7970603f4e",
+      "prompt": "바티칸 박물관에 있는 라파엘의 방 4개 중 하나의 이름을 말해보세요.",
+      "answers": [
+        "콘스탄틴 홀",
+        "헬리오도로스의 방",
+        "세그나투라의 방",
+        "보르고의 불의 방"
+      ]
+    },
+    "daily-20261114-rodin-calais-figures": {
+      "sourceHash": "bb56797b6beea481a59e4aa44e32fce89bbd8378b2a974a347ef5567d2b2235e",
+      "prompt": "로댕의 6자 기념물 '칼레의 시민'에 묘사된 남자의 이름을 말해보세요.",
+      "answers": [
+        "외스타슈 드 생 피에르",
+        "장 드 에어",
+        "피에르 드 비상",
+        "자크 드 비상",
+        "안드리외 디 안드레스",
+        "장 드 파인즈"
+      ]
+    },
+    "daily-20261114-gaudi-original-world-heritage": {
+      "sourceHash": "d49c14007098953880575ba9a43d14490ef90cc1183fe40996cdeb61f7a76419",
+      "prompt": "1984년 바르셀로나의 원래 3대 유산 유네스코 비문에 포함된 가우디 작품의 이름을 지정하세요.",
+      "answers": [
+        "구엘 공원",
+        "팔라우 구엘",
+        "카사 밀라"
+      ]
+    },
+    "daily-20261114-medieval-liberal-arts": {
+      "sourceHash": "7fb80f8498ca43e3f3d6069f6fac4b21e2945c7e275cc3bac1a30ce043b2ebdd",
+      "prompt": "중세 7대 교양과목 중 하나의 과목을 말해보세요.",
+      "answers": [
+        "문법",
+        "수사학",
+        "로직",
+        "산술",
+        "기하학",
+        "음악",
+        "천문학"
+      ]
+    },
+    "daily-20261114-bosch-triptych-scenes": {
+      "sourceHash": "bf99ad9ee4099a9ec5d0f65d00034bbfec96bbd3822bf9876c7c26eff790960c",
+      "prompt": "Bosch의 The Garden of Earthly Delights 삼부작 내부 패널에 표시된 장면의 이름을 지정하세요.",
+      "answers": [
+        "에덴의 정원",
+        "지상의 즐거움의 정원",
+        "지옥"
+      ]
+    },
+    "daily-20261114-javascript-primitive-types": {
+      "sourceHash": "9e09306f59d1ab3d1531f551222fa30585c8f89bab0e00e19aa341f0743ab1ea",
+      "prompt": "ECMAScript 2024에 정의된 기본 JavaScript 값 유형의 이름을 지정합니다.",
+      "answers": [
+        "Undefined",
+        "Null",
+        "Boolean",
+        "String",
+        "Number",
+        "BigInt",
+        "Symbol"
+      ]
+    },
+    "daily-20261114-css-position-values": {
+      "sourceHash": "cf34ed16b08f331d52ab094ed000deb9455b702c5b8a16fbcfa9c67d6f068628",
+      "prompt": "CSS 전체 키워드를 제외하고 CSS Positioned Layout Level 3에 의해 정의된 위치 속성 값의 이름을 지정합니다.",
+      "answers": [
+        "Static",
+        "Relative",
+        "Absolute",
+        "Fixed",
+        "Sticky"
+      ]
+    },
+    "daily-20261114-unicode-encoding-forms": {
+      "sourceHash": "8ec64024faa95e67e04b606c6a616e169c22fcc2027c73d4c21a036445446883",
+      "prompt": "유니코드 표준에서 정의한 세 가지 인코딩 형식 중 하나의 이름을 지정하세요.",
+      "answers": [
+        "UTF-8",
+        "UTF-16",
+        "UTF-32"
+      ]
+    },
+    "daily-20261114-png-critical-chunks": {
+      "sourceHash": "f3d38ab8b4ae1a6b8ad1601a6453e2c46412a4a422b0e02b96534fbf6b17f834",
+      "prompt": "PNG 이미지 형식의 네 가지 표준화된 중요 청크 유형 중 하나의 이름을 지정하세요.",
+      "answers": [
+        "IHDR",
+        "PLTE",
+        "IDAT",
+        "IEND"
+      ]
+    },
+    "daily-20261114-xml-predefined-entities": {
+      "sourceHash": "61cde0db097937b1e8a78852d4d59d497e8be4fb26e337714675b121d354c3e3",
+      "prompt": "엔터티 이름을 사용하여 XML 1.0에서 미리 정의된 일반 엔터티의 이름을 지정합니다.",
+      "answers": [
+        "amp",
+        "lt",
+        "gt",
+        "apos",
+        "quot"
+      ]
+    },
+    "daily-20261114-css-two-generic-families": {
+      "sourceHash": "566f76ca10c2c1e779c538843946a82b17a23f110f652fdacdc0b096a4fb2bb7",
+      "prompt": "CSS 2.1에 정의된 일반 글꼴 계열의 이름을 지정합니다.",
+      "answers": [
+        "Serif",
+        "Sans-serif",
+        "Monospace",
+        "Cursive",
+        "Fantasy"
+      ]
+    },
+    "daily-20261114-html-table-row-groups": {
+      "sourceHash": "12296b9c875ea5cb00f1276665d5468b6dad7c62cd4cf3d7c0508c162c925935",
+      "prompt": "테이블 행 그룹을 나타내는 HTML 요소의 이름을 지정합니다.",
+      "answers": [
+        "thead",
+        "tbody",
+        "tfoot"
+      ]
+    },
+    "daily-20261114-http-two-frame-types": {
+      "sourceHash": "05f5cce481ec8ee2db4503bd24c7f9730b489783ef39e8b9bacb0faf9756e0df",
+      "prompt": "2015년 HTTP/2의 원래 RFC 7540 사양에 정의된 프레임 유형의 이름을 지정합니다.",
+      "answers": [
+        "DATA",
+        "HEADERS",
+        "PRIORITY",
+        "RST_STREAM",
+        "SETTINGS",
+        "PUSH_PROMISE",
+        "PING",
+        "GOAWAY",
+        "WINDOW_UPDATE",
+        "CONTINUATION"
+      ]
+    },
+    "daily-20261114-triathlon-disciplines": {
+      "sourceHash": "b3fa6561bba89c6b111d9ffd323322bcbd56b9a40521aa433cf4d0000dfe1a40",
+      "prompt": "표준 철인 3종 경기의 종목 이름을 지정하세요.",
+      "answers": [
+        "수영",
+        "사이클링",
+        "실행 중"
+      ]
+    },
+    "daily-20261114-womens-heptathlon-events": {
+      "sourceHash": "d8aaf7d3ff113221a9bbfaf9a551c6ca10cb8ab479b7299b759b6329b64b2f50",
+      "prompt": "여자 야외 육상 7종 경기 종목의 이름을 지정하세요.",
+      "answers": [
+        "100미터 장애물",
+        "높이뛰기",
+        "포환던지기",
+        "200미터",
+        "멀리뛰기",
+        "창던지기",
+        "800미터"
+      ]
+    },
+    "daily-20261114-tour-de-france-jerseys": {
+      "sourceHash": "6d375259f4acc2dff0fcba44d824da2c5bc4a1d97b9132846bdade3cbcf8dbfa",
+      "prompt": "2022년 남자 투르 드 프랑스의 공식 분류 선두 저지를 색상이나 패턴별로 지정하세요.",
+      "answers": [
+        "옐로우",
+        "그린",
+        "폴카 도트",
+        "화이트"
+      ]
+    },
+    "daily-20261114-curling-delivery-positions": {
+      "sourceHash": "94f27341ffd951cecba569af5d50d0cef8cdbfe4c25512f16d16317cc743157a",
+      "prompt": "표준 4인 컬링 팀의 배달 주문 위치를 지정하세요.",
+      "answers": [
+        "리드",
+        "두 번째",
+        "세 번째",
+        "네번째"
+      ]
+    },
+    "daily-20261114-triple-jump-phases": {
+      "sourceHash": "cb3e10ab1a1d8710aa4dbdf51561303b28536b293d7281e0acbf8ccae800339c",
+      "prompt": "육상 삼단뛰기의 단계를 말해보세요.",
+      "answers": [
+        "홉",
+        "단계",
+        "점프"
+      ]
+    },
+    "daily-20261114-baseball-fielding-positions": {
+      "sourceHash": "4c30da51c8041ec613a0e63ebf0f7e19a21f83a90a6d3abb0dc675b8a9d5a8fd",
+      "prompt": "야구의 9가지 수비수비 위치 중 하나를 말해보세요.",
+      "answers": [
+        "투수",
+        "포수",
+        "1루수",
+        "2루수",
+        "3루수",
+        "유격수",
+        "좌익수",
+        "중견수",
+        "우익수"
+      ]
+    },
+    "daily-20261114-tokyo-climbing-disciplines": {
+      "sourceHash": "524a42bdc102c83af9497b9d227be337a65430403d6236565f2b99093c117d25",
+      "prompt": "2020 도쿄 올림픽 스포츠 클라이밍 종목에 통합된 종목을 말해보세요.",
+      "answers": [
+        "속도",
+        "볼더링",
+        "리드"
+      ]
+    },
+    "daily-20261114-winter-sliding-sports": {
+      "sourceHash": "0b386e0e2f19f18503f8538e6db163f17cc91263764ad50e671eeddb91d0b621",
+      "prompt": "동계 올림픽 빙상 트랙에서 열리는 슬라이딩 종목의 이름을 지정하세요.",
+      "answers": [
+        "봅슬레이",
+        "루지",
+        "스켈레톤"
+      ]
+    },
+    "daily-20261114-iso-tea-types": {
+      "sourceHash": "e144669f1271254af47ab8ba9564e2f9f5186b3edf614902840794c1165c38ce",
+      "prompt": "ISO 20715:2023의 6가지 유형 분류에서 기본 차 유형을 지정합니다.",
+      "answers": [
+        "홍차",
+        "녹차",
+        "화이트티",
+        "우롱차",
+        "다크티",
+        "황차"
+      ]
+    },
+    "daily-20261114-pound-cake-core-ingredients": {
+      "sourceHash": "3c372c85ec9a44184d3e42c0bdeac07151150ade429d94ca0d31aaa916bf14cf",
+      "prompt": "파운드 케이크의 전통적인 동일 파운드 공식에서 주요 성분의 이름을 말하십시오.",
+      "answers": [
+        "버터",
+        "설탕",
+        "밀가루",
+        "계란"
+      ]
+    },
+    "daily-20261114-grain-kernel-parts": {
+      "sourceHash": "8e44204a516aa14cb65eb7fff7a45b37f450f8ad268e1295088e00c9cbc32d63",
+      "prompt": "전체 곡물 커널의 세 가지 주요 식용 부분 중 하나를 말하십시오.",
+      "answers": [
+        "밀기울",
+        "세균",
+        "배유"
+      ]
+    },
+    "daily-20261114-lean-bread-formula": {
+      "sourceHash": "67768a005878b45b0bc10446c3aca96e1cab56b10a3315633b2a69c3ce54f495",
+      "prompt": "기본 4가지 재료로 구성된 살코기 이스트 빵 반죽의 재료 이름을 지정하세요.",
+      "answers": [
+        "밀가루",
+        "물",
+        "소금",
+        "효모"
+      ]
+    },
+    "daily-20261114-haccp-hazard-categories": {
+      "sourceHash": "914792fa8e1b7f0f1cc2657010844bd19849b995d9b68c29a1fe0e1b9d1cb012",
+      "prompt": "표준 3개 범주 HACCP 모델에서 식품 안전 위험 범주의 이름을 지정합니다.",
+      "answers": [
+        "생물학적",
+        "화학",
+        "물리적"
+      ]
+    },
+    "daily-20261114-eight-b-vitamins": {
+      "sourceHash": "1bd57af9be9f525fe4567b38e078d089aa2bb52e3b39c8efdf6a183755f5198a",
+      "prompt": "알려진 8가지 비타민 B 중 하나를 번호나 일반 이름으로 지정하세요.",
+      "answers": [
+        "비타민 B1",
+        "비타민 B2",
+        "비타민 B3",
+        "비타민 B5",
+        "비타민 B6",
+        "비타민 B7",
+        "비타민 B9",
+        "비타민 B12"
+      ]
+    },
+    "daily-20261114-mccormick-pumpkin-spices": {
+      "sourceHash": "89fc1b383046a4f8ee7988d621eb3a484cb94877849e9337dffc4be81af42980",
+      "prompt": "2026년 역사에 설명된 대로 McCormick의 클래식 호박 파이 스파이스 블렌드에 포함된 4가지 향신료 중 하나의 이름을 지정하세요.",
+      "answers": [
+        "시나몬",
+        "생강",
+        "육두구",
+        "올스파이스"
+      ]
+    },
+    "daily-20261114-french-shortcrust-doughs": {
+      "sourceHash": "ef392237d7eb13feb4b4440b5f75c2d7c1b12a56bb6430cf3c6db1cd25862215",
+      "prompt": "전통적인 3개의 쇼트크러스트 그룹으로 프랑스 타르트 반죽의 이름을 지정합니다.",
+      "answers": [
+        "페이트 브리제",
+        "페이트 수크리",
+        "페이트 세이블"
+      ]
+    },
+    "daily-20261115-html-input-types": {
+      "sourceHash": "a80c6a0e860019d855b01bd54e99ec5079a7f948a7d73a4e481a8d9ce76ad010",
+      "prompt": "더 이상 사용되지 않는 유형을 제외하고 표준 HTML 입력 유형 키워드의 이름을 지정합니다.",
+      "answers": [
+        "text",
+        "password",
+        "email",
+        "checkbox",
+        "radio",
+        "submit",
+        "button",
+        "number",
+        "file",
+        "date",
+        "hidden",
+        "search",
+        "range",
+        "color",
+        "reset",
+        "url",
+        "tel",
+        "time",
+        "month",
+        "week",
+        "datetime-local",
+        "image"
+      ]
+    },
+    "daily-20261115-html-button-types": {
+      "sourceHash": "8741958c308092df03ce528f0049ae7e2ff5640ac6fc4ddd7634d3965025edbb",
+      "prompt": "HTML 버튼 요소에 대한 유효한 명시적 유형 키워드의 이름을 지정합니다.",
+      "answers": [
+        "submit",
+        "button",
+        "reset"
+      ]
+    },
+    "daily-20261115-css-border-styles": {
+      "sourceHash": "77a81b0c2641dcdf3aea40bdf58a8ae8ba7260c771563b674f105c01d1e31d34",
+      "prompt": "CSS 배경 및 테두리 레벨 3에서 정의한 테두리 선 스타일 키워드의 이름을 지정합니다.",
+      "answers": [
+        "solid",
+        "dashed",
+        "dotted",
+        "double",
+        "none",
+        "hidden",
+        "groove",
+        "ridge",
+        "inset",
+        "outset"
+      ]
+    },
+    "daily-20261115-css-background-repeat": {
+      "sourceHash": "9d59565a231afe847f5ac6c4ce836fba3728daa10a687e22e873fc51373d9e97",
+      "prompt": "CSS 배경 및 테두리 레벨 3에서 단일 키워드 배경 반복 값의 이름을 지정합니다.",
+      "answers": [
+        "repeat",
+        "no-repeat",
+        "repeat-x",
+        "repeat-y",
+        "space",
+        "round"
+      ]
+    },
+    "daily-20261115-css-overflow-values": {
+      "sourceHash": "e7a4c45edf38670066f7af807b3e859ba0d15e2aecb4a156a0ee2d0c95631851",
+      "prompt": "CSS 전체 키워드를 제외하고 CSS 오버플로 레벨 3 오버플로-x 문법에 값 이름을 지정합니다.",
+      "answers": [
+        "hidden",
+        "scroll",
+        "auto",
+        "visible",
+        "clip"
+      ]
+    },
+    "daily-20261115-css-object-fit": {
+      "sourceHash": "e765c07712ce45a747e6a9e8b7c0106a5de3365d4528caa4c68447ceb570772a",
+      "prompt": "CSS 전체 키워드를 제외하고 CSS 이미지 레벨 3의 객체 맞춤 키워드 이름을 지정합니다.",
+      "answers": [
+        "cover",
+        "contain",
+        "fill",
+        "none",
+        "scale-down"
+      ]
+    },
+    "daily-20261115-css-flex-direction": {
+      "sourceHash": "71bf5cac5ab556523ae08057a1c167cb7e801b0ac1c328c2541ffb20a1d2f818",
+      "prompt": "CSS 유연한 상자 레이아웃 레벨 1에서 플렉스 방향 값의 이름을 지정합니다.",
+      "answers": [
+        "row",
+        "column",
+        "row-reverse",
+        "column-reverse"
+      ]
+    },
+    "daily-20261115-css21-text-transform": {
+      "sourceHash": "9d86d8958534268b8add2f4eb82b554d3a40d3d6db6302790f7d94062abe49ae",
+      "prompt": "상속을 제외하고 CSS 2.1에 정의된 텍스트 변환 값의 이름을 지정합니다.",
+      "answers": [
+        "uppercase",
+        "lowercase",
+        "capitalize",
+        "none"
+      ]
+    },
+    "daily-20261115-tcp-connection-states": {
+      "sourceHash": "82d5f7ad1faaa16b43c48f0bc39e281b10e173e30acbcfeed34c6aa3b625b38e",
+      "prompt": "가상의 CLOSED 상태를 포함하여 RFC 9293에 나열된 TCP 연결 상태의 이름을 지정합니다.",
+      "answers": [
+        "ESTABLISHED",
+        "CLOSED",
+        "LISTEN",
+        "SYN-SENT",
+        "SYN-RECEIVED",
+        "FIN-WAIT-1",
+        "FIN-WAIT-2",
+        "CLOSE-WAIT",
+        "TIME-WAIT",
+        "CLOSING",
+        "LAST-ACK"
+      ]
+    },
+    "daily-20261115-css21-font-style": {
+      "sourceHash": "31b0306a48c533a4b6fb8944180ca46028c69e4d79a7550b3c62b1844d8b70d5",
+      "prompt": "상속을 제외하고 CSS 2.1에 정의된 글꼴 ​​스타일 키워드의 이름을 지정합니다.",
+      "answers": [
+        "italic",
+        "normal",
+        "oblique"
+      ]
+    },
+    "daily-20261115-esa-first-signatories": {
+      "sourceHash": "b6da6cd72a1b6c978f7e8d467204279cc4113ea6740b66ec323d43942f960244",
+      "prompt": "1975년 5월 30일에 ESA 협약에 서명한 국가의 이름을 말하십시오.",
+      "answers": [
+        "프랑스",
+        "독일",
+        "영국",
+        "이탈리아",
+        "스페인",
+        "네덜란드",
+        "벨기에",
+        "스웨덴",
+        "덴마크",
+        "스위스"
+      ]
+    },
+    "daily-20261115-asteroid-composition-classes": {
+      "sourceHash": "e6b890bc7f79b469ac3dbe72fadaec72c149d7ab1bed21d39a6343535995bb8c",
+      "prompt": "NASA의 세 가지 광범위한 소행성 구성 등급 중 하나를 문자 또는 일반적인 설명으로 지정하십시오.",
+      "answers": [
+        "C형",
+        "S형",
+        "M형"
+      ]
+    },
+    "daily-20261115-galaxy-shape-classes": {
+      "sourceHash": "fa9a3e9c64f4ebd2e35e4967ea10116754e80874fa12c8de74967b18dc41d108",
+      "prompt": "막대나선은하를 나선으로 취급하는 네 가지 광범위한 형태학적 은하 클래스 중 하나를 말하십시오.",
+      "answers": [
+        "나선형",
+        "타원형",
+        "불규칙",
+        "렌티큘러"
+      ]
+    },
+    "daily-20261115-stellar-compact-remnants": {
+      "sourceHash": "629da4d361b11a2b8b14b5a5ce13465107b8158176f3dbe676549401798eb5b4",
+      "prompt": "일반적인 항성 진화에 의해 남겨진 세 가지 표준 소형 잔해 중 하나의 이름을 말하십시오.",
+      "answers": [
+        "블랙홀",
+        "백색 왜성",
+        "중성자별"
+      ]
+    },
+    "daily-20261115-asteroid-orbit-populations": {
+      "sourceHash": "7e86f33bafb17ee00c299569ebfba75ba29aa30bd936850ef4c688d433301581",
+      "prompt": "NASA의 3그룹 분류에서 소행성 궤도 인구의 이름을 지정하세요.",
+      "answers": [
+        "메인 벨트",
+        "지구 근처 소행성",
+        "트로이 목마"
+      ]
+    },
+    "daily-20261115-parker-science-suites": {
+      "sourceHash": "e877d005503b2a37da30f61bf88cd3ea1b22e012d5916f7b2e6656d640cc8dee",
+      "prompt": "Parker Solar Probe의 과학 장비 4개 세트 중 하나를 말하십시오.",
+      "answers": [
+        "필드",
+        "WISPR",
+        "스왑",
+        "ISʘIS"
+      ]
+    },
+    "daily-20261115-perseverance-launch-payload": {
+      "sourceHash": "59b0ba13b30d6f60462d158d2046c9b04a2af7c148076bf814affc25596ef83d",
+      "prompt": "발사 당시 Perseverance 로버가 탑재한 7가지 주요 과학 장비 중 하나를 말해보세요.",
+      "answers": [
+        "MOXIE",
+        "슈퍼캠",
+        "마스트캠-Z",
+        "셜록",
+        "PIXL",
+        "MEDA",
+        "림팩스"
+      ]
+    },
+    "daily-20261115-nasa-1978-women": {
+      "sourceHash": "cb0ce627fabecc2fe4148dcad4696ea734701d3dbe8fc0825fb0917756b8c10a",
+      "prompt": "1978년 NASA의 우주비행사 클래스로 선택된 여성의 이름을 말하세요.",
+      "answers": [
+        "샐리 라이드",
+        "주디스 레스닉",
+        "캐서린 설리반",
+        "안나 피셔",
+        "섀넌 루시드",
+        "마가렛 레아 세든"
+      ]
+    },
+    "daily-20261115-muscle-tissue-types": {
+      "sourceHash": "0875ff5ecd95f4c98afdfb5d4f4c0101572c63a946779a43dfb9bb9a10070ceb",
+      "prompt": "인간 근육 조직의 세 가지 유형 중 하나를 말하십시오.",
+      "answers": [
+        "스켈레탈",
+        "심장",
+        "부드러운"
+      ]
+    },
+    "daily-20261115-cytoskeleton-filaments": {
+      "sourceHash": "075362161f3e078c1f5637d4f9e94dab9685744a62b5cec661e7d1452e80d608",
+      "prompt": "인간 세포 세포골격의 세 가지 주요 필라멘트 구성 요소 중 하나를 말하십시오.",
+      "answers": [
+        "미세소관",
+        "마이크로필라멘트",
+        "중간 필라멘트"
+      ]
+    },
+    "daily-20261115-facial-bone-types": {
+      "sourceHash": "ee7a6e399ab7b337789de92efffc0e6feb9ba75948acd6a2316aee5215f5f990",
+      "prompt": "왼쪽 및 오른쪽 뼈 쌍을 함께 세어 성인 인간 안면 뼈의 유형을 지정합니다.",
+      "answers": [
+        "하악골",
+        "상악",
+        "광대뼈",
+        "비강",
+        "눈물샘",
+        "팔라틴",
+        "보머",
+        "하비갑개"
+      ]
+    },
+    "daily-20261115-tarsal-bones": {
+      "sourceHash": "8b46511ba3ba80c096c2df73ac3e6dcae6033fbfddde066f37872b1af932bcd3",
+      "prompt": "인간의 발에 있는 7개의 족근골 중 하나의 이름을 말하십시오.",
+      "answers": [
+        "종골",
+        "탈루스",
+        "내비큘러",
+        "직육면체",
+        "내측 설상골",
+        "중급 설형문자",
+        "측면 설형 문자"
+      ]
+    },
+    "daily-20261115-thyroid-secretions": {
+      "sourceHash": "44e738d2d73851da2c7e1ffb3fcfbd281fd6bc19574fd4ee19f25aef884935d3",
+      "prompt": "표준 3가지 호르몬 요약에서 인간 갑상선에서 분비되는 호르몬의 이름을 지정하세요.",
+      "answers": [
+        "티록신",
+        "트리요오드티로닌",
+        "칼시토닌"
+      ]
+    },
+    "daily-20261115-anterior-pituitary-six": {
+      "sourceHash": "69be65e1acf03c09fbb9b4076112d80243689eabd6c4e8fc86852254cf4b90f2",
+      "prompt": "뇌하수체 전엽에서 생성되는 6가지 주요 호르몬 중 하나를 말하십시오.",
+      "answers": [
+        "성장 호르몬",
+        "프로락틴",
+        "갑상선 자극 호르몬",
+        "난포 자극 호르몬",
+        "황체형성호르몬",
+        "부신피질 자극 호르몬"
+      ]
+    },
+    "daily-20261115-kepler-planetary-laws": {
+      "sourceHash": "89bbf231d4807afbf41db4551cfde9f7156ac6ff8c0907bb3efaccca24b6214d",
+      "prompt": "케플러의 행성 운동에 관한 세 가지 법칙 중 하나를 일반적인 이름이나 법칙 번호로 지정하십시오.",
+      "answers": [
+        "타원의 법칙",
+        "등면적의 법칙",
+        "조화의 법칙"
+      ]
+    },
+    "daily-20261115-maxwell-laws": {
+      "sourceHash": "e9b72b9ef68f0513066d4914a2eb6ba715e2d1c1333f2365e1bc6fc8495ea6c3",
+      "prompt": "네 가지 고전 맥스웰 방정식 중 하나로 표현되는 법칙의 이름을 지정하십시오.",
+      "answers": [
+        "전기에 대한 가우스의 법칙",
+        "패러데이의 유도 법칙",
+        "암페어-맥스웰 법칙",
+        "자기에 대한 가우스의 법칙"
+      ]
+    },
+    "daily-20261115-si-prefix-names": {
+      "sourceHash": "b610bd48f03315c0431c025bfb2cda532bef04d10905a8eecdacee920ae6778e",
+      "prompt": "2022년 11월 확장 이후 인식된 SI 십진수 접두사를 전체 이름을 사용하여 명명합니다.",
+      "answers": [
+        "킬로",
+        "밀리",
+        "센티",
+        "메가",
+        "기가",
+        "마이크로",
+        "나노",
+        "테라",
+        "데시",
+        "헥토",
+        "데카",
+        "피코",
+        "페타",
+        "엑사",
+        "펨토",
+        "아토",
+        "제타",
+        "요타",
+        "젭토",
+        "욕토",
+        "로나",
+        "퀘타",
+        "론토",
+        "퀘토"
+      ]
+    },
+    "daily-20261115-greek-nuclear-radiations": {
+      "sourceHash": "1b64715de3f2bdc5f00baacbfca2ef6e3b87b2e5f9134f9a5aef2481868935a8",
+      "prompt": "이름이 그리스 문자인 핵 방사선의 기존 유형을 지정하십시오.",
+      "answers": [
+        "알파",
+        "베타",
+        "감마"
+      ]
+    },
+    "daily-20261115-pangolin-eight-species": {
+      "sourceHash": "6a2e837141bbf01af01988e6c6f40f950d6ff64b646f69dcb3bb2c141544c5d1",
+      "prompt": "IUCN 전문가 그룹의 2019년 8종 보존 목록에 천산갑 종의 이름을 지정하세요.",
+      "answers": [
+        "천산갑",
+        "인도 천산갑",
+        "순다 천산갑",
+        "자이언트 천산갑",
+        "필리핀 천산갑",
+        "흰배 천산갑",
+        "검은 배 천산갑",
+        "테민크의 천산갑"
+      ]
+    },
+    "daily-20261115-tapir-species": {
+      "sourceHash": "5c4674b16029b96fd3691e8f6aea9b8fe28489860452945ad8c83c18bf323b79",
+      "prompt": "IUCN 테이퍼 전문가 그룹의 4종 분류에 포함된 테이퍼 종의 이름을 지정하세요.",
+      "answers": [
+        "말레이맥",
+        "저지대 테이퍼",
+        "베어드 테이퍼",
+        "산맥"
+      ]
+    },
+    "daily-20261115-alaska-pacific-salmon": {
+      "sourceHash": "194c64b0f10b7e7f819b7503a191b359265dfde4b4950be13cec12c1da2a0934",
+      "prompt": "NOAA의 알래스카 연어 어업 계획에서 관리되는 5가지 태평양 연어 종 중 하나를 말하십시오.",
+      "answers": [
+        "치누크",
+        "홍아이",
+        "코호",
+        "핑크",
+        "친구"
+      ]
+    },
+    "daily-20261115-bluebird-species": {
+      "sourceHash": "29765c2dbb44f25ba83bc0837028ef3e5ded1fef3a1bd402deff245629d273e9",
+      "prompt": "시알리아 속에 속하는 북미 파랑새 세 종 중 하나의 이름을 말하십시오.",
+      "answers": [
+        "동부 파랑새",
+        "웨스턴 블루버드",
+        "마운틴 블루버드"
+      ]
+    },
+    "daily-20261115-hyena-family-species": {
+      "sourceHash": "c563570ea2aa96c17dc4d79b8c9aab6e2fb9ffeefd8e43ae695c386e2a5ab8de",
+      "prompt": "하이에나과에 속하는 네 마리의 살아있는 동물 중 하나인 Hyaenidae의 이름을 말해보세요.",
+      "answers": [
+        "점박이하이에나",
+        "줄무늬하이에나",
+        "브라운하이에나",
+        "아드울프"
+      ]
+    },
+    "daily-20261115-manatee-species": {
+      "sourceHash": "540bb9910d166535bb750b656d64cd3a459626713beb2cd97865602f385f3857",
+      "prompt": "전통적인 3종 Trichechus 분류에서 해우 종의 이름을 지정합니다.",
+      "answers": [
+        "서인도 제도 매너티",
+        "아마존 매너티",
+        "서아프리카 매너티"
+      ]
+    },
+    "daily-20261115-mammal-living-groups": {
+      "sourceHash": "098133e007690eb20e825d23e7e8e10bc91cb22b5a0ebf7a2347fcf1bdce1b37",
+      "prompt": "살아있는 포유류의 표준 세 그룹 분류에서 주요 그룹의 이름을 지정하십시오.",
+      "answers": [
+        "태반 포유류",
+        "유대류",
+        "단공류"
+      ]
+    },
+    "daily-20261115-biodiversity-levels": {
+      "sourceHash": "7a97fefe43f73e3538de44a1b44942433ad79db4d284a2fa9746e9b6362374f0",
+      "prompt": "생물다양성협약에서 인정하는 생물다양성의 세 가지 주요 수준 중 하나를 말하십시오.",
+      "answers": [
+        "종 다양성",
+        "유전적 다양성",
+        "생태계 다양성"
+      ]
+    },
+    "daily-20261115-nyc-boroughs": {
+      "sourceHash": "231c2878a91369f03bc9b16b1db8153afe23c2c3a060c412b62b928a027a492a",
+      "prompt": "뉴욕시의 5개 자치구 중 하나의 이름을 말하십시오.",
+      "answers": [
+        "맨해튼",
+        "브루클린",
+        "퀸즈",
+        "브롱크스",
+        "스태튼 아일랜드"
+      ]
+    },
+    "daily-20261115-northern-ireland-counties": {
+      "sourceHash": "776d00832b3915e0c0e604e1e1e75d6bebc81fe42928ff3a943592cdd30b918d",
+      "prompt": "북아일랜드의 역사적인 6개 카운티 중 하나의 이름을 말하십시오.",
+      "answers": [
+        "앤트림",
+        "다운",
+        "아마",
+        "런던데리",
+        "타이론",
+        "페르마나"
+      ]
+    },
+    "daily-20261115-ireland-provinces": {
+      "sourceHash": "aec437595b16109ed1274adc10e211ce99d064e5a1381dd67391a740560eebee",
+      "prompt": "아일랜드의 전통적인 4개 주 중 하나의 이름을 말하세요.",
+      "answers": [
+        "얼스터",
+        "뮌스터",
+        "렌스터",
+        "코나흐트"
+      ]
+    },
+    "daily-20261115-french-overseas-departments": {
+      "sourceHash": "03a974bacd886b658e644277911642d840e7f51a19b84b674ed9907fa8e47f2d",
+      "prompt": "2011년 Mayotte가 합류한 이후 5개 부서 목록에 프랑스 해외 부서를 포함합니다.",
+      "answers": [
+        "프랑스령 기아나",
+        "재회",
+        "과들루프",
+        "마르티니크",
+        "마요트"
+      ]
+    },
+    "daily-20261115-canary-inhabited-islands": {
+      "sourceHash": "24dfebf2690df7bbf9d5995540644e0167704423226f1e71ba1eb3d984ebd2c4",
+      "prompt": "공식 관광청에서 소개한 사람이 거주하는 8개 카나리아 제도 중 하나의 이름을 지정하세요.",
+      "answers": [
+        "테네리페",
+        "그란 카나리아",
+        "란사로테",
+        "푸에르테벤츄라",
+        "라 팔마",
+        "라 고메라",
+        "엘 히에로",
+        "라 그라시오사"
+      ]
+    },
+    "daily-20261115-azores-islands": {
+      "sourceHash": "e395cbe63bd8654c29fa029613388e5db3970779689521a60731b39b8673cbc5",
+      "prompt": "아조레스 제도의 9개 섬 중 하나의 이름을 말하세요.",
+      "answers": [
+        "상 미구엘",
+        "테르세이라",
+        "피코",
+        "파이알",
+        "상 조르제",
+        "플로레스",
+        "산타마리아",
+        "그라시오사",
+        "코르보"
+      ]
+    },
+    "daily-20261115-balearic-main-islands": {
+      "sourceHash": "508f13786052f1dfbedf1771b1c67754a99e34b0c1fff1eb4217bfe80b391b04",
+      "prompt": "지역 관광청에서 홍보하는 발레아레스 제도의 주요 거주지 4개 중 하나를 말하십시오.",
+      "answers": [
+        "마요르카",
+        "이비자",
+        "메노르카",
+        "포르멘테라"
+      ]
+    },
+    "daily-20261115-scotch-regions": {
+      "sourceHash": "233f6613e75cd6bbfb68bf13764adc2c2a3ed1b67b50db23cbb3c4580d6537a9",
+      "prompt": "스카치 위스키 협회의 5개 지역 그룹에서 스카치 위스키 지역의 이름을 지정하세요.",
+      "answers": [
+        "하이랜드",
+        "스페이사이드",
+        "아일레이",
+        "저지대",
+        "캠벨타운"
+      ]
+    },
+    "daily-20261115-crown-dependencies": {
+      "sourceHash": "163de7663af6eb27c1d2ece0938eb12cc6bf32ce07be992150ebaf36e8cb39b0",
+      "prompt": "세 가지 영국 왕실 종속성 중 하나의 이름을 지정하십시오.",
+      "answers": [
+        "저지",
+        "맨섬",
+        "건지"
+      ]
+    },
+    "daily-20261115-niagara-waterfalls": {
+      "sourceHash": "b5ebc1baaad6fa66742611de247d2d6097b87922b05539041d91ce69adae80b5",
+      "prompt": "나이아가라 폭포를 구성하는 세 개의 폭포 중 하나의 이름을 말하십시오.",
+      "answers": [
+        "호스슈 폭포",
+        "아메리칸 폴스",
+        "브라이덜 베일 폭포"
+      ]
+    },
+    "daily-20261115-washington-original-cabinet": {
+      "sourceHash": "ba0bfa178725e116238e7980f4d59f1a7819dbb82135c6fd11c35a846b67f388",
+      "prompt": "조지 워싱턴의 최초 내각 구성원 4명 중 한 사람의 이름을 말하십시오.",
+      "answers": [
+        "토머스 제퍼슨",
+        "알렉산더 해밀턴",
+        "헨리 녹스",
+        "에드먼드 랜돌프"
+      ]
+    },
+    "daily-20261115-declaration-named-rights": {
+      "sourceHash": "df6196d74f16fc3df704ea33d8bef39aded6e55c4a2570d5df0c7043ae042a16",
+      "prompt": "미국 독립 선언서에 명시적으로 명시된 세 가지 양도할 수 없는 권리 중 하나를 말하십시오.",
+      "answers": [
+        "라이프",
+        "리버티",
+        "행복 추구"
+      ]
+    },
+    "daily-20261115-roosevelt-four-freedoms": {
+      "sourceHash": "dca62388d3d5834ab01348827b0ddcfa8d69e003f04f805a7446142cc6845748",
+      "prompt": "Franklin D. Roosevelt의 1941년 1월 연설에서 4가지 자유 중 하나를 말해보세요.",
+      "answers": [
+        "언론의 자유",
+        "예배의 자유",
+        "두려움으로부터의 자유",
+        "욕구로부터의 자유"
+      ]
+    },
+    "daily-20261115-paris-treaty-us-signers": {
+      "sourceHash": "11d0932d1c8c2cc742ee1f8e3c6c7034530e81d419edc677634d7be4d32dc1ed",
+      "prompt": "독립 전쟁을 끝내는 1783년 파리 조약에 서명한 미국인의 이름을 말하십시오.",
+      "answers": [
+        "벤자민 프랭클린",
+        "존 아담스",
+        "존 제이"
+      ]
+    },
+    "daily-20261115-normandy-landing-beaches": {
+      "sourceHash": "32c944f9b7b8423bb22c17ea39af9c8dfac629908ac09a7457aa864de59de501",
+      "prompt": "1944년 6월 6일 D-Day에 연합군 상륙 해변 5곳 중 하나를 말하십시오.",
+      "answers": [
+        "오마하",
+        "유타",
+        "주노",
+        "검",
+        "골드"
+      ]
+    },
+    "daily-20261115-french-estates-general": {
+      "sourceHash": "da84c7319bad60522076f9ecbecb0387955290e93e6f1f5bf907d2be896b53ab",
+      "prompt": "1789년 프랑스의 삼부회에서 대표하는 세 개의 영지 중 하나의 이름을 말하십시오.",
+      "answers": [
+        "성직자",
+        "귀족",
+        "평민"
+      ]
+    },
+    "daily-20261115-classical-tragic-playwrights": {
+      "sourceHash": "86f1e0993fa3ed7f570fd1c011ec388e5c3ed945aa4882f97536674769ca927d",
+      "prompt": "전편의 희곡이 남아 있는 기원전 5세기 아테네의 주요 비극작가 3인 중 한 사람의 이름을 말하십시오.",
+      "answers": [
+        "소포클레스",
+        "에우리피데스",
+        "아이스킬루스"
+      ]
+    },
+    "daily-20261115-sons-of-horus": {
+      "sourceHash": "7650d6a1f2dcb750f6797538464e2243a518b32452d3639b97998760d35aefa8",
+      "prompt": "고대 이집트 카노푸스 보호와 관련된 호루스의 네 아들 중 한 명의 이름을 말하십시오.",
+      "answers": [
+        "하피",
+        "임세티",
+        "두아무테프",
+        "케베세누에프"
+      ]
+    },
+    "daily-20261115-panhellenic-crown-games": {
+      "sourceHash": "c870c138ca1bf7233936c0d8a9deb7fc05260ccafca47063f817b4e3fb27e7ab",
+      "prompt": "고대 그리스 범그리스 왕관 게임 4개 중 하나를 말해보세요.",
+      "answers": [
+        "올림픽 게임",
+        "피티아 게임",
+        "네메아 게임즈",
+        "이스트미아 게임"
+      ]
+    },
+    "daily-20261115-original-roman-tetrarchy": {
+      "sourceHash": "c572a012f62e6215a8a90b51fa554429e9dc6f9e4b50736345ff37346fd7e8ea",
+      "prompt": "서기 293년에 설립된 최초의 로마 사분체제의 네 통치자 중 한 사람의 이름을 말하십시오.",
+      "answers": [
+        "디오클레티아누스",
+        "맥시미안",
+        "콘스탄티우스 1세",
+        "갈레리우스"
+      ]
+    },
+    "daily-20261115-midsummer-four-lovers": {
+      "sourceHash": "d0cf5c28c5953a30adb3e555224c9d3a486e995c056aaceee8aefd436a0ccf79",
+      "prompt": "셰익스피어의 한여름 밤의 꿈에 나오는 네 명의 젊은 아테네 연인 중 한 명을 말해보세요.",
+      "answers": [
+        "허미아",
+        "헬레나",
+        "라이샌더",
+        "데메트리우스"
+      ]
+    },
+    "daily-20261115-lear-daughters": {
+      "sourceHash": "6a95b37d0b036a4d48bd2f3e89e2983e1a5cb24866fdd5ff73a1e0683cac1500",
+      "prompt": "셰익스피어 희곡에 나오는 리어왕의 세 딸 중 한 명의 이름을 말해보세요.",
+      "answers": [
+        "코델리아",
+        "고네릴",
+        "리건"
+      ]
+    },
+    "daily-20261115-portia-casket-metals": {
+      "sourceHash": "81af2586f99cbabe9594717592e5c772c9aa095c6031f8b27a3277fde91e64fa",
+      "prompt": "베니스의 상인에서 포샤의 관 세 개 중 하나에 사용된 금속의 이름을 말해보세요.",
+      "answers": [
+        "골드",
+        "실버",
+        "리드"
+      ]
+    },
+    "daily-20261115-dashwood-sisters": {
+      "sourceHash": "39568c0abbf5495e19e2dc9230b1f0e5d2d6b5e9a3ca283b312304a45b2914ff",
+      "prompt": "Jane Austen의 Sense and Sensibility에 등장하는 Dashwood 세 자매 중 한 명을 말해보세요.",
+      "answers": [
+        "엘리노어 대시우드",
+        "마리안 대시우드",
+        "마가렛 대시우드"
+      ]
+    },
+    "daily-20261115-borrowers-clock-family": {
+      "sourceHash": "c317759506015a403f60e80ebf8a759afd697dfdd8eb59386f621214c2ab0810",
+      "prompt": "Mary Norton의 The Borrowers 중심에 있는 3인 시계 가족 구성원의 이름을 말해보세요.",
+      "answers": [
+        "아리에티 시계",
+        "포드 시계",
+        "호밀리 시계"
+      ]
+    },
+    "daily-20261115-famous-five-members": {
+      "sourceHash": "dd83d6b1b26f54a4d9468e0e4eb8f53277dd240f13ad3e06fc0d9f3085828562",
+      "prompt": "개를 포함하여 Enid Blyton의 유명한 5인 중 한 명을 말하십시오.",
+      "answers": [
+        "조지",
+        "티미",
+        "줄리안",
+        "딕",
+        "앤"
+      ]
+    },
+    "daily-20261115-railway-children-siblings": {
+      "sourceHash": "cce92531b4f02416648d3600bfe426d4e7ba74e3261beb22a6322a09018ef080",
+      "prompt": "E. Nesbit의 소설 The Railway Children에 등장하는 세 형제 중 한 명의 이름을 말해보세요.",
+      "answers": [
+        "로베르타",
+        "피터",
+        "필리스"
+      ]
+    },
+    "daily-20261115-harry-potter-seven-novels": {
+      "sourceHash": "ad14710901dbaf202d0962b18843937bc33f187ea270af381e10c3f58185bdde",
+      "prompt": "J. K. Rowling의 해리포터 원작 소설 7권 중 하나를 말해보세요.",
+      "answers": [
+        "철학자의 돌",
+        "비밀의 방",
+        "아즈카반의 죄수",
+        "불의 잔",
+        "죽음의 성물",
+        "불사조 기사단",
+        "혼혈왕자"
+      ]
+    },
+    "daily-20261115-twilight-original-quartet": {
+      "sourceHash": "c84631c5ef0e71bdaa698e1f85b4d14e357230bbc6979fdae9e0b7d73ad35ed7",
+      "prompt": "2005~2008년에 출판된 Stephenie Meyer의 원작 4권 Twilight 시리즈에 포함된 소설의 이름을 지정하세요.",
+      "answers": [
+        "황혼",
+        "뉴문",
+        "브레이킹 던",
+        "이클립스"
+      ]
+    },
+    "daily-20261115-percy-jackson-original-arc": {
+      "sourceHash": "8b667402a95b8e544667e164893844a2ae6a0b22e10bcb8e29b4bafd8422f4e3",
+      "prompt": "2005~2009년 원작 퍼시 잭슨과 올림픽의 5권짜리 스토리 편에서 소설의 이름을 지정하세요.",
+      "answers": [
+        "번개 도둑",
+        "괴물의 바다",
+        "타이탄의 저주",
+        "미궁의 전투",
+        "마지막 올림픽"
+      ]
+    },
+    "daily-20261115-monkees-original-four": {
+      "sourceHash": "80277c53de45a0146f4e946336823ba8a7254335bff03f93a3f15ec5418b9e04",
+      "prompt": "Monkees의 원래 멤버 4명 중 한 명을 말해보세요.",
+      "answers": [
+        "데비 존스",
+        "미키 돌렌즈",
+        "마이클 네스미스",
+        "피터 토크"
+      ]
+    },
+    "daily-20261115-bee-gees-gibb-brothers": {
+      "sourceHash": "d04cd7947df739edfcfe5940e081d8419824d3f0e898b87478aa0ace72fafd4f",
+      "prompt": "Bee Gees의 Gibb 형제 세 명 중 한 명을 말해보세요.",
+      "answers": [
+        "배리 깁",
+        "로빈 깁",
+        "모리스 깁"
+      ]
+    },
+    "daily-20261115-kiss-original-lineup": {
+      "sourceHash": "afefec73f66821e0845cf816193f3e3f8d2e6e81d507e3441c21e574cc2a1b13",
+      "prompt": "록 밴드 KISS의 원년 멤버 4명 중 한 명을 말해보세요.",
+      "answers": [
+        "진 시몬스",
+        "폴 스탠리",
+        "에이스 프렐리",
+        "피터 크리스"
+      ]
+    },
+    "daily-20261115-rush-classic-trio": {
+      "sourceHash": "7e274cb4b5483a63f8a14cd163958c63ac46976d3ea777f2dbc529a2603b716a",
+      "prompt": "1974년부터 2015년 마지막 투어까지 오랫동안 활동해 온 Rush 트리오의 멤버를 소개합니다.",
+      "answers": [
+        "게디 리",
+        "닐 피어트",
+        "알렉스 라이프슨"
+      ]
+    },
+    "daily-20261115-police-classic-trio": {
+      "sourceHash": "6a8cb13be587e91cbcf5b9795a371fcf5cf37a056083e90191e3288219774d94",
+      "prompt": "경찰의 클래식 3인 녹음 라인업 멤버 중 한 명을 지명해 보세요.",
+      "answers": [
+        "스팅",
+        "스튜어트 코플랜드",
+        "앤디 서머스"
+      ]
+    },
+    "daily-20261115-three-tenors": {
+      "sourceHash": "3fcda5b46efd398bfeda54521a513f8f60484c7b8b1b87e0aa321139f8ed85f9",
+      "prompt": "1990년 로마에서 함께 공연한 세 명의 테너 중 한 명을 말해보세요.",
+      "answers": [
+        "루치아노 파바로티",
+        "플라시도 도밍고",
+        "호세 카레라스"
+      ]
+    },
+    "daily-20261115-tertian-triad-qualities": {
+      "sourceHash": "9ee469f40f842aec3b124f1bfc37c163ed4ffd407ecaf3500855d17d0f73d6f6",
+      "prompt": "서양 음조 음악의 네 가지 표준 삼화음 특성 중 하나를 말하십시오.",
+      "answers": [
+        "메이저",
+        "마이너",
+        "감소",
+        "증강"
+      ]
+    },
+    "daily-20261115-minor-scale-forms": {
+      "sourceHash": "ca6501e9f577f3e87f0032afa41b90f6bc20776ce8fc2ea5af508276482dbd34",
+      "prompt": "서양 음조 이론에서 가르치는 세 가지 전통적인 단음계 형식 중 하나를 말하십시오.",
+      "answers": [
+        "내츄럴 마이너",
+        "하모닉 마이너",
+        "멜로디 마이너"
+      ]
+    },
+    "daily-20261115-lady-unicorn-tapestries": {
+      "sourceHash": "cf4f46369282d58592b33c52edfe646ddcb80258966b63d6306ffe4e48dd98f8",
+      "prompt": "클루니 미술관(Musée de Cluny)의 6개 패널로 구성된 Lady and the Unicorn 시리즈의 태피스트리 이름을 지정하세요.",
+      "answers": [
+        "시력",
+        "청력",
+        "맛",
+        "냄새",
+        "터치",
+        "À mon seul désir"
+      ]
+    },
+    "daily-20261115-cole-voyage-of-life": {
+      "sourceHash": "2b15be0a9e826262cfb161fb6392dbe8dc8d706433511756767583e69a80227c",
+      "prompt": "Thomas Cole의 그림 시리즈 The Voyage of Life의 네 단계 중 하나를 말하십시오.",
+      "answers": [
+        "어린 시절",
+        "청소년",
+        "노년기",
+        "남성다움"
+      ]
+    },
+    "daily-20261115-cole-course-of-empire": {
+      "sourceHash": "61f44abae1c8d7cf0ad3075551036a0091cf94595cb1e939b2bbca9df0a78fe4",
+      "prompt": "Thomas Cole의 5부작 시리즈 The Course of Empire에 나오는 그림의 이름을 지정하세요.",
+      "answers": [
+        "파괴",
+        "황폐화",
+        "야만인 상태",
+        "제국의 완성",
+        "아르카디아 또는 목가적 국가"
+      ]
+    },
+    "daily-20261115-vitruvian-architecture-principles": {
+      "sourceHash": "ff6c52edc03decedd5355866b0d2a8b28bc232fb5aaa390436bc71855355bfc4",
+      "prompt": "건축에 대한 비트루비우스의 세 가지 유명한 요구 사항 중 하나를 영어 또는 라틴어로 말하십시오.",
+      "answers": [
+        "뷰티",
+        "강도",
+        "유틸리티"
+      ]
+    },
+    "daily-20261115-acropolis-classical-monuments": {
+      "sourceHash": "50f1387dbafb02e1ebe5939efff1bc3b49c68a9c7db345ee6e3c437b88ba2b5d",
+      "prompt": "유네스코에 등재된 기원전 5세기 아크로폴리스 기념물 4개 중 하나의 이름을 말하십시오.",
+      "answers": [
+        "파르테논 신전",
+        "에레크테이온",
+        "아테나 신전 나이키",
+        "프로필라이아"
+      ]
+    },
+    "daily-20261115-navona-fountains": {
+      "sourceHash": "fc5fa610c2e284f1e2b824739f662d78947b6f2eef75b4b4537d9263efcb5bc3",
+      "prompt": "로마 나보나 광장에 있는 세 개의 기념비적인 분수 중 하나의 이름을 말해보세요.",
+      "answers": [
+        "4대강의 분수",
+        "해왕성의 분수",
+        "무어 분수"
+      ]
+    },
+    "daily-20261115-rome-major-basilicas": {
+      "sourceHash": "f8b342e45650ceabcc8764715a24ee2bb10c80024b3abb505ef421d0096150cc",
+      "prompt": "바티칸 시국을 포함하여 로마의 4대 교황 대성당 중 하나의 이름을 말하십시오.",
+      "answers": [
+        "성 베드로 대성당",
+        "성 요한 라테라노",
+        "세인트 메리 메이저",
+        "성벽 밖의 세인트 폴"
+      ]
+    },
+    "daily-20261115-hogarth-four-times-day": {
+      "sourceHash": "4b0aa1210f2d5f1cc2ad23f04d88f8986ba872d4bfd44043d15439a9cb28c36e",
+      "prompt": "William Hogarth의 시리즈 The Four Times of the Day의 네 가지 제목 중 하나를 말하십시오.",
+      "answers": [
+        "아침",
+        "밤",
+        "저녁",
+        "정오"
+      ]
+    },
+    "daily-20261115-grand-slam-court-surfaces": {
+      "sourceHash": "5e52ac2cca61f44e25a0b0f91bf3f5153320a6ebf3ab7ae39ca3b07783c98dbb",
+      "prompt": "2024년 4회 테니스 그랜드 슬램에서 사용된 코트 표면 카테고리의 이름을 지정하세요.",
+      "answers": [
+        "잔디",
+        "클레이",
+        "하드 코트"
+      ]
+    },
+    "daily-20261115-volleyball-rotation-zones": {
+      "sourceHash": "2131f9f6c4a78fbbf96fa98ac79b6512314177cde8cbdda3a2c062f37fe8632f",
+      "prompt": "실내 배구 로테이션에서 앞뒤 코트 위치 6개 중 하나를 말하세요.",
+      "answers": [
+        "왼쪽 앞",
+        "오른쪽 앞",
+        "중간 앞",
+        "오른쪽 뒤",
+        "왼쪽 풀백",
+        "미들백"
+      ]
+    },
+    "daily-20261115-paris-pentathlon-disciplines": {
+      "sourceHash": "4402c56b579ced3dd4526db043b95170fe54a6d90c2f50bbac215d842377935f",
+      "prompt": "파리 2024에서 열리는 현대 5종의 개별 종목을 말하십시오. 이때 레이저 달리기를 두 가지 종목으로 간주하십시오.",
+      "answers": [
+        "수영",
+        "실행 중",
+        "펜싱",
+        "승마",
+        "촬영"
+      ]
+    },
+    "daily-20261115-mens-golf-majors": {
+      "sourceHash": "0c41beccfd797bad248bc2d216e13e369674d06c2baffda969ba3b1aedbcf4d1",
+      "prompt": "2024년에 개최되는 4대 남자 메이저 골프 선수권 대회 중 하나의 이름을 말하세요.",
+      "answers": [
+        "마스터즈 토너먼트",
+        "US 오픈",
+        "오픈 챔피언십",
+        "PGA 챔피언십"
+      ]
+    },
+    "daily-20261115-womens-golf-majors": {
+      "sourceHash": "93148566645d9ab539c808d4e80a9159c3648f9e9672a479b41d83ed70d73ffe",
+      "prompt": "2024년 일정에 포함된 5개의 LPGA 메이저 챔피언십 중 하나를 말하세요.",
+      "answers": [
+        "US여자오픈",
+        "AIG 여자오픈",
+        "KPMG 여자 PGA 챔피언십",
+        "쉐브론 챔피언십",
+        "아문디 에비앙 챔피언십"
+      ]
+    },
+    "daily-20261115-handball-playing-positions": {
+      "sourceHash": "6533e36c503208dfca2db0eeca1c57aa6bfbd490490d467b2990748a539dae4f",
+      "prompt": "왼쪽과 오른쪽을 구별하는 표준 7인제 핸드볼 플레이 위치를 지정합니다.",
+      "answers": [
+        "골키퍼",
+        "왼쪽 날개",
+        "오른쪽 날개",
+        "센터백",
+        "왼쪽 풀백",
+        "오른쪽 뒤",
+        "피벗"
+      ]
+    },
+    "daily-20261115-field-archery-bow-categories": {
+      "sourceHash": "f7ca977bd91c0fd7f14c9c424b4bf875e773cf03812799c3811f6da37addcc20",
+      "prompt": "2024년 세계양궁선수권대회의 세 가지 활 부문 중 하나를 말해보세요.",
+      "answers": [
+        "리커브",
+        "화합물",
+        "베어보우"
+      ]
+    },
+    "daily-20261115-bwf-worlds-event-types": {
+      "sourceHash": "6e6963b5e824c44dccaf6e2a53f12ce338f10cb2195a6d5e63966796e0db0df8",
+      "prompt": "BWF 세계 선수권 대회 표준 프로그램의 5가지 이벤트 유형 중 하나를 말하십시오.",
+      "answers": [
+        "남자 단식",
+        "여자 단식",
+        "남자 복식",
+        "여자 복식",
+        "혼합 복식"
+      ]
+    },
+    "daily-20261115-archery-target-colors": {
+      "sourceHash": "0a7ffe2dd084f6933e4242853585660532288e80327f9bb3660b4b67f9d99b83",
+      "prompt": "표준 5색 세계 양궁 과녁 면의 색상 이름을 지정합니다.",
+      "answers": [
+        "골드",
+        "레드",
+        "블루",
+        "블랙",
+        "화이트"
+      ]
+    },
+    "daily-20261115-eventing-three-phases": {
+      "sourceHash": "6558ca4ee1a52f7add696dc09bbdc2e14f121eaf96668acd8696a3a58af12696",
+      "prompt": "승마 종목의 세 가지 경쟁 단계 중 하나를 말하십시오.",
+      "answers": [
+        "조마술",
+        "크로스컨트리",
+        "쇼 점프"
+      ]
+    },
+    "daily-20261115-three-ingredient-shortbread": {
+      "sourceHash": "5fd98c622b9554ceaa5aa403022b76c3e815cfcf685f3aab2ef7b1f7a3a4a9fc",
+      "prompt": "Good Food의 기본 쇼트브레드 비스킷 레시피에 포함된 세 가지 재료 중 하나를 말해보세요.",
+      "answers": [
+        "버터",
+        "밀가루",
+        "설탕"
+      ]
+    },
+    "daily-20261115-usda-shell-egg-grades": {
+      "sourceHash": "cdc7550533240175aef3a431d6f80fb1f841addd3775ebc0f25d29fb37968925",
+      "prompt": "달걀 껍질에 대한 USDA 소비자 품질 등급 세 가지 중 하나를 말하십시오.",
+      "answers": [
+        "AA",
+        "A",
+        "B"
+      ]
+    },
+    "daily-20261115-bechamel-base-ingredients": {
+      "sourceHash": "cf3dfe8123b1fd3869ce352f3455ae3e6b13268f97498a361b285c66834b3b86",
+      "prompt": "시즈닝을 제외한 버터 루 베샤멜 소스의 세 가지 기본 재료 중 하나를 말하십시오.",
+      "answers": [
+        "우유",
+        "버터",
+        "밀가루"
+      ]
+    },
+    "daily-20261115-classic-roux-colors": {
+      "sourceHash": "41fff96fad4f7646fc847ffc62d68c2f80a07805d6f52f745b933a50de16eaa3",
+      "prompt": "프랑스의 고전적인 3단계 분류에서 루 색상의 이름을 지정합니다.",
+      "answers": [
+        "브라운",
+        "화이트",
+        "금발"
+      ]
+    },
+    "daily-20261115-commercial-yeast-physical-forms": {
+      "sourceHash": "6e3ee2bfef90457d873407581929cc62b5013f16e89ed6afa1725ee6e86a120b",
+      "prompt": "아서왕의 4가지 형태 분류에서 상업용 빵 효모의 물리적 형태를 말해보세요.",
+      "answers": [
+        "인스턴트 이스트",
+        "활성 건조 효모",
+        "압축 효모",
+        "크림 효모"
+      ]
+    },
+    "daily-20261115-us-nine-major-allergens": {
+      "sourceHash": "03e460adec679903bf63f4462eed8ab7f8c5a11617ed4ccf38cc38975f039b13",
+      "prompt": "2023년 1월부터 미국 법에서 인정하는 9가지 주요 식품 알레르기 유발 물질 카테고리 중 하나를 말하세요.",
+      "answers": [
+        "우유",
+        "땅콩",
+        "계란",
+        "밀",
+        "대두",
+        "나무 견과류",
+        "피쉬",
+        "참깨",
+        "갑각류 조개"
+      ]
+    },
+    "daily-20261115-usda-beef-quality-grades": {
+      "sourceHash": "6d0d3382e54e37b82f2c42cb8bab1c2ac4f39e231715f5d8939a17bdf4a0845e",
+      "prompt": "USDA의 표준 8등급 쇠고기 품질 시스템의 등급을 지정하세요.",
+      "answers": [
+        "프라임",
+        "초이스",
+        "선택",
+        "표준",
+        "상업용",
+        "유틸리티",
+        "커터",
+        "캐너"
+      ]
+    },
+    "daily-20261115-rice-kernel-length-classes": {
+      "sourceHash": "96bcfba1071498bddc8798c567837c6802d60c74c7c674d5d80f3b531daf2b55",
+      "prompt": "표준 3방향 커널 길이 분류에서 쌀 카테고리를 지정합니다.",
+      "answers": [
+        "긴결",
+        "짧은결",
+        "중간 입자"
+      ]
+    },
+    "trend-20261116-nfc-north": {
+      "sourceHash": "35388c28cf9e49ca20ac3ce94bf399b90a83fcea414300ee27a49415785c737f",
+      "prompt": "2026 시즌 동안 NFC North 디비전의 NFL 팀 4개 중 하나를 말하세요.",
+      "answers": [
+        "그린 베이 패커스",
+        "디트로이트 라이온스",
+        "미네소타 바이킹스",
+        "시카고 베어스"
+      ]
+    },
+    "trend-20261118-cma-entertainer-nominees": {
+      "sourceHash": "6d6ea966fc793d53f6b7a959bd75d7b141e7c0ed1c34b5038defd414eb16578e",
+      "prompt": "2026년 CMA 어워즈 올해의 엔터테이너 후보 중 한 명을 말하세요.",
+      "answers": [
+        "크리스 스테이플턴",
+        "루크 콤즈",
+        "레이니 윌슨",
+        "엘라 랭글리",
+        "코디 존슨"
+      ]
+    }
+  }
+}

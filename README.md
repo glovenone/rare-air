@@ -4,20 +4,20 @@ A free daily trivia game where unexpected answers lift a hot-air balloon through
 
 [Play RARE Air](https://krillionunlimited.top/)
 
-[Collaboration and current status](COLLABORATION.md) · [Progress record](PROGRESS.md)
+[Collaboration and handoff](COLLABORATION.md) · [Progress](PROGRESS.md) · [Mobile release state](release/mobile-daily.md)
 
 ![RARE Air in flight](docs/images/flight.jpg)
 
 Five questions, 30 seconds each, and up to 5,000 meters of altitude. Drag the balloon to steer, or focus it and use the arrow keys. Press Space or tap the balloon to catch a gust. Rare answers trigger wind rings, cloud breakthroughs and paper-plane companions.
 
-The project includes hundreds of question sets in ten languages, accepted aliases, editorial rarity tiers, daily and practice modes, a date archive, anonymous daily leaderboards and browser-local flight history. English remains the source for editorial content.
+The project includes hundreds of question sets in eleven languages, accepted aliases, editorial rarity tiers, daily and practice modes, a date archive, anonymous daily leaderboards and browser-local flight history. English remains the source for editorial content.
 
 ## Run locally
 
 ```sh
 npm ci
 npm run db:local
-npm run dev -- --infer-origin-from-routes false
+npm run dev
 ```
 
 Open http://localhost:8787. No external API keys or AI service required.
@@ -32,6 +32,7 @@ node test/api.integration.mjs
 node test/relay.integration.mjs
 node test/progression.integration.mjs
 node test/social.integration.mjs
+node test/rewards.integration.mjs
 ```
 
 The integration test creates local game records. Run against the local URL, not production. Test rules cover every alias, normalized spelling, scoring tiers, deterministic dates and absence of public answer keys.

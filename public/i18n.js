@@ -1,4 +1,4 @@
-import { locales, resolveLocale, localizedPath } from "./locales.js";
+import { locales, resolveLocale, supportedLocale, preferredLocale, localizedPath } from "./locales.js";
 import { messages } from "./translations.js";
 
 // The packaged app bundles this module while its Canvas module loads it directly.
@@ -100,12 +100,15 @@ export function createLanguageSelector(onChange) {
 }
 
 export function initialLanguage() {
-  if (/^\/(?:zh|de|es|ar|fr|ja|pt|id|ru)(?:\/|$)/.test(location.pathname)) return state.selected.code;
+  const prefix = location.pathname.split("/")[1];
+  const explicit = locales.find((locale) => locale.code !== "en" && locale.code === prefix);
+  if (explicit) return explicit.code;
   try {
-    const saved = localStorage.getItem("rare:language");
-    if (saved) return resolveLocale(saved).code;
+    const saved = supportedLocale(localStorage.getItem("rare:language"));
+    if (saved) return saved.code;
   } catch {}
-  return resolveLocale(navigator.language).code;
+  const preferences = navigator.languages?.length ? navigator.languages : [navigator.language];
+  return preferredLocale(preferences).code;
 }
 
 window.RareI18n = { t, applyLanguage };

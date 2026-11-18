@@ -2142,6 +2142,43 @@
           "Javelin throw": "Lempar lembing"
         }
       }
+    },
+    "ko": {
+      "daily-20261113-78b635521441": {
+        "answers": {
+          "Orion": "오리온자리",
+          "Canis Major": "큰개자리",
+          "Canis Minor": "작은개자리"
+        }
+      },
+      "daily-20261113-caab4eac2229": {
+        "answers": {
+          "Crocodylidae": "크로커다일과",
+          "Alligatoridae": "엘리게이터과",
+          "Gavialidae": "가비알과"
+        },
+        "aliases": {
+          "Crocodylidae": [
+            "크로커다일악어과"
+          ],
+          "Alligatoridae": [
+            "앨리게이터과",
+            "알리게이터과"
+          ]
+        }
+      },
+      "daily-20261114-carpal-bones": {
+        "answers": {
+          "Scaphoid": "손배뼈",
+          "Lunate": "반달뼈",
+          "Triquetrum": "세모뼈",
+          "Pisiform": "콩알뼈",
+          "Trapezium": "큰마름뼈",
+          "Trapezoid": "작은마름뼈",
+          "Capitate": "알머리뼈",
+          "Hamate": "갈고리뼈"
+        }
+      }
     }
   },
   "messages": {
@@ -2181,7 +2218,6 @@
       "Explore RARE Air, an independent rare-answer trivia game with five timed prompts, daily flights and repeatable practice.": "探索 RARE Air，一款独立的罕见答案 知识问答 游戏，包含五个限时提示、每日飞行和可重复的练习。",
       "Daily Trivia Game — Five Questions, One Flight | RARE Air": "每日 知识问答 游戏 — 五道问题，一次飞行 | RARE Air",
       "A daily trivia game that takes you higher.": "一款让你飞得更高的每日 知识问答 游戏。",
-      "RARE Air is a free daily trivia game in ten languages with five open-answer questions. You get 30 seconds per question. Correct answers give your hot-air balloon lift, and less obvious answers take you further. A new daily flight opens at midnight UTC.": "RARE Air 是一款免费的每日 知识问答 游戏，提供十种语言，包含五个开放性问题。每题你有 30 秒时间作答。正确答案让你的热气球升空，而更不寻常的答案能让你飞得更高。每天 UTC 午夜开放一个新的每日飞行。",
       "Play RARE Air, a free daily trivia game with five open-answer questions. Find less obvious correct answers and climb up to 5,000 meters through the clouds.": "游玩 RARE Air，这是一款免费的每日 知识问答 游戏，包含五道开放式问答题。找到不那么显而易见的正确答案，穿越云层，攀升至 5,000 米。",
       "How to Play RARE Air — Daily Trivia Rules & Scoring": "如何游玩 RARE Air — 每日 知识问答 规则与计分",
       "Learn the RARE Air trivia rules, 30-second timer, answer rarity tiers, daily resets, practice flights, archive and score sharing.": "了解 RARE Air  知识问答 规则、30 秒计时器、答案稀有度等级、每日重置、练习飞行、归档和分数分享。",
@@ -2268,7 +2304,6 @@
       "off": "no",
       "Rare home": "Inicio de RARE Air",
       "5 DAILY PROMPTS": "5 PREGUNTAS DIARIAS",
-      "RARE Air is a free daily trivia game in ten languages with five open-answer questions. You get 30 seconds per question. Correct answers give your hot-air balloon lift, and less obvious answers take you further. A new daily flight opens at midnight UTC.": "RARE Air es un juego de trivia diario gratuito en diez idiomas con cinco preguntas de respuesta abierta. Tienes 30 segundos por pregunta. Las respuestas correctas dan elevación a tu globo aerostático, y las respuestas menos obvias te llevan más lejos. Un nuevo vuelo diario se abre a medianoche UTC.",
       "On this website, choose your language from the header. Questions and answer review are available in English, Chinese, Spanish, French, Portuguese, German, Japanese, Russian, Arabic and Indonesian. You can answer in your selected language or English. Changing language keeps the same flight and its running clock. Literal code keywords remain unchanged.": "En este sitio web, elige tu idioma desde la cabecera. Las preguntas y la revisión de respuestas están disponibles en inglés, chino, español, francés, portugués, alemán, japonés, ruso, árabe e indonesio. Puedes responder en tu idioma seleccionado o en inglés. Cambiar de idioma mantiene el mismo vuelo y su reloj en curso. Las palabras clave literales del código permanecen sin cambios.",
       "Private flights have five stages; ten-seat, quick and rated flights have up to 30. One remaining pilot ends the flight early.": "Los vuelos privados tienen 5 etapas; las mesas de 10 plazas y los vuelos rápidos o clasificatorios tienen hasta 30 etapas. La partida termina antes si solo queda un piloto.",
       "Rare and exceptional answers charge an extra heart: 1,500 rare meters restores one, up to five hearts. More hearts wins; altitude breaks ties.": "Las respuestas raras y excepcionales acumulan energía: cada 1.500 metros recuperan un corazón, hasta un máximo de cinco. Gana quien tiene más corazones; la altitud desempata.",

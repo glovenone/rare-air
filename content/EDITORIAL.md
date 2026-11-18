@@ -31,7 +31,7 @@ Set new batches' `releasedOn` to the next UTC date, never retroactively. Practic
 Do not reorder/modify/delete published packs. Corrections need a versioned replacement strategy. Re-running a day's automation must reuse the recorded selection and publication state to prevent duplicate additions. Published packs remain append-only. Keep changes scoped when other uncommitted work exists.
 
 ## Verification and deployment
-For each new or versioned question, update its contextual prompt and answer translations in all nine additional languages before building. Follow `content/translations/README.md` for fingerprints, reviewed terminology and localized aliases. English remains the canonical fact-checking source. Preserve literal codes and unchanged scoring. A missing, stale or ambiguous translation blocks publication rather than silently falling back in a newly added question.
+For each new or versioned question, update its contextual prompt and answer translations in all ten additional languages before building. Follow `content/translations/README.md` for fingerprints, reviewed terminology and localized aliases. English remains the canonical fact-checking source. Preserve literal codes and unchanged scoring. A missing, stale or ambiguous translation blocks publication rather than silently falling back in a newly added question.
 
 1. `npm run bank:build` (fails on schema errors/duplicate IDs/prompts/answer sets/aliases).
 2. `npm run check` and `npm test`.

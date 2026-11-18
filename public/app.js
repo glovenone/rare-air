@@ -224,7 +224,7 @@ $("help").onclick = () => {
 $("about").onclick = () => {
   const content = openDialog("Take your curiosity somewhere new.", [
     "RARE is an independent daily trivia game. Unexpected answers power a hot-air-balloon journey through an illustrated sky. It is inspired by rare-answer games, including Krillion.",
-    t`The current bank has ${puzzle?.bankSize || 601} curated prompts in ten languages. Online answers and scores are checked on the server. Offline practice is scored on your device. One point represents one game meter. Altitude is a visual game reward and answer rarity is an editorial rating.`,
+    t`The current bank has ${puzzle?.bankSize || 602} curated prompts in eleven languages. Online answers and scores are checked on the server. Offline practice is scored on your device. One point represents one game meter. Altitude is a visual game reward and answer rarity is an editorial rating.`,
     "An anonymous cookie keeps your daily flight. Game results and answers are stored for scoring and the leaderboard. Browser local storage keeps your flight history. Clearing browser data removes your local identity.",
     "The sky and balloon were created with AI image generation. Sound starts off. Reduced-motion preferences disable balloon and cloud animation. Mobile apps include native sharing, haptics and offline practice.",
   ]);

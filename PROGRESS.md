@@ -17,3 +17,12 @@ Pushed implementation commit `785532e` to GitHub main and deployed Cloudflare ve
 Live happycoin Chrome checks confirmed 21px dark action titles on desktop, 19px at 320px, a single-column narrow layout and no horizontal overflow. Selecting a free icon updated both homepage previews and survived reload. The original guest icon was restored after this check. Browser error logs were empty. Actual website screenshots and asset hashes are retained in the main checkout's ignored `release/private/home-visibility-20261118/`.
 
 Native store updates incorporating this refinement remain pending. Mobile release work should integrate source `785532e` before rebuilding its candidate.
+
+
+## 2026-11-19 07:07
+
+Recovered the unfinished November 18 international candidate into a new daily worktree based on current main1278282. Preserved the larger homepage labels, equipped icon previews and guest points onboarding. Added Korean, ordered browser-language preference matching, English fallback and manual-language persistence. All602question aliases and eleven message catalogs validate,99localized pages build,TypeScript checks and69tests pass. Korean uses cached machine translation with selected terminology and UI corrections, and full native-speaker review is pending.
+
+The single recovered CMA nominee question remains unpublished at this checkpoint. Its complete five-name2026category was reverified against CMA and ABC. The first release was moved to November19UTC, the next UTC date when recovery generated the candidate. All published packs retain their existing dates. Today's ten US Trends signals yielded zero additional qualifying questions.
+
+Prepared native1.0.3build/code6 from the integrated candidate. Browser/computer control is unavailable in this run. Current signed-in analytics and store forms require that capability to resume. Official Apple public Lookup still verifies1.0.1. The connected happycoin Gmail search found no matching review email since November17, which does not establish a new store state.

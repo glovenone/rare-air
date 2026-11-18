@@ -47,7 +47,7 @@ const pages = [
       "Play RARE Air, a free daily trivia game with five open-answer questions. Find less obvious correct answers and climb up to 5,000 meters through the clouds.",
     heading: "A daily trivia game that takes you higher.",
     intro:
-      "RARE Air is a free daily trivia game in ten languages with five open-answer questions. You get 30 seconds per question. Correct answers give your hot-air balloon lift, and less obvious answers take you further. A new daily flight opens at midnight UTC.",
+      "RARE Air is a free daily trivia game in eleven languages with five open-answer questions. You get 30 seconds per question. Correct answers give your hot-air balloon lift, and less obvious answers take you further. A new daily flight opens at midnight UTC.",
     sections: [
       [
         "Five prompts, one shared daily challenge.",
@@ -212,7 +212,7 @@ pages.push(
       ],
       [
         "Daily questions and repeatable practice.",
-        `The current bank contains ${bankInfo.bankSize} prompts in ten languages. Today's daily flight gives everyone the same five questions and resets at midnight UTC. Practice creates another five-question set whenever you want to keep playing. Questions can return across separate practice flights.`,
+        `The current bank contains ${bankInfo.bankSize} prompts in eleven languages. Today's daily flight gives everyone the same five questions and resets at midnight UTC. Practice creates another five-question set whenever you want to keep playing. Questions can return across separate practice flights.`,
         "The game is free to play in a mobile or desktop browser. You can start immediately without creating a player account. An anonymous cookie keeps your daily attempt, and local browser storage keeps your flight history.",
       ],
       [

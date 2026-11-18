@@ -29,3 +29,10 @@ Selected Chinese name and alias checks use the [Greek-letter reference](https://
 Additional selected checks use [Carlsen's German Potter book list](https://www.carlsen.de/harry-potter/faq), [Larousse's French titles](https://www.larousse.fr/encyclopedie/divers/Harry_Potter/103056), [Gramedia's Indonesian box set](https://gpu.id/book/81151/box-set-harry-potter), [Ikeda City's wombat species](https://www.city.ikeda.osaka.jp/ikeda_wombat/15111.html), the [Union of Japanese Societies for Systematic Biology's echinoderm classes](https://www.ujssb.org/biospnum/search.php?Kingdom=Animalia&Phylum=Echinodermata) and the [National Museum of Nature and Science's bryophyte groups](https://www.kahaku.go.jp/research/db/botany/koke/).
 
 Arabic references include the [WMO International Cloud Atlas genera](https://cloudatlas.wmo.int/ar/clouds-genera.html) and [MedCalc's Greek-letter reference](https://www.medcalc.org/ar/manual/greek-alphabet.php).
+
+
+## November 18 Korean coverage
+
+Korean joins the existing ten languages under the owner’s November 17 global-product requirements. The website and next native candidate have eleven catalogs. Browser/device preferences are traversed in order, with English fallback, persistent manual choice and explicit localized paths. Only simplified Chinese has a catalog.
+
+Korean began with cached Google machine translation of public source questions and interface/guide messages. Main actions, the rewards flow and selected terms were reviewed. Full native-speaker editorial review remains open. Three collision corrections distinguish Winter Triangle constellations, crocodilian families and wrist bones. References include the [National Science Museum constellations](https://www.science.go.kr/mps/scienceSubject/star/list.do?page=2), [Korean CITES taxonomy appendix](https://www.law.go.kr/flDownload.do?bylClsCd=200201&flNm=%5B%EB%B3%84%ED%91%9C%5D+%EA%B5%AD%EC%A0%9C%EC%A0%81+%EB%A9%B8%EC%A2%85%EC%9C%84%EA%B8%B0%EC%A2%85+%EB%AA%A9%EB%A1%9D&flSeq=162188279) and [National Institute of Korean Language terminology](https://kli.korean.go.kr/term/trgtWord/indexTrgtWord.do?trgtWordNo=565982).

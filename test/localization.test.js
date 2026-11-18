@@ -26,8 +26,8 @@ test("Arabic hamza remains meaningful while unambiguous spelling variants are ac
 
 test("all supported languages cover the bank and retain canonical scoring", () => {
   const translated = locales.filter((locale) => locale.code !== "en");
-  assert.equal(locales.length, 10);
-  assert.deepEqual(locales.map(({ code }) => code), ["en", "zh", "es", "fr", "pt", "de", "ja", "ru", "ar", "id"]);
+  assert.equal(locales.length, 11);
+  assert.deepEqual(locales.map(({ code }) => code), ["en", "zh", "es", "fr", "pt", "de", "ja", "ko", "ru", "ar", "id"]);
   for (const question of questions) {
     for (const { code } of translated) {
       const entry = question.localizations?.[code];
@@ -82,7 +82,7 @@ test("historic snapshots and locale routing retain their original meaning", () =
   assert.equal(withTranslations(snapshot), snapshot);
   assert.equal(publicQuestion(snapshot, "zh").prompt, snapshot.prompt);
   assert.equal(resolveLocale("pt-BR").code, "pt");
-  assert.equal(resolveLocale("zh-TW").code, "zh");
+  assert.equal(resolveLocale("zh-TW").code, "en");
   assert.equal(resolveLocale("unsupported").code, "en");
   assert.equal(localizedPath("/fr/how-to-play/", "ja"), "/ja/how-to-play/");
   assert.equal(localizedPath("/ar/", "en"), "/");

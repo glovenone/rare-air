@@ -1,0 +1,53 @@
+{
+  "batch": "2026-11-18-daily",
+  "releasedOn": "2026-11-19",
+  "questions": [
+    {
+      "id": "trend-20261118-cma-entertainer-nominees",
+      "category": "MUSIC",
+      "prompt": "Name an Entertainer of the Year nominee at the 2026 CMA Awards.",
+      "explanation": "The Country Music Association final 2026 ballot lists these five artists in this category. Rarity tiers are editorial familiarity estimates for English-language players.",
+      "sources": [
+        "https://cmaawards.com/news/cma-announces-nominees-for-the-60th-annual-cma-awards/",
+        "https://abc.com/news/9522e0a5-01d9-4ba8-85f7-54dca140a645/category/828413"
+      ],
+      "answers": [
+        {
+          "label": "Chris Stapleton",
+          "aliases": [
+            "Stapleton"
+          ],
+          "tier": 1
+        },
+        {
+          "label": "Luke Combs",
+          "aliases": [
+            "Combs"
+          ],
+          "tier": 1
+        },
+        {
+          "label": "Lainey Wilson",
+          "aliases": [
+            "Wilson"
+          ],
+          "tier": 2
+        },
+        {
+          "label": "Ella Langley",
+          "aliases": [
+            "Langley"
+          ],
+          "tier": 3
+        },
+        {
+          "label": "Cody Johnson",
+          "aliases": [
+            "Johnson"
+          ],
+          "tier": 4
+        }
+      ]
+    }
+  ]
+}

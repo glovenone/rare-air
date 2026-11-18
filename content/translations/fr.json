@@ -6508,6 +6508,17 @@
         "Minnesota Vikings",
         "Chicago Bears"
       ]
+    },
+    "trend-20261118-cma-entertainer-nominees": {
+      "sourceHash": "6d6ea966fc793d53f6b7a959bd75d7b141e7c0ed1c34b5038defd414eb16578e",
+      "prompt": "Citez un artiste nommé au prix Entertainer of the Year des CMA Awards 2026.",
+      "answers": [
+        "Chris Stapleton",
+        "Luke Combs",
+        "Lainey Wilson",
+        "Ella Langley",
+        "Cody Johnson"
+      ]
     }
   }
 }

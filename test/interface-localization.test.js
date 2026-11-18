@@ -42,3 +42,27 @@ test("bundled native UI and separately loaded Canvas share language selection", 
   assert.equal(canvas.t("Fly"), "Fly");
   assert.equal(document.documentElement.dir, "ltr");
 });
+
+test("first visits traverse browser preferences, retain manual choices and respect explicit language paths", () => {
+  function initial(preferences, saved = null, path = "/") {
+    const context = vm.createContext({
+      module: { exports: {} },
+      window: {},
+      document: { documentElement: { lang: path.startsWith("/ko/") ? "ko" : "en" } },
+      location: { pathname: path },
+      navigator: { languages: preferences, language: preferences[0] },
+      localStorage: { getItem: () => saved },
+    });
+    vm.runInContext(outputFiles[0].text, context);
+    return context.module.exports.initialLanguage();
+  }
+  assert.equal(initial(["nl-NL", "fr-CA", "en-US"]), "fr");
+  assert.equal(initial(["vi-VN", "ko-KR", "en-US"]), "ko");
+  assert.equal(initial(["en-GB", "ko-KR"]), "en");
+  assert.equal(initial(["vi-VN", "th-TH"]), "en");
+  assert.equal(initial(["zh-Hant-TW", "es-MX"]), "es");
+  assert.equal(initial(["zh-Hans-CN", "en-US"]), "zh");
+  assert.equal(initial(["ko-KR"], "de"), "de");
+  assert.equal(initial(["ko-KR"], "invalid"), "ko");
+  assert.equal(initial(["en-US"], "de", "/ko/how-to-play/"), "ko");
+});
