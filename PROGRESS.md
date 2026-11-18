@@ -26,3 +26,12 @@ Recovered the unfinished November 18 international candidate into a new daily wo
 The single recovered CMA nominee question remains unpublished at this checkpoint. Its complete five-name2026category was reverified against CMA and ABC. The first release was moved to November19UTC, the next UTC date when recovery generated the candidate. All published packs retain their existing dates. Today's ten US Trends signals yielded zero additional qualifying questions.
 
 Prepared native1.0.3build/code6 from the integrated candidate. Browser/computer control is unavailable in this run. Current signed-in analytics and store forms require that capability to resume. Official Apple public Lookup still verifies1.0.1. The connected happycoin Gmail search found no matching review email since November17, which does not establish a new store state.
+
+
+## 2026-11-19 07:13
+
+Published Korean and preference matching from afa5f04 as Cloudflare eb6e3bf1-29dc-411a-b251-88d1b99a9ee6. All99public pages passed the live technical SEO audit. The bank now contains602questions, including the recovered CMA addition with first release November19UTC. Five real local D1/DO integration groups passed. D1 has zero reports at this check. Backend completed-session counts include maintenance tests and do not establish user growth.
+
+Built signed Android1.0.3(6), the iOS simulator app and the device archive. Native iPhone tests passed free-icon persistence, online practice, background recovery and a five-round offline report with native sharing. A separate accepted-input check exposed an unstable test snapshot and was corrected. A test initially used process termination where backgrounding was intended, and the corrected background scenario passed.
+
+Actual native screenshots exposed fixed header and altitude labels overlapping the homepage when scrolled. The next focused fix makes those homepage elements scroll naturally and covers the iOS status-bar safe area. Rebuild native6from the repaired source before publication. The Android emulator's first boot stalled in package services, then a cold boot with software graphics completed in24seconds. iOS archive export repeated the known CLI No Accounts/distribution-key failure. Organizer cloud signing remains the validated recovery path, and computer control is unavailable in this run.

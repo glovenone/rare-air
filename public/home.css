@@ -10,6 +10,19 @@ body[data-view="home"] .home-screen {
   min-height: max(700px, 100dvh);
   padding-bottom: 28px;
 }
+body[data-view="home"] .site-header,
+body[data-view="home"] .flight-hud {
+  position: absolute;
+}
+.native-app body[data-view="home"]::before {
+  content: "";
+  position: fixed;
+  inset: 0 0 auto;
+  height: env(safe-area-inset-top, 0px);
+  background: #acd0d9;
+  z-index: 6;
+  pointer-events: none;
+}
 body[data-view="home"] .home-heading {
   top: 25%;
   width: 48%;
