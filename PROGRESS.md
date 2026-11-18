@@ -42,3 +42,14 @@ Actual native screenshots exposed fixed header and altitude labels overlapping t
 Published Android1.0.3(6) from98ad3f0as the immutable android-v1.0.3GitHub release. Its signed public APK was freshly downloaded and matched493570366c8265d1e5b32cbd60b645f6b34762b9a83688cb2962a30a7195241e. Native iPhone/iPad and Android checks completed for language selection, avatar persistence, online/background play, five-round offline input and native sharing.
 
 Further image review showed the original companion DOM layer still above the menu. The prior menu stacking change did not lower that independent z-index5element. Correct the actual homepage companion layer to2, below main3. Because build6is already public, preserve that artifact and prepare1.0.4build/code7for the follow-up. Earlier test-harness failures came from background-launch restrictions, non-clickable repeated labels and the How-to-fly/Fly label overlap. The corrected native target selectors and lifecycle checks passed.
+
+
+## 2026-11-19 07:49
+
+Published the follow-up Android 1.0.4 (7) from `1a5fd67`, preserving the earlier 1.0.3 release. Final Android native tests passed both online lifecycle recovery and the complete offline/input/icon/share flow. A rendered-style assertion confirms companion layer 2 below main layer 3. The signed public APK freshly downloaded over anonymous HTTPS matches `a36490df2198158d9c66a0a0d4645a4655f9ed9c84b35e8daad494ea44d32d52`. The AAB hash is `70aecd0f994c35c4708299a1a88daf7911a13206f92dfd067346d60cc270ff25`.
+
+The final iPhone and Korean iPad simulator tests passed for build 7, and its iOS archive passes strict signing verification. Final package contents match the verified frontend and exclude website analytics and ads. Store distribution export and submissions remain pending computer/browser control. The known CLI export failure was retained without requesting another Xcode login.
+
+Website source `9092bb1` and Cloudflare `e6106ebe-4024-4b4e-99c9-8b620327fa8b` publish the new direct APK link across translated homepage/rules pages. All 69 tests and the live 99-page SEO audit pass. Fresh source byte checks verify the deployed language modules, home CSS, JavaScript, localized HTML and sitemap. GA4/GSC reporting and console sitemap submission remain pending the unavailable browser capability. Ads stay off and subscription design stays private.
+
+Read-only service checks found no outstanding reports or Worker invocation exceptions in the observed window. D1 and matchmaker metrics were reviewed with their exact reporting windows and dataset coverage. Detailed usage counts remain in the private daily record. These service and test observations do not establish user growth or an account-wide quota total. Reusable release lessons were added to global-product-launch.

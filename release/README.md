@@ -1,20 +1,20 @@
 # Mobile release preparation
 
-Current maintenance candidate: 1.0.3 (5) includes passport cache and asynchronous flight isolation fixes. It is prepared locally and awaiting fresh native UI acceptance. Public Android direct download remains 1.0.2 (4); store 1.0.1 (3) is the last verified review candidate. Build 5 has now been exported successfully through Organizer cloud signing with the existing Xcode session. Native gameplay acceptance and current store checks are pending. See [release evidence](mobile-daily.md).
+Current maintenance release is Android 1.0.4 (7), publicly available as a verified signed direct APK. It includes the readable homepage, pilot icons and earned points, Korean and ordered device-language matching. The matching iOS 1.0.4 (7) archive and Google Play AAB are prepared and tested. Store export/upload remains pending computer/browser control. Apple's official public Lookup still shows 1.0.1, and Google Play's last dashboard observation was November 18. See [current collaboration state](../COLLABORATION.md) and [release evidence](mobile-daily.md).
 
 ## Product configuration
 
 - Name `RARE Air: Daily Trivia`
 - Language English (U.S.)
 - Identifier `com.letuzhixing.rareair`
-- Version 1.0, build 1
+- Current maintenance version 1.0.4, build/code 7
 - Minimum iOS 15.4, matching the game’s dialog, array and structured-clone APIs. [WebKit release notes](https://webkit.org/blog/12445/new-webkit-features-in-safari-15-4/)
 - Games, Trivia and Word on Apple
 - Free to play
 - New Apple versions use automatic release after approval, and Google managed publishing stays off
 - iPhone and iPad distribution, with 174 overseas regions selected for the release draft
 
-English store text is in [store-metadata.en-US.json](store-metadata.en-US.json). The privacy and support URLs use the purchased domain `krillionunlimited.top`. The website's nine public pages are live over verified HTTPS. Set `SITE_URL` to override the build origin. Daily development, testing and publication follow [the mobile release workflow](mobile-daily.md).
+English store text is in [store-metadata.en-US.json](store-metadata.en-US.json). The privacy and support URLs use the purchased domain `krillionunlimited.top`. The website's 99 localized public pages across eleven languages are live over verified HTTPS. Set `SITE_URL` to override the build origin. Daily development, testing and publication follow [the mobile release workflow](mobile-daily.md).
 
 ## Build
 
@@ -74,7 +74,7 @@ Online gameplay sends a randomly assigned player identifier, chosen answers, sco
 
 The Apple privacy draft declares User ID, Gameplay Content, Product Interaction and Other Diagnostic Data for App Functionality. It conservatively marks these categories linked to the player identity because online sessions use the persistent anonymous identifier and request diagnostics may be correlatable. Tracking is false for each category. The app's privacy manifest matches this draft. The publisher should verify the final labels against deployed infrastructure before publishing them. [Apple privacy definitions](https://developer.apple.com/app-store/app-privacy-details/)
 
-The Google Data safety form has been saved for review, with its source record in [google-data-safety-draft.json](google-data-safety-draft.json). Cloudflare is the hosting processor. The connected launch screen requests the daily summary automatically, so anonymous identifiers, app interactions and diagnostics are marked required. Typed answers are optional because players can choose offline practice. The form declares HTTPS transport, the hosting service-provider sharing exception and the current absence of a verified deletion-request workflow. Diagnostics include the Analytics purpose for service monitoring and error diagnosis. [Google Data safety definitions](https://support.google.com/googleplay/android-developer/answer/10787469)
+The Google Data safety form has been saved for review, with its source record in [google-data-safety-draft.json](google-data-safety-draft.json). Cloudflare is the hosting processor. The connected launch screen requests the daily summary automatically, so anonymous identifiers, app interactions and diagnostics are marked required. Typed answers are optional because players can choose offline practice. The previously saved form declares HTTPS transport and the hosting service-provider sharing exception. The prepared build 7 draft adds optional account User IDs, account creation and the working deletion-request URL. These additions still need to be saved in Play Console before the new submission. Diagnostics include the Analytics purpose for service monitoring and error diagnosis. [Google Data safety definitions](https://support.google.com/googleplay/android-developer/answer/10787469)
 
 The Apple age questionnaire calculated 13+ for most regions. It records frequent contests because daily leaderboard rankings are part of play, infrequent fantasy violence and weapon references from a small number of curated book and board-game prompts, infrequent alcohol references from cocktail and whisky knowledge questions, and the absence of the other listed mature themes. Regional ratings are calculated by Apple. Alcohol references make the app unavailable in Afghanistan and Morocco. New daily question packs need to preserve this content scope. Review the calculation when adding new content categories.
 
