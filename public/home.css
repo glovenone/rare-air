@@ -49,6 +49,7 @@ body[data-view="home"] .pilot-hint {
 }
 body[data-view="home"] .home-dock {
   position: relative;
+  z-index: 3;
   left: 49%;
   bottom: auto;
   transform: none;
