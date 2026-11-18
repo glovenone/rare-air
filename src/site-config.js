@@ -1,5 +1,5 @@
 export const appDownloads = {
-  android: "https://github.com/glovenone/rare-air/releases/download/android-v1.0.3/RARE-Air-1.0.3.apk",
+  android: "https://github.com/glovenone/rare-air/releases/download/android-v1.0.4/RARE-Air-1.0.4.apk",
   apple: "https://apps.apple.com/us/app/rare-air-daily-trivia/id6834294339",
   appleAvailable: true,
 };
