@@ -35,3 +35,10 @@ Published Korean and preference matching from afa5f04 as Cloudflare eb6e3bf1-29d
 Built signed Android1.0.3(6), the iOS simulator app and the device archive. Native iPhone tests passed free-icon persistence, online practice, background recovery and a five-round offline report with native sharing. A separate accepted-input check exposed an unstable test snapshot and was corrected. A test initially used process termination where backgrounding was intended, and the corrected background scenario passed.
 
 Actual native screenshots exposed fixed header and altitude labels overlapping the homepage when scrolled. The next focused fix makes those homepage elements scroll naturally and covers the iOS status-bar safe area. Rebuild native6from the repaired source before publication. The Android emulator's first boot stalled in package services, then a cold boot with software graphics completed in24seconds. iOS archive export repeated the known CLI No Accounts/distribution-key failure. Organizer cloud signing remains the validated recovery path, and computer control is unavailable in this run.
+
+
+## 2026-11-19 07:38
+
+Published Android1.0.3(6) from98ad3f0as the immutable android-v1.0.3GitHub release. Its signed public APK was freshly downloaded and matched493570366c8265d1e5b32cbd60b645f6b34762b9a83688cb2962a30a7195241e. Native iPhone/iPad and Android checks completed for language selection, avatar persistence, online/background play, five-round offline input and native sharing.
+
+Further image review showed the original companion DOM layer still above the menu. The prior menu stacking change did not lower that independent z-index5element. Correct the actual homepage companion layer to2, below main3. Because build6is already public, preserve that artifact and prepare1.0.4build/code7for the follow-up. Earlier test-harness failures came from background-launch restrictions, non-clickable repeated labels and the How-to-fly/Fly label overlap. The corrected native target selectors and lifecycle checks passed.

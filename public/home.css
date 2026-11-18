@@ -14,6 +14,9 @@ body[data-view="home"] .site-header,
 body[data-view="home"] .flight-hud {
   position: absolute;
 }
+body[data-view="home"] .companion-stage {
+  z-index: 2;
+}
 .native-app body[data-view="home"]::before {
   content: "";
   position: fixed;
@@ -49,7 +52,6 @@ body[data-view="home"] .pilot-hint {
 }
 body[data-view="home"] .home-dock {
   position: relative;
-  z-index: 3;
   left: 49%;
   bottom: auto;
   transform: none;
