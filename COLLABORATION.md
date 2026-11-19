@@ -6,7 +6,7 @@ RARE Air is a free rare-answer trivia game at https://krillionunlimited.top/. It
 
 | Platform | Actual state | Language coverage |
 | --- | --- | --- |
-| Website | Latest published baseline `9092bb1`, Cloudflare `e6106ebe-4024-4b4e-99c9-8b620327fa8b`; November 19 homepage follow-up verified locally, deployment recorded below when complete | Eleven languages, 602 prompts, 99 public pages |
+| Website | Homepage follow-up source `96c10fb`, Cloudflare `fdcd2d3e-b3ef-4a76-af1f-10693337ef60`, published and fresh public assets verified | Eleven languages, 602 prompts, 99 public pages |
 | Android direct APK | Public 1.0.4, code 7, source `1a5fd67`, GitHub release `android-v1.0.4` | Eleven in-app catalogs |
 | iOS prepared candidate | 1.0.4, build 7, same source, archived and simulator-tested, distribution export/upload pending | Eleven declared and packaged languages |
 | Apple public store | Official Lookup verified 1.0.1 on November 19, released November 17 | Earlier verified build has ten in-app catalogs, public storefront metadata reports English |
@@ -26,6 +26,8 @@ The rewards center shows free icons first, followed by earning guidance and the 
 Three pilot icons are free. Six cost 120-600 earned Sky points. Verified online daily completions on their UTC day and chapter completions earn points. D1 stores balances, owned icons and selection, with retry and concurrency protection. The [homepage plan](docs/plans/2026-11-17-home-rewards.md) describes the rules.
 
 The shared mobile web bundle builds with this follow-up, but public APK 1.0.4 and the prepared iOS archive still contain their earlier source `1a5fd67`. Integrate the homepage follow-up into the next incremented native version rather than overwriting existing release artifacts.
+
+All eleven public homepages, shared homepage CSS, game JavaScript, rewards UI and translation bundle were freshly downloaded and matched the committed assets. Android and Apple download links returned HTTP 200. GA4 configuration is retained and no advertisement delivery script was introduced. Source and deployment receipts are recorded in [PROGRESS.md](PROGRESS.md).
 
 ## Release evidence
 

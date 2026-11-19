@@ -2,6 +2,12 @@
 
 Updated November 17, 2026, Asia/Shanghai.
 
+## November 19 additional homepage follow-up
+
+Website source `96c10fb` adds 22px desktop/20px phone action titles, a persistent two-line daily button, a separate gold Icons & rewards entry and a full-width passport entry. The rewards center shows three free icons before six earned icons, with visible earning guidance. All eleven languages and the shared mobile web bundle build, 69 tests and TypeScript pass, and the real local D1 integration and browser redemption flow pass. See [the current collaboration state](../COLLABORATION.md).
+
+This follow-up is live on the website as Cloudflare `fdcd2d3e-b3ef-4a76-af1f-10693337ef60`. It is newer than public APK 1.0.4/code 7 and the prepared iOS/AAB build 7 artifacts. Do not claim those artifacts contain the follow-up, and do not replace immutable public APK assets. Include it in the next increasing native version after checking current store state.
+
 ## November 17 homepage and earned icon update
 
 The shared frontend now has a high-contrast six-card launch menu with 17px mode labels, a larger daily action, a direct customization center and a rewards entry on the completed-flight screen. Narrow screens scroll while preserving readable text. Pilot icons are separate from the existing streak companions and trails. Three icons are freely selectable and six are redeemable for 120–600 earned Sky points. Passport icon selection and redemption records use Cloudflare D1 migration `0006_avatar_rewards.sql`.
