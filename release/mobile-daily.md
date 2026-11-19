@@ -1,6 +1,16 @@
 # Daily iOS and Android releases
 
-Updated November 17, 2026, Asia/Shanghai.
+Updated November 20, 2026, Asia/Shanghai.
+
+## November 20 native homepage delivery
+
+Android direct release 1.0.5/code 8 is public from `0d5b99c`. It includes the November 19 refined homepage, gold rewards entry, balance and free-first icon catalog. Final signed APK SHA-256 is `3456cccc605b354c7c0cbbf767f85573aee6678fc448222aef351a54b2f25650`; the fresh public download and signature match the existing project key. The prepared signed AAB hash is `00e15252b59afa8bfbe264122d0db9a6308d9fc167c8737e3456ac06d1e95af2`. Website source `2168254`, Cloudflare `8f74e7e4-3912-401c-ae21-3e7ddbdac001`, links the new APK across all eleven localized homepage/rules entries. Earlier release assets remain unchanged.
+
+The matching iOS 1.0.5/build 8 archive is at `release/artifacts/2026-11-20-build8/RARE-Air-1.0.5.xcarchive`. It passes strict signing, bundle and simulator checks. Final packages contain 602 prompts, eleven language catalogs and the same verified JS/CSS, with website analytics/advertising excluded. All 69 tests, TypeScript and five real local D1/DO groups pass. Android API 36 release instrumentation passes both cases; iPhone 17 Pro/iOS 26.5 passes three flows; Korean iPad Pro 13-inch/iOS 26.5 passes preference persistence and rotation. Physical haptics/hardware checks remain separate.
+
+An incomplete intermediate bank pipeline was caught by the existing site test, then corrected to finish localized site generation before synchronization. Final products were rebuilt afterward. The intended Android test target is `:app:assembleReleaseAndroidTest`; broad root test tasks can pull unrelated plugin-library tests. A transitional iPad crop was corrected with stable-orientation full-screen capture. Exact logs and final screenshots remain private.
+
+No store upload/submission or distribution export occurred on November 20. Browser/computer tools and connected store/analytics adapters are unavailable. Official public Apple Lookup still shows 1.0.1, while Google console state remains the dated November 18 observation. Gmail has no matching review mail since November 18, which does not establish queue state. Check current uploaded codes/drafts before proceeding. Build 8 supersedes unuploaded older candidates; preserve in-review builds unless a verified problem requires replacement. Use existing Organizer cloud signing for the latest archive, save the prepared Google account/data/public-interaction disclosures, and retain Apple automatic release and Google managed publishing off. Do not rebuild or increment again if source has not changed.
 
 ## November 19 additional homepage follow-up
 
