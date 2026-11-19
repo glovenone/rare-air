@@ -36,10 +36,11 @@ export function initWardrobe({ request, openDialog, passport, progression }) {
     }
     for (const id of ["reward-balance", "result-reward-balance"]) {
       const balance = document.getElementById(id);
+      const fallback = id === "reward-balance" ? "3 free icons" : "Icons, companions & trails";
       if (balance)
         balance.textContent = state
           ? t`${state.balance.toLocaleString(language())} Sky points`
-          : t("Icons, companions & trails");
+          : t(fallback);
     }
   }
   async function refresh() {
@@ -78,8 +79,9 @@ export function initWardrobe({ request, openDialog, passport, progression }) {
     );
     summary.append(wallet);
     root.append(summary);
+    let onboarding;
     if (!state) {
-      const onboarding = node("section", undefined, "wardrobe-onboarding");
+      onboarding = node("section", undefined, "wardrobe-onboarding");
       onboarding.append(
         node("p", t("Create a free passport to earn points and redeem icons.")),
       );
@@ -87,7 +89,6 @@ export function initWardrobe({ request, openDialog, passport, progression }) {
       join.type = "button";
       join.onclick = () => passport.open();
       onboarding.append(join);
-      root.append(onboarding);
     }
     const tabs = node("div", undefined, "wardrobe-tabs");
     for (const [id, label] of [
@@ -138,66 +139,72 @@ export function initWardrobe({ request, openDialog, passport, progression }) {
       root.append(confirm);
       return;
     }
-    const grid = node("div", undefined, "avatar-grid");
     const owned =
       state?.owned ||
       avatars.filter((item) => item.cost === 0).map((item) => item.id);
-    for (const avatar of avatars) {
-      const unlocked = owned.includes(avatar.id);
-      const selected = selectedAvatar().id === avatar.id;
-      const button = node("button", undefined, "avatar-card");
-      button.type = "button";
-      button.dataset.avatar = avatar.id;
-      button.disabled = busy;
-      button.style.setProperty("--avatar-color", avatar.color);
-      button.setAttribute("aria-pressed", String(selected));
-      button.append(image(avatar.id));
-      button.append(node("strong", t(avatar.name)));
-      button.append(
-        node(
-          "span",
-          selected
-            ? t("Equipped")
-            : unlocked
-              ? t("Use icon")
-              : t`${avatar.cost} Sky points`,
-          "avatar-price",
-        ),
-      );
-      button.onclick = () => {
-        notice = "";
-        if (unlocked) act(avatar, false);
-        else if (!state) {
-          notice = t("Create a free passport to earn points and redeem icons.");
-          draw();
-          root
-            .querySelector(".wardrobe-status")
-            ?.scrollIntoView({ block: "nearest" });
-        } else if (state.balance < avatar.cost) {
-          notice = t`You need ${avatar.cost - state.balance} more Sky points.`;
-          draw();
-          root
-            .querySelector(".wardrobe-status")
-            ?.scrollIntoView({ block: "nearest" });
-        } else {
-          pending = avatar;
-          draw();
-          root.querySelector(".redeem-confirm .primary")?.focus();
-        }
-      };
-      grid.append(button);
+    for (const [label, items] of [
+      ["Free pilot icons", avatars.filter((item) => item.cost === 0)],
+      ["Redeem Sky points", avatars.filter((item) => item.cost > 0)],
+    ]) {
+      if (items[0]?.cost > 0) {
+        const earning = node("section", undefined, "wardrobe-earning");
+        earning.append(node("strong", t("Earn points from daily flights & chapters.")));
+        root.append(earning);
+        if (onboarding) root.append(onboarding);
+      }
+      root.append(node("h3", t(label), "avatar-section-title"));
+      const grid = node("div", undefined, "avatar-grid");
+      if (items[0]?.cost === 0) grid.classList.add("avatar-grid-free");
+      for (const avatar of items) {
+        const unlocked = owned.includes(avatar.id);
+        const selected = selectedAvatar().id === avatar.id;
+        const button = node("button", undefined, "avatar-card");
+        button.type = "button";
+        button.dataset.avatar = avatar.id;
+        button.disabled = busy;
+        button.style.setProperty("--avatar-color", avatar.color);
+        button.setAttribute("aria-pressed", String(selected));
+        button.append(image(avatar.id));
+        button.append(node("strong", t(avatar.name)));
+        button.append(
+          node(
+            "span",
+            selected
+              ? t("Equipped")
+              : unlocked
+                ? t("Use icon")
+                : t`${avatar.cost} Sky points`,
+            "avatar-price",
+          ),
+        );
+        button.onclick = () => {
+          notice = "";
+          if (unlocked) act(avatar, false);
+          else if (!state) {
+            notice = t("Create a free passport to earn points and redeem icons.");
+            draw();
+            root
+              .querySelector(".wardrobe-status")
+              ?.scrollIntoView({ block: "nearest" });
+          } else if (state.balance < avatar.cost) {
+            notice = t`You need ${avatar.cost - state.balance} more Sky points.`;
+            draw();
+            root
+              .querySelector(".wardrobe-status")
+              ?.scrollIntoView({ block: "nearest" });
+          } else {
+            pending = avatar;
+            draw();
+            root.querySelector(".redeem-confirm .primary")?.focus();
+          }
+        };
+        grid.append(button);
+      }
+      root.append(grid);
     }
-    root.append(grid);
     const rules = node("details", undefined, "points-rules");
     rules.append(node("summary", t("How to earn Sky points")));
-    rules.append(
-      node(
-        "p",
-        t(
-          "Finish an online daily flight on its UTC day or complete a chapter. Each unique challenge earns 10 points plus 1 per 100 best meters, up to 60 points.",
-        ),
-      ),
-    );
+    rules.append(node("p", t("Finish an online daily flight on its UTC day or complete a chapter. Each unique challenge earns 10 points plus 1 per 100 best meters, up to 60 points.")));
     rules.append(
       node(
         "p",

@@ -155,7 +155,7 @@ Krillion과 같은" data-i18n-content="RARE Air rare-answer trivia flight" />
             >
           </p>
           <button class="primary" id="start">
-            <span><!--i18n:Take%20flight-->비행 시작</span><span class="button-arrow" aria-hidden="true">↑</span>
+            <span class="daily-action-copy"><small><!--i18n:THE%20DAILY%20CLIMB-->일일 등반</small><strong><!--i18n:Take%20flight-->비행 시작</strong></span><span class="button-arrow" aria-hidden="true">↑</span>
           </button>
           <nav class="home-modes" aria-label="플레이 방법 선택" data-i18n-aria-label="Choose how to play">
             <button id="practice" class="home-mode mode-practice">
@@ -172,20 +172,20 @@ Krillion과 같은" data-i18n-content="RARE Air rare-answer trivia flight" />
               <span class="mode-icon" aria-hidden="true">⌁</span>
               <span class="mode-copy"><strong><!--i18n:Flight%20routes%20%E2%86%97-->주제별 항로 ↗</strong><small><!--i18n:Chapters%2C%20stars%20%26%20new%20skies-->챕터, 별, 새로운 하늘</small></span>
             </button>
-            <button id="passport-entry" class="home-mode mode-passport">
-              <img id="pilot-avatar" class="mode-icon" src="/art/companions/swallow.svg" width="42" height="42" alt="">
-              <span class="mode-copy"><strong id="passport-label"><!--i18n:Flight%20passport%20%E2%86%97-->비행 여권 ↗</strong><small id="passport-caption"><!--i18n:Save%20progress%20across%20devices-->다른 기기에서도 이어서 플레이</small></span>
-            </button>
             <button id="relay-entry" class="home-mode mode-friends">
               <span class="mode-icon" aria-hidden="true">✦</span>
               <span class="mode-copy"><strong><!--i18n:Play%20with%20friends%20%E2%86%97-->친구와 함께 ↗</strong><small><!--i18n:Join%20a%20table.%20Chase%20the%20lead.-->테이블에 참여해 선두에 도전하세요.</small></span>
             </button>
-            <button id="wardrobe-entry" class="home-mode mode-rewards">
-              <img id="reward-avatar" class="mode-icon" src="/art/companions/swallow.svg" width="46" height="46" alt="">
-              <span class="mode-copy"><strong><!--i18n:Style%20%26%20rewards-->꾸미기와 포인트</strong><small id="reward-balance"><!--i18n:Icons%2C%20companions%20%26%20trails-->아이콘, 동료, 비행 궤적</small></span>
-              <span class="mode-arrow" aria-hidden="true">↗</span>
-            </button>
           </nav>
+          <button id="wardrobe-entry" class="home-mode mode-rewards">
+            <span class="reward-art" aria-hidden="true"><img id="reward-avatar" src="/art/companions/swallow.svg" width="72" height="72" alt=""><img class="reward-art-extra" src="/art/companions/moth.svg" width="42" height="42" alt=""></span>
+            <span class="mode-copy"><strong><!--i18n:Icons%20%26%20rewards-->아이콘과 보상</strong><small><!--i18n:Change%20your%20icon.%20Redeem%20earned%20points.-->아이콘을 바꾸고 획득한 포인트로 보상을 교환하세요.</small><span id="reward-balance" class="reward-wallet"><!--i18n:3%20free%20icons-->무료 아이콘 3종</span></span>
+            <span class="mode-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button id="passport-entry" class="home-mode mode-passport">
+            <img id="pilot-avatar" class="mode-icon" src="/art/companions/swallow.svg" width="46" height="46" alt="">
+            <span class="mode-copy"><strong id="passport-label"><!--i18n:Flight%20passport%20%E2%86%97-->비행 여권 ↗</strong><small id="passport-caption"><!--i18n:Save%20progress%20across%20devices-->다른 기기에서도 이어서 플레이</small></span>
+          </button>
           <button id="offline-practice" class="practice-link" hidden><!--i18n:%0A%20%20%20%20%20%20%20%20%20%20%20%20Offline%20practice%20%E2%86%97%0A%20%20%20%20%20%20%20%20%20%20-->
             오프라인 연습 ↗
           </button>

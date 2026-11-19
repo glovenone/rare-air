@@ -364,10 +364,11 @@ function updateDailyButton() {
       ? "View your flight"
       : "Resume your flight"
     : "Take flight";
-  $("start").replaceChildren(
-    element("span", label),
-    element("span", "↑", "button-arrow"),
-  );
+  const copy = element("span", undefined, "daily-action-copy");
+  copy.append(element("small", "THE DAILY CLIMB"), element("strong", label));
+  const arrow = element("span", "↑", "button-arrow");
+  arrow.setAttribute("aria-hidden", "true");
+  $("start").replaceChildren(copy, arrow);
 }
 
 function acceptState(data) {

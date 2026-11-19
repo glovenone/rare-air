@@ -6,7 +6,7 @@ RARE Air is a free rare-answer trivia game at https://krillionunlimited.top/. It
 
 | Platform | Actual state | Language coverage |
 | --- | --- | --- |
-| Website | Source `9092bb1`, Cloudflare `e6106ebe-4024-4b4e-99c9-8b620327fa8b`, 602 prompts and 99 public pages | Eleven languages |
+| Website | Latest published baseline `9092bb1`, Cloudflare `e6106ebe-4024-4b4e-99c9-8b620327fa8b`; November 19 homepage follow-up verified locally, deployment recorded below when complete | Eleven languages, 602 prompts, 99 public pages |
 | Android direct APK | Public 1.0.4, code 7, source `1a5fd67`, GitHub release `android-v1.0.4` | Eleven in-app catalogs |
 | iOS prepared candidate | 1.0.4, build 7, same source, archived and simulator-tested, distribution export/upload pending | Eleven declared and packaged languages |
 | Apple public store | Official Lookup verified 1.0.1 on November 19, released November 17 | Earlier verified build has ten in-app catalogs, public storefront metadata reports English |
@@ -19,9 +19,13 @@ The recovered, previously unpublished CMA nominee question first releases on Nov
 
 ## Gameplay and customization
 
-The homepage has six prominent mode cards, 21px desktop and 19px phone titles, 14px supporting copy and a single-column layout at narrow widths. Header and altitude information scroll on the homepage, with an iOS status-bar safe area. The companion DOM layer is below the main controls. Android native assertions verified the actual rendered layering, and device screenshots were reviewed.
+The November 19 homepage follow-up separates the daily launch, four game-mode cards, a full-width gold icon/reward entry and a separate passport entry. Main action titles are 22px on desktop and at least 20px on phones; the rewards title is 25px/23px. Supporting copy is 15px/14px with dark text on opaque surfaces. Narrow screens use one-column mode cards. The daily action preserves its eyebrow and title when updated to resume or review a flight. Header and altitude information still scroll on the homepage, with an iOS status-bar safe area. The companion DOM layer remains below the main controls.
+
+The rewards center shows free icons first, followed by earning guidance and the earned-point catalog. Guests see a "3 free icons" badge on home; signed-in users see their authoritative balance. Automated local browser checks covered six viewport/language cases, including 320px, landscape and Arabic RTL, with no horizontal overflow or page errors. A local-only UI fixture verified confirmation, redemption from 180 to 60 points, insufficient-balance feedback and persisted selection. The fixture account was deleted. Screenshots and results are retained in ignored `release/private/home-emphasis-20261119/`.
 
 Three pilot icons are free. Six cost 120-600 earned Sky points. Verified online daily completions on their UTC day and chapter completions earn points. D1 stores balances, owned icons and selection, with retry and concurrency protection. The [homepage plan](docs/plans/2026-11-17-home-rewards.md) describes the rules.
+
+The shared mobile web bundle builds with this follow-up, but public APK 1.0.4 and the prepared iOS archive still contain their earlier source `1a5fd67`. Integrate the homepage follow-up into the next incremented native version rather than overwriting existing release artifacts.
 
 ## Release evidence
 

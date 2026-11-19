@@ -73,12 +73,40 @@ body[data-view="home"] .home-dock {
   color: #264d58;
 }
 .home-dock > .primary {
+  justify-content: space-between;
+  text-align: start;
   width: 100%;
-  height: 66px;
-  font-size: 21px;
+  min-height: 96px;
+  height: auto;
+  padding: 19px 24px;
+  font-size: 26px;
   border-radius: 18px;
-  background: #193f4c;
+  background: #123b49;
   box-shadow: 0 8px 22px #163c4a24;
+}
+.daily-action-copy {
+  display: grid;
+  gap: 5px;
+}
+.daily-action-copy small {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  line-height: 1.4;
+  color: #d8eee9;
+}
+.daily-action-copy strong {
+  font-size: 28px;
+  line-height: 1.15;
+}
+.home-dock > .primary .button-arrow {
+  display: grid;
+  place-items: center;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #ffffff1f;
+  font-size: 30px;
 }
 .home-dock > .primary:hover {
   background: #2b5864;
@@ -86,8 +114,8 @@ body[data-view="home"] .home-dock {
 .home-modes {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
-  margin-top: 14px;
+  gap: 12px;
+  margin-top: 18px;
 }
 .home-mode {
   display: flex;
@@ -97,7 +125,7 @@ body[data-view="home"] .home-dock {
   min-width: 0;
   min-height: 104px;
   padding: 18px;
-  border: 1px solid #d1ded7;
+  border: 2px solid #9eb5af;
   border-radius: 16px;
   background: #fffdf5;
   color: #123440;
@@ -125,6 +153,23 @@ body[data-view="home"] .home-dock {
   font-weight: 600;
   object-fit: contain;
 }
+.mode-practice {
+  background: #f0f6e9;
+}
+.mode-topics {
+  background: #fff8e7;
+}
+.mode-routes {
+  background: #edf6f2;
+}
+.mode-friends {
+  background: #fff0e6;
+}
+.mode-passport {
+  width: 100%;
+  margin-top: 12px;
+  min-height: 90px;
+}
 .mode-topics .mode-icon {
   background: #f6e8cb;
   color: #775629;
@@ -138,8 +183,53 @@ body[data-view="home"] .home-dock {
   color: #9b4f35;
 }
 .mode-rewards {
-  background: #ffedc6;
-  border-color: #b58b43;
+  width: 100%;
+  margin-top: 18px;
+  padding: 22px;
+  min-height: 144px;
+  gap: 20px;
+  background: #ffe4a3;
+  border-color: #93611f;
+  box-shadow: 0 6px 0 #b7874233, 0 10px 24px #754f201a;
+}
+.mode-rewards:hover {
+  background: #ffeab8;
+  border-color: #6f491b;
+}
+.reward-art {
+  position: relative;
+  display: grid;
+  place-items: center;
+  flex: 0 0 84px;
+  height: 84px;
+  border-radius: 24px;
+  background: #fff5da;
+  box-shadow: inset 0 0 0 1px #ba873f4d;
+}
+.reward-art > img:first-child {
+  width: 72px;
+  height: 72px;
+}
+.reward-art-extra {
+  position: absolute;
+  bottom: -8px;
+  inset-inline-end: -10px;
+  padding: 4px;
+  border-radius: 50%;
+  background: #fff7e5;
+  border: 1px solid #c69b57;
+}
+.reward-wallet {
+  display: inline-flex;
+  justify-self: start;
+  margin-top: 5px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background: #543912;
+  color: #fff5dc;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.5;
 }
 .mode-rewards .mode-icon {
   background: #f7dca9;
@@ -151,19 +241,24 @@ body[data-view="home"] .home-dock {
   min-width: 0;
 }
 .mode-copy strong {
-  font-size: 21px;
+  font-size: 22px;
   font-weight: 700;
   line-height: 1.3;
   overflow-wrap: anywhere;
   text-wrap: balance;
+  color: #102f3b;
 }
 .mode-copy small {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.5;
-  color: #294a53;
+  color: #25434b;
 }
 .mode-rewards .mode-copy strong {
-  color: #563814;
+  font-size: 25px;
+  color: #402b0d;
+}
+.mode-rewards .mode-copy small {
+  color: #513a1b;
 }
 .home-mode:focus-visible,
 .avatar-card:focus-visible {
@@ -223,8 +318,9 @@ body[data-view="home"] .home-dock {
   border-radius: 12px;
 }
 
-.wardrobe-content h2 {
+#modal-content .wardrobe-content h2 {
   font-size: clamp(26px, 5vw, 36px);
+  margin-bottom: 8px;
 }
 .wardrobe-summary {
   display: flex;
@@ -242,11 +338,33 @@ body[data-view="home"] .home-dock {
 .wardrobe-summary strong {
   font-size: 19px;
 }
-.wardrobe-summary .wallet-balance {
-  font-size: 19px;
-  color: #775020;
+#modal-content .wardrobe-summary .wallet-balance {
+  font-size: 24px;
+  color: #57380c;
   font-weight: 600;
   margin: 6px 0 0;
+}
+.wardrobe-earning {
+  padding: 16px;
+  margin: 20px 0 14px;
+  background: #fff0ca;
+  border: 1px solid #b58b43;
+  border-radius: 14px;
+  color: #493318;
+}
+.wardrobe-earning strong {
+  font-size: 17px;
+}
+#modal-content .wardrobe-earning p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 8px 0 0;
+}
+.avatar-section-title {
+  margin: 22px 0 12px;
+  font-size: 21px;
+  line-height: 1.4;
+  color: #153a45;
 }
 .wardrobe-tabs {
   display: flex;
@@ -285,7 +403,7 @@ body[data-view="home"] .home-dock {
   background: #224c56;
   color: #fffdf5;
 }
-.wardrobe-content .wardrobe-status {
+#modal-content .wardrobe-status {
   min-height: 24px;
   font-size: 15px;
   color: #7b431f;
@@ -351,7 +469,7 @@ body[data-view="home"] .home-dock {
   font-size: 16px;
   font-weight: 600;
 }
-.wardrobe-content .points-rules p {
+#modal-content .points-rules p {
   font-size: 14px;
   line-height: 1.65;
   margin-top: 12px;
@@ -457,8 +575,8 @@ body[data-view="home"] .home-dock {
     font-size: 19px;
   }
   .home-dock > .primary {
-    height: 60px;
-    font-size: 20px;
+    min-height: 88px;
+    padding: 16px 20px;
   }
   .home-mode {
     flex-direction: column;
@@ -471,10 +589,37 @@ body[data-view="home"] .home-dock {
     display: none;
   }
   .mode-copy strong {
-    font-size: 19px;
+    font-size: 20px;
   }
   .mode-copy small {
     font-size: 14px;
+  }
+  .home-dock > .mode-rewards,
+  .home-dock > .mode-passport {
+    flex-direction: row;
+    align-items: center;
+    min-height: 90px;
+    gap: 16px;
+  }
+  .home-dock > .mode-rewards {
+    padding: 18px 14px;
+    min-height: 140px;
+  }
+  .mode-rewards .mode-copy strong {
+    font-size: 23px;
+  }
+  .reward-art {
+    flex-basis: 64px;
+    height: 72px;
+    border-radius: 18px;
+  }
+  .reward-art > img:first-child {
+    width: 60px;
+    height: 60px;
+  }
+  .reward-art-extra {
+    width: 36px;
+    height: 36px;
   }
   .mode-icon {
     width: 42px;
@@ -491,6 +636,21 @@ body[data-view="home"] .home-dock {
   .avatar-grid {
     gap: 8px;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .avatar-grid-free {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .avatar-grid-free .avatar-card img {
+    width: 56px;
+    height: 56px;
+  }
+  .avatar-grid-free .avatar-card {
+    min-height: 142px;
+    gap: 8px;
+    padding: 12px 4px;
+  }
+  .avatar-grid-free .avatar-card strong {
+    font-size: 15px;
   }
   .avatar-card {
     padding: 12px 8px;

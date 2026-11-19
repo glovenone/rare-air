@@ -154,7 +154,7 @@
             >
           </p>
           <button class="primary" id="start">
-            <span><!--i18n:Take%20flight-->Decolar</span><span class="button-arrow" aria-hidden="true">↑</span>
+            <span class="daily-action-copy"><small><!--i18n:THE%20DAILY%20CLIMB-->A ESCALADA DIÁRIA</small><strong><!--i18n:Take%20flight-->Decolar</strong></span><span class="button-arrow" aria-hidden="true">↑</span>
           </button>
           <nav class="home-modes" aria-label="Escolhe como jogar" data-i18n-aria-label="Choose how to play">
             <button id="practice" class="home-mode mode-practice">
@@ -171,20 +171,20 @@
               <span class="mode-icon" aria-hidden="true">⌁</span>
               <span class="mode-copy"><strong><!--i18n:Flight%20routes%20%E2%86%97-->Rotas de voo ↗</strong><small><!--i18n:Chapters%2C%20stars%20%26%20new%20skies-->Capítulos, estrelas e novos céus</small></span>
             </button>
-            <button id="passport-entry" class="home-mode mode-passport">
-              <img id="pilot-avatar" class="mode-icon" src="/art/companions/swallow.svg" width="42" height="42" alt="">
-              <span class="mode-copy"><strong id="passport-label"><!--i18n:Flight%20passport%20%E2%86%97-->Passaporte de voo ↗</strong><small id="passport-caption"><!--i18n:Save%20progress%20across%20devices-->Guarda o progresso entre dispositivos</small></span>
-            </button>
             <button id="relay-entry" class="home-mode mode-friends">
               <span class="mode-icon" aria-hidden="true">✦</span>
               <span class="mode-copy"><strong><!--i18n:Play%20with%20friends%20%E2%86%97-->Jogue com amigos ↗</strong><small><!--i18n:Join%20a%20table.%20Chase%20the%20lead.-->Entra numa mesa e disputa a liderança.</small></span>
             </button>
-            <button id="wardrobe-entry" class="home-mode mode-rewards">
-              <img id="reward-avatar" class="mode-icon" src="/art/companions/swallow.svg" width="46" height="46" alt="">
-              <span class="mode-copy"><strong><!--i18n:Style%20%26%20rewards-->Estilo e recompensas</strong><small id="reward-balance"><!--i18n:Icons%2C%20companions%20%26%20trails-->Ícones, companheiros e rastos</small></span>
-              <span class="mode-arrow" aria-hidden="true">↗</span>
-            </button>
           </nav>
+          <button id="wardrobe-entry" class="home-mode mode-rewards">
+            <span class="reward-art" aria-hidden="true"><img id="reward-avatar" src="/art/companions/swallow.svg" width="72" height="72" alt=""><img class="reward-art-extra" src="/art/companions/moth.svg" width="42" height="42" alt=""></span>
+            <span class="mode-copy"><strong><!--i18n:Icons%20%26%20rewards-->Ícones e recompensas</strong><small><!--i18n:Change%20your%20icon.%20Redeem%20earned%20points.-->Mude seu ícone. Troque os pontos que ganhar.</small><span id="reward-balance" class="reward-wallet"><!--i18n:3%20free%20icons-->3 ícones grátis</span></span>
+            <span class="mode-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button id="passport-entry" class="home-mode mode-passport">
+            <img id="pilot-avatar" class="mode-icon" src="/art/companions/swallow.svg" width="46" height="46" alt="">
+            <span class="mode-copy"><strong id="passport-label"><!--i18n:Flight%20passport%20%E2%86%97-->Passaporte de voo ↗</strong><small id="passport-caption"><!--i18n:Save%20progress%20across%20devices-->Guarda o progresso entre dispositivos</small></span>
+          </button>
           <button id="offline-practice" class="practice-link" hidden><!--i18n:%0A%20%20%20%20%20%20%20%20%20%20%20%20Offline%20practice%20%E2%86%97%0A%20%20%20%20%20%20%20%20%20%20-->
             Prática offline ↗
           </button>
