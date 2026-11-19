@@ -1,5 +1,5 @@
 {
-  "status": "1.0.4-build7-prepared-locally-not-saved-in-play-console",
+  "status": "1.0.5-build8-prepared-locally-not-saved-in-play-console",
   "dataCollected": true,
   "encryptedInTransit": true,
   "accountCreation": true,
@@ -66,9 +66,9 @@
   "privacyUrl": "https://krillionunlimited.top/privacy/",
   "supportUrl": "https://krillionunlimited.top/support/",
   "publisherChecks": [
-    "Before submitting build4, update Play account-creation answers and User IDs disclosure; website deletion entry and native recovery/deletion have been validated.",
+    "Before submitting the next candidate, save Play account-creation answers and optional User IDs disclosure; recheck the website deletion entry and native recovery/deletion against the candidate.",
     "Declare public multiplayer interaction, nickname-only content, blocking and reporting in the new IARC questionnaire.",
-    "Preserve the current build3 review queue; do not claim build4 is approved or submitted.",
+    "Inspect the current review queue and uploaded version codes before submission. Preserve an in-review build unless a verified issue requires replacement; local preparation does not establish approval or submission.",
     "Recheck the form when hosting, logging or SDK behavior changes."
   ],
   "accountCreationMethods": [
