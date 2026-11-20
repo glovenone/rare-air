@@ -1,5 +1,6 @@
 # RARE Air project rules
 
+- Before each code task, inspect the current branch, upstream and working tree, then pull the appropriate remote branch before implementation. Create isolated worktrees from that synchronized baseline. Preserve unrelated uncommitted changes and integrate conflicts normally. After completing authorized changes and verification, commit the related source and collaboration records, push without force, and verify the remote commit before reporting completion. Do not create empty commits for read-only checks; record any pull/push failure and its recovery steps. This is the owner's explicit November 20, 2026 workflow requirement.
 - Keep the official website at https://krillionunlimited.top/.
 - Open all task-related webpages in the Chrome profile named `happycoin`, as requested by the owner on November 15, 2026. Use that profile for Google Analytics, App Store Connect and other account workflows.
 - Prefer the owner's happycoin email identity for new registrations, operational contacts and account access. The exact email and verified existing-account exceptions are recorded in the main checkout's ignored `release/private/preferred-account.md`. Verify the signed-in identity before changing service settings and preserve the existing project assets when consolidating access or contact details.

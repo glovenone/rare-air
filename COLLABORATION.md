@@ -39,7 +39,7 @@ Both final Android packages and the final iOS archive contain the same verified 
 
 ## Resume order
 
-1. Fetch current main and protect uncommitted work. November 18's older uncommitted worktree was recovered into this release, so inspect current source before reapplying it.
+1. Inspect the branch, upstream and uncommitted work, then pull current main before implementation or creating an isolated worktree. On completion, commit the authorized changes and records, push normally and verify the remote commit. Preserve unrelated changes and report synchronization failures. November 18's older uncommitted worktree was already recovered, so inspect current source before reapplying it.
 2. With computer control available, use the existing Xcode Organizer cloud-signing session for the final `release/artifacts/2026-11-20-build8/RARE-Air-1.0.5.xcarchive`. A verified copy is imported in the standard November 20 Organizer archive folder. CLI export's known No Accounts error does not establish that the GUI account needs another login. Earlier unuploaded build 5/6/7 candidates are superseded. Reuse build 8 if source is unchanged.
 3. Recheck current store versions and queues. Upload and associate validated build 8, choose Apple automatic release and keep Google managed publishing off. Update Google account creation, User IDs, deletion URL and public interaction disclosures before submitting the new candidate. [Mobile workflow](release/mobile-daily.md) and the prepared metadata provide the handoff.
 4. Recheck real Play enrollment and production eligibility. November 18's count is historical. Direct APK downloads do not establish Play test participation.
