@@ -5,12 +5,13 @@
     {
       "id": "trend-20261123-dumbledore-film-actors",
       "category": "MOVIES",
-      "prompt": "Name an actor who played adult Albus Dumbledore on screen in a Harry Potter or Fantastic Beasts film released by 2022.",
-      "explanation": "The original on-screen adult feature-film portrayals through 2022 are Michael Gambon, Richard Harris and Jude Law. Younger portrayals, dubbing voices, television and stage productions are outside this scope. Rarity tiers reflect editorial familiarity rather than player statistics.",
+      "prompt": "Name an actor who played Albus Dumbledore on screen in a Harry Potter or Fantastic Beasts film released by 2022.",
+      "explanation": "The original on-screen film portrayals through 2022 are Michael Gambon, Richard Harris, Jude Law and Toby Regbo, including the younger Dumbledore. Dubbing voices, television and stage productions are outside this scope. Rarity tiers reflect editorial familiarity rather than player statistics.",
       "sources": [
         "https://www.harrypotter.com/features/actors-of-the-wizarding-world-part-three-the-household-names",
         "https://www.harrypotter.com/news/fantastic-beasts-secrets-of-dumbledore-posters",
-        "https://www.fantasticbeasts.com/?lang=en"
+        "https://www.fantasticbeasts.com/?lang=en",
+        "https://www.independenttalent.com/actors/TOBY-REGBO/"
       ],
       "answers": [
         {
@@ -34,6 +35,13 @@
             "Law"
           ],
           "tier": 3
+        },
+        {
+          "label": "Toby Regbo",
+          "aliases": [
+            "Regbo"
+          ],
+          "tier": 4
         }
       ]
     }

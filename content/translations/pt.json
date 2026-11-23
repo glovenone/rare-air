@@ -6662,12 +6662,13 @@
       ]
     },
     "trend-20261123-dumbledore-film-actors": {
-      "sourceHash": "4fabed9809502c7d1cd72078363776c038ac6d26d8ea846ef34fe5ed82cd0c24",
-      "prompt": "Diga o nome de um ator que interpretou na tela Alvo Dumbledore adulto em um filme de Harry Potter ou Animais Fantásticos lançado até 2022, inclusive.",
+      "sourceHash": "958f2b38f71375520286756b7fd7b98214b10b04ce7831769c85430d50f018e6",
+      "prompt": "Diga o nome de um ator que interpretou Alvo Dumbledore em cena num filme de Harry Potter ou Animais Fantásticos lançado até 2022, inclusive.",
       "answers": [
         "Michael Gambon",
         "Richard Harris",
-        "Jude Law"
+        "Jude Law",
+        "Toby Regbo"
       ]
     }
   }

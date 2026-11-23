@@ -7122,12 +7122,13 @@
       ]
     },
     "trend-20261123-dumbledore-film-actors": {
-      "sourceHash": "4fabed9809502c7d1cd72078363776c038ac6d26d8ea846ef34fe5ed82cd0c24",
-      "prompt": "Sebutkan aktor yang tampil di layar sebagai Albus Dumbledore dewasa dalam film Harry Potter atau Fantastic Beasts yang dirilis hingga tahun 2022, termasuk 2022.",
+      "sourceHash": "958f2b38f71375520286756b7fd7b98214b10b04ce7831769c85430d50f018e6",
+      "prompt": "Sebutkan seorang aktor yang memerankan Albus Dumbledore di layar dalam film Harry Potter atau Fantastic Beasts yang dirilis hingga 2022.",
       "answers": [
         "Michael Gambon",
         "Richard Harris",
-        "Jude Law"
+        "Jude Law",
+        "Toby Regbo"
       ]
     }
   }

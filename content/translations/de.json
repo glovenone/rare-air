@@ -7122,12 +7122,13 @@
       ]
     },
     "trend-20261123-dumbledore-film-actors": {
-      "sourceHash": "4fabed9809502c7d1cd72078363776c038ac6d26d8ea846ef34fe5ed82cd0c24",
-      "prompt": "Nenne einen Schauspieler, der den erwachsenen Albus Dumbledore in einem bis einschließlich 2022 erschienenen Harry-Potter- oder Phantastische-Tierwesen-Film auf der Leinwand spielte.",
+      "sourceHash": "958f2b38f71375520286756b7fd7b98214b10b04ce7831769c85430d50f018e6",
+      "prompt": "Nenne einen Schauspieler, der Albus Dumbledore in einem bis einschließlich 2022 erschienenen Harry-Potter- oder Phantastische-Tierwesen-Film auf der Leinwand verkörpert hat.",
       "answers": [
         "Michael Gambon",
         "Richard Harris",
-        "Jude Law"
+        "Jude Law",
+        "Toby Regbo"
       ]
     }
   }

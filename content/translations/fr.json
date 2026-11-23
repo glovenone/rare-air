@@ -6521,12 +6521,13 @@
       ]
     },
     "trend-20261123-dumbledore-film-actors": {
-      "sourceHash": "4fabed9809502c7d1cd72078363776c038ac6d26d8ea846ef34fe5ed82cd0c24",
-      "prompt": "Citez un acteur ayant incarné à l’écran Albus Dumbledore adulte dans un film Harry Potter ou Les Animaux fantastiques sorti au plus tard en 2022.",
+      "sourceHash": "958f2b38f71375520286756b7fd7b98214b10b04ce7831769c85430d50f018e6",
+      "prompt": "Citez un acteur ayant incarné Albus Dumbledore à l’écran dans un film Harry Potter ou Les Animaux fantastiques sorti au plus tard en 2022.",
       "answers": [
         "Michael Gambon",
         "Richard Harris",
-        "Jude Law"
+        "Jude Law",
+        "Toby Regbo"
       ]
     }
   }
