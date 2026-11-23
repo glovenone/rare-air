@@ -7120,6 +7120,15 @@
         "Ella Langley",
         "Cody Johnson"
       ]
+    },
+    "trend-20261123-dumbledore-film-actors": {
+      "sourceHash": "4fabed9809502c7d1cd72078363776c038ac6d26d8ea846ef34fe5ed82cd0c24",
+      "prompt": "Nenne einen Schauspieler, der den erwachsenen Albus Dumbledore in einem bis einschließlich 2022 erschienenen Harry-Potter- oder Phantastische-Tierwesen-Film auf der Leinwand spielte.",
+      "answers": [
+        "Michael Gambon",
+        "Richard Harris",
+        "Jude Law"
+      ]
     }
   }
 }

@@ -29,6 +29,11 @@ export const batches = [
     "batch": "2026-11-18-daily",
     "releasedOn": "2026-11-19",
     "count": 1
+  },
+  {
+    "batch": "2026-11-23-daily",
+    "releasedOn": "2026-11-24",
+    "count": 1
   }
 ];
 export const bank = [
@@ -25989,5 +25994,42 @@ export const bank = [
     ],
     "releasedOn": "2026-11-19",
     "batch": "2026-11-18-daily"
+  },
+  {
+    "id": "trend-20261123-dumbledore-film-actors",
+    "category": "MOVIES",
+    "prompt": "Name an actor who played adult Albus Dumbledore on screen in a Harry Potter or Fantastic Beasts film released by 2022.",
+    "explanation": "The original on-screen adult feature-film portrayals through 2022 are Michael Gambon, Richard Harris and Jude Law. Younger portrayals, dubbing voices, television and stage productions are outside this scope. Rarity tiers reflect editorial familiarity rather than player statistics.",
+    "sources": [
+      "https://www.harrypotter.com/features/actors-of-the-wizarding-world-part-three-the-household-names",
+      "https://www.harrypotter.com/news/fantastic-beasts-secrets-of-dumbledore-posters",
+      "https://www.fantasticbeasts.com/?lang=en"
+    ],
+    "answers": [
+      {
+        "label": "Michael Gambon",
+        "aliases": [
+          "Gambon",
+          "Sir Michael Gambon"
+        ],
+        "tier": 1
+      },
+      {
+        "label": "Richard Harris",
+        "aliases": [
+          "Harris"
+        ],
+        "tier": 2
+      },
+      {
+        "label": "Jude Law",
+        "aliases": [
+          "Law"
+        ],
+        "tier": 3
+      }
+    ],
+    "releasedOn": "2026-11-24",
+    "batch": "2026-11-23-daily"
   }
 ];

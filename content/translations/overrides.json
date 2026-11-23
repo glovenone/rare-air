@@ -559,6 +559,25 @@
           "Neptune": "海王星"
         },
         "aliases": {}
+      },
+      "trend-20261123-dumbledore-film-actors": {
+        "aliases": {
+          "Michael Gambon": [
+            "迈克尔甘本",
+            "迈克尔·刚本",
+            "甘本",
+            "刚本"
+          ],
+          "Richard Harris": [
+            "理查德哈里斯",
+            "哈里斯"
+          ],
+          "Jude Law": [
+            "裘德洛",
+            "裘德·罗",
+            "裘德罗"
+          ]
+        }
       }
     },
     "es": {
@@ -1485,6 +1504,22 @@
           "Neptune": "海王星"
         },
         "aliases": {}
+      },
+      "trend-20261123-dumbledore-film-actors": {
+        "aliases": {
+          "Michael Gambon": [
+            "マイケルガンボン",
+            "ガンボン"
+          ],
+          "Richard Harris": [
+            "リチャードハリス",
+            "ハリス"
+          ],
+          "Jude Law": [
+            "ジュードロウ",
+            "ジュード・ロー"
+          ]
+        }
       }
     },
     "ru": {
@@ -1661,6 +1696,19 @@
           "Hop": "Скачок",
           "Step": "Шаг",
           "Jump": "Прыжок"
+        }
+      },
+      "trend-20261123-dumbledore-film-actors": {
+        "aliases": {
+          "Michael Gambon": [
+            "Гэмбон"
+          ],
+          "Richard Harris": [
+            "Харрис"
+          ],
+          "Jude Law": [
+            "Лоу"
+          ]
         }
       }
     },
@@ -1984,6 +2032,21 @@
             "الحمار الوحشي الجبلي"
           ]
         }
+      },
+      "trend-20261123-dumbledore-film-actors": {
+        "aliases": {
+          "Michael Gambon": [
+            "مايكل جامبون",
+            "غامبون",
+            "جامبون"
+          ],
+          "Richard Harris": [
+            "هاريس"
+          ],
+          "Jude Law": [
+            "جود لاو"
+          ]
+        }
       }
     },
     "id": {
@@ -2177,6 +2240,22 @@
           "Trapezoid": "작은마름뼈",
           "Capitate": "알머리뼈",
           "Hamate": "갈고리뼈"
+        }
+      },
+      "trend-20261123-dumbledore-film-actors": {
+        "aliases": {
+          "Michael Gambon": [
+            "마이클 갬번",
+            "갬본",
+            "갬번"
+          ],
+          "Richard Harris": [
+            "리처드 해리스",
+            "해리스"
+          ],
+          "Jude Law": [
+            "주드 로우"
+          ]
         }
       }
     }
