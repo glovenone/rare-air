@@ -1,6 +1,18 @@
 # Daily iOS and Android releases
 
-Updated November 20, 2026, Asia/Shanghai.
+Updated November 24, 2026, Asia/Shanghai.
+
+## November 24 content recovery and native delivery
+
+The final source is `584b28d0bcf1bd09af5e7bb30a49e7f9f278cd78`, version 1.0.6/build-code 9. It restores the unfinished November 23 candidate, completes a pre-publication film-casting scope correction and packages 603 prompts in eleven languages. The new daily-pool eligibility remains November 24 UTC. Earlier published packs, daily schedules through November 23 and all 150 chapters are unchanged. No additional November 24 trend question qualified.
+
+Android direct release `android-v1.0.6` is public. Fresh anonymous APK download and the existing signing certificate are verified; SHA-256 `f9591f4ba8d4c7f7ba0628c36e9af22d13cd46255d294fd1a02fbea762bae0fa`. Prepared AAB SHA-256 `0488e05f92faab5dfb08db4ef9007f9eb0d047b6fd9d41c17db84ea9ba3b070e`. The website source `c062276` and Cloudflare `31cc4080-8f53-4aaf-892b-d41247b624fa` publish the verified direct link and 603-prompt bank across eleven languages. All 99 public pages and 22 home/rules download entries pass verification; ads remain disabled.
+
+Artifacts are in `release/artifacts/2026-11-24-build9/`. APK/AAB/iOS contain identical verified shared JS/CSS, eleven catalogs, 603 prompts and 100 HTML files including licenses; website analytics and ads are excluded. TypeScript, 69 unit tests, five real local D1/DO integration groups, two Android API 36 native cases, three iPhone/iOS 26.5 cases and one Korean iPad rotation/persistence case pass. Final screenshots were reviewed. Hardware-only haptics remain unverified. AAB strict verification uses the existing trusted signing keystore; timestamp/JAR-stream warnings are retained, rather than misreported as absent.
+
+The iOS 1.0.6/build 9 archive passes strict code-signature checks and is imported in the standard November 24 Organizer folder. It has a development signature; distribution cloud signing/export, upload and submission have not happened. The superseded November 23 same-number Organizer entry was preserved outside Organizer. Do not upload those earlier local candidates. Use the final archive, verify current uploaded build numbers and queue first, then the previously verified Organizer cloud-signing workflow. Do not repeat login requests based on an old CLI export error.
+
+November 24 official Apple Lookup still reports public 1.0.1 (released November 17), English storefront metadata and the previously verified ten-language build. Google console state is still the November 18 observation of closed-track 1.0.1, one tester and pending production eligibility. CUA is available again but only glove Chrome is connected; the Mac is locked. No current happycoin console/analytics page or store draft was changed. The matching happycoin Gmail identity was verified and the RARE review-mail search after November 23 was empty; this does not establish queue state. Save the current build-9 Google data-safety draft before submission, select Apple automatic release and retain Google standard publishing when access is restored.
 
 ## November 20 native homepage delivery
 

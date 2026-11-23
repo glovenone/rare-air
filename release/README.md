@@ -1,13 +1,13 @@
 # Mobile release preparation
 
-Current maintenance release is Android 1.0.5 (8), publicly available as a verified signed direct APK. It includes the November 19 homepage hierarchy, independent gold Icons & rewards entry, free-first catalog, Korean and ordered device-language matching. The matching iOS 1.0.5 (8) archive and Google Play AAB are prepared and tested. Store export/upload remains pending computer/browser control. Apple's official public Lookup still shows 1.0.1, and Google Play's last dashboard observation was November 18. See [current collaboration state](../COLLABORATION.md) and [release evidence](mobile-daily.md).
+Current maintenance release is Android 1.0.6 (9), publicly available as a verified signed direct APK from source `584b28d`. It includes 603 offline prompts in eleven languages and retains the readable homepage, free pilot icons and earned Sky-point rewards. The matching iOS archive and signed AAB are prepared and tested; distribution export and store upload remain pending. November 24 CUA inventory exposed only glove Chrome and a locked Mac, so the requested happycoin account workflows were unavailable. Apple's public Lookup still shows 1.0.1; Google's last actual dashboard observation remains November 18. See [current collaboration state](../COLLABORATION.md) and [release evidence](mobile-daily.md).
 
 ## Product configuration
 
 - Name `RARE Air: Daily Trivia`
 - Language English (U.S.)
 - Identifier `com.letuzhixing.rareair`
-- Current maintenance version 1.0.5, build/code 8
+- Current maintenance version 1.0.6, build/code 9
 - Minimum iOS 15.4, matching the game’s dialog, array and structured-clone APIs. [WebKit release notes](https://webkit.org/blog/12445/new-webkit-features-in-safari-15-4/)
 - Games, Trivia and Word on Apple
 - Free to play
@@ -74,7 +74,7 @@ Online gameplay sends a randomly assigned player identifier, chosen answers, sco
 
 The Apple privacy draft declares User ID, Gameplay Content, Product Interaction and Other Diagnostic Data for App Functionality. It conservatively marks these categories linked to the player identity because online sessions use the persistent anonymous identifier and request diagnostics may be correlatable. Tracking is false for each category. The app's privacy manifest matches this draft. The publisher should verify the final labels against deployed infrastructure before publishing them. [Apple privacy definitions](https://developer.apple.com/app-store/app-privacy-details/)
 
-The Google Data safety form has been saved for review, with its source record in [google-data-safety-draft.json](google-data-safety-draft.json). Cloudflare is the hosting processor. The connected launch screen requests the daily summary automatically, so anonymous identifiers, app interactions and diagnostics are marked required. Typed answers are optional because players can choose offline practice. The previously saved form declares HTTPS transport and the hosting service-provider sharing exception. The prepared build 8 draft adds optional account User IDs, account creation and the working deletion-request URL. These additions still need to be saved in Play Console before the new submission. Diagnostics include the Analytics purpose for service monitoring and error diagnosis. [Google Data safety definitions](https://support.google.com/googleplay/android-developer/answer/10787469)
+The Google Data safety form has been saved for review, with its source record in [google-data-safety-draft.json](google-data-safety-draft.json). Cloudflare is the hosting processor. The connected launch screen requests the daily summary automatically, so anonymous identifiers, app interactions and diagnostics are marked required. Typed answers are optional because players can choose offline practice. The previously saved form declares HTTPS transport and the hosting service-provider sharing exception. The prepared build 9 draft adds optional account User IDs, account creation and the working deletion-request URL. These additions still need to be saved in Play Console before the new submission. Diagnostics include the Analytics purpose for service monitoring and error diagnosis. [Google Data safety definitions](https://support.google.com/googleplay/android-developer/answer/10787469)
 
 The Apple age questionnaire calculated 13+ for most regions. It records frequent contests because daily leaderboard rankings are part of play, infrequent fantasy violence and weapon references from a small number of curated book and board-game prompts, infrequent alcohol references from cocktail and whisky knowledge questions, and the absence of the other listed mature themes. Regional ratings are calculated by Apple. Alcohol references make the app unavailable in Afghanistan and Morocco. New daily question packs need to preserve this content scope. Review the calculation when adding new content categories.
 
