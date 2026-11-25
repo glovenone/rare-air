@@ -1,6 +1,18 @@
 # Daily iOS and Android releases
 
-Updated November 25, 2026, Asia/Shanghai.
+Updated November 26, 2026, Asia/Shanghai.
+
+## November 26 store access recovery and Google submission
+
+Native Chrome access recovered. The profile currently named `happy` was verified as the existing happycoin operational identity. Google Play now confirms one opted-in tester, production access still pending twelve continuous fourteen-day participants, and managed publishing off. No production-access application was attempted.
+
+The unchanged signed 1.0.6/build 9 AAB from source `584b28d` was uploaded, processed as code 9, saved to closed Alpha and submitted together with the English full description and corrected Data safety answers. The final UI shows three changes under review while automated pre-review checks continue; neither approval nor new public availability is claimed. The only release warning concerns an absent deobfuscation map; this build disables minification. The prior closed release remains 1.0.1/code 3 until the new submission is approved. Do not rebuild or replace uploaded build 9; a later code change needs a higher build.
+
+Data safety now declares Other account creation with recovery codes and optional website passkeys, the account-deletion URL, optional nickname Names and User IDs, in addition to the four prior categories. Google explicitly includes nicknames in its Name definition. The current IARC summary already declares online interaction and the ability to limit it to invited friends. No new questionnaire or legal terms were accepted. Exact submitted English listing/release text is recorded in the metadata file. Existing generated-art labels and image assets were retained; new store screenshots are a follow-up.
+
+The final iOS 1.0.6/build 9 archive was selected in Organizer and its actual GUI cloud-signing export was attempted. It failed with No Accounts and missing Distribution key. Settings → Apple Accounts was then opened and actually showed an empty account list. This is fresh GUI evidence, not inference from the old CLI failure. The owner was asked to add the existing team-authorized account. App Store Connect also redirects to an authentication-failed login page, so its queue/draft was not read. Public Apple Lookup still shows 1.0.1. No iOS export, upload or submission occurred.
+
+Current bank/site build, TypeScript, 69 tests, five real local D1/DO groups and mobile build/sync pass; shared runtime and final APK/AAB hashes match the accepted November 24 build 9. No new native device test or binary was needed. Website remains 603 prompts, eleven languages and 99 pages with advertising off. GA4/GSC access and sitemap resubmission also recovered; actual dated report evidence stays private.
 
 ## November 25 candidate reuse check
 

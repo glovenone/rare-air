@@ -1,5 +1,5 @@
 {
-  "status": "1.0.6-build9-prepared-locally-not-saved-in-play-console",
+  "status": "1.0.6-build9-saved-in-play-console-and-submitted-2026-11-26",
   "dataCollected": true,
   "encryptedInTransit": true,
   "accountCreation": true,
@@ -60,19 +60,31 @@
       "optional": true,
       "shared": false,
       "ephemeral": false
+    },
+    {
+      "type": "Name",
+      "data": "Optional chosen pilot nickname; no legal name requested",
+      "purpose": [
+        "App functionality",
+        "Account management"
+      ],
+      "optional": true,
+      "shared": false,
+      "ephemeral": false
     }
   ],
   "serviceProvider": "Cloudflare Workers, D1 and SQLite Durable Objects",
   "privacyUrl": "https://krillionunlimited.top/privacy/",
   "supportUrl": "https://krillionunlimited.top/support/",
   "publisherChecks": [
-    "Before submitting the next candidate, save Play account-creation answers and optional User IDs disclosure; recheck the website deletion entry and native recovery/deletion against the candidate.",
-    "Declare public multiplayer interaction, nickname-only content, blocking and reporting in the new IARC questionnaire.",
+    "November26: account creation Other, recovery-code/passkey explanation, account-deletion URL, optional UserIDs and nickname Name disclosure saved and submitted together with build9.",
+    "November26: existing IARC summary reviewed; it declares online interaction and ability to limit interaction to invited friends. No new questionnaire or legal terms accepted.",
     "Inspect the current review queue and uploaded version codes before submission. Preserve an in-review build unless a verified issue requires replacement; local preparation does not establish approval or submission.",
     "Recheck the form when hosting, logging or SDK behavior changes."
   ],
   "accountCreationMethods": [
     "Other: optional flight passport with private recovery code; website also offers passkeys"
   ],
-  "deletionUrl": "https://krillionunlimited.top/?passport=delete"
+  "deletionUrl": "https://krillionunlimited.top/?passport=delete",
+  "accountDeletionWithoutDeletingAccount": false
 }
