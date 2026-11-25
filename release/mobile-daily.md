@@ -1,6 +1,12 @@
 # Daily iOS and Android releases
 
-Updated November 24, 2026, Asia/Shanghai.
+Updated November 25, 2026, Asia/Shanghai.
+
+## November 25 candidate reuse check
+
+No native feature/content source change qualified today. The bank/site builds, TypeScript, 69 unit tests, five local D1/DO groups and mobile build/sync pass. Current shared JS/CSS match the accepted build-9 hashes; APK/AAB file hashes and the iOS archive runtime are unchanged. Reuse the final November 24 artifacts and their dated native-device acceptance rather than increasing versions or rebuilding the same native binary. There was no new simulator/device run, distribution export, upload or submission today.
+
+Public website remains 603 prompts/eleven languages/99 pages, with the verified Android 1.0.6 direct link. Apple official Lookup on November 25 remains 1.0.1. Current CUA inventory still has only glove Chrome and reports a locked Mac; happycoin console access is unavailable. Google Play's last real observation remains November 18. No fresh GA4/GSC or store queue status is inferred. Continue the final November 24 archive/AAB after checking actual uploaded codes and queue, with the prepared disclosures, existing cloud-signing flow and authorized automatic publishing settings.
 
 ## November 24 content recovery and native delivery
 
